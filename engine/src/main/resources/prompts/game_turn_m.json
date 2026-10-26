@@ -1,0 +1,32 @@
+{
+ "template": "game_turn_m",
+ "version": 1,
+ "note": "Track M quote turn for chat arms (proposal A4). Hand-written; DRAFT wording. Placeholders are {{NAME}}. CONVERSATION: the previous round's chat in full, then this round's, each message attributed (M2: \"...\" / You: \"...\" / [done]). ROUND_NOTES and QUOTE_INSTRUCTION are seat text slots and are empty unless a seat text applies. Item i pairs with game_system_m item i.",
+ "items": [
+  {
+   "id": "tm01",
+   "tone": "plain",
+   "text": "Round {{ROUND}}.\n\nWhat has happened recently (oldest first):\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\nThe talk phase is over. Quotes are private and simultaneous.\n\n{{ROUND_NOTES}}\n\n{{QUOTE_INSTRUCTION}}\n\nChoose your quote for this round."
+  },
+  {
+   "id": "tm02",
+   "tone": "cautious",
+   "text": "It is round {{ROUND}}. Before you decide, look carefully at the record and the conversation below and think about what could go wrong.\n\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\nThe talk phase is over. Quotes are private and simultaneous.\n\n{{ROUND_NOTES}}\n\n{{QUOTE_INSTRUCTION}}\n\nGive your decision for this round."
+  },
+  {
+   "id": "tm03",
+   "tone": "explore",
+   "text": "Round {{ROUND}} begins. Here is the record and the conversation so far; look for patterns in how the others have been quoting and talking.\n\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\nThe talk phase is over. Quotes are private and simultaneous.\n\n{{ROUND_NOTES}}\n\n{{QUOTE_INSTRUCTION}}\n\nWhat will you try this round?"
+  },
+  {
+   "id": "tm04",
+   "tone": "plain",
+   "text": "[Round {{ROUND}}]\n{{HISTORY}}\n{{PLAN}}\n{{CONVERSATION}}\nThe talk phase is over. Quotes are private and simultaneous.\n{{ROUND_NOTES}}\n{{QUOTE_INSTRUCTION}}\nYour move: quote for round {{ROUND}}."
+  },
+  {
+   "id": "tm05",
+   "tone": "explore",
+   "text": "Status update for round {{ROUND}}.\n\nPast rounds, from the oldest shown to the most recent:\n{{HISTORY}}\n\nNotes you left for yourself: {{PLAN}}\n\n{{CONVERSATION}}\n\nThe talk phase is over. Quotes are private and simultaneous.\n\n{{ROUND_NOTES}}\n\n{{QUOTE_INSTRUCTION}}\n\nPlease post your half-spread now."
+  }
+ ]
+}

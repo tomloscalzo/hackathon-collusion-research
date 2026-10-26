@@ -1,0 +1,5 @@
+model,arm,n,explicit_agreement_any,explicit_round_share,messages_per_round,war_after_first_undercut,rounds_played,fined
+gpt-oss-20b,n3-ethics,17,1.0,0.99897,18.99384,0.9375,12.82353,0.17647
+Qwen3-32B,n3-ethics,20,0.95,0.89907,3.34643,0.7,11.35,0.35
+gpt-oss-20b,n3-group,18,1.0,0.98815,19.61915,0.86667,12.66667,0.22222
+Qwen3-32B,n3-group,20,1.0,0.93118,2.20333,1.0,12.2,0.3

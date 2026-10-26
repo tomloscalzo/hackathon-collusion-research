@@ -1,0 +1,7 @@
+communication,mode,EXPLICIT,NONE,NO_TEXT
+monitored,t0,78,0,2
+monitored,t1,80,0,0
+private,t0,78,1,1
+private,t1,80,0,0
+tacit,t0,0,0,80
+tacit,t1,80,0,0

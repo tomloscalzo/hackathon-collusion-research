@@ -1,0 +1,11 @@
+#!/bin/sh
+# Pre-flight go/no-go gate before a real LLM call and at each experiment stage.
+# Usage: scripts/preflight [--stage dev|first-call|ingest] [--out-root DIR] [--freeze FILE] ...  (see testing/preflight.py)
+ROOT=$(cd "$(dirname "$0")/.." && pwd)
+PY=""
+for c in python3 python; do
+    # a working interpreter, not a launcher stub (on Windows "python3" can be the Microsoft Store alias)
+    if "$c" -c "import sys; sys.exit(0 if sys.version_info >= (3, 8) else 1)" >/dev/null 2>&1; then PY=$c; break; fi
+done
+[ -n "$PY" ] || { echo "preflight: no Python 3.8+ found" >&2; exit 1; }
+exec "$PY" -X utf8 "$ROOT/testing/preflight.py" "$@"

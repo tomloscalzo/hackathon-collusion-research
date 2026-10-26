@@ -1,0 +1,6 @@
+arm,call_kind,calls,latency_s_median,latency_s_p90,latency_s_max,tokens_in_median,tokens_out_median,tokens_out_p90,tokens_out_max,non_ok_parse
+chat_p1,game,288,9.9,30.3,118.6,3072.0,1176.0,3206.0,8192.0,1
+chat_p1,talk,1831,3.8,13.0,56.5,2563.0,457.0,1408.0,8192.0,1
+chat_p5,game,496,9.4,26.4,113.5,3106.0,1139.0,2960.0,8192.0,1
+chat_p5,talk,3283,3.6,13.2,103.6,2607.0,440.0,1382.0,8192.0,1
+tacit_p1,game,488,16.4,35.1,94.5,1009.0,1696.0,3344.0,8192.0,1

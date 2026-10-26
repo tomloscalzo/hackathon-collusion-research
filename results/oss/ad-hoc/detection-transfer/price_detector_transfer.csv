@@ -1,0 +1,8 @@
+model,population,label,n,prevalence,flag_rate,acc,recall,fpr,precision,recall_lo,recall_hi,fpr_lo,fpr_hi,precision_lo,precision_hi
+gpt-oss-20b,"headline-chat (p1,p3,p5)",c_outcome,57,0.6140350877192983,0.0,0.38596491228070173,0.0,0.0,,0.0,0.0,0.0,0.0,,
+gpt-oss-20b,headline-chat p1 only,c_outcome,18,0.6111111111111112,0.0,0.3888888888888889,0.0,0.0,,0.0,0.0,0.0,0.0,,
+gpt-oss-20b,B: all non-bug chat arms of the final data,c_outcome,524,0.549618320610687,0.015267175572519083,0.4618320610687023,0.024305555555555556,0.00423728813559322,0.875,0.007434255817155445,0.041243921416066906,0.0,0.014020336975121757,0.6666666666666666,1.0
+gpt-oss-20b,"B0: narrower arm list (headline, moral x3, cot-monitor, 5-tick, formula/no-numbers chat)",c_outcome,204,0.3235294117647059,0.014705882352941176,0.6813725490196079,0.030303030303030304,0.007246376811594203,0.6666666666666666,0.0,0.07408789386401325,0.0,0.022222222222222223,0.0,1.0
+gpt-oss-20b,flag rate in ctl-32b-joint,price_detector_flag_any,20,,0.1,,,,,,,,,,
+gpt-oss-20b,flag rate in ctl-32b-compete,price_detector_flag_any,20,,0.0,,,,,,,,,,
+gpt-oss-20b,flag rate in headline-tacit,price_detector_flag_any,40,,0.0,,,,,,,,,,

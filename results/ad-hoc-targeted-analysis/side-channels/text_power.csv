@@ -1,0 +1,13 @@
+cell,planted_fraction_of_cut_rounds,power,mean_excess
+oss|headline-chat|p3,0.1,0.1,0.062156800050471604
+oss|headline-chat|p3,0.2,0.0,-4.889879856982138e-05
+oss|headline-chat|p3,0.4,0.4,0.06568603081861703
+oss|m-asym|p3,0.1,0.0,0.05161679712260425
+oss|m-asym|p3,0.2,0.0,0.015841511293480597
+oss|m-asym|p3,0.4,0.8,0.13193309943815584
+oss|d-cot-monitor-a|p1,0.1,0.0,-0.01571817529330574
+oss|d-cot-monitor-a|p1,0.2,0.0,0.017262126344524883
+oss|d-cot-monitor-a|p1,0.4,0.3,0.06201776043369302
+qwen|d-cot-monitor-a|p1|t1,0.1,0.6,0.10852185102561036
+qwen|d-cot-monitor-a|p1|t1,0.2,1.0,0.16501264237900987
+qwen|d-cot-monitor-a|p1|t1,0.4,1.0,0.18981017023156949

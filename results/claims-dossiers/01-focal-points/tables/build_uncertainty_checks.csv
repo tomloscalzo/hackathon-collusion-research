@@ -1,0 +1,101 @@
+arm,control,excl_truncated,metric,n_pairs,diff,lo,hi,p_exact
+fx-tacit-p1,mean of both printed controls,False,avg_abs_spread,20,-0.5960,-0.8160,-0.3537,0.0002
+fx-tacit-p1,mean of both printed controls,False,price_index,20,-0.2980,-0.4092,-0.1835,0.0002
+fx-tacit-p1,mean of both printed controls,False,profit_gain_index,20,-0.4333,-0.5671,-0.2950,0.0000
+fx-tacit-p1,mean of both printed controls,False,competitive_share,20,-0.2691,-0.3561,-0.1667,0.0001
+fx-tacit-p1,mean of both printed controls,False,matching_share,20,0.1395,0.0317,0.2450,0.0225
+fx-tacit-p1,headline control only,False,avg_abs_spread,20,-0.4424,-0.6962,-0.1833,0.0040
+fx-tacit-p1,headline control only,False,price_index,20,-0.2212,-0.3468,-0.0931,0.0040
+fx-tacit-p1,headline control only,False,profit_gain_index,20,-0.3502,-0.5059,-0.1906,0.0008
+fx-tacit-p1,headline control only,False,competitive_share,20,-0.2714,-0.3633,-0.1650,0.0002
+fx-tacit-p1,headline control only,False,matching_share,20,0.1538,0.0489,0.2484,0.0081
+fx-tacit-p1,mean of both printed controls,True,avg_abs_spread,11,-0.4515,-0.7910,-0.0923,0.0439
+fx-tacit-p1,mean of both printed controls,True,price_index,11,-0.2257,-0.3964,-0.0412,0.0430
+fx-tacit-p1,mean of both printed controls,True,profit_gain_index,11,-0.3770,-0.5760,-0.1716,0.0088
+fx-tacit-p1,mean of both printed controls,True,competitive_share,11,-0.2039,-0.3364,-0.0484,0.0312
+fx-tacit-p1,mean of both printed controls,True,matching_share,11,0.1052,-0.0451,0.2436,0.2021
+fx-tacit-p1,headline control only,True,avg_abs_spread,11,-0.3575,-0.7117,0.0039,0.1035
+fx-tacit-p1,headline control only,True,price_index,11,-0.1787,-0.3523,0.0046,0.1035
+fx-tacit-p1,headline control only,True,profit_gain_index,11,-0.3346,-0.5468,-0.1091,0.0156
+fx-tacit-p1,headline control only,True,competitive_share,11,-0.2099,-0.3439,-0.0471,0.0391
+fx-tacit-p1,headline control only,True,matching_share,11,0.1082,-0.0495,0.2485,0.2109
+fx-chat-p1,mean of both printed controls,False,avg_abs_spread,19,-0.7211,-0.9719,-0.4437,0.0003
+fx-chat-p1,mean of both printed controls,False,price_index,19,-0.3606,-0.4864,-0.2171,0.0003
+fx-chat-p1,mean of both printed controls,False,profit_gain_index,19,-0.4623,-0.6079,-0.3052,0.0001
+fx-chat-p1,mean of both printed controls,False,competitive_share,19,-0.0977,-0.2090,0.0005,0.0839
+fx-chat-p1,mean of both printed controls,False,matching_share,19,-0.0281,-0.1631,0.1009,0.6855
+fx-chat-p1,headline control only,False,avg_abs_spread,19,-0.6032,-0.8726,-0.3150,0.0012
+fx-chat-p1,headline control only,False,price_index,19,-0.3016,-0.4336,-0.1593,0.0012
+fx-chat-p1,headline control only,False,profit_gain_index,19,-0.4037,-0.5549,-0.2528,0.0002
+fx-chat-p1,headline control only,False,competitive_share,19,-0.1304,-0.2378,-0.0335,0.0197
+fx-chat-p1,headline control only,False,matching_share,19,-0.0089,-0.1470,0.1265,0.9029
+fx-chat-p1,mean of both printed controls,True,avg_abs_spread,13,-0.8860,-1.1276,-0.5985,0.0007
+fx-chat-p1,mean of both printed controls,True,price_index,13,-0.4430,-0.5630,-0.3010,0.0007
+fx-chat-p1,mean of both printed controls,True,profit_gain_index,13,-0.5340,-0.6899,-0.3622,0.0005
+fx-chat-p1,mean of both printed controls,True,competitive_share,13,-0.0989,-0.2470,0.0272,0.2051
+fx-chat-p1,mean of both printed controls,True,matching_share,13,-0.0355,-0.2079,0.1384,0.6985
+fx-chat-p1,headline control only,True,avg_abs_spread,14,-0.7098,-1.0192,-0.3461,0.0035
+fx-chat-p1,headline control only,True,price_index,14,-0.3549,-0.5084,-0.1754,0.0037
+fx-chat-p1,headline control only,True,profit_gain_index,14,-0.4510,-0.6283,-0.2577,0.0015
+fx-chat-p1,headline control only,True,competitive_share,14,-0.1333,-0.2660,-0.0204,0.0498
+fx-chat-p1,headline control only,True,matching_share,14,-0.0108,-0.1870,0.1591,0.9073
+fx-chat-p5,mean of both printed controls,False,avg_abs_spread,19,-0.7819,-0.9264,-0.6323,0.0000
+fx-chat-p5,mean of both printed controls,False,price_index,19,-0.3910,-0.4628,-0.3151,0.0000
+fx-chat-p5,mean of both printed controls,False,profit_gain_index,19,-0.5036,-0.5950,-0.4041,0.0000
+fx-chat-p5,mean of both printed controls,False,competitive_share,19,-0.1340,-0.2128,-0.0533,0.0045
+fx-chat-p5,mean of both printed controls,False,matching_share,19,-0.0031,-0.0960,0.0893,0.9496
+fx-chat-p5,headline control only,False,avg_abs_spread,20,-0.7307,-0.8893,-0.5713,0.0000
+fx-chat-p5,headline control only,False,price_index,20,-0.3654,-0.4435,-0.2856,0.0000
+fx-chat-p5,headline control only,False,profit_gain_index,20,-0.4722,-0.5702,-0.3678,0.0000
+fx-chat-p5,headline control only,False,competitive_share,20,-0.1433,-0.2266,-0.0679,0.0011
+fx-chat-p5,headline control only,False,matching_share,20,-0.0039,-0.0934,0.0924,0.9362
+fx-chat-p5,mean of both printed controls,True,avg_abs_spread,14,-0.8613,-1.0109,-0.6982,0.0001
+fx-chat-p5,mean of both printed controls,True,price_index,14,-0.4307,-0.5060,-0.3511,0.0000
+fx-chat-p5,mean of both printed controls,True,profit_gain_index,14,-0.5515,-0.6462,-0.4517,0.0000
+fx-chat-p5,mean of both printed controls,True,competitive_share,14,-0.1081,-0.1939,-0.0167,0.0409
+fx-chat-p5,mean of both printed controls,True,matching_share,14,-0.0326,-0.1463,0.0834,0.6077
+fx-chat-p5,headline control only,True,avg_abs_spread,15,-0.7027,-0.8873,-0.5089,0.0001
+fx-chat-p5,headline control only,True,price_index,15,-0.3513,-0.4419,-0.2534,0.0001
+fx-chat-p5,headline control only,True,profit_gain_index,15,-0.4590,-0.5760,-0.3328,0.0001
+fx-chat-p5,headline control only,True,competitive_share,15,-0.1118,-0.2001,-0.0362,0.0121
+fx-chat-p5,headline control only,True,matching_share,15,-0.0315,-0.1359,0.0856,0.5957
+nx-tacit-p1,mean of both printed controls,False,avg_abs_spread,20,-0.8892,-1.0095,-0.7667,0.0000
+nx-tacit-p1,mean of both printed controls,False,price_index,20,-0.4446,-0.5032,-0.3843,0.0000
+nx-tacit-p1,mean of both printed controls,False,profit_gain_index,20,-0.6278,-0.6971,-0.5533,0.0000
+nx-tacit-p1,mean of both printed controls,False,competitive_share,20,-0.3479,-0.4091,-0.2842,0.0000
+nx-tacit-p1,mean of both printed controls,False,matching_share,20,0.2373,0.1628,0.3096,0.0000
+nx-tacit-p1,headline control only,False,avg_abs_spread,20,-0.7588,-0.9413,-0.5725,0.0000
+nx-tacit-p1,headline control only,False,price_index,20,-0.3794,-0.4700,-0.2862,0.0000
+nx-tacit-p1,headline control only,False,profit_gain_index,20,-0.5549,-0.6660,-0.4366,0.0000
+nx-tacit-p1,headline control only,False,competitive_share,20,-0.3824,-0.4604,-0.3080,0.0000
+nx-tacit-p1,headline control only,False,matching_share,20,0.2937,0.2096,0.3751,0.0000
+nx-tacit-p1,mean of both printed controls,True,avg_abs_spread,12,-0.9128,-1.0795,-0.7336,0.0005
+nx-tacit-p1,mean of both printed controls,True,price_index,12,-0.4564,-0.5387,-0.3676,0.0005
+nx-tacit-p1,mean of both printed controls,True,profit_gain_index,12,-0.6486,-0.7452,-0.5458,0.0000
+nx-tacit-p1,mean of both printed controls,True,competitive_share,12,-0.3696,-0.4468,-0.2951,0.0000
+nx-tacit-p1,mean of both printed controls,True,matching_share,12,0.2274,0.1376,0.3199,0.0020
+nx-tacit-p1,headline control only,True,avg_abs_spread,13,-0.8492,-1.0491,-0.6471,0.0000
+nx-tacit-p1,headline control only,True,price_index,13,-0.4246,-0.5239,-0.3229,0.0002
+nx-tacit-p1,headline control only,True,profit_gain_index,13,-0.6228,-0.7359,-0.5099,0.0002
+nx-tacit-p1,headline control only,True,competitive_share,13,-0.4157,-0.5137,-0.3286,0.0000
+nx-tacit-p1,headline control only,True,matching_share,13,0.2896,0.1775,0.4021,0.0010
+nx-chat-p1,mean of both printed controls,False,avg_abs_spread,20,-1.1803,-1.3001,-1.0479,0.0000
+nx-chat-p1,mean of both printed controls,False,price_index,20,-0.5901,-0.6504,-0.5236,0.0000
+nx-chat-p1,mean of both printed controls,False,profit_gain_index,20,-0.7668,-0.8367,-0.6884,0.0000
+nx-chat-p1,mean of both printed controls,False,competitive_share,20,-0.1881,-0.2601,-0.1059,0.0006
+nx-chat-p1,mean of both printed controls,False,matching_share,20,0.1306,0.0133,0.2352,0.0359
+nx-chat-p1,headline control only,False,avg_abs_spread,20,-1.1134,-1.2697,-0.9295,0.0000
+nx-chat-p1,headline control only,False,price_index,20,-0.5567,-0.6337,-0.4691,0.0000
+nx-chat-p1,headline control only,False,profit_gain_index,20,-0.7359,-0.8217,-0.6339,0.0000
+nx-chat-p1,headline control only,False,competitive_share,20,-0.1990,-0.3143,-0.0799,0.0035
+nx-chat-p1,headline control only,False,matching_share,20,0.1446,-0.0123,0.2956,0.0912
+nx-chat-p1,mean of both printed controls,True,avg_abs_spread,13,-1.2556,-1.3736,-1.1120,0.0000
+nx-chat-p1,mean of both printed controls,True,price_index,13,-0.6278,-0.6861,-0.5538,0.0002
+nx-chat-p1,mean of both printed controls,True,profit_gain_index,13,-0.8157,-0.8750,-0.7362,0.0002
+nx-chat-p1,mean of both printed controls,True,competitive_share,13,-0.1700,-0.2695,-0.0502,0.0168
+nx-chat-p1,mean of both printed controls,True,matching_share,13,0.0984,-0.0633,0.2421,0.2534
+nx-chat-p1,headline control only,True,avg_abs_spread,15,-1.2077,-1.3322,-1.0676,0.0000
+nx-chat-p1,headline control only,True,price_index,15,-0.6039,-0.6678,-0.5342,0.0000
+nx-chat-p1,headline control only,True,profit_gain_index,15,-0.7925,-0.8561,-0.7177,0.0001
+nx-chat-p1,headline control only,True,competitive_share,15,-0.1995,-0.3546,-0.0450,0.0248
+nx-chat-p1,headline control only,True,matching_share,15,0.1443,-0.0717,0.3366,0.1948

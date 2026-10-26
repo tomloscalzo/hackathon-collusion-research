@@ -1,0 +1,51 @@
+model,mode,check,n,value,lo,hi,p
+Qwen3-32B,t0,n3-ethics: bound-firm minus unbound-firms mean quote (within game),20,-0.0501,-0.1214,-0.0001,0.1250
+Qwen3-32B,t0,n3-ethics: share of rounds 2+ in which the bound firm is the strict lowest quote,20,0.0538,,,
+Qwen3-32B,t0,"n3-ethics - headline-chat, price index, all games",20,0.0024,-0.1510,0.1648,0.9742
+Qwen3-32B,t0,"n3-ethics - headline-chat, price index, games with no truncated call",20,0.0024,-0.1514,0.1666,0.9742
+Qwen3-32B,t0,"n3-ethics - n3-group, price index, all games",20,0.0159,-0.1711,0.1853,0.8733
+Qwen3-32B,t0,"n3-ethics - n3-group, price index, games with no truncated call",20,0.0159,-0.1709,0.1904,0.8733
+Qwen3-32B,t1,n3-ethics: bound-firm minus unbound-firms mean quote (within game),20,-0.0106,-0.0283,0.0004,0.3613
+Qwen3-32B,t1,n3-ethics: share of rounds 2+ in which the bound firm is the strict lowest quote,20,0.0390,,,
+Qwen3-32B,t1,"n3-ethics - headline-chat, price index, all games",20,-0.0741,-0.1571,0.0134,0.1134
+Qwen3-32B,t1,"n3-ethics - headline-chat, price index, games with no truncated call",20,-0.0741,-0.1618,0.0120,0.1134
+Qwen3-32B,t1,"n3-ethics - n3-group, price index, all games",20,0.0161,-0.0686,0.0980,0.7744
+Qwen3-32B,t1,"n3-ethics - n3-group, price index, games with no truncated call",20,0.0161,-0.0695,0.0956,0.7744
+gpt-oss-20b,medium,n3-ethics: bound-firm minus unbound-firms mean quote (within game),17,-0.0191,-0.0665,0.0295,0.4662
+gpt-oss-20b,medium,n3-ethics: share of rounds 2+ in which the bound firm is the strict lowest quote,17,0.1483,,,
+gpt-oss-20b,medium,"n3-ethics - headline-chat, price index, all games",17,-0.2712,-0.3898,-0.1549,0.0005
+gpt-oss-20b,medium,"n3-ethics - headline-chat, price index, games with no truncated call",9,-0.2305,-0.4044,-0.0760,0.0234
+gpt-oss-20b,medium,"n3-ethics - headline-chat, price index, missing games set to no effect (diff 0)",20,-0.2305,-0.3404,-0.1238,0.0005
+gpt-oss-20b,medium,"n3-ethics - headline-chat, price index, missing games set to the largest observed diff (least favourable)",20,-0.2210,-0.3356,-0.1102,0.0016
+gpt-oss-20b,medium,"n3-ethics - n3-group, price index, all games",15,-0.2234,-0.3561,-0.1003,0.0045
+gpt-oss-20b,medium,"n3-ethics - n3-group, price index, games with no truncated call",9,-0.2165,-0.3923,-0.0543,0.0430
+Qwen3-32B,t0,"n3-cheater minus capped n3-group (behavioural residual beyond the mechanical cap), price index, paired",20,0.0331,-0.0108,0.0875,0.2383
+Qwen3-32B,t0,"capped n3-group minus n3-group as played (mechanical part), price index, paired",20,-0.2426,-0.3092,-0.1750,
+Qwen3-32B,t0,"n3-group games with the paired cheater's scripted quotes added (1.88, and 1.00 in its defect round): price index (pure mechanical effect)",20,0.3542,,,
+Qwen3-32B,t0,n3-group: price index as played,20,0.5968,,,
+Qwen3-32B,t0,n3-cheater: price index as played,20,0.3873,,,
+Qwen3-32B,t0,n3-cheater: share of LLM firm-rounds (rounds 2+) at or below the cheater's 1.88,20,0.1000,,,
+Qwen3-32B,t0,n3-cheater: mean LLM quote,20,2.3791,,,
+Qwen3-32B,t0,n3-group: mean LLM quote,20,2.2035,,,
+Qwen3-32B,t1,"n3-cheater minus capped n3-group (behavioural residual beyond the mechanical cap), price index, paired",20,-0.0406,-0.0783,-0.0105,0.0127
+Qwen3-32B,t1,"capped n3-group minus n3-group as played (mechanical part), price index, paired",20,-0.2643,-0.3140,-0.2109,
+Qwen3-32B,t1,"n3-group games with the paired cheater's scripted quotes added (1.88, and 1.00 in its defect round): price index (pure mechanical effect)",20,0.4107,,,
+Qwen3-32B,t1,n3-group: price index as played,20,0.6749,,,
+Qwen3-32B,t1,n3-cheater: price index as played,20,0.3700,,,
+Qwen3-32B,t1,n3-cheater: share of LLM firm-rounds (rounds 2+) at or below the cheater's 1.88,20,0.6683,,,
+Qwen3-32B,t1,n3-cheater: mean LLM quote,20,2.0130,,,
+Qwen3-32B,t1,n3-group: mean LLM quote,20,2.3500,,,
+gpt-oss-20b,medium,"n3-cheater minus capped n3-group (behavioural residual beyond the mechanical cap), price index, paired",18,-0.0092,-0.0291,0.0089,0.3737
+gpt-oss-20b,medium,"capped n3-group minus n3-group as played (mechanical part), price index, paired",18,-0.2224,-0.2700,-0.1722,
+gpt-oss-20b,medium,"n3-group games with the paired cheater's scripted quotes added (1.88, and 1.00 in its defect round): price index (pure mechanical effect)",18,0.3876,,,
+gpt-oss-20b,medium,n3-group: price index as played,18,0.6100,,,
+gpt-oss-20b,medium,n3-cheater: price index as played,20,0.3799,,,
+gpt-oss-20b,medium,n3-cheater: share of LLM firm-rounds (rounds 2+) at or below the cheater's 1.88,20,0.5878,,,
+gpt-oss-20b,medium,n3-cheater: mean LLM quote,20,2.0846,,,
+gpt-oss-20b,medium,n3-group: mean LLM quote,18,2.2452,,,
+Qwen3-32B,t0,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Spearman (permutation p, 5,000 shuffles)",100,-0.0605,,,0.5542
+Qwen3-32B,t0,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Pearson (permutation p, 5,000 shuffles)",100,-0.1200,,,0.2418
+Qwen3-32B,t1,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Spearman (permutation p, 5,000 shuffles)",100,0.0903,,,0.3600
+Qwen3-32B,t1,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Pearson (permutation p, 5,000 shuffles)",100,0.1048,,,0.3156
+gpt-oss-20b,medium,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Spearman (permutation p, 5,000 shuffles)",80,-0.0235,,,0.8400
+gpt-oss-20b,medium,"explicit-agreement flag vs profit gain index, two-firm p3 chat games: Pearson (permutation p, 5,000 shuffles)",80,-0.0209,,,0.8508

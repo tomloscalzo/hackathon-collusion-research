@@ -1,0 +1,22 @@
+run,thinking,target,n_games,n_positive,n_seeds,note,predictor,auc,lo,hi
+neutral,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),35,31.0,18,too few of one class,,,,
+neutral,off,evidence ending (investigation found evidence),35,31.0,18,too few of one class,,,,
+neutral,off,"later price index (rounds 4+), continuous",35,,18,"rho, not AUC",Spearman rho early score,0.31481458569777204,-0.05534348742007869,0.6550257481306754
+neutral,off,"later price index (rounds 4+), continuous",35,,18,"rho, not AUC",Spearman rho early quotes,0.985173924689886,0.9505695416614129,0.9995225197473582
+neutral,on,later price index (rounds 4+) >= 0.5 (price >= 2.0),31,31.0,17,too few of one class,,,,
+neutral,on,evidence ending (investigation found evidence),31,28.0,17,too few of one class,,,,
+neutral,on,"later price index (rounds 4+), continuous",31,,17,"rho, not AUC",Spearman rho early score,0.3492535067788748,0.062326515136401445,0.5901485226245164
+neutral,on,"later price index (rounds 4+), continuous",31,,17,"rho, not AUC",Spearman rho early quotes,0.9532330433814722,0.8785336612172564,0.9999999999999999
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,early quotes (price index r1-3),0.9917695473251029,0.9605730101981976,1.0
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,early score (mean r1-3),0.6255144032921811,0.438999355490524,0.819245364010989
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,early score (max r1-3),0.5020576131687243,0.299302371541502,0.7164790990259738
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,quotes + score,0.9670781893004116,0.8909090909090909,1.0
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,quotes only (LOO logistic),0.9670781893004116,0.8970939554272888,1.0
+anchored,off,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,27.0,18,,DIFF: quotes+score minus quotes only,0.0,0.0,0.0
+anchored,off,evidence ending (investigation found evidence),36,32.0,18,too few of one class,,,,
+anchored,off,"later price index (rounds 4+), continuous",36,,18,"rho, not AUC",Spearman rho early score,0.10232597672760332,-0.19653172948262704,0.34006967841873514
+anchored,off,"later price index (rounds 4+), continuous",36,,18,"rho, not AUC",Spearman rho early quotes,0.9026297695372758,0.764245379010895,0.9912710163124654
+anchored,on,later price index (rounds 4+) >= 0.5 (price >= 2.0),36,36.0,18,too few of one class,,,,
+anchored,on,evidence ending (investigation found evidence),36,32.0,18,too few of one class,,,,
+anchored,on,"later price index (rounds 4+), continuous",36,,18,"rho, not AUC",Spearman rho early score,-0.16296819155550085,-0.48027176028086305,0.15126867100582303
+anchored,on,"later price index (rounds 4+), continuous",36,,18,"rho, not AUC",Spearman rho early quotes,0.8302501657214526,0.5782982357569054,0.9999999999999998

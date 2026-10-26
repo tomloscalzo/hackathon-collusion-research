@@ -1,0 +1,31 @@
+interp.json v2 - plain-language revision of the 72 chart interpretations
+
+Files
+- interp_v1.json: the previous texts, saved before the overwrite.
+- interp.json: the revised texts, with the same 36 keys and the share and theta entries for each.
+- make_interp_v2.py: holds the texts and runs all checks. It reuses the direction claims from make_interp.py by executing only that script's text section, so it writes nothing there. It refuses to write interp.json unless every check passes.
+
+What changed (all 72 texts)
+- Each input is now named by its Term name on first mention, followed by a short gloss, e.g. "tick size (the minimum price step)" or "P(evidence | investigation) (the chance an investigation produces a guilty finding)".
+- "Room" is used only after 'reservation spread ratio (...; "room" below)'.
+- "Screen" is used only after "regulator screen slope (...)" or "the regulator's screen (its rule for opening investigations when spreads are wide)".
+- "Tips" is used only after "tip probability (...)" or "tips (investigations that start at random, whatever the price)".
+- "Evidence" became "a guilty finding" once P(evidence | investigation) has been defined.
+- "Grid" was removed entirely. It is replaced by "markets with a (minimum) price step".
+- "Crowded markets" and "firm count" became "many market makers" and "number of market makers".
+- The "quirk" became, on first mention in each text: "a modelling simplification in markets with a minimum price step (an investigation that finds nothing is treated as worse for firms than a conviction)".
+- On the theta charts, "collusion intensity" is glossed on first use.
+- The directions and mechanisms are unchanged.
+
+Checks (all pass, 0 errors)
+- No digits, and no number words. The v1 list was extended with "first" and "second".
+- Between 2 and 5 sentences.
+- Cautious wording is present.
+- Jargon list from v1, plus "participation" and "pi_post".
+- Directions are checked against tables.json, using the v1 claims.
+- New: both Term names of the pair must appear in the text.
+- New: shorthand check. Each of the following must have its Term name or definition at or before its first use in the same text: room, grid, step(s), screen(s), tip(s), evidence, preferenc*, protected volume, crowded, number of firms/firm count, simplification (its definition must come first), intensity (its gloss must come first), and "fine(s)" in fineRatio pairs. "quirk" and "artifact" are always flagged.
+- v1 had 202 shorthand flags under this check (intensity excluded). v2 has 0.
+
+Most common shorthand in v1 (number of texts containing it):
+grid 47, screen 35, quirk 28, tips 20, room 18, evidence 17, number of firms 16, preferenced share/preferencing 16, crowded 9.

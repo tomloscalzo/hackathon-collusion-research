@@ -1,0 +1,10 @@
+model,arm,n,Average absolute spread,Price index,Profit gain index,Competitive share (U16),Matching share,Profit gain index min,Profit gain index max,Price index max
+gpt-oss-20b (reasoning medium),strict-compete control,20,1.0106,0.0053,0.0067,0.9899,0.0000,0.0000,0.1336,0.1064
+gpt-oss-20b (reasoning medium),joint-profit control,20,2.4887,0.7443,0.9319,0.2493,0.6071,0.8910,0.9584,0.8364
+gpt-oss-20b (reasoning medium),headline-chat p3,20,2.2255,0.6128,0.8045,0.4399,0.3759,0.0287,0.9350,0.7450
+Qwen3-32B thinking on,strict-compete control,20,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+Qwen3-32B thinking on,joint-profit control,20,2.4500,0.7250,0.9187,0.0000,0.9987,0.7500,0.9375,0.7500
+Qwen3-32B thinking on,headline-chat p3,20,2.5303,0.7651,0.9163,0.0113,0.9715,0.7500,1.0000,1.0000
+Qwen3-32B thinking off,strict-compete control,20,1.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000
+Qwen3-32B thinking off,joint-profit control,20,2.5375,0.7688,0.8992,0.0000,1.0000,0.4375,1.0000,1.0000
+Qwen3-32B thinking off,headline-chat p3,20,2.2206,0.6103,0.7766,0.1246,0.8389,0.0000,1.0000,1.0000

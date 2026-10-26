@@ -1,0 +1,3 @@
+run,quantity,value,n_seeds,note
+neutral,share of cell-residual variance shared by games with the same seed (all 24 headline cells),0.07262204906808681,20,"regulator investigation draws, planned length and wording are fixed by seed, so games with one seed are not independent across cells: contrasts are paired on the seed"
+anchored,share of cell-residual variance shared by games with the same seed (all 24 headline cells),0.12190054167007126,20,"regulator investigation draws, planned length and wording are fixed by seed, so games with one seed are not independent across cells: contrasts are paired on the seed"

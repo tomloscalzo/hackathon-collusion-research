@@ -1,0 +1,5 @@
+test,mode,n,extra_df,F,boot_p,R2_additive,R2_with_interaction
+communication x penalty point,t0,240,6,0.38,0.896,0.22,0.22
+communication x penalty point,t1,240,6,0.69,0.657,0.46,0.47
+communication x thinking (point adjusted),pooled,480,2,2.68,0.092,0.24,0.25
+penalty point x thinking (communication adjusted),pooled,480,3,25.43,0.002,0.24,0.34

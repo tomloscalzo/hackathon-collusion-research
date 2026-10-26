@@ -1,0 +1,7 @@
+arm,mode,sum,size,rate
+headline-chat,t0,0,80,0.0
+headline-chat,t1,3,80,0.038
+headline-monitored,t0,0,80,0.0
+headline-monitored,t1,6,80,0.075
+headline-tacit,t0,0,80,0.0
+headline-tacit,t1,17,80,0.212

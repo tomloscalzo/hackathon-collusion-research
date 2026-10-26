@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="632" viewBox="0 0 1000 632">
+<rect width="1000" height="632" fill="white"/>
+<text x="500.0" y="26" font-size="16" text-anchor="middle" font-weight="bold" fill="#222" font-family="Helvetica,Arial,sans-serif">Reference (null) bands for the pre-declared contrasts, scripted seats</text>
+<text x="500.0" y="46" font-size="11" text-anchor="middle" font-weight="normal" fill="#555" font-family="Helvetica,Arial,sans-serif">Point = contrast with all runs; bar = bootstrap band at the LLM design size (10 paraphrase clusters × seeds). LLM estimates are added after the runs.</text>
+<line x1="481.1904761904762" y1="72" x2="481.1904761904762" y2="542" stroke="#e5e5e5" stroke-width="1"/>
+<text x="481.1904761904762" y="558" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">-1</text>
+<line x1="593.0952380952381" y1="72" x2="593.0952380952381" y2="542" stroke="#e5e5e5" stroke-width="1"/>
+<text x="593.0952380952381" y="558" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">-0.5</text>
+<line x1="705.0" y1="72" x2="705.0" y2="542" stroke="#999" stroke-width="1"/>
+<text x="705.0" y="558" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">0</text>
+<line x1="816.9047619047619" y1="72" x2="816.9047619047619" y2="542" stroke="#e5e5e5" stroke-width="1"/>
+<text x="816.9047619047619" y="558" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">0.5</text>
+<line x1="928.8095238095237" y1="72" x2="928.8095238095237" y2="542" stroke="#e5e5e5" stroke-width="1"/>
+<text x="928.8095238095237" y="558" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">1</text>
+<text x="705.0" y="576" font-size="11" text-anchor="middle" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">Contrast (arm A minus arm B, statistic units)</text>
+<text x="350" y="95.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A: ripe − unripe-a (pAdhere)</text>
+<text x="360" y="95.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="705.0" y1="91.0" x2="705.0" y2="91.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="91.0" r="4" fill="#238b45"/>
+<text x="350" y="117.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A: ripe − unripe-a (pAdhere)</text>
+<text x="360" y="117.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="705.0" y1="113.0" x2="705.0" y2="113.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="113.0" r="4" fill="#08519c"/>
+<text x="350" y="139.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A: ripe − unripe-a (pAdhere)</text>
+<text x="360" y="139.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="705.0" y1="135.0" x2="705.0" y2="135.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="135.0" r="4" fill="#a50f15"/>
+<text x="350" y="161.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-pCollude: ripe − unripe-a (pCollude)</text>
+<text x="360" y="161.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="705.0" y1="157.0" x2="705.0" y2="157.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="157.0" r="4" fill="#238b45"/>
+<text x="350" y="183.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-pCollude: ripe − unripe-a (pCollude)</text>
+<text x="360" y="183.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="705.0" y1="179.0" x2="705.0" y2="179.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="179.0" r="4" fill="#08519c"/>
+<text x="350" y="205.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-pCollude: ripe − unripe-a (pCollude)</text>
+<text x="360" y="205.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="705.0" y1="201.0" x2="705.0" y2="201.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="201.0" r="4" fill="#a50f15"/>
+<text x="350" y="227.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-prime: ripe − unripe-a-prime (meanCi)</text>
+<text x="360" y="227.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="792.5808408919123" y1="223.0" x2="809.19029518613" y2="223.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="801.7275546768715" cy="223.0" r="4" fill="#238b45"/>
+<text x="350" y="249.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-prime: ripe − unripe-a-prime (meanCi)</text>
+<text x="360" y="249.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="791.5646146541951" y1="245.0" x2="809.1887220804988" y2="245.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="801.2662232993206" cy="245.0" r="4" fill="#08519c"/>
+<text x="350" y="271.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P1-A-prime: ripe − unripe-a-prime (meanCi)</text>
+<text x="360" y="271.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="669.2150452806122" y1="267.0" x2="699.0755909391535" y2="267.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="683.7501196712017" cy="267.0" r="4" fill="#a50f15"/>
+<text x="350" y="293.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P3: probe − control (responder)</text>
+<text x="360" y="293.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="928.8095238095237" y1="289.0" x2="928.8095238095237" y2="289.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="928.8095238095237" cy="289.0" r="4" fill="#238b45"/>
+<text x="350" y="315.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P3: probe − control (responder)</text>
+<text x="360" y="315.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="928.8095238095237" y1="311.0" x2="928.8095238095237" y2="311.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="928.8095238095237" cy="311.0" r="4" fill="#08519c"/>
+<text x="350" y="337.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P3: probe − control (responder)</text>
+<text x="360" y="337.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="705.0" y1="333.0" x2="705.0" y2="333.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="333.0" r="4" fill="#a50f15"/>
+<text x="350" y="359.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4: ripe − n4 (pAdhere)</text>
+<text x="360" y="359.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="705.0" y1="355.0" x2="705.0" y2="355.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="355.0" r="4" fill="#238b45"/>
+<text x="350" y="381.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4: ripe − n4 (pAdhere)</text>
+<text x="360" y="381.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="705.0" y1="377.0" x2="705.0" y2="377.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="377.0" r="4" fill="#08519c"/>
+<text x="350" y="403.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4: ripe − n4 (pAdhere)</text>
+<text x="360" y="403.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="705.0" y1="399.0" x2="705.0" y2="399.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="399.0" r="4" fill="#a50f15"/>
+<text x="350" y="425.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4-gap: ripe − n4 (gap)</text>
+<text x="360" y="425.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="705.0" y1="421.0" x2="705.0" y2="421.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="421.0" r="4" fill="#238b45"/>
+<text x="350" y="447.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4-gap: ripe − n4 (gap)</text>
+<text x="360" y="447.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="705.0" y1="443.0" x2="705.0" y2="443.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="443.0" r="4" fill="#08519c"/>
+<text x="350" y="469.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P4-gap: ripe − n4 (gap)</text>
+<text x="360" y="469.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="705.0" y1="465.0" x2="705.0" y2="465.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="465.0" r="4" fill="#a50f15"/>
+<text x="350" y="491.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P5: ripe − p5-slope-0.055 (pAdhere)</text>
+<text x="360" y="491.0" font-size="11" text-anchor="start" font-weight="normal" fill="#238b45" font-family="Helvetica,Arial,sans-serif">tit-for-tat</text>
+<line x1="705.0" y1="487.0" x2="705.0" y2="487.0" stroke="#238b45" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="487.0" r="4" fill="#238b45"/>
+<text x="350" y="513.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P5: ripe − p5-slope-0.055 (pAdhere)</text>
+<text x="360" y="513.0" font-size="11" text-anchor="start" font-weight="normal" fill="#08519c" font-family="Helvetica,Arial,sans-serif">grim</text>
+<line x1="705.0" y1="509.0" x2="705.0" y2="509.0" stroke="#08519c" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="705.0" cy="509.0" r="4" fill="#08519c"/>
+<text x="350" y="535.0" font-size="11" text-anchor="end" font-weight="normal" fill="#222" font-family="Helvetica,Arial,sans-serif">P5: ripe − p5-slope-0.055 (pAdhere)</text>
+<text x="360" y="535.0" font-size="11" text-anchor="start" font-weight="normal" fill="#a50f15" font-family="Helvetica,Arial,sans-serif">noise</text>
+<line x1="697.7128684807257" y1="531.0" x2="705.0" y2="531.0" stroke="#a50f15" stroke-width="6" stroke-opacity="0.35" stroke-linecap="round"/>
+<circle cx="703.5431065759637" cy="531.0" r="4" fill="#a50f15"/>
+<text x="500.0" y="602" font-size="11" text-anchor="middle" font-weight="normal" fill="#555" font-family="Helvetica,Arial,sans-serif">Most bands are points at 0 because scripted seats do not respond to the economic incentives; P1-A′ is non-zero because its partner is a committed competitor.</text>
+<text x="500.0" y="618" font-size="11" text-anchor="middle" font-weight="normal" fill="#555" font-family="Helvetica,Arial,sans-serif">Source: sweeps/reference-bands.yaml (1,000 runs per cell). Model-generated, no LLM.</text>
+</svg>

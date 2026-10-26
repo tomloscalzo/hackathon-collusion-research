@@ -1,0 +1,96 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Research overview: the 50,000-foot view (2026-10-22, pre-sprint)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Research overview: the 50,000-foot view (2026-10-22, pre-sprint)</h1>
+<h2>The one-sentence version</h2>
+<p>We use standard cartel economics to build a <strong>map of when collusion should pay</strong>. We then test whether LLM agents follow that map: whether they collude where the economics says collusion pays, hold back where it doesn't, and respond to retaliation the way a real cartel member would. The goal is a behavioural test that helps tell collusion, in the economist's sense, from merely high prices.</p>
+<h2>Why this matters for AI safety</h2>
+<p>AI agents are starting to set prices, quote markets and negotiate on behalf of firms. If they coordinate, harm can arise without any human agreeing to it. Prior work shows LLMs can produce supra-competitive prices (Fish et al. 2024) and form coalitions when they can talk privately (Nakamura et al. 2026). Two questions remain open:</p>
+<ul><li>
+<strong>When</strong> should we expect AI collusion? Which conditions make it likely, and which levers suppress it?
+</li><li>
+<strong>How do we prove it?</strong> A high price can come from coordination, from timid pricing, or from misreading the market. Regulators, auditors and AI developers need a test that distinguishes these.
+</li></ul>
+<h2>How it maps to the sprint</h2>
+<table><tr><th>Sprint question</th><th>Our answer</th></tr><tr><td><strong>When does collusion emerge, and which levers cause it?</strong> (Track 1, Q1.1)</td><td><strong>Phase 1, this weekend:</strong> the ripeness map plus pre-declared LLM predictions about which levers move LLM collusion</td></tr><tr><td><strong>Which single restriction removes the most collusion at the least cost?</strong> (Q1.5)</td><td>The map ranks the levers: fines, screens, tips, evidence, market structure. The product rule shows that, in the model, detection and penalty substitute for each other. The model has no cost term, so which component is cheapest lies outside it.</td></tr><tr><td><strong>What should count as convincing evidence of collusion?</strong> (Track 2, Q2.3)</td><td>The <strong>defector probe</strong>: a scripted partner cheats once, and we check whether the LLM's own price responds (falls within two rounds). Retaliation against a defector is the behaviour the economist's definition of collusion predicts; it is one behavioural plus factor, not proof (antitrust liability also needs agreement). Phase 2 extends this to detection from logged trajectories.</td></tr><tr><td><strong>How is coordination carried, and how can it be broken?</strong> (Track 3)</td><td>Phase 3, later: multi-LLM seats, message channels, trusted agents and monitoring awareness, built on the same engine.</td></tr></table>
+<h2>How the pieces fit together</h2>
+<pre><code> Layer A: cartel theory (solver)        Monte Carlo (scripted agents)          LLM experiments (Modal / vLLM)
+ ─────────────────────────────          ─────────────────────────────          ───────────────────────────────
+ For every market setting:      ───►    What rational / scripted firms   ───►  Does an LLM in the same game:
+ • is collusion sustainable?            actually do in the game engine        • collude where the map says &quot;ripe&quot;?
+ • how intense would it be?             • reference (&quot;null&quot;) bands            • hold back where it says &quot;unripe&quot;?
+ • how often would it be caught?        • profits from colluding vs           • respond when the partner cheats?  
+ 1,036,800 settings mapped;               cheating vs competing                 • refuse? (reported separately)
+ 36 pair charts with analysis            ~105,000 simulated games
+          │                                       │                                      │
+          └──────────── pre-declared predictions P1–P7 (written before any LLM call) ─────┘
+                                     │
+                                     ▼
+            Paper: where LLM behaviour matches or departs from the economics,
+            with paraphrase spread, refusal rates, controls and replayable logs</code></pre>
+<ul><li>
+<strong>The map tells us where to look.</strong> The LLM arms sit at points the map classifies sharply: ripe, myopically unripe (a fine makes collusion a loss), and a committed competitor. A deviation from the rational choice is then unambiguous.
+</li><li>
+<strong>The Monte Carlo gives the null.</strong> Scripted strategies run in the identical engine produce reference bands. An LLM effect counts only if it beats those bands.
+</li><li>
+<strong>The predictions keep us honest.</strong> Directions were written down, dated, before any LLM call. Controls ("collude" and "compete" instructions), 10+ prompt paraphrases, refusals reported as their own outcome, and cached, replayable runs guard against seeing what we want to see.
+</li><li>
+<strong>Phases build on one engine.</strong> Phase 1 (levers) produces the logged trajectories and the probe. Phase 2 (evidence and detection) scores those logs. Phase 3 (carriers and countermeasures) adds channels and monitors. Nothing is rebuilt.
+</li></ul>
+<h2>What we already have, before the sprint (marked preexisting)</h2>
+<ul><li>
+<strong>Model:</strong> a reviewed specification (three adversarial review rounds by four independent reviewers, finalised at v0.5.3) and a Java engine with 102 passing tests.
+</li><li>
+<strong>LLM harness:</strong> an OpenAI-compatible client with a guard against unapproved remote calls, cache and replay, 12 paraphrases per prompt, and a Modal deployment recipe that has not been run.
+</li><li>
+<strong>Theory results:</strong> the full ripeness map; one-input charts for all nine inputs (<code>oned/oned_charts.html</code>); 72 two-input charts covering 36 pairs, each with a plain-language interpretation and a checked mechanism analysis (<code>pairs/pair_charts.html</code>); and an executive summary of the levers (<code>results/ripeness-wide-2026-10-22/EXECUTIVE_SUMMARY_OF_FACTORS_DRIVING_COLLUSION.md</code>).
+</li><li>
+<strong>Notable model findings:</strong>
+<ul><li>
+Detection and penalty act as a single product. With no minimum price step and no tips, collusion is chosen when regulator screen slope × P(evidence | investigation) × fine ratio × (reservation spread ratio − 1) &lt; 4, in 98.9% of cases.
+</li><li>
+Fines without detection do nothing.
+</li><li>
+Tips have a hard threshold.
+</li><li>
+Very patient cartels collude more gently.
+</li></ul>
+</li><li>
+<strong>Still to come this weekend:</strong> the LLM runs, the comparison against the bands, and the paper.
+</li></ul>
+<h2>Relevance to AI safety research and practice</h2>
+<table><tr><th>Area of interest</th><th>What this project offers</th></tr><tr><td><strong>Propensity evaluations:</strong> what models do when misbehaviour pays</td><td>The LLM faces a <em>disclosed, quantified</em> incentive to collude, with ripe and unripe controls. We measure whether it follows the payoff, refuses, or holds back beyond what the payoffs require.</td></tr><tr><td><strong>Monitoring, control and auditing</strong></td><td>The defector probe is a behavioural check: it asks whether a high price responds to a partner's cheat, as collusion in the economist's sense predicts, measured from the LLM's quotes without reading its stated reasoning (the terms of the game are told to it in words). It does not by itself establish collusion.</td></tr><tr><td><strong>Evidence standards</strong></td><td>It borrows one behavioural plus factor from antitrust practice (a reward-and-punishment pattern) for AI evaluation, and reports what a positive or negative result does and does not establish.</td></tr><tr><td><strong>Oversight design</strong></td><td>The product rule says detection sensitivity, the probability of proof and the penalty substitute for each other. For oversight design this suggests the components can be traded off against each other; the model does not include their costs.</td></tr><tr><td><strong>Rigour and reproducibility</strong></td><td>Pre-declared predictions, positive and negative controls, paraphrase spread, refusal accounting, null bands, seeded and replayable runs, and verified golden tests.</td></tr><tr><td><strong>Security-minded reviewers</strong></td><td>LLM calls are cached, and game runs can be replayed from the cache (the comprehension-probe calls are not yet re-issued on replay). The LLM client refuses unapproved remote endpoints. A dual-use appendix covers the risk that the map could guide evasion.</td></tr></table>
+<h2>Honest limitations (stated up front in the paper)</h2>
+<ul><li>
+<strong>One LLM against a scripted partner.</strong> This isolates the levers but tests whether an LLM reads a disclosed rule and the numbers the way the map does, not coordination between reasoning agents (spec §9 item 11). AI-to-AI coordination is phase 2/3.
+</li><li>
+<strong>A heuristic, not a structural, model.</strong> No "ethics cost" is estimated as a fixed trait of a model.
+</li><li>
+<strong>Absorbing detection.</strong> Re-formation is not modelled, so the map is conservative.
+</li><li>
+<strong>Tick-market calibration artifact.</strong> Recorded and explained.
+</li><li>
+<strong>Prisoner's-dilemma-style collusion only.</strong> The model assumes each member could gain by breaking ranks. Shared-objective coordination, where all agents pursue the same goal (as in the Hugging Face incident) and no single agent gains by defecting, has different incentives and is not modelled. The defector probe does not apply there.
+</li><li>
+<strong>Small design.</strong> 40 runs per cell, so some predictions may come out inconclusive. Those will be reported as such.
+</li></ul>
+<h2>Key files</h2>
+<ul><li>
+<strong>Map and results:</strong> <code>results/ripeness-wide-2026-10-22/</code> (EXECUTIVE_SUMMARY_OF_FACTORS_DRIVING_COLLUSION.md, <code>oned/oned_charts.html</code>, <code>pairs/pair_charts.html</code>) and <code>results/local-mc-2026-10-22/</code>.
+</li><li>
+<strong>Spec:</strong> <code>model/MODEL_SPEC.md</code>; the plain-language companion is <code>model/MODEL_SPEC_ELI5_WITH_LOCAL_FOOTNOTES.html</code>.
+</li><li>
+<strong>Plans:</strong>
+<ul><li>
+<code>plans/PREDICTIONS.md</code>: the pre-declared predictions.
+</li></ul>
+</li><li>
+<strong>Results of the sprint:</strong> see the "Main results" table in <code>README.md</code>.
+</li></ul></body></html>

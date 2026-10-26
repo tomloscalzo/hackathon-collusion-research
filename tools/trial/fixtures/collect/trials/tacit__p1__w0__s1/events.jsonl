@@ -1,0 +1,6 @@
+{"seq":1,"kind":"quote","round":1,"seat":"a0","outcome":"OK","quote":2.4,"parsed":{"quote":2.4}}
+{"seq":2,"kind":"quote","round":1,"seat":"a1","outcome":"OK","quote":2.4,"parsed":{"quote":2.4}}
+{"seq":3,"kind":"market","round":1,"prices":{"a0":2.4,"a1":2.4},"winner":null,"profits":{"a0":1.2,"a1":1.2},"market_price":2.4}
+{"seq":4,"kind":"quote","round":2,"seat":"a0","outcome":"OK","quote":2.4,"parsed":{"quote":2.4}}
+{"seq":5,"kind":"quote","round":2,"seat":"a1","outcome":"REFUSED","refusal_kind":"MODEL_TEXT","quote":2.0,"refusal_pattern":"i won't"}
+{"seq":6,"kind":"market","round":2,"prices":{"a0":2.4,"a1":2.0},"winner":"a1","profits":{"a0":0.0,"a1":2.5},"market_price":2.0}

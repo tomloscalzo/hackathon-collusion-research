@@ -1,0 +1,11 @@
+arm,rule,games,reasoning_passages,passages_matching,pooled_share,mean_game_share,validated
+d-cot-monitor-0,monitor keywords,16,825,428,0.5188,0.5789,no
+d-cot-monitor-a,monitor keywords,20,1939,842,0.4342,0.4602,no
+d-cot-monitor-b,monitor keywords,20,1779,606,0.3406,0.3590,no
+headline-chat,monitor keywords,20,905,71,0.0785,0.0982,no
+headline-chat,persona keywords,20,905,13,0.0144,0.0123,no
+headline-chat,placebo-persona keywords,20,905,34,0.0376,0.0369,no
+moral-placebo,persona keywords,20,1080,188,0.1741,0.1659,no
+moral-placebo,placebo-persona keywords,20,1080,408,0.3778,0.3580,no
+moral-prime,persona keywords,20,1206,1150,0.9536,0.9567,no
+moral-prime-b,persona keywords,20,1314,1273,0.9688,0.9688,no

@@ -1,0 +1,6 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b (empty_talk=0 games only),start-5tick - headline-chat (p3),market_price_mean,9,1.834656,2.363331,-0.528676,-0.807907,-0.245967
+gpt-oss-20b (empty_talk=0 games only),start-5tick - headline-chat (p3),price_index,9,0.417322,0.681667,-0.264344,-0.407022,-0.127989
+gpt-oss-20b (empty_talk=0 games only),start-5tick - headline-chat (p3),profit_gain_index,9,0.549608,0.883554,-0.333946,-0.519902,-0.168899
+gpt-oss-20b (empty_talk=0 games only),start-5tick - headline-chat (p3),competitive_share,9,0.242035,0.352637,-0.110602,-0.291995,0.047864
+gpt-oss-20b (empty_talk=0 games only),start-5tick - headline-chat (p3),matching_share,9,0.372762,0.478800,-0.106038,-0.313283,0.046093

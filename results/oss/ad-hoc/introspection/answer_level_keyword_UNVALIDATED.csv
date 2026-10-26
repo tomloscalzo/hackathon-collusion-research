@@ -1,0 +1,6 @@
+arm,answers,empty,truncated,mean_words,mention_agreement_kw,denial_kw
+r2f-confidant,456,0,0,143.7,0.741,0.000
+r3f-public,456,0,0,106.2,0.649,0.059
+r2s-confidant,460,0,0,51.9,0.572,0.000
+r3s-public,489,0,0,41.3,0.462,0.000
+r4-announced,254,0,0,130.7,0.657,0.004

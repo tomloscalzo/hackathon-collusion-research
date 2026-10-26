@@ -1,0 +1,3 @@
+run,quantity,value,null_expectation,n_games,note
+neutral,share of within-cell variance of game gain explained by wording (eta^2),0.3096571635627099,0.210989010989011,479,"wording has 5 levels with 4 games each per cell; seed identifies the pair, so seed effects cannot be separated from game noise within one cell, only across cells"
+anchored,share of within-cell variance of game gain explained by wording (eta^2),0.30882614970518796,0.21052631578947367,480,"wording has 5 levels with 4 games each per cell; seed identifies the pair, so seed effects cannot be separated from game noise within one cell, only across cells"

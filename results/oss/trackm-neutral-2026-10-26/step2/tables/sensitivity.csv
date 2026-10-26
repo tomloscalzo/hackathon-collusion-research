@@ -1,0 +1,41 @@
+est,lo,hi,p,n,sd,ci_method,set,contrast,outcome
+0.3721,0.1648,0.5765,0.0006,20,0.5808,stratified_by_wording,primary (declared arms only),headline-chat p1 minus headline-tacit p1,Average absolute spread
+-0.3019,-0.5561,-0.03407,0.028,20,0.6389,stratified_by_wording,primary (declared arms only),headline-chat p5 minus headline-chat p1,Average absolute spread
+0.3068,0.1896,0.4181,9.999e-05,20,0.3132,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p1 minus headline-tacit p1,Average absolute spread
+-0.3794,-0.5058,-0.2427,9.999e-05,20,0.4115,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p5 minus headline-chat p1,Average absolute spread
+0.4898,0.1789,0.8132,0.001,11,0.6287,stratified_by_wording,games with no empty talk turn read as done,headline-chat p1 minus headline-tacit p1,Average absolute spread
+-0.3335,-0.761,0.1415,0.1648,9,0.763,stratified_by_wording,games with no empty talk turn read as done,headline-chat p5 minus headline-chat p1,Average absolute spread
+0.2443,0.03885,0.4624,0.0204,13,0.4108,across_wordings,games with no truncated call,headline-chat p1 minus headline-tacit p1,Average absolute spread
+-0.416,-0.666,-0.1915,9.999e-05,15,0.6109,stratified_by_wording,games with no truncated call,headline-chat p5 minus headline-chat p1,Average absolute spread
+0.186,0.08418,0.289,0.0002,20,0.2904,stratified_by_wording,primary (declared arms only),headline-chat p1 minus headline-tacit p1,Price index
+-0.151,-0.2832,-0.01695,0.0262,20,0.3194,stratified_by_wording,primary (declared arms only),headline-chat p5 minus headline-chat p1,Price index
+0.1534,0.09314,0.2092,9.999e-05,20,0.1566,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p1 minus headline-tacit p1,Price index
+-0.1897,-0.2518,-0.1201,9.999e-05,20,0.2058,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p5 minus headline-chat p1,Price index
+0.2449,0.09121,0.4058,0.0008,11,0.3143,stratified_by_wording,games with no empty talk turn read as done,headline-chat p1 minus headline-tacit p1,Price index
+-0.1668,-0.3797,0.06771,0.1658,9,0.3815,stratified_by_wording,games with no empty talk turn read as done,headline-chat p5 minus headline-chat p1,Price index
+0.1221,0.02021,0.2311,0.0204,13,0.2054,across_wordings,games with no truncated call,headline-chat p1 minus headline-tacit p1,Price index
+-0.208,-0.3313,-0.09229,9.999e-05,15,0.3054,stratified_by_wording,games with no truncated call,headline-chat p5 minus headline-chat p1,Price index
+0.1979,0.07215,0.3236,0.0018,20,0.3527,stratified_by_wording,primary (declared arms only),headline-chat p1 minus headline-tacit p1,Profit gain index
+-0.193,-0.3353,-0.03867,0.0124,20,0.367,stratified_by_wording,primary (declared arms only),headline-chat p5 minus headline-chat p1,Profit gain index
+0.1533,0.07781,0.2216,0.0002,20,0.1926,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p1 minus headline-tacit p1,Profit gain index
+-0.2257,-0.3054,-0.1378,9.999e-05,20,0.2574,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p5 minus headline-chat p1,Profit gain index
+0.2687,0.08602,0.4592,0.0022,11,0.3779,stratified_by_wording,games with no empty talk turn read as done,headline-chat p1 minus headline-tacit p1,Profit gain index
+-0.239,-0.4789,0.02411,0.0754,9,0.4263,stratified_by_wording,games with no empty talk turn read as done,headline-chat p5 minus headline-chat p1,Profit gain index
+0.1188,0.01061,0.2335,0.031,13,0.2161,across_wordings,games with no truncated call,headline-chat p1 minus headline-tacit p1,Profit gain index
+-0.2547,-0.394,-0.1218,9.999e-05,15,0.3541,stratified_by_wording,games with no truncated call,headline-chat p5 minus headline-chat p1,Profit gain index
+-0.255,-0.3339,-0.1758,9.999e-05,20,0.2145,stratified_by_wording,primary (declared arms only),headline-chat p1 minus headline-tacit p1,Competitive share
+0.02931,-0.06906,0.1238,0.527,20,0.2914,stratified_by_wording,primary (declared arms only),headline-chat p5 minus headline-chat p1,Competitive share
+-0.2586,-0.3223,-0.1909,9.999e-05,20,0.1818,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p1 minus headline-tacit p1,Competitive share
+0.04368,-0.018,0.111,0.1738,20,0.1737,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p5 minus headline-chat p1,Competitive share
+-0.2192,-0.321,-0.1181,9.999e-05,11,0.2132,stratified_by_wording,games with no empty talk turn read as done,headline-chat p1 minus headline-tacit p1,Competitive share
+0.124,0.03692,0.2138,9.999e-05,9,0.2264,stratified_by_wording,games with no empty talk turn read as done,headline-chat p5 minus headline-chat p1,Competitive share
+-0.2354,-0.3305,-0.1413,9.999e-05,13,0.1821,across_wordings,games with no truncated call,headline-chat p1 minus headline-tacit p1,Competitive share
+0.03115,-0.09361,0.1429,0.592,15,0.3069,stratified_by_wording,games with no truncated call,headline-chat p5 minus headline-chat p1,Competitive share
+0.2487,0.1538,0.3428,9.999e-05,20,0.2353,stratified_by_wording,primary (declared arms only),headline-chat p1 minus headline-tacit p1,Matching share
+-0.08368,-0.1871,0.008598,0.0836,20,0.2827,stratified_by_wording,primary (declared arms only),headline-chat p5 minus headline-chat p1,Matching share
+0.2231,0.1462,0.2997,9.999e-05,20,0.1982,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p1 minus headline-tacit p1,Matching share
+-0.09709,-0.1771,-0.02352,0.0058,20,0.2183,stratified_by_wording,headline pooled with the build-bug replicates (SENSITIVITY ONLY),headline-chat p5 minus headline-chat p1,Matching share
+0.2299,0.09175,0.3696,0.0004,11,0.2561,stratified_by_wording,games with no empty talk turn read as done,headline-chat p1 minus headline-tacit p1,Matching share
+-0.1044,-0.1586,-0.05384,9.999e-05,9,0.1976,stratified_by_wording,games with no empty talk turn read as done,headline-chat p5 minus headline-chat p1,Matching share
+0.1893,0.08321,0.2932,0.0004,13,0.202,across_wordings,games with no truncated call,headline-chat p1 minus headline-tacit p1,Matching share
+-0.06293,-0.1967,0.05965,0.3512,15,0.3201,stratified_by_wording,games with no truncated call,headline-chat p5 minus headline-chat p1,Matching share

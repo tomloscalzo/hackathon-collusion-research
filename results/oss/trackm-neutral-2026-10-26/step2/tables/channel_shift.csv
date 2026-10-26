@@ -1,0 +1,6 @@
+arm,d_pgi,d_price,d_explicit_round_share,d_explicit_round_share_ci,d_conv_flag,d_price_flag,channel_shift,n
+d-cot-monitor-a,-0.1319,-0.1298,0.01988,"0.02 [0.01, 0.03]",-0.3158,0,False,19
+r4-announced,0.0904,0.09645,0.004642,"0.00 [-0.01, 0.02]",0,0,False,11
+wd-notice-only,-0.02448,-0.02199,-0.001622,"-0.00 [-0.02, 0.01]",0,0,False,19
+wd-noncomp,-0.04406,-0.02488,-0.002838,"-0.00 [-0.02, 0.02]",0,0,False,20
+wd-ask-noreport,0.04019,0.03807,-0.04588,"-0.05 [-0.09, -0.01]",-0.05263,0,False,19

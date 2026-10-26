@@ -1,0 +1,1730 @@
+{
+ "figs": [
+  {
+   "file": "F01_1var_small_1.png",
+   "kind": "1var",
+   "group": "1 Agreement flags and detectors",
+   "title": "1-variable means, Agreement flags and detectors: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each agreement flags and detectors feature by five inputs (cell = mean and n games where the feature is defined; grey = no data). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F02_1var_arm_1.png",
+   "kind": "1var",
+   "group": "1 Agreement flags and detectors",
+   "title": "1-variable means, Agreement flags and detectors: by arm",
+   "caption": "Mean of each agreement flags and detectors feature by arm (cell = mean and n games; grey = feature undefined for that arm). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F03_1var_seed_1.png",
+   "kind": "1var",
+   "group": "1 Agreement flags and detectors",
+   "title": "1-variable means, Agreement flags and detectors: by seed",
+   "caption": "Mean of each agreement flags and detectors feature by seed (cell = mean and n games; grey = feature undefined for that seed). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F04_1var_small_2.png",
+   "kind": "1var",
+   "group": "2 Intent class",
+   "title": "1-variable means, Intent class: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each intent class feature by five inputs (cell = mean and n games where the feature is defined; grey = no data). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F05_1var_arm_2.png",
+   "kind": "1var",
+   "group": "2 Intent class",
+   "title": "1-variable means, Intent class: by arm",
+   "caption": "Mean of each intent class feature by arm (cell = mean and n games; grey = feature undefined for that arm). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F06_1var_seed_2.png",
+   "kind": "1var",
+   "group": "2 Intent class",
+   "title": "1-variable means, Intent class: by seed",
+   "caption": "Mean of each intent class feature by seed (cell = mean and n games; grey = feature undefined for that seed). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F07_1var_small_3.png",
+   "kind": "1var",
+   "group": "3 Punishment, wars and timing",
+   "title": "1-variable means, Punishment, wars and timing: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each punishment, wars and timing feature by five inputs (cell = mean and n games where the feature is defined; grey = no data). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F08_1var_arm_3.png",
+   "kind": "1var",
+   "group": "3 Punishment, wars and timing",
+   "title": "1-variable means, Punishment, wars and timing: by arm",
+   "caption": "Mean of each punishment, wars and timing feature by arm (cell = mean and n games; grey = feature undefined for that arm). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F09_1var_seed_3.png",
+   "kind": "1var",
+   "group": "3 Punishment, wars and timing",
+   "title": "1-variable means, Punishment, wars and timing: by seed",
+   "caption": "Mean of each punishment, wars and timing feature by seed (cell = mean and n games; grey = feature undefined for that seed). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F10_1var_small_4.png",
+   "kind": "1var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "1-variable means, Play quality (comprehension audit): communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each play quality (comprehension audit) feature by five inputs (cell = mean and n games where the feature is defined; grey = no data)."
+  },
+  {
+   "file": "F11_1var_arm_4.png",
+   "kind": "1var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "1-variable means, Play quality (comprehension audit): by arm",
+   "caption": "Mean of each play quality (comprehension audit) feature by arm (cell = mean and n games; grey = feature undefined for that arm)."
+  },
+  {
+   "file": "F12_1var_seed_4.png",
+   "kind": "1var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "1-variable means, Play quality (comprehension audit): by seed",
+   "caption": "Mean of each play quality (comprehension audit) feature by seed (cell = mean and n games; grey = feature undefined for that seed)."
+  },
+  {
+   "file": "F13_1var_small_5.png",
+   "kind": "1var",
+   "group": "5 Self-report scores (D set)",
+   "title": "1-variable means, Self-report scores (D set): communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each self-report scores (d set) feature by five inputs (cell = mean and n games where the feature is defined; grey = no data)."
+  },
+  {
+   "file": "F14_1var_arm_5.png",
+   "kind": "1var",
+   "group": "5 Self-report scores (D set)",
+   "title": "1-variable means, Self-report scores (D set): by arm",
+   "caption": "Mean of each self-report scores (d set) feature by arm (cell = mean and n games; grey = feature undefined for that arm)."
+  },
+  {
+   "file": "F15_1var_seed_5.png",
+   "kind": "1var",
+   "group": "5 Self-report scores (D set)",
+   "title": "1-variable means, Self-report scores (D set): by seed",
+   "caption": "Mean of each self-report scores (d set) feature by seed (cell = mean and n games; grey = feature undefined for that seed)."
+  },
+  {
+   "file": "F16_1var_small_6.png",
+   "kind": "1var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "1-variable means, Introspection and say-vs-do: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each introspection and say-vs-do feature by five inputs (cell = mean and n games where the feature is defined; grey = no data). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F17_1var_arm_6.png",
+   "kind": "1var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "1-variable means, Introspection and say-vs-do: by arm",
+   "caption": "Mean of each introspection and say-vs-do feature by arm (cell = mean and n games; grey = feature undefined for that arm). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F18_1var_seed_6.png",
+   "kind": "1var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "1-variable means, Introspection and say-vs-do: by seed",
+   "caption": "Mean of each introspection and say-vs-do feature by seed (cell = mean and n games; grey = feature undefined for that seed). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F19_1var_small_7.png",
+   "kind": "1var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "1-variable means, Reasoning reading (D set, thinking on): communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each reasoning reading (d set, thinking on) feature by five inputs (cell = mean and n games where the feature is defined; grey = no data). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F20_1var_arm_7.png",
+   "kind": "1var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "1-variable means, Reasoning reading (D set, thinking on): by arm",
+   "caption": "Mean of each reasoning reading (d set, thinking on) feature by arm (cell = mean and n games; grey = feature undefined for that arm). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F21_1var_seed_7.png",
+   "kind": "1var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "1-variable means, Reasoning reading (D set, thinking on): by seed",
+   "caption": "Mean of each reasoning reading (d set, thinking on) feature by seed (cell = mean and n games; grey = feature undefined for that seed). UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F22_1var_small_8.png",
+   "kind": "1var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "1-variable means, Paired contrasts to the control game: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each paired contrasts to the control game feature by five inputs (cell = mean and n games where the feature is defined; grey = no data)."
+  },
+  {
+   "file": "F23_1var_arm_8.png",
+   "kind": "1var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "1-variable means, Paired contrasts to the control game: by arm",
+   "caption": "Mean of each paired contrasts to the control game feature by arm (cell = mean and n games; grey = feature undefined for that arm)."
+  },
+  {
+   "file": "F24_1var_seed_8.png",
+   "kind": "1var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "1-variable means, Paired contrasts to the control game: by seed",
+   "caption": "Mean of each paired contrasts to the control game feature by seed (cell = mean and n games; grey = feature undefined for that seed)."
+  },
+  {
+   "file": "F25_1var_small_9.png",
+   "kind": "1var",
+   "group": "9 QC features",
+   "title": "1-variable means, QC features: communication, penalty point, thinking, wording, planned length",
+   "caption": "Mean of each qc features feature by five inputs (cell = mean and n games where the feature is defined; grey = no data)."
+  },
+  {
+   "file": "F26_1var_arm_9.png",
+   "kind": "1var",
+   "group": "9 QC features",
+   "title": "1-variable means, QC features: by arm",
+   "caption": "Mean of each qc features feature by arm (cell = mean and n games; grey = feature undefined for that arm)."
+  },
+  {
+   "file": "F27_1var_seed_9.png",
+   "kind": "1var",
+   "group": "9 QC features",
+   "title": "1-variable means, QC features: by seed",
+   "caption": "Mean of each qc features feature by seed (cell = mean and n games; grey = feature undefined for that seed)."
+  },
+  {
+   "file": "F28_2var_comm_x_penalty_1_1.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x penalty_point",
+   "caption": "Mean (and n games) of explicit_proposal_any, explicit_agreement_any, explicit_threat_any, explicit_agreement_flag, agreement_precedes_high_price, conversation_detector_flag_any by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F29_2var_comm_x_penalty_1_2.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x penalty_point",
+   "caption": "Mean (and n games) of price_detector_flag_any, explicit_proposal_first_round, explicit_agreement_first_round, explicit_threat_first_round, conversation_detector_flag_rounds, conversation_detector_first_flag_round by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F30_2var_comm_x_penalty_1_3.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x penalty_point",
+   "caption": "Mean (and n games) of conversation_detector_lag_to_high_price, price_detector_flag_rounds, price_detector_first_flag_round, messages_per_round, words_total by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F31_2var_comm_x_penalty_2_1.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: communication x penalty_point",
+   "caption": "Mean (and n games) of collusive_game, emergent_collusion, intent_explicit, intent_none, intent_no_text, collusive_firm_games by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F32_2var_comm_x_penalty_2_2.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: communication x penalty_point",
+   "caption": "Mean (and n games) of explicit_round_share, strategic_round_share, none_round_share by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F33_2var_comm_x_penalty_3_1.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: communication x penalty_point",
+   "caption": "Mean (and n games) of punishment_count, war_length, war_after_first_undercut, round1_both_floor, coalition_punished, time_to_high_price by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F34_2var_comm_x_penalty_3_2.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: communication x penalty_point",
+   "caption": "Mean (and n games) of high_duration, first_undercut_round, leader_first_raise_round, defect_round, round1_quote_mean, quote_gap_mean_mean by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F35_2var_comm_x_penalty_3_3.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: communication x penalty_point",
+   "caption": "Mean (and n games) of profit_gap_mean, profit_gain_index_gap_mean, equal_quote_share_mean, threat_then_punish_n by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F36_2var_comm_x_penalty_4_1.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): communication x penalty_point",
+   "caption": "Mean (and n games) of br_rate, br_rate_excl_floor_rounds, at_br_with_fine_rate, at_br_expost_rate, dominated_rate, hold_rate by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F37_2var_comm_x_penalty_4_2.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): communication x penalty_point",
+   "caption": "Mean (and n games) of match_rate, other_undercut_rate, rival_floor_quote_floor_rate, printed_quote_share, quote_eq_rival_last_share, quote_eq_own_last_share by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F38_2var_comm_x_penalty_4_3.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): communication x penalty_point",
+   "caption": "Mean (and n games) of novel_quote_share, react_lower_after_undercut, react_reach_after_undercut, mean_regret_vs_prev by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F39_2var_comm_x_penalty_5_1.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): communication x penalty_point",
+   "caption": "Mean (and n games) of score_mean, score_first, score_last, score_mean_first_half, score_mean_second_half, score_min by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F40_2var_comm_x_penalty_5_2.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): communication x penalty_point",
+   "caption": "Mean (and n games) of score_max by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F41_2var_comm_x_penalty_6_1.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: communication x penalty_point",
+   "caption": "Mean (and n games) of answer_mentions_coordination_confidant_share, answer_mentions_coordination_public_share, candour_confidant, candour_public, invented_confession_confidant, invented_confession_public by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F42_2var_comm_x_penalty_6_2.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: communication x penalty_point",
+   "caption": "Mean (and n games) of evasive_answer_share, understated_answer_share, hold_after_agreement_share, answer_words_confidant_mean, answer_words_public_mean, agreed_then_undercut_rounds by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F43_2var_comm_x_penalty_6_3.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: communication x penalty_point",
+   "caption": "Mean (and n games) of held_after_agreement_rounds by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F44_2var_comm_x_penalty_7_1.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): communication x penalty_point",
+   "caption": "Mean (and n games) of reasoning_mentions_monitor_share, reasoning_mentions_monitor_share_novel, reasoning_mentions_shutdown_share, reasoning_mentions_shutdown_share_echo, reasoning_mentions_shutdown_share_novel, cot_threat_mention_share by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F45_2var_comm_x_penalty_7_2.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): communication x penalty_point",
+   "caption": "Mean (and n games) of cot_rule_aware_share, cot_plans_innocent_wording_share, cot_indirect_route_share, cot_independent_share, reasoning_words_total by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F46_2var_comm_x_penalty_8.png",
+   "kind": "2var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "2-variable means, Paired contrasts to the control game: communication x penalty_point",
+   "caption": "Mean (and n games) of delta_profit_gain_index, delta_price_index, delta_competitive_share, delta_explicit_round_share by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F47_2var_comm_x_penalty_9_1.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: communication x penalty_point",
+   "caption": "Mean (and n games) of parse_failures, truncations, imputed, truncated_talk, word_capped_talk, clamped_calls by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F48_2var_comm_x_penalty_9_2.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: communication x penalty_point",
+   "caption": "Mean (and n games) of truncated_calls_original, max_prompt_tokens, imputed_round_share, is_rerun by communication rows and penalty_point columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F49_2var_comm_x_thinking_1_1.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x thinking",
+   "caption": "Mean (and n games) of explicit_proposal_any, explicit_agreement_any, explicit_threat_any, explicit_agreement_flag, agreement_precedes_high_price, conversation_detector_flag_any, price_detector_flag_any, explicit_proposal_first_round by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F50_2var_comm_x_thinking_1_2.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x thinking",
+   "caption": "Mean (and n games) of explicit_agreement_first_round, explicit_threat_first_round, conversation_detector_flag_rounds, conversation_detector_first_flag_round, conversation_detector_lag_to_high_price, price_detector_flag_rounds, price_detector_first_flag_round, messages_per_round by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F51_2var_comm_x_thinking_1_3.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: communication x thinking",
+   "caption": "Mean (and n games) of words_total by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F52_2var_comm_x_thinking_2_1.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: communication x thinking",
+   "caption": "Mean (and n games) of collusive_game, emergent_collusion, intent_explicit, intent_none, intent_no_text, collusive_firm_games, explicit_round_share, strategic_round_share by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F53_2var_comm_x_thinking_2_2.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: communication x thinking",
+   "caption": "Mean (and n games) of none_round_share by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F54_2var_comm_x_thinking_3_1.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: communication x thinking",
+   "caption": "Mean (and n games) of punishment_count, war_length, war_after_first_undercut, round1_both_floor, coalition_punished, time_to_high_price, high_duration, first_undercut_round by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F55_2var_comm_x_thinking_3_2.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: communication x thinking",
+   "caption": "Mean (and n games) of leader_first_raise_round, defect_round, round1_quote_mean, quote_gap_mean_mean, profit_gap_mean, profit_gain_index_gap_mean, equal_quote_share_mean, threat_then_punish_n by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F56_2var_comm_x_thinking_4_1.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): communication x thinking",
+   "caption": "Mean (and n games) of br_rate, br_rate_excl_floor_rounds, at_br_with_fine_rate, at_br_expost_rate, dominated_rate, hold_rate, match_rate, other_undercut_rate by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F57_2var_comm_x_thinking_4_2.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): communication x thinking",
+   "caption": "Mean (and n games) of rival_floor_quote_floor_rate, printed_quote_share, quote_eq_rival_last_share, quote_eq_own_last_share, novel_quote_share, react_lower_after_undercut, react_reach_after_undercut, mean_regret_vs_prev by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F58_2var_comm_x_thinking_5.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): communication x thinking",
+   "caption": "Mean (and n games) of score_mean, score_first, score_last, score_mean_first_half, score_mean_second_half, score_min, score_max by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F59_2var_comm_x_thinking_6_1.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: communication x thinking",
+   "caption": "Mean (and n games) of answer_mentions_coordination_confidant_share, answer_mentions_coordination_public_share, candour_confidant, candour_public, invented_confession_confidant, invented_confession_public, evasive_answer_share, understated_answer_share by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F60_2var_comm_x_thinking_6_2.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: communication x thinking",
+   "caption": "Mean (and n games) of hold_after_agreement_share, answer_words_confidant_mean, answer_words_public_mean, agreed_then_undercut_rounds, held_after_agreement_rounds by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F61_2var_comm_x_thinking_7_1.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): communication x thinking",
+   "caption": "Mean (and n games) of reasoning_mentions_monitor_share, reasoning_mentions_monitor_share_novel, reasoning_mentions_shutdown_share, reasoning_mentions_shutdown_share_echo, reasoning_mentions_shutdown_share_novel, cot_threat_mention_share, cot_rule_aware_share, cot_plans_innocent_wording_share by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F62_2var_comm_x_thinking_7_2.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): communication x thinking",
+   "caption": "Mean (and n games) of cot_indirect_route_share, cot_independent_share, reasoning_words_total by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F63_2var_comm_x_thinking_8.png",
+   "kind": "2var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "2-variable means, Paired contrasts to the control game: communication x thinking",
+   "caption": "Mean (and n games) of delta_profit_gain_index, delta_price_index, delta_competitive_share, delta_explicit_round_share by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F64_2var_comm_x_thinking_9_1.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: communication x thinking",
+   "caption": "Mean (and n games) of parse_failures, truncations, imputed, truncated_talk, word_capped_talk, clamped_calls, truncated_calls_original, max_prompt_tokens by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F65_2var_comm_x_thinking_9_2.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: communication x thinking",
+   "caption": "Mean (and n games) of imputed_round_share, is_rerun by communication rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F66_2var_penalty_x_thinking_1_1.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: penalty_point x thinking",
+   "caption": "Mean (and n games) of explicit_proposal_any, explicit_agreement_any, explicit_threat_any, explicit_agreement_flag, agreement_precedes_high_price, conversation_detector_flag_any, price_detector_flag_any, explicit_proposal_first_round by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F67_2var_penalty_x_thinking_1_2.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: penalty_point x thinking",
+   "caption": "Mean (and n games) of explicit_agreement_first_round, explicit_threat_first_round, conversation_detector_flag_rounds, conversation_detector_first_flag_round, conversation_detector_lag_to_high_price, price_detector_flag_rounds, price_detector_first_flag_round, messages_per_round by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F68_2var_penalty_x_thinking_1_3.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: penalty_point x thinking",
+   "caption": "Mean (and n games) of words_total by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F69_2var_penalty_x_thinking_2_1.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: penalty_point x thinking",
+   "caption": "Mean (and n games) of collusive_game, emergent_collusion, intent_explicit, intent_none, intent_no_text, collusive_firm_games, explicit_round_share, strategic_round_share by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F70_2var_penalty_x_thinking_2_2.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: penalty_point x thinking",
+   "caption": "Mean (and n games) of none_round_share by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F71_2var_penalty_x_thinking_3_1.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: penalty_point x thinking",
+   "caption": "Mean (and n games) of punishment_count, war_length, war_after_first_undercut, round1_both_floor, coalition_punished, time_to_high_price, high_duration, first_undercut_round by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F72_2var_penalty_x_thinking_3_2.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: penalty_point x thinking",
+   "caption": "Mean (and n games) of leader_first_raise_round, defect_round, round1_quote_mean, quote_gap_mean_mean, profit_gap_mean, profit_gain_index_gap_mean, equal_quote_share_mean, threat_then_punish_n by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F73_2var_penalty_x_thinking_4_1.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): penalty_point x thinking",
+   "caption": "Mean (and n games) of br_rate, br_rate_excl_floor_rounds, at_br_with_fine_rate, at_br_expost_rate, dominated_rate, hold_rate, match_rate, other_undercut_rate by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F74_2var_penalty_x_thinking_4_2.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): penalty_point x thinking",
+   "caption": "Mean (and n games) of rival_floor_quote_floor_rate, printed_quote_share, quote_eq_rival_last_share, quote_eq_own_last_share, novel_quote_share, react_lower_after_undercut, react_reach_after_undercut, mean_regret_vs_prev by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F75_2var_penalty_x_thinking_5.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): penalty_point x thinking",
+   "caption": "Mean (and n games) of score_mean, score_first, score_last, score_mean_first_half, score_mean_second_half, score_min, score_max by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F76_2var_penalty_x_thinking_6_1.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: penalty_point x thinking",
+   "caption": "Mean (and n games) of answer_mentions_coordination_confidant_share, answer_mentions_coordination_public_share, candour_confidant, candour_public, invented_confession_confidant, invented_confession_public, evasive_answer_share, understated_answer_share by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F77_2var_penalty_x_thinking_6_2.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: penalty_point x thinking",
+   "caption": "Mean (and n games) of hold_after_agreement_share, answer_words_confidant_mean, answer_words_public_mean, agreed_then_undercut_rounds, held_after_agreement_rounds by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F78_2var_penalty_x_thinking_7_1.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): penalty_point x thinking",
+   "caption": "Mean (and n games) of reasoning_mentions_monitor_share, reasoning_mentions_monitor_share_novel, reasoning_mentions_shutdown_share, reasoning_mentions_shutdown_share_echo, reasoning_mentions_shutdown_share_novel, cot_threat_mention_share, cot_rule_aware_share, cot_plans_innocent_wording_share by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F79_2var_penalty_x_thinking_7_2.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): penalty_point x thinking",
+   "caption": "Mean (and n games) of cot_indirect_route_share, cot_independent_share, reasoning_words_total by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F80_2var_penalty_x_thinking_8.png",
+   "kind": "2var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "2-variable means, Paired contrasts to the control game: penalty_point x thinking",
+   "caption": "Mean (and n games) of delta_profit_gain_index, delta_price_index, delta_competitive_share, delta_explicit_round_share by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F81_2var_penalty_x_thinking_9_1.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: penalty_point x thinking",
+   "caption": "Mean (and n games) of parse_failures, truncations, imputed, truncated_talk, word_capped_talk, clamped_calls, truncated_calls_original, max_prompt_tokens by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F82_2var_penalty_x_thinking_9_2.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: penalty_point x thinking",
+   "caption": "Mean (and n games) of imputed_round_share, is_rerun by penalty_point rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F83_2var_arm_x_thinking_1_1.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: arm x thinking",
+   "caption": "Mean (and n games) of explicit_proposal_any, explicit_agreement_any, explicit_threat_any, explicit_agreement_flag, agreement_precedes_high_price, conversation_detector_flag_any by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F84_2var_arm_x_thinking_1_2.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: arm x thinking",
+   "caption": "Mean (and n games) of price_detector_flag_any, explicit_proposal_first_round, explicit_agreement_first_round, explicit_threat_first_round, conversation_detector_flag_rounds, conversation_detector_first_flag_round by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F85_2var_arm_x_thinking_1_3.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: arm x thinking",
+   "caption": "Mean (and n games) of conversation_detector_lag_to_high_price, price_detector_flag_rounds, price_detector_first_flag_round, messages_per_round, words_total by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F86_2var_arm_x_thinking_2_1.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: arm x thinking",
+   "caption": "Mean (and n games) of collusive_game, emergent_collusion, intent_explicit, intent_none, intent_no_text, collusive_firm_games by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F87_2var_arm_x_thinking_2_2.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: arm x thinking",
+   "caption": "Mean (and n games) of explicit_round_share, strategic_round_share, none_round_share by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F88_2var_arm_x_thinking_3_1.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: arm x thinking",
+   "caption": "Mean (and n games) of punishment_count, war_length, war_after_first_undercut, round1_both_floor, coalition_punished, time_to_high_price by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F89_2var_arm_x_thinking_3_2.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: arm x thinking",
+   "caption": "Mean (and n games) of high_duration, first_undercut_round, leader_first_raise_round, defect_round, round1_quote_mean, quote_gap_mean_mean by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F90_2var_arm_x_thinking_3_3.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: arm x thinking",
+   "caption": "Mean (and n games) of profit_gap_mean, profit_gain_index_gap_mean, equal_quote_share_mean, threat_then_punish_n by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F91_2var_arm_x_thinking_4_1.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): arm x thinking",
+   "caption": "Mean (and n games) of br_rate, br_rate_excl_floor_rounds, at_br_with_fine_rate, at_br_expost_rate, dominated_rate, hold_rate by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F92_2var_arm_x_thinking_4_2.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): arm x thinking",
+   "caption": "Mean (and n games) of match_rate, other_undercut_rate, rival_floor_quote_floor_rate, printed_quote_share, quote_eq_rival_last_share, quote_eq_own_last_share by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F93_2var_arm_x_thinking_4_3.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): arm x thinking",
+   "caption": "Mean (and n games) of novel_quote_share, react_lower_after_undercut, react_reach_after_undercut, mean_regret_vs_prev by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F94_2var_arm_x_thinking_5_1.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): arm x thinking",
+   "caption": "Mean (and n games) of score_mean, score_first, score_last, score_mean_first_half, score_mean_second_half, score_min by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F95_2var_arm_x_thinking_5_2.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): arm x thinking",
+   "caption": "Mean (and n games) of score_max by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F96_2var_arm_x_thinking_6_1.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: arm x thinking",
+   "caption": "Mean (and n games) of answer_mentions_coordination_confidant_share, answer_mentions_coordination_public_share, candour_confidant, candour_public, invented_confession_confidant, invented_confession_public by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F97_2var_arm_x_thinking_6_2.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: arm x thinking",
+   "caption": "Mean (and n games) of evasive_answer_share, understated_answer_share, hold_after_agreement_share, answer_words_confidant_mean, answer_words_public_mean, agreed_then_undercut_rounds by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F98_2var_arm_x_thinking_6_3.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: arm x thinking",
+   "caption": "Mean (and n games) of held_after_agreement_rounds by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F99_2var_arm_x_thinking_7_1.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): arm x thinking",
+   "caption": "Mean (and n games) of reasoning_mentions_monitor_share, reasoning_mentions_monitor_share_novel, reasoning_mentions_shutdown_share, reasoning_mentions_shutdown_share_echo, reasoning_mentions_shutdown_share_novel, cot_threat_mention_share by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F100_2var_arm_x_thinking_7_2.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): arm x thinking",
+   "caption": "Mean (and n games) of cot_rule_aware_share, cot_plans_innocent_wording_share, cot_indirect_route_share, cot_independent_share, reasoning_words_total by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F101_2var_arm_x_thinking_8.png",
+   "kind": "2var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "2-variable means, Paired contrasts to the control game: arm x thinking",
+   "caption": "Mean (and n games) of delta_profit_gain_index, delta_price_index, delta_competitive_share, delta_explicit_round_share by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F102_2var_arm_x_thinking_9_1.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: arm x thinking",
+   "caption": "Mean (and n games) of parse_failures, truncations, imputed, truncated_talk, word_capped_talk, clamped_calls by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F103_2var_arm_x_thinking_9_2.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: arm x thinking",
+   "caption": "Mean (and n games) of truncated_calls_original, max_prompt_tokens, imputed_round_share, is_rerun by arm rows and thinking columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F104_2var_wording_x_seed_1_1.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: wording x seed",
+   "caption": "Mean (and n games) of explicit_proposal_any, explicit_agreement_any, explicit_threat_any, explicit_agreement_flag by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F105_2var_wording_x_seed_1_2.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: wording x seed",
+   "caption": "Mean (and n games) of agreement_precedes_high_price, conversation_detector_flag_any, price_detector_flag_any, explicit_proposal_first_round by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F106_2var_wording_x_seed_1_3.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: wording x seed",
+   "caption": "Mean (and n games) of explicit_agreement_first_round, explicit_threat_first_round, conversation_detector_flag_rounds, conversation_detector_first_flag_round by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F107_2var_wording_x_seed_1_4.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: wording x seed",
+   "caption": "Mean (and n games) of conversation_detector_lag_to_high_price, price_detector_flag_rounds, price_detector_first_flag_round, messages_per_round by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F108_2var_wording_x_seed_1_5.png",
+   "kind": "2var",
+   "group": "1 Agreement flags and detectors",
+   "title": "2-variable means, Agreement flags and detectors: wording x seed",
+   "caption": "Mean (and n games) of words_total by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F109_2var_wording_x_seed_2_1.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: wording x seed",
+   "caption": "Mean (and n games) of collusive_game, emergent_collusion, intent_explicit, intent_none by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F110_2var_wording_x_seed_2_2.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: wording x seed",
+   "caption": "Mean (and n games) of intent_no_text, collusive_firm_games, explicit_round_share, strategic_round_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F111_2var_wording_x_seed_2_3.png",
+   "kind": "2var",
+   "group": "2 Intent class",
+   "title": "2-variable means, Intent class: wording x seed",
+   "caption": "Mean (and n games) of none_round_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F112_2var_wording_x_seed_3_1.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: wording x seed",
+   "caption": "Mean (and n games) of punishment_count, war_length, war_after_first_undercut, round1_both_floor by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F113_2var_wording_x_seed_3_2.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: wording x seed",
+   "caption": "Mean (and n games) of coalition_punished, time_to_high_price, high_duration, first_undercut_round by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F114_2var_wording_x_seed_3_3.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: wording x seed",
+   "caption": "Mean (and n games) of leader_first_raise_round, defect_round, round1_quote_mean, quote_gap_mean_mean by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F115_2var_wording_x_seed_3_4.png",
+   "kind": "2var",
+   "group": "3 Punishment, wars and timing",
+   "title": "2-variable means, Punishment, wars and timing: wording x seed",
+   "caption": "Mean (and n games) of profit_gap_mean, profit_gain_index_gap_mean, equal_quote_share_mean, threat_then_punish_n by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F116_2var_wording_x_seed_4_1.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): wording x seed",
+   "caption": "Mean (and n games) of br_rate, br_rate_excl_floor_rounds, at_br_with_fine_rate, at_br_expost_rate by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F117_2var_wording_x_seed_4_2.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): wording x seed",
+   "caption": "Mean (and n games) of dominated_rate, hold_rate, match_rate, other_undercut_rate by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F118_2var_wording_x_seed_4_3.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): wording x seed",
+   "caption": "Mean (and n games) of rival_floor_quote_floor_rate, printed_quote_share, quote_eq_rival_last_share, quote_eq_own_last_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F119_2var_wording_x_seed_4_4.png",
+   "kind": "2var",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "2-variable means, Play quality (comprehension audit): wording x seed",
+   "caption": "Mean (and n games) of novel_quote_share, react_lower_after_undercut, react_reach_after_undercut, mean_regret_vs_prev by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F120_2var_wording_x_seed_5_1.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): wording x seed",
+   "caption": "Mean (and n games) of score_mean, score_first, score_last, score_mean_first_half by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F121_2var_wording_x_seed_5_2.png",
+   "kind": "2var",
+   "group": "5 Self-report scores (D set)",
+   "title": "2-variable means, Self-report scores (D set): wording x seed",
+   "caption": "Mean (and n games) of score_mean_second_half, score_min, score_max by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F122_2var_wording_x_seed_6_1.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: wording x seed",
+   "caption": "Mean (and n games) of answer_mentions_coordination_confidant_share, answer_mentions_coordination_public_share, candour_confidant, candour_public by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F123_2var_wording_x_seed_6_2.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: wording x seed",
+   "caption": "Mean (and n games) of invented_confession_confidant, invented_confession_public, evasive_answer_share, understated_answer_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F124_2var_wording_x_seed_6_3.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: wording x seed",
+   "caption": "Mean (and n games) of hold_after_agreement_share, answer_words_confidant_mean, answer_words_public_mean, agreed_then_undercut_rounds by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F125_2var_wording_x_seed_6_4.png",
+   "kind": "2var",
+   "group": "6 Introspection and say-vs-do",
+   "title": "2-variable means, Introspection and say-vs-do: wording x seed",
+   "caption": "Mean (and n games) of held_after_agreement_rounds by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F126_2var_wording_x_seed_7_1.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): wording x seed",
+   "caption": "Mean (and n games) of reasoning_mentions_monitor_share, reasoning_mentions_monitor_share_novel, reasoning_mentions_shutdown_share, reasoning_mentions_shutdown_share_echo by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F127_2var_wording_x_seed_7_2.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): wording x seed",
+   "caption": "Mean (and n games) of reasoning_mentions_shutdown_share_novel, cot_threat_mention_share, cot_rule_aware_share, cot_plans_innocent_wording_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F128_2var_wording_x_seed_7_3.png",
+   "kind": "2var",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "2-variable means, Reasoning reading (D set, thinking on): wording x seed",
+   "caption": "Mean (and n games) of cot_indirect_route_share, cot_independent_share, reasoning_words_total by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F129_2var_wording_x_seed_8.png",
+   "kind": "2var",
+   "group": "8 Paired contrasts to the control game",
+   "title": "2-variable means, Paired contrasts to the control game: wording x seed",
+   "caption": "Mean (and n games) of delta_profit_gain_index, delta_price_index, delta_competitive_share, delta_explicit_round_share by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F130_2var_wording_x_seed_9_1.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: wording x seed",
+   "caption": "Mean (and n games) of parse_failures, truncations, imputed, truncated_talk by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F131_2var_wording_x_seed_9_2.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: wording x seed",
+   "caption": "Mean (and n games) of word_capped_talk, clamped_calls, truncated_calls_original, max_prompt_tokens by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F132_2var_wording_x_seed_9_3.png",
+   "kind": "2var",
+   "group": "9 QC features",
+   "title": "2-variable means, QC features: wording x seed",
+   "caption": "Mean (and n games) of imputed_round_share, is_rerun by wording rows and seed columns; each panel has its own fixed colour scale shown on its colour bar."
+  },
+  {
+   "file": "F133_corr_1.png",
+   "kind": "corr",
+   "group": "1 Agreement flags and detectors",
+   "title": "Feature-vs-outcome Spearman, Agreement flags and detectors",
+   "caption": "Game-level Spearman rho of each agreement flags and detectors feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F134_corr_2.png",
+   "kind": "corr",
+   "group": "2 Intent class",
+   "title": "Feature-vs-outcome Spearman, Intent class",
+   "caption": "Game-level Spearman rho of each intent class feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F135_corr_3.png",
+   "kind": "corr",
+   "group": "3 Punishment, wars and timing",
+   "title": "Feature-vs-outcome Spearman, Punishment, wars and timing",
+   "caption": "Game-level Spearman rho of each punishment, wars and timing feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F136_corr_4.png",
+   "kind": "corr",
+   "group": "4 Play quality (comprehension audit)",
+   "title": "Feature-vs-outcome Spearman, Play quality (comprehension audit)",
+   "caption": "Game-level Spearman rho of each play quality (comprehension audit) feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation."
+  },
+  {
+   "file": "F137_corr_5.png",
+   "kind": "corr",
+   "group": "5 Self-report scores (D set)",
+   "title": "Feature-vs-outcome Spearman, Self-report scores (D set)",
+   "caption": "Game-level Spearman rho of each self-report scores (d set) feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation."
+  },
+  {
+   "file": "F138_corr_6.png",
+   "kind": "corr",
+   "group": "6 Introspection and say-vs-do",
+   "title": "Feature-vs-outcome Spearman, Introspection and say-vs-do",
+   "caption": "Game-level Spearman rho of each introspection and say-vs-do feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F139_corr_7.png",
+   "kind": "corr",
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "title": "Feature-vs-outcome Spearman, Reasoning reading (D set, thinking on)",
+   "caption": "Game-level Spearman rho of each reasoning reading (d set, thinking on) feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation. UNVALIDATED (keyword/regex-based) features are marked UNVAL; the Step 2 pass found the agreement flag does not track behaviour."
+  },
+  {
+   "file": "F140_corr_8.png",
+   "kind": "corr",
+   "group": "8 Paired contrasts to the control game",
+   "title": "Feature-vs-outcome Spearman, Paired contrasts to the control game",
+   "caption": "Game-level Spearman rho of each paired contrasts to the control game feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation."
+  },
+  {
+   "file": "F141_corr_9.png",
+   "kind": "corr",
+   "group": "9 QC features",
+   "title": "Feature-vs-outcome Spearman, QC features",
+   "caption": "Game-level Spearman rho of each qc features feature with seven basic outcomes, pooled (left) and within arm x thinking cells (right); blank = fewer than 20 (pooled) or 30 (within) games or no variation."
+  }
+ ],
+ "meta": {
+  "explicit_proposal_any": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "explicit_agreement_any": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "explicit_threat_any": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "explicit_agreement_flag": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "agreement_precedes_high_price": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "conversation_detector_flag_any": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "price_detector_flag_any": {
+   "group": "1 Agreement flags and detectors",
+   "status": "price-only rule (no keywords)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "explicit_proposal_first_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 7.0
+  },
+  "explicit_agreement_first_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 10.0
+  },
+  "explicit_threat_first_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 15.0
+  },
+  "conversation_detector_flag_rounds": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": 0.0,
+   "hi": 20.0
+  },
+  "conversation_detector_first_flag_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 10.0
+  },
+  "conversation_detector_lag_to_high_price": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "round",
+   "lo": -7.42,
+   "hi": 4.0
+  },
+  "price_detector_flag_rounds": {
+   "group": "1 Agreement flags and detectors",
+   "status": "price-only rule (no keywords)",
+   "kind": "round",
+   "lo": 0.0,
+   "hi": 19.0
+  },
+  "price_detector_first_flag_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "price-only rule (no keywords)",
+   "kind": "round",
+   "lo": 2.0,
+   "hi": 6.180000000000007
+  },
+  "messages_per_round": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 13.263235
+  },
+  "words_total": {
+   "group": "1 Agreement flags and detectors",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 25342.82999999999
+  },
+  "collusive_game": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "emergent_collusion": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "intent_explicit": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "intent_none": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "intent_no_text": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "collusive_firm_games": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 3.0
+  },
+  "explicit_round_share": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "strategic_round_share": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "none_round_share": {
+   "group": "2 Intent class",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "punishment_count": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 7.0
+  },
+  "war_length": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 18.0
+  },
+  "war_after_first_undercut": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "round1_both_floor": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "coalition_punished": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "time_to_high_price": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 7.97999999999999
+  },
+  "high_duration": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "round",
+   "lo": 0.0,
+   "hi": 20.0
+  },
+  "first_undercut_round": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "round",
+   "lo": 2.0,
+   "hi": 20.0
+  },
+  "leader_first_raise_round": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "round",
+   "lo": 1.0,
+   "hi": 2.0
+  },
+  "defect_round": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "round",
+   "lo": 6.0,
+   "hi": 10.0
+  },
+  "round1_quote_mean": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": 1.0,
+   "hi": 3.0
+  },
+  "quote_gap_mean_mean": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 0.5034165300000008
+  },
+  "profit_gap_mean": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 504.0760600000002
+  },
+  "profit_gain_index_gap_mean": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 1.05
+  },
+  "equal_quote_share_mean": {
+   "group": "3 Punishment, wars and timing",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "threat_then_punish_n": {
+   "group": "3 Punishment, wars and timing",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "br_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "br_rate_excl_floor_rounds": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "at_br_with_fine_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "at_br_expost_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "dominated_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "hold_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "match_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "other_undercut_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "rival_floor_quote_floor_rate": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "printed_quote_share": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "quote_eq_rival_last_share": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "quote_eq_own_last_share": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "novel_quote_share": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "react_lower_after_undercut": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "react_reach_after_undercut": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "mean_regret_vs_prev": {
+   "group": "4 Play quality (comprehension audit)",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 37.64533333333338
+  },
+  "score_mean": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_first": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_last": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_mean_first_half": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_mean_second_half": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_min": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "score_max": {
+   "group": "5 Self-report scores (D set)",
+   "status": "model self-report (integer 1-5), not keyword-based",
+   "kind": "score",
+   "lo": 1.0,
+   "hi": 5.0
+  },
+  "answer_mentions_coordination_confidant_share": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "answer_mentions_coordination_public_share": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "candour_confidant": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "candour_public": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "invented_confession_confidant": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "invented_confession_public": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "evasive_answer_share": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "understated_answer_share": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "hold_after_agreement_share": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "answer_words_confidant_mean": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 24.248587999999998,
+   "hi": 159.23992999999984
+  },
+  "answer_words_public_mean": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 19.903192,
+   "hi": 134.58207000000004
+  },
+  "agreed_then_undercut_rounds": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 2.410000000000082
+  },
+  "held_after_agreement_rounds": {
+   "group": "6 Introspection and say-vs-do",
+   "status": "UNVALIDATED (keyword rules)",
+   "kind": "real",
+   "lo": 0.0,
+   "hi": 31.0
+  },
+  "reasoning_mentions_monitor_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "reasoning_mentions_monitor_share_novel": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "reasoning_mentions_shutdown_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "reasoning_mentions_shutdown_share_echo": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "reasoning_mentions_shutdown_share_novel": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "cot_threat_mention_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "cot_rule_aware_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "cot_plans_innocent_wording_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "cot_indirect_route_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "cot_independent_share": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "UNVALIDATED (regex classifier; over-inclusive against blind readers)",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "reasoning_words_total": {
+   "group": "7 Reasoning reading (D set, thinking on)",
+   "status": "engine/QC counter",
+   "kind": "real",
+   "lo": 4803.39,
+   "hi": 210092.24999999983
+  },
+  "delta_profit_gain_index": {
+   "group": "8 Paired contrasts to the control game",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": -0.8817288600000001,
+   "hi": 0.9375
+  },
+  "delta_price_index": {
+   "group": "8 Paired contrasts to the control game",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": -0.740817,
+   "hi": 0.75
+  },
+  "delta_competitive_share": {
+   "group": "8 Paired contrasts to the control game",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": -1.0,
+   "hi": 1.0
+  },
+  "delta_explicit_round_share": {
+   "group": "8 Paired contrasts to the control game",
+   "status": "model-free arithmetic on quotes",
+   "kind": "real",
+   "lo": -0.38061738,
+   "hi": 0.49657892000000015
+  },
+  "parse_failures": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "truncations": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "imputed": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "truncated_talk": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "word_capped_talk": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 2.0
+  },
+  "clamped_calls": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 0.0,
+   "hi": 39.0
+  },
+  "truncated_calls_original": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 1.0,
+   "hi": 3.0
+  },
+  "max_prompt_tokens": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "count",
+   "lo": 986.59,
+   "hi": 7351.200000000002
+  },
+  "imputed_round_share": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "share",
+   "lo": 0.0,
+   "hi": 1.0
+  },
+  "is_rerun": {
+   "group": "9 QC features",
+   "status": "engine/QC counter",
+   "kind": "binary",
+   "lo": 0.0,
+   "hi": 1.0
+  }
+ },
+ "dropped": [
+  "price_detector_lag_to_high_price",
+  "intent_strategic_unnamed",
+  "recovery_round",
+  "punish_round_first",
+  "punish_lag",
+  "score_after_first_undercut_mean",
+  "score_before_first_undercut_mean",
+  "candour_gap_confidant_minus_public",
+  "question_declines",
+  "reasoning_mentions_monitor_share_echo",
+  "refusals",
+  "skipped_calls"
+ ],
+ "n_games": 1360,
+ "batch": "neutral"
+}

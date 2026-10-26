@@ -1,0 +1,17 @@
+run,communication,mode,firm_games,games_with_agreement_msg,agreed_then_undercut_rounds,held_after_agreement_rounds,threat_then_punish,undercut_share_of_post_agreement_rounds
+anchored,monitored,t0,160,157,4,659,0,0.006033
+anchored,monitored,t1,160,148,13,443,0,0.02851
+anchored,private,t0,980,895,91,4015,0,0.02216
+anchored,private,t1,1060,882,90,2903,75,0.03007
+anchored,public,t0,40,40,2,136,0,0.01449
+anchored,public,t1,40,40,1,162,0,0.006135
+anchored,unmonitored,t0,40,40,0,155,0,0
+anchored,unmonitored,t1,40,38,0,158,0,0
+neutral,monitored,t0,160,152,4,529,0,0.007505
+neutral,monitored,t1,160,151,9,479,0,0.01844
+neutral,private,t0,980,857,41,3487,1,0.01162
+neutral,private,t1,1060,882,106,2674,73,0.03813
+neutral,public,t0,40,39,1,120,0,0.008264
+neutral,public,t1,40,37,3,116,0,0.02521
+neutral,unmonitored,t0,40,32,2,172,0,0.01149
+neutral,unmonitored,t1,40,37,1,127,0,0.007812

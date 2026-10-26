@@ -1,0 +1,9 @@
+variable,column,n,missing,mean,median,q25,q75,min,max
+Average absolute spread,market_price_mean,819,0,1.949,2.1,1.469,2.459,1,3
+Price index,price_index,819,0,0.4746,0.55,0.2345,0.7296,0,1
+Profit gain index,profit_gain_index,819,0,0.633,0.7685,0.381,0.9257,0,1
+Competitive share,competitive_share,819,0,0.4249,0.4167,0.2368,0.5833,0,1
+Matching share,matching_share,819,0,0.387,0.3611,0.1667,0.5526,0,1
+Rounds played,rounds_played,819,0,12.69,15,7,19,2,20
+Empty talk turns read as done,empty_talk_done_count,819,0,0.5446,0,0,1,0,7
+Refusals,refusals,819,0,0.001221,0,0,0,0,1

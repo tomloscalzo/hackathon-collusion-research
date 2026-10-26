@@ -1,0 +1,1 @@
+trial_id,arm,thinking,penalty_point,round,seat,call_type,attempt,est_prompt_tokens,requested_max_tokens,granted_max_tokens,reduction,skipped,real_tokens_in,window,margin,min_tokens,draw_key

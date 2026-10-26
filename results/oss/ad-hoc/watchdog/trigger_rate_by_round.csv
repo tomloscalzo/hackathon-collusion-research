@@ -1,0 +1,13 @@
+arm,rounds,eligible,triggered,asked
+wd-noncomp,2,40,25,23
+wd-noncomp,3,36,21,21
+wd-noncomp,4-5,72,39,39
+wd-noncomp,6-8,94,66,57
+wd-noncomp,9-12,96,64,64
+wd-noncomp,13+,112,80,64
+wd-ask-noreport,2,38,17,14
+wd-ask-noreport,3,34,21,21
+wd-ask-noreport,4-5,68,31,31
+wd-ask-noreport,6-8,88,56,53
+wd-ask-noreport,9-12,88,58,58
+wd-ask-noreport,13+,96,57,44

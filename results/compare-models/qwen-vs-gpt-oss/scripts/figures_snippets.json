@@ -1,0 +1,153 @@
+{
+ "overview": {
+  "price_index": "overview_price_index.png",
+  "profit_gain_index": "overview_profit_gain_index.png",
+  "competitive_share": "overview_competitive_share.png",
+  "matching_share": "overview_matching_share.png",
+  "market_price_mean": "overview_market_price_mean.png"
+ },
+ "lever": {
+  "payoff-table-focal-points": {
+   "file": "lever_payoff-table-focal-points.png",
+   "contrasts": [
+    "nx-chat-p1 (p1) - headline-chat (p1)",
+    "nx-tacit-p1 (p1) - headline-tacit (p1)",
+    "fx-chat-p5 (p5) - headline-chat (p5)",
+    "fx-chat-p1 (p1) - headline-chat (p1)",
+    "fx-tacit-p1 (p1) - headline-tacit (p1)",
+    "fx-ctl-joint (p3) - ctl-32b-joint (p3)",
+    "fx-ctl-joint (p3) - headline-chat (p3)",
+    "fx-chat-p1 (p1) - nx-chat-p1 (p1)",
+    "fx-ctl-joint (p3) - fx-chat-p1 (p1)"
+   ]
+  },
+  "communication": {
+   "file": "lever_communication.png",
+   "contrasts": [
+    "chat - tacit (p1)",
+    "chat - tacit (p5)"
+   ]
+  },
+  "penalty": {
+   "file": "lever_penalty.png",
+   "contrasts": [
+    "tacit p5 - p1",
+    "chat p5 - p1",
+    "chat p3 - p1",
+    "interaction: (chat p5-p1) - (tacit p5-p1)"
+   ]
+  },
+  "controls": {
+   "file": "lever_controls.png",
+   "contrasts": [
+    "strict-compete control - headline-chat (p3)",
+    "joint-profit control - headline-chat (p3)",
+    "joint-profit control - strict-compete control"
+   ]
+  },
+  "cot-monitor-threat": {
+   "file": "lever_cot-monitor-threat.png",
+   "contrasts": [
+    "d-cot-monitor-a - headline-chat (p1)"
+   ]
+  },
+  "moral-primes": {
+   "file": "lever_moral-primes.png",
+   "contrasts": [
+    "moral-prime-b - moral-placebo",
+    "moral-prime-b - headline-chat (p1)",
+    "moral-prime - moral-placebo",
+    "moral-prime - headline-chat (p1)",
+    "moral-placebo - headline-chat (p1)",
+    "moral-prime - moral-prime-b"
+   ]
+  },
+  "five-tick-start": {
+   "file": "lever_five-tick-start.png",
+   "contrasts": [
+    "start-5tick - headline-chat (p3)"
+   ]
+  },
+  "cheater": {
+   "file": "lever_cheater.png",
+   "contrasts": [
+    "n3-cheater - headline-chat (p3)",
+    "n3-cheater - n3-group"
+   ]
+  },
+  "market-structure": {
+   "file": "lever_market-structure.png",
+   "contrasts": [
+    "n3-group - headline-chat (p3)"
+   ]
+  },
+  "ethics-rule": {
+   "file": "lever_ethics-rule.png",
+   "contrasts": [
+    "n3-ethics - n3-group (p3)"
+   ]
+  },
+  "asymmetric": {
+   "file": "lever_asymmetric.png",
+   "contrasts": [
+    "m-asym - headline-chat (p3)"
+   ]
+  },
+  "incentives": {
+   "file": "lever_incentives.png",
+   "contrasts": [
+    "m-inc-target - headline-chat (p3)",
+    "m-inc-joint - m-inc-target (p3)",
+    "m-inc-joint - headline-chat (p3)"
+   ]
+  },
+  "watchdog": {
+   "file": "lever_watchdog.png",
+   "contrasts": [
+    "wd-noncomp - wd-ask-noreport",
+    "wd-notice-only - headline-chat (p1)",
+    "wd-noncomp - wd-notice-only",
+    "wd-ask-noreport - headline-chat (p1)"
+   ]
+  },
+  "self-report-scores": {
+   "file": "lever_self-report-scores.png",
+   "contrasts": [
+    "d-conflict-ethics - headline-chat (p1)",
+    "d-conflict-ethics - d-conflict (p1)",
+    "d-conflict - headline-chat (p1)",
+    "d-temptation-a - headline-chat (p1)",
+    "d-temptation-b - headline-chat (p1)",
+    "d-placebo - headline-chat (p1)"
+   ]
+  },
+  "introspection": {
+   "file": "lever_introspection.png",
+   "contrasts": [
+    "r2f-confidant - r2s-confidant",
+    "r2f-confidant - r3f-public",
+    "r2f-confidant - headline-chat (p1)",
+    "r3f-public - r3s-public",
+    "r2s-confidant - r3s-public",
+    "four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",
+    "r3s-public - headline-chat (p1)",
+    "r3f-public - headline-chat (p1)",
+    "r2s-confidant - headline-chat (p1)"
+   ]
+  }
+ },
+ "primed": {
+  "file": "primed_vs_unprimed.png",
+  "contrasts": [
+   "nx-chat-p1 (p1) - headline-chat (p1)",
+   "nx-tacit-p1 (p1) - headline-tacit (p1)",
+   "fx-chat-p5 (p5) - headline-chat (p5)",
+   "fx-chat-p1 (p1) - headline-chat (p1)",
+   "fx-tacit-p1 (p1) - headline-tacit (p1)",
+   "fx-ctl-joint (p3) - ctl-32b-joint (p3)",
+   "fx-ctl-joint (p3) - headline-chat (p3)",
+   "fx-chat-p1 (p1) - nx-chat-p1 (p1)",
+   "fx-ctl-joint (p3) - fx-chat-p1 (p1)"
+  ]
+ }
+}

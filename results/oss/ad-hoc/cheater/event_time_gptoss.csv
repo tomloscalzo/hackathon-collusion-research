@@ -1,0 +1,5 @@
+window,n_games_llm_quote,mean_llm_quote,n_games_market,mean_market_price
+pre (k -3..-1),16,2.071,16,1.83
+defect round (k 0),16,2.051,16,1.0
+post 1-3,16,1.995,16,1.72
+post 4-8,13,1.918,13,1.77

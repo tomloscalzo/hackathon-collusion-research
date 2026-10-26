@@ -1,0 +1,271 @@
+run,thinking,subset,rating,metric,spearman,ci_lo,ci_hi,n_games,n_texts
+anchored,off,all games,claude_conflict,market_price_mean,0.0338,-0.0983,0.1655,660,160
+anchored,off,all games,claude_conflict,price_index,0.0338,-0.0929,0.1608,660,160
+anchored,off,all games,claude_conflict,profit_gain_index,0.0281,-0.1091,0.1509,660,160
+anchored,off,all games,claude_conflict,competitive_share,0.0029,-0.132,0.1364,660,160
+anchored,off,all games,claude_conflict,matching_share,0.075,-0.0712,0.2027,660,160
+anchored,off,all games,claude_temptation,market_price_mean,0.2862,0.1725,0.3958,660,160
+anchored,off,all games,claude_temptation,price_index,0.2862,0.1683,0.396,660,160
+anchored,off,all games,claude_temptation,profit_gain_index,0.2805,0.1674,0.3902,660,160
+anchored,off,all games,claude_temptation,competitive_share,-0.3015,-0.398,-0.1964,660,160
+anchored,off,all games,claude_temptation,matching_share,0.2784,0.1564,0.391,660,160
+anchored,off,chat arms only,claude_conflict,market_price_mean,-0.0255,-0.1792,0.1165,580,140
+anchored,off,chat arms only,claude_conflict,price_index,-0.0255,-0.1642,0.1107,580,140
+anchored,off,chat arms only,claude_conflict,profit_gain_index,-0.0347,-0.1708,0.1058,580,140
+anchored,off,chat arms only,claude_conflict,competitive_share,0.1344,-0.0076,0.2686,580,140
+anchored,off,chat arms only,claude_conflict,matching_share,-0.044,-0.1903,0.0949,580,140
+anchored,off,chat arms only,claude_temptation,market_price_mean,0.2151,0.0856,0.3399,580,140
+anchored,off,chat arms only,claude_temptation,price_index,0.2151,0.0839,0.3386,580,140
+anchored,off,chat arms only,claude_temptation,profit_gain_index,0.2023,0.0682,0.3196,580,140
+anchored,off,chat arms only,claude_temptation,competitive_share,-0.1563,-0.2773,-0.0259,580,140
+anchored,off,chat arms only,claude_temptation,matching_share,0.1229,-0.0112,0.2492,580,140
+anchored,off,tacit (no chat) only,claude_conflict,market_price_mean,-0.0818,-0.2893,0.1256,80,20
+anchored,off,tacit (no chat) only,claude_conflict,price_index,-0.0805,-0.2786,0.1264,80,20
+anchored,off,tacit (no chat) only,claude_conflict,profit_gain_index,-0.0827,-0.2868,0.1259,80,20
+anchored,off,tacit (no chat) only,claude_conflict,competitive_share,-0.185,-0.4075,0.0683,80,20
+anchored,off,tacit (no chat) only,claude_conflict,matching_share,0.2209,-0.0576,0.4367,80,20
+anchored,off,tacit (no chat) only,claude_temptation,market_price_mean,0.0505,-0.166,0.2512,80,20
+anchored,off,tacit (no chat) only,claude_temptation,price_index,0.0513,-0.174,0.255,80,20
+anchored,off,tacit (no chat) only,claude_temptation,profit_gain_index,0.0505,-0.1767,0.2614,80,20
+anchored,off,tacit (no chat) only,claude_temptation,competitive_share,0.0105,-0.2561,0.2895,80,20
+anchored,off,tacit (no chat) only,claude_temptation,matching_share,0.0668,-0.2149,0.354,80,20
+anchored,on,all games,claude_conflict,market_price_mean,-0.0844,-0.2175,0.0443,700,170
+anchored,on,all games,claude_conflict,price_index,-0.0845,-0.2131,0.0408,700,170
+anchored,on,all games,claude_conflict,profit_gain_index,-0.0871,-0.2098,0.0316,700,170
+anchored,on,all games,claude_conflict,competitive_share,0.1028,-0.0301,0.2346,700,170
+anchored,on,all games,claude_conflict,matching_share,-0.0811,-0.2091,0.0511,700,170
+anchored,on,all games,claude_temptation,market_price_mean,0.5892,0.5112,0.6577,700,170
+anchored,on,all games,claude_temptation,price_index,0.5894,0.5105,0.6569,700,170
+anchored,on,all games,claude_temptation,profit_gain_index,0.5896,0.5169,0.6577,700,170
+anchored,on,all games,claude_temptation,competitive_share,-0.5529,-0.6288,-0.464,700,170
+anchored,on,all games,claude_temptation,matching_share,0.515,0.4279,0.5969,700,170
+anchored,on,chat arms only,claude_conflict,market_price_mean,-0.199,-0.3267,-0.068,620,150
+anchored,on,chat arms only,claude_conflict,price_index,-0.1991,-0.3223,-0.0777,620,150
+anchored,on,chat arms only,claude_conflict,profit_gain_index,-0.2018,-0.3259,-0.0709,620,150
+anchored,on,chat arms only,claude_conflict,competitive_share,0.2855,0.1491,0.4161,620,150
+anchored,on,chat arms only,claude_conflict,matching_share,-0.22,-0.3499,-0.0798,620,150
+anchored,on,chat arms only,claude_temptation,market_price_mean,0.5211,0.4377,0.5995,620,150
+anchored,on,chat arms only,claude_temptation,price_index,0.5214,0.4369,0.5976,620,150
+anchored,on,chat arms only,claude_temptation,profit_gain_index,0.5205,0.4384,0.6002,620,150
+anchored,on,chat arms only,claude_temptation,competitive_share,-0.427,-0.5134,-0.3215,620,150
+anchored,on,chat arms only,claude_temptation,matching_share,0.4168,0.3215,0.5061,620,150
+anchored,on,tacit (no chat) only,claude_conflict,market_price_mean,-0.1472,-0.5307,0.3073,80,20
+anchored,on,tacit (no chat) only,claude_conflict,price_index,-0.1476,-0.5242,0.3102,80,20
+anchored,on,tacit (no chat) only,claude_conflict,profit_gain_index,-0.1507,-0.5514,0.3063,80,20
+anchored,on,tacit (no chat) only,claude_conflict,competitive_share,0.0237,-0.3453,0.3886,80,20
+anchored,on,tacit (no chat) only,claude_conflict,matching_share,0.0103,-0.3232,0.3638,80,20
+anchored,on,tacit (no chat) only,claude_temptation,market_price_mean,0.5076,0.1479,0.7652,80,20
+anchored,on,tacit (no chat) only,claude_temptation,price_index,0.5076,0.1666,0.7635,80,20
+anchored,on,tacit (no chat) only,claude_temptation,profit_gain_index,0.5078,0.1704,0.7725,80,20
+anchored,on,tacit (no chat) only,claude_temptation,competitive_share,-0.2472,-0.5321,0.1019,80,20
+anchored,on,tacit (no chat) only,claude_temptation,matching_share,0.1988,-0.1528,0.5002,80,20
+anchored,both,all games,claude_conflict,market_price_mean,-0.0104,-0.1252,0.1047,1360,170
+anchored,both,all games,claude_conflict,price_index,-0.0104,-0.131,0.1047,1360,170
+anchored,both,all games,claude_conflict,profit_gain_index,-0.0147,-0.1278,0.0985,1360,170
+anchored,both,all games,claude_conflict,competitive_share,0.0605,-0.0587,0.1807,1360,170
+anchored,both,all games,claude_conflict,matching_share,-0.0055,-0.123,0.1127,1360,170
+anchored,both,all games,claude_temptation,market_price_mean,0.4305,0.3451,0.5079,1360,170
+anchored,both,all games,claude_temptation,price_index,0.4306,0.3401,0.5034,1360,170
+anchored,both,all games,claude_temptation,profit_gain_index,0.4284,0.346,0.5051,1360,170
+anchored,both,all games,claude_temptation,competitive_share,-0.434,-0.512,-0.3455,1360,170
+anchored,both,all games,claude_temptation,matching_share,0.3986,0.2992,0.4848,1360,170
+anchored,both,chat arms only,claude_conflict,market_price_mean,-0.0975,-0.218,0.0278,1200,150
+anchored,both,chat arms only,claude_conflict,price_index,-0.0976,-0.2126,0.024,1200,150
+anchored,both,chat arms only,claude_conflict,profit_gain_index,-0.1034,-0.2237,0.0136,1200,150
+anchored,both,chat arms only,claude_conflict,competitive_share,0.2179,0.1027,0.3369,1200,150
+anchored,both,chat arms only,claude_conflict,matching_share,-0.1374,-0.2646,-0.0147,1200,150
+anchored,both,chat arms only,claude_temptation,market_price_mean,0.3571,0.2621,0.4435,1200,150
+anchored,both,chat arms only,claude_temptation,price_index,0.3572,0.2623,0.446,1200,150
+anchored,both,chat arms only,claude_temptation,profit_gain_index,0.3517,0.258,0.4314,1200,150
+anchored,both,chat arms only,claude_temptation,competitive_share,-0.3019,-0.3965,-0.2004,1200,150
+anchored,both,chat arms only,claude_temptation,matching_share,0.2748,0.1742,0.3731,1200,150
+anchored,both,tacit (no chat) only,claude_conflict,market_price_mean,-0.0999,-0.3243,0.1648,160,20
+anchored,both,tacit (no chat) only,claude_conflict,price_index,-0.0996,-0.3363,0.1652,160,20
+anchored,both,tacit (no chat) only,claude_conflict,profit_gain_index,-0.0977,-0.3266,0.1521,160,20
+anchored,both,tacit (no chat) only,claude_conflict,competitive_share,-0.0643,-0.2529,0.1401,160,20
+anchored,both,tacit (no chat) only,claude_conflict,matching_share,0.1323,-0.1065,0.3529,160,20
+anchored,both,tacit (no chat) only,claude_temptation,market_price_mean,0.2759,0.0285,0.4823,160,20
+anchored,both,tacit (no chat) only,claude_temptation,price_index,0.2761,0.0334,0.4847,160,20
+anchored,both,tacit (no chat) only,claude_temptation,profit_gain_index,0.2775,0.0164,0.4917,160,20
+anchored,both,tacit (no chat) only,claude_temptation,competitive_share,-0.1155,-0.316,0.1255,160,20
+anchored,both,tacit (no chat) only,claude_temptation,matching_share,0.1153,-0.1296,0.3572,160,20
+neutral,off,all games,claude_conflict,market_price_mean,0.091,-0.0435,0.2086,660,160
+neutral,off,all games,claude_conflict,price_index,0.0913,-0.04,0.2193,660,160
+neutral,off,all games,claude_conflict,profit_gain_index,0.0953,-0.0385,0.2264,660,160
+neutral,off,all games,claude_conflict,competitive_share,0.0273,-0.107,0.1579,660,160
+neutral,off,all games,claude_conflict,matching_share,0.0398,-0.0947,0.167,660,160
+neutral,off,all games,claude_temptation,market_price_mean,0.2765,0.1581,0.3781,660,160
+neutral,off,all games,claude_temptation,price_index,0.2767,0.1541,0.386,660,160
+neutral,off,all games,claude_temptation,profit_gain_index,0.2794,0.1627,0.3837,660,160
+neutral,off,all games,claude_temptation,competitive_share,-0.3497,-0.4469,-0.2382,660,160
+neutral,off,all games,claude_temptation,matching_share,0.3215,0.2152,0.4211,660,160
+neutral,off,chat arms only,claude_conflict,market_price_mean,0.0333,-0.1038,0.161,580,140
+neutral,off,chat arms only,claude_conflict,price_index,0.0333,-0.1064,0.171,580,140
+neutral,off,chat arms only,claude_conflict,profit_gain_index,0.0376,-0.0946,0.1754,580,140
+neutral,off,chat arms only,claude_conflict,competitive_share,0.1602,0.0251,0.29,580,140
+neutral,off,chat arms only,claude_conflict,matching_share,-0.0577,-0.1948,0.0728,580,140
+neutral,off,chat arms only,claude_temptation,market_price_mean,0.2091,0.0834,0.3226,580,140
+neutral,off,chat arms only,claude_temptation,price_index,0.2091,0.0848,0.3304,580,140
+neutral,off,chat arms only,claude_temptation,profit_gain_index,0.2143,0.0899,0.3319,580,140
+neutral,off,chat arms only,claude_temptation,competitive_share,-0.2209,-0.3359,-0.0961,580,140
+neutral,off,chat arms only,claude_temptation,matching_share,0.2175,0.1009,0.3341,580,140
+neutral,off,tacit (no chat) only,claude_conflict,market_price_mean,0.1266,-0.1813,0.4015,80,20
+neutral,off,tacit (no chat) only,claude_conflict,price_index,0.1282,-0.1784,0.4107,80,20
+neutral,off,tacit (no chat) only,claude_conflict,profit_gain_index,0.1347,-0.165,0.4167,80,20
+neutral,off,tacit (no chat) only,claude_conflict,competitive_share,-0.0899,-0.3539,0.1913,80,20
+neutral,off,tacit (no chat) only,claude_conflict,matching_share,0.1429,-0.0986,0.3689,80,20
+neutral,off,tacit (no chat) only,claude_temptation,market_price_mean,0.1655,-0.1824,0.4701,80,20
+neutral,off,tacit (no chat) only,claude_temptation,price_index,0.1642,-0.1796,0.4588,80,20
+neutral,off,tacit (no chat) only,claude_temptation,profit_gain_index,0.1569,-0.217,0.4405,80,20
+neutral,off,tacit (no chat) only,claude_temptation,competitive_share,-0.0745,-0.3954,0.2725,80,20
+neutral,off,tacit (no chat) only,claude_temptation,matching_share,0.0419,-0.2378,0.3303,80,20
+neutral,on,all games,claude_conflict,market_price_mean,-0.0902,-0.2166,0.0409,700,170
+neutral,on,all games,claude_conflict,price_index,-0.0902,-0.2135,0.032,700,170
+neutral,on,all games,claude_conflict,profit_gain_index,-0.0886,-0.2158,0.0422,700,170
+neutral,on,all games,claude_conflict,competitive_share,0.063,-0.0795,0.2064,699,170
+neutral,on,all games,claude_conflict,matching_share,-0.0183,-0.1652,0.1262,699,170
+neutral,on,all games,claude_temptation,market_price_mean,0.579,0.5057,0.643,700,170
+neutral,on,all games,claude_temptation,price_index,0.5789,0.5016,0.648,700,170
+neutral,on,all games,claude_temptation,profit_gain_index,0.5798,0.508,0.6481,700,170
+neutral,on,all games,claude_temptation,competitive_share,-0.5671,-0.6457,-0.4836,699,170
+neutral,on,all games,claude_temptation,matching_share,0.4988,0.4038,0.5879,699,170
+neutral,on,chat arms only,claude_conflict,market_price_mean,-0.2232,-0.3417,-0.0896,620,150
+neutral,on,chat arms only,claude_conflict,price_index,-0.2232,-0.3532,-0.0986,620,150
+neutral,on,chat arms only,claude_conflict,profit_gain_index,-0.2209,-0.3438,-0.0896,620,150
+neutral,on,chat arms only,claude_conflict,competitive_share,0.247,0.0985,0.3801,619,150
+neutral,on,chat arms only,claude_conflict,matching_share,-0.1663,-0.3081,-0.0226,619,150
+neutral,on,chat arms only,claude_temptation,market_price_mean,0.5126,0.4302,0.5887,620,150
+neutral,on,chat arms only,claude_temptation,price_index,0.5126,0.4302,0.5858,620,150
+neutral,on,chat arms only,claude_temptation,profit_gain_index,0.5145,0.433,0.5873,620,150
+neutral,on,chat arms only,claude_temptation,competitive_share,-0.4485,-0.5358,-0.345,619,150
+neutral,on,chat arms only,claude_temptation,matching_share,0.3898,0.2895,0.4846,619,150
+neutral,on,tacit (no chat) only,claude_conflict,market_price_mean,0.1113,-0.2293,0.4357,80,20
+neutral,on,tacit (no chat) only,claude_conflict,price_index,0.1117,-0.2203,0.4269,80,20
+neutral,on,tacit (no chat) only,claude_conflict,profit_gain_index,0.1122,-0.2188,0.4112,80,20
+neutral,on,tacit (no chat) only,claude_conflict,competitive_share,-0.0772,-0.4011,0.223,80,20
+neutral,on,tacit (no chat) only,claude_conflict,matching_share,0.126,-0.21,0.4355,80,20
+neutral,on,tacit (no chat) only,claude_temptation,market_price_mean,0.5921,0.3711,0.748,80,20
+neutral,on,tacit (no chat) only,claude_temptation,price_index,0.5921,0.3579,0.7546,80,20
+neutral,on,tacit (no chat) only,claude_temptation,profit_gain_index,0.5921,0.3576,0.7609,80,20
+neutral,on,tacit (no chat) only,claude_temptation,competitive_share,-0.3519,-0.6001,-0.0542,80,20
+neutral,on,tacit (no chat) only,claude_temptation,matching_share,0.4501,0.1463,0.6801,80,20
+neutral,both,all games,claude_conflict,market_price_mean,0.0161,-0.0982,0.1252,1360,170
+neutral,both,all games,claude_conflict,price_index,0.0163,-0.0935,0.1289,1360,170
+neutral,both,all games,claude_conflict,profit_gain_index,0.0185,-0.0977,0.1338,1360,170
+neutral,both,all games,claude_conflict,competitive_share,0.0509,-0.0724,0.1698,1359,170
+neutral,both,all games,claude_conflict,matching_share,0.0039,-0.1215,0.1205,1359,170
+neutral,both,all games,claude_temptation,market_price_mean,0.416,0.3395,0.496,1360,170
+neutral,both,all games,claude_temptation,price_index,0.4161,0.3366,0.4901,1360,170
+neutral,both,all games,claude_temptation,profit_gain_index,0.4172,0.3375,0.4898,1360,170
+neutral,both,all games,claude_temptation,competitive_share,-0.4625,-0.5407,-0.3733,1359,170
+neutral,both,all games,claude_temptation,matching_share,0.4125,0.3239,0.4965,1359,170
+neutral,both,chat arms only,claude_conflict,market_price_mean,-0.0761,-0.1943,0.0354,1200,150
+neutral,both,chat arms only,claude_conflict,price_index,-0.0761,-0.1904,0.0377,1200,150
+neutral,both,chat arms only,claude_conflict,profit_gain_index,-0.0733,-0.1843,0.044,1200,150
+neutral,both,chat arms only,claude_conflict,competitive_share,0.2078,0.0943,0.3235,1199,150
+neutral,both,chat arms only,claude_conflict,matching_share,-0.1189,-0.2414,0.0001,1199,150
+neutral,both,chat arms only,claude_temptation,market_price_mean,0.3478,0.2642,0.4306,1200,150
+neutral,both,chat arms only,claude_temptation,price_index,0.3479,0.2618,0.43,1200,150
+neutral,both,chat arms only,claude_temptation,profit_gain_index,0.3507,0.2652,0.4352,1200,150
+neutral,both,chat arms only,claude_temptation,competitive_share,-0.3438,-0.4333,-0.2446,1199,150
+neutral,both,chat arms only,claude_temptation,matching_share,0.3093,0.2021,0.4091,1199,150
+neutral,both,tacit (no chat) only,claude_conflict,market_price_mean,0.1206,-0.139,0.352,160,20
+neutral,both,tacit (no chat) only,claude_conflict,price_index,0.1221,-0.1299,0.3506,160,20
+neutral,both,tacit (no chat) only,claude_conflict,profit_gain_index,0.1242,-0.1442,0.3626,160,20
+neutral,both,tacit (no chat) only,claude_conflict,competitive_share,-0.0721,-0.2806,0.1641,160,20
+neutral,both,tacit (no chat) only,claude_conflict,matching_share,0.1284,-0.1048,0.3539,160,20
+neutral,both,tacit (no chat) only,claude_temptation,market_price_mean,0.369,0.1519,0.5393,160,20
+neutral,both,tacit (no chat) only,claude_temptation,price_index,0.3676,0.169,0.5484,160,20
+neutral,both,tacit (no chat) only,claude_temptation,profit_gain_index,0.3651,0.1532,0.5374,160,20
+neutral,both,tacit (no chat) only,claude_temptation,competitive_share,-0.1796,-0.4411,0.1031,160,20
+neutral,both,tacit (no chat) only,claude_temptation,matching_share,0.1995,-0.0822,0.4145,160,20
+both,off,all games,claude_conflict,market_price_mean,0.0536,-0.0413,0.1487,1320,320
+both,off,all games,claude_conflict,price_index,0.0537,-0.0427,0.145,1320,320
+both,off,all games,claude_conflict,profit_gain_index,0.0566,-0.0405,0.1495,1320,320
+both,off,all games,claude_conflict,competitive_share,0.0157,-0.08,0.1108,1320,320
+both,off,all games,claude_conflict,matching_share,0.056,-0.0402,0.1536,1320,320
+both,off,all games,claude_temptation,market_price_mean,0.2618,0.1764,0.3372,1320,320
+both,off,all games,claude_temptation,price_index,0.2618,0.1756,0.3407,1320,320
+both,off,all games,claude_temptation,profit_gain_index,0.2625,0.1777,0.3463,1320,320
+both,off,all games,claude_temptation,competitive_share,-0.3261,-0.3973,-0.2469,1320,320
+both,off,all games,claude_temptation,matching_share,0.2985,0.2166,0.3744,1320,320
+both,off,chat arms only,claude_conflict,market_price_mean,0.0008,-0.1061,0.101,1160,280
+both,off,chat arms only,claude_conflict,price_index,0.0008,-0.1025,0.0962,1160,280
+both,off,chat arms only,claude_conflict,profit_gain_index,0.0016,-0.102,0.1062,1160,280
+both,off,chat arms only,claude_conflict,competitive_share,0.1482,0.0518,0.2421,1160,280
+both,off,chat arms only,claude_conflict,matching_share,-0.0511,-0.1509,0.0478,1160,280
+both,off,chat arms only,claude_temptation,market_price_mean,0.1925,0.0985,0.2887,1160,280
+both,off,chat arms only,claude_temptation,price_index,0.1925,0.1019,0.2856,1160,280
+both,off,chat arms only,claude_temptation,profit_gain_index,0.1931,0.0942,0.285,1160,280
+both,off,chat arms only,claude_temptation,competitive_share,-0.1888,-0.2767,-0.1015,1160,280
+both,off,chat arms only,claude_temptation,matching_share,0.1692,0.0772,0.2568,1160,280
+both,off,tacit (no chat) only,claude_conflict,market_price_mean,0.0009,-0.2077,0.1994,160,40
+both,off,tacit (no chat) only,claude_conflict,price_index,0.0016,-0.1964,0.1924,160,40
+both,off,tacit (no chat) only,claude_conflict,profit_gain_index,0.023,-0.1794,0.223,160,40
+both,off,tacit (no chat) only,claude_conflict,competitive_share,-0.1368,-0.3279,0.0463,160,40
+both,off,tacit (no chat) only,claude_conflict,matching_share,0.1544,-0.0469,0.3264,160,40
+both,off,tacit (no chat) only,claude_temptation,market_price_mean,0.1473,-0.0909,0.3621,160,40
+both,off,tacit (no chat) only,claude_temptation,price_index,0.1472,-0.0877,0.3551,160,40
+both,off,tacit (no chat) only,claude_temptation,profit_gain_index,0.1549,-0.0794,0.3765,160,40
+both,off,tacit (no chat) only,claude_temptation,competitive_share,-0.0301,-0.2414,0.1871,160,40
+both,off,tacit (no chat) only,claude_temptation,matching_share,0.0383,-0.1707,0.2352,160,40
+both,on,all games,claude_conflict,market_price_mean,-0.0494,-0.1399,0.0437,1400,340
+both,on,all games,claude_conflict,price_index,-0.0494,-0.1457,0.0444,1400,340
+both,on,all games,claude_conflict,profit_gain_index,-0.0483,-0.1343,0.0455,1400,340
+both,on,all games,claude_conflict,competitive_share,0.0823,-0.0196,0.1819,1399,340
+both,on,all games,claude_conflict,matching_share,-0.0491,-0.1409,0.0449,1399,340
+both,on,all games,claude_temptation,market_price_mean,0.4838,0.4161,0.5486,1400,340
+both,on,all games,claude_temptation,price_index,0.4838,0.4167,0.5465,1400,340
+both,on,all games,claude_temptation,profit_gain_index,0.4827,0.4108,0.5438,1400,340
+both,on,all games,claude_temptation,competitive_share,-0.5591,-0.6115,-0.5015,1399,340
+both,on,all games,claude_temptation,matching_share,0.5067,0.4438,0.565,1399,340
+both,on,chat arms only,claude_conflict,market_price_mean,-0.1356,-0.2333,-0.032,1240,300
+both,on,chat arms only,claude_conflict,price_index,-0.1356,-0.2362,-0.036,1240,300
+both,on,chat arms only,claude_conflict,profit_gain_index,-0.1342,-0.2286,-0.0413,1240,300
+both,on,chat arms only,claude_conflict,competitive_share,0.2652,0.1707,0.3564,1239,300
+both,on,chat arms only,claude_conflict,matching_share,-0.1926,-0.2866,-0.096,1239,300
+both,on,chat arms only,claude_temptation,market_price_mean,0.426,0.349,0.4986,1240,300
+both,on,chat arms only,claude_temptation,price_index,0.426,0.346,0.5021,1240,300
+both,on,chat arms only,claude_temptation,profit_gain_index,0.4253,0.3448,0.5013,1240,300
+both,on,chat arms only,claude_temptation,competitive_share,-0.4367,-0.5017,-0.3676,1239,300
+both,on,chat arms only,claude_temptation,matching_share,0.4026,0.3306,0.4676,1239,300
+both,on,tacit (no chat) only,claude_conflict,market_price_mean,-0.0605,-0.3127,0.2029,160,40
+both,on,tacit (no chat) only,claude_conflict,price_index,-0.0607,-0.3125,0.2075,160,40
+both,on,tacit (no chat) only,claude_conflict,profit_gain_index,-0.0582,-0.3232,0.2136,160,40
+both,on,tacit (no chat) only,claude_conflict,competitive_share,-0.0299,-0.2711,0.2133,160,40
+both,on,tacit (no chat) only,claude_conflict,matching_share,0.0726,-0.1555,0.3089,160,40
+both,on,tacit (no chat) only,claude_temptation,market_price_mean,0.5467,0.3405,0.7261,160,40
+both,on,tacit (no chat) only,claude_temptation,price_index,0.5465,0.3357,0.723,160,40
+both,on,tacit (no chat) only,claude_temptation,profit_gain_index,0.5482,0.3465,0.7142,160,40
+both,on,tacit (no chat) only,claude_temptation,competitive_share,-0.2933,-0.4755,-0.0748,160,40
+both,on,tacit (no chat) only,claude_temptation,matching_share,0.3236,0.0946,0.5191,160,40
+both,both,all games,claude_conflict,market_price_mean,0.013,-0.0698,0.1,2720,340
+both,both,all games,claude_conflict,price_index,0.013,-0.0744,0.0986,2720,340
+both,both,all games,claude_conflict,profit_gain_index,0.0147,-0.073,0.1001,2720,340
+both,both,all games,claude_conflict,competitive_share,0.0555,-0.0333,0.1419,2719,340
+both,both,all games,claude_conflict,matching_share,-0.0008,-0.0844,0.0853,2719,340
+both,both,all games,claude_temptation,market_price_mean,0.3667,0.298,0.4284,2720,340
+both,both,all games,claude_temptation,price_index,0.3667,0.2994,0.4322,2720,340
+both,both,all games,claude_temptation,profit_gain_index,0.3665,0.3008,0.4312,2720,340
+both,both,all games,claude_temptation,competitive_share,-0.4482,-0.5042,-0.3873,2719,340
+both,both,all games,claude_temptation,matching_share,0.4053,0.3407,0.4686,2719,340
+both,both,chat arms only,claude_conflict,market_price_mean,-0.0552,-0.1471,0.0347,2400,300
+both,both,chat arms only,claude_conflict,price_index,-0.0552,-0.145,0.0363,2400,300
+both,both,chat arms only,claude_conflict,profit_gain_index,-0.0543,-0.1448,0.0377,2400,300
+both,both,chat arms only,claude_conflict,competitive_share,0.2128,0.1305,0.291,2399,300
+both,both,chat arms only,claude_conflict,matching_share,-0.1278,-0.2139,-0.0407,2399,300
+both,both,chat arms only,claude_temptation,market_price_mean,0.302,0.2251,0.3769,2400,300
+both,both,chat arms only,claude_temptation,price_index,0.302,0.2265,0.3747,2400,300
+both,both,chat arms only,claude_temptation,profit_gain_index,0.302,0.2274,0.3755,2400,300
+both,both,chat arms only,claude_temptation,competitive_share,-0.3227,-0.3915,-0.2521,2399,300
+both,both,chat arms only,claude_temptation,matching_share,0.2915,0.2199,0.3633,2399,300
+both,both,tacit (no chat) only,claude_conflict,market_price_mean,-0.0313,-0.2233,0.1714,320,40
+both,both,tacit (no chat) only,claude_conflict,price_index,-0.0309,-0.231,0.1673,320,40
+both,both,tacit (no chat) only,claude_conflict,profit_gain_index,-0.02,-0.2233,0.1826,320,40
+both,both,tacit (no chat) only,claude_conflict,competitive_share,-0.0681,-0.215,0.0848,320,40
+both,both,tacit (no chat) only,claude_conflict,matching_share,0.1139,-0.0509,0.2781,320,40
+both,both,tacit (no chat) only,claude_temptation,market_price_mean,0.3426,0.1532,0.5121,320,40
+both,both,tacit (no chat) only,claude_temptation,price_index,0.3423,0.1563,0.5096,320,40
+both,both,tacit (no chat) only,claude_temptation,profit_gain_index,0.3464,0.1603,0.5134,320,40
+both,both,tacit (no chat) only,claude_temptation,competitive_share,-0.1488,-0.3102,0.0254,320,40
+both,both,tacit (no chat) only,claude_temptation,matching_share,0.1567,-0.0259,0.3189,320,40

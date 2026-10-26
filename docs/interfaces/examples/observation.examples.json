@@ -1,0 +1,21 @@
+{
+  "schema": "observation",
+  "note": "Valid objects were captured from engine games by harness/ObsHarness.java (ripe-game; the second with o = 0.5, demandNoiseSd = 5, showFillPrice = false).",
+  "valid": [
+    {"agentIds": ["llm", "partner"], "choiceDraw": 0.7964208814821142, "history": [
+      {"insideQuote": 2.09, "ownExcluded": false, "ownFillPrice": 2.09, "ownHiddenFill": null, "ownQuote": 2.09, "ownVolume": 29.1, "quotesVisible": true, "rivalQuotes": {"partner": 2.09}, "round": 1},
+      {"insideQuote": 2.09, "ownExcluded": false, "ownFillPrice": 2.09, "ownHiddenFill": null, "ownQuote": 2.09, "ownVolume": 29.1, "quotesVisible": true, "rivalQuotes": {"partner": 2.09}, "round": 2}],
+     "round": 3, "selfId": "llm"},
+    {"agentIds": ["llm", "partner"], "choiceDraw": 0.8788089492626927, "history": [
+      {"insideQuote": null, "ownExcluded": false, "ownFillPrice": null, "ownHiddenFill": null, "ownQuote": 2.09, "ownVolume": 27.360522662396463, "quotesVisible": false, "rivalQuotes": {}, "round": 1}],
+     "round": 2, "selfId": "llm"},
+    {"agentIds": ["llm", "partner"], "choiceDraw": 0.0, "history": [], "round": 1, "selfId": "partner"}
+  ],
+  "invalid": [
+    {"why": "choiceDraw must be < 1", "value": {"agentIds": ["a", "b"], "choiceDraw": 1.0, "history": [], "round": 1, "selfId": "a"}},
+    {"why": "round is 1-based", "value": {"agentIds": ["a", "b"], "choiceDraw": 0.5, "history": [], "round": 0, "selfId": "a"}},
+    {"why": "nullable fields are always present (Jackson writes null)", "value": {"agentIds": ["a", "b"], "choiceDraw": 0.5, "round": 2, "selfId": "a", "history": [
+      {"ownExcluded": false, "ownFillPrice": null, "ownHiddenFill": null, "ownQuote": 2.09, "ownVolume": null, "quotesVisible": false, "rivalQuotes": {}, "round": 1}]}},
+    {"why": "phase-1 observations carry no messages field", "value": {"agentIds": ["a", "b"], "choiceDraw": 0.5, "history": [], "round": 1, "selfId": "a", "messages": []}}
+  ]
+}

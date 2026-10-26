@@ -1,0 +1,5 @@
+model,quantity,n_games,primed_mean,unprimed_mean,diff,ci_lo,ci_hi,p_signflip
+"Qwen3-32B, thinking on",mean quote (half-spread),18,2.3131,2.3225,-0.0093,-0.0210,0.0002,0.2500
+"Qwen3-32B, thinking on",mean profit per round,18,33.9008,34.6174,-0.7166,-3.7322,1.4033,0.8125
+"gpt-oss-20b, medium effort",mean quote (half-spread),11,1.8310,1.8353,-0.0043,-0.0135,0.0049,0.4023
+"gpt-oss-20b, medium effort",mean profit per round,11,20.4421,27.3980,-6.9559,-12.6915,-1.9016,0.0273

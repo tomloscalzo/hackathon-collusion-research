@@ -1,0 +1,17 @@
+id,check,expected,observed,pass
+1,Row count equals non-pilot rows of the neutral grid.csv; row_id and pair_key unique,1388,1388 rows; row_id unique True; pair_key unique True,PASS
+2,One counted game per planned trial; no game counted twice; counted games = my own collect tables,0 duplicates; sets equal,0 duplicate counted; 0 in my tables but not counted; 0 counted but not in my tables,PASS
+3,Supersession: originals absent from run.csv; no chains; no placeholder source; counted reruns vs my superseded.csv (trunc_rerun.py supersede),0 overlap; 0 chains; 0 placeholder rows,0 originals counted; 0 chained; 0 placeholder-source rows; 53 counted reruns (mine at my build: 53); 0 reruns counted but absent from my list,PASS
+5,"Seed set: every main-arm (wording, seed) is one of the 20 declared pairs; 20 counted games per cell and mode",0 off-set; every cell 20,0 off-set rows; cell sizes {20: np.int64(68)},PASS
+6,"Agreement with collect.py (my independent collect run, supersession applied)",0 differences,"1360 games compared; differences {'rounds_played': 0, 'undercut_count': 0, 'profit_total': 0, 'refusals': 0, 'truncations': 0, 'price_index': 0}",PASS
+7,Identities: 0<=price_index<=1; shares sum to 1; profit_total = sum of firm profits,0 violations,0 violations,PASS
+9,Mode logic: thinking-off rows have no reasoning words; cot_threat only thinking on; tacit rows have no messages,0 violations,0 violations,PASS
+10,"Truncation: every thinking-on counted row never truncated, a truncation rerun, or flagged",0 unexplained rows,never truncated 640; truncation rerun 53; flagged (rerun missing or truncated again) 7; unexplained 0,PASS
+11,"Controls: every control_row_id exists in the same run, wording, seed and thinking",0 violations,1120 with a control; 0 violations,PASS
+12,Descriptions: every description column non-empty in every counted row (score_description only where a score field exists),0 empty,0 empty columns,PASS
+13,Dictionary completeness: every run.csv/run_firms.csv column has a dictionary row,exact match,"run.csv 233 cols, run_firms.csv 51 cols; dictionary rows 284",PASS
+16,"Hygiene: no local path, email, key in run.csv / run_firms.csv",0 findings,0 findings,PASS
+S1,Neutral rows: payoff_examples is neutral for every row,all neutral,{'neutral': 1388},PASS
+S2,Neutral status counts (28 never_started = 14b smoke/control arms not in the queue),1360 done,"{'done': 1360, 'never_started': 28}",PASS
+S3,One fingerprint and one code_commit per arm in the neutral run,1 each,0 arms with >1 fingerprint; 0 with >1 commit,PASS
+S4,Pending truncation reruns are flagged rerun_missing (final refresh needed),flagged and listed,"7 rows: d-cot-monitor-b__p1__w0__s118__t1, headline-tacit__p3__w4__s273__t1, headline-tacit__p4__w0__s42__t1, headline-tacit__p5__w4__s126__t1, headline-tacit__p5__w4__s273__t1, n3-cheater__p3__w3__s193__t1, n3-cheater__p3__w4__s273__t1",PASS

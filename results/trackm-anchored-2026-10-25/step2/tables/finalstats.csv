@@ -1,0 +1,233 @@
+run,contrast,metric,n,diff,lo,hi,p_signflip,note,family,declared,p_holm
+neutral,"chat - tacit, pooled pts, t0",gain_all,20,0.1885449407503133,0.11105707067571273,0.270902413184328,0.000179290771484375,,Communication (declared),True,0.000537872314453125
+neutral,"monitored - chat, t0",gain_all,20,0.012627954691416043,-0.02576239255756578,0.048577427258576104,0.5300521850585938,,Communication (declared),True,0.7338943481445312
+neutral,"p5 - p1 chat, t0",gain_all,20,0.05127557362155388,-0.058896536646303274,0.17942396534304506,0.483917236328125,,Penalty (declared: theory curve),True,0.483917236328125
+neutral,"p5 - p1 tacit, t0",gain_all,20,-0.11065104636591476,-0.24340903235040728,0.0083857394658521,0.117340087890625,,Penalty (declared: theory curve),True,0.23468017578125
+neutral,"chat - tacit, pooled pts, t1",gain_all,19,0.19022763277437016,0.12310432831564937,0.257348946627465,8.0108642578125e-05,,Communication (declared),True,0.0003204345703125
+neutral,"monitored - chat, t1",gain_all,20,0.02537415903038847,-0.02689400866423872,0.07695762439105575,0.3669471740722656,,Communication (declared),True,0.7338943481445312
+neutral,"p5 - p1 chat, t1",gain_all,20,-0.3157084003759398,-0.49115415479323304,-0.1560026849780703,0.0006103515625,,Penalty (declared: theory curve),True,0.0018310546875
+neutral,"p5 - p1 tacit, t1",gain_all,20,-0.5793351433270676,-0.7202010070958647,-0.4241848995848999,2.288818359375e-05,,Penalty (declared: theory curve),True,9.1552734375e-05
+neutral,"thinking on - off, tacit pooled pts",gain_all,19,-0.005142053530207108,-0.08162970601668644,0.07162184400866473,0.8998222351074219,,Thinking mode (declared),True,1.0
+neutral,"thinking on - off, chat pooled pts",gain_all,20,0.010356203281641599,-0.0456959344924812,0.06677795391995614,0.7257347106933594,,Thinking mode (declared),True,1.0
+neutral,"thinking on - off, monitored pooled pts",gain_all,20,0.023102407620614034,-0.01700632257401316,0.06163272775199717,0.2737560272216797,,Thinking mode (declared),True,0.8212680816650391
+neutral,"INTERACTION (p5-p1) x thinking, chat",gain_all,20,-0.3669839739974937,-0.6187073362077068,-0.1567375807487469,0.001987457275390625,,Interactions (exploratory),False,0.00397491455078125
+neutral,"INTERACTION (p5-p1) x thinking, tacit",gain_all,20,-0.4686840969611529,-0.6553037979401628,-0.2675118097861843,0.000400543212890625,,Interactions (exploratory),False,0.001201629638671875
+neutral,"INTERACTION (p5-p1) x thinking, monitored",gain_all,20,-0.3615901749686717,-0.5152748983004386,-0.21927218385808275,6.103515625e-05,,Interactions (exploratory),False,0.000244140625
+neutral,INTERACTION monitoring x thinking,gain_all,20,0.012746204338972427,-0.04115850464246553,0.06678156533912906,0.6559371948242188,,Interactions (exploratory),False,0.6559371948242188
+neutral,"chat - tacit, pooled pts, t0",level_all,20,0.19817897086466169,0.13055672873590227,0.27087223527568927,3.0517578125e-05,,Communication (declared),True,9.1552734375e-05
+neutral,"monitored - chat, t0",level_all,20,0.010151057330827069,-0.03130229734492482,0.050702640977443605,0.645904541015625,,Communication (declared),True,1.0
+neutral,"p5 - p1 chat, t0",level_all,20,0.04914154135338348,-0.09726983082706765,0.20819579417293232,0.55914306640625,,Penalty (declared: theory curve),True,0.651275634765625
+neutral,"p5 - p1 tacit, t0",level_all,20,-0.054699185463659136,-0.16100636513157895,0.047880895206766964,0.3256378173828125,,Penalty (declared: theory curve),True,0.651275634765625
+neutral,"chat - tacit, pooled pts, t1",level_all,19,0.20435546926526843,0.1464510462010289,0.2654061168546366,1.1444091796875e-05,,Communication (declared),True,4.57763671875e-05
+neutral,"monitored - chat, t1",level_all,20,0.011293225250626569,-0.038249255952380955,0.06050241639254385,0.6642265319824219,,Communication (declared),True,1.0
+neutral,"p5 - p1 chat, t1",level_all,20,-0.35138358395989977,-0.5268835244360901,-0.1791475971177945,0.001007080078125,,Penalty (declared: theory curve),True,0.003021240234375
+neutral,"p5 - p1 tacit, t1",level_all,20,-0.4797135025062659,-0.6041355153508774,-0.3437765718984963,2.288818359375e-05,,Penalty (declared: theory curve),True,9.1552734375e-05
+neutral,"thinking on - off, tacit pooled pts",level_all,19,0.01807377819548873,-0.04338505329936684,0.0783582177070967,0.579742431640625,,Thinking mode (declared),True,0.579742431640625
+neutral,"thinking on - off, chat pooled pts",level_all,20,0.03441006422305763,-0.021143300046992497,0.09093148202537592,0.25598907470703125,,Thinking mode (declared),True,0.5119781494140625
+neutral,"thinking on - off, monitored pooled pts",level_all,20,0.035552232142857146,-0.012591696428571436,0.0820959729401629,0.16457748413085938,,Thinking mode (declared),True,0.4937324523925781
+neutral,"INTERACTION (p5-p1) x thinking, chat",level_all,20,-0.4005251253132833,-0.6686931939223058,-0.1596009633458647,0.00424957275390625,,Interactions (exploratory),False,0.0084991455078125
+neutral,"INTERACTION (p5-p1) x thinking, tacit",level_all,20,-0.42501431704260656,-0.5878109797932332,-0.2606037797619048,0.000209808349609375,,Interactions (exploratory),False,0.000629425048828125
+neutral,"INTERACTION (p5-p1) x thinking, monitored",level_all,20,-0.43786494360902256,-0.5935707362155388,-0.28013174968671684,9.1552734375e-05,,Interactions (exploratory),False,0.0003662109375
+neutral,INTERACTION monitoring x thinking,level_all,20,0.0011421679197994971,-0.04765346647869674,0.0498117113095238,0.9637870788574219,,Interactions (exploratory),False,0.9637870788574219
+neutral,"LEVER DIFF: 5-tick effect minus no-chat effect (price index), t0",level_all,20,-0.2529611528822055,-0.4265813862781954,-0.07346784774436092,0.015008926391601562,,Lever ranking (exploratory),False,0.015008926391601562
+neutral,"LEVER DIFF: 5-tick effect minus no-chat effect (price index), t1",level_all,20,-0.362675313283208,-0.4913497893170426,-0.22577413847117792,0.0001983642578125,,Lever ranking (exploratory),False,0.000396728515625
+neutral,d-cot-monitor-a - control level (complete pairs),level_all,11,-0.1575,-0.27945292207792205,-0.030778409090909103,0.017578125,missing pairs=9,D set: monitoring threat,True,0.140625
+neutral,d-cot-monitor-a worst case: 9 missing pairs imputed at diff=+0.0,level_all,20,-0.086625,-0.1659308035714286,-0.015176785714285745,0.017578125,,D set: monitoring threat,True,0.140625
+neutral,d-cot-monitor-a worst case: 9 missing pairs imputed at diff=+0.2,level_all,20,0.003375000000000003,-0.10392008928571425,0.10310937499999998,0.957244873046875,,D set: monitoring threat,True,0.9895172119140625
+neutral,d-cot-monitor-b - control level (complete pairs),level_all,14,-0.13804381489437878,-0.2436991004296455,-0.027999054556032896,0.02099609375,missing pairs=6,D set: monitoring threat,True,0.140625
+neutral,d-cot-monitor-b worst case: 6 missing pairs imputed at diff=+0.0,level_all,20,-0.09663067042606514,-0.17829915961779444,-0.017691607142857117,0.02099609375,,D set: monitoring threat,True,0.140625
+neutral,d-cot-monitor-b worst case: 6 missing pairs imputed at diff=+0.2,level_all,20,-0.03663067042606516,-0.1375132221177945,0.06492493186090227,0.49475860595703125,,D set: monitoring threat,True,0.9895172119140625
+anchored,"chat - tacit, pooled pts, t0",gain_all,20,0.24217629354636597,0.1827471957305373,0.30522463841047925,3.814697265625e-06,,Communication (declared),True,1.52587890625e-05
+anchored,"monitored - chat, t0",gain_all,20,-0.035825389371867154,-0.10858658633106202,0.02564089427866539,0.3579444885253906,,Communication (declared),True,0.4080810546875
+anchored,"p5 - p1 chat, t0",gain_all,20,0.03632681813909776,-0.053654489344454874,0.12474174572368416,0.4505615234375,,Penalty (declared: theory curve),True,0.4505615234375
+anchored,"p5 - p1 tacit, t0",gain_all,20,-0.07189762014411022,-0.1811083107965225,0.024695736552318312,0.2225341796875,,Penalty (declared: theory curve),True,0.445068359375
+anchored,"chat - tacit, pooled pts, t1",gain_all,20,0.1469755621867168,0.1046083142073935,0.18850582638236216,9.5367431640625e-06,,Communication (declared),True,2.86102294921875e-05
+anchored,"monitored - chat, t1",gain_all,20,-0.03738504476033834,-0.09096899873511904,0.016756568215460517,0.20404052734375,,Communication (declared),True,0.4080810546875
+anchored,"p5 - p1 chat, t1",gain_all,20,-0.3317614342105263,-0.49589300175438594,-0.171722690319549,0.00152587890625,,Penalty (declared: theory curve),True,0.00457763671875
+anchored,"p5 - p1 tacit, t1",gain_all,20,-0.4351752252506266,-0.5735339398143797,-0.2904134061090225,6.29425048828125e-05,,Penalty (declared: theory curve),True,0.00025177001953125
+anchored,"thinking on - off, tacit pooled pts",gain_all,20,0.09303654413377194,0.034486386777490614,0.15180195946800593,0.0054912567138671875,,Thinking mode (declared),True,0.016473770141601562
+anchored,"thinking on - off, chat pooled pts",gain_all,20,-0.0021641872258771934,-0.050094082089011595,0.046352643879229306,0.9330329895019531,,Thinking mode (declared),True,1.0
+anchored,"thinking on - off, monitored pooled pts",gain_all,20,-0.003723842614348373,-0.06398904840225564,0.06147672370379073,0.9133110046386719,,Thinking mode (declared),True,1.0
+anchored,"INTERACTION (p5-p1) x thinking, chat",gain_all,20,-0.368088252349624,-0.5609661533599625,-0.17628886516682335,0.0023040771484375,,Interactions (exploratory),False,0.0069122314453125
+anchored,"INTERACTION (p5-p1) x thinking, tacit",gain_all,20,-0.3632776051065164,-0.5469553929197994,-0.18329064799498762,0.0011138916015625,,Interactions (exploratory),False,0.00445556640625
+anchored,"INTERACTION (p5-p1) x thinking, monitored",gain_all,20,-0.37642690820802005,-0.5953457567630014,-0.15278312097431077,0.0038909912109375,,Interactions (exploratory),False,0.007781982421875
+anchored,INTERACTION monitoring x thinking,gain_all,20,-0.0015596553884711817,-0.09318581362879855,0.09631456096589117,0.9756755828857422,,Interactions (exploratory),False,0.9756755828857422
+anchored,"chat - tacit, pooled pts, t0",level_all,20,0.18863828320802004,0.13984209723527563,0.23968692101347117,3.814697265625e-06,,Communication (declared),True,1.52587890625e-05
+anchored,"monitored - chat, t0",level_all,20,-0.03018951284461153,-0.08662599761121552,0.019252391917293166,0.3063201904296875,,Communication (declared),True,0.40692901611328125
+anchored,"p5 - p1 chat, t0",level_all,20,0.027953665413533845,-0.04778156954887216,0.10191513549498744,0.465087890625,,Penalty (declared: theory curve),True,0.465087890625
+anchored,"p5 - p1 tacit, t0",level_all,20,-0.050188189223057636,-0.12264472196115286,0.013726290726817018,0.21875,,Penalty (declared: theory curve),True,0.4375
+anchored,"chat - tacit, pooled pts, t1",level_all,20,0.11830847431077691,0.08554002545426062,0.1507291854636591,9.5367431640625e-06,,Communication (declared),True,2.86102294921875e-05
+anchored,"monitored - chat, t1",level_all,20,-0.02776653352130325,-0.06741972959743106,0.012434507557957395,0.20346450805664062,,Communication (declared),True,0.40692901611328125
+anchored,"p5 - p1 chat, t1",level_all,20,-0.2341343984962406,-0.3449064230889724,-0.12317513157894742,0.00128173828125,,Penalty (declared: theory curve),True,0.00384521484375
+anchored,"p5 - p1 tacit, t1",level_all,20,-0.2935642857142858,-0.39144418624686717,-0.19393648887844622,0.0001049041748046875,,Penalty (declared: theory curve),True,0.00041961669921875
+anchored,"thinking on - off, tacit pooled pts",level_all,20,0.07386664317042607,0.03072883615288221,0.1153097895128446,0.0034275054931640625,,Thinking mode (declared),True,0.010282516479492188
+anchored,"thinking on - off, chat pooled pts",level_all,20,0.003536834273182943,-0.03650498139880952,0.042493331179511235,0.8634872436523438,,Thinking mode (declared),True,1.0
+anchored,"thinking on - off, monitored pooled pts",level_all,20,0.005959813596491221,-0.04058082099780702,0.057287867324561315,0.8201141357421875,,Thinking mode (declared),True,1.0
+anchored,"INTERACTION (p5-p1) x thinking, chat",level_all,20,-0.2620880639097744,-0.40377352600250616,-0.1222126292293234,0.0028228759765625,,Interactions (exploratory),False,0.0076732635498046875
+anchored,"INTERACTION (p5-p1) x thinking, tacit",level_all,20,-0.2433760964912281,-0.3700030975877192,-0.11843997650375956,0.001861572265625,,Interactions (exploratory),False,0.0074462890625
+anchored,"INTERACTION (p5-p1) x thinking, monitored",level_all,20,-0.28190758145363404,-0.4341986129385964,-0.12941117637844624,0.0025577545166015625,,Interactions (exploratory),False,0.0076732635498046875
+anchored,INTERACTION monitoring x thinking,level_all,20,0.002422979323308286,-0.0654240325422932,0.07573548970081452,0.9494590759277344,,Interactions (exploratory),False,0.9494590759277344
+anchored,"LEVER DIFF: 5-tick effect minus no-chat effect (price index), t0",level_all,20,-0.22123734335839598,-0.30002194705513785,-0.13522817512531332,0.000179290771484375,,Lever ranking (exploratory),False,0.000179290771484375
+anchored,"LEVER DIFF: 5-tick effect minus no-chat effect (price index), t1",level_all,20,-0.2916193922305765,-0.3583367645676691,-0.2208616893796993,1.9073486328125e-06,,Lever ranking (exploratory),False,3.814697265625e-06
+anchored,d-cot-monitor-a - control level (complete pairs),level_all,20,-0.06208120300751876,-0.11042858082706762,-0.025188237781954857,6.103515625e-05,missing pairs=0,D set: monitoring threat,True,0.000244140625
+anchored,d-cot-monitor-b - control level (complete pairs),level_all,20,-0.12937622180451128,-0.19706925673558895,-0.06198379385964911,0.001995086669921875,missing pairs=0,D set: monitoring threat,True,0.00399017333984375
+neutral,"d-cot-monitor-a - headline-chat (p1), t1",gain_all,11,-0.07820762987012987,-0.15475264204545452,0.00020293425324674364,0.064453125,family=D set: monitoring threat,D set: monitoring threat,True,0.12890625
+neutral,"d-cot-monitor-a - headline-chat (p1), t1",level_all,11,-0.1575,-0.28116964285714285,-0.03214204545454543,0.017578125,family=D set: monitoring threat,D set: monitoring threat,True,0.140625
+neutral,"d-cot-monitor-b - headline-chat (p1), t1",gain_all,14,-0.042711220238095225,-0.09966552359693878,0.019054297725340147,0.19775390625,family=D set: monitoring threat,D set: monitoring threat,True,0.19775390625
+neutral,"d-cot-monitor-b - headline-chat (p1), t1",level_all,14,-0.13804381489437878,-0.24351607254743995,-0.02731174588256352,0.02099609375,family=D set: monitoring threat,D set: monitoring threat,True,0.140625
+neutral,"d-conflict - headline-chat (p1), t0",gain_all,20,-0.06513212875939849,-0.17542365895206768,0.02711498214285712,0.259765625,family=D set: scores,D set: scores,True,1.0
+neutral,"d-conflict - headline-chat (p1), t0",level_all,20,-0.05151065162907269,-0.15525404135338347,0.04370958646616542,0.388671875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-conflict - headline-chat (p1), t1",gain_all,20,0.016087464285714292,-0.014261889880952375,0.049713134523809495,0.3563232421875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-conflict - headline-chat (p1), t1",level_all,20,0.014367857142857144,-0.07404511904761904,0.10058255952380953,0.74951171875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-a - headline-chat (p1), t0",gain_all,20,-0.003598190476190477,-0.10054551190476191,0.08104469047619048,0.9140625,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-a - headline-chat (p1), t0",level_all,20,-0.0035166666666666705,-0.08393166666666667,0.07214732142857137,1.0,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-a - headline-chat (p1), t1",gain_all,20,0.00018085416666666632,-0.036279745610119034,0.03772495788690468,0.99224853515625,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-a - headline-chat (p1), t1",level_all,20,-0.024245833333333338,-0.11096519345238093,0.06314706845238093,0.6085205078125,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-b - headline-chat (p1), t0",gain_all,20,0.03174936936090225,-0.018770236889097753,0.08417385223214284,0.23828125,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-b - headline-chat (p1), t0",level_all,20,0.0465998120300752,-0.05023777725563909,0.1394079417293233,0.3623046875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-temptation-b - headline-chat (p1), t1",gain_all,20,0.025633595238095237,-0.0016578928571428508,0.05625000446428571,0.107421875,family=D set: scores,D set: scores,True,0.859375
+neutral,"d-temptation-b - headline-chat (p1), t1",level_all,20,0.05255238095238094,-0.022376190476190504,0.125,0.171875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-placebo - headline-chat (p1), t0",gain_all,20,0.03289492261904763,-0.07604322767857141,0.12400436398809524,0.571044921875,family=D set: scores,D set: scores,True,1.0
+neutral,"d-placebo - headline-chat (p1), t0",level_all,20,0.08414404761904765,-0.02018669642857143,0.1824267857142857,0.11865234375,family=D set: scores,D set: scores,True,0.94921875
+neutral,"d-placebo - headline-chat (p1), t1",gain_all,20,-0.005938650689223052,-0.043165404158834575,0.03736849053101499,0.80010986328125,family=D set: scores,D set: scores,True,1.0
+neutral,"d-placebo - headline-chat (p1), t1",level_all,20,-0.05040244360902255,-0.13936592575187973,0.04890868734335839,0.336669921875,family=D set: scores,D set: scores,True,1.0
+neutral,"r2f-confidant - headline-chat (p1), t0",gain_all,20,0.08733258928571427,0.015178571428571413,0.1763420758928571,0.033203125,family=Introspection,Introspection,True,0.33203125
+neutral,"r2f-confidant - headline-chat (p1), t0",level_all,20,0.115625,0.01696428571428571,0.215625,0.03125,family=Introspection,Introspection,True,0.3125
+neutral,"r2f-confidant - headline-chat (p1), t1",gain_all,20,-0.008094741071428574,-0.04326116078869049,0.031143638839285677,0.7261962890625,family=Introspection,Introspection,True,1.0
+neutral,"r2f-confidant - headline-chat (p1), t1",level_all,20,-0.0656625,-0.1503999255952381,0.024371964285714195,0.1883544921875,family=Introspection,Introspection,True,1.0
+neutral,"r3f-public - headline-chat (p1), t0",gain_all,20,-0.013373303571428574,-0.08449228348214287,0.04667745089285713,0.7421875,family=Introspection,Introspection,True,1.0
+neutral,"r3f-public - headline-chat (p1), t0",level_all,20,-0.015082393483709289,-0.1111249765037594,0.07503722587719297,0.70703125,family=Introspection,Introspection,True,1.0
+neutral,"r3f-public - headline-chat (p1), t1",gain_all,20,0.007081660714285709,-0.0304004424107143,0.04687125565476189,0.74072265625,family=Introspection,Introspection,True,1.0
+neutral,"r3f-public - headline-chat (p1), t1",level_all,20,0.003117857142857139,-0.07750160714285713,0.09042300595238092,0.92822265625,family=Introspection,Introspection,True,1.0
+neutral,"r2s-confidant - headline-chat (p1), t0",gain_all,20,0.015318672619047607,-0.0823625799107143,0.12620068571428572,0.807373046875,family=Introspection,Introspection,True,1.0
+neutral,"r2s-confidant - headline-chat (p1), t0",level_all,20,0.00950833333333333,-0.11444761904761905,0.1347861607142857,0.900634765625,family=Introspection,Introspection,True,1.0
+neutral,"r2s-confidant - headline-chat (p1), t1",gain_all,20,0.006883083333333323,-0.029775358333333342,0.04647008110119043,0.762939453125,family=Introspection,Introspection,True,1.0
+neutral,"r2s-confidant - headline-chat (p1), t1",level_all,20,0.0026916666666666755,-0.0809152976190476,0.09095178571428571,0.960693359375,family=Introspection,Introspection,True,1.0
+neutral,"r3s-public - headline-chat (p1), t0",gain_all,20,0.045161177944862164,-0.023998145715852116,0.11067833270676687,0.2158203125,family=Introspection,Introspection,True,1.0
+neutral,"r3s-public - headline-chat (p1), t0",level_all,20,0.057828947368421056,-0.03886748120300751,0.15697288533834586,0.2822265625,family=Introspection,Introspection,True,1.0
+neutral,"r3s-public - headline-chat (p1), t1",gain_all,20,0.012865738095238088,-0.01953852380952379,0.04770906607142856,0.475830078125,family=Introspection,Introspection,True,1.0
+neutral,"r3s-public - headline-chat (p1), t1",level_all,20,0.02270119047619047,-0.05485330357142856,0.10163648809523808,0.566162109375,family=Introspection,Introspection,True,1.0
+neutral,"r4-announced - headline-chat (p1), t0",gain_all,20,0.007779017857142845,-0.0899888392857143,0.11961411830357134,0.88671875,family=Introspection,Introspection,True,1.0
+neutral,"r4-announced - headline-chat (p1), t0",level_all,20,-0.017767857142857148,-0.13386383928571427,0.0986629464285714,0.722412109375,family=Introspection,Introspection,True,1.0
+neutral,"r4-announced - headline-chat (p1), t1",gain_all,20,-0.00515753571428571,-0.044860631994047606,0.0343030825892857,0.85546875,family=Introspection,Introspection,True,1.0
+neutral,"r4-announced - headline-chat (p1), t1",level_all,20,-0.046078571428571434,-0.13027092261904757,0.0315202380952381,0.3125,family=Introspection,Introspection,True,1.0
+neutral,"m-pub - headline-chat (p3), t0",gain_all,20,0.0729775119047619,-0.07290218392857141,0.23411875877976185,0.31884765625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-pub - headline-chat (p3), t0",level_all,20,0.06416785714285714,-0.06245464285714285,0.1993064880952381,0.35498046875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-pub - headline-chat (p3), t1",gain_all,20,0.0009643124999999975,-0.031694106473214294,0.03436248020833333,0.984375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-pub - headline-chat (p3), t1",level_all,20,-0.02142321428571428,-0.07889816964285712,0.037464315476190474,0.48046875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-mon0 - headline-chat (p3), t0",gain_all,20,0.0030014122807017485,-0.11163514583333335,0.1342632076049498,0.9697265625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-mon0 - headline-chat (p3), t0",level_all,20,-0.01263289473684211,-0.13524350093984963,0.11284835839598992,0.8466796875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-mon0 - headline-chat (p3), t1",gain_all,20,-0.006651538063909779,-0.05417041517857142,0.041562273883928566,0.77099609375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-mon0 - headline-chat (p3), t1",level_all,20,-0.02626625939849623,-0.10610397713032581,0.05812758458646616,0.50927734375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-asym - headline-chat (p3), t0",gain_all,20,-0.023437845238095233,-0.16166572232142853,0.1141718418154761,0.7437591552734375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-asym - headline-chat (p3), t0",level_all,20,-0.046147619047619055,-0.156262619047619,0.06732315476190466,0.4282684326171875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-asym - headline-chat (p3), t1",gain_all,19,0.019996920261179267,-0.019451819326276213,0.06340417833234399,0.38232421875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-asym - headline-chat (p3), t1",level_all,19,-0.0019119509299564583,-0.08065886426592794,0.07932780470914123,0.93817138671875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-comp - headline-chat (p3), t0",gain_all,20,0.039947247023809515,-0.10178076302083335,0.1991084831845238,0.64959716796875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-comp - headline-chat (p3), t0",level_all,20,0.02405059523809523,-0.11563043154761904,0.18154046130952378,0.77093505859375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-comp - headline-chat (p3), t1",gain_all,19,-0.00580201573011477,-0.05844536434837093,0.04801995325484762,0.84173583984375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-comp - headline-chat (p3), t1",level_all,19,-0.046968902519456526,-0.13066454211185857,0.040118826671943025,0.30230712890625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-target - headline-chat (p3), t0",gain_all,20,0.10410533630952382,-0.0309933244047619,0.2551495881696428,0.205718994140625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-target - headline-chat (p3), t0",level_all,20,0.0887375,-0.061865937499999996,0.2360675297619048,0.272491455078125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-target - headline-chat (p3), t1",gain_all,20,0.007695818295739365,-0.03417576764567667,0.0500559749138471,0.72216796875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-target - headline-chat (p3), t1",level_all,20,-0.016986591478696727,-0.09949079573934833,0.059258596491228006,0.67236328125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-joint - headline-chat (p3), t0",gain_all,20,0.10428989583333333,-0.03273671718749997,0.2607288833333333,0.2242431640625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-joint - headline-chat (p3), t0",level_all,20,0.13593035714285714,-0.010571011904761897,0.29489319940476194,0.1014404296875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-joint - headline-chat (p3), t1",gain_all,20,-0.015608150062656645,-0.061591955239661655,0.032747113095238096,0.55078125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"m-inc-joint - headline-chat (p3), t1",level_all,20,-0.06423652882205513,-0.13506986215538846,0.013157894736842101,0.14599609375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+neutral,"start-5tick - headline-chat (p3), t0",gain_all,20,-0.46715826613408523,-0.6603728768209588,-0.24923223709273187,0.0007915496826171875,family=5-tick start,5-tick start,False,0.0007915496826171875
+neutral,"start-5tick - headline-chat (p3), t0",level_all,20,-0.39457008145363404,-0.5634341651002506,-0.19882410401002504,0.00095367431640625,family=5-tick start,5-tick start,False,0.00095367431640625
+neutral,"start-5tick - headline-chat (p3), t1",gain_all,20,-0.5996180383771931,-0.7083098773417921,-0.48075738515037597,1.9073486328125e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+neutral,"start-5tick - headline-chat (p3), t1",level_all,20,-0.5504570488721805,-0.6490250422932332,-0.4482013518170426,1.9073486328125e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+neutral,"n3-group - headline-chat (p3), t0",gain_all,20,-0.008978554985119059,-0.20984363282663682,0.18776909263281244,0.9359359741210938,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-group - headline-chat (p3), t0",level_all,20,-0.013510119047619062,-0.20304962797619053,0.16913046130952378,0.8931427001953125,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-group - headline-chat (p3), t1",gain_all,20,-0.03505337515664161,-0.09906456361998747,0.02800606992872805,0.3077392578125,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-group - headline-chat (p3), t1",level_all,20,-0.09018004385964912,-0.19343421052631576,0.01239031249999996,0.1168212890625,family=Three-firm arms,Three-firm arms,False,0.46728515625
+neutral,"n3-cheater - n3-group (p3), t0",gain_all,20,-0.5508728869635025,-0.6691312997286575,-0.4095844230111411,1.52587890625e-05,family=Three-firm arms,Three-firm arms,False,9.1552734375e-05
+neutral,"n3-cheater - n3-group (p3), t0",level_all,20,-0.20947130325814536,-0.30744734805764407,-0.10092756892230592,0.001850128173828125,family=Three-firm arms,Three-firm arms,False,0.009250640869140625
+neutral,"n3-cheater - n3-group (p3), t1",gain_all,17,-0.46757585272003543,-0.5614569870743034,-0.37276372132076524,1.52587890625e-05,family=Three-firm arms,Three-firm arms,False,9.1552734375e-05
+neutral,"n3-cheater - n3-group (p3), t1",level_all,17,-0.2952976927613151,-0.3622296679197996,-0.22586670720919955,1.52587890625e-05,family=Three-firm arms,Three-firm arms,False,9.1552734375e-05
+neutral,"n3-ethics - n3-group (p3), t0",gain_all,20,0.010562024122023821,-0.1886776995543155,0.20278656640178572,0.9193115234375,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-ethics - n3-group (p3), t0",level_all,20,0.015904761904761915,-0.17083333333333334,0.1921242559523809,0.873291015625,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-ethics - n3-group (p3), t1",gain_all,15,-0.04008499892857145,-0.11496428523809524,0.034591328438988,0.294189453125,family=Three-firm arms,Three-firm arms,False,1.0
+neutral,"n3-ethics - n3-group (p3), t1",level_all,15,-0.034714285714285704,-0.12923988095238098,0.06323988095238092,0.470458984375,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"d-cot-monitor-a - headline-chat (p1), t1",gain_all,20,-0.07389626660401002,-0.1406396365131579,-0.026884510808270666,6.103515625e-05,family=D set: monitoring threat,D set: monitoring threat,True,0.0001220703125
+anchored,"d-cot-monitor-a - headline-chat (p1), t1",level_all,20,-0.06208120300751876,-0.10889548558897241,-0.026223016917293222,6.103515625e-05,family=D set: monitoring threat,D set: monitoring threat,True,0.000244140625
+anchored,"d-cot-monitor-b - headline-chat (p1), t1",gain_all,20,-0.1570186809210526,-0.24149758645050126,-0.07059345253759398,0.002361297607421875,family=D set: monitoring threat,D set: monitoring threat,True,0.002361297607421875
+anchored,"d-cot-monitor-b - headline-chat (p1), t1",level_all,20,-0.12937622180451128,-0.1963261176378446,-0.060837593201754345,0.001995086669921875,family=D set: monitoring threat,D set: monitoring threat,True,0.00399017333984375
+anchored,"d-conflict - headline-chat (p1), t0",gain_all,20,0.004059168859649143,-0.13014140068922306,0.12706938655231823,0.964599609375,family=D set: scores,D set: scores,True,1.0
+anchored,"d-conflict - headline-chat (p1), t0",level_all,20,0.007043984962406005,-0.09816522086466165,0.10555780075187965,0.895477294921875,family=D set: scores,D set: scores,True,1.0
+anchored,"d-conflict - headline-chat (p1), t1",gain_all,20,0.050242712092731824,0.0063931697211779505,0.10220422955827065,0.10546875,family=D set: scores,D set: scores,True,0.6328125
+anchored,"d-conflict - headline-chat (p1), t1",level_all,20,0.06973101503759398,0.010471522556390972,0.14154003759398495,0.10546875,family=D set: scores,D set: scores,True,0.6328125
+anchored,"d-temptation-a - headline-chat (p1), t0",gain_all,20,0.05991059226190476,-0.03237043123433583,0.15576116181077695,0.239990234375,family=D set: scores,D set: scores,True,1.0
+anchored,"d-temptation-a - headline-chat (p1), t0",level_all,20,0.058853477443609026,-0.017050472274436054,0.13980989661654133,0.13134765625,family=D set: scores,D set: scores,True,0.65673828125
+anchored,"d-temptation-a - headline-chat (p1), t1",gain_all,20,0.059742587092731836,0.013915340852130333,0.11406489473684207,0.0546875,family=D set: scores,D set: scores,True,0.4375
+anchored,"d-temptation-a - headline-chat (p1), t1",level_all,20,0.08987130325814537,0.022748026315789475,0.1689049342105263,0.0546875,family=D set: scores,D set: scores,True,0.4375
+anchored,"d-temptation-b - headline-chat (p1), t0",gain_all,20,-0.04212718875313283,-0.15562825556860901,0.060376275736215415,0.43927001953125,family=D set: scores,D set: scores,True,1.0
+anchored,"d-temptation-b - headline-chat (p1), t0",level_all,20,-0.02594238721804512,-0.11029712249373434,0.054986516290726775,0.56304931640625,family=D set: scores,D set: scores,True,1.0
+anchored,"d-temptation-b - headline-chat (p1), t1",gain_all,20,0.039247524592731835,0.0012671734375000053,0.0871867440319549,0.078125,family=D set: scores,D set: scores,True,0.546875
+anchored,"d-temptation-b - headline-chat (p1), t1",level_all,20,0.03718280075187969,0.0009358247180451027,0.07845082001879695,0.078125,family=D set: scores,D set: scores,True,0.546875
+anchored,"d-placebo - headline-chat (p1), t0",gain_all,20,-0.040474891134085214,-0.15802189487390353,0.0678079310933584,0.4959716796875,family=D set: scores,D set: scores,True,1.0
+anchored,"d-placebo - headline-chat (p1), t0",level_all,20,-0.022705733082706778,-0.10930159304511283,0.05877031249999997,0.7054443359375,family=D set: scores,D set: scores,True,1.0
+anchored,"d-placebo - headline-chat (p1), t1",gain_all,20,0.03078362797619048,-0.026612330913220534,0.09187352607691102,0.38134765625,family=D set: scores,D set: scores,True,1.0
+anchored,"d-placebo - headline-chat (p1), t1",level_all,20,0.043438690476190464,-0.018206679981203004,0.11078864270050122,0.28759765625,family=D set: scores,D set: scores,True,1.0
+anchored,"r2f-confidant - headline-chat (p1), t0",gain_all,20,-0.00968467590852129,-0.0966367597901002,0.07829340041118422,0.84185791015625,family=Introspection,Introspection,True,1.0
+anchored,"r2f-confidant - headline-chat (p1), t0",level_all,20,-0.010801096491228087,-0.08468514254385966,0.06315420347744352,0.785888671875,family=Introspection,Introspection,True,1.0
+anchored,"r2f-confidant - headline-chat (p1), t1",gain_all,20,0.046707627976190484,0.009492107072368427,0.09186511313439849,0.05859375,family=Introspection,Introspection,True,0.5859375
+anchored,"r2f-confidant - headline-chat (p1), t1",level_all,20,0.07574107142857142,0.018446306390977444,0.14601883928571427,0.05859375,family=Introspection,Introspection,True,0.5859375
+anchored,"r3f-public - headline-chat (p1), t0",gain_all,20,-0.028464684837092736,-0.17393210276080828,0.10116166404683574,0.66455078125,family=Introspection,Introspection,True,1.0
+anchored,"r3f-public - headline-chat (p1), t0",level_all,20,-0.008574310776942356,-0.11379112781954885,0.089424378132832,0.9228515625,family=Introspection,Introspection,True,1.0
+anchored,"r3f-public - headline-chat (p1), t1",gain_all,20,0.05025905137844612,0.006393384711779454,0.10443124999999998,0.1015625,family=Introspection,Introspection,True,0.8125
+anchored,"r3f-public - headline-chat (p1), t1",level_all,20,0.06974887218045112,0.009610808270676662,0.14272744360902254,0.1015625,family=Introspection,Introspection,True,0.8125
+anchored,"r2s-confidant - headline-chat (p1), t0",gain_all,20,-0.014356715695488714,-0.11514335232221176,0.06632352913142228,0.8427734375,family=Introspection,Introspection,True,1.0
+anchored,"r2s-confidant - headline-chat (p1), t0",level_all,20,-0.007198652882205514,-0.07995021616541353,0.056322456923558854,0.900390625,family=Introspection,Introspection,True,1.0
+anchored,"r2s-confidant - headline-chat (p1), t1",gain_all,20,0.03713895802005014,-0.03768717521146616,0.10970075818452385,0.341064453125,family=Introspection,Introspection,True,1.0
+anchored,"r2s-confidant - headline-chat (p1), t1",level_all,20,0.08769931077694237,-0.008269638157894721,0.18786401472431072,0.103271484375,family=Introspection,Introspection,True,0.8125
+anchored,"r3s-public - headline-chat (p1), t0",gain_all,20,-0.1155891104323308,-0.22030862828947362,-0.004136915484022543,0.0701141357421875,family=Introspection,Introspection,True,0.6310272216796875
+anchored,"r3s-public - headline-chat (p1), t0",level_all,20,-0.09236300125313282,-0.17795874138471177,0.00020002976190468242,0.081207275390625,family=Introspection,Introspection,True,0.730865478515625
+anchored,"r3s-public - headline-chat (p1), t1",gain_all,20,0.037098145676691736,-0.025882892575187975,0.10146600862312029,0.2890625,family=Introspection,Introspection,True,1.0
+anchored,"r3s-public - headline-chat (p1), t1",level_all,20,0.0671528195488722,-0.006650822368421041,0.15022232142857142,0.15625,family=Introspection,Introspection,True,0.9375
+anchored,"r4-announced - headline-chat (p1), t0",gain_all,20,-0.06672344909147869,-0.15382115515350878,0.025153860745614022,0.16436767578125,family=Introspection,Introspection,True,1.0
+anchored,"r4-announced - headline-chat (p1), t0",level_all,20,-0.04901813909774435,-0.11705366776315787,0.020376452067669183,0.18658447265625,family=Introspection,Introspection,True,0.9375
+anchored,"r4-announced - headline-chat (p1), t1",gain_all,20,0.03553673887844611,-0.024797011121553882,0.09622874999999999,0.3515625,family=Introspection,Introspection,True,1.0
+anchored,"r4-announced - headline-chat (p1), t1",level_all,20,0.05784470551378444,-0.014825469924812023,0.14018333333333333,0.2265625,family=Introspection,Introspection,True,0.9375
+anchored,"m-pub - headline-chat (p3), t0",gain_all,20,0.03542763815789473,-0.09001903782894738,0.15833727796052632,0.55908203125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-pub - headline-chat (p3), t0",level_all,20,0.012631578947368414,-0.08535944078947368,0.10734736842105255,0.810546875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-pub - headline-chat (p3), t1",gain_all,20,0.02628016964285714,-0.037741882514880934,0.10191241808035703,0.52734375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-pub - headline-chat (p3), t1",level_all,20,0.035675595238095235,-0.03686449404761903,0.1307850744047619,0.52734375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-mon0 - headline-chat (p3), t0",gain_all,20,-0.10364093530701757,-0.2672400088267544,0.05499096792763148,0.23876953125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-mon0 - headline-chat (p3), t0",level_all,20,-0.08310347744360902,-0.19977511983082705,0.03190621475563903,0.1884765625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-mon0 - headline-chat (p3), t1",gain_all,20,0.025673523809523802,-0.013360226190476188,0.07931999999999997,0.421875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-mon0 - headline-chat (p3), t1",level_all,20,0.014704761904761898,-0.02639702380952382,0.0603833333333333,0.484375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-asym - headline-chat (p3), t0",gain_all,20,-0.11078493264411027,-0.27012554194078947,0.04407586134868406,0.20538330078125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-asym - headline-chat (p3), t0",level_all,20,-0.09785169172932331,-0.23405572368421051,0.026417003446115275,0.18463134765625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-asym - headline-chat (p3), t1",gain_all,20,-0.013899474937343368,-0.07590610530231831,0.04984893015350874,0.64117431640625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-asym - headline-chat (p3), t1",level_all,20,-0.019961716791979934,-0.07680473057644105,0.036704464285714306,0.4490966796875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-comp - headline-chat (p3), t0",gain_all,20,-0.1181809255952381,-0.25249681829182336,0.02741300176613399,0.13067626953125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-comp - headline-chat (p3), t0",level_all,20,-0.11161920426065161,-0.2227031477130325,0.005285093201754308,0.0792694091796875,family=Condition arms (2 firms),Condition arms (2 firms),False,0.95123291015625
+anchored,"m-comp - headline-chat (p3), t1",gain_all,20,0.00592878540100251,-0.04687001692512531,0.06058131470864661,0.9591064453125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-comp - headline-chat (p3), t1",level_all,20,-0.0025836466165413408,-0.050709181547619,0.0479605897556391,0.85845947265625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-target - headline-chat (p3), t0",gain_all,20,0.025986339285714276,-0.08719857072368423,0.15048556813909766,0.6943359375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-target - headline-chat (p3), t0",level_all,20,0.006570488721804488,-0.08812758458646615,0.10638639567669171,0.8955078125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-target - headline-chat (p3), t1",gain_all,20,0.010298442355889715,-0.05862329530075189,0.08693298083489971,0.795166015625,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-target - headline-chat (p3), t1",level_all,20,0.010315977443609023,-0.05622752819548873,0.08492886904761901,0.783935546875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-joint - headline-chat (p3), t0",gain_all,20,0.0641276644736842,-0.04623900740131579,0.19844628947368417,0.380859375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-joint - headline-chat (p3), t0",level_all,20,0.07619078947368421,-0.051063815789473645,0.22144720394736836,0.314453125,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-joint - headline-chat (p3), t1",gain_all,20,-0.0013367448308270718,-0.04879254403195488,0.046876643080357126,0.984375,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"m-inc-joint - headline-chat (p3), t1",level_all,20,-0.003229229323308275,-0.050440700971177956,0.04196838972431075,0.921875,family=Condition arms (2 firms),Condition arms (2 firms),False,1.0
+anchored,"start-5tick - headline-chat (p3), t0",gain_all,20,-0.5984545596804511,-0.6855856057213345,-0.4926036470942983,3.814697265625e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+anchored,"start-5tick - headline-chat (p3), t0",level_all,20,-0.4219895050125313,-0.4937408309837092,-0.3424626918859649,3.814697265625e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+anchored,"start-5tick - headline-chat (p3), t1",gain_all,20,-0.48997005686090234,-0.5796986466831141,-0.3918945834155702,1.9073486328125e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+anchored,"start-5tick - headline-chat (p3), t1",level_all,20,-0.3539130639097744,-0.4276920379072681,-0.27730409931077693,1.9073486328125e-06,family=5-tick start,5-tick start,False,3.814697265625e-06
+anchored,"n3-group - headline-chat (p3), t0",gain_all,20,-0.05137738406062031,-0.20052092906367486,0.09792003561271143,0.517669677734375,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"n3-group - headline-chat (p3), t0",level_all,20,-0.059346115288220536,-0.1875826754385964,0.05800032111528822,0.365081787109375,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"n3-group - headline-chat (p3), t1",gain_all,20,-0.06754040460565482,-0.1510337438913691,0.018166383928571363,0.146484375,family=Three-firm arms,Three-firm arms,False,0.5859375
+anchored,"n3-group - headline-chat (p3), t1",level_all,20,-0.06391428571428567,-0.13565992559523804,0.009108020833333313,0.146728515625,family=Three-firm arms,Three-firm arms,False,0.5869140625
+anchored,"n3-cheater - n3-group (p3), t0",gain_all,20,-0.15408317890930448,-0.29273238074602914,-0.00913561869413772,0.05072784423828125,family=Three-firm arms,Three-firm arms,False,0.25363922119140625
+anchored,"n3-cheater - n3-group (p3), t0",level_all,20,-0.18438189223057644,-0.26719325501253127,-0.09673729010025067,0.000698089599609375,family=Three-firm arms,Three-firm arms,False,0.00418853759765625
+anchored,"n3-cheater - n3-group (p3), t1",gain_all,20,-0.11386047003406954,-0.18167037817786655,-0.04215157297421287,0.008218765258789062,family=Three-firm arms,Three-firm arms,False,0.049312591552734375
+anchored,"n3-cheater - n3-group (p3), t1",level_all,20,-0.1257295426065163,-0.18619913690476192,-0.06444299812030077,0.001125335693359375,family=Three-firm arms,Three-firm arms,False,0.005626678466796875
+anchored,"n3-ethics - n3-group (p3), t0",gain_all,20,0.00835874065930452,-0.11875681086298169,0.12107102148661887,0.895172119140625,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"n3-ethics - n3-group (p3), t0",level_all,20,0.005977380952380956,-0.08289107142857137,0.09134565946115285,0.8922119140625,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"n3-ethics - n3-group (p3), t1",gain_all,20,0.04229428960408836,-0.051934220415765946,0.1318586606281426,0.4658203125,family=Three-firm arms,Three-firm arms,False,1.0
+anchored,"n3-ethics - n3-group (p3), t1",level_all,20,0.035852412280701754,-0.0433025712719298,0.11295158991228066,0.460052490234375,family=Three-firm arms,Three-firm arms,False,1.0

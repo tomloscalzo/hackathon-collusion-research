@@ -1,0 +1,6 @@
+name,label,description
+model_label,Model,"Always 'gpt-oss-20b, reasoning effort medium' (gpt-oss-only table: the adapter refuses any other model)."
+reasoning_effort,Reasoning effort,"Always 'medium': gpt-oss-20b has no thinking-off mode, so no t0/t1 contrast exists."
+empty_talk_done_count,Empty talk replies read as done,Talk turns whose empty reply the engine read as 'done' (a silence) under the gpt-oss option empty_talk_as_done (unit E1); a covariate. Blank for games not done.
+arm_build_bug,Arm build bug,1 for the five planned formula / no-numbers arms that played the neutral headline prompt because of a global grid override; 0 otherwise.
+headline_replicate_of,Headline replicate of,"For arm_build_bug rows, the headline cell (arm__p<point>) whose prompt they played; blank otherwise."

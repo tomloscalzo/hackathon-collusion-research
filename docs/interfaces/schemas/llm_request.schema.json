@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm_request.schema.json",
+  "title": "LLM request (canonical form)",
+  "description": "llm.LlmRequest in its canonical form, CanonicalRequest.json: every field, sorted keys, responseSchema written as null when absent; the optional thinking, topP and topK are written only when set (interface proposal v5, D1), so a request without them keeps the eight-field text and hash. The SHA-256 of Canonical.text of this object is the cache key and the requestHash of CallRecord. $defs also give the two derived wire forms: the OpenAI-compatible HTTP body (OpenAiCompatibleClient.body) and one line of the append-only cache file (CacheFile.line).",
+  "type": "object",
+  "properties": {
+    "provider": {"type": "string", "description": "Provider label (LlmSettings.provider); always 'openai-compatible' from the CLI, hard-coded in LlmCommands.settings for every base URL (INTERFACES.md f.7, F20). Part of the hash and so of the cache key; not sent on the wire. A second backend must use its own label."},
+    "modelSnapshot": {"type": "string", "minLength": 1, "description": "The served model name, sent as 'model'; with provider, the model identity (INTERFACES.md f.1). The deploy recipe serves <org>--<name>--<40-hex revision>+vllm<version>[-<tag>]. LlmSettings rejects a blank id; the CLI accepts only printable ASCII without spaces."},
+    "system": {"type": "string", "description": "System prompt: PromptBuilder.gameSystem(ctx) for game and probe calls, PromptBuilder.VIGNETTE_SYSTEM for vignette calls."},
+    "turns": {"type": "array", "items": {"$ref": "#/$defs/turn"}, "minItems": 1, "description": "1 turn (first attempt) or 3 turns (repair retry: user, assistant = the unreadable reply, user = REPAIR_TEXT; probe: user, assistant = the decision text, user = PROBE_QUESTION)."},
+    "temperature": {"type": "number", "minimum": 0},
+    "maxTokens": {"type": "integer", "minimum": 1},
+    "responseSchema": {"type": ["string", "null"], "description": "JSON Schema text of the expected reply: DECISION_SCHEMA (game), CHOICE_SCHEMA (vignette), null (probe)."},
+    "thinking": {"type": "boolean", "description": "Optional (C12a.1): the chat-template thinking switch (--thinking on|off), sent as chat_template_kwargs.enable_thinking. Absent = unset: nothing is sent and the hash is the eight-field one."},
+    "topP": {"type": "number", "exclusiveMinimum": 0, "maximum": 1, "description": "Optional (C12a.1, --top-p): sent as top_p; absent = unset."},
+    "topK": {"type": "integer", "description": "Optional (C12a.1, --top-k): sent as top_k; >= 1, or -1 for no limit; absent = unset.", "anyOf": [{"minimum": 1}, {"const": -1}]},
+    "drawKey": {"type": "string", "pattern": "^(game\\|.+\\|s-?[0-9]+\\|.+\\|r[0-9]+\\|a[01]|probe\\|.+\\|s-?[0-9]+\\|.+\\|r[0-9]+|vig\\|.+\\|s-?[0-9]+\\|p[0-9]+\\|row[0-9]+\\|b-?[0-9]+\\.[0-9]{4}\\|c[AB]\\|d[0-9]+\\|a[01])$", "description": "Names the draw: game|<scenarioId>|s<runSeed>|<seatId>|r<round>|a<attempt>, probe|<scenarioId>|s<runSeed>|<seatId>|r<round>, vig|<scenarioId>|s<seed>|p<paraphrase>|row<rowIndex>|b<b/G %.4f>|c<collusive letter>|d<draw>|a<attempt>. Part of the hash; sent as 'user'; seeds the provider ('seed' = OpenAiCompatibleClient.seedOf)."}
+  },
+  "required": ["provider", "modelSnapshot", "system", "turns", "temperature", "maxTokens", "responseSchema", "drawKey"],
+  "additionalProperties": false,
+  "$defs": {
+    "turn": {
+      "type": "object",
+      "properties": {
+        "role": {"type": "string", "enum": ["user", "assistant"]},
+        "content": {"type": "string"}
+      },
+      "required": ["role", "content"],
+      "additionalProperties": false
+    },
+    "wireBody": {
+      "title": "POST {baseUrl}/v1/chat/completions body",
+      "description": "OpenAiCompatibleClient.body(request), sorted keys. messages[0] is the system message, then the turns in order.",
+      "type": "object",
+      "properties": {
+        "model": {"type": "string", "minLength": 1},
+        "messages": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": {"type": "string", "enum": ["system", "user", "assistant"]},
+              "content": {"type": "string"}
+            },
+            "required": ["role", "content"],
+            "additionalProperties": false
+          }
+        },
+        "temperature": {"type": "number", "minimum": 0},
+        "max_tokens": {"type": "integer", "minimum": 1},
+        "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647, "description": "OpenAiCompatibleClient.seedOf(drawKey) = int(first 8 hex digits of SHA-256(drawKey), base 16) & 0x7FFFFFFF: the first 4 bytes read big-endian with the leading bit cleared (not the first 31 bits; the code javadoc is wrong, INTERFACES.md F21)."},
+        "user": {"type": "string", "description": "The drawKey."},
+        "chat_template_kwargs": {"type": "object", "description": "Present only when the request's thinking is set (C12a.1); false is sent explicitly, because Qwen3 thinks by default.", "properties": {"enable_thinking": {"type": "boolean"}}, "required": ["enable_thinking"], "additionalProperties": false},
+        "top_p": {"type": "number", "exclusiveMinimum": 0, "maximum": 1, "description": "Present only when the request's topP is set."},
+        "top_k": {"type": "integer", "description": "Present only when the request's topK is set.", "anyOf": [{"minimum": 1}, {"const": -1}]},
+        "response_format": {
+          "type": "object",
+          "description": "Present only when responseSchema is non-null.",
+          "properties": {
+            "type": {"const": "json_schema"},
+            "json_schema": {
+              "type": "object",
+              "properties": {
+                "name": {"enum": ["decision", "talk"], "description": "'talk' for a talk call (draw key talk|..., C5.5, proposal B1: the talk reply schema); otherwise always 'decision', also for the vignette choice schema; no 'strict' flag is sent."},
+                "schema": {"type": "object"}
+              },
+              "required": ["name", "schema"],
+              "additionalProperties": false
+            }
+          },
+          "required": ["type", "json_schema"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["model", "messages", "temperature", "max_tokens", "seed", "user"],
+      "additionalProperties": false
+    },
+    "cacheLine": {
+      "title": "One line of the append-only cache (CacheFile.line)",
+      "description": "Sorted keys. Loading requires only hash and text; tokensIn/tokensOut/finishReason default to 0/0/'', reasoning/reasoningTokens to null. The first line for a hash wins (putIfAbsent).",
+      "type": "object",
+      "properties": {
+        "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "text": {"type": "string", "description": "The completion text, byte-identical to what the server returned (choices[0].message.content). Backend obligation: non-null; a null text would be written as null and CacheFile.load would then reject the whole file."},
+        "tokensIn": {"type": "integer", "minimum": 0},
+        "tokensOut": {"type": "integer", "minimum": 0},
+        "finishReason": {"type": "string", "description": "Backend obligation (INTERFACES.md f.7): a non-null string, '' when unknown. CacheFile.line would write null for a backend that returns null, which this schema rejects."},
+        "modelSnapshot": {"type": "string", "description": "The served model name of the request (INTERFACES.md f.1); the hash already covers it, this copy labels the line."},
+        "drawKey": {"type": "string"},
+        "reasoning": {"type": "string", "description": "Optional (C12a.2): the server's separate reasoning text (message.reasoning_content, else message.reasoning), written only when the reply carried one; never part of text. Absent on every line of a model without reasoning, so those lines keep the seven keys."},
+        "reasoningTokens": {"type": "integer", "minimum": 0, "description": "Optional (C12a.2): usage.completion_tokens_details.reasoning_tokens, written only when the server reported it."}
+      },
+      "required": ["hash", "text", "tokensIn", "tokensOut", "finishReason", "modelSnapshot", "drawKey"],
+      "additionalProperties": false
+    }
+  }
+}

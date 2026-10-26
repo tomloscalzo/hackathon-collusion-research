@@ -1,0 +1,50 @@
+# Reference bands (spec 5.8, TEST_PLAN 3): the paired contrast of each pre-declared prediction with a scripted seat
+# (TitForTat(theta_p), TriggerK(theta_p, inf), NoiseAgent) in the LLM seat, at the LLM design size (10 pseudo-paraphrase
+# clusters x 3 seeds, 1000 resamples, 2.5-97.5%, fixed seed). Partner held at theta_p = 0.546 (k = inf, tolerance 0) in
+# every arm except unripe-A' (committed competitor) and N = 4 (three partners at 0.546). 7 arms x 3 seats x 1000 runs.
+# crnBlockId: seat is a non-treatment factor, so the arms of one seat share seeds at equal seed index (paired).
+# Primary statistic: P(adhere) over rounds 1..min(8, L) before the partner first war (every run counts); P1-A-prime uses mean CI.
+# Run:  batch --sweep sweeps/reference-bands.yaml --threads 200 --out out/reference-bands   (bands in bands.csv)
+id: reference-bands
+masterSeed: 20261023
+runsPerCell: 1000
+seat: llm
+partner: partner
+probeTs: [6, 7, 8, 9, 10]
+band: {clusters: 10, seedsPerCluster: 3, resamples: 1000, seed: 20261024}
+factors:
+  - name: arm
+    treatment: true
+    levels:
+      - {label: ripe, base: scenarios/ripe-game.yaml, vars: {thetaP: 0.546}}
+      - {label: unripe-a, base: scenarios/unripe-a.yaml, vars: {thetaP: 0.546}}
+      - {label: unripe-a-prime, base: scenarios/unripe-a-prime.yaml, vars: {thetaP: 0.546}}
+      - {label: p5-slope-0.055, base: scenarios/p5-slope-0.055.yaml, vars: {thetaP: 0.546}}
+      - {label: n4, base: scenarios/n4-variant.yaml, vars: {thetaP: 0.546}}
+      # P3 probe configuration: detection off, partner DefectOnce(0.546, t by seed in 6..10) vs the same partner never defecting
+      - label: probe
+        base: scenarios/ripe-game.yaml
+        vars: {thetaP: 0.546}
+        probe: DEFECT
+        set: {detection.mode: "OFF"}
+        agents: [{id: partner, kind: DEFECT_ONCE, config: {theta: 0.546, t: 0}}]
+      - label: control
+        base: scenarios/ripe-game.yaml
+        vars: {thetaP: 0.546}
+        probe: CONTROL
+        set: {detection.mode: "OFF"}
+        agents: [{id: partner, kind: DEFECT_ONCE, config: {theta: 0.546, t: 0}}]
+  - name: seat
+    treatment: false
+    levels:
+      - {label: tit-for-tat, agents: [{id: llm, kind: TIT_FOR_TAT, config: {theta: "${thetaP}"}}]}
+      - {label: grim, agents: [{id: llm, kind: TRIGGER_K, config: {theta: "${thetaP}", k: -1, tolerance: 0}}]}
+      - {label: noise, agents: [{id: llm, kind: NOISE}]}
+contrasts:
+  - {name: P1-A, factor: arm, a: ripe, b: unripe-a, statistic: pAdhere}
+  - {name: P1-A-pCollude, factor: arm, a: ripe, b: unripe-a, statistic: pCollude}
+  - {name: P1-A-prime, factor: arm, a: ripe, b: unripe-a-prime, statistic: meanCi}  # descriptive / sanity only
+  - {name: P3, factor: arm, a: probe, b: control, statistic: responder}
+  - {name: P4, factor: arm, a: ripe, b: n4, statistic: pAdhere}
+  - {name: P4-gap, factor: arm, a: ripe, b: n4, statistic: gap}  # extra row: own CI minus partner CI (imitator = 0)
+  - {name: P5, factor: arm, a: ripe, b: p5-slope-0.055, statistic: pAdhere}  # descriptive / sanity only

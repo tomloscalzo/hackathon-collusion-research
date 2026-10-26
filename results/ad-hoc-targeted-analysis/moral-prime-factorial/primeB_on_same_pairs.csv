@@ -1,0 +1,15 @@
+model,arm,n_pairs,arm_minus_placebo,primeB_minus_placebo_same_pairs,pb_lo,pb_hi,ratio
+"Qwen3-32B, thinking on",mf-values: values clause only,18,-0.1670,-0.3020,-0.4245,-0.1816,0.5531
+"Qwen3-32B, thinking on",mf-law: law clause only,18,-0.1609,-0.3020,-0.4245,-0.1816,0.5328
+"Qwen3-32B, thinking on",mf-market: market words only,18,-0.1111,-0.3020,-0.4245,-0.1816,0.3680
+"Qwen3-32B, thinking on",mf-neutral-mm: neutral market-maker persona,18,0.0190,-0.3020,-0.4245,-0.1816,-0.0630
+"Qwen3-32B, thinking on",mf-rule: ethics rule only,18,-0.0339,-0.3020,-0.4245,-0.1816,0.1123
+"Qwen3-32B, thinking on",mf-b-rule: prime B plus ethics rule,17,-0.1753,-0.2911,-0.4177,-0.1664,0.6023
+"Qwen3-32B, thinking on",mf-b-one: prime B on one firm (other firm placebo),18,-0.1351,-0.3020,-0.4245,-0.1816,0.4475
+"gpt-oss-20b, medium effort",mf-values: values clause only,12,-0.0548,-0.3493,-0.5107,-0.1746,0.1570
+"gpt-oss-20b, medium effort",mf-law: law clause only,12,-0.0861,-0.3493,-0.5107,-0.1746,0.2463
+"gpt-oss-20b, medium effort",mf-market: market words only,11,-0.0109,-0.3431,-0.5244,-0.1464,0.0317
+"gpt-oss-20b, medium effort",mf-neutral-mm: neutral market-maker persona,11,0.0267,-0.3431,-0.5244,-0.1464,-0.0779
+"gpt-oss-20b, medium effort",mf-rule: ethics rule only,11,-0.0053,-0.3431,-0.5244,-0.1464,0.0155
+"gpt-oss-20b, medium effort",mf-b-rule: prime B plus ethics rule,11,-0.1970,-0.3431,-0.5244,-0.1464,0.5743
+"gpt-oss-20b, medium effort",mf-b-one: prime B on one firm (other firm placebo),10,-0.1771,-0.3845,-0.5562,-0.1956,0.4607

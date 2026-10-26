@@ -1,0 +1,91 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,r2f-confidant - headline-chat (p1),market_price_mean,20,2.109,2.147,-0.038,-0.271,0.188
+gpt-oss-20b,r2f-confidant - headline-chat (p1),price_index,20,0.555,0.574,-0.019,-0.134,0.087
+gpt-oss-20b,r2f-confidant - headline-chat (p1),profit_gain_index,20,0.742,0.769,-0.027,-0.157,0.100
+gpt-oss-20b,r2f-confidant - headline-chat (p1),competitive_share,20,0.436,0.426,0.010,-0.115,0.134
+gpt-oss-20b,r2f-confidant - headline-chat (p1),matching_share,20,0.398,0.412,-0.014,-0.154,0.140
+Qwen3-32B,r2f-confidant - headline-chat (p1),market_price_mean,20,2.562,2.693,-0.131,-0.299,0.048
+Qwen3-32B,r2f-confidant - headline-chat (p1),price_index,20,0.781,0.847,-0.066,-0.149,0.019
+Qwen3-32B,r2f-confidant - headline-chat (p1),profit_gain_index,20,0.941,0.949,-0.008,-0.041,0.030
+Qwen3-32B,r2f-confidant - headline-chat (p1),competitive_share,20,0.021,0.010,0.011,-0.019,0.046
+Qwen3-32B,r2f-confidant - headline-chat (p1),matching_share,20,0.954,0.976,-0.022,-0.091,0.039
+gpt-oss-20b,r3f-public - headline-chat (p1),market_price_mean,20,2.270,2.147,0.123,-0.086,0.352
+gpt-oss-20b,r3f-public - headline-chat (p1),price_index,20,0.635,0.574,0.061,-0.043,0.169
+gpt-oss-20b,r3f-public - headline-chat (p1),profit_gain_index,20,0.827,0.769,0.058,-0.065,0.183
+gpt-oss-20b,r3f-public - headline-chat (p1),competitive_share,20,0.443,0.426,0.016,-0.140,0.162
+gpt-oss-20b,r3f-public - headline-chat (p1),matching_share,20,0.420,0.412,0.008,-0.156,0.187
+Qwen3-32B,r3f-public - headline-chat (p1),market_price_mean,20,2.699,2.693,0.006,-0.151,0.180
+Qwen3-32B,r3f-public - headline-chat (p1),price_index,20,0.850,0.847,0.003,-0.085,0.087
+Qwen3-32B,r3f-public - headline-chat (p1),profit_gain_index,20,0.956,0.949,0.007,-0.027,0.047
+Qwen3-32B,r3f-public - headline-chat (p1),competitive_share,20,0.000,0.010,-0.010,-0.027,0.000
+Qwen3-32B,r3f-public - headline-chat (p1),matching_share,20,0.996,0.976,0.020,-0.004,0.057
+gpt-oss-20b,r2s-confidant - headline-chat (p1),market_price_mean,19,2.344,2.133,0.210,0.027,0.418
+gpt-oss-20b,r2s-confidant - headline-chat (p1),price_index,19,0.672,0.567,0.105,0.014,0.205
+gpt-oss-20b,r2s-confidant - headline-chat (p1),profit_gain_index,19,0.877,0.761,0.115,0.017,0.226
+gpt-oss-20b,r2s-confidant - headline-chat (p1),competitive_share,19,0.393,0.424,-0.031,-0.177,0.104
+gpt-oss-20b,r2s-confidant - headline-chat (p1),matching_share,19,0.461,0.418,0.044,-0.108,0.216
+Qwen3-32B,r2s-confidant - headline-chat (p1),market_price_mean,20,2.699,2.693,0.005,-0.164,0.182
+Qwen3-32B,r2s-confidant - headline-chat (p1),price_index,20,0.849,0.847,0.003,-0.087,0.092
+Qwen3-32B,r2s-confidant - headline-chat (p1),profit_gain_index,20,0.956,0.949,0.007,-0.029,0.048
+Qwen3-32B,r2s-confidant - headline-chat (p1),competitive_share,20,0.011,0.010,0.000,-0.022,0.021
+Qwen3-32B,r2s-confidant - headline-chat (p1),matching_share,20,0.910,0.976,-0.066,-0.183,0.011
+gpt-oss-20b,r3s-public - headline-chat (p1),market_price_mean,20,2.260,2.147,0.113,-0.083,0.315
+gpt-oss-20b,r3s-public - headline-chat (p1),price_index,20,0.630,0.574,0.056,-0.042,0.152
+gpt-oss-20b,r3s-public - headline-chat (p1),profit_gain_index,20,0.828,0.769,0.059,-0.052,0.169
+gpt-oss-20b,r3s-public - headline-chat (p1),competitive_share,20,0.391,0.426,-0.035,-0.192,0.096
+gpt-oss-20b,r3s-public - headline-chat (p1),matching_share,20,0.390,0.412,-0.023,-0.145,0.104
+Qwen3-32B,r3s-public - headline-chat (p1),market_price_mean,20,2.728,2.693,0.035,-0.106,0.174
+Qwen3-32B,r3s-public - headline-chat (p1),price_index,20,0.864,0.847,0.017,-0.054,0.087
+Qwen3-32B,r3s-public - headline-chat (p1),profit_gain_index,20,0.966,0.949,0.017,-0.010,0.048
+Qwen3-32B,r3s-public - headline-chat (p1),competitive_share,19,0.005,0.011,-0.006,-0.028,0.011
+Qwen3-32B,r3s-public - headline-chat (p1),matching_share,19,0.990,0.975,0.015,-0.014,0.057
+gpt-oss-20b,r2f-confidant - r2s-confidant,market_price_mean,19,2.118,2.344,-0.226,-0.414,-0.063
+gpt-oss-20b,r2f-confidant - r2s-confidant,price_index,19,0.559,0.672,-0.113,-0.206,-0.031
+gpt-oss-20b,r2f-confidant - r2s-confidant,profit_gain_index,19,0.744,0.877,-0.132,-0.241,-0.037
+gpt-oss-20b,r2f-confidant - r2s-confidant,competitive_share,19,0.423,0.393,0.030,-0.097,0.162
+gpt-oss-20b,r2f-confidant - r2s-confidant,matching_share,19,0.413,0.461,-0.048,-0.184,0.095
+Qwen3-32B,r2f-confidant - r2s-confidant,market_price_mean,20,2.562,2.699,-0.137,-0.260,-0.004
+Qwen3-32B,r2f-confidant - r2s-confidant,price_index,20,0.781,0.849,-0.068,-0.128,-0.005
+Qwen3-32B,r2f-confidant - r2s-confidant,profit_gain_index,20,0.941,0.956,-0.015,-0.039,0.010
+Qwen3-32B,r2f-confidant - r2s-confidant,competitive_share,20,0.021,0.011,0.011,-0.012,0.039
+Qwen3-32B,r2f-confidant - r2s-confidant,matching_share,20,0.954,0.910,0.044,-0.009,0.109
+gpt-oss-20b,r3f-public - r3s-public,market_price_mean,20,2.270,2.260,0.010,-0.160,0.176
+gpt-oss-20b,r3f-public - r3s-public,price_index,20,0.635,0.630,0.005,-0.079,0.088
+gpt-oss-20b,r3f-public - r3s-public,profit_gain_index,20,0.827,0.828,-0.001,-0.099,0.090
+gpt-oss-20b,r3f-public - r3s-public,competitive_share,20,0.443,0.391,0.052,-0.046,0.160
+gpt-oss-20b,r3f-public - r3s-public,matching_share,20,0.420,0.390,0.030,-0.086,0.145
+Qwen3-32B,r3f-public - r3s-public,market_price_mean,20,2.699,2.728,-0.028,-0.198,0.124
+Qwen3-32B,r3f-public - r3s-public,price_index,20,0.850,0.864,-0.014,-0.099,0.068
+Qwen3-32B,r3f-public - r3s-public,profit_gain_index,20,0.956,0.966,-0.010,-0.035,0.015
+Qwen3-32B,r3f-public - r3s-public,competitive_share,19,0.000,0.005,-0.005,-0.014,0.000
+Qwen3-32B,r3f-public - r3s-public,matching_share,19,0.996,0.990,0.006,-0.008,0.021
+gpt-oss-20b,r2f-confidant - r3f-public,market_price_mean,20,2.109,2.270,-0.161,-0.364,0.040
+gpt-oss-20b,r2f-confidant - r3f-public,price_index,20,0.555,0.635,-0.080,-0.192,0.021
+gpt-oss-20b,r2f-confidant - r3f-public,profit_gain_index,20,0.742,0.827,-0.085,-0.204,0.036
+gpt-oss-20b,r2f-confidant - r3f-public,competitive_share,20,0.436,0.443,-0.006,-0.141,0.135
+gpt-oss-20b,r2f-confidant - r3f-public,matching_share,20,0.398,0.420,-0.021,-0.153,0.110
+Qwen3-32B,r2f-confidant - r3f-public,market_price_mean,20,2.562,2.699,-0.138,-0.299,0.028
+Qwen3-32B,r2f-confidant - r3f-public,price_index,20,0.781,0.850,-0.069,-0.144,0.012
+Qwen3-32B,r2f-confidant - r3f-public,profit_gain_index,20,0.941,0.956,-0.015,-0.046,0.015
+Qwen3-32B,r2f-confidant - r3f-public,competitive_share,20,0.021,0.000,0.021,0.000,0.051
+Qwen3-32B,r2f-confidant - r3f-public,matching_share,20,0.954,0.996,-0.042,-0.099,0.003
+gpt-oss-20b,r2s-confidant - r3s-public,market_price_mean,19,2.344,2.248,0.096,-0.049,0.261
+gpt-oss-20b,r2s-confidant - r3s-public,price_index,19,0.672,0.624,0.048,-0.028,0.127
+gpt-oss-20b,r2s-confidant - r3s-public,profit_gain_index,19,0.877,0.822,0.054,-0.022,0.139
+gpt-oss-20b,r2s-confidant - r3s-public,competitive_share,19,0.393,0.389,0.004,-0.101,0.108
+gpt-oss-20b,r2s-confidant - r3s-public,matching_share,19,0.461,0.392,0.070,-0.026,0.164
+Qwen3-32B,r2s-confidant - r3s-public,market_price_mean,20,2.699,2.728,-0.029,-0.163,0.106
+Qwen3-32B,r2s-confidant - r3s-public,price_index,20,0.849,0.864,-0.015,-0.084,0.054
+Qwen3-32B,r2s-confidant - r3s-public,profit_gain_index,20,0.956,0.966,-0.010,-0.034,0.012
+Qwen3-32B,r2s-confidant - r3s-public,competitive_share,19,0.011,0.005,0.006,-0.008,0.023
+Qwen3-32B,r2s-confidant - r3s-public,matching_share,19,0.905,0.990,-0.084,-0.199,-0.004
+gpt-oss-20b,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",market_price_mean,20,2.243,2.147,0.096,-0.070,0.287
+gpt-oss-20b,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",price_index,20,0.622,0.574,0.048,-0.037,0.143
+gpt-oss-20b,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",profit_gain_index,20,0.817,0.769,0.048,-0.042,0.157
+gpt-oss-20b,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",competitive_share,20,0.418,0.426,-0.008,-0.133,0.106
+gpt-oss-20b,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",matching_share,20,0.414,0.412,0.002,-0.127,0.138
+Qwen3-32B,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",market_price_mean,20,2.672,2.693,-0.021,-0.154,0.136
+Qwen3-32B,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",price_index,20,0.836,0.847,-0.011,-0.079,0.064
+Qwen3-32B,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",profit_gain_index,20,0.955,0.949,0.006,-0.025,0.041
+Qwen3-32B,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",competitive_share,20,0.009,0.010,-0.001,-0.023,0.016
+Qwen3-32B,"four question arms pooled (r2f, r3f, r2s, r3s) - headline-chat (p1)",matching_share,20,0.963,0.976,-0.013,-0.066,0.033

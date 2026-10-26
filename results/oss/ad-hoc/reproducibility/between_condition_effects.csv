@@ -1,0 +1,26 @@
+contrast,metric,n_pairs,diff,lo,hi
+headline-chat (p5) - headline-chat (p1),market_price_mean,20,-0.3019490000000001,-0.5705640000000001,-0.025333000000000015
+headline-chat (p5) - headline-chat (p1),price_index,20,-0.15097,-0.28425,-0.015319999999999992
+headline-chat (p5) - headline-chat (p1),profit_gain_index,20,-0.19301284999999999,-0.35432674999999997,-0.040140350000000005
+headline-chat (p5) - headline-chat (p1),competitive_share,20,0.029313435,-0.09441815,0.14775522
+headline-chat (p5) - headline-chat (p1),matching_share,20,-0.08368288500000001,-0.20412753499999997,0.038888879999999994
+headline-chat (p3) - headline-chat (p1),market_price_mean,20,0.07848649999999996,-0.04181500000000005,0.21253450000000002
+headline-chat (p3) - headline-chat (p1),price_index,20,0.039240000000000004,-0.018159999999999985,0.10145499999999999
+headline-chat (p3) - headline-chat (p1),profit_gain_index,20,0.03558950000000001,-0.02113154999999999,0.09847125000000001
+headline-chat (p3) - headline-chat (p1),competitive_share,20,0.01382831499999999,-0.11572602000000001,0.154440315
+headline-chat (p3) - headline-chat (p1),matching_share,20,-0.036359015,-0.178121715,0.11409198499999999
+headline-tacit (p1) - headline-chat (p1),market_price_mean,20,-0.37206350000000005,-0.6260795000000001,-0.12085050000000001
+headline-tacit (p1) - headline-chat (p1),price_index,20,-0.18602999999999997,-0.31464499999999995,-0.06204499999999998
+headline-tacit (p1) - headline-chat (p1),profit_gain_index,20,-0.19791814,-0.351087215,-0.048743249999999974
+headline-tacit (p1) - headline-chat (p1),competitive_share,20,0.254964285,0.16355689999999998,0.34810572
+headline-tacit (p1) - headline-chat (p1),matching_share,20,-0.24874155,-0.35118828999999996,-0.148706685
+headline-tacit (p5) - headline-chat (p5),market_price_mean,20,-0.455375,-0.6904635,-0.18244899999999992
+headline-tacit (p5) - headline-chat (p5),price_index,20,-0.22769,-0.35876,-0.09541
+headline-tacit (p5) - headline-chat (p5),profit_gain_index,20,-0.300268235,-0.46189318,-0.127857035
+headline-tacit (p5) - headline-chat (p5),competitive_share,20,0.21735445000000003,0.0708143,0.35359005000000004
+headline-tacit (p5) - headline-chat (p5),matching_share,20,-0.17060862,-0.2994476,-0.035026755
+headline-tacit (p5) - headline-tacit (p1),market_price_mean,20,-0.38526049999999995,-0.6179015,-0.12812999999999994
+headline-tacit (p5) - headline-tacit (p1),price_index,20,-0.19263000000000002,-0.30732,-0.066375
+headline-tacit (p5) - headline-tacit (p1),profit_gain_index,20,-0.295362945,-0.44603028999999994,-0.13974048
+headline-tacit (p5) - headline-tacit (p1),competitive_share,20,-0.008296399999999995,-0.12614465,0.10588970000000002
+headline-tacit (p5) - headline-tacit (p1),matching_share,20,-0.005549955,-0.10623197,0.10445180000000001

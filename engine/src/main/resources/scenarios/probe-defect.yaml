@@ -1,0 +1,61 @@
+# P3 defector probe (spec 5.6, PREDICTIONS P3, BR-15): the ripe baseline game with detection OFF and the partner
+# DefectOnce(0.546): it adheres unconditionally at s(0.546) = 2.09 (its rule is not disclosed, it never reacts) and defects
+# once to s^N = 1.00 in round t, then adheres again. t is a fixed cycle in the run seed, not a random draw:
+# t = tMin + ((seed - 1) mod (tMax - tMin + 1)), here t = 6 + ((seed - 1) mod 5), so seeds 1, 2, 3, 4, 5 give
+# t = 6, 7, 8, 9, 10 (AgentFactory.defectRound; seed s plays the bands' seed index s - 1, probeTs [6..10]). The cap 40 is
+# undisclosed and at least tMax + 3 (checked by AgentFactory). Pair it with probe-control.yaml (the same file with
+# placebo: 1) and run both with the same seeds and --arm probe-defect / --arm probe-control (tools/analysis.py). The seat
+# id 'llm' is the LLM placeholder.
+id: probe-defect
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: "OFF"
+agents:
+  - id: llm
+    category: M
+    kind: LLM
+  - id: partner
+    category: M
+    kind: DEFECT_ONCE
+    config: {theta: 0.546, tMin: 6, tMax: 10}

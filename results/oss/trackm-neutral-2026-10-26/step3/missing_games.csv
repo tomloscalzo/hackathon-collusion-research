@@ -1,0 +1,22 @@
+cell,trial,root,reason
+fx-chat-p1 p1,fx-chat-p1__p1__w4__s126__t1,2026-10-26_trackm_oss_formula_fix,"EmptyContent (model returned an empty reply; game failed, not retried)"
+d-cot-monitor-a p1,d-cot-monitor-a__p1__w4__s218__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+hrep-fx-chat-p5 p5,fx-chat-p5__p5__w2__s259__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+moral-placebo p1,moral-placebo__p1__w2__s174__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+n3-ethics p3,n3-ethics__p3__w1__s47__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+n3-ethics p3,n3-ethics__p3__w2__s174__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+n3-ethics p3,n3-ethics__p3__w3__s115__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+n3-group p3,n3-group__p3__w0__s42__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+n3-group p3,n3-group__p3__w2__s133__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+r2s-confidant p1,r2s-confidant__p1__w2__s259__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+wd-ask-noreport p1,wd-ask-noreport__p1__w4__s273__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+wd-notice-only p1,wd-notice-only__p1__w0__s91__t1,2026-10-26_trackm_oss_neutral,"EmptyContent (model returned an empty reply; game failed, not retried)"
+r4-announced p1,r4-announced__p1__w0__s91__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w2__s133__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w2__s174__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w2__s259__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w2__s55__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w3__s115__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w4__s126__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w4__s151__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)
+r4-announced p1,r4-announced__p1__w4__s273__t1,2026-10-26_trackm_oss_neutral,post-game cache-miss engine bug (CacheMiss at the announced post-game call; appendix only)

@@ -1,0 +1,9 @@
+model,arm,passages,evaluate_formula,share_evaluate,evaluate_at_1_80_or_more,share_at_1_80_or_more
+Qwen3-32B,fx-chat-p1,500,455,0.910,189,0.378
+Qwen3-32B,fx-chat-p5,598,455,0.761,46,0.077
+Qwen3-32B,fx-ctl-joint,490,439,0.896,267,0.545
+Qwen3-32B,fx-tacit-p1,610,585,0.959,87,0.143
+gpt-oss-20b,fx-chat-p1,534,426,0.798,105,0.197
+gpt-oss-20b,fx-chat-p5,574,432,0.753,12,0.021
+gpt-oss-20b,fx-ctl-joint,488,325,0.666,261,0.535
+gpt-oss-20b,fx-tacit-p1,598,523,0.875,99,0.166

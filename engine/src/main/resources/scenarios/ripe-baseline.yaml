@@ -1,0 +1,37 @@
+# Ripe baseline of MODEL_SPEC 8.4 (N=2, phi=0.3, delta=0.95 via h=0.05).
+id: ripe-baseline
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1

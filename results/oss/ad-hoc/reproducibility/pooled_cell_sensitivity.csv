@@ -1,0 +1,21 @@
+contrast,metric,n_pairs,diff,lo,hi
+"headline-chat (p5) - headline-chat (p1), pooled cells (2 and 3 copies)",market_price_mean,20,-0.37939500000000004,-0.5572365833333333,-0.20775341666666675
+"headline-chat (p5) - headline-chat (p1), pooled cells (2 and 3 copies)",price_index,20,-0.18969666666666668,-0.27861166666666665,-0.10387499999999998
+"headline-chat (p5) - headline-chat (p1), pooled cells (2 and 3 copies)",profit_gain_index,20,-0.22568453583333334,-0.336763235,-0.121004865
+"headline-chat (p5) - headline-chat (p1), pooled cells (2 and 3 copies)",competitive_share,20,0.04368420500000001,-0.027950619166666656,0.1213323766666667
+"headline-chat (p5) - headline-chat (p1), pooled cells (2 and 3 copies)",matching_share,20,-0.09709264916666666,-0.19169308166666668,-0.0034751566666666677
+"headline-tacit (p1) - headline-chat (p1), pooled cells (3 and 3 copies)",market_price_mean,20,-0.3067620000000001,-0.4394361666666667,-0.17446966666666683
+"headline-tacit (p1) - headline-chat (p1), pooled cells (3 and 3 copies)",price_index,20,-0.15338666666666664,-0.21971999999999997,-0.08723999999999998
+"headline-tacit (p1) - headline-chat (p1), pooled cells (3 and 3 copies)",profit_gain_index,20,-0.15333571333333335,-0.236955355,-0.07288452999999999
+"headline-tacit (p1) - headline-chat (p1), pooled cells (3 and 3 copies)",competitive_share,20,0.258551485,0.18236357333333336,0.331098585
+"headline-tacit (p1) - headline-chat (p1), pooled cells (3 and 3 copies)",matching_share,20,-0.22305805833333334,-0.3078042833333333,-0.13936992333333334
+"headline-tacit (p5) - headline-chat (p5), pooled cells (1 and 2 copies)",market_price_mean,20,-0.5019929999999999,-0.70516625,-0.2705855
+"headline-tacit (p5) - headline-chat (p5), pooled cells (1 and 2 copies)",price_index,20,-0.251,-0.35258500000000004,-0.13529249999999998
+"headline-tacit (p5) - headline-chat (p5), pooled cells (1 and 2 copies)",profit_gain_index,20,-0.3269867825,-0.456398015,-0.18344642749999998
+"headline-tacit (p5) - headline-chat (p5), pooled cells (1 and 2 copies)",competitive_share,20,0.23111193000000002,0.1154525725,0.34328261000000004
+"headline-tacit (p5) - headline-chat (p5), pooled cells (1 and 2 copies)",matching_share,20,-0.1786133125,-0.309660035,-0.0420342675
+"headline-tacit (p5) - headline-tacit (p1), pooled cells (1 and 3 copies)",market_price_mean,20,-0.574626,-0.8040636666666666,-0.28624116666666666
+"headline-tacit (p5) - headline-tacit (p1), pooled cells (1 and 3 copies)",price_index,20,-0.28731,-0.40204500000000004,-0.14311500000000002
+"headline-tacit (p5) - headline-tacit (p1), pooled cells (1 and 3 copies)",profit_gain_index,20,-0.399335605,-0.5404622016666666,-0.22330084499999997
+"headline-tacit (p5) - headline-tacit (p1), pooled cells (1 and 3 copies)",competitive_share,20,0.016244649999999992,-0.08204138333333334,0.11131353333333334
+"headline-tacit (p5) - headline-tacit (p1), pooled cells (1 and 3 copies)",matching_share,20,-0.052647903333333336,-0.14021996666666667,0.03353177833333333

@@ -1,0 +1,6 @@
+arm,n_games,candour_confidant,candour_public,invented_confession_confidant,invented_confession_public,answer_words_confidant_mean,answer_words_public_mean
+r2f-confidant,20,0.384,,0.000,,125.614,
+r3f-public,20,,0.496,,0.000,,97.291
+r2s-confidant,20,0.269,,0.000,,28.460,
+r3s-public,20,,0.182,,0.000,,24.719
+r4-announced,20,,0.431,,,,99.177

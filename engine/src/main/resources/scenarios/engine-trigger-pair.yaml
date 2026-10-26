@@ -1,0 +1,56 @@
+# Engine example: two grim TriggerK(0.6) members in the ripe baseline market, detection on, random horizon.
+# Run with:  GameRunner scenarios/engine-trigger-pair.yaml <seed> <out.jsonl>
+id: engine-trigger-pair
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 80
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: SCENARIO
+agents:
+  - id: A
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.6, k: -1}
+  - id: B
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.6, k: -1}

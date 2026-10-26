@@ -1,0 +1,46 @@
+cell,mm,metric,metric_label,n_games,rho,lo,hi,p,holm
+TE,qwen-t0,avg_abs_spread,Average absolute spread,20,0.309437,-0.207306,0.747204,0.184991,
+TE,qwen-t0,price_index,Price index,20,0.309437,-0.207306,0.747204,0.184991,1.000000
+TE,qwen-t0,profit_gain_index,Profit gain index,20,0.309437,-0.207306,0.747204,0.184991,
+TE,qwen-t0,competitive_share,Competitive share (U16),20,-0.184626,-0.594391,0.259417,0.425929,1.000000
+TE,qwen-t0,matching_share,Matching share,20,0.184552,-0.259348,0.594041,0.425379,1.000000
+TE,qwen-t1,avg_abs_spread,Average absolute spread,20,-0.079760,-0.581761,0.414272,0.739013,
+TE,qwen-t1,price_index,Price index,20,-0.079760,-0.581761,0.414272,0.739013,1.000000
+TE,qwen-t1,profit_gain_index,Profit gain index,20,-0.079760,-0.581761,0.414272,0.739013,
+TE,qwen-t1,competitive_share,Competitive share (U16),20,0.290760,-0.119000,0.637338,0.206990,1.000000
+TE,qwen-t1,matching_share,Matching share,20,-0.481264,-0.763506,-0.055305,0.033348,0.300135
+TE,oss-t1,avg_abs_spread,Average absolute spread,20,0.450885,-0.085893,0.836035,0.047998,
+TE,oss-t1,price_index,Price index,20,0.437124,-0.102476,0.836035,0.055947,0.447578
+TE,oss-t1,profit_gain_index,Profit gain index,20,0.437877,-0.085163,0.824114,0.055447,
+TE,oss-t1,competitive_share,Competitive share (U16),20,-0.315730,-0.735887,0.226312,0.172441,1.000000
+TE,oss-t1,matching_share,Matching share,20,0.263376,-0.291186,0.809650,0.255687,1.000000
+TA,qwen-t0,avg_abs_spread,Average absolute spread,20,-0.038597,-0.625916,0.477363,0.868457,
+TA,qwen-t0,price_index,Price index,20,-0.038597,-0.625916,0.477363,0.868457,1.000000
+TA,qwen-t0,profit_gain_index,Profit gain index,20,-0.038597,-0.625916,0.477363,0.868457,
+TA,qwen-t0,competitive_share,Competitive share (U16),20,-0.025997,-0.291712,0.234534,0.893105,1.000000
+TA,qwen-t0,matching_share,Matching share,20,-0.205763,-0.561166,0.180160,0.389481,1.000000
+TA,qwen-t1,avg_abs_spread,Average absolute spread,20,0.119081,-0.364989,0.545303,0.612319,
+TA,qwen-t1,price_index,Price index,20,0.119081,-0.364989,0.545303,0.612319,1.000000
+TA,qwen-t1,profit_gain_index,Profit gain index,20,0.119081,-0.364989,0.545303,0.612319,
+TA,qwen-t1,competitive_share,Competitive share (U16),20,0.112865,-0.135683,0.385510,0.640568,1.000000
+TA,qwen-t1,matching_share,Matching share,20,-0.236468,-0.538550,0.058280,0.321484,1.000000
+TA,oss-t1,avg_abs_spread,Average absolute spread,20,0.361790,-0.145918,0.735656,0.115694,
+TA,oss-t1,price_index,Price index,20,0.358434,-0.146714,0.725760,0.119994,0.839958
+TA,oss-t1,profit_gain_index,Profit gain index,20,0.358434,-0.146714,0.725760,0.119994,
+TA,oss-t1,competitive_share,Competitive share (U16),20,-0.545387,-0.861412,-0.033444,0.014799,0.133193
+TA,oss-t1,matching_share,Matching share,20,0.471564,-0.037148,0.829666,0.036948,0.295585
+CE,qwen-t0,avg_abs_spread,Average absolute spread,20,-0.398039,-0.720100,0.088665,0.085796,
+CE,qwen-t0,price_index,Price index,20,-0.398039,-0.720100,0.088665,0.085796,0.514774
+CE,qwen-t0,profit_gain_index,Profit gain index,20,-0.398039,-0.720100,0.088665,0.085796,
+CE,qwen-t0,competitive_share,Competitive share (U16),20,0.284622,-0.167476,0.699687,0.226839,0.903955
+CE,qwen-t0,matching_share,Matching share,20,-0.327290,-0.664482,0.023794,0.150942,0.754712
+CE,qwen-t1,avg_abs_spread,Average absolute spread,20,-0.448748,-0.910098,0.098194,0.048598,
+CE,qwen-t1,price_index,Price index,20,-0.448748,-0.910098,0.098194,0.048598,0.388781
+CE,qwen-t1,profit_gain_index,Profit gain index,20,-0.447060,-0.907663,0.099416,0.049398,
+CE,qwen-t1,competitive_share,Competitive share (U16),20,0.618733,0.110743,0.936589,0.004750,0.042748
+CE,qwen-t1,matching_share,Matching share,20,-0.421852,-0.919366,0.140790,0.066447,0.465127
+CE,oss-t1,avg_abs_spread,Average absolute spread,20,0.279272,-0.220094,0.685538,0.229689,
+CE,oss-t1,price_index,Price index,20,0.282428,-0.220094,0.694684,0.225989,0.903955
+CE,oss-t1,profit_gain_index,Profit gain index,20,0.270594,-0.238699,0.681582,0.245838,
+CE,oss-t1,competitive_share,Competitive share (U16),20,-0.244837,-0.672619,0.283697,0.290935,0.903955
+CE,oss-t1,matching_share,Matching share,20,0.219979,-0.308140,0.661595,0.345183,0.903955

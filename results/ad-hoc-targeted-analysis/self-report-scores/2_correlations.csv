@@ -1,0 +1,337 @@
+run,thinking,scores,level,version,outcome,rho,lo,hi,n,n_seeds
+neutral,off,temptation a+b,round,raw,"price index (market, same round)",0.25513199664566905,-0.034923416545360096,0.5468297089941807,922,20
+neutral,off,temptation a+b,round,within-firm-game,"price index (market, same round)",0.04615318246610959,-0.0035234761261439783,0.10111766575124553,922,20
+neutral,off,temptation a+b,round,raw,competitive firm-round,-0.2217867668344306,-0.3838514967687925,0.07759222504360384,842,20
+neutral,off,temptation a+b,round,within-firm-game,competitive firm-round,-0.006833733116727483,-0.05048479421745214,0.06936739501247725,842,20
+neutral,off,temptation a+b,round,raw,matches rival's last quote,-0.02160903054026045,-0.2480881111790185,0.15334796306313536,842,20
+neutral,off,temptation a+b,round,within-firm-game,matches rival's last quote,-0.09954145754188659,-0.18494142829600724,-0.028013020087456045,842,20
+neutral,off,temptation a+b,round,raw,agreement keyword in own message,-0.12791001141737457,-0.2842888643908728,0.0689043073514993,922,20
+neutral,off,temptation a+b,round,within-firm-game,agreement keyword in own message,-0.005874703898669255,-0.08411360537370335,0.0792878011703665,922,20
+neutral,off,temptation a+b,round,raw,agreement keyword in either message,-0.1261816644260083,-0.25883875037702625,0.04346681744596339,922,20
+neutral,off,temptation a+b,round,within-firm-game,agreement keyword in either message,-0.023962229647848846,-0.0846684243547366,0.04802636540550485,922,20
+neutral,off,temptation a+b,round,raw,undercuts rival's last quote,-0.05217182169395178,-0.16996963600257287,0.09632968218464946,842,20
+neutral,off,temptation a+b,round,within-firm-game,undercuts rival's last quote,0.02272302823871758,-0.06332760048918874,0.08191768740428108,842,20
+neutral,off,temptation a+b,round,raw,evidence ending this round,0.009028162609842091,-0.09101698860836265,0.08117128212670321,922,20
+neutral,off,temptation a+b,round,within-firm-game,evidence ending this round,-0.06422026180707466,-0.15714259910466669,0.01505528502751432,922,20
+neutral,off,temptation a+b,firm,firm mean score,own price index,0.1903123766175394,-0.16063919255771789,0.5072630204047182,80,20
+neutral,off,temptation a+b,firm,firm mean score,competitive share,-0.028188573960339792,-0.39687587561823434,0.3686832537410544,80,20
+neutral,off,temptation a+b,firm,firm mean score,match share,-0.28774173052327784,-0.5810650435766143,0.1071392575698598,80,20
+neutral,off,temptation a+b,firm,firm mean score,share of rounds with own agreement keyword,-0.13016313010480043,-0.4336372805678918,0.12875607516137327,80,20
+neutral,off,temptation a+b,firm,firm mean score,undercut events,0.11742231398135337,-0.211361005699887,0.4405819631196536,80,20
+neutral,off,temptation a+b,firm,firm mean score,evidence ending (game level),0.11374739726815246,-0.2395306669382965,0.4826980394729065,80,20
+neutral,off,temptation a+b,game,game mean score,price index,0.17023999996307215,-0.2271756149691274,0.5274544874515024,40,20
+neutral,off,temptation a+b,game,game mean score,competitive share,-0.07887234118746614,-0.44115767789583543,0.37849021405891287,40,20
+neutral,off,temptation a+b,game,game mean score,match share,-0.3124694898577215,-0.6378820261290866,0.12493361942048464,40,20
+neutral,off,temptation a+b,game,game mean score,share of rounds with agreement keyword,-0.1566382155475101,-0.44260788575107984,0.1323838586261913,40,20
+neutral,off,temptation a+b,game,game mean score,undercut events,0.04101211598210086,-0.32029517420915055,0.4008090208538158,40,20
+neutral,off,temptation a+b,game,game mean score,evidence ending (investigation found evidence),0.12280019085798959,-0.26875079676199226,0.5166369100673096,40,20
+neutral,off,temptation a+b,game,game mean score,any early ending (incl. random horizon),0.12280019085798959,-0.2679767166172221,0.520519912990974,40,20
+neutral,off,temptation a+b,game,game mean score,gain,0.17023999996307215,-0.21647388075811108,0.5130297542877904,40,20
+neutral,off,temptation a,round,raw,"price index (market, same round)",0.09145603400390967,-0.3461777195503154,0.4695438971155199,488,20
+neutral,off,temptation a,round,within-firm-game,"price index (market, same round)",0.02853458325445018,-0.06709750187373134,0.1356591176254779,488,20
+neutral,off,temptation a,round,raw,competitive firm-round,-0.008770100581123787,-0.0443102932568472,0.02082583008423085,448,20
+neutral,off,temptation a,round,within-firm-game,competitive firm-round,-0.01826700997357813,-0.0486004164202146,-0.0009615440235141656,448,20
+neutral,off,temptation a,round,raw,matches rival's last quote,-0.10713663216373896,-0.23307038751919543,0.036582954214331,448,20
+neutral,off,temptation a,round,within-firm-game,matches rival's last quote,-0.0699887967937555,-0.18984361852632758,0.05197515746892033,448,20
+neutral,off,temptation a,round,raw,agreement keyword in own message,-0.16777857727563578,-0.3390915791340364,0.05031700046795036,488,20
+neutral,off,temptation a,round,within-firm-game,agreement keyword in own message,-0.0338029684350846,-0.11627948948570598,0.08331370178612597,488,20
+neutral,off,temptation a,round,raw,agreement keyword in either message,-0.11832076464110865,-0.29016062764955575,0.09813038448174088,488,20
+neutral,off,temptation a,round,within-firm-game,agreement keyword in either message,-0.002516100091342773,-0.11251632614469817,0.1391351278637121,488,20
+neutral,off,temptation a,round,raw,undercuts rival's last quote,-0.008770100581123787,-0.043663537055994905,0.02397316037304302,448,20
+neutral,off,temptation a,round,within-firm-game,undercuts rival's last quote,-0.01826700997357813,-0.046550974490313216,-0.0013121581375394248,448,20
+neutral,off,temptation a,round,raw,evidence ending this round,-0.03365464144796095,-0.11972267879013251,0.04907736921287638,488,20
+neutral,off,temptation a,round,within-firm-game,evidence ending this round,-0.10345436824540152,-0.1847141482950665,-0.03238413532223523,488,20
+neutral,off,temptation a,firm,firm mean score,own price index,-0.026525859153392835,-0.5271871013508751,0.46952542283883114,40,20
+neutral,off,temptation a,firm,firm mean score,competitive share,-0.009446005097602655,-0.16922590397376894,0.18560617808301225,40,20
+neutral,off,temptation a,firm,firm mean score,match share,-0.18445177203819435,-0.5021393137758794,0.15573163683362187,40,20
+neutral,off,temptation a,firm,firm mean score,share of rounds with own agreement keyword,-0.23011406631694706,-0.6328390538115998,0.1940672918678695,40,20
+neutral,off,temptation a,firm,firm mean score,undercut events,-0.00994643350024282,-0.1595482623765153,0.17416157275147826,40,20
+neutral,off,temptation a,firm,firm mean score,evidence ending (game level),0.0108388746190515,-0.38842601679782,0.3836131760716079,40,20
+neutral,off,temptation a,game,game mean score,price index,-0.03859684215089883,-0.5961953567321198,0.5220689333804593,20,20
+neutral,off,temptation a,game,game mean score,competitive share,-0.025996798418610873,-0.27621421472980956,0.234480801105703,20,20
+neutral,off,temptation a,game,game mean score,match share,-0.20576349326601462,-0.5499143625979219,0.17884045442194144,20,20
+neutral,off,temptation a,game,game mean score,share of rounds with agreement keyword,-0.2177580997867624,-0.5815018400300288,0.2331966775713175,20,20
+neutral,off,temptation a,game,game mean score,undercut events,-0.028925422270859306,-0.2902393865841163,0.18358114014554075,20,20
+neutral,off,temptation a,game,game mean score,evidence ending (investigation found evidence),0.07231355567714826,-0.34878345646267644,0.4767973099533495,20,20
+neutral,off,temptation a,game,game mean score,any early ending (incl. random horizon),0.07231355567714826,-0.34921514788478913,0.5142875467459354,20,20
+neutral,off,temptation a,game,game mean score,gain,-0.03859684215089883,-0.5677969869208828,0.46974844675754096,20,20
+neutral,off,temptation b,round,raw,"price index (market, same round)",0.44071795833916305,0.06818295704471368,0.6746562605273144,434,20
+neutral,off,temptation b,round,within-firm-game,"price index (market, same round)",0.05414705882193917,-0.01520283531582246,0.1283872834267351,434,20
+neutral,off,temptation b,round,raw,competitive firm-round,-0.38739222221887215,-0.6716167272746462,0.08295467816833638,394,20
+neutral,off,temptation b,round,within-firm-game,competitive firm-round,-0.008892028150313041,-0.10066559560615808,0.08573016961314683,394,20
+neutral,off,temptation b,round,raw,matches rival's last quote,0.07574449141376549,-0.2959916333953079,0.364703183791702,394,20
+neutral,off,temptation b,round,within-firm-game,matches rival's last quote,-0.11690500405920996,-0.22096721408156467,-0.0164670799434674,394,20
+neutral,off,temptation b,round,raw,agreement keyword in own message,-0.08077671841939131,-0.271771468395489,0.1882083764617147,434,20
+neutral,off,temptation b,round,within-firm-game,agreement keyword in own message,0.03155971762732721,-0.07387790784570654,0.14256069352859743,434,20
+neutral,off,temptation b,round,raw,agreement keyword in either message,-0.11966127763285075,-0.3009700898274482,0.1184034127503144,434,20
+neutral,off,temptation b,round,within-firm-game,agreement keyword in either message,-0.038373707546072326,-0.13152813011322884,0.05467247440338908,434,20
+neutral,off,temptation b,round,raw,undercuts rival's last quote,-0.12444518446777131,-0.29394506931845105,0.1184876375539101,394,20
+neutral,off,temptation b,round,within-firm-game,undercuts rival's last quote,0.03186234003252061,-0.0951540732894544,0.11701922394242519,394,20
+neutral,off,temptation b,round,raw,evidence ending this round,0.04078342669105816,-0.0881711419623222,0.13732816979802237,434,20
+neutral,off,temptation b,round,within-firm-game,evidence ending this round,-0.026699166852594658,-0.15820052419063066,0.09096370964896833,434,20
+neutral,off,temptation b,firm,firm mean score,own price index,0.33037284065277317,-0.15571141622799908,0.7251488989641341,40,20
+neutral,off,temptation b,firm,firm mean score,competitive share,-0.03779822357497032,-0.6200180774859838,0.5219476069992507,40,20
+neutral,off,temptation b,firm,firm mean score,match share,-0.3300930290136069,-0.7240981404341513,0.1778736029756039,40,20
+neutral,off,temptation b,firm,firm mean score,share of rounds with own agreement keyword,-0.038532524228348214,-0.46424768766789626,0.40852897551427253,40,20
+neutral,off,temptation b,firm,firm mean score,undercut events,0.20111660084290855,-0.271860728376248,0.5515572432623272,40,20
+neutral,off,temptation b,firm,firm mean score,evidence ending (game level),0.19510891201024616,-0.16902241004227406,0.5221773419095016,40,20
+neutral,off,temptation b,game,game mean score,price index,0.31838269384854695,-0.2014996447803336,0.7249330233848529,20,20
+neutral,off,temptation b,game,game mean score,competitive share,-0.08937030776192255,-0.6243064611312824,0.5362368678794946,20,20
+neutral,off,temptation b,game,game mean score,match share,-0.3669680727378156,-0.7879636915158844,0.1636579000281816,20,20
+neutral,off,temptation b,game,game mean score,share of rounds with agreement keyword,-0.11690619937648769,-0.5690581372470523,0.3193376485965109,20,20
+neutral,off,temptation b,game,game mean score,undercut events,0.09930993081959716,-0.46424226974573934,0.5883150676907816,20,20
+neutral,off,temptation b,game,game mean score,evidence ending (investigation found evidence),0.18794449584189593,-0.20427503585011247,0.5483505620611748,20,20
+neutral,off,temptation b,game,game mean score,any early ending (incl. random horizon),0.18794449584189593,-0.22370015696107598,0.5243427605629516,20,20
+neutral,off,temptation b,game,game mean score,gain,0.31838269384854695,-0.2106035102730277,0.7100224366382873,20,20
+neutral,on,temptation a+b,round,raw,"price index (market, same round)",0.1286116218613373,-0.01121564877776416,0.2601411508483515,800,20
+neutral,on,temptation a+b,round,within-firm-game,"price index (market, same round)",-0.099354536487953,-0.16050859471636217,-0.024844750364791446,800,20
+neutral,on,temptation a+b,round,raw,competitive firm-round,0.0996191505302744,0.06623597681152106,0.14771144377517254,720,20
+neutral,on,temptation a+b,round,within-firm-game,competitive firm-round,0.08464100266660939,0.057090201699363845,0.1242440070512917,720,20
+neutral,on,temptation a+b,round,raw,matches rival's last quote,-0.09558120435373221,-0.14432034634463003,-0.05234028642029619,720,20
+neutral,on,temptation a+b,round,within-firm-game,matches rival's last quote,-0.06390412341264642,-0.10945453530726179,-0.029818905956433092,720,20
+neutral,on,temptation a+b,round,raw,agreement keyword in own message,-0.09078196553015613,-0.14757369428895836,-0.025331505052397407,800,20
+neutral,on,temptation a+b,round,within-firm-game,agreement keyword in own message,-0.06392795220143974,-0.12629414262674385,-0.003602485987547534,800,20
+neutral,on,temptation a+b,round,raw,agreement keyword in either message,-0.08375501929016037,-0.1498606435862313,-0.008969794006271741,800,20
+neutral,on,temptation a+b,round,within-firm-game,agreement keyword in either message,-0.08211118292086426,-0.16122443960976685,-0.007692793180496627,800,20
+neutral,on,temptation a+b,round,raw,undercuts rival's last quote,0.0996191505302744,0.0663133480181537,0.14676446117594916,720,20
+neutral,on,temptation a+b,round,within-firm-game,undercuts rival's last quote,0.08464100266660939,0.05685360181184167,0.12662828596321068,720,20
+neutral,on,temptation a+b,round,raw,evidence ending this round,-0.016059967967032865,-0.0966917084969623,0.05616549867994411,800,20
+neutral,on,temptation a+b,round,within-firm-game,evidence ending this round,-0.025714583168214712,-0.09311574987319404,0.03601407898969575,800,20
+neutral,on,temptation a+b,firm,firm mean score,own price index,0.31069999009057253,0.03892451398884018,0.5499799042787485,80,20
+neutral,on,temptation a+b,firm,firm mean score,competitive share,0.09420228921262316,0.021398549797925753,0.19320572031809127,80,20
+neutral,on,temptation a+b,firm,firm mean score,match share,-0.19425602910390843,-0.32290518634178955,-0.06105885510664279,80,20
+neutral,on,temptation a+b,firm,firm mean score,share of rounds with own agreement keyword,-0.2177485043883221,-0.46575575597200053,0.05742623066916798,80,20
+neutral,on,temptation a+b,firm,firm mean score,undercut events,0.09394886809255182,0.020634073765521555,0.18298468948755695,80,20
+neutral,on,temptation a+b,firm,firm mean score,evidence ending (game level),-0.006187566175588589,-0.1484043901254718,0.14458725033128123,80,20
+neutral,on,temptation a+b,game,game mean score,price index,0.4198867135138527,0.09828256305095727,0.6717676628715011,40,20
+neutral,on,temptation a+b,game,game mean score,competitive share,0.019381883305055494,-0.11808958049189613,0.16222921534704762,40,20
+neutral,on,temptation a+b,game,game mean score,match share,-0.1744388366008811,-0.3574709348727501,0.02271315790575392,40,20
+neutral,on,temptation a+b,game,game mean score,share of rounds with agreement keyword,-0.03237838825843986,-0.3580421029806702,0.2973758650842187,40,20
+neutral,on,temptation a+b,game,game mean score,undercut events,0.019885392693627598,-0.11047920213906126,0.17301163266695402,40,20
+neutral,on,temptation a+b,game,game mean score,evidence ending (investigation found evidence),0.06170363456136372,-0.08243575053439138,0.23700309914778248,40,20
+neutral,on,temptation a+b,game,game mean score,any early ending (incl. random horizon),0.06170363456136372,-0.10187853958166469,0.24642465727438273,40,20
+neutral,on,temptation a+b,game,game mean score,gain,0.4198867135138527,0.07323022202173324,0.6620587173078302,40,20
+neutral,on,temptation a,round,raw,"price index (market, same round)",0.04489468395727146,-0.14583036670269856,0.2303225752545947,408,20
+neutral,on,temptation a,round,within-firm-game,"price index (market, same round)",-0.09607152422597741,-0.20265155719030484,0.03899441224556811,408,20
+neutral,on,temptation a,round,raw,competitive firm-round,0.1567399073895774,0.10234298017240366,0.23780580615555216,368,20
+neutral,on,temptation a,round,within-firm-game,competitive firm-round,0.1247180194798569,0.08112918548003348,0.18882243540223204,368,20
+neutral,on,temptation a,round,raw,matches rival's last quote,-0.14039859593744203,-0.21993364770908608,-0.0700472507472463,368,20
+neutral,on,temptation a,round,within-firm-game,matches rival's last quote,-0.11300876542186199,-0.17327276571168282,-0.04518946669601353,368,20
+neutral,on,temptation a,round,raw,agreement keyword in own message,-0.10410915008235218,-0.18405144875990542,-0.004678494441433634,408,20
+neutral,on,temptation a,round,within-firm-game,agreement keyword in own message,-0.07361398338905902,-0.1807040490513154,0.0314670907034778,408,20
+neutral,on,temptation a,round,raw,agreement keyword in either message,-0.10642684128909966,-0.19936762142305606,-0.0014650349295963153,408,20
+neutral,on,temptation a,round,within-firm-game,agreement keyword in either message,-0.09857741948535988,-0.192948637761553,-0.0041428729076161555,408,20
+neutral,on,temptation a,round,raw,undercuts rival's last quote,0.1567399073895774,0.1029026199067505,0.23530651285020557,368,20
+neutral,on,temptation a,round,within-firm-game,undercuts rival's last quote,0.1247180194798569,0.08209603046953631,0.18731540062420185,368,20
+neutral,on,temptation a,round,raw,evidence ending this round,-0.08268133879031409,-0.18157738024528466,0.010042063999902862,408,20
+neutral,on,temptation a,round,within-firm-game,evidence ending this round,-0.07148359817065524,-0.18113398146781445,0.044124293588363686,408,20
+neutral,on,temptation a,firm,firm mean score,own price index,0.10819609217644555,-0.2591466622205175,0.45465303411592006,40,20
+neutral,on,temptation a,firm,firm mean score,competitive share,0.2104743913835045,0.07669509488845752,0.3895424843980441,40,20
+neutral,on,temptation a,firm,firm mean score,match share,-0.21758689606236603,-0.42497586488836414,-0.02003697745048101,40,20
+neutral,on,temptation a,firm,firm mean score,share of rounds with own agreement keyword,-0.16253902792566582,-0.4419465069936597,0.10965809478279213,40,20
+neutral,on,temptation a,firm,firm mean score,undercut events,0.20954577795917853,0.07671575086154737,0.40550890169072934,40,20
+neutral,on,temptation a,firm,firm mean score,evidence ending (game level),-0.19572618646492967,-0.40747031591269484,-0.029067576566942192,40,20
+neutral,on,temptation a,game,game mean score,price index,0.11908110785704962,-0.3639371351739518,0.5588420905119245,20,20
+neutral,on,temptation a,game,game mean score,competitive share,0.11286546615737045,-0.12662903663497996,0.3667157290219694,20,20
+neutral,on,temptation a,game,game mean score,match share,-0.23646840921709672,-0.532969121776925,0.05979674252503137,20,20
+neutral,on,temptation a,game,game mean score,share of rounds with agreement keyword,-0.11229215856613134,-0.6016174176214965,0.4379564446121791,20,20
+neutral,on,temptation a,game,game mean score,undercut events,0.11592011799051136,-0.11994081941704236,0.4061781447152903,20,20
+neutral,on,temptation a,game,game mean score,evidence ending (investigation found evidence),-0.17388017698576705,-0.43971445420571786,0.06078058095894519,20,20
+neutral,on,temptation a,game,game mean score,any early ending (incl. random horizon),-0.17388017698576705,-0.47604890916709874,0.06064087516975202,20,20
+neutral,on,temptation a,game,game mean score,gain,0.11908110785704962,-0.4088881462671147,0.5256145482145744,20,20
+neutral,on,temptation b,round,raw,"price index (market, same round)",0.22427473179239954,0.042860610633562175,0.3759294189729144,392,20
+neutral,on,temptation b,round,within-firm-game,"price index (market, same round)",-0.0835249780681026,-0.17820004893075359,-0.002779581616189157,392,20
+neutral,on,temptation b,round,raw,competitive firm-round,,,,352,20
+neutral,on,temptation b,round,within-firm-game,competitive firm-round,,,,352,20
+neutral,on,temptation b,round,raw,matches rival's last quote,-0.050354931877327966,-0.08843335704958663,-0.037843543155066675,352,20
+neutral,on,temptation b,round,within-firm-game,matches rival's last quote,-0.00931273304978619,-0.026607446002720688,-0.003707103708203014,352,20
+neutral,on,temptation b,round,raw,agreement keyword in own message,-0.08169102713448505,-0.1520910100822698,-0.010045406325297542,392,20
+neutral,on,temptation b,round,within-firm-game,agreement keyword in own message,-0.05725347664708297,-0.11937919519410628,0.010981928401312551,392,20
+neutral,on,temptation b,round,raw,agreement keyword in either message,-0.06685932303695363,-0.1537636194190724,0.03483144809210008,392,20
+neutral,on,temptation b,round,within-firm-game,agreement keyword in either message,-0.07504174898741447,-0.16209352121287313,0.022318408279933158,392,20
+neutral,on,temptation b,round,raw,undercuts rival's last quote,,,,352,20
+neutral,on,temptation b,round,within-firm-game,undercuts rival's last quote,,,,352,20
+neutral,on,temptation b,round,raw,evidence ending this round,0.03622100469453358,-0.06749940665122788,0.14571299121690431,392,20
+neutral,on,temptation b,round,within-firm-game,evidence ending this round,0.01579414691372817,-0.08507094898040828,0.12861779801212367,392,20
+neutral,on,temptation b,firm,firm mean score,own price index,0.4355078418039466,0.06675582921705876,0.6993640683216479,40,20
+neutral,on,temptation b,firm,firm mean score,competitive share,,,,40,20
+neutral,on,temptation b,firm,firm mean score,match share,-0.22439662329704027,-0.45848306059061567,-0.14012340957639027,40,20
+neutral,on,temptation b,firm,firm mean score,share of rounds with own agreement keyword,-0.2170008039614881,-0.6072420250567445,0.16196351712652746,40,20
+neutral,on,temptation b,firm,firm mean score,undercut events,,,,40,20
+neutral,on,temptation b,firm,firm mean score,evidence ending (game level),0.12965138234940102,-0.002005084322241967,0.35159051649285883,40,20
+neutral,on,temptation b,game,game mean score,price index,0.5074020106293861,0.09135079674179748,0.7853654364135536,20,20
+neutral,on,temptation b,game,game mean score,competitive share,,,,20,20
+neutral,on,temptation b,game,game mean score,match share,-0.29850524612654744,-0.6107833055249439,-0.18001810245535332,20,20
+neutral,on,temptation b,game,game mean score,share of rounds with agreement keyword,0.10407266454617463,-0.45879806745716767,0.5651703102361627,20,20
+neutral,on,temptation b,game,game mean score,undercut events,,,,20,20
+neutral,on,temptation b,game,game mean score,evidence ending (investigation found evidence),0.2189038471594681,0.09995877787120885,0.4763884138817916,20,20
+neutral,on,temptation b,game,game mean score,any early ending (incl. random horizon),0.2189038471594681,0.09972900657911316,0.5236232083094429,20,20
+neutral,on,temptation b,game,game mean score,gain,0.5074020106293861,0.09604562757494912,0.7697080964298888,20,20
+anchored,off,temptation a+b,round,raw,"price index (market, same round)",0.15057817251386157,-0.09846321226027709,0.3547661284541764,980,20
+anchored,off,temptation a+b,round,within-firm-game,"price index (market, same round)",0.0729098793423572,0.01330508230543764,0.142338845841155,980,20
+anchored,off,temptation a+b,round,raw,competitive firm-round,-0.22421026436199742,-0.4462400529524268,0.07450388136226647,900,20
+anchored,off,temptation a+b,round,within-firm-game,competitive firm-round,-0.06778720090314054,-0.13893512590953852,0.02125841996997512,900,20
+anchored,off,temptation a+b,round,raw,matches rival's last quote,-0.1926907219617058,-0.2953959268887291,-0.07056338719961017,900,20
+anchored,off,temptation a+b,round,within-firm-game,matches rival's last quote,-0.09764986681894829,-0.20374929865247005,0.0022570112302796185,900,20
+anchored,off,temptation a+b,round,raw,agreement keyword in own message,-0.033651503882991124,-0.15671271278996493,0.10510306406998007,980,20
+anchored,off,temptation a+b,round,within-firm-game,agreement keyword in own message,0.07934431766159916,-0.006865422331322209,0.17802724179558052,980,20
+anchored,off,temptation a+b,round,raw,agreement keyword in either message,-0.04633763918205865,-0.1860120091300102,0.10909455373390413,980,20
+anchored,off,temptation a+b,round,within-firm-game,agreement keyword in either message,0.04185996853886153,-0.08660524822370314,0.16501637930338137,980,20
+anchored,off,temptation a+b,round,raw,undercuts rival's last quote,0.043437415499945065,-0.03156212774531862,0.1085312608035997,900,20
+anchored,off,temptation a+b,round,within-firm-game,undercuts rival's last quote,-0.04212388434900223,-0.10586888523433755,0.05125779262002041,900,20
+anchored,off,temptation a+b,round,raw,evidence ending this round,-0.05829908788414129,-0.14484245105176344,0.03293981363828911,980,20
+anchored,off,temptation a+b,round,within-firm-game,evidence ending this round,-0.09340557600944721,-0.18463243423581535,-0.008475782789321484,980,20
+anchored,off,temptation a+b,firm,firm mean score,own price index,0.011404605824663057,-0.2787290545368972,0.3158109935629122,80,20
+anchored,off,temptation a+b,firm,firm mean score,competitive share,0.07739070155378397,-0.23086551293209,0.3084501609021625,80,20
+anchored,off,temptation a+b,firm,firm mean score,match share,-0.3253691173698448,-0.5540351005875792,-0.04509075229394028,80,20
+anchored,off,temptation a+b,firm,firm mean score,share of rounds with own agreement keyword,-0.12496996582531712,-0.4094216416068283,0.1806400787037385,80,20
+anchored,off,temptation a+b,firm,firm mean score,undercut events,0.2536500438383709,0.0727792134157587,0.4227733864530605,80,20
+anchored,off,temptation a+b,firm,firm mean score,evidence ending (game level),-0.05868575599601937,-0.4300588816725103,0.2974322336746811,80,20
+anchored,off,temptation a+b,game,game mean score,price index,0.015005072678621332,-0.2957656075733333,0.3093600197647792,40,20
+anchored,off,temptation a+b,game,game mean score,competitive share,0.13957748119383945,-0.17421378196735943,0.4442068399507476,40,20
+anchored,off,temptation a+b,game,game mean score,match share,-0.34270278903323226,-0.6056013168512282,-0.03896544252135691,40,20
+anchored,off,temptation a+b,game,game mean score,share of rounds with agreement keyword,0.08273916011126708,-0.25213506083557846,0.44219922941597145,40,20
+anchored,off,temptation a+b,game,game mean score,undercut events,0.29316695864344466,3.970218331670384e-05,0.5715468316246609,40,20
+anchored,off,temptation a+b,game,game mean score,evidence ending (investigation found evidence),-0.07947761119039792,-0.4680755234785339,0.26612011052561296,40,20
+anchored,off,temptation a+b,game,game mean score,any early ending (incl. random horizon),-0.07947761119039792,-0.44866723317510926,0.2605539238078577,40,20
+anchored,off,temptation a+b,game,game mean score,gain,-0.06288167977239235,-0.36707146462744505,0.24919716851791793,40,20
+anchored,off,temptation a,round,raw,"price index (market, same round)",0.011556646460025109,-0.12194228224390086,0.18831595606011764,490,20
+anchored,off,temptation a,round,within-firm-game,"price index (market, same round)",0.03305707058255654,-0.05527589589877542,0.10200539502531969,490,20
+anchored,off,temptation a,round,raw,competitive firm-round,-0.02344609989581763,-0.10875036638874913,0.08637280641526232,450,20
+anchored,off,temptation a,round,within-firm-game,competitive firm-round,-0.08320253272822789,-0.16830122531216024,0.021059760196845325,450,20
+anchored,off,temptation a,round,raw,matches rival's last quote,-0.0675308404818123,-0.16951367763800976,0.016687237866938476,450,20
+anchored,off,temptation a,round,within-firm-game,matches rival's last quote,-0.035518684053645555,-0.1360869474685736,0.04722910583493243,450,20
+anchored,off,temptation a,round,raw,agreement keyword in own message,0.014331535981777234,-0.11797046699448793,0.1509604276802113,490,20
+anchored,off,temptation a,round,within-firm-game,agreement keyword in own message,0.07606364640662264,-0.023349124885207646,0.17182009122015063,490,20
+anchored,off,temptation a,round,raw,agreement keyword in either message,-0.006825653418488552,-0.1595977242322946,0.18370880826640815,490,20
+anchored,off,temptation a,round,within-firm-game,agreement keyword in either message,0.020365378368103326,-0.11052512114109611,0.16301325242730594,490,20
+anchored,off,temptation a,round,raw,undercuts rival's last quote,0.025437129505245133,-0.031926004831318494,0.0924752784832862,450,20
+anchored,off,temptation a,round,within-firm-game,undercuts rival's last quote,-0.027438396450993434,-0.0821625142857907,0.02988085243120401,450,20
+anchored,off,temptation a,round,raw,evidence ending this round,-0.08483244133589911,-0.17903180413936332,0.02034476576271371,490,20
+anchored,off,temptation a,round,within-firm-game,evidence ending this round,-0.11155927127111602,-0.23370197083820926,0.021392159115683238,490,20
+anchored,off,temptation a,firm,firm mean score,own price index,-0.09712193797232699,-0.4268635707810599,0.28668260300744997,40,20
+anchored,off,temptation a,firm,firm mean score,competitive share,0.18463094665894236,-0.018496170193281897,0.3907877221334829,40,20
+anchored,off,temptation a,firm,firm mean score,match share,-0.22909551332652758,-0.5227876749165432,0.06985764520577581,40,20
+anchored,off,temptation a,firm,firm mean score,share of rounds with own agreement keyword,0.009375318422118266,-0.345190144816881,0.3544529281743337,40,20
+anchored,off,temptation a,firm,firm mean score,undercut events,0.2019989830394878,0.034737409470553794,0.3619953732303142,40,20
+anchored,off,temptation a,firm,firm mean score,evidence ending (game level),-0.20958112426242456,-0.46784449466042183,0.060041664385975566,40,20
+anchored,off,temptation a,game,game mean score,price index,-0.1100889502629517,-0.482841016593502,0.31105690764114124,20,20
+anchored,off,temptation a,game,game mean score,competitive share,0.1671574606013187,-0.14535367432967217,0.46615345201816594,20,20
+anchored,off,temptation a,game,game mean score,match share,-0.18472925723907974,-0.5048537994298667,0.174498658340351,20,20
+anchored,off,temptation a,game,game mean score,share of rounds with agreement keyword,0.31207039891419097,-0.21859032095208814,0.7571706924922414,20,20
+anchored,off,temptation a,game,game mean score,undercut events,0.17705603146495655,-0.13523385319049536,0.5094711929341066,20,20
+anchored,off,temptation a,game,game mean score,evidence ending (investigation found evidence),-0.23157782476395827,-0.5256844666142064,0.0,20,20
+anchored,off,temptation a,game,game mean score,any early ending (incl. random horizon),-0.23157782476395827,-0.5026702610931468,0.02010717698110252,20,20
+anchored,off,temptation a,game,game mean score,gain,-0.1344718707115881,-0.5220352502439506,0.28346656561394407,20,20
+anchored,off,temptation b,round,raw,"price index (market, same round)",0.3330703295355296,-0.07269024667125346,0.6345638872310134,490,20
+anchored,off,temptation b,round,within-firm-game,"price index (market, same round)",0.11625972978157077,0.03849036334090047,0.22190156268290534,490,20
+anchored,off,temptation b,round,raw,competitive firm-round,-0.3329699989020852,-0.6292263465735719,0.09813709092964731,450,20
+anchored,off,temptation b,round,within-firm-game,competitive firm-round,-0.07764659982205646,-0.1830816812416918,0.04427257914324549,450,20
+anchored,off,temptation b,round,raw,matches rival's last quote,-0.2429765610544941,-0.3521666185162144,-0.09460087190911405,450,20
+anchored,off,temptation b,round,within-firm-game,matches rival's last quote,-0.13340404597758648,-0.28389738159251626,0.008008745519226068,450,20
+anchored,off,temptation b,round,raw,agreement keyword in own message,-0.06709395481026155,-0.2462664383492034,0.16163396344722786,490,20
+anchored,off,temptation b,round,within-firm-game,agreement keyword in own message,0.0693027505220413,-0.09477791570516277,0.22699297196263732,490,20
+anchored,off,temptation b,round,raw,agreement keyword in either message,-0.06892135499870919,-0.2500147577176754,0.14089304325055738,490,20
+anchored,off,temptation b,round,within-firm-game,agreement keyword in either message,0.037668027113246474,-0.1364035933552034,0.21131974124465483,490,20
+anchored,off,temptation b,round,raw,undercuts rival's last quote,0.0431843025964545,-0.06748254638507505,0.13643177774312928,450,20
+anchored,off,temptation b,round,within-firm-game,undercuts rival's last quote,-0.05677186165785682,-0.14578492110076743,0.0746711684008623,450,20
+anchored,off,temptation b,round,raw,evidence ending this round,-0.04354498044265074,-0.15378313604586621,0.06324546736936636,490,20
+anchored,off,temptation b,round,within-firm-game,evidence ending this round,-0.07381894742471246,-0.18224509131559177,0.04328675011605818,490,20
+anchored,off,temptation b,firm,firm mean score,own price index,0.21076517528044425,-0.2654532305070907,0.6117032276614631,40,20
+anchored,off,temptation b,firm,firm mean score,competitive share,-0.03470731933843969,-0.4498237714318883,0.3909621262106955,40,20
+anchored,off,temptation b,firm,firm mean score,match share,-0.3548380639012404,-0.6936285170610277,0.05596851492458335,40,20
+anchored,off,temptation b,firm,firm mean score,share of rounds with own agreement keyword,-0.2131333010564742,-0.5456401793029383,0.14413524721093687,40,20
+anchored,off,temptation b,firm,firm mean score,undercut events,0.22977313940752195,-0.05492554723274488,0.4733564721253197,40,20
+anchored,off,temptation b,firm,firm mean score,evidence ending (game level),0.0,-0.5473695040264591,0.5470663964079732,40,20
+anchored,off,temptation b,game,game mean score,price index,0.2522647926765961,-0.2623779519608393,0.6507147731326528,20,20
+anchored,off,temptation b,game,game mean score,competitive share,0.017843420202917463,-0.45248817488326526,0.5364811742786184,20,20
+anchored,off,temptation b,game,game mean score,match share,-0.378222947650214,-0.7292873206551085,0.029358906735087214,20,20
+anchored,off,temptation b,game,game mean score,share of rounds with agreement keyword,-0.02877517747182217,-0.4286806970495458,0.42977750955498484,20,20
+anchored,off,temptation b,game,game mean score,undercut events,0.25710836454704133,-0.24554481606655043,0.6782505863684402,20,20
+anchored,off,temptation b,game,game mean score,evidence ending (investigation found evidence),0.0,-0.548683313210763,0.5267517688120376,20,20
+anchored,off,temptation b,game,game mean score,any early ending (incl. random horizon),0.0,-0.54887028654202,0.5486621840562299,20,20
+anchored,off,temptation b,game,game mean score,gain,0.13464137372873916,-0.34852619778051575,0.5615744274069968,20,20
+anchored,on,temptation a+b,round,raw,"price index (market, same round)",0.029335983195987094,-0.14298016625176246,0.22473418178976096,980,20
+anchored,on,temptation a+b,round,within-firm-game,"price index (market, same round)",-0.021516672944245203,-0.07395934459090174,0.03269956122711538,980,20
+anchored,on,temptation a+b,round,raw,competitive firm-round,0.04660251886827601,-0.10478302020877615,0.14017726773251696,900,20
+anchored,on,temptation a+b,round,within-firm-game,competitive firm-round,0.029698960424414583,-0.0947764168123162,0.1050113320362807,900,20
+anchored,on,temptation a+b,round,raw,matches rival's last quote,-0.20882395750868968,-0.3756271055514633,0.04884256131187519,900,20
+anchored,on,temptation a+b,round,within-firm-game,matches rival's last quote,-0.039078058184699976,-0.10307351698739667,0.028387827230935844,900,20
+anchored,on,temptation a+b,round,raw,agreement keyword in own message,-0.006856948658559379,-0.05561257710792804,0.044666737552330166,980,20
+anchored,on,temptation a+b,round,within-firm-game,agreement keyword in own message,-0.006116259636237973,-0.05723387569572851,0.05198028953270148,980,20
+anchored,on,temptation a+b,round,raw,agreement keyword in either message,-0.07064110448352116,-0.13113108072457733,-0.005812114787070998,980,20
+anchored,on,temptation a+b,round,within-firm-game,agreement keyword in either message,-0.05003838993018166,-0.09836397069007478,0.009020797563340146,980,20
+anchored,on,temptation a+b,round,raw,undercuts rival's last quote,0.04660251886827601,-0.10469590249070085,0.14365418065445723,900,20
+anchored,on,temptation a+b,round,within-firm-game,undercuts rival's last quote,0.029698960424414583,-0.09727926649648026,0.10430306988427131,900,20
+anchored,on,temptation a+b,round,raw,evidence ending this round,-0.04881097414027273,-0.12556931100260268,0.023799312967129633,980,20
+anchored,on,temptation a+b,round,within-firm-game,evidence ending this round,-0.04272500533885035,-0.11960411967680828,0.028502091606433803,980,20
+anchored,on,temptation a+b,firm,firm mean score,own price index,-0.025926391790438336,-0.3300707385624963,0.26558045714736467,80,20
+anchored,on,temptation a+b,firm,firm mean score,competitive share,0.1934419450237569,0.09045463263779648,0.3468756152237972,80,20
+anchored,on,temptation a+b,firm,firm mean score,match share,-0.14412663693861272,-0.41760674128849606,0.15574916078728657,80,20
+anchored,on,temptation a+b,firm,firm mean score,share of rounds with own agreement keyword,-0.21338908022436393,-0.4277374970223369,0.028280417140252166,80,20
+anchored,on,temptation a+b,firm,firm mean score,undercut events,0.1934419450237569,0.09001971426156333,0.35171557878631166,80,20
+anchored,on,temptation a+b,firm,firm mean score,evidence ending (game level),-0.1436260568064848,-0.34469059492587545,0.05493816317270749,80,20
+anchored,on,temptation a+b,game,game mean score,price index,-0.13818866594664564,-0.4680985008759881,0.20373124297074924,40,20
+anchored,on,temptation a+b,game,game mean score,competitive share,0.22802421445903007,0.09030058613818198,0.4322733636293049,40,20
+anchored,on,temptation a+b,game,game mean score,match share,-0.13236400359904624,-0.44709881055388573,0.25738030216263746,40,20
+anchored,on,temptation a+b,game,game mean score,share of rounds with agreement keyword,-0.11385859955700849,-0.4172121158861523,0.1869154492595124,40,20
+anchored,on,temptation a+b,game,game mean score,undercut events,0.22802421445903007,0.09035384598908718,0.42349139281244014,40,20
+anchored,on,temptation a+b,game,game mean score,evidence ending (investigation found evidence),-0.18412248257230454,-0.4338282634499627,0.06075737026167346,40,20
+anchored,on,temptation a+b,game,game mean score,any early ending (incl. random horizon),-0.18412248257230454,-0.4332460780658296,0.05940549121778752,40,20
+anchored,on,temptation a+b,game,game mean score,gain,-0.15881884901580778,-0.5350597937991457,0.20528614864000838,40,20
+anchored,on,temptation a,round,raw,"price index (market, same round)",-0.15295915966868,-0.2813507843354796,-0.020842054045939612,490,20
+anchored,on,temptation a,round,within-firm-game,"price index (market, same round)",-0.034462910218613085,-0.1265038987674687,0.07188358824393735,490,20
+anchored,on,temptation a,round,raw,competitive firm-round,0.12728114499371088,0.1162921304140382,0.22876433442773408,450,20
+anchored,on,temptation a,round,within-firm-game,competitive firm-round,0.08908719610797863,0.07980828217358056,0.17717367696009087,450,20
+anchored,on,temptation a,round,raw,matches rival's last quote,-0.10985008535562699,-0.21770142220374822,0.09590040613187405,450,20
+anchored,on,temptation a,round,within-firm-game,matches rival's last quote,-0.0945515332537948,-0.1802513456640348,0.07472752544280843,450,20
+anchored,on,temptation a,round,raw,agreement keyword in own message,-0.03997616412482823,-0.13299643032475014,0.06098284247153628,490,20
+anchored,on,temptation a,round,within-firm-game,agreement keyword in own message,-0.008354727119702038,-0.09597051040060352,0.06524657788931967,490,20
+anchored,on,temptation a,round,raw,agreement keyword in either message,-0.0824967377790479,-0.1925755800128906,0.046956073320143926,490,20
+anchored,on,temptation a,round,within-firm-game,agreement keyword in either message,-0.03661359457141989,-0.11949212073222425,0.05099604587683443,490,20
+anchored,on,temptation a,round,raw,undercuts rival's last quote,0.12728114499371088,0.11461346492308665,0.22444985886068947,450,20
+anchored,on,temptation a,round,within-firm-game,undercuts rival's last quote,0.08908719610797863,0.08046300883357714,0.1683172148581327,450,20
+anchored,on,temptation a,round,raw,evidence ending this round,-0.023707432600692156,-0.11527029611051051,0.06298957627507877,490,20
+anchored,on,temptation a,round,within-firm-game,evidence ending this round,-0.001134272281869279,-0.09157774457551475,0.07517369333607868,490,20
+anchored,on,temptation a,firm,firm mean score,own price index,-0.24250663636153205,-0.530909106261286,0.12333907037355157,40,20
+anchored,on,temptation a,firm,firm mean score,competitive share,0.25872888270878225,0.17860591211163765,0.5227631513213001,40,20
+anchored,on,temptation a,firm,firm mean score,match share,0.01298661667014709,-0.37322177811815616,0.35890765776340033,40,20
+anchored,on,temptation a,firm,firm mean score,share of rounds with own agreement keyword,-0.38899415174205126,-0.652878811744414,-0.041050063509247114,40,20
+anchored,on,temptation a,firm,firm mean score,undercut events,0.25872888270878225,0.1694760700024622,0.5193181051082405,40,20
+anchored,on,temptation a,firm,firm mean score,evidence ending (game level),-0.1445862889106115,-0.35245142485947795,0.05790483003493277,40,20
+anchored,on,temptation a,game,game mean score,price index,-0.32346088027086983,-0.6641385481919331,0.10911244544063858,20,20
+anchored,on,temptation a,game,game mean score,competitive share,0.2986176140003285,0.21939966624803095,0.5517302414805656,20,20
+anchored,on,temptation a,game,game mean score,match share,0.04251492132982474,-0.4667474286435909,0.5261974684636381,20,20
+anchored,on,temptation a,game,game mean score,share of rounds with agreement keyword,-0.29970513646261937,-0.7081671423695012,0.2121755070537919,20,20
+anchored,on,temptation a,game,game mean score,undercut events,0.2986176140003285,0.1806043874648844,0.5491829144433655,20,20
+anchored,on,temptation a,game,game mean score,evidence ending (investigation found evidence),-0.20247795589601514,-0.5236030137206213,0.036587907803821415,20,20
+anchored,on,temptation a,game,game mean score,any early ending (incl. random horizon),-0.20247795589601514,-0.47567856389536634,0.058134991407256684,20,20
+anchored,on,temptation a,game,game mean score,gain,-0.2764765695604543,-0.6445389164354461,0.15644875354417165,20,20
+anchored,on,temptation b,round,raw,"price index (market, same round)",0.23783543976153476,0.009502293061493534,0.44567296967780556,490,20
+anchored,on,temptation b,round,within-firm-game,"price index (market, same round)",0.016489671659618954,-0.04653304796798534,0.10044998531804387,490,20
+anchored,on,temptation b,round,raw,competitive firm-round,-0.08411036405838176,-0.1540226738491329,-0.07631673855192166,450,20
+anchored,on,temptation b,round,within-firm-game,competitive firm-round,-0.08159807840147366,-0.14822947720439622,-0.07509803675346306,450,20
+anchored,on,temptation b,round,raw,matches rival's last quote,-0.27014885014540296,-0.4797258543009387,0.14653999571963044,450,20
+anchored,on,temptation b,round,within-firm-game,matches rival's last quote,-0.0109834713615537,-0.05819118935602242,0.12650473089095426,450,20
+anchored,on,temptation b,round,raw,agreement keyword in own message,0.022793017363165115,-0.07459958012729045,0.1349847627452391,490,20
+anchored,on,temptation b,round,within-firm-game,agreement keyword in own message,-0.004826265711461483,-0.08497264424021155,0.08268775747928139,490,20
+anchored,on,temptation b,round,raw,agreement keyword in either message,-0.0598644605517101,-0.1569872317185452,0.06057884865526039,490,20
+anchored,on,temptation b,round,within-firm-game,agreement keyword in either message,-0.06292724693728517,-0.1553811022409518,0.023536793788392397,490,20
+anchored,on,temptation b,round,raw,undercuts rival's last quote,-0.08411036405838176,-0.1575526603537601,-0.0768580797634139,450,20
+anchored,on,temptation b,round,within-firm-game,undercuts rival's last quote,-0.08159807840147366,-0.14692129158154832,-0.07562444001872032,450,20
+anchored,on,temptation b,round,raw,evidence ending this round,-0.07140425792018197,-0.15358308638145898,0.008174446048204368,490,20
+anchored,on,temptation b,round,within-firm-game,evidence ending this round,-0.08107966457330773,-0.1906822846187276,0.023181013899737524,490,20
+anchored,on,temptation b,firm,firm mean score,own price index,0.24418149896961627,-0.22694132372552084,0.584071375913298,40,20
+anchored,on,temptation b,firm,firm mean score,competitive share,0.1459008956873554,0.05626405416916605,0.3343255856259707,40,20
+anchored,on,temptation b,firm,firm mean score,match share,-0.3900407891029704,-0.6461720261841132,-0.11831226872672419,40,20
+anchored,on,temptation b,firm,firm mean score,share of rounds with own agreement keyword,-0.015597033663744932,-0.43000806245219986,0.3681932795292153,40,20
+anchored,on,temptation b,firm,firm mean score,undercut events,0.1459008956873554,0.059469828897868636,0.33561441254997615,40,20
+anchored,on,temptation b,firm,firm mean score,evidence ending (game level),-0.1337800780027243,-0.4173961884680647,0.11462294289349073,40,20
+anchored,on,temptation b,game,game mean score,price index,0.04773977890201006,-0.41505900765965414,0.5585046483594288,20,20
+anchored,on,temptation b,game,game mean score,competitive share,0.13925006900339948,-0.020006192981010446,0.35116871924296295,20,20
+anchored,on,temptation b,game,game mean score,match share,-0.3838859479749573,-0.654318666884175,-0.05994455503475764,20,20
+anchored,on,temptation b,game,game mean score,share of rounds with agreement keyword,0.10625498140358144,-0.39199965902035105,0.5588672038302089,20,20
+anchored,on,temptation b,game,game mean score,undercut events,0.13925006900339948,-0.019995172806218552,0.40235226830790205,20,20
+anchored,on,temptation b,game,game mean score,evidence ending (investigation found evidence),-0.115614662603216,-0.39284466000586216,0.13416575023643076,20,20
+anchored,on,temptation b,game,game mean score,any early ending (incl. random horizon),-0.115614662603216,-0.3924679715617133,0.14012446775813595,20,20
+anchored,on,temptation b,game,game mean score,gain,-0.017946036087584553,-0.5359212357128713,0.4524328967420745,20,20

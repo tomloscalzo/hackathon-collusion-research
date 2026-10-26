@@ -1,0 +1,16 @@
+model,arm,fine,n_all,price_index_all,n_without_truncated,price_index_without_truncated
+Qwen3-32B,ctl-32b-joint,10000.000000,20,0.121,19,0.099
+Qwen3-32B,ctl-32b-joint,2500.000000,20,0.208,19,0.181
+Qwen3-32B,headline-chat,10000.000000,20,0.472,16,0.497
+Qwen3-32B,headline-chat,2500.000000,20,0.587,14,0.668
+gpt-oss-20b,ctl-32b-joint,1000.000000,20,0.633,18,0.626
+gpt-oss-20b,ctl-32b-joint,10000.000000,20,0.097,14,0.127
+gpt-oss-20b,ctl-32b-joint,2000.000000,19,0.259,14,0.221
+gpt-oss-20b,ctl-32b-joint,2500.000000,19,0.175,11,0.177
+gpt-oss-20b,headline-chat,1000.000000,19,0.487,14,0.537
+gpt-oss-20b,headline-chat,10000.000000,19,0.331,16,0.298
+gpt-oss-20b,headline-chat,2500.000000,20,0.284,15,0.306
+gpt-oss-20b,m-inc-joint,1000.000000,5,0.724,5,0.724
+gpt-oss-20b,m-inc-joint,10000.000000,2,0.121,2,0.121
+gpt-oss-20b,m-inc-joint,2000.000000,3,0.202,3,0.202
+gpt-oss-20b,m-inc-joint,2500.000000,3,0.144,3,0.144

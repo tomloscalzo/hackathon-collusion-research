@@ -1,0 +1,117 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Checks behind analysis.json</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Checks behind analysis.json</h1>
+<p>The analyses were written by an analysis agent on 2026-10-22, and the main session spot-checked them against <code>tables.json</code>. Every 3-decimal number cited in <code>analysis.json</code> traces to its own pair table or to <code>splits_log.txt</code>. <code>build_check.py</code> rebuilds <code>analysis.json</code> from <code>analysis_src.py</code> and checks the cited numbers. Splits were computed from <code>wide.csv</code> (1,036,800 cells, 0 errors) with <code>load.py</code> / <code>q.py</code>. <code>wide.csv</code> is not committed; regenerate it with <code>grids/wide.yaml</code>.</p>
+<h2>Model facts checked in the code</h2>
+<ul><li>
+s₀ = 1; tick sizes are absolute. The screen hazard is slope × (s − s^N), in absolute markup.
+</li><li>
+The punishment is a price war at s₀ (π_p = 0); q = 1, k = ∞.
+</li><li>
+<strong>fineRatio = F / π_c(1)</strong>: the fine divided by one round of a firm's full-collusion (monopoly) profit (<code>RipenessGrid.java</code>, the <code>fineRatio</code> branch). Earlier labels saying "competitive profit" were wrong and have been corrected everywhere.
+</li><li>
+pEvidence = ρ_coop at d̄u = 0.
+</li><li>
+Without a tick, Z = Z_post = 0, so collusion pays exactly when π_c &gt; ρ_E·F at some θ. That involves neither δ nor φ, and N only scales both sides by 1/N. All three matter only through the incentive constraint.
+</li><li>
+With a tick, the artifact term δ(ρ_T − ρ_E)π^N/(1−δ) drops out when P(evidence) = 1.
+</li></ul>
+<h2>Splits (key numbers)</h2>
+<ol><li>
+δ×N share, N = 2 by δ: tick-free 0.408, then 0.511 flat; tick cells 0.355 → 0.128. Tick-free θ* at δ 0.99 by N: 0.302, 0.302, 0.302, 0.301, 0.293.
+</li><li>
+Knife-edge cells: 1,230 cells have 0 &lt; θ* &lt; 0.001, at (δ 0.5, N 2, φ 0) and (δ 0.9, N 10, φ 0). Excluding them would move the share 0.319 → 0.266 and 0.254 → 0.201. They are kept, as in the tables.
+</li><li>
+P(evidence) = 1, tick share at δ 0.9 → 0.99: tick 0.25 goes 0.290 → 0.293 (all P(evidence): 0.380 → 0.188); tick 0.5 goes 0.202 → 0.205 (0.241 → 0.110). θ* at tick 0.25: 0.222 → 0.202.
+</li><li>
+Zero fine, share by P(evidence): tick 0 is flat at 0.741; tick cells rise 0.555 → 0.780.
+</li><li>
+δ×P(evidence) at δ 0.99: tick-free 0.705 → 0.360; tick cells 0.114, 0.108, 0.124, 0.249.
+</li><li>
+P(evidence)×F product rule (tick 0): pEv 0.1 × fine 125 equals pEv 1.0 × fine 12.5 (share 0.380, θ* 0.264); 0.3 × 25 equals 0.6 × 12.5 (0.493).
+</li><li>
+Screen scaling (tick 0): slope 0.1 at s̄/s₀ 2, 0.05 at 3 and 0.025 at 5 all give share 0.419 and θ* 0.282. At slope 0 the share is 0.593 for every s̄/s₀; at fine 0 it is 0.741 for every s̄/s₀.
+</li><li>
+Participation rule (tick 0, no tip): collusion is chosen iff sustainable and slope × P(evidence) × fineRatio × (s̄/s₀ − 1) &lt; 4. It holds in 113,790 of 115,020 cells, with 180 cells at K exactly 4 skipped; the exceptions are knife-edge cells with θ* &lt; 0.001. Slope × fine products 0.01 × 500, 0.1 × 50 and 0.2 × 25 all give 0.272.
+</li><li>
+Tip floor: if ρ_tip × pEv × fineRatio &gt; 1, collusion is impossible; a 5% tip gives 0.000 at fines ≥ 250.
+</li><li>
+At fine 500, 68.1% of colluders have no screen and no tip. The share is 0.787 in those cells and 0.016 elsewhere.
+</li><li>
+j*: φ raises it only at N ≤ 3 (N = 2, tick 0.25: 1 → 2–3). Tick 0.5 with s̄/s₀ 2 leaves 0 collusive steps; tick 0.25 with s̄/s₀ 2, and tick 0.5 with s̄/s₀ 3, leave 1.
+</li><li>
+Sustainable share (θ̂ &gt; 0) by tick 0 / 0.25 / 0.5: N = 10 is 0.465 / 0.628 / 0.473; φ = 0 is 0.625 / 0.790 / 0.615.
+</li><li>
+N×tick share at P(evidence) = 1: N = 2 is 0.349, 0.279, 0.195; N = 10 is 0.177, 0.183, 0.126.
+</li><li>
+θ* among colluders by tip (0, 0.01, 0.05):
+<ul><li>
+δ 0.9: 0.693, 0.733, 0.749
+</li><li>
+δ 0.99: 0.589, 0.659, 0.733
+</li><li>
+tick-free, slope 0.01: 0.703, 0.824, 0.897
+</li><li>
+tick-free, slope 0: 1.000 at every tip level
+</li></ul>
+</li><li>
+Tick-free θ* among colluders by δ 0.5 → 0.99: 0.713, 0.741, 0.723, 0.702, 0.677, 0.588; with slope &gt; 0, 0.643 → 0.489.
+</li><li>
+Tick-free δ×slope θ*: at slope 0.01, 0.529 → 0.464 from δ 0.95 to 0.99. At slope 0, θ* equals the share; CORNER_ONE is 51.2% of slope-0 cells.
+</li><li>
+δ×tip: the tick-free share with no tip is 0.605; with a 5% tip it is 0.409 at δ 0.99. Tick cells: 0.416 → 0.248 with no tip, 0.057 with a 5% tip.
+</li><li>
+δ×φ:
+<ul><li>
+tick-free at δ 0.5: share 0.040, 0.102, 0.204; θ* 0.008, 0.080, 0.159
+</li><li>
+at δ 0.99: tick cells 0.156, 0.148, 0.142; tick-free 0.509–0.511
+</li></ul>
+</li><li>
+N×φ, N = 2: tick-free 0.459, 0.511, 0.511; tick cells 0.312, 0.262, 0.253; tick 0.25 only 0.375, 0.321, 0.310. Sustainable share at N = 10 by φ: 0.388 → 0.679.
+</li><li>
+Sustainable share at N = 10: 0.541 → 0.481 across slopes and 0.546 → 0.479 across tips. At N = 2: 0.915–0.921.
+</li><li>
+N×P(evidence), tick-free: N = 2 0.681 → 0.349; N = 10 0.338 → 0.177.
+</li><li>
+Tick×slope at P(evidence) 1 and no tip, at slope 0.2: share 0.156, 0.127, 0.084; θ* 0.059, 0.060, 0.042.
+</li><li>
+Tick×tip at P(evidence) 1: 0.365 → 0.172, 0.351 → 0.154, 0.240 → 0.111.
+</li><li>
+Tick-free share falling across s̄/s₀ 2 → 12:
+</li></ol>
+<table><tr><th>Condition</th><th>Share at s̄/s₀ 2 → 12</th></tr><tr><td>δ 0.99</td><td>0.642 → 0.390</td></tr><tr><td>N = 2</td><td>0.621 → 0.377</td></tr><tr><td>φ 0.6</td><td>0.545 → 0.331</td></tr><tr><td>no tip</td><td>0.614 → 0.346</td></tr><tr><td>pEv 0.1</td><td>0.616 → 0.427</td></tr><tr><td>fine 25</td><td>0.606 → 0.255</td></tr></table>
+<p>Tick-free θ* at fine 0 falls 0.619 → 0.375. Tick cells at δ 0.99 rise 0.064 → 0.184.</p>
+<ol><li>
+Slope 0.2 by P(evidence): tick-free 0.385 → 0.141; tick cells 0.124, 0.083, 0.075, 0.101.
+</li><li>
+Tick-free, 5% tip, P(evidence) 0.6 → 1.0: 0.225 → 0.172.
+</li><li>
+Share of cells in the interior regime where the incentive constraint binds: by φ 0.066, 0.061, 0.046; by δ 0.108 → 0.005.
+</li></ol>
+<h2>Fixes made in the agent's self-check</h2>
+<ul><li>
+delta__N share: corrected the range and the δ row it refers to.
+</li><li>
+delta__slope: "row maxima" changed to "column peaks"; "≥¾" changed to "⅔–⅘".
+</li><li>
+delta__sBarRatio θ: the 0.25-tick case at s̄/s₀ 2 is θ* = 0 or 1, not near zero.
+</li><li>
+N__tick θ: removed the span-normalisation claim.
+</li><li>
+slope__fineRatio θ: removed the unverified product rule.
+</li><li>
+slope__pEvidence: named the P(evidence) range for the tick-cell rise.
+</li><li>
+Split four single-sentence texts into two.
+</li><li>
+Marked mechanisms that have no split of their own as "likely".
+</li></ul></body></html>

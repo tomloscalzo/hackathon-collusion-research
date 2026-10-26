@@ -1,0 +1,3 @@
+mode,model,extra_df,F,boot_p,n,r2_additive,r2_interaction
+t0,"communication x penalty point, profit gain index",6,1.168,0.3553,240,0.1399,0.1656
+t1,"communication x penalty point, profit gain index",6,8.529,0.001996,240,0.4279,0.5328

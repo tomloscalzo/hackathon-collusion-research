@@ -1,0 +1,7 @@
+group,thinking,seat_games,any_raise_ge5c,any_cut,any_1_2c_undercut,any_cut_ge30c,q1_eq_250,q1_eq_150,q1_eq_100,mean_q1,frozen_whole_game,mean_final
+copybot-o150-tacit,0,20,0.3,0.8,0.45,0.4,0.5,0.1,0.15,2.099,0.2,2.095
+copybot-o150-tacit,1,20,0.15,1.0,0.65,1.0,0.6,0.0,0.0,2.499,0.0,1.468
+copybot-o250-tacit,0,20,0.25,0.35,0.2,0.15,0.25,0.1,0.2,1.875,0.6,2.05
+copybot-o250-tacit,1,20,0.05,0.7,0.6,0.2,0.65,0.0,0.0,2.55,0.3,2.405
+headline-tacit(LLM vs LLM),0,40,0.2,0.42,0.17,0.28,0.25,0.05,0.12,2.0,0.5,2.016
+headline-tacit(LLM vs LLM),1,40,0.15,0.85,0.7,0.38,0.65,0.0,0.0,2.562,0.1,2.406

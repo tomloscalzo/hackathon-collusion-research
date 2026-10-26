@@ -1,0 +1,10 @@
+{
+ "oss_run": "gpt-oss Step 1 run table, tier t2 (local, not in the repo)",
+ "oss_games": 720,
+ "oss_bug_games": 99,
+ "qwen_neutral_games": 1360,
+ "qwen_anchored_games": 1360,
+ "qwen_fx_games": 100,
+ "seed": 20261026,
+ "bootstrap": 2000
+}

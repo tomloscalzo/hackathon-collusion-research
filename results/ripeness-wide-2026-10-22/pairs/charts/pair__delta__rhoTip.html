@@ -1,0 +1,97 @@
+<!doctype html><html><head><meta charset='utf-8'><style>body{font-family:Helvetica,Arial,sans-serif;color:#222;background:#fff;margin:0}.page{width:1260px;padding:20px 20px 28px}h1{font-size:17px;margin:0 0 2px;text-align:center}.sub{font-size:12px;color:#555;text-align:center;margin-bottom:10px}table.terms{border-collapse:collapse;width:100%;font-size:12px;margin:12px 0 4px}table.terms th,table.terms td{border:1px solid #ccc;padding:5px 7px;text-align:left;vertical-align:top}table.terms th{background:#f2f4f7}table.terms td:nth-child(1),table.terms td:nth-child(2){font-weight:bold}.ih{font-weight:bold;text-decoration:underline;font-size:14px;margin:28px 0 16px}.interp{font-weight:bold;font-size:13px;line-height:1.45}.dh{font-weight:bold;text-decoration:underline;font-size:14px;margin:28px 0 16px}.det{font-size:12px;line-height:1.45}.det p{margin:4px 0}.figs{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.fig{text-align:center}.ft{font-weight:bold;font-size:13px;margin-bottom:2px}.interp p{margin:4px 0}.dsub{font-weight:bold;font-size:12px;margin-top:8px}</style></head><body><div class='page'><h1>Patience × Tip probability</h1><div class='sub'>Wide grid, averaged over the other seven inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="396" height="260" viewBox="0 0 396 260" font-family="Helvetica,Arial,sans-serif">
+<text x="221.0" y="32" font-size="11" text-anchor="middle">0</text>
+<text x="283.0" y="32" font-size="11" text-anchor="middle">0.01</text>
+<text x="345.0" y="32" font-size="11" text-anchor="middle">0.05</text>
+<text x="182" y="59.0" font-size="11" text-anchor="end">0.5</text>
+<rect x="190" y="40" width="61" height="29" fill="rgb(193,210,231)"/>
+<text x="221.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.22</text>
+<rect x="252" y="40" width="61" height="29" fill="rgb(206,220,237)"/>
+<text x="283.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.17</text>
+<rect x="314" y="40" width="61" height="29" fill="rgb(218,229,242)"/>
+<text x="345.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.12</text>
+<text x="182" y="89.0" font-size="11" text-anchor="end">0.7</text>
+<rect x="190" y="70" width="61" height="29" fill="rgb(160,185,216)"/>
+<text x="221.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.36</text>
+<rect x="252" y="70" width="61" height="29" fill="rgb(176,197,223)"/>
+<text x="283.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.29</text>
+<rect x="314" y="70" width="61" height="29" fill="rgb(203,217,235)"/>
+<text x="345.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.18</text>
+<text x="182" y="119.0" font-size="11" text-anchor="end">0.8</text>
+<rect x="190" y="100" width="61" height="29" fill="rgb(143,172,208)"/>
+<text x="221.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.43</text>
+<rect x="252" y="100" width="61" height="29" fill="rgb(162,186,217)"/>
+<text x="283.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.35</text>
+<rect x="314" y="100" width="61" height="29" fill="rgb(192,209,230)"/>
+<text x="345.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.23</text>
+<text x="182" y="149.0" font-size="11" text-anchor="end">0.9</text>
+<rect x="190" y="130" width="61" height="29" fill="rgb(132,163,203)"/>
+<text x="221.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.48</text>
+<rect x="252" y="130" width="61" height="29" fill="rgb(156,182,214)"/>
+<text x="283.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.38</text>
+<rect x="314" y="130" width="61" height="29" fill="rgb(188,206,228)"/>
+<text x="345.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.24</text>
+<text x="182" y="179.0" font-size="11" text-anchor="end">0.95</text>
+<rect x="190" y="160" width="61" height="29" fill="rgb(139,169,206)"/>
+<text x="221.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.45</text>
+<rect x="252" y="160" width="61" height="29" fill="rgb(162,186,217)"/>
+<text x="283.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.35</text>
+<rect x="314" y="160" width="61" height="29" fill="rgb(192,209,230)"/>
+<text x="345.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.23</text>
+<text x="182" y="209.0" font-size="11" text-anchor="end">0.99</text>
+<rect x="190" y="190" width="61" height="29" fill="rgb(159,184,215)"/>
+<text x="221.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.37</text>
+<rect x="252" y="190" width="61" height="29" fill="rgb(183,202,226)"/>
+<text x="283.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.27</text>
+<rect x="314" y="190" width="61" height="29" fill="rgb(205,219,236)"/>
+<text x="345.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.17</text>
+<text x="283.0" y="244" font-size="12" text-anchor="middle">Tip probability (ρ_tip)</text>
+<text x="182" y="14" font-size="11" font-weight="bold" text-anchor="end">Rows: Patience ↓</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="396" height="260" viewBox="0 0 396 260" font-family="Helvetica,Arial,sans-serif">
+<text x="221.0" y="32" font-size="11" text-anchor="middle">0</text>
+<text x="283.0" y="32" font-size="11" text-anchor="middle">0.01</text>
+<text x="345.0" y="32" font-size="11" text-anchor="middle">0.05</text>
+<text x="182" y="59.0" font-size="11" text-anchor="end">0.5</text>
+<rect x="190" y="40" width="61" height="29" fill="rgb(216,227,241)"/>
+<text x="221.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.13</text>
+<rect x="252" y="40" width="61" height="29" fill="rgb(221,231,243)"/>
+<text x="283.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.10</text>
+<rect x="314" y="40" width="61" height="29" fill="rgb(229,237,246)"/>
+<text x="345.0" y="59.0" font-size="11" text-anchor="middle" fill="#222">0.07</text>
+<text x="182" y="89.0" font-size="11" text-anchor="end">0.7</text>
+<rect x="190" y="70" width="61" height="29" fill="rgb(188,206,228)"/>
+<text x="221.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.24</text>
+<rect x="252" y="70" width="61" height="29" fill="rgb(197,213,232)"/>
+<text x="283.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.21</text>
+<rect x="314" y="70" width="61" height="29" fill="rgb(215,226,240)"/>
+<text x="345.0" y="89.0" font-size="11" text-anchor="middle" fill="#222">0.13</text>
+<text x="182" y="119.0" font-size="11" text-anchor="end">0.8</text>
+<rect x="190" y="100" width="61" height="29" fill="rgb(174,195,222)"/>
+<text x="221.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.30</text>
+<rect x="252" y="100" width="61" height="29" fill="rgb(185,204,227)"/>
+<text x="283.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.26</text>
+<rect x="314" y="100" width="61" height="29" fill="rgb(206,220,236)"/>
+<text x="345.0" y="119.0" font-size="11" text-anchor="middle" fill="#222">0.17</text>
+<text x="182" y="149.0" font-size="11" text-anchor="end">0.9</text>
+<rect x="190" y="130" width="61" height="29" fill="rgb(167,190,219)"/>
+<text x="221.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.33</text>
+<rect x="252" y="130" width="61" height="29" fill="rgb(180,200,225)"/>
+<text x="283.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.28</text>
+<rect x="314" y="130" width="61" height="29" fill="rgb(203,217,235)"/>
+<text x="345.0" y="149.0" font-size="11" text-anchor="middle" fill="#222">0.18</text>
+<text x="182" y="179.0" font-size="11" text-anchor="end">0.95</text>
+<rect x="190" y="160" width="61" height="29" fill="rgb(174,196,222)"/>
+<text x="221.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.30</text>
+<rect x="252" y="160" width="61" height="29" fill="rgb(186,205,228)"/>
+<text x="283.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.25</text>
+<rect x="314" y="160" width="61" height="29" fill="rgb(206,219,236)"/>
+<text x="345.0" y="179.0" font-size="11" text-anchor="middle" fill="#222">0.17</text>
+<text x="182" y="209.0" font-size="11" text-anchor="end">0.99</text>
+<rect x="190" y="190" width="61" height="29" fill="rgb(195,211,231)"/>
+<text x="221.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.22</text>
+<rect x="252" y="190" width="61" height="29" fill="rgb(204,218,236)"/>
+<text x="283.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.18</text>
+<rect x="314" y="190" width="61" height="29" fill="rgb(216,227,241)"/>
+<text x="345.0" y="209.0" font-size="11" text-anchor="middle" fill="#222">0.13</text>
+<text x="283.0" y="244" font-size="12" text-anchor="middle">Tip probability (ρ_tip)</text>
+<text x="182" y="14" font-size="11" font-weight="bold" text-anchor="end">Rows: Patience ↓</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>δ</td><td>Patience</td><td>The chance the market continues for another round. High patience means firms care a lot about future profits; the expected number of rounds is 1 ÷ (1 − δ).</td><td>rows (both charts)</td></tr><tr><td>ρ_tip</td><td>Tip probability</td><td>The chance each round that an investigation starts from a tip (for example a whistleblower or a customer complaint), whatever the prices.</td><td>columns (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other seven inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>cell values, left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>cell values, right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'><p>Whether firms collude: It appears that a higher tip probability (the chance each round that an investigation starts from a tip, whatever the price) reduces collusion, while patience (the chance the market continues another round) raises it up to fairly high levels before it eases off. Because a tip can start an investigation at any price, the cartel cannot avoid it by pricing modestly; it most likely shortens the cartel&#x27;s expected life and so weakens the hold of future profits. Patience partly offsets this, since in markets with no minimum price step the share keeps rising with patience even when tips are possible. The fall at the most patient end appears to be a modelling simplification in markets with a minimum price step (an investigation that finds nothing is treated as worse for firms than a conviction), which makes a tip-started investigation that finds nothing especially costly.</p><p>How hard they collude: It appears that average collusion intensity (how far the chosen spread sits between the competitive and the monopoly level) falls as the tip probability (the chance each round that an investigation starts from a tip, whatever the price) rises, and rises then falls with patience (the chance the market continues another round). The fall with tips seems to come mainly from fewer cartels forming: among cartels that do form, tips actually push prices higher, most likely because staying inconspicuous helps little when a whistleblower may expose the cartel anyway. That price-raising effect appears strongest among the most patient firms, which would otherwise be the most cautious.</p></div><div class='dh'>Details</div><div class='det'><div class='dsub'>Share where collusion is chosen (left chart)</div><p>The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).</p><p>Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.</p><p>Highest: 0.48 at δ = 0.9, ρ_tip = 0; lowest: 0.12 at δ = 0.5, ρ_tip = 0.05.</p><p>Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation).</p><p><em>Mechanism detail:</em> A tip triggers an investigation whatever the margin, so pricing low cannot avoid it; it shortens expected life and, in the incentive constraint, lowers effective patience to δ(1−ρ_T), and a 5% tip halves the share at δ = 0.9 (0.479 → 0.243). In tick-free cells without tips the share saturates by δ = 0.9 (0.605), but with a 5% tip it keeps rising to 0.409 at δ = 0.99, so patience partly offsets the tip through the constraint. The aggregate fall at δ = 0.99 (no tip: 0.479 → 0.367) comes from tick cells (0.416 → 0.248), where each tip that finds no evidence wipes out the tick rents (π_post = 0 artifact); there the 5% tip leaves only 0.057.</p><div class='dsub'>Chosen collusion intensity θ* (right chart)</div><p>The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.</p><p>Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.</p><p>Highest: 0.33 at δ = 0.9, ρ_tip = 0; lowest: 0.08 at δ = 0.5, ρ_tip = 0.05.</p><p>Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation).</p><p><em>Mechanism detail:</em> Mean θ* falls with the tip (δ = 0.9: 0.332 → 0.182), but that is a participation effect: among colluding cells the tip raises θ* (0.693 → 0.749 at δ = 0.9), as the spec predicts, because a cartel that may be caught anyway gains less from staying inconspicuous. The effect is largest at δ = 0.99 (0.589 → 0.733 given participation), where screen-driven restraint is otherwise strongest.</p></div></div></body></html>

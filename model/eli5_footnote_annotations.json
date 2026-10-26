@@ -1,0 +1,992 @@
+[
+ {
+  "after": "N symmetric market makers quote a half-spread on a grid with",
+  "vars": [
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "ι",
+    "tick size of the quote grid"
+   ],
+   [
+    "s̄",
+    "reservation spread: volume falls to zero at this spread"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "sᵐ",
+    "monopoly half-spread, the top end of the scale"
+   ],
+   [
+    "φ",
+    "share of volume that is preferenced (routed regardless of quote, price-matched)"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "**Collusion intensity θ** runs from",
+  "vars": [
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ],
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "j*",
+    "largest tick multiple at which undercutting does not pay"
+   ],
+   [
+    "ι",
+    "tick size of the quote grid"
+   ]
+  ],
+  "terms": [
+   [
+    "s^N = s₀ + j*ι",
+    "competitive margin plus the largest whole-tick rent that undercutting cannot erode"
+   ]
+  ]
+ },
+ {
+  "after": "The **collusion index** CI places",
+  "vars": [
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ],
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ],
+   [
+    "sᵐ",
+    "monopoly half-spread, the top end of the scale"
+   ]
+  ],
+  "terms": [
+   [
+    "CI between s^N and sᵐ",
+    "position of observed quotes on the 0-to-1 scale from static Nash to monopoly"
+   ]
+  ]
+ },
+ {
+  "after": "A member who adheres earns π_c",
+  "vars": [
+   [
+    "π_c",
+    "per-period profit when adhering to the collusive margin"
+   ],
+   [
+    "π_d",
+    "one-time profit from undercutting by a tick"
+   ],
+   [
+    "D",
+    "deviation gain: π_d minus π_c"
+   ],
+   [
+    "L",
+    "punishment loss: profit each member forgoes per period during the price war"
+   ],
+   [
+    "k",
+    "punishment length in periods (the partner's is infinite, i.e. grim)"
+   ],
+   [
+    "q",
+    "probability a deviation is detected and acted on"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ]
+  ],
+  "terms": [
+   [
+    "IC",
+    "incentive-compatibility: adhering must beat a one-time deviation"
+   ]
+  ]
+ },
+ {
+  "after": "  **D ≤ Ψ · L,  with Ψ",
+  "vars": [
+   [
+    "D",
+    "deviation gain: π_d minus π_c"
+   ],
+   [
+    "Ψ",
+    "enforcement multiplier on the punishment loss"
+   ],
+   [
+    "L",
+    "punishment loss: profit each member forgoes per period during the price war"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "q",
+    "probability a deviation is detected and acted on"
+   ],
+   [
+    "k",
+    "punishment length in periods (the partner's is infinite, i.e. grim)"
+   ]
+  ],
+  "terms": [
+   [
+    "δq(1 − δᵏ)/(1 − δ)",
+    "present value of the detected-and-punished stream over k periods: grows with δ, q and k"
+   ],
+   [
+    "D ≤ Ψ · L",
+    "one-period cheating gain must not exceed the discounted, detection-weighted punishment loss"
+   ]
+  ]
+ },
+ {
+  "after": "In words: the one-period gain from cheating",
+  "vars": [
+   [
+    "Ψ",
+    "enforcement multiplier on the punishment loss"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "q",
+    "probability a deviation is detected and acted on"
+   ],
+   [
+    "k",
+    "punishment length in periods (the partner's is infinite, i.e. grim)"
+   ],
+   [
+    "θ̂",
+    "maximal sustainable intensity: largest θ satisfying the IC condition"
+   ],
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ]
+  ],
+  "terms": [
+   [
+    "δ/(1 − δ)",
+    "Friedman multiplier: permanent punishment, full observation"
+   ],
+   [
+    "δq",
+    "the multiplier for a one-period punishment"
+   ]
+  ]
+ },
+ {
+  "after": "Without a tick, punishment profit or outside detection",
+  "vars": [
+   [
+    "φ",
+    "share of volume that is preferenced (routed regardless of quote, price-matched)"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "Ψ",
+    "enforcement multiplier on the punishment loss"
+   ],
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ]
+  ],
+  "terms": [
+   [
+    "(1 − φ)(N − 1) ≤ Ψ",
+    "simple-limit IC: contestable share times number of rivals against the enforcement multiplier; holds for every θ or none"
+   ]
+  ]
+ },
+ {
+  "after": "**Punishment form matters",
+  "vars": [
+   [
+    "φ",
+    "share of volume that is preferenced (routed regardless of quote, price-matched)"
+   ]
+  ],
+  "terms": [
+   [
+    "penance",
+    "only the deviator is shut out of contestable flow; φ drops out of IC"
+   ]
+  ]
+ },
+ {
+  "after": "Cases are built in stages",
+  "vars": [
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ],
+   [
+    "ρ_T",
+    "exit hazard: per-period probability of a trigger that ends the rents"
+   ],
+   [
+    "ρ_E",
+    "penalty hazard: per-period probability of trigger and evidence"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ]
+  ],
+  "terms": [
+   [
+    "trigger, then evidence",
+    "detection is a product: a screen or tip flags it, then evidence is needed for the fine"
+   ]
+  ]
+ },
+ {
+  "after": "With an exit hazard the IC condition",
+  "vars": [
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "ρ_T",
+    "exit hazard: per-period probability of a trigger that ends the rents"
+   ],
+   [
+    "Ψ",
+    "enforcement multiplier on the punishment loss"
+   ]
+  ],
+  "terms": [
+   [
+    "δ(1 − ρ_T)",
+    "discount factor shrunk by the chance each period that a trigger ends the rents"
+   ]
+  ]
+ },
+ {
+  "after": "  **W(θ) = [π_c(θ)",
+  "vars": [
+   [
+    "W(θ)",
+    "a member's present value of being in the coalition at intensity θ"
+   ],
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ],
+   [
+    "π_c",
+    "per-period profit when adhering to the collusive margin"
+   ],
+   [
+    "ρ_E",
+    "penalty hazard: per-period probability of trigger and evidence"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "ρ_T",
+    "exit hazard: per-period probability of a trigger that ends the rents"
+   ],
+   [
+    "Z",
+    "competitive present value, the fallback after a fine"
+   ],
+   [
+    "Z_post",
+    "post-detection present value, the fallback after a trigger alone"
+   ]
+  ],
+  "terms": [
+   [
+    "π_c(θ) − ρ_E(θ)F",
+    "collusive profit less expected fine per period"
+   ],
+   [
+    "1 − δ(1 − ρ_T(θ))",
+    "capitalisation rate: discounting plus the chance of being shut down"
+   ]
+  ]
+ },
+ {
+  "after": "In words: each period the member earns",
+  "vars": [
+   [
+    "W",
+    "a member's present value of being in the coalition"
+   ],
+   [
+    "Z",
+    "competitive present value, the fallback after a fine"
+   ],
+   [
+    "Z_post",
+    "post-detection present value, the fallback after a trigger alone"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ]
+  ],
+  "terms": [
+   [
+    "IC",
+    "incentive-compatibility condition D ≤ Ψ · L"
+   ]
+  ]
+ },
+ {
+  "after": "**Ripeness E** is the per-period",
+  "vars": [
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "  **E = [1 − δ(1 − ρ_T(θ",
+  "vars": [
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "ρ_T",
+    "exit hazard: per-period probability of a trigger that ends the rents"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "W",
+    "a member's present value of being in the coalition"
+   ],
+   [
+    "Z",
+    "competitive present value, the fallback after a fine"
+   ],
+   [
+    "Πᵐ",
+    "frictionless monopoly rent per member"
+   ]
+  ],
+  "terms": [
+   [
+    "W(θ*) − Z",
+    "coalition's extra value over the competitive fallback"
+   ],
+   [
+    "1 − δ(1 − ρ_T(θ*))",
+    "annuity factor converting present value into a per-period flow"
+   ]
+  ]
+ },
+ {
+  "after": "In words: turn the coalition's extra value",
+  "vars": [
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "E_min",
+    "ripeness threshold, pre-registered at 0.2 in the baseline"
+   ]
+  ],
+  "terms": [
+   [
+    "E ≥ E_min",
+    "ripe: net rent share meets the pre-registered threshold"
+   ]
+  ]
+ },
+ {
+  "after": "Two makers (N = 2), φ = 0.3",
+  "vars": [
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "φ",
+    "share of volume that is preferenced (routed regardless of quote, price-matched)"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "s̄",
+    "reservation spread: volume falls to zero at this spread"
+   ],
+   [
+    "sᵐ",
+    "monopoly half-spread, the top end of the scale"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "E_min",
+    "ripeness threshold, pre-registered at 0.2 in the baseline"
+   ],
+   [
+    "Ψ",
+    "enforcement multiplier on the punishment loss"
+   ]
+  ],
+  "terms": [
+   [
+    "(1 − φ)(N − 1)",
+    "simple-limit left-hand side of IC (0.7 here)"
+   ],
+   [
+    "screen hazard 0.05θ",
+    "exit hazard rises linearly with intensity: 0.025 per unit of margin above s^N"
+   ]
+  ]
+ },
+ {
+  "after": "The experiments also need controls",
+  "vars": [
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "E_min",
+    "ripeness threshold, pre-registered at 0.2 in the baseline"
+   ]
+  ],
+  "terms": [
+   [
+    "myopically unripe",
+    "unprofitable in a one-step comparison, before any future is counted"
+   ],
+   [
+    "E ≈ 0.14, θ* ≈ 0.33",
+    "rational but low-rent collusion at N = 4"
+   ]
+  ]
+ },
+ {
+  "after": "The map's directions",
+  "vars": [
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "The carriers of collusion are four",
+  "vars": [
+   [
+    "V",
+    "visibility matrix: observation × attribution"
+   ],
+   [
+    "C",
+    "communication matrix: bandwidth and detectability"
+   ],
+   [
+    "I^RP",
+    "reward/punishment influence outside the contested market"
+   ],
+   [
+    "I^M",
+    "information manipulation: power to move an audience's beliefs"
+   ],
+   [
+    "θ",
+    "collusion intensity, 0 = competitive, 1 = monopoly margin"
+   ]
+  ],
+  "terms": [
+   [
+    "V = observation × attribution",
+    "V says that or who undercut"
+   ],
+   [
+    "C = bandwidth and detectability",
+    "C feeds evidence and renegotiation"
+   ]
+  ]
+ },
+ {
+  "after": "Layer B is a **description**",
+  "vars": [
+   [
+    "b",
+    "neutrally described payment attached to one option on the price list"
+   ],
+   [
+    "b̂",
+    "switch point: payment on the competitive option at which the agent is indifferent (willingness to accept for not colluding)"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "  **b̂ ≈ ΔEV − ρF",
+  "vars": [
+   [
+    "b̂",
+    "switch point: payment on the competitive option at which the agent is indifferent (willingness to accept for not colluding)"
+   ],
+   [
+    "ΔEV",
+    "stated collusive gain net of the competitive payoff"
+   ],
+   [
+    "ρ",
+    "per-period hazard multiplying the penalty in the expected-penalty term ρF"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ],
+   [
+    "λ₀",
+    "baseline reluctance to collude, in payoff units (descriptive, not a trait)"
+   ],
+   [
+    "Δ_label",
+    "shift in the switch point from a legal or ethical label"
+   ],
+   [
+    "Δ_notice",
+    "shift in the switch point from a monitoring notice"
+   ]
+  ],
+  "terms": [
+   [
+    "ρF",
+    "expected penalty: hazard times fine"
+   ]
+  ]
+ },
+ {
+  "after": "In words: the switch point is the stated",
+  "vars": [
+   [
+    "b̂",
+    "switch point: payment on the competitive option at which the agent is indifferent (willingness to accept for not colluding)"
+   ],
+   [
+    "G",
+    "collusive gain stated in the vignette"
+   ],
+   [
+    "λ₀",
+    "baseline reluctance to collude, in payoff units (descriptive, not a trait)"
+   ]
+  ],
+  "terms": [
+   [
+    "b̂/G",
+    "switch point as a share of the stated collusive gain (G-normalised)"
+   ]
+  ]
+ },
+ {
+  "after": "**Refusal** is its own outcome",
+  "vars": [
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "Three descriptive shifters",
+  "vars": [
+   [
+    "E1",
+    "elicitation level: the opportunity is spelled out, objective own profit"
+   ],
+   [
+    "E2",
+    "elicitation level: 'maximise joint profit'"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "Each game run is also classified",
+  "vars": [
+   [
+    "Γ",
+    "collusion gap: θ_obs − θ*"
+   ],
+   [
+    "θ_obs",
+    "observed collusion intensity (from the LLM's own-quote CI)"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "τ",
+    "tolerance on CI, 0.1: classification threshold only, never the partner's trigger tolerance"
+   ],
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ]
+  ],
+  "terms": [
+   [
+    "Γ = θ_obs − θ*",
+    "observed minus rational intensity"
+   ]
+  ]
+ },
+ {
+  "after": "Each round the LLM picks a half-spread",
+  "vars": [
+   [
+    "s_p",
+    "the partner's quoted margin, s(θ_p) = 2.09 in the baseline"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "The partner's margin s_p, the point",
+  "vars": [
+   [
+    "θ_p",
+    "the partner's intensity, held fixed at 0.546 (the ripe baseline's θ*) across the arms of a prediction"
+   ],
+   [
+    "s_p",
+    "the partner's quoted margin, s(θ_p) = 2.09 in the baseline"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "F",
+    "penalty paid when a trigger is followed by evidence"
+   ]
+  ],
+  "terms": [
+   [
+    "A′",
+    "control: the partner is a committed competitor at s₀"
+   ]
+  ]
+ },
+ {
+  "after": "Payoffs follow the Layer A market",
+  "vars": [
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "E_min",
+    "ripeness threshold, pre-registered at 0.2 in the baseline"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "The main statistic is **P(adhere)**",
+  "vars": [
+   [
+    "P(adhere)",
+    "share of early rounds (up to 8, before the partner's first punishment) in which the LLM quotes at or above s_p"
+   ],
+   [
+    "P(collude)",
+    "share of those rounds with own-quote CI at or above 0.1 (secondary, descriptive)"
+   ],
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "A one-call binary choice with the price list",
+  "vars": [
+   [
+    "b̂",
+    "switch point: payment on the competitive option at which the agent is indifferent (willingness to accept for not colluding)"
+   ],
+   [
+    "G",
+    "collusive gain stated in the vignette"
+   ]
+  ],
+  "terms": [
+   [
+    "b̂/G",
+    "switch point as a share of the stated gain"
+   ]
+  ]
+ },
+ {
+  "after": "The probe is the operational test",
+  "vars": [
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ],
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ]
+  ],
+  "terms": [
+   [
+    "responder rate",
+    "share of runs where CI falls by at least 0.10 within two rounds of the defection"
+   ]
+  ]
+ },
+ {
+  "after": "Two controls are non-negotiable",
+  "vars": [
+   [
+    "s^N",
+    "static-Nash half-spread, the competitive end of the 0-to-1 scale"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "No LLM is involved.",
+  "vars": [
+   [
+    "θ̂",
+    "maximal sustainable intensity: largest θ satisfying the IC condition"
+   ],
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ],
+   [
+    "E",
+    "ripeness: net rent captured by optimal collusion as a share of monopoly rent"
+   ],
+   [
+    "s₀",
+    "competitive half-spread covering adverse selection, inventory and processing"
+   ],
+   [
+    "sᵐ",
+    "monopoly half-spread, the top end of the scale"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "* **P1 Ripeness.** P(adhere) is higher",
+  "vars": [
+   [
+    "P(adhere)",
+    "share of early rounds (up to 8, before the partner's first punishment) in which the LLM quotes at or above s_p"
+   ],
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "b̂",
+    "switch point: payment on the competitive option at which the agent is indifferent (willingness to accept for not colluding)"
+   ],
+   [
+    "G",
+    "collusive gain stated in the vignette"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "**Why P4 and P5 use arms",
+  "vars": [
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "θ_p",
+    "the partner's intensity, held fixed at 0.546 (the ripe baseline's θ*) across the arms of a prediction"
+   ],
+   [
+    "P(adhere)",
+    "share of early rounds (up to 8, before the partner's first punishment) in which the LLM quotes at or above s_p"
+   ]
+  ],
+  "terms": [
+   [
+    "profitable but not sustainable",
+    "net-positive this round, but the one-time deviation gain exceeds the discounted loss of the future (IC fails)"
+   ]
+  ]
+ },
+ {
+  "after": "The disclosed rule makes the game close",
+  "vars": [
+   [
+    "θ*",
+    "rational optimal intensity: the θ that maximises member value W under IC"
+   ]
+  ],
+  "terms": []
+ },
+ {
+  "after": "Section 6 of the spec shows the primitives",
+  "vars": [
+   [
+    "CI",
+    "collusion index: observed quotes placed between s^N and sᵐ on a 0-to-1 scale"
+   ],
+   [
+    "δ",
+    "effective discount factor (patience); 0.95 in the baseline"
+   ],
+   [
+    "N",
+    "number of symmetric market makers (coalition members)"
+   ],
+   [
+    "φ",
+    "share of volume that is preferenced (routed regardless of quote, price-matched)"
+   ]
+  ],
+  "terms": [
+   [
+    "δ ≈ 0.9998",
+    "daily discount factor"
+   ],
+   [
+    "IC",
+    "incentive-compatibility condition"
+   ]
+  ]
+ }
+]

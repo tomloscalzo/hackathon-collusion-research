@@ -1,0 +1,22 @@
+﻿Pre-declared contrast,Statistic,Reference seat (block),Arm A,Arm A (description),Arm B,Arm B (description),Runs arm A,Runs arm B,Paraphrase clusters,Seeds per cluster,Bootstrap resamples,Point contrast (A - B),Band lower,Band upper,Band mean,Band sd,Degenerate band (point) [1=yes]
+P1-A,pAdhere,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A,pAdhere,grim,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A,pAdhere,noise,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A-pCollude,pCollude,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A-pCollude,pCollude,grim,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A-pCollude,pCollude,noise,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a,Unripe-A: large fine (5000),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P1-A-prime,meanCi,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a-prime,Unripe-A': partner is a committed competitor,1000,1000,10,3,1000,0.432186946428575,0.39131865079365075,0.46553110615079357,0.43302099107142855,0.01950300328620251,0
+P1-A-prime,meanCi,grim,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a-prime,Unripe-A': partner is a committed competitor,1000,1000,10,3,1000,0.43012567857143225,0.3867780654761904,0.4655240773809523,0.4313469543650796,0.02060606588870483,0
+P1-A-prime,meanCi,noise,ripe,"Ripe baseline (2 firms, fine 500)",unripe-a-prime,Unripe-A': partner is a committed competitor,1000,1000,10,3,1000,-0.09494627380952453,-0.1598902232142857,-0.026470763888888874,-0.09376383769841269,0.033900880722385326,0
+P3,responder,tit-for-tat,probe,Ripe baseline with scripted defection probe,control,"Ripe baseline, no-defection control",613,613,10,3,1000,1.0,1.0,1.0,1.0,0.0,1
+P3,responder,grim,probe,Ripe baseline with scripted defection probe,control,"Ripe baseline, no-defection control",630,630,10,3,1000,1.0,1.0,1.0,1.0,0.0,1
+P3,responder,noise,probe,Ripe baseline with scripted defection probe,control,"Ripe baseline, no-defection control",60,60,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4,pAdhere,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4,pAdhere,grim,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4,pAdhere,noise,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4-gap,gap,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4-gap,gap,grim,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P4-gap,gap,noise,ripe,"Ripe baseline (2 firms, fine 500)",n4,4 firms (3 partners),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P5,pAdhere,tit-for-tat,ripe,"Ripe baseline (2 firms, fine 500)",p5-slope-0.055,P5: steeper screen (slope 0.055),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P5,pAdhere,grim,ripe,"Ripe baseline (2 firms, fine 500)",p5-slope-0.055,P5: steeper screen (slope 0.055),1000,1000,10,3,1000,0.0,0.0,0.0,0.0,0.0,1
+P5,pAdhere,noise,ripe,"Ripe baseline (2 firms, fine 500)",p5-slope-0.055,P5: steeper screen (slope 0.055),1000,1000,10,3,1000,-0.006509523809523909,-0.03255952380952381,0.0,-0.0068703174603174785,0.009416041590768665,0

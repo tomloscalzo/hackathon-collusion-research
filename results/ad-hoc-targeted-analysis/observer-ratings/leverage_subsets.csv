@@ -1,0 +1,193 @@
+dataset,subset,metric,definition,stat,est,lo,hi,n_cells
+"gpt-oss-20b, thinking on",all cells,competitive_share,U16 as reported (run.csv),Spearman,-0.3847,-0.7092,0.0606,31
+"gpt-oss-20b, thinking on",all cells,competitive_share,U16 as reported (run.csv),Pearson,-0.6533,-0.8392,-0.2197,31
+"gpt-oss-20b, thinking on",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.3932,-0.7270,0.0427,31
+"gpt-oss-20b, thinking on",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.6868,-0.8494,-0.3242,31
+"gpt-oss-20b, thinking on",all cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,0.0192,-0.4209,0.4380,31
+"gpt-oss-20b, thinking on",all cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,0.0836,-0.4746,0.5513,31
+"gpt-oss-20b, thinking on",all cells,q_le_101,share of quotes at 1.01 or less,Spearman,-0.7796,-0.9080,-0.5382,31
+"gpt-oss-20b, thinking on",all cells,q_le_101,share of quotes at 1.01 or less,Pearson,-0.7002,-0.8370,-0.6136,31
+"gpt-oss-20b, thinking on",all cells,q_le_102,share of quotes at 1.02 or less,Spearman,-0.7880,-0.9109,-0.5413,31
+"gpt-oss-20b, thinking on",all cells,q_le_102,share of quotes at 1.02 or less,Pearson,-0.7109,-0.8528,-0.6273,31
+"gpt-oss-20b, thinking on",all cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.7748,-0.8993,-0.5304,31
+"gpt-oss-20b, thinking on",all cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.7265,-0.8578,-0.5894,31
+"gpt-oss-20b, thinking on",all cells,q_le_110,share of quotes at 1.10 or less,Spearman,-0.7728,-0.8939,-0.5158,31
+"gpt-oss-20b, thinking on",all cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.7231,-0.8437,-0.5528,31
+"gpt-oss-20b, thinking on",all cells,price_index,price index (reference),Spearman,0.7931,0.5902,0.8935,31
+"gpt-oss-20b, thinking on",all cells,price_index,price index (reference),Pearson,0.8521,0.7151,0.9170,31
+"gpt-oss-20b, thinking on",without the two control arms,competitive_share,U16 as reported (run.csv),Spearman,-0.2484,-0.6331,0.2145,29
+"gpt-oss-20b, thinking on",without the two control arms,competitive_share,U16 as reported (run.csv),Pearson,-0.4974,-0.7705,-0.0059,29
+"gpt-oss-20b, thinking on",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.2587,-0.6345,0.2086,29
+"gpt-oss-20b, thinking on",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.5518,-0.7834,-0.0645,29
+"gpt-oss-20b, thinking on",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.0064,-0.4410,0.4221,29
+"gpt-oss-20b, thinking on",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.1277,-0.5266,0.3538,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_101,share of quotes at 1.01 or less,Spearman,-0.7356,-0.8812,-0.4397,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_101,share of quotes at 1.01 or less,Pearson,-0.7485,-0.8629,-0.5875,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_102,share of quotes at 1.02 or less,Spearman,-0.7460,-0.8904,-0.4649,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_102,share of quotes at 1.02 or less,Pearson,-0.7598,-0.8675,-0.5905,29
+"gpt-oss-20b, thinking on",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.7295,-0.8669,-0.4514,29
+"gpt-oss-20b, thinking on",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.7459,-0.8722,-0.5323,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_110,share of quotes at 1.10 or less,Spearman,-0.7268,-0.8689,-0.4253,29
+"gpt-oss-20b, thinking on",without the two control arms,q_le_110,share of quotes at 1.10 or less,Pearson,-0.6850,-0.8408,-0.4430,29
+"gpt-oss-20b, thinking on",without the two control arms,price_index,price index (reference),Spearman,0.7473,0.5170,0.8601,29
+"gpt-oss-20b, thinking on",without the two control arms,price_index,price index (reference),Pearson,0.7990,0.6608,0.8903,29
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Spearman,-0.1647,-0.5476,0.3045,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Pearson,-0.4076,-0.7285,0.1226,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.1762,-0.5807,0.2983,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.4742,-0.7632,0.0244,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Spearman,0.1042,-0.3353,0.5154,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Pearson,0.0175,-0.3982,0.4475,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Spearman,-0.7256,-0.8816,-0.4280,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Pearson,-0.7599,-0.8743,-0.5815,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Spearman,-0.7371,-0.8875,-0.4629,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Pearson,-0.7703,-0.8797,-0.5864,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.7183,-0.8664,-0.4366,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.7515,-0.8747,-0.5132,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Spearman,-0.7068,-0.8549,-0.4061,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Pearson,-0.6865,-0.8455,-0.4436,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,price_index,price index (reference),Spearman,0.7192,0.4617,0.8412,28
+"gpt-oss-20b, thinking on",without controls and m-inc-joint,price_index,price index (reference),Pearson,0.7838,0.6295,0.8841,28
+"gpt-oss-20b, thinking on",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Spearman,-0.0725,-0.5127,0.3982,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Pearson,-0.2592,-0.6356,0.2549,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.0841,-0.5074,0.3870,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.3052,-0.6257,0.2053,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,0.0706,-0.4070,0.5166,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,0.0218,-0.4725,0.5311,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Spearman,-0.6795,-0.8601,-0.3657,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Pearson,-0.7088,-0.8408,-0.4746,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Spearman,-0.6924,-0.8708,-0.3775,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Pearson,-0.7161,-0.8521,-0.5018,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.6769,-0.8604,-0.3487,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.6682,-0.8073,-0.4600,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Spearman,-0.6742,-0.8401,-0.3263,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.5980,-0.7562,-0.4121,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,price_index,price index (reference),Spearman,0.7057,0.4062,0.8442,27
+"gpt-oss-20b, thinking on",without controls and no-chat cells,price_index,price index (reference),Pearson,0.7270,0.5942,0.8348,27
+"Qwen3-32B, thinking on",all cells,competitive_share,U16 as reported (run.csv),Spearman,-0.7648,-0.8734,-0.5658,35
+"Qwen3-32B, thinking on",all cells,competitive_share,U16 as reported (run.csv),Pearson,-0.6927,-0.8339,-0.5319,35
+"Qwen3-32B, thinking on",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.7874,-0.8849,-0.5912,35
+"Qwen3-32B, thinking on",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.7070,-0.8365,-0.5742,35
+"Qwen3-32B, thinking on",all cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.5828,-0.7977,-0.2705,35
+"Qwen3-32B, thinking on",all cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.5421,-0.7487,-0.3195,35
+"Qwen3-32B, thinking on",all cells,q_le_101,share of quotes at 1.01 or less,Spearman,-0.5324,-0.7257,-0.2391,35
+"Qwen3-32B, thinking on",all cells,q_le_101,share of quotes at 1.01 or less,Pearson,-0.4913,-0.6722,-0.2770,35
+"Qwen3-32B, thinking on",all cells,q_le_102,share of quotes at 1.02 or less,Spearman,-0.5324,-0.7293,-0.2341,35
+"Qwen3-32B, thinking on",all cells,q_le_102,share of quotes at 1.02 or less,Pearson,-0.4994,-0.6782,-0.2690,35
+"Qwen3-32B, thinking on",all cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.5221,-0.7149,-0.2388,35
+"Qwen3-32B, thinking on",all cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.5039,-0.6781,-0.2166,35
+"Qwen3-32B, thinking on",all cells,q_le_110,share of quotes at 1.10 or less,Spearman,-0.5221,-0.7227,-0.2375,35
+"Qwen3-32B, thinking on",all cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.4973,-0.6894,-0.1573,35
+"Qwen3-32B, thinking on",all cells,price_index,price index (reference),Spearman,0.7274,0.5175,0.8631,35
+"Qwen3-32B, thinking on",all cells,price_index,price index (reference),Pearson,0.6719,0.4848,0.8190,35
+"Qwen3-32B, thinking on",without the two control arms,competitive_share,U16 as reported (run.csv),Spearman,-0.7219,-0.8440,-0.4775,33
+"Qwen3-32B, thinking on",without the two control arms,competitive_share,U16 as reported (run.csv),Pearson,-0.6761,-0.8342,-0.4809,33
+"Qwen3-32B, thinking on",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.7488,-0.8605,-0.5455,33
+"Qwen3-32B, thinking on",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.6983,-0.8315,-0.5371,33
+"Qwen3-32B, thinking on",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.6884,-0.8054,-0.4767,33
+"Qwen3-32B, thinking on",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.6165,-0.7972,-0.4141,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_101,share of quotes at 1.01 or less,Spearman,-0.4728,-0.6805,-0.1704,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_101,share of quotes at 1.01 or less,Pearson,-0.4540,-0.6550,-0.1224,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_102,share of quotes at 1.02 or less,Spearman,-0.4728,-0.6860,-0.1717,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_102,share of quotes at 1.02 or less,Pearson,-0.4679,-0.6599,-0.1627,33
+"Qwen3-32B, thinking on",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.4601,-0.6660,-0.1510,33
+"Qwen3-32B, thinking on",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.4496,-0.6580,-0.1105,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_110,share of quotes at 1.10 or less,Spearman,-0.4601,-0.6741,-0.1563,33
+"Qwen3-32B, thinking on",without the two control arms,q_le_110,share of quotes at 1.10 or less,Pearson,-0.4122,-0.6426,-0.0995,33
+"Qwen3-32B, thinking on",without the two control arms,price_index,price index (reference),Spearman,0.7429,0.5478,0.8724,33
+"Qwen3-32B, thinking on",without the two control arms,price_index,price index (reference),Pearson,0.6419,0.4338,0.8396,33
+"Qwen3-32B, thinking on",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Spearman,-0.7137,-0.8414,-0.4720,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Pearson,-0.6813,-0.8486,-0.4676,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.7432,-0.8639,-0.4990,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.7043,-0.8456,-0.5281,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.6769,-0.8036,-0.4534,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.6172,-0.8029,-0.4153,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Spearman,-0.4716,-0.6973,-0.1653,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Pearson,-0.4645,-0.6742,-0.1250,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Spearman,-0.4716,-0.6905,-0.1659,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Pearson,-0.4784,-0.6688,-0.1178,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.4578,-0.6651,-0.1586,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.4572,-0.6639,-0.0948,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Spearman,-0.4578,-0.6774,-0.1612,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Pearson,-0.4165,-0.6585,-0.0816,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,price_index,price index (reference),Spearman,0.7954,0.6350,0.8948,32
+"Qwen3-32B, thinking on",without controls and m-inc-joint,price_index,price index (reference),Pearson,0.6757,0.4753,0.8732,32
+"Qwen3-32B, thinking on",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Spearman,-0.6186,-0.7873,-0.3199,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Pearson,-0.5046,-0.7008,-0.3489,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.6538,-0.8159,-0.3534,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.5523,-0.7333,-0.4040,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.5885,-0.7467,-0.3020,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.4422,-0.6546,-0.2750,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Spearman,-0.4905,-0.7105,-0.1677,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Pearson,-0.5010,-0.7074,-0.1219,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Spearman,-0.4905,-0.6968,-0.1813,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Pearson,-0.5085,-0.7243,-0.1225,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.4755,-0.6921,-0.1669,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.4199,-0.6877,-0.1175,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Spearman,-0.4755,-0.6774,-0.1812,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.3091,-0.6969,-0.1197,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,price_index,price index (reference),Spearman,0.6915,0.4172,0.8547,29
+"Qwen3-32B, thinking on",without controls and no-chat cells,price_index,price index (reference),Pearson,0.5582,0.3836,0.8466,29
+"Qwen3-32B, thinking off",all cells,competitive_share,U16 as reported (run.csv),Spearman,-0.5218,-0.7423,-0.1875,33
+"Qwen3-32B, thinking off",all cells,competitive_share,U16 as reported (run.csv),Pearson,-0.5246,-0.7180,-0.2525,33
+"Qwen3-32B, thinking off",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.5009,-0.7488,-0.1672,33
+"Qwen3-32B, thinking off",all cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.5219,-0.7172,-0.2731,33
+"Qwen3-32B, thinking off",all cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.4098,-0.7353,-0.0426,33
+"Qwen3-32B, thinking off",all cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.4611,-0.6812,-0.1741,33
+"Qwen3-32B, thinking off",all cells,q_le_101,share of quotes at 1.01 or less,Spearman,-0.1908,-0.5272,0.2009,33
+"Qwen3-32B, thinking off",all cells,q_le_101,share of quotes at 1.01 or less,Pearson,-0.3747,-0.6132,0.1320,33
+"Qwen3-32B, thinking off",all cells,q_le_102,share of quotes at 1.02 or less,Spearman,-0.1908,-0.5234,0.1736,33
+"Qwen3-32B, thinking off",all cells,q_le_102,share of quotes at 1.02 or less,Pearson,-0.3783,-0.6215,0.0926,33
+"Qwen3-32B, thinking off",all cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.2073,-0.5451,0.1774,33
+"Qwen3-32B, thinking off",all cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.3729,-0.6207,0.0375,33
+"Qwen3-32B, thinking off",all cells,q_le_110,share of quotes at 1.10 or less,Spearman,-0.2254,-0.5733,0.1821,33
+"Qwen3-32B, thinking off",all cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.3769,-0.6279,-0.0077,33
+"Qwen3-32B, thinking off",all cells,price_index,price index (reference),Spearman,0.4364,0.0363,0.7505,33
+"Qwen3-32B, thinking off",all cells,price_index,price index (reference),Pearson,0.5174,0.1654,0.7551,33
+"Qwen3-32B, thinking off",without the two control arms,competitive_share,U16 as reported (run.csv),Spearman,-0.4239,-0.6793,-0.0718,31
+"Qwen3-32B, thinking off",without the two control arms,competitive_share,U16 as reported (run.csv),Pearson,-0.4887,-0.7266,-0.1675,31
+"Qwen3-32B, thinking off",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.3986,-0.6601,-0.0619,31
+"Qwen3-32B, thinking off",without the two control arms,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.4783,-0.7167,-0.1274,31
+"Qwen3-32B, thinking off",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.4883,-0.7356,-0.1429,31
+"Qwen3-32B, thinking off",without the two control arms,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.5350,-0.7126,-0.2872,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_101,share of quotes at 1.01 or less,Spearman,-0.0511,-0.3918,0.3250,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_101,share of quotes at 1.01 or less,Pearson,-0.1203,-0.4981,0.2969,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_102,share of quotes at 1.02 or less,Spearman,-0.0511,-0.3879,0.3223,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_102,share of quotes at 1.02 or less,Pearson,-0.1315,-0.4783,0.2650,31
+"Qwen3-32B, thinking off",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.0708,-0.4344,0.2896,31
+"Qwen3-32B, thinking off",without the two control arms,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.1163,-0.4618,0.1512,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_110,share of quotes at 1.10 or less,Spearman,-0.0911,-0.4441,0.2909,31
+"Qwen3-32B, thinking off",without the two control arms,q_le_110,share of quotes at 1.10 or less,Pearson,-0.1317,-0.5298,0.1367,31
+"Qwen3-32B, thinking off",without the two control arms,price_index,price index (reference),Spearman,0.3200,-0.1071,0.6677,31
+"Qwen3-32B, thinking off",without the two control arms,price_index,price index (reference),Pearson,0.3578,0.0377,0.6814,31
+"Qwen3-32B, thinking off",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Spearman,-0.3802,-0.6564,-0.0264,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,competitive_share,U16 as reported (run.csv),Pearson,-0.4657,-0.7196,-0.0807,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.3524,-0.6380,0.0110,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.4513,-0.7129,-0.0627,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.4353,-0.7034,-0.0642,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.5211,-0.7141,-0.2480,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Spearman,-0.0382,-0.4113,0.3811,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_101,share of quotes at 1.01 or less,Pearson,-0.0840,-0.4683,0.3323,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Spearman,-0.0382,-0.4223,0.3375,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_102,share of quotes at 1.02 or less,Pearson,-0.0978,-0.4658,0.3276,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Spearman,-0.0483,-0.4195,0.3076,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.0938,-0.4704,0.1961,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Spearman,-0.0673,-0.4252,0.3348,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,q_le_110,share of quotes at 1.10 or less,Pearson,-0.1094,-0.4829,0.1927,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,price_index,price index (reference),Spearman,0.2496,-0.1644,0.6183,30
+"Qwen3-32B, thinking off",without controls and m-inc-joint,price_index,price index (reference),Pearson,0.3050,-0.0495,0.6426,30
+"Qwen3-32B, thinking off",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Spearman,-0.1985,-0.4979,0.1760,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,competitive_share,U16 as reported (run.csv),Pearson,-0.1374,-0.4128,0.1769,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Spearman,-0.1667,-0.4745,0.1936,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,u16_floor101,U16 with tick-adjusted floor (<= 1.01),Pearson,-0.1254,-0.4225,0.1808,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Spearman,-0.2747,-0.6278,0.1510,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,strict_undercut,strict undercut share (floor holds not counted),Pearson,-0.2366,-0.4901,0.0845,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Spearman,0.0751,-0.2658,0.4011,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_101,share of quotes at 1.01 or less,Pearson,0.0600,-0.3211,0.3758,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Spearman,0.0751,-0.2833,0.4237,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_102,share of quotes at 1.02 or less,Pearson,0.0315,-0.3100,0.3737,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Spearman,0.0751,-0.2815,0.4174,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,near_floor_quote,share of quotes at 1.05 or less,Pearson,-0.0401,-0.3006,0.3836,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Spearman,0.1230,-0.2360,0.4460,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,q_le_110,share of quotes at 1.10 or less,Pearson,-0.0308,-0.2583,0.4379,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,price_index,price index (reference),Spearman,0.1122,-0.3518,0.5433,27
+"Qwen3-32B, thinking off",without controls and no-chat cells,price_index,price index (reference),Pearson,0.0941,-0.3108,0.4447,27

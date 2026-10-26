@@ -1,0 +1,90 @@
+
+**r2f-confidant: confidant question after each round, answer fed back** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | -0.038 [-0.263, +0.182]; p 0.752; Holm 1.00; MDE 0.326 | -0.131 [-0.302, +0.040]; p 0.188; Holm 1.00; MDE 0.255 | +0.231 [+0.033, +0.432]; p 0.031; Holm 1.00; MDE 0.294 |
+| price index | -0.019 [-0.133, +0.089]; p 0.752; Holm 1.00; MDE 0.163 | -0.066 [-0.150, +0.023]; p 0.188; Holm 1.00; MDE 0.128 | +0.116 [+0.017, +0.215]; p 0.031; Holm 1.00; MDE 0.147 |
+| profit gain index | -0.027 [-0.159, +0.101]; p 0.701; Holm 1.00; MDE 0.190 | -0.008 [-0.044, +0.032]; p 0.726; Holm 1.00; MDE 0.054 | +0.087 [+0.013, +0.179]; p 0.033; Holm 1.00; MDE 0.122 |
+| competitive share (U16) | +0.010 [-0.117, +0.131]; p 0.878; Holm 1.00; MDE 0.182 | +0.011 [-0.019, +0.045]; p 0.625; Holm 1.00; MDE 0.047 | -0.028 [-0.150, +0.067]; p 1.000; Holm 1.00; MDE 0.156 |
+| matching share | -0.014 [-0.158, +0.135]; p 0.859; Holm 1.00; MDE 0.214 | -0.022 [-0.093, +0.040]; p 0.555; Holm 1.00; MDE 0.095 | +0.012 [-0.128, +0.156]; p 0.562; Holm 1.00; MDE 0.195 |
+
+**r3f-public: public-statement question after each round, answer fed back** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.123 [-0.096, +0.352]; p 0.303; Holm 1.00; MDE 0.324 | +0.006 [-0.155, +0.180]; p 0.928; Holm 1.00; MDE 0.249 | -0.030 [-0.223, +0.149]; p 0.707; Holm 1.00; MDE 0.275 |
+| price index | +0.061 [-0.049, +0.173]; p 0.303; Holm 1.00; MDE 0.162 | +0.003 [-0.081, +0.090]; p 0.928; Holm 1.00; MDE 0.124 | -0.015 [-0.113, +0.078]; p 0.707; Holm 1.00; MDE 0.138 |
+| profit gain index | +0.058 [-0.061, +0.184]; p 0.381; Holm 1.00; MDE 0.178 | +0.007 [-0.030, +0.048]; p 0.751; Holm 1.00; MDE 0.057 | -0.013 [-0.084, +0.046]; p 0.742; Holm 1.00; MDE 0.096 |
+| competitive share (U16) | +0.016 [-0.144, +0.164]; p 0.849; Holm 1.00; MDE 0.228 | -0.010 [-0.029, +0.000]; p 0.500; Holm 1.00; MDE 0.024 | +0.024 [+0.000, +0.069]; p 0.500; Holm 1.00; MDE 0.062 |
+| matching share | +0.008 [-0.160, +0.183]; p 0.934; Holm 1.00; MDE 0.254 | +0.020 [-0.006, +0.057]; p 0.375; Holm 1.00; MDE 0.049 | -0.048 [-0.144, +0.006]; p 0.438; Holm 1.00; MDE 0.129 |
+
+**r2s-confidant: confidant question inside the quote reply, saved only** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 19) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.210 [+0.026, +0.409]; p 0.051; Holm 1.00; MDE 0.286 | +0.005 [-0.163, +0.188]; p 0.961; Holm 1.00; MDE 0.258 | +0.019 [-0.231, +0.270]; p 0.901; Holm 1.00; MDE 0.365 |
+| price index | +0.105 [+0.014, +0.208]; p 0.051; Holm 1.00; MDE 0.143 | +0.003 [-0.083, +0.093]; p 0.961; Holm 1.00; MDE 0.129 | +0.010 [-0.117, +0.134]; p 0.901; Holm 1.00; MDE 0.183 |
+| profit gain index | +0.115 [+0.023, +0.228]; p 0.037; Holm 1.00; MDE 0.151 | +0.007 [-0.030, +0.049]; p 0.763; Holm 1.00; MDE 0.057 | +0.015 [-0.082, +0.127]; p 0.807; Holm 1.00; MDE 0.152 |
+| competitive share (U16) | -0.031 [-0.186, +0.101]; p 0.707; Holm 1.00; MDE 0.208 | +0.000 [-0.023, +0.020]; p 1.000; Holm 1.00; MDE 0.031 | -0.051 [-0.154, +0.004]; p 0.500; Holm 1.00; MDE 0.140 |
+| matching share | +0.044 [-0.110, +0.216]; p 0.621; Holm 1.00; MDE 0.237 | -0.066 [-0.179, +0.011]; p 0.211; Holm 1.00; MDE 0.148 | +0.041 [-0.034, +0.155]; p 0.695; Holm 1.00; MDE 0.148 |
+
+**r3s-public: public-statement question inside the quote reply, saved only** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.113 [-0.085, +0.312]; p 0.305; Holm 1.00; MDE 0.286 | +0.035 [-0.111, +0.176]; p 0.556; Holm 1.00; MDE 0.211 | +0.116 [-0.076, +0.317]; p 0.282; Holm 1.00; MDE 0.290 |
+| price index | +0.056 [-0.040, +0.153]; p 0.305; Holm 1.00; MDE 0.143 | +0.017 [-0.057, +0.089]; p 0.556; Holm 1.00; MDE 0.105 | +0.058 [-0.039, +0.159]; p 0.282; Holm 1.00; MDE 0.145 |
+| profit gain index | +0.059 [-0.047, +0.171]; p 0.348; Holm 1.00; MDE 0.161 | +0.017 [-0.011, +0.049]; p 0.278; Holm 1.00; MDE 0.043 | +0.045 [-0.026, +0.110]; p 0.216; Holm 1.00; MDE 0.100 |
+| competitive share (U16) | -0.035 [-0.191, +0.103]; p 0.666; Holm 1.00; MDE 0.215 | -0.006 [-0.027, +0.011]; p 0.750; Holm 1.00; MDE 0.028 | -0.032 [-0.150, +0.048]; p 0.875; Holm 1.00; MDE 0.151 |
+| matching share | -0.023 [-0.150, +0.098]; p 0.730; Holm 1.00; MDE 0.181 | +0.015 [-0.015, +0.058]; p 0.641; Holm 1.00; MDE 0.054 | +0.000 [-0.113, +0.134]; p 1.000; Holm 1.00; MDE 0.179 |
+
+**r4-announced: told it will explain itself after the game (post-game question)** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 11) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.193 [+0.025, +0.404]; p 0.035; Holm 1.00; MDE 0.289 | -0.092 [-0.260, +0.064]; p 0.312; Holm 1.00; MDE 0.235 | -0.036 [-0.270, +0.195]; p 0.722; Holm 1.00; MDE 0.342 |
+| price index | +0.096 [+0.010, +0.203]; p 0.035; Holm 1.00; MDE 0.144 | -0.046 [-0.128, +0.029]; p 0.312; Holm 1.00; MDE 0.118 | -0.018 [-0.132, +0.096]; p 0.722; Holm 1.00; MDE 0.171 |
+| profit gain index | +0.090 [-0.003, +0.202]; p 0.145; Holm 1.00; MDE 0.156 | -0.005 [-0.043, +0.034]; p 0.855; Holm 1.00; MDE 0.056 | +0.008 [-0.090, +0.119]; p 0.887; Holm 1.00; MDE 0.152 |
+| competitive share (U16) | -0.035 [-0.284, +0.179]; p 0.803; Holm 1.00; MDE 0.352 | -0.008 [-0.027, +0.004]; p 0.750; Holm 1.00; MDE 0.025 | -0.028 [-0.153, +0.072]; p 0.750; Holm 1.00; MDE 0.160 |
+| matching share | +0.091 [-0.160, +0.342]; p 0.531; Holm 1.00; MDE 0.377 | -0.057 [-0.146, +0.007]; p 0.281; Holm 1.00; MDE 0.115 | -0.010 [-0.152, +0.138]; p 0.875; Holm 1.00; MDE 0.207 |
+
+**d-conflict: 1-5 instruction-conflict self-score field in the quote reply** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | -0.003 [-0.243, +0.234]; p 0.980; Holm 1.00; MDE 0.351 | +0.029 [-0.146, +0.204]; p 0.750; Holm 1.00; MDE 0.257 | -0.103 [-0.317, +0.092]; p 0.389; Holm 1.00; MDE 0.298 |
+| price index | -0.002 [-0.122, +0.118]; p 0.980; Holm 1.00; MDE 0.175 | +0.014 [-0.072, +0.101]; p 0.750; Holm 1.00; MDE 0.128 | -0.052 [-0.157, +0.045]; p 0.389; Holm 1.00; MDE 0.149 |
+| profit gain index | -0.006 [-0.148, +0.136]; p 0.942; Holm 1.00; MDE 0.209 | +0.016 [-0.014, +0.050]; p 0.366; Holm 1.00; MDE 0.047 | -0.065 [-0.175, +0.025]; p 0.260; Holm 1.00; MDE 0.149 |
+| competitive share (U16) | -0.050 [-0.161, +0.068]; p 0.410; Holm 1.00; MDE 0.168 | -0.009 [-0.027, +0.003]; p 0.500; Holm 1.00; MDE 0.024 | +0.080 [+0.011, +0.164]; p 0.094; Holm 1.00; MDE 0.111 |
+| matching share | +0.044 [-0.112, +0.187]; p 0.581; Holm 1.00; MDE 0.220 | +0.019 [-0.004, +0.057]; p 0.375; Holm 1.00; MDE 0.048 | -0.139 [-0.287, -0.021]; p 0.051; Holm 1.00; MDE 0.195 |
+
+**d-temptation-a: 1-5 temptation-to-coordinate self-score, version A** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.069 [-0.155, +0.286]; p 0.550; Holm 1.00; MDE 0.319 | -0.048 [-0.222, +0.128]; p 0.609; Holm 1.00; MDE 0.258 | -0.007 [-0.164, +0.144]; p 1.000; Holm 1.00; MDE 0.226 |
+| price index | +0.035 [-0.077, +0.144]; p 0.550; Holm 1.00; MDE 0.160 | -0.024 [-0.110, +0.063]; p 0.609; Holm 1.00; MDE 0.129 | -0.004 [-0.081, +0.070]; p 1.000; Holm 1.00; MDE 0.113 |
+| profit gain index | +0.034 [-0.095, +0.158]; p 0.617; Holm 1.00; MDE 0.187 | +0.000 [-0.036, +0.039]; p 1.000; Holm 1.00; MDE 0.055 | -0.004 [-0.097, +0.079]; p 0.914; Holm 1.00; MDE 0.131 |
+| competitive share (U16) | -0.067 [-0.238, +0.106]; p 0.476; Holm 1.00; MDE 0.255 | -0.007 [-0.027, +0.006]; p 0.625; Holm 1.00; MDE 0.025 | -0.050 [-0.151, +0.004]; p 0.750; Holm 1.00; MDE 0.140 |
+| matching share | +0.096 [-0.096, +0.283]; p 0.340; Holm 1.00; MDE 0.275 | +0.015 [-0.012, +0.054]; p 0.594; Holm 1.00; MDE 0.050 | +0.050 [-0.015, +0.158]; p 0.531; Holm 1.00; MDE 0.142 |
+
+**d-temptation-b: 1-5 temptation-to-coordinate self-score, version B** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.079 [-0.153, +0.282]; p 0.509; Holm 1.00; MDE 0.316 | +0.105 [-0.043, +0.253]; p 0.172; Holm 1.00; MDE 0.216 | +0.093 [-0.098, +0.277]; p 0.362; Holm 1.00; MDE 0.281 |
+| price index | +0.039 [-0.075, +0.143]; p 0.509; Holm 1.00; MDE 0.158 | +0.053 [-0.025, +0.126]; p 0.172; Holm 1.00; MDE 0.108 | +0.047 [-0.053, +0.139]; p 0.362; Holm 1.00; MDE 0.141 |
+| profit gain index | +0.040 [-0.094, +0.159]; p 0.573; Holm 1.00; MDE 0.185 | +0.026 [-0.002, +0.056]; p 0.129; Holm 1.00; MDE 0.043 | +0.032 [-0.019, +0.083]; p 0.238; Holm 1.00; MDE 0.076 |
+| competitive share (U16) | -0.076 [-0.235, +0.075]; p 0.366; Holm 1.00; MDE 0.226 | -0.010 [-0.029, +0.000]; p 0.500; Holm 1.00; MDE 0.024 | +0.075 [+0.000, +0.197]; p 0.250; Holm 1.00; MDE 0.150 |
+| matching share | +0.107 [-0.039, +0.262]; p 0.194; Holm 1.00; MDE 0.221 | +0.020 [-0.002, +0.057]; p 0.250; Holm 1.00; MDE 0.048 | -0.122 [-0.265, -0.008]; p 0.047; Holm 1.00; MDE 0.189 |
+
+**d-placebo: placebo field: a whole number 1-5 chosen at random** (arm minus headline-chat p1, paired on wording and seed)
+
+| Metric | gpt-oss (medium effort) (n 20) | Qwen thinking on (n 20) | Qwen thinking off (n 20) |
+|---|---|---|---|
+| average absolute spread | +0.135 [-0.081, +0.352]; p 0.251; Holm 1.00; MDE 0.317 | -0.102 [-0.279, +0.098]; p 0.337; Holm 1.00; MDE 0.275 | +0.168 [-0.040, +0.367]; p 0.119; Holm 1.00; MDE 0.300 |
+| price index | +0.067 [-0.040, +0.177]; p 0.251; Holm 1.00; MDE 0.158 | -0.051 [-0.141, +0.050]; p 0.337; Holm 1.00; MDE 0.138 | +0.084 [-0.019, +0.185]; p 0.119; Holm 1.00; MDE 0.150 |
+| profit gain index | +0.078 [-0.038, +0.199]; p 0.232; Holm 1.00; MDE 0.173 | -0.006 [-0.045, +0.036]; p 0.794; Holm 1.00; MDE 0.059 | +0.033 [-0.081, +0.121]; p 0.571; Holm 1.00; MDE 0.147 |
+| competitive share (U16) | +0.022 [-0.148, +0.181]; p 0.807; Holm 1.00; MDE 0.241 | -0.003 [-0.024, +0.012]; p 1.000; Holm 1.00; MDE 0.027 | -0.020 [-0.140, +0.060]; p 0.953; Holm 1.00; MDE 0.153 |
+| matching share | -0.017 [-0.145, +0.106]; p 0.791; Holm 1.00; MDE 0.184 | -0.058 [-0.180, +0.032]; p 0.375; Holm 1.00; MDE 0.160 | -0.031 [-0.178, +0.120]; p 0.641; Holm 1.00; MDE 0.214 |

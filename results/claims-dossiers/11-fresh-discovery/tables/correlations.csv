@@ -1,0 +1,10 @@
+model,x,y,spearman,pearson,n
+gpt-oss-20b,erosion share (within cell),price index (within cell),0.13653769192517864,0.20463220952316494,720
+gpt-oss-20b,round-1 best quote (within cell),"mean best quote, rounds 2+ (within cell)",0.7191526989948428,0.6925353465642792,720
+gpt-oss-20b,erosion share (arm mean),price index (arm mean),0.3142857142857143,0.4574496493608621,34
+qwen3-32b thinking on,erosion share (within cell),price index (within cell),-0.04699119195365762,0.023706543358643035,699
+qwen3-32b thinking on,round-1 best quote (within cell),"mean best quote, rounds 2+ (within cell)",0.8469353208644222,0.8187636467662184,699
+qwen3-32b thinking on,erosion share (arm mean),price index (arm mean),-0.4232897239974012,-0.17493945569392894,26
+qwen3-32b thinking off,erosion share (within cell),price index (within cell),0.03057615617170758,0.050583404852891756,660
+qwen3-32b thinking off,round-1 best quote (within cell),"mean best quote, rounds 2+ (within cell)",0.8974890124231353,0.877479023975946,660
+qwen3-32b thinking off,erosion share (arm mean),price index (arm mean),0.07911429100788135,0.0265316329457961,24

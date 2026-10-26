@@ -1,0 +1,11 @@
+n_pairs,mean_a,mean_b,diff,ci_lo,ci_hi,p_signflip,se,mde,contrast,metric
+20,2.3855,2.2807,0.10486,-0.072761,0.28314,0.27907,0.09306,0.26057,hrep-fx-chat-p1 - hrep-nx-chat-p1,Average absolute spread
+20,0.69278,0.64035,0.05243,-0.036383,0.14158,0.2791,0.046532,0.13029,hrep-fx-chat-p1 - hrep-nx-chat-p1,Price index
+20,0.88531,0.83062,0.05469,-0.045553,0.1594,0.30772,0.052932,0.14821,hrep-fx-chat-p1 - hrep-nx-chat-p1,Profit gain index
+20,0.36343,0.40441,-0.040977,-0.18863,0.12803,0.63766,0.083889,0.23489,hrep-fx-chat-p1 - hrep-nx-chat-p1,Competitive share (U16)
+20,0.44849,0.44018,0.0083097,-0.17001,0.16614,0.92703,0.088559,0.24797,hrep-fx-chat-p1 - hrep-nx-chat-p1,Matching share
+20,2.0822,2.0358,0.046334,-0.13752,0.22984,0.63895,0.096726,0.27083,hrep-fx-tacit-p1 - hrep-nx-tacit-p1,Average absolute spread
+20,0.54108,0.51792,0.02316,-0.068761,0.11492,0.63914,0.048365,0.13542,hrep-fx-tacit-p1 - hrep-nx-tacit-p1,Price index
+20,0.73723,0.71661,0.020619,-0.088358,0.13226,0.72686,0.058184,0.16292,hrep-fx-tacit-p1 - hrep-nx-tacit-p1,Profit gain index
+20,0.67642,0.61211,0.064306,-0.027341,0.15807,0.20127,0.048647,0.13621,hrep-fx-tacit-p1 - hrep-nx-tacit-p1,Competitive share (U16)
+20,0.19204,0.27619,-0.084158,-0.16776,-0.0078565,0.057732,0.041809,0.11706,hrep-fx-tacit-p1 - hrep-nx-tacit-p1,Matching share

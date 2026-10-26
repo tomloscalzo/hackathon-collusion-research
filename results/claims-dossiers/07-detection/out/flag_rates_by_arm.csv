@@ -1,0 +1,46 @@
+model,mode,arm,detector,n,flagged,rate,cp_lo,cp_hi
+Qwen3-32B,t0,headline-chat,price detector,80,14,0.175,0.09911050983942865,0.2761540395210135
+Qwen3-32B,t0,headline-chat,conversation detector,80,76,0.95,0.8769012635568469,0.9862106060235383
+Qwen3-32B,t0,headline-chat,high-price agreement (new),80,73,0.9125,0.8279916615801151,0.9640936410104413
+Qwen3-32B,t0,headline-monitored,price detector,80,10,0.125,0.06160209655843424,0.21788913406943627
+Qwen3-32B,t0,headline-monitored,conversation detector,80,78,0.975,0.9125928440694078,0.9969579138351905
+Qwen3-32B,t0,headline-monitored,high-price agreement (new),80,77,0.9625,0.8942980149834914,0.9921988127342833
+Qwen3-32B,t0,headline-tacit,price detector,80,1,0.0125,0.0003164225276326986,0.06768778446392237
+Qwen3-32B,t0,ctl-32b-joint,price detector,20,8,0.4,0.19119006072530725,0.6394574126925103
+Qwen3-32B,t0,ctl-32b-joint,conversation detector,20,20,1.0,0.8315665290169145,1.0
+Qwen3-32B,t0,ctl-32b-joint,high-price agreement (new),20,20,1.0,0.8315665290169145,1.0
+Qwen3-32B,t0,ctl-32b-compete,price detector,20,0,0.0,0.0,0.1684334709830853
+Qwen3-32B,t0,ctl-32b-compete,conversation detector,20,9,0.45,0.23057789677592416,0.6847218669594515
+Qwen3-32B,t0,ctl-32b-compete,high-price agreement (new),20,0,0.0,0.0,0.1684334709830853
+Qwen3-32B,t0,all chat arms except controls,price detector,540,73,0.13518518518518519,0.10748225937304118,0.16695122132330326
+Qwen3-32B,t0,all chat arms except controls,conversation detector,540,509,0.9425925925925925,0.9195014755106119,0.9606648794034629
+Qwen3-32B,t0,all chat arms except controls,high-price agreement (new),540,490,0.9074074074074074,0.879751010972168,0.930494581800215
+Qwen3-32B,t1,headline-chat,price detector,80,19,0.2375,0.14945375185664073,0.34577697114026795
+Qwen3-32B,t1,headline-chat,conversation detector,80,79,0.9875,0.9323122155360775,0.9996835774723674
+Qwen3-32B,t1,headline-chat,high-price agreement (new),80,80,1.0,0.9549359649323077,1.0
+Qwen3-32B,t1,headline-monitored,price detector,80,11,0.1375,0.07068783270387863,0.23272087082472565
+Qwen3-32B,t1,headline-monitored,conversation detector,80,78,0.975,0.9125928440694078,0.9969579138351905
+Qwen3-32B,t1,headline-monitored,high-price agreement (new),80,80,1.0,0.9549359649323077,1.0
+Qwen3-32B,t1,headline-tacit,price detector,80,1,0.0125,0.0003164225276326986,0.06768778446392237
+Qwen3-32B,t1,ctl-32b-joint,price detector,20,0,0.0,0.0,0.1684334709830853
+Qwen3-32B,t1,ctl-32b-joint,conversation detector,20,19,0.95,0.7512672372279723,0.9987349105020502
+Qwen3-32B,t1,ctl-32b-joint,high-price agreement (new),20,20,1.0,0.8315665290169145,1.0
+Qwen3-32B,t1,ctl-32b-compete,price detector,20,0,0.0,0.0,0.1684334709830853
+Qwen3-32B,t1,ctl-32b-compete,conversation detector,20,15,0.75,0.5089541282920422,0.9134285308985655
+Qwen3-32B,t1,ctl-32b-compete,high-price agreement (new),20,1,0.05,0.0012650894979498455,0.24873276277202777
+Qwen3-32B,t1,all chat arms except controls,price detector,580,112,0.19310344827586207,0.1617475526846031,0.22762171315188745
+Qwen3-32B,t1,all chat arms except controls,conversation detector,580,540,0.9310344827586207,0.9072698510237696,0.9502763347718408
+Qwen3-32B,t1,all chat arms except controls,high-price agreement (new),580,547,0.9431034482758621,0.921020864836233,0.9605150670220468
+gpt-oss-20b,medium,headline-chat,price detector,60,0,0.0,0.0,0.05962949228616693
+gpt-oss-20b,medium,headline-chat,conversation detector,60,60,1.0,0.9403705077138331,1.0
+gpt-oss-20b,medium,headline-chat,high-price agreement (new),60,60,1.0,0.9403705077138331,1.0
+gpt-oss-20b,medium,headline-tacit,price detector,40,0,0.0,0.0,0.08809730287880241
+gpt-oss-20b,medium,ctl-32b-joint,price detector,20,2,0.1,0.012348527170294832,0.3169827140190823
+gpt-oss-20b,medium,ctl-32b-joint,conversation detector,20,20,1.0,0.8315665290169145,1.0
+gpt-oss-20b,medium,ctl-32b-joint,high-price agreement (new),20,20,1.0,0.8315665290169145,1.0
+gpt-oss-20b,medium,ctl-32b-compete,price detector,20,0,0.0,0.0,0.1684334709830853
+gpt-oss-20b,medium,ctl-32b-compete,conversation detector,20,19,0.95,0.7512672372279723,0.9987349105020502
+gpt-oss-20b,medium,ctl-32b-compete,high-price agreement (new),20,7,0.35,0.153909204784541,0.5921885345328282
+gpt-oss-20b,medium,all chat arms except controls,price detector,580,10,0.017241379310344827,0.008298088952462368,0.03147836034039625
+gpt-oss-20b,medium,all chat arms except controls,conversation detector,580,556,0.9586206896551724,0.9390543511269858,0.9733105726772007
+gpt-oss-20b,medium,all chat arms except controls,high-price agreement (new),580,533,0.9189655172413793,0.8936970581024923,0.9398534301746311

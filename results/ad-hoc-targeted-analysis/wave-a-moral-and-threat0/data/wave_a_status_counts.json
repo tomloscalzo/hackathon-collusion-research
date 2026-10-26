@@ -1,0 +1,24 @@
+{
+ "d-cot-monitor-0|on": {
+  "done": 16,
+  "incomplete": 4
+ },
+ "moral-placebo|off": {
+  "done": 20
+ },
+ "moral-placebo|on": {
+  "done": 20
+ },
+ "moral-prime-b|off": {
+  "done": 20
+ },
+ "moral-prime-b|on": {
+  "done": 20
+ },
+ "moral-prime|off": {
+  "done": 20
+ },
+ "moral-prime|on": {
+  "done": 20
+ }
+}

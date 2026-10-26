@@ -1,0 +1,1415 @@
+group,feature,outcome,scope,spearman,n
+1 Agreement flags and detectors,explicit_proposal_any,price_index,pooled,0.1672310932709648,1200
+1 Agreement flags and detectors,explicit_proposal_any,profit_gain_index,pooled,0.16798290316381023,1200
+1 Agreement flags and detectors,explicit_proposal_any,competitive_share,pooled,-0.23990112895083993,1200
+1 Agreement flags and detectors,explicit_proposal_any,matching_share,pooled,0.19433949295877345,1200
+1 Agreement flags and detectors,explicit_proposal_any,undercut_count,pooled,-0.017364469860488816,1200
+1 Agreement flags and detectors,explicit_proposal_any,rounds_played,pooled,0.02583386109824711,1200
+1 Agreement flags and detectors,explicit_proposal_any,evidence_ending,pooled,-0.008273421374392421,1200
+1 Agreement flags and detectors,explicit_agreement_any,price_index,pooled,0.1865975046252821,1200
+1 Agreement flags and detectors,explicit_agreement_any,profit_gain_index,pooled,0.18784576548443793,1200
+1 Agreement flags and detectors,explicit_agreement_any,competitive_share,pooled,-0.2808431760250167,1200
+1 Agreement flags and detectors,explicit_agreement_any,matching_share,pooled,0.23324524759194334,1200
+1 Agreement flags and detectors,explicit_agreement_any,undercut_count,pooled,-0.10747413348507276,1200
+1 Agreement flags and detectors,explicit_agreement_any,rounds_played,pooled,0.05712254310071781,1200
+1 Agreement flags and detectors,explicit_agreement_any,evidence_ending,pooled,-0.03902689953336321,1200
+1 Agreement flags and detectors,explicit_threat_any,price_index,pooled,0.2828787019679277,1200
+1 Agreement flags and detectors,explicit_threat_any,profit_gain_index,pooled,0.2902782974236474,1200
+1 Agreement flags and detectors,explicit_threat_any,competitive_share,pooled,-0.10671395565938935,1200
+1 Agreement flags and detectors,explicit_threat_any,matching_share,pooled,0.2195526767118931,1200
+1 Agreement flags and detectors,explicit_threat_any,undercut_count,pooled,0.1696150960878292,1200
+1 Agreement flags and detectors,explicit_threat_any,rounds_played,pooled,0.14293804424297543,1200
+1 Agreement flags and detectors,explicit_threat_any,evidence_ending,pooled,-0.08417684517108286,1200
+1 Agreement flags and detectors,explicit_agreement_flag,price_index,pooled,0.09735319595718468,1200
+1 Agreement flags and detectors,explicit_agreement_flag,profit_gain_index,pooled,0.09796938685735786,1200
+1 Agreement flags and detectors,explicit_agreement_flag,competitive_share,pooled,-0.22590464152003767,1200
+1 Agreement flags and detectors,explicit_agreement_flag,matching_share,pooled,0.14941622856818373,1200
+1 Agreement flags and detectors,explicit_agreement_flag,undercut_count,pooled,-0.08497274717301694,1200
+1 Agreement flags and detectors,explicit_agreement_flag,rounds_played,pooled,0.13586996667549756,1200
+1 Agreement flags and detectors,explicit_agreement_flag,evidence_ending,pooled,-0.07172613693746213,1200
+1 Agreement flags and detectors,agreement_precedes_high_price,price_index,pooled,0.2891669142262017,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,profit_gain_index,pooled,0.2887036521767742,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,competitive_share,pooled,-0.01323331473612546,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,matching_share,pooled,0.016820651362046073,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,undercut_count,pooled,0.03490434949179669,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,rounds_played,pooled,-0.11134527784355118,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,evidence_ending,pooled,0.06909738334204303,1139
+1 Agreement flags and detectors,conversation_detector_flag_any,price_index,pooled,0.16266682136725769,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,profit_gain_index,pooled,0.1539870018168055,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,competitive_share,pooled,-0.23491311483115782,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,matching_share,pooled,0.18155012672280227,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,undercut_count,pooled,-0.08991691564517829,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,rounds_played,pooled,0.08272022865148726,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,evidence_ending,pooled,-0.03393659146401588,1200
+1 Agreement flags and detectors,price_detector_flag_any,price_index,pooled,0.2641382746674299,1360
+1 Agreement flags and detectors,price_detector_flag_any,profit_gain_index,pooled,0.2638163433283324,1360
+1 Agreement flags and detectors,price_detector_flag_any,competitive_share,pooled,-0.04649739422613618,1360
+1 Agreement flags and detectors,price_detector_flag_any,matching_share,pooled,0.04813217361957568,1360
+1 Agreement flags and detectors,price_detector_flag_any,undercut_count,pooled,0.004185400886650771,1360
+1 Agreement flags and detectors,price_detector_flag_any,rounds_played,pooled,-0.1042729817815748,1360
+1 Agreement flags and detectors,price_detector_flag_any,evidence_ending,pooled,0.061139352148878084,1360
+1 Agreement flags and detectors,explicit_proposal_first_round,price_index,pooled,-0.13671493937846668,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,profit_gain_index,pooled,-0.14051895618072496,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,competitive_share,pooled,0.1800793058737998,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,matching_share,pooled,-0.1757172315424462,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,undercut_count,pooled,-0.014915589654378239,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,rounds_played,pooled,0.032035613786249785,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,evidence_ending,pooled,-0.0906492751946589,1156
+1 Agreement flags and detectors,explicit_agreement_first_round,price_index,pooled,-0.182484927341577,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,profit_gain_index,pooled,-0.18869734517357864,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,competitive_share,pooled,0.2159564082056496,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,matching_share,pooled,-0.2612837223689076,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,undercut_count,pooled,0.09977823072262786,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,rounds_played,pooled,0.10959578731455749,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,evidence_ending,pooled,-0.08060876524523285,1139
+1 Agreement flags and detectors,explicit_threat_first_round,price_index,pooled,-0.13862750946928476,550
+1 Agreement flags and detectors,explicit_threat_first_round,profit_gain_index,pooled,-0.1497635063116913,550
+1 Agreement flags and detectors,explicit_threat_first_round,competitive_share,pooled,0.04683704077554956,550
+1 Agreement flags and detectors,explicit_threat_first_round,matching_share,pooled,-0.11553990632911253,550
+1 Agreement flags and detectors,explicit_threat_first_round,undercut_count,pooled,0.05513525028249715,550
+1 Agreement flags and detectors,explicit_threat_first_round,rounds_played,pooled,0.20543414236616817,550
+1 Agreement flags and detectors,explicit_threat_first_round,evidence_ending,pooled,-0.09527876324309356,550
+1 Agreement flags and detectors,conversation_detector_flag_rounds,price_index,pooled,-0.11844753632815924,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,profit_gain_index,pooled,-0.12470231154609365,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,competitive_share,pooled,0.044683132491031965,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,matching_share,pooled,-0.056281356019206516,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,undercut_count,pooled,0.004459926267902705,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,rounds_played,pooled,0.7083502758280061,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,evidence_ending,pooled,-0.37444045647284235,1200
+1 Agreement flags and detectors,conversation_detector_first_flag_round,price_index,pooled,-0.13928949218157385,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,profit_gain_index,pooled,-0.14155355783736703,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,competitive_share,pooled,0.1797288350600288,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,matching_share,pooled,-0.2052194914772824,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,undercut_count,pooled,0.1039243384482337,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,rounds_played,pooled,0.11316683892847057,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,evidence_ending,pooled,-0.08429755804517279,1124
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,price_index,pooled,0.510264573122689,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,profit_gain_index,pooled,0.510264573122689,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,competitive_share,pooled,0.07670798152919545,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,matching_share,pooled,0.5730321679965357,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,undercut_count,pooled,0.07681748619812083,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,rounds_played,pooled,-0.22610410868626368,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,evidence_ending,pooled,0.2693834994110394,29
+1 Agreement flags and detectors,price_detector_flag_rounds,price_index,pooled,0.26412338896656884,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,profit_gain_index,pooled,0.26380013747228337,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,competitive_share,pooled,-0.04658109166236688,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,matching_share,pooled,0.04826079332431777,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,undercut_count,pooled,0.004117365519029113,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,rounds_played,pooled,-0.10288002726059262,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,evidence_ending,pooled,0.059633541492159804,1360
+1 Agreement flags and detectors,price_detector_first_flag_round,price_index,pooled,-0.5320544119246987,30
+1 Agreement flags and detectors,price_detector_first_flag_round,profit_gain_index,pooled,-0.5320544119246987,30
+1 Agreement flags and detectors,price_detector_first_flag_round,competitive_share,pooled,-0.17415683615354072,30
+1 Agreement flags and detectors,price_detector_first_flag_round,matching_share,pooled,-0.6090197848601675,30
+1 Agreement flags and detectors,price_detector_first_flag_round,undercut_count,pooled,-0.17438766042469442,30
+1 Agreement flags and detectors,price_detector_first_flag_round,rounds_played,pooled,0.2108819761581015,30
+1 Agreement flags and detectors,price_detector_first_flag_round,evidence_ending,pooled,-0.29749203106712147,30
+1 Agreement flags and detectors,messages_per_round,price_index,pooled,-0.2966384626358435,1200
+1 Agreement flags and detectors,messages_per_round,profit_gain_index,pooled,-0.28708249934541685,1200
+1 Agreement flags and detectors,messages_per_round,competitive_share,pooled,0.019838593802799207,1200
+1 Agreement flags and detectors,messages_per_round,matching_share,pooled,-0.15108222381982064,1200
+1 Agreement flags and detectors,messages_per_round,undercut_count,pooled,0.02352081286354876,1200
+1 Agreement flags and detectors,messages_per_round,rounds_played,pooled,-0.07083253600036306,1200
+1 Agreement flags and detectors,messages_per_round,evidence_ending,pooled,0.070485411218992,1200
+1 Agreement flags and detectors,words_total,price_index,pooled,-0.3165232377767588,1200
+1 Agreement flags and detectors,words_total,profit_gain_index,pooled,-0.30581418248702985,1200
+1 Agreement flags and detectors,words_total,competitive_share,pooled,0.09848979996616483,1200
+1 Agreement flags and detectors,words_total,matching_share,pooled,-0.16636511762680345,1200
+1 Agreement flags and detectors,words_total,undercut_count,pooled,0.07651691995201651,1200
+1 Agreement flags and detectors,words_total,rounds_played,pooled,0.4331837184114848,1200
+1 Agreement flags and detectors,words_total,evidence_ending,pooled,-0.2569682519487369,1200
+1 Agreement flags and detectors,explicit_proposal_any,price_index,within_cell,-0.025542376799796835,1200
+1 Agreement flags and detectors,explicit_proposal_any,profit_gain_index,within_cell,-0.025333282818473087,1200
+1 Agreement flags and detectors,explicit_proposal_any,competitive_share,within_cell,0.017334677346623962,1200
+1 Agreement flags and detectors,explicit_proposal_any,matching_share,within_cell,-0.021615790170258227,1200
+1 Agreement flags and detectors,explicit_proposal_any,undercut_count,within_cell,0.02268638457182833,1200
+1 Agreement flags and detectors,explicit_proposal_any,rounds_played,within_cell,0.05216013580512996,1200
+1 Agreement flags and detectors,explicit_proposal_any,evidence_ending,within_cell,-0.006484807387355366,1200
+1 Agreement flags and detectors,explicit_agreement_any,price_index,within_cell,0.003644462078245848,1200
+1 Agreement flags and detectors,explicit_agreement_any,profit_gain_index,within_cell,0.003505615340506175,1200
+1 Agreement flags and detectors,explicit_agreement_any,competitive_share,within_cell,0.05316336825431246,1200
+1 Agreement flags and detectors,explicit_agreement_any,matching_share,within_cell,-0.0498829410411092,1200
+1 Agreement flags and detectors,explicit_agreement_any,undercut_count,within_cell,0.0565920799208997,1200
+1 Agreement flags and detectors,explicit_agreement_any,rounds_played,within_cell,0.12183877036414076,1200
+1 Agreement flags and detectors,explicit_agreement_any,evidence_ending,within_cell,-0.10379795263833198,1200
+1 Agreement flags and detectors,explicit_threat_any,price_index,within_cell,0.17149491811027037,1200
+1 Agreement flags and detectors,explicit_threat_any,profit_gain_index,within_cell,0.17568103754603193,1200
+1 Agreement flags and detectors,explicit_threat_any,competitive_share,within_cell,-0.1618370285583736,1200
+1 Agreement flags and detectors,explicit_threat_any,matching_share,within_cell,0.2367106328971453,1200
+1 Agreement flags and detectors,explicit_threat_any,undercut_count,within_cell,-0.003759046742963759,1200
+1 Agreement flags and detectors,explicit_threat_any,rounds_played,within_cell,0.22465981823325953,1200
+1 Agreement flags and detectors,explicit_threat_any,evidence_ending,within_cell,-0.19037183413976616,1200
+1 Agreement flags and detectors,explicit_agreement_flag,price_index,within_cell,-0.12884270260553646,1200
+1 Agreement flags and detectors,explicit_agreement_flag,profit_gain_index,within_cell,-0.13020466573158965,1200
+1 Agreement flags and detectors,explicit_agreement_flag,competitive_share,within_cell,0.11997890258930528,1200
+1 Agreement flags and detectors,explicit_agreement_flag,matching_share,within_cell,-0.13410170554062686,1200
+1 Agreement flags and detectors,explicit_agreement_flag,undercut_count,within_cell,0.12937842742776204,1200
+1 Agreement flags and detectors,explicit_agreement_flag,rounds_played,within_cell,0.25268005232462704,1200
+1 Agreement flags and detectors,explicit_agreement_flag,evidence_ending,within_cell,-0.2046826721572675,1200
+1 Agreement flags and detectors,agreement_precedes_high_price,price_index,within_cell,0.20191192034570105,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,profit_gain_index,within_cell,0.20169224145495057,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,competitive_share,within_cell,0.03238048933769457,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,matching_share,within_cell,-0.04454521889185058,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,undercut_count,within_cell,0.07276813259775605,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,rounds_played,within_cell,-0.032107093156789064,1139
+1 Agreement flags and detectors,agreement_precedes_high_price,evidence_ending,within_cell,0.037841471183728916,1139
+1 Agreement flags and detectors,conversation_detector_flag_any,price_index,within_cell,-0.007296654610331645,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,profit_gain_index,within_cell,-0.007414281117786674,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,competitive_share,within_cell,0.05809844467920272,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,matching_share,within_cell,-0.05713122802856961,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,undercut_count,within_cell,0.061650068615793925,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,rounds_played,within_cell,0.12654449227220105,1200
+1 Agreement flags and detectors,conversation_detector_flag_any,evidence_ending,within_cell,-0.09657517010226992,1200
+1 Agreement flags and detectors,price_detector_flag_any,price_index,within_cell,0.16600421056410647,1360
+1 Agreement flags and detectors,price_detector_flag_any,profit_gain_index,within_cell,0.16587130770741074,1360
+1 Agreement flags and detectors,price_detector_flag_any,competitive_share,within_cell,0.021122129692211306,1360
+1 Agreement flags and detectors,price_detector_flag_any,matching_share,within_cell,-0.03485605909562796,1360
+1 Agreement flags and detectors,price_detector_flag_any,undercut_count,within_cell,0.04666254665089839,1360
+1 Agreement flags and detectors,price_detector_flag_any,rounds_played,within_cell,-0.024885901545068468,1360
+1 Agreement flags and detectors,price_detector_flag_any,evidence_ending,within_cell,0.02910057291641836,1360
+1 Agreement flags and detectors,explicit_proposal_first_round,price_index,within_cell,-0.04295073181485594,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,profit_gain_index,within_cell,-0.041779938835709435,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,competitive_share,within_cell,0.08732520160002977,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,matching_share,within_cell,-0.1091578843071753,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,undercut_count,within_cell,-0.016304055813253178,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,rounds_played,within_cell,0.027019482233479875,1156
+1 Agreement flags and detectors,explicit_proposal_first_round,evidence_ending,within_cell,-0.04721694136652194,1156
+1 Agreement flags and detectors,explicit_agreement_first_round,price_index,within_cell,-0.12256463559409271,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,profit_gain_index,within_cell,-0.13540303367405102,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,competitive_share,within_cell,0.10940747393137742,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,matching_share,within_cell,-0.22153779927056574,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,undercut_count,within_cell,-0.002933546236360411,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,rounds_played,within_cell,0.0932663789062093,1139
+1 Agreement flags and detectors,explicit_agreement_first_round,evidence_ending,within_cell,-0.05641207211960929,1139
+1 Agreement flags and detectors,explicit_threat_first_round,price_index,within_cell,-0.16701635909933496,550
+1 Agreement flags and detectors,explicit_threat_first_round,profit_gain_index,within_cell,-0.17239426364508756,550
+1 Agreement flags and detectors,explicit_threat_first_round,competitive_share,within_cell,-0.007317898908348252,550
+1 Agreement flags and detectors,explicit_threat_first_round,matching_share,within_cell,-0.04704008461707869,550
+1 Agreement flags and detectors,explicit_threat_first_round,undercut_count,within_cell,0.03615888961662865,550
+1 Agreement flags and detectors,explicit_threat_first_round,rounds_played,within_cell,0.19044087780833605,550
+1 Agreement flags and detectors,explicit_threat_first_round,evidence_ending,within_cell,-0.1257591582840538,550
+1 Agreement flags and detectors,conversation_detector_flag_rounds,price_index,within_cell,-0.1735506928237021,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,profit_gain_index,within_cell,-0.17113788022322682,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,competitive_share,within_cell,0.27801387694484686,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,matching_share,within_cell,-0.2058941726276978,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,undercut_count,within_cell,0.20757243544307288,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,rounds_played,within_cell,0.8544151243038087,1200
+1 Agreement flags and detectors,conversation_detector_flag_rounds,evidence_ending,within_cell,-0.4715807793630093,1200
+1 Agreement flags and detectors,conversation_detector_first_flag_round,price_index,within_cell,-0.0618378761969461,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,profit_gain_index,within_cell,-0.07302504770875176,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,competitive_share,within_cell,0.06457310396178781,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,matching_share,within_cell,-0.15004392371132108,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,undercut_count,within_cell,-0.016688538539585348,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,rounds_played,within_cell,0.08160217860653622,1124
+1 Agreement flags and detectors,conversation_detector_first_flag_round,evidence_ending,within_cell,-0.041196105587822,1124
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,price_index,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,profit_gain_index,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,competitive_share,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,matching_share,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,undercut_count,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,rounds_played,within_cell,,29
+1 Agreement flags and detectors,conversation_detector_lag_to_high_price,evidence_ending,within_cell,,29
+1 Agreement flags and detectors,price_detector_flag_rounds,price_index,within_cell,0.1658521607757912,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,profit_gain_index,within_cell,0.16571937965005132,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,competitive_share,within_cell,0.021400702067274957,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,matching_share,within_cell,-0.03478942987500154,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,undercut_count,within_cell,0.046977880446334996,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,rounds_played,within_cell,-0.023283392714700347,1360
+1 Agreement flags and detectors,price_detector_flag_rounds,evidence_ending,within_cell,0.027265137996160916,1360
+1 Agreement flags and detectors,price_detector_first_flag_round,price_index,within_cell,-0.7500000000000001,30
+1 Agreement flags and detectors,price_detector_first_flag_round,profit_gain_index,within_cell,-0.7500000000000001,30
+1 Agreement flags and detectors,price_detector_first_flag_round,competitive_share,within_cell,0.0,30
+1 Agreement flags and detectors,price_detector_first_flag_round,matching_share,within_cell,-0.7500000000000001,30
+1 Agreement flags and detectors,price_detector_first_flag_round,undercut_count,within_cell,0.0,30
+1 Agreement flags and detectors,price_detector_first_flag_round,rounds_played,within_cell,0.18898223650461363,30
+1 Agreement flags and detectors,price_detector_first_flag_round,evidence_ending,within_cell,-0.33541019662496846,30
+1 Agreement flags and detectors,messages_per_round,price_index,within_cell,-0.30443502074717155,1200
+1 Agreement flags and detectors,messages_per_round,profit_gain_index,within_cell,-0.3026043744250336,1200
+1 Agreement flags and detectors,messages_per_round,competitive_share,within_cell,0.09783190335218953,1200
+1 Agreement flags and detectors,messages_per_round,matching_share,within_cell,-0.2691579481503171,1200
+1 Agreement flags and detectors,messages_per_round,undercut_count,within_cell,-0.01691522975236842,1200
+1 Agreement flags and detectors,messages_per_round,rounds_played,within_cell,-0.1395478934917987,1200
+1 Agreement flags and detectors,messages_per_round,evidence_ending,within_cell,0.16610007934876117,1200
+1 Agreement flags and detectors,words_total,price_index,within_cell,-0.3288869656626661,1200
+1 Agreement flags and detectors,words_total,profit_gain_index,within_cell,-0.3247175605721449,1200
+1 Agreement flags and detectors,words_total,competitive_share,within_cell,0.28380561171921687,1200
+1 Agreement flags and detectors,words_total,matching_share,within_cell,-0.329269559815437,1200
+1 Agreement flags and detectors,words_total,undercut_count,within_cell,0.16321855848297478,1200
+1 Agreement flags and detectors,words_total,rounds_played,within_cell,0.6350038862249572,1200
+1 Agreement flags and detectors,words_total,evidence_ending,within_cell,-0.33709970909222065,1200
+2 Intent class,collusive_game,price_index,pooled,0.4143942312774305,1360
+2 Intent class,collusive_game,profit_gain_index,pooled,0.41592351350500156,1360
+2 Intent class,collusive_game,competitive_share,pooled,-0.570469585358432,1360
+2 Intent class,collusive_game,matching_share,pooled,0.47096884904152037,1360
+2 Intent class,collusive_game,undercut_count,pooled,-0.17903729189188106,1360
+2 Intent class,collusive_game,rounds_played,pooled,-0.09661838499473534,1360
+2 Intent class,collusive_game,evidence_ending,pooled,0.10989069689787413,1360
+2 Intent class,emergent_collusion,price_index,pooled,0.023203438318294974,1173
+2 Intent class,emergent_collusion,profit_gain_index,pooled,0.023149776248634714,1173
+2 Intent class,emergent_collusion,competitive_share,pooled,-0.014575048163387413,1173
+2 Intent class,emergent_collusion,matching_share,pooled,0.02010521471439121,1173
+2 Intent class,emergent_collusion,undercut_count,pooled,-0.011612370058834299,1173
+2 Intent class,emergent_collusion,rounds_played,pooled,0.00950074561629441,1173
+2 Intent class,emergent_collusion,evidence_ending,pooled,-0.015472305038333783,1173
+2 Intent class,intent_explicit,price_index,pooled,0.23069250817978365,1360
+2 Intent class,intent_explicit,profit_gain_index,pooled,0.23594147822283246,1360
+2 Intent class,intent_explicit,competitive_share,pooled,-0.24543482868545954,1360
+2 Intent class,intent_explicit,matching_share,pooled,0.2888545930554242,1360
+2 Intent class,intent_explicit,undercut_count,pooled,0.03484294844181771,1360
+2 Intent class,intent_explicit,rounds_played,pooled,-0.02546665588456013,1360
+2 Intent class,intent_explicit,evidence_ending,pooled,0.036589023658962515,1360
+2 Intent class,intent_none,price_index,pooled,-0.07186284105446658,1360
+2 Intent class,intent_none,profit_gain_index,pooled,-0.0718634457296967,1360
+2 Intent class,intent_none,competitive_share,pooled,0.09162413053529038,1360
+2 Intent class,intent_none,matching_share,pooled,-0.07434561646330853,1360
+2 Intent class,intent_none,undercut_count,pooled,-0.02570161285336612,1360
+2 Intent class,intent_none,rounds_played,pooled,0.012110071794365814,1360
+2 Intent class,intent_none,evidence_ending,pooled,-0.03065174857165341,1360
+2 Intent class,intent_no_text,price_index,pooled,-0.2190303192944202,1360
+2 Intent class,intent_no_text,profit_gain_index,pooled,-0.22441394871422152,1360
+2 Intent class,intent_no_text,competitive_share,pooled,0.22931508477294996,1360
+2 Intent class,intent_no_text,matching_share,pooled,-0.27807855036113793,1360
+2 Intent class,intent_no_text,undercut_count,pooled,-0.02944785621330785,1360
+2 Intent class,intent_no_text,rounds_played,pooled,0.02315701104438049,1360
+2 Intent class,intent_no_text,evidence_ending,pooled,-0.03002732946667407,1360
+2 Intent class,collusive_firm_games,price_index,pooled,0.38709001319427194,1360
+2 Intent class,collusive_firm_games,profit_gain_index,pooled,0.3891052241740082,1360
+2 Intent class,collusive_firm_games,competitive_share,pooled,-0.6277444129684052,1360
+2 Intent class,collusive_firm_games,matching_share,pooled,0.5269533678472339,1360
+2 Intent class,collusive_firm_games,undercut_count,pooled,-0.2144389811472545,1360
+2 Intent class,collusive_firm_games,rounds_played,pooled,-0.08644832400554796,1360
+2 Intent class,collusive_firm_games,evidence_ending,pooled,0.07938360646731933,1360
+2 Intent class,explicit_round_share,price_index,pooled,0.05796146975741114,1271
+2 Intent class,explicit_round_share,profit_gain_index,pooled,0.05524492434347285,1271
+2 Intent class,explicit_round_share,competitive_share,pooled,-0.19248341496414506,1271
+2 Intent class,explicit_round_share,matching_share,pooled,0.037892314166061716,1271
+2 Intent class,explicit_round_share,undercut_count,pooled,-0.08061836197998097,1271
+2 Intent class,explicit_round_share,rounds_played,pooled,-0.21581672736759483,1271
+2 Intent class,explicit_round_share,evidence_ending,pooled,0.1643970182836817,1271
+2 Intent class,strategic_round_share,price_index,pooled,0.08373984853661205,1271
+2 Intent class,strategic_round_share,profit_gain_index,pooled,0.0876089788602212,1271
+2 Intent class,strategic_round_share,competitive_share,pooled,0.14212813578265526,1271
+2 Intent class,strategic_round_share,matching_share,pooled,-0.008816662476187388,1271
+2 Intent class,strategic_round_share,undercut_count,pooled,0.26159467729950403,1271
+2 Intent class,strategic_round_share,rounds_played,pooled,0.130568432800127,1271
+2 Intent class,strategic_round_share,evidence_ending,pooled,-0.10242403868108692,1271
+2 Intent class,none_round_share,price_index,pooled,-0.18064656033641963,1271
+2 Intent class,none_round_share,profit_gain_index,pooled,-0.1797691210539156,1271
+2 Intent class,none_round_share,competitive_share,pooled,0.11411232595564304,1271
+2 Intent class,none_round_share,matching_share,pooled,-0.06524119107495548,1271
+2 Intent class,none_round_share,undercut_count,pooled,-0.13472215943493518,1271
+2 Intent class,none_round_share,rounds_played,pooled,0.1933142341255379,1271
+2 Intent class,none_round_share,evidence_ending,pooled,-0.1321481885780988,1271
+2 Intent class,collusive_game,price_index,within_cell,0.34746807409300534,1360
+2 Intent class,collusive_game,profit_gain_index,within_cell,0.34852636156225403,1360
+2 Intent class,collusive_game,competitive_share,within_cell,-0.5637473323317298,1360
+2 Intent class,collusive_game,matching_share,within_cell,0.47002112861208334,1360
+2 Intent class,collusive_game,undercut_count,within_cell,-0.19846956161426874,1360
+2 Intent class,collusive_game,rounds_played,within_cell,-0.09052645748710557,1360
+2 Intent class,collusive_game,evidence_ending,within_cell,0.08774745900110856,1360
+2 Intent class,emergent_collusion,price_index,within_cell,0.00384176837281599,1173
+2 Intent class,emergent_collusion,profit_gain_index,within_cell,0.0038370667093868874,1173
+2 Intent class,emergent_collusion,competitive_share,within_cell,0.0,1173
+2 Intent class,emergent_collusion,matching_share,within_cell,0.00150212102779209,1173
+2 Intent class,emergent_collusion,undercut_count,within_cell,0.0,1173
+2 Intent class,emergent_collusion,rounds_played,within_cell,0.00605581268824196,1173
+2 Intent class,emergent_collusion,evidence_ending,within_cell,-0.008362262212694488,1173
+2 Intent class,intent_explicit,price_index,within_cell,0.0034877023114396376,1360
+2 Intent class,intent_explicit,profit_gain_index,within_cell,0.0034849100593701303,1360
+2 Intent class,intent_explicit,competitive_share,within_cell,0.0015428369840918877,1360
+2 Intent class,intent_explicit,matching_share,within_cell,-0.0017444903988922088,1360
+2 Intent class,intent_explicit,undercut_count,within_cell,0.005865621529773494,1360
+2 Intent class,intent_explicit,rounds_played,within_cell,0.02426165457765353,1360
+2 Intent class,intent_explicit,evidence_ending,within_cell,-0.013774442385774384,1360
+2 Intent class,intent_none,price_index,within_cell,0.0014542189427985048,1360
+2 Intent class,intent_none,profit_gain_index,within_cell,0.001453054696114025,1360
+2 Intent class,intent_none,competitive_share,within_cell,0.0,1360
+2 Intent class,intent_none,matching_share,within_cell,0.0005334090723676113,1360
+2 Intent class,intent_none,undercut_count,within_cell,0.0,1360
+2 Intent class,intent_none,rounds_played,within_cell,-0.00704281696591792,1360
+2 Intent class,intent_none,evidence_ending,within_cell,-0.00339659805154726,1360
+2 Intent class,intent_no_text,price_index,within_cell,-0.0053211896833489005,1360
+2 Intent class,intent_no_text,profit_gain_index,within_cell,-0.0053169295425516665,1360
+2 Intent class,intent_no_text,competitive_share,within_cell,-0.0018494986630805492,1360
+2 Intent class,intent_no_text,matching_share,within_cell,0.0016729869422501924,1360
+2 Intent class,intent_no_text,undercut_count,within_cell,-0.007031500598773859,1360
+2 Intent class,intent_no_text,rounds_played,within_cell,-0.023561735622961353,1360
+2 Intent class,intent_no_text,evidence_ending,within_cell,0.01917559349630007,1360
+2 Intent class,collusive_firm_games,price_index,within_cell,0.3584130452019903,1360
+2 Intent class,collusive_firm_games,profit_gain_index,within_cell,0.35899337516296775,1360
+2 Intent class,collusive_firm_games,competitive_share,within_cell,-0.7465363389437824,1360
+2 Intent class,collusive_firm_games,matching_share,within_cell,0.5781107640856114,1360
+2 Intent class,collusive_firm_games,undercut_count,within_cell,-0.24558902120120799,1360
+2 Intent class,collusive_firm_games,rounds_played,within_cell,-0.10258624588930156,1360
+2 Intent class,collusive_firm_games,evidence_ending,within_cell,0.07653446834916153,1360
+2 Intent class,explicit_round_share,price_index,within_cell,-0.09577395243074173,1271
+2 Intent class,explicit_round_share,profit_gain_index,within_cell,-0.09662253131810397,1271
+2 Intent class,explicit_round_share,competitive_share,within_cell,0.04489041989715916,1271
+2 Intent class,explicit_round_share,matching_share,within_cell,-0.12093927985190436,1271
+2 Intent class,explicit_round_share,undercut_count,within_cell,0.015294640533052682,1271
+2 Intent class,explicit_round_share,rounds_played,within_cell,-0.18962966936490705,1271
+2 Intent class,explicit_round_share,evidence_ending,within_cell,0.10291998179460082,1271
+2 Intent class,strategic_round_share,price_index,within_cell,0.16029655944920213,1271
+2 Intent class,strategic_round_share,profit_gain_index,within_cell,0.1584632605891891,1271
+2 Intent class,strategic_round_share,competitive_share,within_cell,-0.13290019882749438,1271
+2 Intent class,strategic_round_share,matching_share,within_cell,0.1657046049558742,1271
+2 Intent class,strategic_round_share,undercut_count,within_cell,-0.010142071136120636,1271
+2 Intent class,strategic_round_share,rounds_played,within_cell,0.12011057421087631,1271
+2 Intent class,strategic_round_share,evidence_ending,within_cell,-0.07142630366444702,1271
+2 Intent class,none_round_share,price_index,within_cell,-0.09122215724659284,1271
+2 Intent class,none_round_share,profit_gain_index,within_cell,-0.08799422886204926,1271
+2 Intent class,none_round_share,competitive_share,within_cell,0.0824921798108826,1271
+2 Intent class,none_round_share,matching_share,within_cell,-0.018979164046068447,1271
+2 Intent class,none_round_share,undercut_count,within_cell,-0.03006552715067768,1271
+2 Intent class,none_round_share,rounds_played,within_cell,0.15797929886081657,1271
+2 Intent class,none_round_share,evidence_ending,within_cell,-0.08930084636435084,1271
+"3 Punishment, wars and timing",punishment_count,price_index,pooled,-0.1673928276727254,1360
+"3 Punishment, wars and timing",punishment_count,profit_gain_index,pooled,-0.17034787004260374,1360
+"3 Punishment, wars and timing",punishment_count,competitive_share,pooled,0.3909418618949707,1360
+"3 Punishment, wars and timing",punishment_count,matching_share,pooled,-0.29604174446312354,1360
+"3 Punishment, wars and timing",punishment_count,undercut_count,pooled,0.5833948509596607,1360
+"3 Punishment, wars and timing",punishment_count,rounds_played,pooled,0.10516533087052397,1360
+"3 Punishment, wars and timing",punishment_count,evidence_ending,pooled,-0.09553656610844433,1360
+"3 Punishment, wars and timing",war_length,price_index,pooled,-0.2006653443416809,1360
+"3 Punishment, wars and timing",war_length,profit_gain_index,pooled,-0.20486698967458672,1360
+"3 Punishment, wars and timing",war_length,competitive_share,pooled,0.6238940287397589,1360
+"3 Punishment, wars and timing",war_length,matching_share,pooled,-0.4352777957843295,1360
+"3 Punishment, wars and timing",war_length,undercut_count,pooled,0.9929327425337368,1360
+"3 Punishment, wars and timing",war_length,rounds_played,pooled,0.1836320851415861,1360
+"3 Punishment, wars and timing",war_length,evidence_ending,pooled,-0.11555289517681562,1360
+"3 Punishment, wars and timing",war_after_first_undercut,price_index,pooled,-0.3754398909316086,208
+"3 Punishment, wars and timing",war_after_first_undercut,profit_gain_index,pooled,-0.3744536100708138,208
+"3 Punishment, wars and timing",war_after_first_undercut,competitive_share,pooled,0.36638526722042114,208
+"3 Punishment, wars and timing",war_after_first_undercut,matching_share,pooled,-0.39184246263478084,208
+"3 Punishment, wars and timing",war_after_first_undercut,undercut_count,pooled,0.4133014738747751,208
+"3 Punishment, wars and timing",war_after_first_undercut,rounds_played,pooled,-0.10192714455825448,208
+"3 Punishment, wars and timing",war_after_first_undercut,evidence_ending,pooled,-0.11539211602412876,208
+"3 Punishment, wars and timing",round1_both_floor,price_index,pooled,-0.41869118717952153,1360
+"3 Punishment, wars and timing",round1_both_floor,profit_gain_index,pooled,-0.4206383735084003,1360
+"3 Punishment, wars and timing",round1_both_floor,competitive_share,pooled,0.3661821622142276,1360
+"3 Punishment, wars and timing",round1_both_floor,matching_share,pooled,-0.408752914946227,1360
+"3 Punishment, wars and timing",round1_both_floor,undercut_count,pooled,-0.09206345473381283,1360
+"3 Punishment, wars and timing",round1_both_floor,rounds_played,pooled,0.0862061370719511,1360
+"3 Punishment, wars and timing",round1_both_floor,evidence_ending,pooled,-0.12307987912163172,1360
+"3 Punishment, wars and timing",coalition_punished,price_index,pooled,0.0,33
+"3 Punishment, wars and timing",coalition_punished,profit_gain_index,pooled,-0.12695350656175683,33
+"3 Punishment, wars and timing",coalition_punished,competitive_share,pooled,0.5318665461037453,33
+"3 Punishment, wars and timing",coalition_punished,matching_share,pooled,-0.5036324526352729,33
+"3 Punishment, wars and timing",coalition_punished,undercut_count,pooled,0.6905693272783128,33
+"3 Punishment, wars and timing",coalition_punished,rounds_played,pooled,-0.1551863354710092,33
+"3 Punishment, wars and timing",coalition_punished,evidence_ending,pooled,0.14655172413793105,33
+"3 Punishment, wars and timing",time_to_high_price,price_index,pooled,-0.6053543343679639,31
+"3 Punishment, wars and timing",time_to_high_price,profit_gain_index,pooled,-0.6053543343679639,31
+"3 Punishment, wars and timing",time_to_high_price,competitive_share,pooled,0.05892669013218397,31
+"3 Punishment, wars and timing",time_to_high_price,matching_share,pooled,-0.6660248030328325,31
+"3 Punishment, wars and timing",time_to_high_price,undercut_count,pooled,0.02887024131334606,31
+"3 Punishment, wars and timing",time_to_high_price,rounds_played,pooled,0.20705062602236535,31
+"3 Punishment, wars and timing",time_to_high_price,evidence_ending,pooled,-0.3236197301304878,31
+"3 Punishment, wars and timing",high_duration,price_index,pooled,0.25823428424805533,1360
+"3 Punishment, wars and timing",high_duration,profit_gain_index,pooled,0.25740622132725505,1360
+"3 Punishment, wars and timing",high_duration,competitive_share,pooled,-0.038554232435182294,1360
+"3 Punishment, wars and timing",high_duration,matching_share,pooled,0.041357663800239274,1360
+"3 Punishment, wars and timing",high_duration,undercut_count,pooled,0.015305020855705835,1360
+"3 Punishment, wars and timing",high_duration,rounds_played,pooled,-0.10545220766120054,1360
+"3 Punishment, wars and timing",high_duration,evidence_ending,pooled,0.05629886383205462,1360
+"3 Punishment, wars and timing",first_undercut_round,price_index,pooled,0.4345535872788212,208
+"3 Punishment, wars and timing",first_undercut_round,profit_gain_index,pooled,0.43611564920821033,208
+"3 Punishment, wars and timing",first_undercut_round,competitive_share,pooled,-0.659725935453305,208
+"3 Punishment, wars and timing",first_undercut_round,matching_share,pooled,0.6501273650404968,208
+"3 Punishment, wars and timing",first_undercut_round,undercut_count,pooled,-0.463320156334025,208
+"3 Punishment, wars and timing",first_undercut_round,rounds_played,pooled,0.36268102556921944,208
+"3 Punishment, wars and timing",first_undercut_round,evidence_ending,pooled,-0.14379699545765587,208
+"3 Punishment, wars and timing",leader_first_raise_round,price_index,pooled,-0.2324354821371292,1301
+"3 Punishment, wars and timing",leader_first_raise_round,profit_gain_index,pooled,-0.23587138793969709,1301
+"3 Punishment, wars and timing",leader_first_raise_round,competitive_share,pooled,0.048232309591237886,1301
+"3 Punishment, wars and timing",leader_first_raise_round,matching_share,pooled,-0.20969069860759462,1301
+"3 Punishment, wars and timing",leader_first_raise_round,undercut_count,pooled,-0.03508485737320746,1301
+"3 Punishment, wars and timing",leader_first_raise_round,rounds_played,pooled,0.019856839598543532,1301
+"3 Punishment, wars and timing",leader_first_raise_round,evidence_ending,pooled,-0.06316094949184133,1301
+"3 Punishment, wars and timing",defect_round,price_index,pooled,0.05774889346763513,33
+"3 Punishment, wars and timing",defect_round,profit_gain_index,pooled,0.13620351727086713,33
+"3 Punishment, wars and timing",defect_round,competitive_share,pooled,0.14082274496551841,33
+"3 Punishment, wars and timing",defect_round,matching_share,pooled,-0.16928981410930555,33
+"3 Punishment, wars and timing",defect_round,undercut_count,pooled,0.07380209476349484,33
+"3 Punishment, wars and timing",defect_round,rounds_played,pooled,0.29925341444675074,33
+"3 Punishment, wars and timing",defect_round,evidence_ending,pooled,0.14761306678725566,33
+"3 Punishment, wars and timing",round1_quote_mean,price_index,pooled,0.9285227931526673,1360
+"3 Punishment, wars and timing",round1_quote_mean,profit_gain_index,pooled,0.9250197507665336,1360
+"3 Punishment, wars and timing",round1_quote_mean,competitive_share,pooled,-0.3571596597670486,1360
+"3 Punishment, wars and timing",round1_quote_mean,matching_share,pooled,0.5774704527456408,1360
+"3 Punishment, wars and timing",round1_quote_mean,undercut_count,pooled,0.0029917950094918433,1360
+"3 Punishment, wars and timing",round1_quote_mean,rounds_played,pooled,-0.12802953591095556,1360
+"3 Punishment, wars and timing",round1_quote_mean,evidence_ending,pooled,0.10753981644033374,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,price_index,pooled,-0.39007122727769994,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,profit_gain_index,pooled,-0.4007858707072562,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,competitive_share,pooled,0.6726233898598054,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,matching_share,pooled,-0.6552706845695428,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,undercut_count,pooled,0.5385840406497797,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,rounds_played,pooled,0.12310508238391721,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,evidence_ending,pooled,-0.04266042887809859,1360
+"3 Punishment, wars and timing",profit_gap_mean,price_index,pooled,-0.2761586034426541,1360
+"3 Punishment, wars and timing",profit_gap_mean,profit_gain_index,pooled,-0.28409023738302697,1360
+"3 Punishment, wars and timing",profit_gap_mean,competitive_share,pooled,0.6183143296908871,1360
+"3 Punishment, wars and timing",profit_gap_mean,matching_share,pooled,-0.5743501418513777,1360
+"3 Punishment, wars and timing",profit_gap_mean,undercut_count,pooled,0.5681476890998162,1360
+"3 Punishment, wars and timing",profit_gap_mean,rounds_played,pooled,0.16414201321814376,1360
+"3 Punishment, wars and timing",profit_gap_mean,evidence_ending,pooled,-0.04978097009988438,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,price_index,pooled,-0.27962992103783996,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,profit_gain_index,pooled,-0.28752714741335,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,competitive_share,pooled,0.6044546369871427,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,matching_share,pooled,-0.5770788768610106,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,undercut_count,pooled,0.5554671651233904,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,rounds_played,pooled,0.12836946495305263,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,evidence_ending,pooled,-0.03153539117395208,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,price_index,pooled,0.3815633677139471,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,profit_gain_index,pooled,0.39152951218488646,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,competitive_share,pooled,-0.6814260393920064,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,matching_share,pooled,0.6607040962707031,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,undercut_count,pooled,-0.5699474259714755,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,rounds_played,pooled,-0.11507657719748905,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,evidence_ending,pooled,0.03322109429356455,1360
+"3 Punishment, wars and timing",threat_then_punish_n,price_index,pooled,-0.06289289981004478,1360
+"3 Punishment, wars and timing",threat_then_punish_n,profit_gain_index,pooled,-0.0636376631375496,1360
+"3 Punishment, wars and timing",threat_then_punish_n,competitive_share,pooled,0.21544421984575393,1360
+"3 Punishment, wars and timing",threat_then_punish_n,matching_share,pooled,-0.1590278149034454,1360
+"3 Punishment, wars and timing",threat_then_punish_n,undercut_count,pooled,0.33977202710706084,1360
+"3 Punishment, wars and timing",threat_then_punish_n,rounds_played,pooled,0.06643384033260881,1360
+"3 Punishment, wars and timing",threat_then_punish_n,evidence_ending,pooled,-0.037520057917658875,1360
+"3 Punishment, wars and timing",punishment_count,price_index,within_cell,-0.11839536599068094,1360
+"3 Punishment, wars and timing",punishment_count,profit_gain_index,within_cell,-0.11970237051068183,1360
+"3 Punishment, wars and timing",punishment_count,competitive_share,within_cell,0.3059811921574798,1360
+"3 Punishment, wars and timing",punishment_count,matching_share,within_cell,-0.2235426707798369,1360
+"3 Punishment, wars and timing",punishment_count,undercut_count,within_cell,0.5510812040684221,1360
+"3 Punishment, wars and timing",punishment_count,rounds_played,within_cell,0.15873961664593592,1360
+"3 Punishment, wars and timing",punishment_count,evidence_ending,within_cell,-0.12834501945947147,1360
+"3 Punishment, wars and timing",war_length,price_index,within_cell,-0.14738538188316344,1360
+"3 Punishment, wars and timing",war_length,profit_gain_index,within_cell,-0.15241328974560767,1360
+"3 Punishment, wars and timing",war_length,competitive_share,within_cell,0.5152006746887602,1360
+"3 Punishment, wars and timing",war_length,matching_share,within_cell,-0.32435678630273207,1360
+"3 Punishment, wars and timing",war_length,undercut_count,within_cell,0.9041984590727487,1360
+"3 Punishment, wars and timing",war_length,rounds_played,within_cell,0.29606605285010457,1360
+"3 Punishment, wars and timing",war_length,evidence_ending,within_cell,-0.1888703955789781,1360
+"3 Punishment, wars and timing",war_after_first_undercut,price_index,within_cell,-0.06900064147556756,208
+"3 Punishment, wars and timing",war_after_first_undercut,profit_gain_index,within_cell,-0.07127249124927018,208
+"3 Punishment, wars and timing",war_after_first_undercut,competitive_share,within_cell,-0.040136168474100335,208
+"3 Punishment, wars and timing",war_after_first_undercut,matching_share,within_cell,0.04063642337918247,208
+"3 Punishment, wars and timing",war_after_first_undercut,undercut_count,within_cell,0.381733968315856,208
+"3 Punishment, wars and timing",war_after_first_undercut,rounds_played,within_cell,0.38168622675049974,208
+"3 Punishment, wars and timing",war_after_first_undercut,evidence_ending,within_cell,-0.618744937154943,208
+"3 Punishment, wars and timing",round1_both_floor,price_index,within_cell,-0.28646522042181854,1360
+"3 Punishment, wars and timing",round1_both_floor,profit_gain_index,within_cell,-0.2871574014746924,1360
+"3 Punishment, wars and timing",round1_both_floor,competitive_share,within_cell,0.19353402993927252,1360
+"3 Punishment, wars and timing",round1_both_floor,matching_share,within_cell,-0.29707250860282036,1360
+"3 Punishment, wars and timing",round1_both_floor,undercut_count,within_cell,-0.011216486074381027,1360
+"3 Punishment, wars and timing",round1_both_floor,rounds_played,within_cell,0.029528812042350215,1360
+"3 Punishment, wars and timing",round1_both_floor,evidence_ending,within_cell,-0.08357973679030299,1360
+"3 Punishment, wars and timing",coalition_punished,price_index,within_cell,-0.16927663163167542,33
+"3 Punishment, wars and timing",coalition_punished,profit_gain_index,within_cell,-0.1904362105856348,33
+"3 Punishment, wars and timing",coalition_punished,competitive_share,within_cell,0.5715476066494083,33
+"3 Punishment, wars and timing",coalition_punished,matching_share,within_cell,-0.5037861839067156,33
+"3 Punishment, wars and timing",coalition_punished,undercut_count,within_cell,0.7078728775988725,33
+"3 Punishment, wars and timing",coalition_punished,rounds_played,within_cell,-0.0975728002053614,33
+"3 Punishment, wars and timing",coalition_punished,evidence_ending,within_cell,0.07715167498104596,33
+"3 Punishment, wars and timing",time_to_high_price,price_index,within_cell,-0.75,31
+"3 Punishment, wars and timing",time_to_high_price,profit_gain_index,within_cell,-0.75,31
+"3 Punishment, wars and timing",time_to_high_price,competitive_share,within_cell,0.0,31
+"3 Punishment, wars and timing",time_to_high_price,matching_share,within_cell,-0.75,31
+"3 Punishment, wars and timing",time_to_high_price,undercut_count,within_cell,0.0,31
+"3 Punishment, wars and timing",time_to_high_price,rounds_played,within_cell,0.18898223650461365,31
+"3 Punishment, wars and timing",time_to_high_price,evidence_ending,within_cell,-0.33541019662496846,31
+"3 Punishment, wars and timing",high_duration,price_index,within_cell,0.17670929672666985,1360
+"3 Punishment, wars and timing",high_duration,profit_gain_index,within_cell,0.17656782338536206,1360
+"3 Punishment, wars and timing",high_duration,competitive_share,within_cell,0.027091754098630905,1360
+"3 Punishment, wars and timing",high_duration,matching_share,within_cell,-0.028197855777969905,1360
+"3 Punishment, wars and timing",high_duration,undercut_count,within_cell,0.088242453364057,1360
+"3 Punishment, wars and timing",high_duration,rounds_played,within_cell,-0.03994896919582932,1360
+"3 Punishment, wars and timing",high_duration,evidence_ending,within_cell,0.018122711908354,1360
+"3 Punishment, wars and timing",first_undercut_round,price_index,within_cell,-0.023621419880693762,208
+"3 Punishment, wars and timing",first_undercut_round,profit_gain_index,within_cell,-0.025321049691213602,208
+"3 Punishment, wars and timing",first_undercut_round,competitive_share,within_cell,-0.28054913016952326,208
+"3 Punishment, wars and timing",first_undercut_round,matching_share,within_cell,0.29787645944231905,208
+"3 Punishment, wars and timing",first_undercut_round,undercut_count,within_cell,-0.21070680721508442,208
+"3 Punishment, wars and timing",first_undercut_round,rounds_played,within_cell,-0.01739120339290009,208
+"3 Punishment, wars and timing",first_undercut_round,evidence_ending,within_cell,-0.0039872993388287295,208
+"3 Punishment, wars and timing",leader_first_raise_round,price_index,within_cell,-0.19604090853404768,1301
+"3 Punishment, wars and timing",leader_first_raise_round,profit_gain_index,within_cell,-0.1970423002366343,1301
+"3 Punishment, wars and timing",leader_first_raise_round,competitive_share,within_cell,0.043488289991994944,1301
+"3 Punishment, wars and timing",leader_first_raise_round,matching_share,within_cell,-0.20481695533366065,1301
+"3 Punishment, wars and timing",leader_first_raise_round,undercut_count,within_cell,0.009757462349105683,1301
+"3 Punishment, wars and timing",leader_first_raise_round,rounds_played,within_cell,-0.00713034042537249,1301
+"3 Punishment, wars and timing",leader_first_raise_round,evidence_ending,within_cell,-0.055423418920164225,1301
+"3 Punishment, wars and timing",defect_round,price_index,within_cell,0.05905518182407655,33
+"3 Punishment, wars and timing",defect_round,profit_gain_index,within_cell,0.12964184885640473,33
+"3 Punishment, wars and timing",defect_round,competitive_share,within_cell,0.13708730536752586,33
+"3 Punishment, wars and timing",defect_round,matching_share,within_cell,-0.19787525423929836,33
+"3 Punishment, wars and timing",defect_round,undercut_count,within_cell,0.10657054057409922,33
+"3 Punishment, wars and timing",defect_round,rounds_played,within_cell,0.2997132877915669,33
+"3 Punishment, wars and timing",defect_round,evidence_ending,within_cell,0.14716062652761436,33
+"3 Punishment, wars and timing",round1_quote_mean,price_index,within_cell,0.7987930310485097,1360
+"3 Punishment, wars and timing",round1_quote_mean,profit_gain_index,within_cell,0.7993071284096023,1360
+"3 Punishment, wars and timing",round1_quote_mean,competitive_share,within_cell,-0.13471759479163195,1360
+"3 Punishment, wars and timing",round1_quote_mean,matching_share,within_cell,0.3635759563783948,1360
+"3 Punishment, wars and timing",round1_quote_mean,undercut_count,within_cell,0.037750436973994446,1360
+"3 Punishment, wars and timing",round1_quote_mean,rounds_played,within_cell,-0.05907214528083739,1360
+"3 Punishment, wars and timing",round1_quote_mean,evidence_ending,within_cell,0.06353317291549662,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,price_index,within_cell,-0.38307222007927016,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,profit_gain_index,within_cell,-0.39078184508071107,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,competitive_share,within_cell,0.6502594563876282,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,matching_share,within_cell,-0.5617011100902146,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,undercut_count,within_cell,0.3310651739577372,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,rounds_played,within_cell,0.07398748611483721,1360
+"3 Punishment, wars and timing",quote_gap_mean_mean,evidence_ending,within_cell,-0.03213282447927304,1360
+"3 Punishment, wars and timing",profit_gap_mean,price_index,within_cell,-0.08324683639367592,1360
+"3 Punishment, wars and timing",profit_gap_mean,profit_gain_index,within_cell,-0.08887214991071676,1360
+"3 Punishment, wars and timing",profit_gap_mean,competitive_share,within_cell,0.48459958676055415,1360
+"3 Punishment, wars and timing",profit_gap_mean,matching_share,within_cell,-0.38864657137639674,1360
+"3 Punishment, wars and timing",profit_gap_mean,undercut_count,within_cell,0.4350660903847773,1360
+"3 Punishment, wars and timing",profit_gap_mean,rounds_played,within_cell,0.2410683988064213,1360
+"3 Punishment, wars and timing",profit_gap_mean,evidence_ending,within_cell,-0.09683977917638342,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,price_index,within_cell,-0.08314033642183644,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,profit_gain_index,within_cell,-0.08899732639033088,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,competitive_share,within_cell,0.48752995387169995,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,matching_share,within_cell,-0.4114060857457279,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,undercut_count,within_cell,0.40857921832895006,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,rounds_played,within_cell,0.13967284356848997,1360
+"3 Punishment, wars and timing",profit_gain_index_gap_mean,evidence_ending,within_cell,-0.05692245045165103,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,price_index,within_cell,0.3303278423561149,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,profit_gain_index,within_cell,0.3384303734427173,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,competitive_share,within_cell,-0.6577313731297061,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,matching_share,within_cell,0.5821982866829711,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,undercut_count,within_cell,-0.40943942029445185,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,rounds_played,within_cell,-0.081096454345581,1360
+"3 Punishment, wars and timing",equal_quote_share_mean,evidence_ending,within_cell,0.03243927423301852,1360
+"3 Punishment, wars and timing",threat_then_punish_n,price_index,within_cell,-0.03244988499203075,1360
+"3 Punishment, wars and timing",threat_then_punish_n,profit_gain_index,within_cell,-0.03162079965580159,1360
+"3 Punishment, wars and timing",threat_then_punish_n,competitive_share,within_cell,0.06822457412180015,1360
+"3 Punishment, wars and timing",threat_then_punish_n,matching_share,within_cell,-0.04876347409265256,1360
+"3 Punishment, wars and timing",threat_then_punish_n,undercut_count,within_cell,0.10526811620166444,1360
+"3 Punishment, wars and timing",threat_then_punish_n,rounds_played,within_cell,0.03483566623878364,1360
+"3 Punishment, wars and timing",threat_then_punish_n,evidence_ending,within_cell,-0.019837800059708387,1360
+4 Play quality (comprehension audit),br_rate,price_index,pooled,-0.27437634198114086,1240
+4 Play quality (comprehension audit),br_rate,profit_gain_index,pooled,-0.27839466048216716,1240
+4 Play quality (comprehension audit),br_rate,competitive_share,pooled,0.618482547484193,1240
+4 Play quality (comprehension audit),br_rate,matching_share,pooled,-0.45885810867214244,1240
+4 Play quality (comprehension audit),br_rate,undercut_count,pooled,0.766258736831048,1240
+4 Play quality (comprehension audit),br_rate,rounds_played,pooled,0.1831013982738892,1240
+4 Play quality (comprehension audit),br_rate,evidence_ending,pooled,-0.1166757986245362,1240
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,price_index,pooled,-0.34093585636848145,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,profit_gain_index,pooled,-0.3452768790536462,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,competitive_share,pooled,0.7458243272678969,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,matching_share,pooled,-0.5468814623018744,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,undercut_count,pooled,0.7637715559460987,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,rounds_played,pooled,0.19906994073899617,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,evidence_ending,pooled,-0.129527842113456,1183
+4 Play quality (comprehension audit),at_br_with_fine_rate,price_index,pooled,-0.6007227585289312,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,profit_gain_index,pooled,-0.5940000785659757,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,competitive_share,pooled,0.7869301682635227,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,matching_share,pooled,-0.6938943226616179,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,undercut_count,pooled,0.5316206665492198,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,rounds_played,pooled,0.19977540240038316,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,evidence_ending,pooled,-0.15388168012256587,1240
+4 Play quality (comprehension audit),at_br_expost_rate,price_index,pooled,-0.5707375939097628,1240
+4 Play quality (comprehension audit),at_br_expost_rate,profit_gain_index,pooled,-0.5613471775352448,1240
+4 Play quality (comprehension audit),at_br_expost_rate,competitive_share,pooled,0.7711407976790124,1240
+4 Play quality (comprehension audit),at_br_expost_rate,matching_share,pooled,-0.6423648504697115,1240
+4 Play quality (comprehension audit),at_br_expost_rate,undercut_count,pooled,0.5038403413232448,1240
+4 Play quality (comprehension audit),at_br_expost_rate,rounds_played,pooled,0.23285220298628687,1240
+4 Play quality (comprehension audit),at_br_expost_rate,evidence_ending,pooled,-0.17198670141634112,1240
+4 Play quality (comprehension audit),dominated_rate,price_index,pooled,-0.45994437936246724,1240
+4 Play quality (comprehension audit),dominated_rate,profit_gain_index,pooled,-0.46006569159806787,1240
+4 Play quality (comprehension audit),dominated_rate,competitive_share,pooled,0.3559800240463179,1240
+4 Play quality (comprehension audit),dominated_rate,matching_share,pooled,-0.721864122763123,1240
+4 Play quality (comprehension audit),dominated_rate,undercut_count,pooled,0.29433407974985043,1240
+4 Play quality (comprehension audit),dominated_rate,rounds_played,pooled,0.09260395586757239,1240
+4 Play quality (comprehension audit),dominated_rate,evidence_ending,pooled,-0.04029397574625297,1240
+4 Play quality (comprehension audit),hold_rate,price_index,pooled,0.679641457663301,1240
+4 Play quality (comprehension audit),hold_rate,profit_gain_index,pooled,0.683252083187982,1240
+4 Play quality (comprehension audit),hold_rate,competitive_share,pooled,-0.7568111450098188,1240
+4 Play quality (comprehension audit),hold_rate,matching_share,pooled,0.9618968758773835,1240
+4 Play quality (comprehension audit),hold_rate,undercut_count,pooled,-0.4136640938329064,1240
+4 Play quality (comprehension audit),hold_rate,rounds_played,pooled,-0.14720325805006657,1240
+4 Play quality (comprehension audit),hold_rate,evidence_ending,pooled,0.0967129972553526,1240
+4 Play quality (comprehension audit),match_rate,price_index,pooled,-0.23172785345138303,1240
+4 Play quality (comprehension audit),match_rate,profit_gain_index,pooled,-0.23885116397161707,1240
+4 Play quality (comprehension audit),match_rate,competitive_share,pooled,0.456339236725487,1240
+4 Play quality (comprehension audit),match_rate,matching_share,pooled,-0.4130579650136681,1240
+4 Play quality (comprehension audit),match_rate,undercut_count,pooled,0.49495523044691764,1240
+4 Play quality (comprehension audit),match_rate,rounds_played,pooled,0.10368931945729483,1240
+4 Play quality (comprehension audit),match_rate,evidence_ending,pooled,-0.020361622218292977,1240
+4 Play quality (comprehension audit),other_undercut_rate,price_index,pooled,-0.33639972581103134,1240
+4 Play quality (comprehension audit),other_undercut_rate,profit_gain_index,pooled,-0.34459678638289015,1240
+4 Play quality (comprehension audit),other_undercut_rate,competitive_share,pooled,0.6773915452092559,1240
+4 Play quality (comprehension audit),other_undercut_rate,matching_share,pooled,-0.5401742987059404,1240
+4 Play quality (comprehension audit),other_undercut_rate,undercut_count,pooled,0.5170410272997886,1240
+4 Play quality (comprehension audit),other_undercut_rate,rounds_played,pooled,0.10169287695368523,1240
+4 Play quality (comprehension audit),other_undercut_rate,evidence_ending,pooled,-0.08509147243909178,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,price_index,pooled,-0.4712053679285309,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,profit_gain_index,pooled,-0.4735265008636655,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,competitive_share,pooled,0.5765523063152805,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,matching_share,pooled,-0.4767346670467763,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,undercut_count,pooled,0.08965289778121127,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,rounds_played,pooled,0.14473813091883891,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,evidence_ending,pooled,-0.14406989872764153,1240
+4 Play quality (comprehension audit),printed_quote_share,price_index,pooled,0.4411211258754446,1240
+4 Play quality (comprehension audit),printed_quote_share,profit_gain_index,pooled,0.4418750434055449,1240
+4 Play quality (comprehension audit),printed_quote_share,competitive_share,pooled,-0.23661461649418294,1240
+4 Play quality (comprehension audit),printed_quote_share,matching_share,pooled,0.4562444518394237,1240
+4 Play quality (comprehension audit),printed_quote_share,undercut_count,pooled,-0.2545795421543288,1240
+4 Play quality (comprehension audit),printed_quote_share,rounds_played,pooled,-0.09669921619338376,1240
+4 Play quality (comprehension audit),printed_quote_share,evidence_ending,pooled,0.04879175704500771,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,price_index,pooled,0.4855139822219767,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,profit_gain_index,pooled,0.48816696054683795,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,competitive_share,pooled,-0.5455546237585157,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,matching_share,pooled,0.815692738580836,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,undercut_count,pooled,-0.5026729527927517,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,rounds_played,pooled,-0.11025210634705743,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,evidence_ending,pooled,0.04926746490315616,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,price_index,pooled,0.44926659580824074,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,profit_gain_index,pooled,0.4632715275681165,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,competitive_share,pooled,-0.5208382397439327,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,matching_share,pooled,0.801965401530037,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,undercut_count,pooled,-0.5424637554121996,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,rounds_played,pooled,-0.09343186987017053,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,evidence_ending,pooled,0.04281465672998802,1240
+4 Play quality (comprehension audit),novel_quote_share,price_index,pooled,-0.4026087692888555,1240
+4 Play quality (comprehension audit),novel_quote_share,profit_gain_index,pooled,-0.40951171652090085,1240
+4 Play quality (comprehension audit),novel_quote_share,competitive_share,pooled,0.39814246846091167,1240
+4 Play quality (comprehension audit),novel_quote_share,matching_share,pooled,-0.6524462120377855,1240
+4 Play quality (comprehension audit),novel_quote_share,undercut_count,pooled,0.3973707284495912,1240
+4 Play quality (comprehension audit),novel_quote_share,rounds_played,pooled,0.11551369287641222,1240
+4 Play quality (comprehension audit),novel_quote_share,evidence_ending,pooled,-0.08271266254925896,1240
+4 Play quality (comprehension audit),react_lower_after_undercut,price_index,pooled,-0.16425605853500644,269
+4 Play quality (comprehension audit),react_lower_after_undercut,profit_gain_index,pooled,-0.16267772147407286,269
+4 Play quality (comprehension audit),react_lower_after_undercut,competitive_share,pooled,0.2774443088591475,269
+4 Play quality (comprehension audit),react_lower_after_undercut,matching_share,pooled,0.05926503929725822,269
+4 Play quality (comprehension audit),react_lower_after_undercut,undercut_count,pooled,0.3048186080345098,269
+4 Play quality (comprehension audit),react_lower_after_undercut,rounds_played,pooled,-0.032053219091189245,269
+4 Play quality (comprehension audit),react_lower_after_undercut,evidence_ending,pooled,-0.03828434304401413,269
+4 Play quality (comprehension audit),react_reach_after_undercut,price_index,pooled,-0.1318803576945971,269
+4 Play quality (comprehension audit),react_reach_after_undercut,profit_gain_index,pooled,-0.13144280906449285,269
+4 Play quality (comprehension audit),react_reach_after_undercut,competitive_share,pooled,0.2561187404004632,269
+4 Play quality (comprehension audit),react_reach_after_undercut,matching_share,pooled,0.10538196592593056,269
+4 Play quality (comprehension audit),react_reach_after_undercut,undercut_count,pooled,0.3606465229037446,269
+4 Play quality (comprehension audit),react_reach_after_undercut,rounds_played,pooled,-0.03976604183717254,269
+4 Play quality (comprehension audit),react_reach_after_undercut,evidence_ending,pooled,0.01046535058875749,269
+4 Play quality (comprehension audit),mean_regret_vs_prev,price_index,pooled,0.7846372650975352,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,profit_gain_index,pooled,0.7816832595979839,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,competitive_share,pooled,-0.4692049160908162,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,matching_share,pooled,0.39570361137784504,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,undercut_count,pooled,-0.24589794483696203,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,rounds_played,pooled,-0.17706458082460935,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,evidence_ending,pooled,0.16118464481324918,1240
+4 Play quality (comprehension audit),br_rate,price_index,within_cell,-0.1985154776925156,1240
+4 Play quality (comprehension audit),br_rate,profit_gain_index,within_cell,-0.20151354432143312,1240
+4 Play quality (comprehension audit),br_rate,competitive_share,within_cell,0.503348747647785,1240
+4 Play quality (comprehension audit),br_rate,matching_share,within_cell,-0.33170710874176423,1240
+4 Play quality (comprehension audit),br_rate,undercut_count,within_cell,0.6084043443422286,1240
+4 Play quality (comprehension audit),br_rate,rounds_played,within_cell,0.19570220125716062,1240
+4 Play quality (comprehension audit),br_rate,evidence_ending,within_cell,-0.17353339192386255,1240
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,price_index,within_cell,-0.24227761745145354,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,profit_gain_index,within_cell,-0.24528629438796198,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,competitive_share,within_cell,0.5599345888829576,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,matching_share,within_cell,-0.3744208351417969,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,undercut_count,within_cell,0.608272930767496,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,rounds_played,within_cell,0.20781790917085333,1183
+4 Play quality (comprehension audit),br_rate_excl_floor_rounds,evidence_ending,within_cell,-0.18060888940576827,1183
+4 Play quality (comprehension audit),at_br_with_fine_rate,price_index,within_cell,-0.4718432625659723,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,profit_gain_index,within_cell,-0.4804475487284693,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,competitive_share,within_cell,0.6538968835604162,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,matching_share,within_cell,-0.5537266102145992,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,undercut_count,within_cell,0.466630827533699,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,rounds_played,within_cell,0.1634217228684063,1240
+4 Play quality (comprehension audit),at_br_with_fine_rate,evidence_ending,within_cell,-0.1493913995048409,1240
+4 Play quality (comprehension audit),at_br_expost_rate,price_index,within_cell,-0.45134515237877665,1240
+4 Play quality (comprehension audit),at_br_expost_rate,profit_gain_index,within_cell,-0.45495897473806685,1240
+4 Play quality (comprehension audit),at_br_expost_rate,competitive_share,within_cell,0.5956525715717436,1240
+4 Play quality (comprehension audit),at_br_expost_rate,matching_share,within_cell,-0.45927098832082736,1240
+4 Play quality (comprehension audit),at_br_expost_rate,undercut_count,within_cell,0.41263430157793335,1240
+4 Play quality (comprehension audit),at_br_expost_rate,rounds_played,within_cell,0.23480407959066044,1240
+4 Play quality (comprehension audit),at_br_expost_rate,evidence_ending,within_cell,-0.17939907134716757,1240
+4 Play quality (comprehension audit),dominated_rate,price_index,within_cell,-0.26636771845178364,1240
+4 Play quality (comprehension audit),dominated_rate,profit_gain_index,within_cell,-0.2744423478736741,1240
+4 Play quality (comprehension audit),dominated_rate,competitive_share,within_cell,0.24043841238113303,1240
+4 Play quality (comprehension audit),dominated_rate,matching_share,within_cell,-0.6945512189716586,1240
+4 Play quality (comprehension audit),dominated_rate,undercut_count,within_cell,0.18144961297900608,1240
+4 Play quality (comprehension audit),dominated_rate,rounds_played,within_cell,0.054360630228721785,1240
+4 Play quality (comprehension audit),dominated_rate,evidence_ending,within_cell,-0.04293889917123289,1240
+4 Play quality (comprehension audit),hold_rate,price_index,within_cell,0.49399809903407743,1240
+4 Play quality (comprehension audit),hold_rate,profit_gain_index,within_cell,0.5003618240905026,1240
+4 Play quality (comprehension audit),hold_rate,competitive_share,within_cell,-0.6350129714017992,1240
+4 Play quality (comprehension audit),hold_rate,matching_share,within_cell,0.9082048055681764,1240
+4 Play quality (comprehension audit),hold_rate,undercut_count,within_cell,-0.2999547717950252,1240
+4 Play quality (comprehension audit),hold_rate,rounds_played,within_cell,-0.06636802643520837,1240
+4 Play quality (comprehension audit),hold_rate,evidence_ending,within_cell,0.03723088392108322,1240
+4 Play quality (comprehension audit),match_rate,price_index,within_cell,-0.08598486357684366,1240
+4 Play quality (comprehension audit),match_rate,profit_gain_index,within_cell,-0.0873927182131581,1240
+4 Play quality (comprehension audit),match_rate,competitive_share,within_cell,0.10650021527945219,1240
+4 Play quality (comprehension audit),match_rate,matching_share,within_cell,-0.05538828211308734,1240
+4 Play quality (comprehension audit),match_rate,undercut_count,within_cell,0.30433964544347103,1240
+4 Play quality (comprehension audit),match_rate,rounds_played,within_cell,0.04911984280707231,1240
+4 Play quality (comprehension audit),match_rate,evidence_ending,within_cell,0.0016592208341222293,1240
+4 Play quality (comprehension audit),other_undercut_rate,price_index,within_cell,-0.3106321837334377,1240
+4 Play quality (comprehension audit),other_undercut_rate,profit_gain_index,within_cell,-0.31305420789492894,1240
+4 Play quality (comprehension audit),other_undercut_rate,competitive_share,within_cell,0.7238058173064681,1240
+4 Play quality (comprehension audit),other_undercut_rate,matching_share,within_cell,-0.5143046511986291,1240
+4 Play quality (comprehension audit),other_undercut_rate,undercut_count,within_cell,0.3553415505170487,1240
+4 Play quality (comprehension audit),other_undercut_rate,rounds_played,within_cell,0.06089732632100658,1240
+4 Play quality (comprehension audit),other_undercut_rate,evidence_ending,within_cell,-0.051600496116306134,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,price_index,within_cell,-0.43066771236644813,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,profit_gain_index,within_cell,-0.43174995949214073,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,competitive_share,within_cell,0.47252837212107723,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,matching_share,within_cell,-0.3767370612007665,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,undercut_count,within_cell,0.09089382723487588,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,rounds_played,within_cell,0.13343799304708456,1240
+4 Play quality (comprehension audit),rival_floor_quote_floor_rate,evidence_ending,within_cell,-0.13450988347232723,1240
+4 Play quality (comprehension audit),printed_quote_share,price_index,within_cell,0.28396182408332116,1240
+4 Play quality (comprehension audit),printed_quote_share,profit_gain_index,within_cell,0.2834562442756984,1240
+4 Play quality (comprehension audit),printed_quote_share,competitive_share,within_cell,-0.19509777505161435,1240
+4 Play quality (comprehension audit),printed_quote_share,matching_share,within_cell,0.4125135404454854,1240
+4 Play quality (comprehension audit),printed_quote_share,undercut_count,within_cell,-0.22850757214343434,1240
+4 Play quality (comprehension audit),printed_quote_share,rounds_played,within_cell,-0.11322122117301225,1240
+4 Play quality (comprehension audit),printed_quote_share,evidence_ending,within_cell,0.07218785144700032,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,price_index,within_cell,0.3251309098945289,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,profit_gain_index,within_cell,0.3321484302399021,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,competitive_share,within_cell,-0.558434123068567,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,matching_share,within_cell,0.8803163243415131,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,undercut_count,within_cell,-0.39031806567037586,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,rounds_played,within_cell,-0.057817001143031704,1240
+4 Play quality (comprehension audit),quote_eq_rival_last_share,evidence_ending,within_cell,0.04753865607292239,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,price_index,within_cell,0.30206965672849123,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,profit_gain_index,within_cell,0.30929672092309596,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,competitive_share,within_cell,-0.41811266002852604,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,matching_share,within_cell,0.7601568155973566,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,undercut_count,within_cell,-0.42541836171254593,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,rounds_played,within_cell,-0.03240699177978698,1240
+4 Play quality (comprehension audit),quote_eq_own_last_share,evidence_ending,within_cell,0.03512429778006776,1240
+4 Play quality (comprehension audit),novel_quote_share,price_index,within_cell,-0.20859093188552869,1240
+4 Play quality (comprehension audit),novel_quote_share,profit_gain_index,within_cell,-0.21183251718633608,1240
+4 Play quality (comprehension audit),novel_quote_share,competitive_share,within_cell,0.29368587797789936,1240
+4 Play quality (comprehension audit),novel_quote_share,matching_share,within_cell,-0.5919883303680185,1240
+4 Play quality (comprehension audit),novel_quote_share,undercut_count,within_cell,0.3017871897056861,1240
+4 Play quality (comprehension audit),novel_quote_share,rounds_played,within_cell,0.10870066819264175,1240
+4 Play quality (comprehension audit),novel_quote_share,evidence_ending,within_cell,-0.10412977821884305,1240
+4 Play quality (comprehension audit),react_lower_after_undercut,price_index,within_cell,0.09168210741489155,269
+4 Play quality (comprehension audit),react_lower_after_undercut,profit_gain_index,within_cell,0.093368082847179,269
+4 Play quality (comprehension audit),react_lower_after_undercut,competitive_share,within_cell,-0.20519350448481335,269
+4 Play quality (comprehension audit),react_lower_after_undercut,matching_share,within_cell,0.2870694855581436,269
+4 Play quality (comprehension audit),react_lower_after_undercut,undercut_count,within_cell,-0.19488113139763405,269
+4 Play quality (comprehension audit),react_lower_after_undercut,rounds_played,within_cell,-0.04746430214608012,269
+4 Play quality (comprehension audit),react_lower_after_undercut,evidence_ending,within_cell,0.15571031428851392,269
+4 Play quality (comprehension audit),react_reach_after_undercut,price_index,within_cell,0.06840227261747599,269
+4 Play quality (comprehension audit),react_reach_after_undercut,profit_gain_index,within_cell,0.06926232047777456,269
+4 Play quality (comprehension audit),react_reach_after_undercut,competitive_share,within_cell,-0.28731013649498555,269
+4 Play quality (comprehension audit),react_reach_after_undercut,matching_share,within_cell,0.399230453506295,269
+4 Play quality (comprehension audit),react_reach_after_undercut,undercut_count,within_cell,-0.26468312741686506,269
+4 Play quality (comprehension audit),react_reach_after_undercut,rounds_played,within_cell,-0.1050945915593926,269
+4 Play quality (comprehension audit),react_reach_after_undercut,evidence_ending,within_cell,0.2032347915103093,269
+4 Play quality (comprehension audit),mean_regret_vs_prev,price_index,within_cell,0.7120597364897101,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,profit_gain_index,within_cell,0.7091793360457602,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,competitive_share,within_cell,-0.34078143273200934,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,matching_share,within_cell,0.1309510519557022,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,undercut_count,within_cell,-0.20070284756702653,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,rounds_played,within_cell,-0.15468628250989136,1240
+4 Play quality (comprehension audit),mean_regret_vs_prev,evidence_ending,within_cell,0.13540729862001183,1240
+5 Self-report scores (D set),score_mean,price_index,pooled,-0.05588867588024555,160
+5 Self-report scores (D set),score_mean,profit_gain_index,pooled,-0.058316466722353,160
+5 Self-report scores (D set),score_mean,competitive_share,pooled,0.16755909375808817,160
+5 Self-report scores (D set),score_mean,matching_share,pooled,-0.15523330179829362,160
+5 Self-report scores (D set),score_mean,undercut_count,pooled,0.16849101245526352,160
+5 Self-report scores (D set),score_mean,rounds_played,pooled,0.01747295386713415,160
+5 Self-report scores (D set),score_mean,evidence_ending,pooled,0.004730502415677516,160
+5 Self-report scores (D set),score_first,price_index,pooled,0.06699893832861718,160
+5 Self-report scores (D set),score_first,profit_gain_index,pooled,0.06736680248134923,160
+5 Self-report scores (D set),score_first,competitive_share,pooled,0.04646053558869019,160
+5 Self-report scores (D set),score_first,matching_share,pooled,0.002028109882909416,160
+5 Self-report scores (D set),score_first,undercut_count,pooled,0.15704476657113098,160
+5 Self-report scores (D set),score_first,rounds_played,pooled,-0.013459244892054687,160
+5 Self-report scores (D set),score_first,evidence_ending,pooled,-0.03210014312945976,160
+5 Self-report scores (D set),score_last,price_index,pooled,-0.0018634901730412005,160
+5 Self-report scores (D set),score_last,profit_gain_index,pooled,-0.0041890167402658975,160
+5 Self-report scores (D set),score_last,competitive_share,pooled,0.08855370960510407,160
+5 Self-report scores (D set),score_last,matching_share,pooled,-0.043456217638550156,160
+5 Self-report scores (D set),score_last,undercut_count,pooled,0.10516018944923639,160
+5 Self-report scores (D set),score_last,rounds_played,pooled,0.006751015586076242,160
+5 Self-report scores (D set),score_last,evidence_ending,pooled,-0.04517627357927204,160
+5 Self-report scores (D set),score_mean_first_half,price_index,pooled,-0.050921950732756155,160
+5 Self-report scores (D set),score_mean_first_half,profit_gain_index,pooled,-0.05300329865756708,160
+5 Self-report scores (D set),score_mean_first_half,competitive_share,pooled,0.16839379058118642,160
+5 Self-report scores (D set),score_mean_first_half,matching_share,pooled,-0.13111198105066532,160
+5 Self-report scores (D set),score_mean_first_half,undercut_count,pooled,0.18443328231319217,160
+5 Self-report scores (D set),score_mean_first_half,rounds_played,pooled,0.015866110342203095,160
+5 Self-report scores (D set),score_mean_first_half,evidence_ending,pooled,0.014202797162155044,160
+5 Self-report scores (D set),score_mean_second_half,price_index,pooled,-0.048279737437825744,160
+5 Self-report scores (D set),score_mean_second_half,profit_gain_index,pooled,-0.05065887553574505,160
+5 Self-report scores (D set),score_mean_second_half,competitive_share,pooled,0.14081752891497337,160
+5 Self-report scores (D set),score_mean_second_half,matching_share,pooled,-0.15303595888673832,160
+5 Self-report scores (D set),score_mean_second_half,undercut_count,pooled,0.15815818565437878,160
+5 Self-report scores (D set),score_mean_second_half,rounds_played,pooled,0.01611879415148169,160
+5 Self-report scores (D set),score_mean_second_half,evidence_ending,pooled,-0.025303586503063226,160
+5 Self-report scores (D set),score_min,price_index,pooled,-0.020589873649915873,160
+5 Self-report scores (D set),score_min,profit_gain_index,pooled,-0.021532272635674546,160
+5 Self-report scores (D set),score_min,competitive_share,pooled,0.04799198768506985,160
+5 Self-report scores (D set),score_min,matching_share,pooled,-0.047530369337315706,160
+5 Self-report scores (D set),score_min,undercut_count,pooled,0.1054007218339175,160
+5 Self-report scores (D set),score_min,rounds_played,pooled,-0.09303045070841369,160
+5 Self-report scores (D set),score_min,evidence_ending,pooled,0.059397933152622394,160
+5 Self-report scores (D set),score_max,price_index,pooled,0.01463636637740797,160
+5 Self-report scores (D set),score_max,profit_gain_index,pooled,0.011963074009395383,160
+5 Self-report scores (D set),score_max,competitive_share,pooled,0.16871890436273532,160
+5 Self-report scores (D set),score_max,matching_share,pooled,-0.18317519669876364,160
+5 Self-report scores (D set),score_max,undercut_count,pooled,0.10858595197974576,160
+5 Self-report scores (D set),score_max,rounds_played,pooled,0.15335787442392276,160
+5 Self-report scores (D set),score_max,evidence_ending,pooled,-0.08290552967134154,160
+5 Self-report scores (D set),score_mean,price_index,within_cell,-0.015938274315327683,160
+5 Self-report scores (D set),score_mean,profit_gain_index,within_cell,-0.023395827605684354,160
+5 Self-report scores (D set),score_mean,competitive_share,within_cell,0.08662668645238254,160
+5 Self-report scores (D set),score_mean,matching_share,within_cell,-0.14257750085612275,160
+5 Self-report scores (D set),score_mean,undercut_count,within_cell,0.16958366112403125,160
+5 Self-report scores (D set),score_mean,rounds_played,within_cell,0.008583039277252137,160
+5 Self-report scores (D set),score_mean,evidence_ending,within_cell,0.04491634496487983,160
+5 Self-report scores (D set),score_first,price_index,within_cell,0.09483916521394475,160
+5 Self-report scores (D set),score_first,profit_gain_index,within_cell,0.09094069163338812,160
+5 Self-report scores (D set),score_first,competitive_share,within_cell,-0.0441354802508975,160
+5 Self-report scores (D set),score_first,matching_share,within_cell,0.04593650286130996,160
+5 Self-report scores (D set),score_first,undercut_count,within_cell,0.14916727407697264,160
+5 Self-report scores (D set),score_first,rounds_played,within_cell,-0.049318745513347695,160
+5 Self-report scores (D set),score_first,evidence_ending,within_cell,-0.007173869494179684,160
+5 Self-report scores (D set),score_last,price_index,within_cell,0.11777323838295606,160
+5 Self-report scores (D set),score_last,profit_gain_index,within_cell,0.11083044057644888,160
+5 Self-report scores (D set),score_last,competitive_share,within_cell,-0.07730416652323543,160
+5 Self-report scores (D set),score_last,matching_share,within_cell,0.0806685489906437,160
+5 Self-report scores (D set),score_last,undercut_count,within_cell,0.024598971952165136,160
+5 Self-report scores (D set),score_last,rounds_played,within_cell,-0.0281024272544185,160
+5 Self-report scores (D set),score_last,evidence_ending,within_cell,-0.05669076290394103,160
+5 Self-report scores (D set),score_mean_first_half,price_index,within_cell,0.0016350804365538243,160
+5 Self-report scores (D set),score_mean_first_half,profit_gain_index,within_cell,-0.003347131414919036,160
+5 Self-report scores (D set),score_mean_first_half,competitive_share,within_cell,0.09304765531441993,160
+5 Self-report scores (D set),score_mean_first_half,matching_share,within_cell,-0.08161863243864732,160
+5 Self-report scores (D set),score_mean_first_half,undercut_count,within_cell,0.20820258521527996,160
+5 Self-report scores (D set),score_mean_first_half,rounds_played,within_cell,-0.0022654928614587776,160
+5 Self-report scores (D set),score_mean_first_half,evidence_ending,within_cell,0.08477338640583315,160
+5 Self-report scores (D set),score_mean_second_half,price_index,within_cell,0.01591121556853247,160
+5 Self-report scores (D set),score_mean_second_half,profit_gain_index,within_cell,0.0074856394645597185,160
+5 Self-report scores (D set),score_mean_second_half,competitive_share,within_cell,0.05938790604234653,160
+5 Self-report scores (D set),score_mean_second_half,matching_share,within_cell,-0.14967263737566913,160
+5 Self-report scores (D set),score_mean_second_half,undercut_count,within_cell,0.13133129679187952,160
+5 Self-report scores (D set),score_mean_second_half,rounds_played,within_cell,0.054332732936519794,160
+5 Self-report scores (D set),score_mean_second_half,evidence_ending,within_cell,-0.045059893892570875,160
+5 Self-report scores (D set),score_min,price_index,within_cell,0.09444696597889352,160
+5 Self-report scores (D set),score_min,profit_gain_index,within_cell,0.08775677554419975,160
+5 Self-report scores (D set),score_min,competitive_share,within_cell,-0.0416489758584908,160
+5 Self-report scores (D set),score_min,matching_share,within_cell,-0.07319196658721595,160
+5 Self-report scores (D set),score_min,undercut_count,within_cell,0.07182992863688155,160
+5 Self-report scores (D set),score_min,rounds_played,within_cell,-0.2155364357901578,160
+5 Self-report scores (D set),score_min,evidence_ending,within_cell,0.1481371415677854,160
+5 Self-report scores (D set),score_max,price_index,within_cell,-0.07756613435266524,160
+5 Self-report scores (D set),score_max,profit_gain_index,within_cell,-0.08229145946936932,160
+5 Self-report scores (D set),score_max,competitive_share,within_cell,0.16298733504972346,160
+5 Self-report scores (D set),score_max,matching_share,within_cell,-0.19442627818416153,160
+5 Self-report scores (D set),score_max,undercut_count,within_cell,0.12765377669242897,160
+5 Self-report scores (D set),score_max,rounds_played,within_cell,0.27843253272492946,160
+5 Self-report scores (D set),score_max,evidence_ending,within_cell,-0.11678481256292073,160
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,price_index,pooled,-0.258034517495447,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,profit_gain_index,pooled,-0.25681221276360183,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,competitive_share,pooled,0.056005076297903515,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,matching_share,pooled,-0.2557532554123919,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,undercut_count,pooled,0.03999661503286499,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,rounds_played,pooled,0.035542336516120994,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,evidence_ending,pooled,0.028773669334442996,80
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,price_index,pooled,0.08329192528560932,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,profit_gain_index,pooled,0.0817793647963116,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,competitive_share,pooled,-0.11616910410687714,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,matching_share,pooled,-0.15096634692506009,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,undercut_count,pooled,-0.19450961999507185,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,rounds_played,pooled,0.06127656384240856,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,evidence_ending,pooled,-0.030278664989560746,120
+6 Introspection and say-vs-do,candour_confidant,price_index,pooled,-0.2760752217680497,80
+6 Introspection and say-vs-do,candour_confidant,profit_gain_index,pooled,-0.2748141172810947,80
+6 Introspection and say-vs-do,candour_confidant,competitive_share,pooled,0.07213856629470317,80
+6 Introspection and say-vs-do,candour_confidant,matching_share,pooled,-0.27763167766599905,80
+6 Introspection and say-vs-do,candour_confidant,undercut_count,pooled,0.043778036163208835,80
+6 Introspection and say-vs-do,candour_confidant,rounds_played,pooled,0.07171582336945168,80
+6 Introspection and say-vs-do,candour_confidant,evidence_ending,pooled,-0.030664794225834003,80
+6 Introspection and say-vs-do,candour_public,price_index,pooled,0.06844553375433007,120
+6 Introspection and say-vs-do,candour_public,profit_gain_index,pooled,0.06685080222577887,120
+6 Introspection and say-vs-do,candour_public,competitive_share,pooled,-0.11298790767622421,120
+6 Introspection and say-vs-do,candour_public,matching_share,pooled,-0.15271172079075937,120
+6 Introspection and say-vs-do,candour_public,undercut_count,pooled,-0.19392312135936574,120
+6 Introspection and say-vs-do,candour_public,rounds_played,pooled,0.058885603446684434,120
+6 Introspection and say-vs-do,candour_public,evidence_ending,pooled,-0.013555831309783894,120
+6 Introspection and say-vs-do,invented_confession_confidant,price_index,pooled,-0.2082788995166663,33
+6 Introspection and say-vs-do,invented_confession_confidant,profit_gain_index,pooled,-0.2082788995166663,33
+6 Introspection and say-vs-do,invented_confession_confidant,competitive_share,pooled,-0.11575189536804724,33
+6 Introspection and say-vs-do,invented_confession_confidant,matching_share,pooled,-0.05501235058930614,33
+6 Introspection and say-vs-do,invented_confession_confidant,undercut_count,pooled,,33
+6 Introspection and say-vs-do,invented_confession_confidant,rounds_played,pooled,-0.04450891920153432,33
+6 Introspection and say-vs-do,invented_confession_confidant,evidence_ending,pooled,0.42163481636654937,33
+6 Introspection and say-vs-do,invented_confession_public,price_index,pooled,0.06240920278630685,37
+6 Introspection and say-vs-do,invented_confession_public,profit_gain_index,pooled,0.06240920278630685,37
+6 Introspection and say-vs-do,invented_confession_public,competitive_share,pooled,-0.12478250120264864,37
+6 Introspection and say-vs-do,invented_confession_public,matching_share,pooled,0.05214065937302255,37
+6 Introspection and say-vs-do,invented_confession_public,undercut_count,pooled,-0.1716239201003487,37
+6 Introspection and say-vs-do,invented_confession_public,rounds_played,pooled,0.025099774625981588,37
+6 Introspection and say-vs-do,invented_confession_public,evidence_ending,pooled,-0.09389565339627526,37
+6 Introspection and say-vs-do,evasive_answer_share,price_index,pooled,-0.3397618665193373,200
+6 Introspection and say-vs-do,evasive_answer_share,profit_gain_index,pooled,-0.3405730064904688,200
+6 Introspection and say-vs-do,evasive_answer_share,competitive_share,pooled,0.2544059684088147,200
+6 Introspection and say-vs-do,evasive_answer_share,matching_share,pooled,-0.31522155476408925,200
+6 Introspection and say-vs-do,evasive_answer_share,undercut_count,pooled,0.05953067650772211,200
+6 Introspection and say-vs-do,evasive_answer_share,rounds_played,pooled,0.17521132238418355,200
+6 Introspection and say-vs-do,evasive_answer_share,evidence_ending,pooled,-0.09212133741332913,200
+6 Introspection and say-vs-do,understated_answer_share,price_index,pooled,0.09827941471016809,200
+6 Introspection and say-vs-do,understated_answer_share,profit_gain_index,pooled,0.09849201338527115,200
+6 Introspection and say-vs-do,understated_answer_share,competitive_share,pooled,0.06047632049400745,200
+6 Introspection and say-vs-do,understated_answer_share,matching_share,pooled,-0.022052666129698716,200
+6 Introspection and say-vs-do,understated_answer_share,undercut_count,pooled,0.05917013847823013,200
+6 Introspection and say-vs-do,understated_answer_share,rounds_played,pooled,0.11937713893132182,200
+6 Introspection and say-vs-do,understated_answer_share,evidence_ending,pooled,-0.12027110489984955,200
+6 Introspection and say-vs-do,hold_after_agreement_share,price_index,pooled,0.17441724139906356,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,profit_gain_index,pooled,0.17956948167377845,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,competitive_share,pooled,-0.529554063028445,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,matching_share,pooled,0.3695966210251417,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,undercut_count,pooled,-0.5733791351054294,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,rounds_played,pooled,-0.17276434680889244,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,evidence_ending,pooled,0.09068219789116566,1137
+6 Introspection and say-vs-do,answer_words_confidant_mean,price_index,pooled,-0.12579085869951642,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,profit_gain_index,pooled,-0.12494391582031657,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,competitive_share,pooled,-0.11923469242007359,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,matching_share,pooled,0.07371375052187655,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,undercut_count,pooled,-0.15386224859281325,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,rounds_played,pooled,0.07967748313128552,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,evidence_ending,pooled,0.08438258158815902,80
+6 Introspection and say-vs-do,answer_words_public_mean,price_index,pooled,0.04814943835735329,120
+6 Introspection and say-vs-do,answer_words_public_mean,profit_gain_index,pooled,0.04830535810339455,120
+6 Introspection and say-vs-do,answer_words_public_mean,competitive_share,pooled,0.006478441308966981,120
+6 Introspection and say-vs-do,answer_words_public_mean,matching_share,pooled,-0.05201143778081033,120
+6 Introspection and say-vs-do,answer_words_public_mean,undercut_count,pooled,-0.15034562510699107,120
+6 Introspection and say-vs-do,answer_words_public_mean,rounds_played,pooled,0.1523083904004193,120
+6 Introspection and say-vs-do,answer_words_public_mean,evidence_ending,pooled,-0.06999679140717902,120
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,price_index,pooled,-0.10630412730293046,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,profit_gain_index,pooled,-0.11024511440907865,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,competitive_share,pooled,0.3438403321168312,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,matching_share,pooled,-0.2508081487695486,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,undercut_count,pooled,0.40278977296803586,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,rounds_played,pooled,0.1587494744561846,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,evidence_ending,pooled,-0.08071290973038638,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,price_index,pooled,0.22658985321618832,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,profit_gain_index,pooled,0.22779952680042906,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,competitive_share,pooled,-0.2533441965887943,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,matching_share,pooled,0.3133923876960103,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,undercut_count,pooled,-0.20411626928469795,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,rounds_played,pooled,0.2795572759453679,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,evidence_ending,pooled,-0.17330413919010837,1360
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,price_index,within_cell,-0.18075489064429137,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,profit_gain_index,within_cell,-0.1803284625223276,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,competitive_share,within_cell,0.13990699040061785,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,matching_share,within_cell,-0.330024080012461,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,undercut_count,within_cell,0.15145580875530562,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,rounds_played,within_cell,0.10070183825032875,80
+6 Introspection and say-vs-do,answer_mentions_coordination_confidant_share,evidence_ending,within_cell,-0.002514590810751986,80
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,price_index,within_cell,0.05794093440315802,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,profit_gain_index,within_cell,0.05429230281307043,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,competitive_share,within_cell,-0.1825215014710875,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,matching_share,within_cell,-0.11492363736383095,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,undercut_count,within_cell,-0.16510234347500527,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,rounds_played,within_cell,0.1031181967210052,120
+6 Introspection and say-vs-do,answer_mentions_coordination_public_share,evidence_ending,within_cell,-0.08740677712168816,120
+6 Introspection and say-vs-do,candour_confidant,price_index,within_cell,-0.1922678692023572,80
+6 Introspection and say-vs-do,candour_confidant,profit_gain_index,within_cell,-0.1918399099233837,80
+6 Introspection and say-vs-do,candour_confidant,competitive_share,within_cell,0.13377715793077588,80
+6 Introspection and say-vs-do,candour_confidant,matching_share,within_cell,-0.33746035177520606,80
+6 Introspection and say-vs-do,candour_confidant,undercut_count,within_cell,0.15155579373920333,80
+6 Introspection and say-vs-do,candour_confidant,rounds_played,within_cell,0.12385307467148768,80
+6 Introspection and say-vs-do,candour_confidant,evidence_ending,within_cell,-0.065422521882815,80
+6 Introspection and say-vs-do,candour_public,price_index,within_cell,0.021073498221838332,120
+6 Introspection and say-vs-do,candour_public,profit_gain_index,within_cell,0.017426104617298432,120
+6 Introspection and say-vs-do,candour_public,competitive_share,within_cell,-0.17743932912966004,120
+6 Introspection and say-vs-do,candour_public,matching_share,within_cell,-0.1256699619461325,120
+6 Introspection and say-vs-do,candour_public,undercut_count,within_cell,-0.16518616241350534,120
+6 Introspection and say-vs-do,candour_public,rounds_played,within_cell,0.11531960277168725,120
+6 Introspection and say-vs-do,candour_public,evidence_ending,within_cell,-0.07170994437615025,120
+6 Introspection and say-vs-do,invented_confession_confidant,price_index,within_cell,-0.13019809515232875,33
+6 Introspection and say-vs-do,invented_confession_confidant,profit_gain_index,within_cell,-0.13019809515232875,33
+6 Introspection and say-vs-do,invented_confession_confidant,competitive_share,within_cell,-0.27591441379852494,33
+6 Introspection and say-vs-do,invented_confession_confidant,matching_share,within_cell,0.12063354412388118,33
+6 Introspection and say-vs-do,invented_confession_confidant,undercut_count,within_cell,,33
+6 Introspection and say-vs-do,invented_confession_confidant,rounds_played,within_cell,-0.14144971834707593,33
+6 Introspection and say-vs-do,invented_confession_confidant,evidence_ending,within_cell,0.3844570012132297,33
+6 Introspection and say-vs-do,invented_confession_public,price_index,within_cell,0.20226651135849408,37
+6 Introspection and say-vs-do,invented_confession_public,profit_gain_index,within_cell,0.20226651135849408,37
+6 Introspection and say-vs-do,invented_confession_public,competitive_share,within_cell,-0.37148575821783325,37
+6 Introspection and say-vs-do,invented_confession_public,matching_share,within_cell,0.39109606949438624,37
+6 Introspection and say-vs-do,invented_confession_public,undercut_count,within_cell,-0.18817019458462023,37
+6 Introspection and say-vs-do,invented_confession_public,rounds_played,within_cell,0.08701931450577485,37
+6 Introspection and say-vs-do,invented_confession_public,evidence_ending,within_cell,-0.107639857730448,37
+6 Introspection and say-vs-do,evasive_answer_share,price_index,within_cell,-0.2444518551504289,200
+6 Introspection and say-vs-do,evasive_answer_share,profit_gain_index,within_cell,-0.24940293708128386,200
+6 Introspection and say-vs-do,evasive_answer_share,competitive_share,within_cell,0.22734170791982955,200
+6 Introspection and say-vs-do,evasive_answer_share,matching_share,within_cell,-0.3112269121147018,200
+6 Introspection and say-vs-do,evasive_answer_share,undercut_count,within_cell,0.04473830290586257,200
+6 Introspection and say-vs-do,evasive_answer_share,rounds_played,within_cell,0.12942634443850173,200
+6 Introspection and say-vs-do,evasive_answer_share,evidence_ending,within_cell,-0.054017217314505366,200
+6 Introspection and say-vs-do,understated_answer_share,price_index,within_cell,0.06907409747966019,200
+6 Introspection and say-vs-do,understated_answer_share,profit_gain_index,within_cell,0.06602043958988466,200
+6 Introspection and say-vs-do,understated_answer_share,competitive_share,within_cell,0.065263257038143,200
+6 Introspection and say-vs-do,understated_answer_share,matching_share,within_cell,-0.022968558398232024,200
+6 Introspection and say-vs-do,understated_answer_share,undercut_count,within_cell,0.06168807264619276,200
+6 Introspection and say-vs-do,understated_answer_share,rounds_played,within_cell,0.12678630324930956,200
+6 Introspection and say-vs-do,understated_answer_share,evidence_ending,within_cell,-0.1295994480873786,200
+6 Introspection and say-vs-do,hold_after_agreement_share,price_index,within_cell,0.17043014384283936,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,profit_gain_index,within_cell,0.17702597881434073,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,competitive_share,within_cell,-0.5232732923690406,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,matching_share,within_cell,0.3563069665889772,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,undercut_count,within_cell,-0.574109056978235,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,rounds_played,within_cell,-0.15063245778348144,1137
+6 Introspection and say-vs-do,hold_after_agreement_share,evidence_ending,within_cell,0.10397736321731912,1137
+6 Introspection and say-vs-do,answer_words_confidant_mean,price_index,within_cell,-0.24815797085727803,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,profit_gain_index,within_cell,-0.2554406607121063,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,competitive_share,within_cell,-0.006900540585372179,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,matching_share,within_cell,-0.13064743971425002,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,undercut_count,within_cell,-0.1577669315982373,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,rounds_played,within_cell,0.20383445035390704,80
+6 Introspection and say-vs-do,answer_words_confidant_mean,evidence_ending,within_cell,0.12055279647169068,80
+6 Introspection and say-vs-do,answer_words_public_mean,price_index,within_cell,-0.10461283279483105,120
+6 Introspection and say-vs-do,answer_words_public_mean,profit_gain_index,within_cell,-0.10156157020743149,120
+6 Introspection and say-vs-do,answer_words_public_mean,competitive_share,within_cell,0.05758289219624359,120
+6 Introspection and say-vs-do,answer_words_public_mean,matching_share,within_cell,-0.135475079897173,120
+6 Introspection and say-vs-do,answer_words_public_mean,undercut_count,within_cell,-0.0007417701651197482,120
+6 Introspection and say-vs-do,answer_words_public_mean,rounds_played,within_cell,0.2838139423678168,120
+6 Introspection and say-vs-do,answer_words_public_mean,evidence_ending,within_cell,-0.16160599017185495,120
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,price_index,within_cell,-0.1390030141957672,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,profit_gain_index,within_cell,-0.14469557268306685,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,competitive_share,within_cell,0.36998622521808155,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,matching_share,within_cell,-0.2750758573194431,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,undercut_count,within_cell,0.38946042317719515,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,rounds_played,within_cell,0.13193362698271038,1360
+6 Introspection and say-vs-do,agreed_then_undercut_rounds,evidence_ending,within_cell,-0.09495563217757184,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,price_index,within_cell,0.009075986740939318,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,profit_gain_index,within_cell,0.008275346558190351,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,competitive_share,within_cell,0.12050370628129592,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,matching_share,within_cell,-0.006472715165258558,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,undercut_count,within_cell,0.009298244609248066,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,rounds_played,within_cell,0.40120922464824027,1360
+6 Introspection and say-vs-do,held_after_agreement_rounds,evidence_ending,within_cell,-0.31968084918727846,1360
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,price_index,pooled,-0.1039187836949315,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,profit_gain_index,pooled,-0.10546184554851622,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,competitive_share,pooled,0.1318860666635188,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,matching_share,pooled,-0.10486220968471388,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,undercut_count,pooled,0.1575127123060288,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,rounds_played,pooled,0.058690458467937745,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,evidence_ending,pooled,-0.033720563656960426,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,price_index,pooled,-0.1039187836949315,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,profit_gain_index,pooled,-0.10546184554851622,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,competitive_share,pooled,0.1318860666635188,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,matching_share,pooled,-0.10486220968471388,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,undercut_count,pooled,0.1575127123060288,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,rounds_played,pooled,0.058690458467937745,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,evidence_ending,pooled,-0.033720563656960426,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,price_index,pooled,-0.16866001138295522,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,profit_gain_index,pooled,-0.17010307994401794,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,competitive_share,pooled,0.2504629479649243,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,matching_share,pooled,-0.21800476018691126,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,undercut_count,pooled,0.2861497649201486,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,rounds_played,pooled,0.006253082370081585,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,evidence_ending,pooled,0.013450240598067332,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,price_index,pooled,-0.023391075527380588,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,profit_gain_index,pooled,-0.025245623851127576,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,competitive_share,pooled,0.05850960079006078,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,matching_share,pooled,-0.04599999218609026,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,undercut_count,pooled,0.08328522783649205,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,rounds_played,pooled,0.04056347493390536,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,evidence_ending,pooled,-0.0200874797143664,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,price_index,pooled,-0.16866150834189506,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,profit_gain_index,pooled,-0.17010367842400062,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,competitive_share,pooled,0.2504634845244714,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,matching_share,pooled,-0.21800593773173085,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,undercut_count,pooled,0.2861458380403852,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,rounds_played,pooled,0.006222014145923942,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,evidence_ending,pooled,0.013450240598067332,700
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,price_index,pooled,-0.47840865892023543,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,profit_gain_index,pooled,-0.47940769115518694,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,competitive_share,pooled,0.5190681634711256,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,matching_share,pooled,-0.5295153917988982,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,undercut_count,pooled,0.46429183665251667,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,rounds_played,pooled,-0.11001415245467527,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,evidence_ending,pooled,0.054230025662144805,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,price_index,pooled,-0.5041927585909904,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,profit_gain_index,pooled,-0.5055259326390753,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,competitive_share,pooled,0.5633689227456002,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,matching_share,pooled,-0.5703746155218912,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,undercut_count,pooled,0.5158476367465421,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,rounds_played,pooled,-0.08270536984119232,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,evidence_ending,pooled,0.02293535951322899,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,price_index,pooled,-0.4482515642381301,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,profit_gain_index,pooled,-0.44998972348966976,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,competitive_share,pooled,0.4641323325918467,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,matching_share,pooled,-0.47685114158198516,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,undercut_count,pooled,0.4722335561023554,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,rounds_played,pooled,-0.03997353492815542,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,evidence_ending,pooled,-0.011621303081007936,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,price_index,pooled,-0.5181052511086814,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,profit_gain_index,pooled,-0.5180627521550681,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,competitive_share,pooled,0.5971868304379234,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,matching_share,pooled,-0.6261367918654701,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,undercut_count,pooled,0.580964041987608,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,rounds_played,pooled,-0.0728709352489482,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,evidence_ending,pooled,-0.08313988825425654,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,price_index,pooled,-0.5804675860766582,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,profit_gain_index,pooled,-0.5799770389945158,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,competitive_share,pooled,0.6529740901226142,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,matching_share,pooled,-0.6616625123434658,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,undercut_count,pooled,0.5687742338956077,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,rounds_played,pooled,-0.09727189085824381,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,evidence_ending,pooled,0.03953458343423133,57
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,price_index,pooled,-0.3531171364789216,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,profit_gain_index,pooled,-0.35091646187145903,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,competitive_share,pooled,0.4146643297179543,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,matching_share,pooled,-0.3862547792953278,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,undercut_count,pooled,0.5127048310416025,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,rounds_played,pooled,0.7213397644947693,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,evidence_ending,pooled,-0.3915237921749664,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,price_index,within_cell,-0.046317616241202036,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,profit_gain_index,within_cell,-0.051514261441423674,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,competitive_share,within_cell,0.13068524374620968,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,matching_share,within_cell,-0.02239582508156911,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,undercut_count,within_cell,0.13750252231578555,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,rounds_played,within_cell,-0.11898524312363702,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share,evidence_ending,within_cell,0.06116625871444775,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,price_index,within_cell,-0.046317616241202036,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,profit_gain_index,within_cell,-0.051514261441423674,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,competitive_share,within_cell,0.13068524374620968,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,matching_share,within_cell,-0.02239582508156911,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,undercut_count,within_cell,0.13750252231578555,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,rounds_played,within_cell,-0.11898524312363702,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_monitor_share_novel,evidence_ending,within_cell,0.06116625871444775,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,price_index,within_cell,-0.00012769842481954422,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,profit_gain_index,within_cell,0.0014025016351378902,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,competitive_share,within_cell,0.021018934222593495,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,matching_share,within_cell,-0.005800973017974847,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,undercut_count,within_cell,-0.040506787512494084,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,rounds_played,within_cell,0.02448107870382686,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share,evidence_ending,within_cell,0.03375991813380376,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,price_index,within_cell,0.010073878051247591,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,profit_gain_index,within_cell,0.010058236433378224,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,competitive_share,within_cell,-0.004871516588708686,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,matching_share,within_cell,0.004561070168663932,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,undercut_count,within_cell,0.028173585991451436,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,rounds_played,within_cell,0.017989384775153792,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_echo,evidence_ending,within_cell,-0.00981844670234941,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,price_index,within_cell,-0.00012769842481954422,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,profit_gain_index,within_cell,0.0014025016351378902,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,competitive_share,within_cell,0.021018934222593495,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,matching_share,within_cell,-0.005800973017974847,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,undercut_count,within_cell,-0.040506787512494084,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,rounds_played,within_cell,0.02448107870382686,700
+"7 Reasoning reading (D set, thinking on)",reasoning_mentions_shutdown_share_novel,evidence_ending,within_cell,0.03375991813380376,700
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,price_index,within_cell,-0.04172652221255963,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,profit_gain_index,within_cell,-0.048484524489681165,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,competitive_share,within_cell,0.14191450370462788,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,matching_share,within_cell,-0.19203771697282948,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,undercut_count,within_cell,0.024402174087965647,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,rounds_played,within_cell,-0.21860694080749843,57
+"7 Reasoning reading (D set, thinking on)",cot_threat_mention_share,evidence_ending,within_cell,0.25846181387520095,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,price_index,within_cell,-0.16510194870014733,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,profit_gain_index,within_cell,-0.17307372027240336,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,competitive_share,within_cell,0.16581300887308853,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,matching_share,within_cell,-0.1532899058017947,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,undercut_count,within_cell,0.13688104535597032,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,rounds_played,within_cell,-0.04622925781319659,57
+"7 Reasoning reading (D set, thinking on)",cot_rule_aware_share,evidence_ending,within_cell,0.10982278493274493,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,price_index,within_cell,0.013355787600493463,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,profit_gain_index,within_cell,0.001316538049331242,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,competitive_share,within_cell,-0.17764293469197678,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,matching_share,within_cell,0.0972830801344608,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,undercut_count,within_cell,0.06469676318642321,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,rounds_played,within_cell,0.024173110388017637,57
+"7 Reasoning reading (D set, thinking on)",cot_plans_innocent_wording_share,evidence_ending,within_cell,0.04059440882028055,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,price_index,within_cell,-0.12390524208348255,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,profit_gain_index,within_cell,-0.12225625270677562,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,competitive_share,within_cell,0.08001853213105871,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,matching_share,within_cell,-0.19546978641228632,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,undercut_count,within_cell,0.14458439857780642,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,rounds_played,within_cell,-0.08430914649227021,57
+"7 Reasoning reading (D set, thinking on)",cot_indirect_route_share,evidence_ending,within_cell,-0.11027644414982135,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,price_index,within_cell,-0.20600225813265766,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,profit_gain_index,within_cell,-0.20415526127572267,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,competitive_share,within_cell,0.38505745657183693,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,matching_share,within_cell,-0.35102954951955606,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,undercut_count,within_cell,0.17928213640189875,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,rounds_played,within_cell,-0.07375679580117786,57
+"7 Reasoning reading (D set, thinking on)",cot_independent_share,evidence_ending,within_cell,0.11383947633514672,57
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,price_index,within_cell,-0.4544897342828952,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,profit_gain_index,within_cell,-0.45778929697337833,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,competitive_share,within_cell,0.455737646118125,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,matching_share,within_cell,-0.43871372353995286,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,undercut_count,within_cell,0.5125581838683071,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,rounds_played,within_cell,0.804599981447658,700
+"7 Reasoning reading (D set, thinking on)",reasoning_words_total,evidence_ending,within_cell,-0.44947241224038426,700
+8 Paired contrasts to the control game,delta_profit_gain_index,price_index,pooled,0.6325617028670345,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,profit_gain_index,pooled,0.6343787017069558,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,competitive_share,pooled,-0.30251062280847735,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,matching_share,pooled,0.39435552401019686,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,undercut_count,pooled,-0.14550471308751858,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,rounds_played,pooled,-0.03496085566330345,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,evidence_ending,pooled,0.06394849521768133,1120
+8 Paired contrasts to the control game,delta_price_index,price_index,pooled,0.6535658984252501,1120
+8 Paired contrasts to the control game,delta_price_index,profit_gain_index,pooled,0.6461659499573933,1120
+8 Paired contrasts to the control game,delta_price_index,competitive_share,pooled,-0.28497634951821577,1120
+8 Paired contrasts to the control game,delta_price_index,matching_share,pooled,0.3762316097025783,1120
+8 Paired contrasts to the control game,delta_price_index,undercut_count,pooled,-0.14023074264435942,1120
+8 Paired contrasts to the control game,delta_price_index,rounds_played,pooled,-0.03370490215895634,1120
+8 Paired contrasts to the control game,delta_price_index,evidence_ending,pooled,0.06108467190428315,1120
+8 Paired contrasts to the control game,delta_competitive_share,price_index,pooled,-0.3030444620800341,1120
+8 Paired contrasts to the control game,delta_competitive_share,profit_gain_index,pooled,-0.3044495737366952,1120
+8 Paired contrasts to the control game,delta_competitive_share,competitive_share,pooled,0.6956015452870872,1120
+8 Paired contrasts to the control game,delta_competitive_share,matching_share,pooled,-0.5050196593336058,1120
+8 Paired contrasts to the control game,delta_competitive_share,undercut_count,pooled,0.46643548258901407,1120
+8 Paired contrasts to the control game,delta_competitive_share,rounds_played,pooled,0.06330294286516179,1120
+8 Paired contrasts to the control game,delta_competitive_share,evidence_ending,pooled,-0.07840082708175683,1120
+8 Paired contrasts to the control game,delta_explicit_round_share,price_index,pooled,-0.04376957474756837,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,profit_gain_index,pooled,-0.0441802486229025,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,competitive_share,pooled,0.03687811755557447,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,matching_share,pooled,-0.0675150939032763,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,undercut_count,pooled,0.07721223081667077,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,rounds_played,pooled,0.11609846107086991,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,evidence_ending,pooled,-0.12682226938350502,1034
+8 Paired contrasts to the control game,delta_profit_gain_index,price_index,within_cell,0.5622530882462428,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,profit_gain_index,within_cell,0.5653147458697338,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,competitive_share,within_cell,-0.2652741906071029,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,matching_share,within_cell,0.28729683749143764,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,undercut_count,within_cell,-0.04861872283767658,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,rounds_played,within_cell,-0.007763804190312947,1120
+8 Paired contrasts to the control game,delta_profit_gain_index,evidence_ending,within_cell,0.02277017239742287,1120
+8 Paired contrasts to the control game,delta_price_index,price_index,within_cell,0.5849172855625682,1120
+8 Paired contrasts to the control game,delta_price_index,profit_gain_index,within_cell,0.5865105519109957,1120
+8 Paired contrasts to the control game,delta_price_index,competitive_share,within_cell,-0.24045482399474127,1120
+8 Paired contrasts to the control game,delta_price_index,matching_share,within_cell,0.2807171596431221,1120
+8 Paired contrasts to the control game,delta_price_index,undercut_count,within_cell,-0.02490554741041193,1120
+8 Paired contrasts to the control game,delta_price_index,rounds_played,within_cell,-0.010652695880827779,1120
+8 Paired contrasts to the control game,delta_price_index,evidence_ending,within_cell,0.022522816192241443,1120
+8 Paired contrasts to the control game,delta_competitive_share,price_index,within_cell,-0.25129849375765684,1120
+8 Paired contrasts to the control game,delta_competitive_share,profit_gain_index,within_cell,-0.258522134835822,1120
+8 Paired contrasts to the control game,delta_competitive_share,competitive_share,within_cell,0.5244664733617035,1120
+8 Paired contrasts to the control game,delta_competitive_share,matching_share,within_cell,-0.3580438629194702,1120
+8 Paired contrasts to the control game,delta_competitive_share,undercut_count,within_cell,0.2693212924032618,1120
+8 Paired contrasts to the control game,delta_competitive_share,rounds_played,within_cell,0.0734220520707476,1120
+8 Paired contrasts to the control game,delta_competitive_share,evidence_ending,within_cell,-0.0683760031941977,1120
+8 Paired contrasts to the control game,delta_explicit_round_share,price_index,within_cell,-0.02287501093004329,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,profit_gain_index,within_cell,-0.017024613159015125,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,competitive_share,within_cell,-0.0801417430997951,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,matching_share,within_cell,0.07128919892875726,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,undercut_count,within_cell,-0.05837857855612305,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,rounds_played,within_cell,0.004288369162518619,1034
+8 Paired contrasts to the control game,delta_explicit_round_share,evidence_ending,within_cell,0.0017731092655043496,1034
+9 QC features,truncations,price_index,pooled,-0.010091191774514183,1360
+9 QC features,truncations,profit_gain_index,pooled,-0.01008901862332626,1360
+9 QC features,truncations,competitive_share,pooled,0.046465222600721265,1360
+9 QC features,truncations,matching_share,pooled,-0.03312210595255386,1360
+9 QC features,truncations,undercut_count,pooled,0.07333257591862752,1360
+9 QC features,truncations,rounds_played,pooled,0.04240937797648896,1360
+9 QC features,truncations,evidence_ending,pooled,-0.013687690342280266,1360
+9 QC features,truncated_talk,price_index,pooled,-0.010091191774514183,1360
+9 QC features,truncated_talk,profit_gain_index,pooled,-0.01008901862332626,1360
+9 QC features,truncated_talk,competitive_share,pooled,0.046465222600721265,1360
+9 QC features,truncated_talk,matching_share,pooled,-0.03312210595255386,1360
+9 QC features,truncated_talk,undercut_count,pooled,0.07333257591862752,1360
+9 QC features,truncated_talk,rounds_played,pooled,0.04240937797648896,1360
+9 QC features,truncated_talk,evidence_ending,pooled,-0.013687690342280266,1360
+9 QC features,word_capped_talk,price_index,pooled,-0.06160725911645609,1360
+9 QC features,word_capped_talk,profit_gain_index,pooled,-0.040508899047795977,1360
+9 QC features,word_capped_talk,competitive_share,pooled,-0.003235073311569351,1360
+9 QC features,word_capped_talk,matching_share,pooled,0.016119369670451085,1360
+9 QC features,word_capped_talk,undercut_count,pooled,-0.05490777070616145,1360
+9 QC features,word_capped_talk,rounds_played,pooled,0.08895379997526916,1360
+9 QC features,word_capped_talk,evidence_ending,pooled,-0.022935834470060815,1360
+9 QC features,clamped_calls,price_index,pooled,-0.029332713875376865,1360
+9 QC features,clamped_calls,profit_gain_index,pooled,-0.028818003104180735,1360
+9 QC features,clamped_calls,competitive_share,pooled,0.05983338222201571,1360
+9 QC features,clamped_calls,matching_share,pooled,-0.04420999873832098,1360
+9 QC features,clamped_calls,undercut_count,pooled,0.09703263203055694,1360
+9 QC features,clamped_calls,rounds_played,pooled,0.03521751366893675,1360
+9 QC features,clamped_calls,evidence_ending,pooled,-0.019364437907430705,1360
+9 QC features,truncated_calls_original,price_index,pooled,-0.231512377742812,36
+9 QC features,truncated_calls_original,profit_gain_index,pooled,-0.23915799950512787,36
+9 QC features,truncated_calls_original,competitive_share,pooled,0.3232628108054677,36
+9 QC features,truncated_calls_original,matching_share,pooled,-0.2693737761577553,36
+9 QC features,truncated_calls_original,undercut_count,pooled,0.30406209302666976,36
+9 QC features,truncated_calls_original,rounds_played,pooled,0.10538302798159768,36
+9 QC features,truncated_calls_original,evidence_ending,pooled,-0.10267875558341472,36
+9 QC features,max_prompt_tokens,price_index,pooled,-0.07733755134759779,1360
+9 QC features,max_prompt_tokens,profit_gain_index,pooled,-0.06397212203910665,1360
+9 QC features,max_prompt_tokens,competitive_share,pooled,-0.15698847223852622,1360
+9 QC features,max_prompt_tokens,matching_share,pooled,0.09461567213240796,1360
+9 QC features,max_prompt_tokens,undercut_count,pooled,-0.12883372224838444,1360
+9 QC features,max_prompt_tokens,rounds_played,pooled,0.27011300452946324,1360
+9 QC features,max_prompt_tokens,evidence_ending,pooled,-0.1357652308793505,1360
+9 QC features,imputed_round_share,price_index,pooled,-0.010091191774514183,1360
+9 QC features,imputed_round_share,profit_gain_index,pooled,-0.01008901862332626,1360
+9 QC features,imputed_round_share,competitive_share,pooled,0.046465222600721265,1360
+9 QC features,imputed_round_share,matching_share,pooled,-0.03312210595255386,1360
+9 QC features,imputed_round_share,undercut_count,pooled,0.07333257591862752,1360
+9 QC features,imputed_round_share,rounds_played,pooled,0.04240937797648896,1360
+9 QC features,imputed_round_share,evidence_ending,pooled,-0.013687690342280266,1360
+9 QC features,is_rerun,price_index,pooled,-0.031404446752493494,1360
+9 QC features,is_rerun,profit_gain_index,pooled,-0.0335721751060367,1360
+9 QC features,is_rerun,competitive_share,pooled,0.06653315271029143,1360
+9 QC features,is_rerun,matching_share,pooled,-0.051499479573014435,1360
+9 QC features,is_rerun,undercut_count,pooled,0.12644597269876498,1360
+9 QC features,is_rerun,rounds_played,pooled,0.007276160599150127,1360
+9 QC features,is_rerun,evidence_ending,pooled,0.005496598070442264,1360
+9 QC features,truncations,price_index,within_cell,0.0030394292823723037,1360
+9 QC features,truncations,profit_gain_index,within_cell,0.0030369959173812636,1360
+9 QC features,truncations,competitive_share,within_cell,0.0,1360
+9 QC features,truncations,matching_share,within_cell,0.005574329649829782,1360
+9 QC features,truncations,undercut_count,within_cell,0.015619130582422806,1360
+9 QC features,truncations,rounds_played,within_cell,0.017664034062495695,1360
+9 QC features,truncations,evidence_ending,within_cell,-0.007099150804936185,1360
+9 QC features,truncated_talk,price_index,within_cell,0.0030394292823723037,1360
+9 QC features,truncated_talk,profit_gain_index,within_cell,0.0030369959173812636,1360
+9 QC features,truncated_talk,competitive_share,within_cell,0.0,1360
+9 QC features,truncated_talk,matching_share,within_cell,0.005574329649829782,1360
+9 QC features,truncated_talk,undercut_count,within_cell,0.015619130582422806,1360
+9 QC features,truncated_talk,rounds_played,within_cell,0.017664034062495695,1360
+9 QC features,truncated_talk,evidence_ending,within_cell,-0.007099150804936185,1360
+9 QC features,word_capped_talk,price_index,within_cell,-0.04826531233823572,1360
+9 QC features,word_capped_talk,profit_gain_index,within_cell,-0.04636203493848183,1360
+9 QC features,word_capped_talk,competitive_share,within_cell,0.08453924789454546,1360
+9 QC features,word_capped_talk,matching_share,within_cell,-0.05732434600437434,1360
+9 QC features,word_capped_talk,undercut_count,within_cell,-0.01148742618786825,1360
+9 QC features,word_capped_talk,rounds_played,within_cell,0.10149818679840311,1360
+9 QC features,word_capped_talk,evidence_ending,within_cell,-0.02185485653452502,1360
+9 QC features,clamped_calls,price_index,within_cell,-0.004298402113004835,1360
+9 QC features,clamped_calls,profit_gain_index,within_cell,-0.004294960815232303,1360
+9 QC features,clamped_calls,competitive_share,within_cell,0.00871503461337998,1360
+9 QC features,clamped_calls,matching_share,within_cell,-0.006306634073542195,1360
+9 QC features,clamped_calls,undercut_count,within_cell,0.014357711096390162,1360
+9 QC features,clamped_calls,rounds_played,within_cell,0.015959902232228883,1360
+9 QC features,clamped_calls,evidence_ending,within_cell,-0.010039715349672627,1360
+9 QC features,truncated_calls_original,price_index,within_cell,0.029624073719006692,36
+9 QC features,truncated_calls_original,profit_gain_index,within_cell,0.008464021062573341,36
+9 QC features,truncated_calls_original,competitive_share,within_cell,-0.006355418733319467,36
+9 QC features,truncated_calls_original,matching_share,within_cell,0.004241898419838519,36
+9 QC features,truncated_calls_original,undercut_count,within_cell,0.0021871839064170756,36
+9 QC features,truncated_calls_original,rounds_played,within_cell,0.09763708649417828,36
+9 QC features,truncated_calls_original,evidence_ending,within_cell,0.06513457769862993,36
+9 QC features,max_prompt_tokens,price_index,within_cell,-0.2899159845432811,1360
+9 QC features,max_prompt_tokens,profit_gain_index,within_cell,-0.2881188382059853,1360
+9 QC features,max_prompt_tokens,competitive_share,within_cell,0.16378243573743415,1360
+9 QC features,max_prompt_tokens,matching_share,within_cell,-0.18372543918586265,1360
+9 QC features,max_prompt_tokens,undercut_count,within_cell,0.1655095235542549,1360
+9 QC features,max_prompt_tokens,rounds_played,within_cell,0.5764544026632449,1360
+9 QC features,max_prompt_tokens,evidence_ending,within_cell,-0.2823207447887962,1360
+9 QC features,imputed_round_share,price_index,within_cell,0.0030394292823723037,1360
+9 QC features,imputed_round_share,profit_gain_index,within_cell,0.0030369959173812636,1360
+9 QC features,imputed_round_share,competitive_share,within_cell,0.0,1360
+9 QC features,imputed_round_share,matching_share,within_cell,0.005574329649829782,1360
+9 QC features,imputed_round_share,undercut_count,within_cell,0.015619130582422806,1360
+9 QC features,imputed_round_share,rounds_played,within_cell,0.017664034062495695,1360
+9 QC features,imputed_round_share,evidence_ending,within_cell,-0.007099150804936185,1360
+9 QC features,is_rerun,price_index,within_cell,-0.213639399075697,1360
+9 QC features,is_rerun,profit_gain_index,within_cell,-0.2140962076361072,1360
+9 QC features,is_rerun,competitive_share,within_cell,0.18173404031869778,1360
+9 QC features,is_rerun,matching_share,within_cell,-0.151137185495641,1360
+9 QC features,is_rerun,undercut_count,within_cell,0.004762766207384119,1360
+9 QC features,is_rerun,rounds_played,within_cell,0.03382934728665687,1360
+9 QC features,is_rerun,evidence_ending,within_cell,-0.014529543980929106,1360

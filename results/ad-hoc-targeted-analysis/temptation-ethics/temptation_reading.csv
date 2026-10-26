@@ -1,0 +1,5 @@
+mm,cell,passages,undercut_share,coordinate_share,rule_share
+qwen-t1,TE,424,0.731,0.731,0.005
+qwen-t1,TA,401,0.823,0.903,0.000
+oss-t1,TE,488,0.316,0.590,0.115
+oss-t1,TA,488,0.252,0.811,0.033

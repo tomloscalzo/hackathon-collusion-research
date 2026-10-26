@@ -1,0 +1,9 @@
+model,arm,games,undercut_firm_rounds,other_firm_rounds,p_lower_if_undercut,p_lower_otherwise,diff,diff_ci_lo,diff_ci_hi,p_at_or_below_rival_if_undercut
+gpt-oss-20b,tacit_p1,20,128,320,0.797,0.528,0.269,0.158,0.39,0.758
+gpt-oss-20b,chat_p1,12,38,170,0.711,0.206,0.505,0.355,0.676,0.684
+gpt-oss-20b,chat_p5,14,42,270,0.69,0.244,0.446,0.293,0.595,0.667
+gpt-oss-20b,all three arms,46,208,760,0.76,0.355,0.404,0.314,0.493,0.726
+Qwen3-32B,tacit_p1,20,66,348,0.924,0.21,0.714,0.546,0.876,0.894
+Qwen3-32B,chat_p1,20,2,304,0.5,0.007,0.493,-0.017,1.0,0.5
+Qwen3-32B,chat_p5,20,9,417,0.667,0.041,0.626,0.222,0.975,0.667
+Qwen3-32B,all three arms,60,77,1069,0.883,0.086,0.797,0.691,0.898,0.857

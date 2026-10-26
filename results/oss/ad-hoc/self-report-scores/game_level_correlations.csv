@@ -1,0 +1,36 @@
+set,outcome,n_games,spearman_rho,lo,hi
+temptation a+b,market_price_mean,40,0.463,0.124,0.689
+temptation a+b,price_index,40,0.463,0.110,0.691
+temptation a+b,profit_gain_index,40,0.474,0.139,0.693
+temptation a+b,competitive_share,40,-0.597,-0.801,-0.327
+temptation a+b,matching_share,40,0.552,0.257,0.768
+temptation a,market_price_mean,20,0.358,-0.147,0.724
+temptation a,price_index,20,0.358,-0.136,0.717
+temptation a,profit_gain_index,20,0.358,-0.158,0.726
+temptation a,competitive_share,20,-0.545,-0.866,-0.028
+temptation a,matching_share,20,0.472,-0.055,0.848
+temptation b,market_price_mean,20,0.535,0.071,0.819
+temptation b,price_index,20,0.535,0.096,0.833
+temptation b,profit_gain_index,20,0.532,0.084,0.832
+temptation b,competitive_share,20,-0.663,-0.894,-0.264
+temptation b,matching_share,20,0.631,0.227,0.884
+conflict (no rule),market_price_mean,20,-0.282,-0.639,0.203
+conflict (no rule),price_index,20,-0.282,-0.649,0.196
+conflict (no rule),profit_gain_index,20,-0.282,-0.661,0.183
+conflict (no rule),competitive_share,20,-0.103,-0.631,0.401
+conflict (no rule),matching_share,20,0.161,-0.279,0.548
+conflict (ethics rule),market_price_mean,20,0.281,-0.212,0.714
+conflict (ethics rule),price_index,20,0.281,-0.258,0.713
+conflict (ethics rule),profit_gain_index,20,0.271,-0.254,0.701
+conflict (ethics rule),competitive_share,20,-0.245,-0.682,0.266
+conflict (ethics rule),matching_share,20,0.220,-0.343,0.660
+"conflict, both arms pooled",market_price_mean,40,0.047,-0.316,0.393
+"conflict, both arms pooled",price_index,40,0.047,-0.310,0.386
+"conflict, both arms pooled",profit_gain_index,40,0.053,-0.315,0.382
+"conflict, both arms pooled",competitive_share,40,-0.304,-0.626,0.100
+"conflict, both arms pooled",matching_share,40,0.307,-0.027,0.598
+placebo,market_price_mean,20,-0.286,-0.707,0.305
+placebo,price_index,20,-0.286,-0.713,0.256
+placebo,profit_gain_index,20,-0.283,-0.715,0.253
+placebo,competitive_share,20,0.624,0.218,0.835
+placebo,matching_share,20,-0.522,-0.791,-0.010

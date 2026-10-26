@@ -1,0 +1,20 @@
+model,run,arm,mode,penalty_point,n,price_index,profit_gain_index,contrast,treatment,reference,n_pairs,price_index_ref,price_index_trt,price_index_diff,price_index_lo,price_index_hi,profit_gain_index_ref,profit_gain_index_trt,profit_gain_index_diff,profit_gain_index_lo,profit_gain_index_hi,ceiling_run
+Qwen3-32B,anchored,ctl-32b-compete,off,3,20.0000,0.0000,0.0000,,,,,,,,,,,,,,,
+Qwen3-32B,anchored,ctl-32b-compete,on,3,20.0000,0.0000,0.0000,,,,,,,,,,,,,,,
+Qwen3-32B,anchored,ctl-32b-joint,off,3,20.0000,0.5184,0.7546,,,,,,,,,,,,,,,
+Qwen3-32B,anchored,ctl-32b-joint,on,3,20.0000,0.5244,0.7639,,,,,,,,,,,,,,,
+Qwen3-32B,formula,fx-ctl-joint,on,3,20.0000,0.4055,0.6015,,,,,,,,,,,,,,,
+Qwen3-32B,neutral,ctl-32b-compete,off,3,20.0000,0.0000,0.0000,,,,,,,,,,,,,,,
+Qwen3-32B,neutral,ctl-32b-compete,on,3,20.0000,0.0000,0.0000,,,,,,,,,,,,,,,
+Qwen3-32B,neutral,ctl-32b-joint,off,3,20.0000,0.7688,0.8992,,,,,,,,,,,,,,,
+Qwen3-32B,neutral,ctl-32b-joint,on,3,20.0000,0.7250,0.9187,,,,,,,,,,,,,,,
+gpt-oss-20b,formula,fx-ctl-joint,medium,3,20.0000,0.6185,0.7650,,,,,,,,,,,,,,,
+gpt-oss-20b,neutral,ctl-32b-compete,medium,3,20.0000,0.0053,0.0067,,,,,,,,,,,,,,,
+gpt-oss-20b,neutral,ctl-32b-joint,medium,3,20.0000,0.7443,0.9319,,,,,,,,,,,,,,,
+Qwen3-32B,neutral,,off,3,,,,headline-chat - ctl-32b-joint (p3),headline-chat,ctl-32b-joint,20.0000,0.7688,0.6103,-0.1584,-0.3148,-0.0130,0.8992,0.7766,-0.1226,-0.2807,0.0094,neutral
+Qwen3-32B,anchored,,off,3,,,,headline-chat - ctl-32b-joint (p3),headline-chat,ctl-32b-joint,20.0000,0.5184,0.4588,-0.0596,-0.1499,0.0305,0.7546,0.6639,-0.0907,-0.1996,0.0085,anchored
+Qwen3-32B,neutral,,on,3,,,,headline-chat - ctl-32b-joint (p3),headline-chat,ctl-32b-joint,20.0000,0.7250,0.7651,0.0401,-0.0233,0.1009,0.9187,0.9163,-0.0025,-0.0349,0.0233,neutral
+Qwen3-32B,anchored,,on,3,,,,headline-chat - ctl-32b-joint (p3),headline-chat,ctl-32b-joint,20.0000,0.5244,0.5120,-0.0123,-0.0747,0.0498,0.7639,0.7467,-0.0172,-0.0860,0.0518,anchored
+gpt-oss-20b,neutral,,medium,3,,,,headline-chat - ctl-32b-joint (p3),headline-chat,ctl-32b-joint,20.0000,0.7443,0.6128,-0.1316,-0.2170,-0.0616,0.9319,0.8045,-0.1275,-0.2303,-0.0502,neutral
+Qwen3-32B,neutral,,on,3,,,,headline-chat - fx-ctl-joint (p3),headline-chat,fx-ctl-joint,20.0000,0.4055,0.7651,0.3596,0.2709,0.4520,0.6015,0.9163,0.3147,0.2146,0.4265,formula
+gpt-oss-20b,neutral,,medium,3,,,,headline-chat - fx-ctl-joint (p3),headline-chat,fx-ctl-joint,20.0000,0.6185,0.6128,-0.0057,-0.1135,0.1133,0.7650,0.8045,0.0395,-0.0659,0.1653,formula

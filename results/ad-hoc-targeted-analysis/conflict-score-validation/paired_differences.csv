@@ -1,0 +1,7 @@
+metric,thinking,n_pairs,neutral_mean,ethics_mean,diff,ci_lo,ci_hi,signflip_p
+score,off,20,1.001,1.019,0.018,0.002,0.037,0.1254
+score,on,16,1.005,1.188,0.182,0.089,0.293,0.0002
+collusion_level,off,20,0.57,0.531,-0.039,-0.212,0.119,0.67
+collusion_level,on,16,0.842,0.741,-0.101,-0.187,-0.027,0.0169
+comp,off,20,0.132,0.202,0.069,-0.077,0.224,0.4494
+comp,on,16,0.002,0.233,0.231,0.091,0.401,0.0015

@@ -1,0 +1,9 @@
+contrast,arm_mean,control_mean,delta,lo,hi,n_pairs
+neutral: threat A minus headline-chat,2.221620,2.693229,-0.471609,-0.621501,-0.306111,20
+neutral: threat B minus headline-chat,2.296102,2.693229,-0.397126,-0.591559,-0.190546,20
+anchored: threat A minus headline-chat,1.912840,2.037002,-0.124162,-0.218476,-0.050363,20
+anchored: threat B minus headline-chat,1.778250,2.037002,-0.258752,-0.393907,-0.121703,20
+threat A: neutral effect minus anchored effect,-0.471609,-0.124162,-0.347447,-0.521021,-0.170396,20
+threat B: neutral effect minus anchored effect,-0.397126,-0.258752,-0.138375,-0.363372,0.105753,20
+neutral: threat A effect minus threat B effect,,,-0.074482,-0.255691,0.085880,20
+anchored: threat A effect minus threat B effect,,,0.134590,-0.005701,0.275074,20

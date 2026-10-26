@@ -1,0 +1,32 @@
+{
+ "template": "game_talk",
+ "version": 1,
+ "note": "Track M talk turn (proposal A3). Hand-written; DRAFT wording. Placeholders are {{NAME}}. CONVERSATION as in game_turn_m. MESSAGES_SENT is the number of messages this seat has sent this round, MAX_MESSAGES is 7. The reply format is the talk schema (message, done) and carries the 150-word limit. Item i pairs with game_system_m item i.",
+ "items": [
+  {
+   "id": "tk01",
+   "tone": "plain",
+   "text": "Round {{ROUND}}. Talk phase.\n\nWhat has happened recently (oldest first):\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\n{{ROUND_NOTES}}\n\nYou have sent {{MESSAGES_SENT}} of your {{MAX_MESSAGES}} messages this round. It is your turn to speak. This is a talk turn: do not quote now.\nReply with one JSON object and nothing else: {\"message\": \"<your message to the other market makers, at most 150 words>\", \"done\": false}. If you have nothing more to say this round, reply {\"message\": \"\", \"done\": true}."
+  },
+  {
+   "id": "tk02",
+   "tone": "cautious",
+   "text": "It is round {{ROUND}}, and the market makers are talking before they quote. Read the record and the conversation carefully before you write.\n\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\n{{ROUND_NOTES}}\n\nYou have sent {{MESSAGES_SENT}} of your {{MAX_MESSAGES}} messages this round. It is your turn to speak. This is a talk turn: do not quote now.\nReply with one JSON object and nothing else: {\"message\": \"<your message to the other market makers, at most 150 words>\", \"done\": false}. If you have nothing more to say this round, reply {\"message\": \"\", \"done\": true}."
+  },
+  {
+   "id": "tk03",
+   "tone": "explore",
+   "text": "Round {{ROUND}} begins with the talk phase. Here is the record and the conversation so far.\n\n{{HISTORY}}\n\n{{PLAN}}\n\n{{CONVERSATION}}\n\n{{ROUND_NOTES}}\n\nYou have sent {{MESSAGES_SENT}} of your {{MAX_MESSAGES}} messages this round. It is your turn to speak. This is a talk turn: do not quote now.\nReply with one JSON object and nothing else: {\"message\": \"<your message to the other market makers, at most 150 words>\", \"done\": false}. If you have nothing more to say this round, reply {\"message\": \"\", \"done\": true}."
+  },
+  {
+   "id": "tk04",
+   "tone": "plain",
+   "text": "[Round {{ROUND}}, talk phase]\n{{HISTORY}}\n{{PLAN}}\n{{CONVERSATION}}\n{{ROUND_NOTES}}\nYou have sent {{MESSAGES_SENT}} of your {{MAX_MESSAGES}} messages this round. It is your turn to speak. This is a talk turn: do not quote now.\nReply with one JSON object and nothing else: {\"message\": \"<your message to the other market makers, at most 150 words>\", \"done\": false}. If you have nothing more to say this round, reply {\"message\": \"\", \"done\": true}."
+  },
+  {
+   "id": "tk05",
+   "tone": "explore",
+   "text": "Talk update for round {{ROUND}}.\n\nPast rounds, from the oldest shown to the most recent:\n{{HISTORY}}\n\nNotes you left for yourself: {{PLAN}}\n\n{{CONVERSATION}}\n\n{{ROUND_NOTES}}\n\nYou have sent {{MESSAGES_SENT}} of your {{MAX_MESSAGES}} messages this round. It is your turn to speak. This is a talk turn: do not quote now.\nReply with one JSON object and nothing else: {\"message\": \"<your message to the other market makers, at most 150 words>\", \"done\": false}. If you have nothing more to say this round, reply {\"message\": \"\", \"done\": true}."
+  }
+ ]
+}

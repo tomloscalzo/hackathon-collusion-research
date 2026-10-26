@@ -1,0 +1,12 @@
+matching rebuild vs run.csv on Qwen headline-chat p1: max abs diff 4.6153846156027356e-07 n 40
+pgi = 0.025000 * profit_per_firm_round + -0.000000 ; max resid 0.00000
+wave_a price_index rebuilt vs collusion_level max abs diff 4.999999999999449e-05
+wave_b price_index rebuilt vs collusion_level max abs diff 4.999999999999449e-05
+Qwen watchdog rebuild vs ad hoc price_index max abs diff 0.0000 n 118
+Qwen watchdog rebuild vs ad hoc profit_gain_index max abs diff 0.0000 n 118
+Qwen watchdog rebuild vs ad hoc competitive_share max abs diff 0.0000 n 118
+Qwen watchdog rebuild vs ad hoc matching_share max abs diff 0.0000 n 118
+Holm family Qwen thinking off size 30 tactics 6
+Holm family Qwen thinking on size 40 tactics 8
+Holm family gpt-oss medium size 30 tactics 6
+done

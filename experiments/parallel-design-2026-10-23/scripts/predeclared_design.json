@@ -1,0 +1,54 @@
+{
+ "P4": {
+  "band_seats": [
+   "tit-for-tat",
+   "grim"
+  ],
+  "stat": "pAdhere",
+  "a": "ripe",
+  "b": "n4",
+  "bands": [
+   "P4"
+  ],
+  "built": true
+ },
+ "P5": {
+  "band_seats": [
+   "tit-for-tat",
+   "grim"
+  ],
+  "stat": "pAdhere",
+  "a": "ripe",
+  "b": "slope-0.055",
+  "bands": [
+   "P5"
+  ],
+  "built": true
+ },
+ "P6a": {
+  "band_seats": [
+   "tit-for-tat",
+   "grim"
+  ],
+  "stat": "pAdhere",
+  "a": "ripe",
+  "b": "label-legal",
+  "bands": [
+   "P6a"
+  ],
+  "built": true
+ },
+ "P6b": {
+  "band_seats": [
+   "tit-for-tat",
+   "grim"
+  ],
+  "stat": "pAdhere",
+  "a": "ripe",
+  "b": "guardrail",
+  "bands": [
+   "P6b"
+  ],
+  "built": true
+ }
+}

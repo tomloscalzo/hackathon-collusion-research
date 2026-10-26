@@ -1,0 +1,17 @@
+# Deterministic ripeness map (TEST_PLAN 3): the Layer A solver over the full factorial grid.
+# Run:  solve --grid sweeps/ripeness-map.yaml --out ripeness-map.csv --threads 8
+# 4*4*3*2*3*2*2*3*3 = 10368 cells. Parameters not listed keep the base scenario value.
+# delta -> random-horizon hazard h = 1 - delta (delta0 = 1); pEvidence = P(evidence | trigger) (rhoCoop at dBarU = 0);
+# fineRatio = F / pi_c(1) in the cell's market (12.5 -> F = 500 at the baseline); sBarRatio = sBar / s0.
+id: ripeness-map
+base: scenarios/ripe-baseline.yaml
+parameters:
+  delta: [0.80, 0.90, 0.95, 0.99]
+  N: [2, 3, 4, 6]
+  phi: [0.0, 0.3, 0.6]
+  tick: [0.0, 0.25]
+  slope: [0.0, 0.025, 0.075]
+  rhoTip: [0.0, 0.01]
+  pEvidence: [0.3, 1.0]
+  fineRatio: [0.0, 12.5, 125.0]
+  sBarRatio: [3.0, 5.0, 8.0]

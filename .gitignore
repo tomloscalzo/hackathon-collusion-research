@@ -1,0 +1,6 @@
+engine/target/
+*.class
+.idea/
+*.iml
+
+__pycache__/

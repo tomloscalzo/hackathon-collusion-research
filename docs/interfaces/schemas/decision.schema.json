@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decision.schema.json",
+  "title": "Decision (agent -> simulator output)",
+  "description": "engine.Decision as returned by Agent.decide, in the engine's Jackson form (Canonical.MAPPER.valueToTree, sorted keys). The engine never writes Decisions to disk; their content reaches RoundRecord.AgentRound after Game.sanitize. The schema describes what an agent may return; the engine then snaps both prices to the grid and drops a hidden fill that is not strictly below the snapped displayed quote. A null action or a NaN displayed quote aborts the run (IllegalStateException).",
+  "type": "object",
+  "properties": {
+    "action": {"$ref": "#/$defs/quote"},
+    "signalEvaluated": {"type": "boolean", "description": "The agent looked for a deviation this round (counted in RunRecord.signalEvaluations)."},
+    "signalSeen": {"type": "boolean", "description": "The agent saw a deviation (counted in RunRecord.signalSeen; a false alarm when no rival effectively quoted below signalReference margin - tolerance in the previous round)."},
+    "phase": {"type": "string", "description": "Free audit label copied to AgentRound.phase. Values used today: ADHERE, WAR (TriggerK); ECHO, HOLD, INJECT (TitForTat); PENANCE (Penance); DEFECT (DefectOnce); COMPETE (AlwaysCompete); LOGIT; NOISE; LLM, LLM_REPAIRED, REFUSED, IMPUTED, AFTER_REFUSAL (LlmAgent). Metrics treats WAR or PENANCE of any agent other than the LLM seat as the start of punishment. Agent obligation: non-null (the Decision constructor accepts null; this schema does not)."},
+    "punishing": {"type": "boolean", "description": "Marks a punishment phase; OR-ed over agents it switches off the tip hazard when tipDuringPunishment is false (DetectionProcess)."},
+    "excludeFromContestable": {"type": "array", "items": {"type": "string", "minLength": 1}, "description": "Roster ids the engine routes contestable flow away from this round (penance). An unknown id aborts the run; excluding every agent voids the exclusion."},
+    "info": {"type": "object", "additionalProperties": {"type": "number"}, "description": "Numeric audit values copied to AgentRound.info (sorted keys). LlmAgent: llm.status (0 OK, 1 REPAIRED, 2 IMPUTED, 3 REFUSED, 4 AFTER_REFUSAL), llm.offGrid (0/1), llm.tokensIn, llm.tokensOut; only on the round of the first refusal llm.refusalKind (1 MODEL_DECLINE, 2 MODEL_TEXT, 3 PROVIDER, 4 BLOCKED, 5 UNPARSEABLE, 6 TRUNCATED); only on a salvaged truncated reply llm.salvaged = 1; only on a filtered reply used as OK llm.filtered = 1. LogitAgent: evAdhere, evUndercut. Agent obligation: a non-null map (a null map throws NullPointerException in the constructor) with non-null values (null values are accepted by the code, rejected here)."}
+  },
+  "required": ["action", "signalEvaluated", "signalSeen", "phase", "punishing", "excludeFromContestable", "info"],
+  "additionalProperties": false,
+  "$defs": {
+    "quote": {
+      "title": "Action.Quote",
+      "type": "object",
+      "properties": {
+        "displayed": {"type": "number", "description": "Displayed half-spread (price units above the fundamental). Any finite value is accepted; the engine snaps it to s0 + j*quoteIncrement (StrictMath.rint, half-even) and clamps to [s0, sBar]."},
+        "hiddenFill": {"type": ["number", "null"], "description": "Optional off-screen fill price used only for contestable routing. Snapped and clamped like displayed; kept only if strictly below the snapped displayed quote (else silently dropped). LlmAgent never sets it."}
+      },
+      "required": ["displayed", "hiddenFill"],
+      "additionalProperties": false
+    }
+  }
+}

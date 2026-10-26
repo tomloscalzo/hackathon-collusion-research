@@ -1,0 +1,124 @@
+## 6. H2: outcome collusion versus strategic collusion
+
+**The distinction.** The paper's draft defines *outcome collusion* as sustained pricing above the competitive level, with firms rarely undercutting although undercutting wins customers, and *strategic collusion* as computed reward and punishment. The earlier evidence for "strategic, partial, mainly with thinking on" in the Qwen work is:
+- the thinking-mode ad hoc analysis: after being undercut, thinking-on firms cut their price in 76% of cases vs 38% with thinking off, and they punish more (0.51 vs 0.13 per game);
+- the Qwen step 3 say-versus-do result: 73 threat-then-punish rounds with thinking on, 1 with thinking off (keyword rules, unvalidated).
+
+The focal-point side comes from the Qwen payoff-table analyses (about 80% of quotes sit on a printed example). This section rebuilds every counted headline game's round-by-round quotes from the raw game logs (both models, final game tables, so truncation reruns are used where they count). It then measures both kinds of signature with the same definitions, and asks which measures can tell punishment apart from simpler rules.
+
+**Measures** (per firm-round, round 2 on; rounds 3 on for the raise measures). The last column shows what two non-strategic rules would score: a **copier** quotes the rival's previous quote, and a **plain undercutter** always quotes just below the rival's previous quote.
+
+| Measure | Definition | Signature of | Copier / plain undercutter |
+|---|---|---|---|
+| cuts after being undercut | P(own quote < own previous quote, given the rival's previous quote was below the firm's own previous quote) | reaction | 1.00 / 1.00 |
+| cuts when not undercut (baseline) | the same cut rate when the rival was not below | background noise or exploration | 0 / high |
+| follows down | P(own quote within half a tick of the rival's previous quote, given being undercut) | matching the cut | 1.00 / 0 |
+| raises after the rival raised | P(own quote > own previous quote, given the rival raised its quote the round before) | reward, or following | 1.00 / high |
+| undercuts the rival back | P(own quote < the rival's previous quote, given being undercut) | retaliation | 0 / 1.00 |
+| undercuts the rival when NOT undercut | P(own quote < the rival's previous quote, given the rival was not below) | baseline for retaliation | 0 / 1.00 |
+| return after a punishing cut | among cuts made after being undercut: share back at or above the pre-cut quote within 3 rounds | a punish-then-return path | - |
+| return after an unprovoked cut | the same for cuts made when not undercut | baseline for the return path | - |
+| holds own quote | own quote within half a tick of its previous quote | a static (focal) hold | - |
+| quote is a printed example | quote within half a tick of a printed neutral example (1.00, 1.50, 2.00, 2.49, 2.50, 3.00, 3.50, 4.00) | focal-point coordination | - |
+
+**What can and cannot be read from them.** A copier scores 1.00 on "cuts after being undercut", "follows down" and "raises after the rival raised". These three are therefore **not evidence of punishment or reward**. "Undercuts the rival back" is the only measure a copier scores 0 on, but a plain undercutter scores high on it. It counts as punishment only if it exceeds the firm's own unprovoked undercutting.
+
+![Strategic signatures](fig_strategic_signatures.png)
+
+*Figure 2. Reaction and focal-point signatures by model and mode, firm-round rates pooled over the five cells both models played (chat p1, p3, p5; no chat p1, p5), neutral run; n = 100 games per series (2,032 Qwen thinking-on, 2,262 Qwen thinking-off and 2,490 gpt-oss firm-rounds). Bars are shares between 0 and 1; numbers are printed on the bars. Source: the raw game logs (market events), rebuilt in `strategic_signatures.py`.*
+
+<small>
+
+| Label | Precise definition |
+|---|---|
+| Columns (x-axis) | Seven of the measures in the table above (definitions there), pooled over firm-rounds, not pairs. |
+| Rows (y-axis) | Share of the conditioning firm-rounds (0 to 1). |
+| Qwen3-32B, thinking on (t1) | Blue; headline-tacit (no chat) p1, p5 and headline-chat (private chat) p1, p3, p5; 100 games. Pooled over firm-rounds (repeated measures within games). |
+| Qwen3-32B, thinking off (t0) | Orange; same cells, 100 games. |
+| gpt-oss-20b, reasoning effort medium | Green; same cells, 100 games (headline only, not the replicate arms). |
+| Event counts | Being undercut: 207 (on) / 221 (off) / 645 (gpt-oss) firm-rounds; rival raised: 123 / 214 / 425; punishing cuts: 138 / 90 / 413. |
+
+LEGEND_FIG2
+
+</small>
+
+**Table 4. Paired contrasts of the signatures** (per pair, rates over that pair's firm-rounds; `strategic_contrasts.csv`, `strategic_baseline_contrasts.csv`). Holm within each named family (11 measures per family; the "gap vs own baseline" rows form a separate 6-test family).
+
+| Measure | Qwen on minus off, all 12 headline cells [CI], Holm p | gpt-oss minus Qwen on, 5 common cells [CI], Holm p | Level: Qwen on / Qwen off / gpt-oss (5 common cells, pooled) |
+|---|---|---|---|
+| cuts after being undercut (copier scores 1.00) | +0.43 [+0.28, +0.59], < 0.001 | -0.06 [-0.15, +0.03], 0.55 | 0.72 / 0.43 / 0.70 |
+| cuts when not undercut | +0.06 [+0.04, +0.08], < 0.001 | +0.25 [+0.20, +0.30], < 0.001 | 0.08 / 0.02 / 0.31 |
+| follows down (copier scores 1.00) | +0.28 [+0.12, +0.45], 0.017 | -0.16 [-0.28, -0.06], 0.044 | 0.39 / 0.22 / 0.33 |
+| raises after the rival raised (copier scores 1.00) | -0.28 [-0.44, -0.11], 0.036 (16 pairs) | +0.10 [-0.02, +0.20], 0.44 (17 pairs) | 0.28 / 0.60 / 0.27 |
+| undercuts the rival back | +0.25 [+0.15, +0.36], < 0.001 | +0.06 [-0.06, +0.17], 0.67 | 0.29 / 0.07 / 0.29 |
+| undercuts the rival when NOT undercut | +0.04 [-0.00, +0.09], 0.21 | +0.34 [+0.29, +0.39], < 0.001 | 0.16 / 0.10 / 0.49 |
+| undercut-back gap vs own baseline (per pair) | +0.14 [+0.01, +0.31], 0.21 (18 pairs) | -0.28 [-0.41, -0.17], 0.001 | Qwen on +0.07 [-0.02, +0.18]; Qwen off -0.06 [-0.14, +0.02]; gpt-oss -0.20 [-0.26, -0.15] |
+| return after a punishing cut | +0.01 [-0.07, +0.08], 0.78 | +0.19 [+0.11, +0.29], 0.001 | 0.04 / 0.19 / 0.27 |
+| return gap vs own unprovoked cuts (per pair) | n/a (6 thinking-off pairs) | +0.21 [+0.11, +0.32], 0.015 | Qwen on -0.28 [-0.39, -0.17] (Holm 0.002); gpt-oss -0.08 [-0.14, -0.02] |
+| holds own quote | -0.04 [-0.07, -0.01], 0.14 | -0.39 [-0.44, -0.35], < 0.001 | 0.79 / 0.84 / 0.40 |
+| quote is a printed example | -0.03 [-0.07, +0.02], 0.42 | -0.39 [-0.47, -0.31], < 0.001 | 0.83 / 0.85 / 0.45 |
+
+<small>
+
+| Term | Meaning |
+|---|---|
+| Qwen on minus off, all 12 headline cells | Qwen3-32B: per (wording, seed) pair, the rate over all that pair's firm-rounds in the 12 headline cells (3 arms x 4 points), thinking on minus off; mean over pairs with events in both modes (20 unless noted), 95% bootstrap CI; exact sign-flip p, Holm over the measures in the family. Gap rows use the 5 common cells. |
+| gpt-oss minus Qwen on, 5 common cells | Per pair, the gpt-oss rate minus the Qwen thinking-on rate over the 5 cells both models played (chat p1, p3, p5; no chat p1, p5), paired across models on (wording, seed). Thinking-mode confound: gpt-oss medium effort vs Qwen thinking on. Cross-wave caveat: the gpt-oss chat and no-chat cells ran in different waves. |
+| gap vs own baseline | Per pair: undercut-back rate when undercut minus the rate of undercutting the rival when not undercut; or return rate after a punishing cut minus return rate after an unprovoked cut. Positive undercut-back gap = retaliation beyond the firm's own habit. |
+| Level columns | Firm-round rates pooled over the 5 common cells (descriptive, no CI); for the gap rows, the per-pair gap with its CI. |
+
+</small>
+
+**What the evidence says.**
+1. **Qwen outcome collusion is focal holding, in both modes.**
+   - 83 to 86% of Qwen quotes sit on a printed example price, and 79 to 84% repeat the previous quote.
+   - Across games, the printed-quote share and the hold share go with higher prices. Thinking on: Spearman 0.55 / Pearson 0.31 (printed share vs price index) and 0.53 / 0.21 (hold share), 240 games. Thinking off: 0.35 / 0.33 and 0.44 / 0.36.
+   - Reactivity does not go with higher prices (Spearman -0.14 / Pearson -0.15, thinking on, 106 games with an undercut event).
+2. **The evidence for strategic punishment is weak, and the reward evidence is absent.**
+   - Thinking on mostly shows up in measures a copier also scores 1.00 on (cuts after being undercut 0.72 vs 0.43; follows down). These cannot be read as punishment.
+   - On the one measure a copier scores 0 on, thinking-on Qwen undercuts back 0.29 when undercut vs 0.16 when not, a gap of +0.12 pooled. The per-pair gap is +0.07 [-0.02, +0.18] and does not pass Holm.
+   - After a punishing cut it returns to its earlier price in 4% of cases, vs 27% after other cuts (per-pair gap -0.28 [-0.39, -0.17], Holm 0.002).
+   - It raises after a rival's raise less often than thinking off does (0.28 vs 0.60). Thinking off's high rate looks like following (echo), not reward.
+   - Best reading: **thinking-on Qwen reacts to being undercut by undercutting back somewhat more than its own baseline (+0.12), with no return path afterwards (it returns to its earlier price 4% of the time after a punishing cut vs 27% after other cuts). That is consistent with targeted punishment, but also with short-sighted undercutting of a lower-priced rival.**
+   - The larger cross-mode contrast (undercuts back 0.29 vs 0.07 with thinking off) compares two different baselines and should not be the lead number.
+3. **gpt-oss shows no specific reaction at all.**
+   - gpt-oss cuts unprovoked in 31% of rounds (Qwen on 8%) and undercuts the rival unprovoked in 49% of firm-rounds. That is *more* than when it has just been undercut (29%; gap -0.20 [-0.26, -0.15]).
+   - Its return after a punishing cut (0.27) is close to its return after other cuts (0.31).
+   - It holds its quote in only 40% of rounds, and only 45% of its quotes are printed examples. In gpt-oss games neither focal share (Spearman -0.08 / Pearson -0.15) nor reactivity (-0.17 / -0.19) predicts price.
+   - On this evidence gpt-oss's supra-competitive prices are neither a focal hold nor a reward-and-punishment scheme. They look like noisy price exploration that stays above cost.
+4. **Caveats.**
+   - These are behavioural signatures from quotes; they do not show intent and are not validated against hand labels.
+   - The Qwen ad hoc +0.38 reaction difference is re-derived here as +0.43 (the counted rerun games are used here), but that measure cannot separate punishment from copying.
+   - The 5-cell comparison omits the Qwen p4 and monitored cells.
+   - Rates conditioned on rare events (thinking-off Qwen with chat has only 34 undercut events) are noisy.
+   - Every gpt-oss contrast also compares a different model at medium effort with Qwen thinking on (the thinking-mode confound), and its chat and no-chat cells ran in different waves.
+
+**Strength.** Exploratory (behavioural definitions set in this dossier, after the earlier analyses). n = 20 pairs. Holm families named in Table 4. Proposed status: outcome collusion **confirmed**. Strategic collusion **downgraded** from "partial, mainly with thinking on" to "a weak undercut-back excess with no return path in thinking-on Qwen, consistent with targeted punishment but not distinguishable from short-sighted undercutting".
+
+**Main-text sentence.** "Collusion in our games was outcome collusion: Qwen3-32B held printed example prices in both thinking modes. With thinking on it undercut a rival that had undercut it only somewhat more than it undercut unprovoked, and it did not return to its earlier price afterwards, which is consistent with targeted punishment but equally with short-sighted undercutting. gpt-oss-20b showed no specific reaction: it undercut the rival unprovoked in 49% of firm-rounds."
+
+**Appendix sentence.** "Rebuilt from the round logs, neutral run, 20 (wording, seed) pairs, five common cells. Thinking-on Qwen3-32B undercut back 0.29 when undercut vs 0.16 when not (pooled +0.12; per pair +0.07 [-0.02, +0.18]). It returned to its earlier price within 3 rounds after 4% of punishing cuts vs 27% of other cuts (-0.28 [-0.39, -0.17], Holm 0.002). The measures a copy-the-rival rule also satisfies (cuts after being undercut, follows down, raises after a rival raise) are not counted as evidence. The printed-example share was 0.83 to 0.86 in both modes (Spearman with price 0.55 / Pearson 0.31, thinking on). gpt-oss-20b cut unprovoked in 31% of rounds and undercut the rival unprovoked in 49% (vs 29% when undercut); hold share 0.40, printed share 0.45."
+
+Sub-questions: 2.3 (what counts as convincing evidence: behaviour-based signatures and their non-strategic baselines), 2.1, 1.1.
+
+## 7. Limits
+
+- gpt-oss has one mode (reasoning effort medium), five headline cells, no p4, no no-chat p3 and no monitored arm. Every gpt-oss vs Qwen comparison compares different models at different reasoning settings.
+- The gpt-oss cells ran in different waves (chat p1 and p5: 7 to 12; no chat: 13 to 16; chat p3: 107 to 112). Contrasts between chat and no chat, the interaction and the p3 contrasts also contrast waves; the replicate offsets are similar for chat and no chat, but a wave effect is untested.
+- The Qwen thinking-on no-chat cells at p3 to p5 rest heavily on truncation reruns (32k profile; 13 of 20 at p5). Truncation is itself outcome-related.
+- Thinking on vs off is a bundle (token cap, temperature, context), not a single switch.
+- The strategic signatures are defined from quotes only. They do not read the reasoning text and are not validated against hand labels.
+- Pair-level bootstrap and sign-flip tests treat pairs as independent, but wording and seed are nested (each wording has its own seeds).
+- All Qwen numbers use the final Step 1 game table. An earlier draft of this dossier used the provisional table, in which two thinking-on no-chat p5 games were truncated originals.
+
+## Files
+
+| File | Content |
+|---|---|
+| `scripts/common03.py` | Loaders, paired bootstrap, exact sign-flip test, Holm, Spearman and Pearson (inputs from the environment variables QWEN_RUN, OSS_RUN, RUNS_DIR) |
+| `scripts/penalty_thinking.py` | Sections 1 to 5: `cells.csv`, `penalty_contrasts.csv`, `tracking_slopes.csv`, `interactions.csv`, `thinking_contrasts.csv`, `thinking_all_arms.csv`, `model_compare.csv`, `sensitivity.csv` |
+| `scripts/strategic_signatures.py` | Section 6: rebuilds firm-rounds from the raw game logs (`firmrounds_rebuilt.csv.gz`); `strategic_by_cell.csv`, `strategic_by_group.csv`, `strategic_by_pair.csv`, `strategic_by_pair_qwen12.csv`, `strategic_contrasts.csv`, `strategic_game_level.csv`, `strategic_corr.csv` |
+| `scripts/strategic_baselines.py` | Section 6 baselines: `strategic_baselines.csv`, `strategic_baselines_pooled.csv`, `strategic_baseline_contrasts.csv` |
+| `scripts/figures03.py` | Figures 1 and 2 |
+| `scripts/report_tables.py` | The five-metric tables in this report (`tables_md.txt`) |
+| `scripts/assemble.py`, `scripts/text/` | Build this report from the text parts and the generated tables and legends |

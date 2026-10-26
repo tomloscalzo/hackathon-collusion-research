@@ -1,0 +1,52 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Wide ripeness map (2026-10-22, pre-sprint)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Wide ripeness map (2026-10-22, pre-sprint)</h1>
+<p><strong>Non-LLM, model-generated.</strong> This is the Layer A solver run over an expanded parameter landscape, from the engine at commit <code>2997526</code> (unchanged). It was made before the sprint, so it counts as <strong>preexisting</strong>. It extends <code>../local-mc-2026-10-22/</code>, whose original 10,368-cell grid used narrower ranges.</p>
+<h2>Ranges</h2>
+<table><tr><th>Input</th><th>Original grid</th><th>Wide grid (<code>grids/wide.yaml</code>, 1,036,800 cells)</th><th>Baseline slices (<code>grids/slice-*.yaml</code>)</th></tr><tr><td>Patience δ</td><td>0.8–0.99 (4)</td><td>0.5–0.99 (6)</td><td>0.5–0.995 (13)</td></tr><tr><td>Number of firms N</td><td>2–6 (4)</td><td>2–10 (5)</td><td>2–12 (8)</td></tr><tr><td>Preferenced share φ</td><td>0–0.6 (3)</td><td>0–0.6 (3)</td><td>0–0.8 (9; 0.8 is the model's cap)</td></tr><tr><td>Tick</td><td>0, 0.25</td><td>0, 0.25, 0.5</td><td>–</td></tr><tr><td>Screen slope</td><td>0–0.075 (3)</td><td>0–0.2 (8)</td><td>0–0.3 (13)</td></tr><tr><td>Tip probability ρ_tip</td><td>0, 0.01</td><td>0, 0.01, 0.05</td><td>0–0.1 (9)</td></tr><tr><td>P(evidence | trigger)</td><td>0.3, 1</td><td>0.1–1 (4)</td><td>0.05–1 (11)</td></tr><tr><td>Fine ratio (fine ÷ one round of full-collusion profit per firm)</td><td>0–125 (3)</td><td>0–500 (8)</td><td>0–1000 (15)</td></tr><tr><td>s̄/s₀</td><td>3–8 (3)</td><td>2–12 (5)</td><td>1.5–12 (9)</td></tr></table>
+<p>The <strong>wide grid</strong> is a full factorial, and the figures average over all the other inputs. Each <strong>baseline slice</strong> varies two inputs at a time and holds the rest at the ripe baseline: δ 0.95, N 2, φ 0.3, tick 0, slope 0.025, ρ_tip 0, P(evidence) 1, fine ratio 12.5, s̄/s₀ 5. Slices are easier to read because every square is a single parameter cell, not an average.</p>
+<h2>Files</h2>
+<p>Every Markdown file in this folder has an HTML version beside it with the same name.</p>
+<ul><li>
+<code>oned/</code>: <strong>one input at a time</strong> (9 inputs, ordered by impact). Each input has two line charts side by side: the share where collusion is chosen and the mean intensity. Each chart shows two lines, all markets and markets with no minimum price step. Below the charts come a terms table, a bold <strong>Interpretation</strong> and details. Open <code>oned/oned_charts.html</code>; it starts with the executive summary as "Major findings".
+</li><li>
+<code>EXECUTIVE_SUMMARY_OF_FACTORS_DRIVING_COLLUSION.md</code> (and <code>.html</code>): which levers, combinations and ranges matter most for collusion frequency and intensity.
+</li><li>
+<code>pairs/</code>: <strong>every pair of the nine inputs</strong> (36 pairs). Each pair page shows two charts side by side, the share where collusion is chosen and the mean chosen intensity θ*. Below them come a terms table, a bold plain-language <strong>Interpretation</strong>, and details with numbers and mechanism analysis. Open <code>pairs/pair_charts.html</code> for all pairs on one page; per-pair PNG and HTML files are in <code>pairs/charts/</code> (<code>pair__A__B.*</code>). The data and checks are in <code>pairs/tables.json</code>, <code>pairs/analysis.json</code>, <code>pairs/interp.json</code> and <code>pairs/checks/</code>.
+</li><li>
+<code>RESULTS_WIDE.md</code>: drivers of each outcome (η²) and outcomes by input level.
+</li><li>
+<code>figures/fig3_ripeness_map_wide_averaged.*</code>: six averaged heat maps.
+</li><li>
+<code>figures/fig4_ripeness_baseline_slices.*</code>: five baseline slices showing θ*.
+</li><li>
+<code>excel/ripeness_map_wide_cells.zip</code>: the full 1,036,800-row Excel CSV, about 19 MB zipped and 188 MB unzipped. Excel's row limit is 1,048,576, so it fits; for pivot tables, loading it through Power Query / the Data Model is faster. The unzipped CSV is git-ignored, but a copy sits beside the zip on the owner's machine.
+</li><li>
+<code>excel/ripeness_baseline_slice-*.csv</code>: the slice cells, with the same columns: inputs on the left, outputs on the right.
+</li><li>
+<code>scripts/wide_analyze.py</code>: the analysis, Excel export and figures. Run it as <code>python -X utf8 wide_analyze.py &lt;dir with wide.csv and slice-*.csv&gt; &lt;out&gt;</code>.
+</li></ul>
+<h2>Regenerate</h2>
+<pre><code>java -jar engine/target/collusion-engine.jar solve --grid results/ripeness-wide-2026-10-22/grids/wide.yaml --out &lt;dir&gt;/wide.csv --threads 12
+java -jar engine/target/collusion-engine.jar solve --grid results/ripeness-wide-2026-10-22/grids/slice-fine-slope.yaml --out &lt;dir&gt;/slice-fine-slope.csv</code></pre>
+<p>Repeat the second command for each of the other slice files. The wide grid takes about 15 s on 12 cores.</p>
+<h2>Notes</h2>
+<ul><li>
+<strong>Fine ratio definition:</strong> the fine divided by one round of a firm's full-collusion (monopoly) profit π_c(1) (<code>RipenessGrid.java</code>). Labels before this correction said "competitive profit", which was wrong. All CSV headers, figures and charts in this folder and in <code>../local-mc-2026-10-22/</code> have been corrected.
+</li><li>
+<strong>Notable regularity</strong> (from the pair analyses): in tick-free markets with no tips, collusion is chosen exactly when it is sustainable and slope × P(evidence) × fine ratio × (s̄/s₀ − 1) &lt; 4 (98.9% of such cells; the rest are knife-edge cells). Fines, evidence and screens are therefore interchangeable there: only their product matters.
+</li><li>
+The tick-cell calibration question (π_post = 0 &lt; π^N, see <code>../local-mc-2026-10-22/delta-check/</code>) applies here too. It affects tick = 0.25 and 0.5 cells.
+</li><li>
+At the baseline, more patience lowers the <em>chosen intensity</em> θ*: from 0.68 at δ = 0.5 to 0.28 at δ = 0.995 (fig4 B). Patient coalitions have more future rent to protect, so they cut margins to lower the screen's detection hazard. This is consistent with the spec's interior-from-external-risk regime, but it hasn't been hand-verified beyond the solver's existing goldens.
+</li><li>
+With no screen (slope 0), the fine never binds: θ* = 1 at any fine (fig4 A). At the baseline, a tip probability of 0.05 or more removes collusion entirely (fig4 E).
+</li></ul></body></html>

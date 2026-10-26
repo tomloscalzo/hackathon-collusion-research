@@ -1,0 +1,7 @@
+dataset,metric,n_cells,pearson_full,spearman_full,loo_pearson_min,loo_pearson_median,loo_pearson_max,loo_spearman_min,loo_spearman_max,most_influential_cell,max_cook
+"gpt-oss-20b, thinking on",competitive_share,31,-0.6533,-0.3847,-0.7213,-0.6541,-0.5417,-0.4538,-0.3210,"ctl-32b-compete, private, p3",1.2394
+"gpt-oss-20b, thinking on",price_index,31,0.8521,0.7931,0.8154,0.8536,0.8669,0.7717,0.8175,"ctl-32b-compete, private, p3",0.6016
+"Qwen3-32B, thinking on",competitive_share,35,-0.6927,-0.7648,-0.7485,-0.6906,-0.6522,-0.7948,-0.7434,"ctl-32b-compete, private, p3",1.1558
+"Qwen3-32B, thinking on",price_index,35,0.6719,0.7274,0.6220,0.6712,0.7212,0.7026,0.7729,"ctl-32b-compete, private, p3",0.6701
+"Qwen3-32B, thinking off",competitive_share,33,-0.5246,-0.5218,-0.5748,-0.5243,-0.5043,-0.5828,-0.4754,"ctl-32b-compete, private, p3",2.1859
+"Qwen3-32B, thinking off",price_index,33,0.5174,0.4364,0.4071,0.5177,0.6090,0.3818,0.5277,"ctl-32b-compete, private, p3",1.0050

@@ -1,0 +1,9 @@
+set,outcome,n_firm_rounds,spearman_rho,lo,hi
+temptation a+b,matches rival's previous quote,854,0.101,0.026,0.187
+temptation a+b,undercuts rival's previous quote,854,-0.133,-0.209,-0.051
+conflict (no rule),matches rival's previous quote,409,0.071,-0.140,0.276
+conflict (no rule),undercuts rival's previous quote,409,0.005,-0.161,0.170
+conflict (ethics rule),matches rival's previous quote,453,-0.011,-0.124,0.094
+conflict (ethics rule),undercuts rival's previous quote,453,0.011,-0.130,0.154
+placebo,matches rival's previous quote,445,-0.040,-0.168,0.088
+placebo,undercuts rival's previous quote,445,0.039,-0.068,0.138

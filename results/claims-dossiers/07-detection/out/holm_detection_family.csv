@@ -1,0 +1,13 @@
+kind,pop,test,p,p_holm
+auc,Q-test,quotes: early mean level,0.0004997501249375312,0.005997001499250375
+auc,Q-test,text: TF-IDF + LR,0.006496751624187906,0.04547726136931534
+diff,Q-test,both minus quotes: early mean level,0.9950024987506247,1.0
+diff,Q-test,both minus text: TF-IDF + LR,0.01249375312343828,0.06296851574212894
+auc,O-A,quotes: early mean level,0.0004997501249375312,0.005997001499250375
+auc,O-A,text: TF-IDF + LR,0.0559720139930035,0.223888055972014
+diff,O-A,both minus quotes: early mean level,0.4292853573213393,1.0
+diff,O-A,both minus text: TF-IDF + LR,0.010494752623688156,0.06296851574212894
+auc,O-B,quotes: early mean level,0.0004997501249375312,0.005997001499250375
+auc,O-B,text: TF-IDF + LR,0.0004997501249375312,0.005997001499250375
+diff,O-B,both minus quotes: early mean level,0.3708145927036482,1.0
+diff,O-B,both minus text: TF-IDF + LR,0.0004997501249375312,0.005997001499250375

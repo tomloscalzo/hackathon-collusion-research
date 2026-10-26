@@ -1,0 +1,16 @@
+contrast,metric,n_pairs,diff,lo,hi
+joint-profit control - headline-chat (p3),market_price_mean,9,0.12449444444444446,0.004684444444444442,0.2734711111111111
+joint-profit control - headline-chat (p3),price_index,9,0.06224444444444447,0.0020666666666667105,0.12983333333333336
+joint-profit control - headline-chat (p3),profit_gain_index,9,0.04596922222222222,0.0015571111111111202,0.10267977777777776
+joint-profit control - headline-chat (p3),competitive_share,9,-0.11752447777777777,-0.28365328888888885,0.023606266666666677
+joint-profit control - headline-chat (p3),matching_share,9,0.13259833333333335,-0.06780877777777777,0.33656344444444447
+strict-compete control - headline-chat (p3),market_price_mean,13,-1.3487484615384617,-1.4379199999999999,-1.251016153846154
+strict-compete control - headline-chat (p3),price_index,13,-0.6743769230769231,-0.7148846153846153,-0.6228846153846154
+strict-compete control - headline-chat (p3),profit_gain_index,13,-0.8791549230769231,-0.9129591538461539,-0.837403923076923
+strict-compete control - headline-chat (p3),competitive_share,13,0.6203839538461539,0.5244072846153846,0.7200658307692307
+strict-compete control - headline-chat (p3),matching_share,13,-0.4471185384615385,-0.576898,-0.3325533076923077
+joint-profit control - strict-compete control,market_price_mean,12,1.4750591666666668,1.4464958333333335,1.498234166666667
+joint-profit control - strict-compete control,price_index,12,0.7375333333333334,0.7238333333333333,0.7487750000000001
+joint-profit control - strict-compete control,profit_gain_index,12,0.9293278333333334,0.9198685833333333,0.9363277499999999
+joint-profit control - strict-compete control,competitive_share,12,-0.7660256666666667,-0.87604025,-0.6537699166666667
+joint-profit control - strict-compete control,matching_share,12,0.6386196666666667,0.5023614166666667,0.7813201666666667

@@ -1,0 +1,40 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Post-hoc review of the conflict-score validation</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}small table{font-size:.8em;margin:.3rem 0 1rem}small{font-size:.85em;color:var(--muted)}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1 id="post-hoc-review-of-the-conflict-score-validation">Post-hoc review of the conflict-score validation</h1>
+<p>Commits 235857c and 171bef2 reached main without a pull request or review. This note records the review done afterwards. <strong>Outcome: no blocking or material issues; no change to the analysis files.</strong></p>
+<h2 id="what-was-checked">What was checked</h2>
+<ul><li>
+<strong>Numbers vs tables.</strong> Every figure in <code>ANALYSIS.md</code> (distribution, paired differences, Spearman, round-level gap, keyword rates, rule-mention means) matches the CSVs.
+</li><li>
+<strong>Reproduction.</strong> <code>analyze.py</code> was rerun on the original collect.py tables (neutral d-conflict, and the 36 completed d-conflict-ethics games). All 7 CSVs came out identical (apart from Windows line endings).
+</li><li>
+<strong>Pairing.</strong> Games are joined on (wording, seed) within each thinking mode. There are no duplicate keys, each seed has one wording, and 20 off pairs and 16 on pairs are what the join yields. The four thinking-on ethics games that were not DONE are dropped, as the analysis says.
+</li><li>
+<strong>CI and permutation logic.</strong> Bootstrap over pairs for the CI; paired sign-flip for the p-value; permutation Spearman. All are correct for this design. The seed is fixed, so results are repeatable.
+</li><li>
+<strong>Claims vs evidence.</strong> The verdict ("low-sensitivity instrument", "supported but not proved") is consistent with the data and carries its caveats.
+</li><li>
+<strong>Hygiene.</strong> No local paths, emails or forbidden names in the folder.
+</li><li>
+<strong>HTML twin.</strong> <code>ANALYSIS.html</code> contains all of the text and numbers of <code>ANALYSIS.md</code>.
+</li></ul>
+<h2 id="minor-notes-not-fixed-no-effect-on-conclusions">Minor notes (not fixed, no effect on conclusions)</h2>
+<ul><li>
+For the thinking-off score difference, the bootstrap CI (0.002 to 0.037) just excludes zero while the sign-flip p is 0.13. The scores are nearly all exactly 1, so the bootstrap is unreliable there. The text rightly calls it essentially no response; read the p-value, not the CI.
+</li><li>
+A dozen hypothesis tests are reported with no multiplicity correction. The two Spearman p-values near 0.03 to 0.04 should be treated as suggestive.
+</li><li>
+The "all thinking" Spearman row pools thinking modes, which differ in both score and price.
+</li><li>
+The rule-mention comparison (1.33 vs 1.08) is per passage, with no allowance for passages clustering within games, and is descriptive only.
+</li><li>
+Dropping the incomplete thinking-on games could bias that arm if incompleteness relates to behaviour.
+</li></ul></body></html>

@@ -1,0 +1,17 @@
+analysis,run,metric,label,est,lo,hi,n_pairs,arm,mode,n_firm_rounds,distinct_values,modal_value,modal_share
+mean_score,neutral,score,neutral|d-conflict|t0|score,1.00125,1.0,1.0037500000000001,20,d-conflict,t0,498,2,1.0,0.9979919678714859
+mean_score,neutral,score,neutral|d-conflict|t1|score,1.0043515037593984,1.0,1.0093515037593985,20,d-conflict,t1,402,2,1.0,0.9925373134328358
+mean_score,neutral,score,neutral|d-temptation-a|t0|score,2.191083959899749,1.9836008771929823,2.4013309837092733,20,d-temptation-a,t0,488,5,2.0,0.5081967213114754
+mean_score,neutral,score,neutral|d-temptation-a|t1|score,2.2954699248120303,2.196681312656642,2.398327224310777,20,d-temptation-a,t1,408,5,2.0,0.6887254901960784
+mean_score,neutral,score,neutral|d-temptation-b|t0|score,2.5566979949874686,2.300959899749373,2.7898562030075187,20,d-temptation-b,t0,434,4,3.0,0.41013824884792627
+mean_score,neutral,score,neutral|d-temptation-b|t1|score,2.5016478696741853,2.29968515037594,2.7307167919799498,20,d-temptation-b,t1,392,5,2.0,0.6071428571428571
+mean_score,neutral,score,neutral|d-placebo|t0|score,3.0,3.0,3.0,20,d-placebo,t0,434,1,3.0,1.0
+mean_score,neutral,score,neutral|d-placebo|t1|score,3.0,3.0,3.0,20,d-placebo,t1,398,1,3.0,1.0
+mean_score,anchored,score,anchored|d-conflict|t0|score,1.0,1.0,1.0,20,d-conflict,t0,490,1,1.0,1.0
+mean_score,anchored,score,anchored|d-conflict|t1|score,1.0035714285714286,1.0,1.0107142857142857,20,d-conflict,t1,456,2,1.0,0.9956140350877193
+mean_score,anchored,score,anchored|d-temptation-a|t0|score,2.5082675438596493,2.338626018170426,2.6775028195488724,20,d-temptation-a,t0,490,5,2.0,0.44285714285714284
+mean_score,anchored,score,anchored|d-temptation-a|t1|score,2.311917293233083,2.2203750783208025,2.4011254699248124,20,d-temptation-a,t1,490,5,2.0,0.636734693877551
+mean_score,anchored,score,anchored|d-temptation-b|t0|score,2.648668546365915,2.397918859649123,2.88684688283208,20,d-temptation-b,t0,490,5,3.0,0.4061224489795918
+mean_score,anchored,score,anchored|d-temptation-b|t1|score,2.4434837092731834,2.2784082080200507,2.6183771929824564,20,d-temptation-b,t1,490,5,2.0,0.5571428571428572
+mean_score,anchored,score,anchored|d-placebo|t0|score,3.0,3.0,3.0,20,d-placebo,t0,490,1,3.0,1.0
+mean_score,anchored,score,anchored|d-placebo|t1|score,3.0,3.0,3.0,20,d-placebo,t1,490,1,3.0,1.0

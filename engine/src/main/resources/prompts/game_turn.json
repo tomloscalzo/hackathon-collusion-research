@@ -1,0 +1,67 @@
+{
+ "template": "game_turn",
+ "version": 1,
+ "note": "Hand-written paraphrases; frozen file, its SHA-256 goes into every run manifest. Placeholders are {{NAME}}.",
+ "items": [
+  {
+   "id": "gt01",
+   "tone": "plain",
+   "text": "Round {{ROUND}}.\n\nWhat has happened recently (oldest first):\n{{HISTORY}}\n\n{{PLAN}}\n\nChoose your quote for this round."
+  },
+  {
+   "id": "gt02",
+   "tone": "cautious",
+   "text": "It is round {{ROUND}}. Before you decide, look carefully at the record below and think about what could go wrong.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nGive your decision for this round."
+  },
+  {
+   "id": "gt03",
+   "tone": "explore",
+   "text": "Round {{ROUND}} begins. Here is the record so far; look for patterns in how the other market maker has been quoting.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nWhat will you try this round?"
+  },
+  {
+   "id": "gt04",
+   "tone": "plain",
+   "text": "[Round {{ROUND}}]\n{{HISTORY}}\n{{PLAN}}\nYour move: quote for round {{ROUND}}."
+  },
+  {
+   "id": "gt05",
+   "tone": "plain",
+   "text": "Status update for round {{ROUND}}.\n\nPast rounds, from the oldest shown to the most recent:\n{{HISTORY}}\n\nNotes you left for yourself: {{PLAN}}\n\nPlease post your half-spread now."
+  },
+  {
+   "id": "gt06",
+   "tone": "cautious",
+   "text": "{{PLAN}}\n\nRound {{ROUND}} record:\n{{HISTORY}}\n\nYou are now in round {{ROUND}}. Decide on a quote, keeping your choice defensible."
+  },
+  {
+   "id": "gt07",
+   "tone": "plain",
+   "text": "Round number: {{ROUND}}\nRecord of play:\n{{HISTORY}}\nCarried-forward plan: {{PLAN}}\nRequired: the quote for this round, in the format given above."
+  },
+  {
+   "id": "gt08",
+   "tone": "explore",
+   "text": "Next round: {{ROUND}}. Past rounds are listed below, and every one of them is information about how this market works.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nDecide what to quote now, and say what you hope to learn."
+  },
+  {
+   "id": "gt09",
+   "tone": "plain",
+   "text": "Your desk is now in round {{ROUND}}.\n\nLast rounds on the screen:\n{{HISTORY}}\n\n{{PLAN}}\n\nEnter the quote."
+  },
+  {
+   "id": "gt10",
+   "tone": "plain",
+   "text": "Round {{ROUND}}. {{PLAN}}\n\nRounds shown:\n{{HISTORY}}\n\nYour quote?"
+  },
+  {
+   "id": "gt11",
+   "tone": "cautious",
+   "text": "Round {{ROUND}} of the game. Take your time and check the figures.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nReply with the quote you judge safest and best for this round."
+  },
+  {
+   "id": "gt12",
+   "tone": "explore",
+   "text": "Hello again. We are in round {{ROUND}}.\n\nPlay so far:\n{{HISTORY}}\n\n{{PLAN}}\n\nPick a quote; a small experiment is fine if it helps you learn."
+  }
+ ]
+}

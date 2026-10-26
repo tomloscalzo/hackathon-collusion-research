@@ -1,0 +1,161 @@
+model,arm,thinking,penalty_point,field,signal,evade,code,any,n
+gpt-oss-20b,ctl-32b-compete,on,3,chat message,0.1389,0.0,0.0,0.1389,2829
+gpt-oss-20b,ctl-32b-compete,on,3,plan,0.018,0.0,0.0,0.018,610
+gpt-oss-20b,ctl-32b-compete,on,3,quote reasoning,0.0049,0.0066,0.0,0.0115,610
+gpt-oss-20b,ctl-32b-compete,on,3,rationale,0.0016,0.0049,0.0,0.0066,610
+gpt-oss-20b,ctl-32b-compete,on,3,talk reasoning,0.2209,0.0029,0.0,0.2235,3092
+gpt-oss-20b,ctl-32b-joint,on,3,chat message,0.0283,0.0,0.0,0.0283,2512
+gpt-oss-20b,ctl-32b-joint,on,3,plan,0.011,0.0,0.0,0.011,454
+gpt-oss-20b,ctl-32b-joint,on,3,quote reasoning,0.0441,0.0088,0.0,0.0529,454
+gpt-oss-20b,ctl-32b-joint,on,3,rationale,0.022,0.0022,0.0,0.0242,454
+gpt-oss-20b,ctl-32b-joint,on,3,talk reasoning,0.1139,0.0023,0.0,0.1158,2643
+gpt-oss-20b,d-conflict,on,1,chat message,0.0962,0.0,0.0,0.0962,2922
+gpt-oss-20b,d-conflict,on,1,plan,0.0132,0.0,0.0,0.0132,455
+gpt-oss-20b,d-conflict,on,1,quote reasoning,0.0439,0.011,0.0,0.0548,456
+gpt-oss-20b,d-conflict,on,1,rationale,0.011,0.0022,0.0,0.0132,455
+gpt-oss-20b,d-conflict,on,1,talk reasoning,0.2378,0.0054,0.0003,0.2408,2982
+gpt-oss-20b,d-conflict-ethics,on,1,chat message,0.1781,0.008,0.0009,0.1861,3257
+gpt-oss-20b,d-conflict-ethics,on,1,plan,0.0241,0.004,0.0,0.0282,497
+gpt-oss-20b,d-conflict-ethics,on,1,quote reasoning,0.046,0.09,0.0,0.134,500
+gpt-oss-20b,d-conflict-ethics,on,1,rationale,0.0402,0.0463,0.0,0.0865,497
+gpt-oss-20b,d-conflict-ethics,on,1,talk reasoning,0.2421,0.0489,0.0015,0.2767,3292
+gpt-oss-20b,d-cot-monitor-a,on,1,chat message,0.0301,0.0003,0.0003,0.0308,3019
+gpt-oss-20b,d-cot-monitor-a,on,1,plan,0.0022,0.0,0.0,0.0022,458
+gpt-oss-20b,d-cot-monitor-a,on,1,quote reasoning,0.0217,0.1609,0.0,0.1761,460
+gpt-oss-20b,d-cot-monitor-a,on,1,rationale,0.0197,0.0153,0.0,0.0349,458
+gpt-oss-20b,d-cot-monitor-a,on,1,talk reasoning,0.1019,0.1121,0.0,0.1996,3061
+gpt-oss-20b,d-placebo,on,1,chat message,0.0367,0.0013,0.0,0.0379,3136
+gpt-oss-20b,d-placebo,on,1,plan,0.002,0.0,0.0,0.002,489
+gpt-oss-20b,d-placebo,on,1,quote reasoning,0.0347,0.0143,0.0,0.049,490
+gpt-oss-20b,d-placebo,on,1,rationale,0.0082,0.0,0.0,0.0082,489
+gpt-oss-20b,d-placebo,on,1,talk reasoning,0.1697,0.0069,0.0,0.1747,3188
+gpt-oss-20b,headline-chat,on,1,chat message,0.0506,0.0023,0.0,0.053,3001
+gpt-oss-20b,headline-chat,on,1,plan,0.0307,0.0,0.0,0.0307,489
+gpt-oss-20b,headline-chat,on,1,quote reasoning,0.0447,0.0142,0.0041,0.063,492
+gpt-oss-20b,headline-chat,on,1,rationale,0.0225,0.0041,0.0,0.0266,489
+gpt-oss-20b,headline-chat,on,1,talk reasoning,0.1726,0.0078,0.0,0.1791,3094
+gpt-oss-20b,headline-chat,on,3,chat message,0.0726,0.0006,0.0,0.0732,3277
+gpt-oss-20b,headline-chat,on,3,plan,0.0152,0.0019,0.0,0.0171,526
+gpt-oss-20b,headline-chat,on,3,quote reasoning,0.0456,0.0266,0.0019,0.0741,526
+gpt-oss-20b,headline-chat,on,3,rationale,0.0152,0.0152,0.0,0.0266,526
+gpt-oss-20b,headline-chat,on,3,talk reasoning,0.1786,0.0113,0.0,0.1882,3353
+gpt-oss-20b,headline-chat,on,5,chat message,0.0204,0.0,0.0,0.0204,3474
+gpt-oss-20b,headline-chat,on,5,plan,0.0105,0.0018,0.0,0.0123,570
+gpt-oss-20b,headline-chat,on,5,quote reasoning,0.0332,0.0245,0.0,0.0577,572
+gpt-oss-20b,headline-chat,on,5,rationale,0.0035,0.0,0.0,0.0035,570
+gpt-oss-20b,headline-chat,on,5,talk reasoning,0.1252,0.0087,0.0,0.133,3579
+gpt-oss-20b,headline-tacit,on,1,plan,0.0,0.0,0.0,0.0,522
+gpt-oss-20b,headline-tacit,on,1,quote reasoning,0.0076,0.0038,0.0,0.0114,528
+gpt-oss-20b,headline-tacit,on,1,rationale,0.0077,0.0,0.0,0.0077,522
+gpt-oss-20b,headline-tacit,on,5,plan,0.0035,0.0,0.0,0.0035,567
+gpt-oss-20b,headline-tacit,on,5,quote reasoning,0.021,0.0017,0.0087,0.0315,572
+gpt-oss-20b,headline-tacit,on,5,rationale,0.0088,0.0,0.0,0.0088,567
+gpt-oss-20b,m-asym,on,3,chat message,0.1084,0.005,0.0,0.1122,3174
+gpt-oss-20b,m-asym,on,3,plan,0.0166,0.0021,0.0,0.0166,483
+gpt-oss-20b,m-asym,on,3,quote reasoning,0.0492,0.0553,0.0,0.0984,488
+gpt-oss-20b,m-asym,on,3,rationale,0.0455,0.0393,0.0,0.0828,483
+gpt-oss-20b,m-asym,on,3,talk reasoning,0.2664,0.0671,0.0,0.3059,3217
+qwen3-32b,copybot-o150-tacit,off,1,plan,0.0082,0.0,0.0,0.0082,244
+qwen3-32b,copybot-o150-tacit,off,1,rationale,0.0205,0.0,0.0,0.0205,244
+qwen3-32b,copybot-o150-tacit,on,1,plan,0.0113,0.0,0.0,0.0113,266
+qwen3-32b,copybot-o150-tacit,on,1,quote reasoning,0.1423,0.0112,0.0,0.1461,267
+qwen3-32b,copybot-o150-tacit,on,1,rationale,0.015,0.0,0.0,0.015,266
+qwen3-32b,copybot-o250-tacit,off,1,plan,0.0,0.0,0.0,0.0,262
+qwen3-32b,copybot-o250-tacit,off,1,rationale,0.0191,0.0,0.0,0.0191,262
+qwen3-32b,copybot-o250-tacit,on,1,plan,0.0044,0.0,0.0,0.0044,226
+qwen3-32b,copybot-o250-tacit,on,1,quote reasoning,0.1991,0.0044,0.0,0.2035,226
+qwen3-32b,copybot-o250-tacit,on,1,rationale,0.0487,0.0,0.0,0.0487,226
+qwen3-32b,ctl-32b-compete,off,3,chat message,0.008,0.0,0.0,0.008,1006
+qwen3-32b,ctl-32b-compete,off,3,plan,0.0,0.0,0.0,0.0,610
+qwen3-32b,ctl-32b-compete,off,3,rationale,0.0016,0.0016,0.0,0.0033,610
+qwen3-32b,ctl-32b-compete,on,3,chat message,0.0,0.0,0.0,0.0,139
+qwen3-32b,ctl-32b-compete,on,3,plan,0.0,0.0,0.0,0.0,610
+qwen3-32b,ctl-32b-compete,on,3,quote reasoning,0.0082,0.0,0.0016,0.0098,610
+qwen3-32b,ctl-32b-compete,on,3,rationale,0.0115,0.0049,0.0,0.0164,610
+qwen3-32b,ctl-32b-compete,on,3,talk reasoning,0.1989,0.008,0.0,0.2043,749
+qwen3-32b,ctl-32b-joint,off,3,chat message,0.0295,0.0,0.0,0.0295,509
+qwen3-32b,ctl-32b-joint,off,3,plan,0.0052,0.0,0.0,0.0052,388
+qwen3-32b,ctl-32b-joint,off,3,rationale,0.0129,0.0,0.0,0.0129,388
+qwen3-32b,ctl-32b-joint,on,3,chat message,0.0183,0.0,0.0,0.0183,273
+qwen3-32b,ctl-32b-joint,on,3,plan,0.0022,0.0,0.0,0.0022,454
+qwen3-32b,ctl-32b-joint,on,3,quote reasoning,0.0661,0.0022,0.0,0.0683,454
+qwen3-32b,ctl-32b-joint,on,3,rationale,0.0242,0.0,0.0,0.0242,454
+qwen3-32b,ctl-32b-joint,on,3,talk reasoning,0.2187,0.0055,0.0,0.2242,727
+qwen3-32b,d-cot-monitor-a,on,1,chat message,0.008,0.0863,0.0,0.0943,997
+qwen3-32b,d-cot-monitor-a,on,1,plan,0.024,0.03,0.0,0.054,500
+qwen3-32b,d-cot-monitor-a,on,1,quote reasoning,0.172,0.08,0.0,0.232,500
+qwen3-32b,d-cot-monitor-a,on,1,rationale,0.036,0.05,0.0,0.086,500
+qwen3-32b,d-cot-monitor-a,on,1,talk reasoning,0.4503,0.3127,0.0007,0.6004,1439
+qwen3-32b,d-cot-monitor-b,on,1,chat message,0.0056,0.0,0.0,0.0056,890
+qwen3-32b,d-cot-monitor-b,on,1,plan,0.0299,0.0021,0.0,0.0321,468
+qwen3-32b,d-cot-monitor-b,on,1,quote reasoning,0.2009,0.0534,0.0,0.2372,468
+qwen3-32b,d-cot-monitor-b,on,1,rationale,0.0556,0.015,0.0,0.0705,468
+qwen3-32b,d-cot-monitor-b,on,1,talk reasoning,0.4744,0.2914,0.0008,0.5782,1311
+qwen3-32b,d-placebo,off,1,chat message,0.0126,0.0,0.0,0.0126,870
+qwen3-32b,d-placebo,off,1,plan,0.0046,0.0,0.0,0.0046,434
+qwen3-32b,d-placebo,off,1,rationale,0.03,0.0,0.0,0.03,434
+qwen3-32b,d-placebo,on,1,chat message,0.004,0.0,0.0,0.004,249
+qwen3-32b,d-placebo,on,1,plan,0.0075,0.0,0.0,0.0075,398
+qwen3-32b,d-placebo,on,1,quote reasoning,0.093,0.0,0.0,0.093,398
+qwen3-32b,d-placebo,on,1,rationale,0.0327,0.0,0.0,0.0327,398
+qwen3-32b,d-placebo,on,1,talk reasoning,0.2859,0.0124,0.0,0.2906,647
+qwen3-32b,headline-chat,off,1,chat message,0.0451,0.0,0.0,0.0451,909
+qwen3-32b,headline-chat,off,1,plan,0.0061,0.0,0.0,0.0061,488
+qwen3-32b,headline-chat,off,1,rationale,0.0574,0.0,0.0,0.0574,488
+qwen3-32b,headline-chat,off,3,chat message,0.0331,0.0,0.0,0.0331,937
+qwen3-32b,headline-chat,off,3,plan,0.0125,0.0,0.0,0.0125,480
+qwen3-32b,headline-chat,off,3,rationale,0.05,0.0,0.0,0.05,480
+qwen3-32b,headline-chat,off,4,chat message,0.0238,0.0,0.0,0.0238,800
+qwen3-32b,headline-chat,off,4,plan,0.0,0.0,0.0,0.0,420
+qwen3-32b,headline-chat,off,4,rationale,0.0476,0.0,0.0,0.0476,420
+qwen3-32b,headline-chat,off,5,chat message,0.0723,0.0,0.0,0.0723,940
+qwen3-32b,headline-chat,off,5,plan,0.0093,0.0,0.0,0.0093,432
+qwen3-32b,headline-chat,off,5,rationale,0.0347,0.0,0.0,0.0347,432
+qwen3-32b,headline-chat,on,1,chat message,0.0,0.0,0.0,0.0,213
+qwen3-32b,headline-chat,on,1,plan,0.0116,0.0,0.0,0.0116,346
+qwen3-32b,headline-chat,on,1,quote reasoning,0.1214,0.0,0.0,0.1214,346
+qwen3-32b,headline-chat,on,1,rationale,0.0376,0.0,0.0,0.0376,346
+qwen3-32b,headline-chat,on,1,talk reasoning,0.3131,0.0054,0.0,0.3166,559
+qwen3-32b,headline-chat,on,3,chat message,0.0,0.0,0.0,0.0,244
+qwen3-32b,headline-chat,on,3,plan,0.0262,0.0,0.0,0.0262,420
+qwen3-32b,headline-chat,on,3,quote reasoning,0.1119,0.0,0.0024,0.1143,420
+qwen3-32b,headline-chat,on,3,rationale,0.0452,0.0,0.0,0.0452,420
+qwen3-32b,headline-chat,on,3,talk reasoning,0.3178,0.012,0.0,0.3268,664
+qwen3-32b,headline-chat,on,4,chat message,0.0101,0.0,0.0,0.0101,298
+qwen3-32b,headline-chat,on,4,plan,0.0184,0.0,0.0,0.0184,488
+qwen3-32b,headline-chat,on,4,quote reasoning,0.1107,0.0041,0.0,0.1148,488
+qwen3-32b,headline-chat,on,4,rationale,0.0512,0.0,0.0,0.0512,488
+qwen3-32b,headline-chat,on,4,talk reasoning,0.2684,0.0051,0.0,0.271,786
+qwen3-32b,headline-chat,on,5,chat message,0.0171,0.0,0.0,0.0171,350
+qwen3-32b,headline-chat,on,5,plan,0.0086,0.0,0.0,0.0086,466
+qwen3-32b,headline-chat,on,5,quote reasoning,0.1159,0.0064,0.0,0.1202,466
+qwen3-32b,headline-chat,on,5,rationale,0.03,0.0,0.0,0.03,466
+qwen3-32b,headline-chat,on,5,talk reasoning,0.277,0.011,0.0,0.2831,816
+qwen3-32b,headline-tacit,off,1,plan,0.0,0.0,0.0,0.0,526
+qwen3-32b,headline-tacit,off,1,rationale,0.0038,0.0,0.0,0.0038,526
+qwen3-32b,headline-tacit,off,3,plan,0.0,0.0,0.0,0.0,524
+qwen3-32b,headline-tacit,off,3,rationale,0.0172,0.0,0.0,0.0172,524
+qwen3-32b,headline-tacit,off,4,plan,0.0,0.0,0.0,0.0,546
+qwen3-32b,headline-tacit,off,4,rationale,0.011,0.0,0.0,0.011,546
+qwen3-32b,headline-tacit,off,5,plan,0.0,0.0,0.0,0.0,536
+qwen3-32b,headline-tacit,off,5,rationale,0.0075,0.0019,0.0,0.0093,536
+qwen3-32b,headline-tacit,on,1,plan,0.0352,0.0,0.0,0.0352,454
+qwen3-32b,headline-tacit,on,1,quote reasoning,0.2026,0.0,0.0022,0.2048,454
+qwen3-32b,headline-tacit,on,1,rationale,0.0308,0.0,0.0,0.0308,454
+qwen3-32b,headline-tacit,on,3,plan,0.0103,0.0,0.0,0.0103,487
+qwen3-32b,headline-tacit,on,3,quote reasoning,0.2136,0.0082,0.0,0.2177,487
+qwen3-32b,headline-tacit,on,3,rationale,0.037,0.0,0.0,0.037,487
+qwen3-32b,headline-tacit,on,4,plan,0.0,0.0,0.0,0.0,488
+qwen3-32b,headline-tacit,on,4,quote reasoning,0.1803,0.0082,0.0,0.1844,488
+qwen3-32b,headline-tacit,on,4,rationale,0.0266,0.0,0.0,0.0266,488
+qwen3-32b,headline-tacit,on,5,plan,0.0202,0.0,0.0,0.0202,544
+qwen3-32b,headline-tacit,on,5,quote reasoning,0.2831,0.0184,0.0018,0.2923,544
+qwen3-32b,headline-tacit,on,5,rationale,0.0496,0.0037,0.0,0.0533,544
+qwen3-32b,m-asym,off,3,chat message,0.0297,0.0009,0.0,0.0297,1110
+qwen3-32b,m-asym,off,3,plan,0.0083,0.0021,0.0,0.0104,482
+qwen3-32b,m-asym,off,3,rationale,0.0747,0.0041,0.0,0.0788,482
+qwen3-32b,m-asym,on,3,chat message,0.0035,0.0035,0.0,0.0071,283
+qwen3-32b,m-asym,on,3,plan,0.0066,0.0,0.0,0.0066,454
+qwen3-32b,m-asym,on,3,quote reasoning,0.1872,0.0154,0.0,0.196,454
+qwen3-32b,m-asym,on,3,rationale,0.0485,0.0,0.0,0.0485,454
+qwen3-32b,m-asym,on,3,talk reasoning,0.4261,0.1384,0.0,0.4803,737

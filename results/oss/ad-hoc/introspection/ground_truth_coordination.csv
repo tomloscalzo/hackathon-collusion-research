@@ -1,0 +1,7 @@
+arm,n_games,mean_ground_truth_coordination_rounds,games_with_gt_coordination,mean_explicit_round_share
+headline-chat,20,,0,0.977
+r2f-confidant,20,11.350,20,0.957
+r3f-public,20,11.350,20,0.977
+r2s-confidant,19,12.105,19,0.977
+r3s-public,20,12.000,20,0.966
+r4-announced,11,11.545,11,0.984

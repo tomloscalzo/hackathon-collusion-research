@@ -1,0 +1,13 @@
+model,what,n,pearson,spearman
+gpt-oss-20b (reasoning medium),across pairs: change in price index vs change in comp,20,0.02697008846828909,0.07672057706904292
+gpt-oss-20b (reasoning medium),across pairs: change in price index vs change in match,20,0.15053975413095994,-0.03085027208922125
+gpt-oss-20b (reasoning medium),across 5-tick games: round-2 mean quote vs price index rounds 3+,20,0.7566427461988985,0.6348977343720532
+gpt-oss-20b (reasoning medium),across 5-tick games: matching-above-floor share vs price index rounds 3+,20,0.3541944866565154,0.3506396778921244
+Qwen3-32B thinking on,across pairs: change in price index vs change in comp,20,-0.341151724701445,-0.1505724569014132
+Qwen3-32B thinking on,across pairs: change in price index vs change in match,20,0.5823836923663077,0.4483997037130396
+Qwen3-32B thinking on,across 5-tick games: round-2 mean quote vs price index rounds 3+,19,0.8472216188275649,0.8254806193383758
+Qwen3-32B thinking on,across 5-tick games: matching-above-floor share vs price index rounds 3+,19,0.37986935424245066,0.10349781621911643
+Qwen3-32B thinking off,across pairs: change in price index vs change in comp,20,-0.6075662704979838,-0.5739708763587427
+Qwen3-32B thinking off,across pairs: change in price index vs change in match,20,0.49174584775072055,0.36338588376430003
+Qwen3-32B thinking off,across 5-tick games: round-2 mean quote vs price index rounds 3+,20,0.9865329493035835,0.9794318103636666
+Qwen3-32B thinking off,across 5-tick games: matching-above-floor share vs price index rounds 3+,20,0.2546376719071426,0.0911192261637739

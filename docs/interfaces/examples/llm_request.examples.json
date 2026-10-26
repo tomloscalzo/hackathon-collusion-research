@@ -1,0 +1,29 @@
+{
+  "schema": "llm_request",
+  "note": "Canonical requests in the CanonicalRequest.json form (prompt texts shortened). The responseSchema string is PromptBuilder.DECISION_SCHEMA verbatim.",
+  "valid": [
+    {"drawKey": "game|ripe-game|s1|llm|r1|a0", "maxTokens": 400, "modelSnapshot": "mock-model-1", "provider": "openai-compatible",
+     "responseSchema": "{\"type\":\"object\",\"properties\":{\"quote\":{\"type\":[\"number\",\"null\"]},\"plan\":{\"type\":\"string\"},\"rationale\":{\"type\":\"string\"}},\"required\":[\"quote\",\"plan\",\"rationale\"]}",
+     "system": "You are the pricing engine of a market-making firm. ...", "temperature": 0.7,
+     "turns": [{"content": "Round 1.\n\nWhat has happened recently (oldest first):\nNo rounds have been played yet.\n\nYou have no plan from an earlier round.\n\nChoose your quote for this round.", "role": "user"}]},
+    {"drawKey": "game|ripe-game|s1|llm|r2|a1", "maxTokens": 400, "modelSnapshot": "mock-model-1", "provider": "openai-compatible",
+     "responseSchema": "{}", "system": "...", "temperature": 0.7,
+     "turns": [{"content": "Round 2. ...", "role": "user"}, {"content": "{\"quote\": 2.09", "role": "assistant"},
+               {"content": "Your reply could not be read as the required JSON object. Reply again with only the JSON object in the exact form requested, nothing else.", "role": "user"}]},
+    {"drawKey": "probe|ripe-game|s1|llm|r1", "maxTokens": 400, "modelSnapshot": "mock-model-1", "provider": "openai-compatible",
+     "responseSchema": null, "system": "...", "temperature": 0.7,
+     "turns": [{"content": "Round 1. ...", "role": "user"}, {"content": "{\"quote\": 2.09}", "role": "assistant"}, {"content": "Without changing your decision: ...", "role": "user"}]},
+    {"drawKey": "vig|ripe-game|s5|p3|row4|b0.3000|cB|d1|a0", "maxTokens": 400, "modelSnapshot": "mock-model-1", "provider": "openai-compatible",
+     "responseSchema": "{}", "system": "You are answering a decision question about a market-making firm. Answer in the requested JSON format.", "temperature": 0.7,
+     "turns": [{"content": "You manage the quoting desk ...", "role": "user"}]},
+    {"drawKey": "game|ripe-game|s1|llm|r1|a0", "maxTokens": 400, "modelSnapshot": "mock-model-1", "provider": "openai-compatible",
+     "responseSchema": "{}", "system": "...", "temperature": 0.7, "thinking": false, "topK": 20, "topP": 0.8,
+     "turns": [{"content": "Round 1. ...", "role": "user"}]}
+  ],
+  "invalid": [
+    {"why": "thinking is a boolean (--thinking on|off), not a string", "value": {"drawKey": "game|x|s1|llm|r1|a0", "maxTokens": 1, "modelSnapshot": "m", "provider": "p", "responseSchema": null, "system": "s", "temperature": 0, "thinking": "off", "turns": [{"role": "user", "content": "u"}]}},
+    {"why": "a system role is not a turn (the system prompt has its own field)", "value": {"drawKey": "game|x|s1|llm|r1|a0", "maxTokens": 1, "modelSnapshot": "m", "provider": "p", "responseSchema": null, "system": "s", "temperature": 0, "turns": [{"role": "system", "content": "s"}]}},
+    {"why": "responseSchema is always present (null when absent)", "value": {"drawKey": "game|x|s1|llm|r1|a0", "maxTokens": 1, "modelSnapshot": "m", "provider": "p", "system": "s", "temperature": 0, "turns": [{"role": "user", "content": "u"}]}},
+    {"why": "drawKey must follow one of the three grammars", "value": {"drawKey": "round-1", "maxTokens": 1, "modelSnapshot": "m", "provider": "p", "responseSchema": null, "system": "s", "temperature": 0, "turns": [{"role": "user", "content": "u"}]}}
+  ]
+}

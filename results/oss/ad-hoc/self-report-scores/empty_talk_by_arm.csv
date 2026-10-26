@@ -1,0 +1,7 @@
+arm,n_games,mean_empty_talk_done_count,games_with_count_gt0
+headline-chat,20,0.80,9
+d-conflict,20,0.50,7
+d-temptation-a,20,0.30,3
+d-temptation-b,20,0.55,7
+d-placebo,20,0.85,9
+d-conflict-ethics,20,1.20,9

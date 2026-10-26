@@ -1,0 +1,5 @@
+arm,games,market_price_mean,price_index,profit_gain_index,competitive_share,matching_share,rounds_played,empty_talk_mean,games_empty_talk_gt0,games_fined
+headline-chat,20,2.1470,0.5735,0.7689,0.4261,0.4122,12.3000,0.8000,9,5
+wd-notice-only,19,2.1118,0.5559,0.7459,0.4184,0.4192,13.4737,0.5789,6,4
+wd-ask-noreport,19,2.2376,0.6188,0.8176,0.4344,0.3852,11.8421,1.3158,11,6
+wd-noncomp,20,2.0973,0.5486,0.7248,0.3755,0.4179,12.2500,1.1000,10,5

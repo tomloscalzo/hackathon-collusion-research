@@ -1,0 +1,11 @@
+arm,pt,n,mean_empty_talk_done_count,games_with_count_gt0
+headline-chat,1,20,0.8,9
+headline-chat,3,20,0.4,6
+headline-chat,5,20,0.4,6
+headline-tacit,1,20,0.0,0
+headline-tacit,5,20,0.0,0
+hrep-fx-chat-p1,1,20,0.5,6
+hrep-fx-chat-p5,5,19,0.631578947368421,7
+hrep-fx-tacit-p1,1,20,0.0,0
+hrep-nx-chat-p1,1,20,0.8,7
+hrep-nx-tacit-p1,1,20,0.0,0

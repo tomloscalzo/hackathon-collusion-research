@@ -1,0 +1,7 @@
+communication,mode,all-rounds (reported),planned length 19 or 20 only,excluding rerun-flagged games,no refusal or imputed round,n (all / no rerun / clean)
+tacit,t0,0.43,0.42,0.43,0.43,80 / 80 / 80
+tacit,t1,0.52,0.53,0.59,0.52,80 / 63 / 80
+private,t0,0.67,0.67,0.67,0.67,80 / 80 / 80
+private,t1,0.67,0.66,0.66,0.67,80 / 77 / 80
+monitored,t0,0.63,0.65,0.63,0.63,80 / 80 / 80
+monitored,t1,0.63,0.62,0.66,0.63,80 / 74 / 80

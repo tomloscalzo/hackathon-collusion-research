@@ -1,0 +1,51 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,r2f-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],market_price_mean,10,2.360,2.318,0.042,-0.156,0.236
+gpt-oss-20b,r2f-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],price_index,10,0.680,0.659,0.021,-0.082,0.118
+gpt-oss-20b,r2f-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],profit_gain_index,10,0.876,0.857,0.019,-0.085,0.109
+gpt-oss-20b,r2f-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],competitive_share,10,0.326,0.403,-0.076,-0.241,0.089
+gpt-oss-20b,r2f-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],matching_share,10,0.530,0.440,0.089,-0.100,0.296
+gpt-oss-20b,r3f-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],market_price_mean,10,2.420,2.258,0.162,-0.087,0.409
+gpt-oss-20b,r3f-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],price_index,10,0.710,0.629,0.081,-0.052,0.199
+gpt-oss-20b,r3f-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],profit_gain_index,10,0.903,0.827,0.076,-0.037,0.190
+gpt-oss-20b,r3f-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],competitive_share,10,0.351,0.349,0.002,-0.296,0.272
+gpt-oss-20b,r3f-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],matching_share,10,0.541,0.503,0.038,-0.265,0.359
+gpt-oss-20b,r2s-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],market_price_mean,9,2.428,2.339,0.088,-0.060,0.255
+gpt-oss-20b,r2s-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],price_index,9,0.714,0.670,0.044,-0.034,0.126
+gpt-oss-20b,r2s-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],profit_gain_index,9,0.913,0.868,0.046,-0.018,0.117
+gpt-oss-20b,r2s-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],competitive_share,9,0.340,0.371,-0.031,-0.328,0.203
+gpt-oss-20b,r2s-confidant - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],matching_share,9,0.546,0.472,0.075,-0.192,0.384
+gpt-oss-20b,r3s-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],market_price_mean,9,2.379,2.298,0.081,-0.100,0.266
+gpt-oss-20b,r3s-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],price_index,9,0.690,0.649,0.041,-0.052,0.130
+gpt-oss-20b,r3s-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],profit_gain_index,9,0.884,0.848,0.036,-0.057,0.119
+gpt-oss-20b,r3s-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],competitive_share,9,0.290,0.448,-0.157,-0.400,0.047
+gpt-oss-20b,r3s-public - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],matching_share,9,0.491,0.378,0.113,-0.051,0.255
+gpt-oss-20b,r4-announced - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],market_price_mean,9,2.419,2.281,0.138,-0.005,0.364
+gpt-oss-20b,r4-announced - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],price_index,9,0.709,0.641,0.069,-0.002,0.177
+gpt-oss-20b,r4-announced - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],profit_gain_index,9,0.898,0.837,0.061,-0.020,0.178
+gpt-oss-20b,r4-announced - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],competitive_share,9,0.362,0.412,-0.050,-0.343,0.207
+gpt-oss-20b,r4-announced - headline-chat (p1) [pairs with any empty_talk_done>0 dropped],matching_share,9,0.552,0.450,0.102,-0.199,0.401
+gpt-oss-20b,r2f-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),market_price_mean,20,2.109,2.271,-0.162,-0.339,0.003
+gpt-oss-20b,r2f-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),price_index,20,0.555,0.636,-0.081,-0.164,-0.004
+gpt-oss-20b,r2f-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),profit_gain_index,20,0.742,0.828,-0.086,-0.188,0.003
+gpt-oss-20b,r2f-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),competitive_share,20,0.436,0.398,0.038,-0.060,0.138
+gpt-oss-20b,r2f-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),matching_share,20,0.398,0.434,-0.035,-0.143,0.086
+gpt-oss-20b,r3f-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),market_price_mean,20,2.270,2.271,-0.001,-0.168,0.157
+gpt-oss-20b,r3f-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),price_index,20,0.635,0.636,-0.001,-0.085,0.078
+gpt-oss-20b,r3f-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),profit_gain_index,20,0.827,0.828,-0.001,-0.100,0.086
+gpt-oss-20b,r3f-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),competitive_share,20,0.443,0.398,0.045,-0.081,0.165
+gpt-oss-20b,r3f-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),matching_share,20,0.420,0.434,-0.014,-0.151,0.128
+gpt-oss-20b,r2s-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),market_price_mean,19,2.344,2.265,0.079,-0.040,0.205
+gpt-oss-20b,r2s-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),price_index,19,0.672,0.633,0.039,-0.022,0.100
+gpt-oss-20b,r2s-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),profit_gain_index,19,0.877,0.824,0.052,-0.011,0.122
+gpt-oss-20b,r2s-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),competitive_share,19,0.393,0.391,0.002,-0.099,0.098
+gpt-oss-20b,r2s-confidant - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),matching_share,19,0.461,0.442,0.019,-0.086,0.134
+gpt-oss-20b,r3s-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),market_price_mean,20,2.260,2.271,-0.011,-0.155,0.124
+gpt-oss-20b,r3s-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),price_index,20,0.630,0.636,-0.006,-0.079,0.060
+gpt-oss-20b,r3s-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),profit_gain_index,20,0.828,0.828,-0.000,-0.086,0.074
+gpt-oss-20b,r3s-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),competitive_share,20,0.391,0.398,-0.007,-0.118,0.094
+gpt-oss-20b,r3s-public - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),matching_share,20,0.390,0.434,-0.044,-0.135,0.042
+gpt-oss-20b,r4-announced - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),market_price_mean,11,2.423,2.340,0.083,-0.025,0.199
+gpt-oss-20b,r4-announced - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),price_index,11,0.711,0.670,0.041,-0.014,0.104
+gpt-oss-20b,r4-announced - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),profit_gain_index,11,0.902,0.860,0.042,-0.029,0.122
+gpt-oss-20b,r4-announced - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),competitive_share,11,0.376,0.380,-0.003,-0.185,0.154
+gpt-oss-20b,r4-announced - headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 replicates (40 replicate games),matching_share,11,0.520,0.487,0.033,-0.141,0.220

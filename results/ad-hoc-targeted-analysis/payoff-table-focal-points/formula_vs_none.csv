@@ -1,0 +1,26 @@
+comm,mode,contrast,metric,metric_label,n_pairs,arm_mean,control_mean,diff,ci_low,ci_high,p_exact,p_holm
+chat,off,fx-chat-p1 minus nx-chat-p1,market_price_mean,Average absolute spread,20,1.046296,1.109223,-0.062927,-0.137589,-0.002748,0.100952,0.193848
+chat,off,fx-chat-p1 minus nx-chat-p1,price_index,Price index,20,0.023155,0.054615,-0.031460,-0.068787,-0.001374,0.101044,0.193604
+chat,off,fx-chat-p1 minus nx-chat-p1,profit_gain_index,Profit gain index,20,0.043754,0.100541,-0.056788,-0.121589,-0.004114,0.088409,0.176819
+chat,off,fx-chat-p1 minus nx-chat-p1,competitive_share,Competitive share (U16),20,0.360119,0.154628,0.205491,-0.049149,0.458594,0.130859,0.392578
+chat,off,fx-chat-p1 minus nx-chat-p1,matching_share,Matching share,20,0.621230,0.761590,-0.140360,-0.401991,0.120774,0.305542,0.552246
+chat,on,fx-chat-p1 minus nx-chat-p1,market_price_mean,Average absolute spread,20,1.674475,1.222582,0.451893,0.264099,0.640430,0.000343,0.001373
+chat,on,fx-chat-p1 minus nx-chat-p1,price_index,Price index,20,0.337240,0.111300,0.225940,0.132045,0.320208,0.000343,0.001373
+chat,on,fx-chat-p1 minus nx-chat-p1,profit_gain_index,Profit gain index,20,0.535922,0.194360,0.341562,0.207970,0.476196,0.000206,0.000824
+chat,on,fx-chat-p1 minus nx-chat-p1,competitive_share,Competitive share (U16),20,0.001316,0.007519,-0.006203,-0.015977,0.000000,0.500000,0.500000
+chat,on,fx-chat-p1 minus nx-chat-p1,matching_share,Matching share,20,0.986842,0.744413,0.242429,0.103389,0.398981,0.000488,0.001953
+tacit,off,fx-tacit-p1 minus nx-tacit-p1,market_price_mean,Average absolute spread,20,1.013792,1.028612,-0.014820,-0.030448,0.000971,0.096924,0.193848
+tacit,off,fx-tacit-p1 minus nx-tacit-p1,price_index,Price index,20,0.006900,0.014310,-0.007410,-0.015220,0.000485,0.096802,0.193604
+tacit,off,fx-tacit-p1 minus nx-tacit-p1,profit_gain_index,Profit gain index,20,0.013491,0.027915,-0.014425,-0.029485,0.000806,0.093018,0.176819
+tacit,off,fx-tacit-p1 minus nx-tacit-p1,competitive_share,Competitive share (U16),20,0.583365,0.325773,0.257592,0.049225,0.471533,0.027985,0.111938
+tacit,off,fx-tacit-p1 minus nx-tacit-p1,matching_share,Matching share,20,0.266656,0.415267,-0.148611,-0.402131,0.106352,0.276123,0.552246
+tacit,on,fx-tacit-p1 minus nx-tacit-p1,market_price_mean,Average absolute spread,20,1.171334,1.036041,0.135292,0.023630,0.273059,0.058105,0.174316
+tacit,on,fx-tacit-p1 minus nx-tacit-p1,price_index,Price index,20,0.085670,0.018030,0.067640,0.011810,0.136525,0.058105,0.174316
+tacit,on,fx-tacit-p1 minus nx-tacit-p1,profit_gain_index,Profit gain index,20,0.140700,0.035189,0.105511,0.018198,0.211325,0.057861,0.173584
+tacit,on,fx-tacit-p1 minus nx-tacit-p1,competitive_share,Competitive share (U16),20,0.218525,0.126514,0.092011,-0.025826,0.229357,0.186783,0.392578
+tacit,on,fx-tacit-p1 minus nx-tacit-p1,matching_share,Matching share,20,0.740320,0.584764,0.155556,-0.006354,0.310581,0.074219,0.222656
+chat,on,fx-chat-p5 minus fx-chat-p1,market_price_mean,Average absolute spread,20,1.085980,1.674475,-0.588495,-0.745376,-0.429634,0.000010,0.000048
+chat,on,fx-chat-p5 minus fx-chat-p1,price_index,Price index,20,0.043000,0.337240,-0.294240,-0.372681,-0.214811,0.000010,0.000048
+chat,on,fx-chat-p5 minus fx-chat-p1,profit_gain_index,Profit gain index,20,0.077088,0.535922,-0.458834,-0.569990,-0.343156,0.000010,0.000048
+chat,on,fx-chat-p5 minus fx-chat-p1,competitive_share,Competitive share (U16),20,0.626235,0.001316,0.624920,0.441718,0.800362,0.000015,0.000076
+chat,on,fx-chat-p5 minus fx-chat-p1,matching_share,Matching share,20,0.308445,0.986842,-0.678397,-0.842502,-0.503123,0.000008,0.000038

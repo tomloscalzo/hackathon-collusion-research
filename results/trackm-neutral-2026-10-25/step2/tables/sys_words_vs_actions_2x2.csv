@@ -1,0 +1,3 @@
+explicit_agreement_flag,price index < 0.5,price index >= 0.5
+agreement flag 0,1,30
+agreement flag 1,33,256

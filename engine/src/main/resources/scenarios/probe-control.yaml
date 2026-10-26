@@ -1,0 +1,58 @@
+# P3 placebo control (spec 5.6, PREDICTIONS P3, BR-15): probe-defect.yaml with the same partner set to placebo: 1, so it
+# adheres at s(0.546) = 2.09 in every round and never defects. Its t follows the same rule in the run seed
+# (t = 6 + ((seed - 1) mod 5)) and is only the placebo round: the run line's responder, probeClass and probeT are computed at it
+# with the same inclusion, length and responder rules as a probe run (LlmGame.summary). Same seeds as the probe arm, so the
+# horizon stream and t are shared (paired); detection OFF; cap 40, undisclosed. Run with --arm probe-control.
+id: probe-control
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: "OFF"
+agents:
+  - id: llm
+    category: M
+    kind: LLM
+  - id: partner
+    category: M
+    kind: DEFECT_ONCE
+    config: {theta: 0.546, tMin: 6, tMax: 10, placebo: 1}

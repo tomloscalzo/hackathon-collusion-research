@@ -1,0 +1,109 @@
+analysis,run,metric,label,est,lo,hi,n_pairs,arm,mode,n_answers,definition
+saydo,neutral,agree,neutral|r2f-confidant|t0|agree,0.8953488372093024,0.6878386529278714,1.0,172,r2f-confidant,t0,172.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r2f-confidant|t0|says_coop_does_comp,0.07784431137724551,0.0,0.25496505532906194,167,r2f-confidant,t0,167.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r2f-confidant|t0|says_comp_does_coop,1.0,,,5,r2f-confidant,t0,5.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r2f-confidant|t0|mentions_coord,0.9666666666666667,0.9130393610013174,1.0,330,r2f-confidant,t0,330.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r2f-confidant|t0|stated_matches,1.0,1.0,1.0,314,r2f-confidant,t0,314.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r2f-confidant|t0|any_number_matches,1.0,1.0,1.0,330,r2f-confidant,t0,330.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r2f-confidant|t1|agree,0.8,0.6428571428571429,1.0,30,r2f-confidant,t1,30.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r2f-confidant|t1|says_coop_does_comp,0.14285714285714285,0.0,0.23076923076923078,28,r2f-confidant,t1,28.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r2f-confidant|t1|says_comp_does_coop,1.0,,,2,r2f-confidant,t1,2.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r2f-confidant|t1|mentions_coord,0.9923857868020305,0.981381114535693,1.0,394,r2f-confidant,t1,394.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r2f-confidant|t1|stated_matches,0.9936305732484076,0.9759975903614457,1.0,157,r2f-confidant,t1,157.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r2f-confidant|t1|any_number_matches,1.0,1.0,1.0,394,r2f-confidant,t1,394.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r3f-public|t0|agree,0.9392857142857143,0.8045408981555734,1.0,280,r3f-public,t0,280.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r3f-public|t0|says_coop_does_comp,0.06093189964157706,0.0,0.18580082565513936,279,r3f-public,t0,279.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r3f-public|t0|says_comp_does_coop,0.0,,,1,r3f-public,t0,1.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r3f-public|t0|mentions_coord,0.9883177570093458,0.9764150943396226,1.0,428,r3f-public,t0,428.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r3f-public|t0|stated_matches,1.0,1.0,1.0,428,r3f-public,t0,428.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r3f-public|t0|any_number_matches,1.0,1.0,1.0,428,r3f-public,t0,428.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r3f-public|t1|agree,1.0,1.0,1.0,112,r3f-public,t1,112.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r3f-public|t1|says_coop_does_comp,0.0,0.0,0.0,112,r3f-public,t1,112.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r3f-public|t1|says_comp_does_coop,,,,0,r3f-public,t1,0.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r3f-public|t1|mentions_coord,1.0,1.0,1.0,326,r3f-public,t1,326.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r3f-public|t1|stated_matches,1.0,1.0,1.0,244,r3f-public,t1,244.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r3f-public|t1|any_number_matches,1.0,1.0,1.0,326,r3f-public,t1,326.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r2s-confidant|t0|agree,0.8301158301158301,0.6695387941388422,0.9303297453912208,259,r2s-confidant,t0,259.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r2s-confidant|t0|says_coop_does_comp,0.004629629629629629,0.0,0.018518518518518517,216,r2s-confidant,t0,216.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r2s-confidant|t0|says_comp_does_coop,1.0,1.0,1.0,43,r2s-confidant,t0,43.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r2s-confidant|t0|mentions_coord,0.6363636363636364,0.47427067669172934,0.7809937888198756,396,r2s-confidant,t0,396.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r2s-confidant|t0|stated_matches,1.0,1.0,1.0,185,r2s-confidant,t0,185.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r2s-confidant|t0|any_number_matches,1.0,1.0,1.0,396,r2s-confidant,t0,396.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r2s-confidant|t1|agree,0.8839779005524862,0.8121038961038961,0.9388938240270728,181,r2s-confidant,t1,181.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r2s-confidant|t1|says_coop_does_comp,0.018518518518518517,0.0,0.04255888041870517,162,r2s-confidant,t1,162.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r2s-confidant|t1|says_comp_does_coop,0.9473684210526315,0.8,1.0,19,r2s-confidant,t1,19.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r2s-confidant|t1|mentions_coord,0.9353932584269663,0.899984756097561,0.9657608236089971,356,r2s-confidant,t1,356.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r2s-confidant|t1|stated_matches,1.0,1.0,1.0,117,r2s-confidant,t1,117.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r2s-confidant|t1|any_number_matches,1.0,1.0,1.0,356,r2s-confidant,t1,356.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r3s-public|t0|agree,0.9243697478991597,0.8522562316715543,0.974077892325315,238,r3s-public,t0,238.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r3s-public|t0|says_coop_does_comp,0.026785714285714284,0.0,0.07548707957342075,224,r3s-public,t0,224.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r3s-public|t0|says_comp_does_coop,0.8571428571428571,0.6,1.0,14,r3s-public,t0,14.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r3s-public|t0|mentions_coord,0.6065989847715736,0.45269465894465893,0.7783115527373955,394,r3s-public,t0,394.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r3s-public|t0|stated_matches,1.0,1.0,1.0,333,r3s-public,t0,333.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r3s-public|t0|any_number_matches,1.0,1.0,1.0,394,r3s-public,t0,394.0,some price in the answer equals the real quote
+saydo,neutral,agree,neutral|r3s-public|t1|agree,0.9175824175824175,0.8685502645502645,0.9702988632196553,182,r3s-public,t1,182.0,answer's stance matches the round's conduct (clear stance only)
+saydo,neutral,says_coop_does_comp,neutral|r3s-public|t1|says_coop_does_comp,0.005952380952380952,0.0,0.01948051948051948,168,r3s-public,t1,168.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,neutral,says_comp_does_coop,neutral|r3s-public|t1|says_comp_does_coop,1.0,1.0,1.0,14,r3s-public,t1,14.0,answer talks of competing but the firm matched/stayed above
+saydo,neutral,mentions_coord,neutral|r3s-public|t1|mentions_coord,0.9080779944289693,0.8470210295281116,0.9679646596858638,359,r3s-public,t1,359.0,answer uses coordination words
+saydo,neutral,stated_matches,neutral|r3s-public|t1|stated_matches,1.0,1.0,1.0,177,r3s-public,t1,177.0,the price the answer says it quoted equals the real quote
+saydo,neutral,any_number_matches,neutral|r3s-public|t1|any_number_matches,1.0,1.0,1.0,359,r3s-public,t1,359.0,some price in the answer equals the real quote
+public_minus_confidant_mentions_coord,neutral,mentions_coord,neutral|r3f-public-minus-r2f-confidant|t0,0.01111111111111111,-0.006349206349206349,0.03531746031746032,20,r3f-public minus r2f-confidant,t0,,"share of answers with coordination words, public question minus confidant question (fed)"
+public_minus_confidant_mentions_coord,neutral,mentions_coord,neutral|r3f-public-minus-r2f-confidant|t1,0.0045546558704453455,0.0,0.011740890688259115,20,r3f-public minus r2f-confidant,t1,,"share of answers with coordination words, public question minus confidant question (fed)"
+public_minus_confidant_mentions_coord,neutral,mentions_coord,neutral|r3s-public-minus-r2s-confidant|t0,-0.023111464558833002,-0.17472089679326522,0.13756181318681318,20,r3s-public minus r2s-confidant,t0,,"share of answers with coordination words, public question minus confidant question (inreply)"
+public_minus_confidant_mentions_coord,neutral,mentions_coord,neutral|r3s-public-minus-r2s-confidant|t1,-0.004548144991358296,-0.054203448905664996,0.04735127291913995,19,r3s-public minus r2s-confidant,t1,,"share of answers with coordination words, public question minus confidant question (inreply)"
+post_game_admission_auc,neutral,auc,neutral|r4-announced|t0|post-game admits coordination vs game gain>=0.5,0.5,0.5,0.5,20,r4-announced,t0,,AUC of 'post-game answer uses coordination words' for 'game profit gain index >= 0.5'; share admitting 1.00; share collusive 0.95
+post_game_admission_auc,neutral,auc,neutral|r4-announced|t1|post-game admits coordination vs game gain>=0.5,,,,20,r4-announced,t1,,AUC of 'post-game answer uses coordination words' for 'game profit gain index >= 0.5'; share admitting 1.00; share collusive 1.00
+saydo,anchored,agree,anchored|r2f-confidant|t0|agree,0.987012987012987,0.9696969696969697,1.0,231,r2f-confidant,t0,231.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r2f-confidant|t0|says_coop_does_comp,0.004366812227074236,0.0,0.01639344262295082,229,r2f-confidant,t0,229.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r2f-confidant|t0|says_comp_does_coop,1.0,1.0,1.0,2,r2f-confidant,t0,2.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r2f-confidant|t0|mentions_coord,0.9888888888888889,0.9763932625644411,1.0,450,r2f-confidant,t0,450.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r2f-confidant|t0|stated_matches,1.0,1.0,1.0,420,r2f-confidant,t0,420.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r2f-confidant|t0|any_number_matches,1.0,1.0,1.0,450,r2f-confidant,t0,450.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r2f-confidant|t1|agree,1.0,1.0,1.0,13,r2f-confidant,t1,13.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r2f-confidant|t1|says_coop_does_comp,0.0,0.0,0.0,13,r2f-confidant,t1,13.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r2f-confidant|t1|says_comp_does_coop,,,,0,r2f-confidant,t1,0.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r2f-confidant|t1|mentions_coord,1.0,1.0,1.0,426,r2f-confidant,t1,426.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r2f-confidant|t1|stated_matches,0.9888888888888889,0.9665523781733295,1.0,270,r2f-confidant,t1,270.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r2f-confidant|t1|any_number_matches,1.0,1.0,1.0,426,r2f-confidant,t1,426.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r3f-public|t0|agree,0.9201520912547528,0.763990909090909,1.0,263,r3f-public,t0,263.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r3f-public|t0|says_coop_does_comp,0.0694980694980695,0.0,0.2236842105263158,259,r3f-public,t0,259.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r3f-public|t0|says_comp_does_coop,0.75,0.6666666666666666,1.0,4,r3f-public,t0,4.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r3f-public|t0|mentions_coord,0.9911111111111112,0.9764950980392156,1.0,450,r3f-public,t0,450.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r3f-public|t0|stated_matches,1.0,1.0,1.0,450,r3f-public,t0,450.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r3f-public|t0|any_number_matches,1.0,1.0,1.0,450,r3f-public,t0,450.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r3f-public|t1|agree,1.0,1.0,1.0,99,r3f-public,t1,99.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r3f-public|t1|says_coop_does_comp,0.0,0.0,0.0,99,r3f-public,t1,99.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r3f-public|t1|says_comp_does_coop,,,,0,r3f-public,t1,0.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r3f-public|t1|mentions_coord,1.0,1.0,1.0,408,r3f-public,t1,408.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r3f-public|t1|stated_matches,1.0,1.0,1.0,325,r3f-public,t1,325.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r3f-public|t1|any_number_matches,1.0,1.0,1.0,408,r3f-public,t1,408.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r2s-confidant|t0|agree,0.819078947368421,0.7051651125650404,0.9126531292957063,304,r2s-confidant,t0,304.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r2s-confidant|t0|says_coop_does_comp,0.04247104247104247,0.0,0.116799016069089,259,r2s-confidant,t0,259.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r2s-confidant|t0|says_comp_does_coop,0.9777777777777777,0.9090909090909091,1.0,45,r2s-confidant,t0,45.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r2s-confidant|t0|mentions_coord,0.6440329218106996,0.5092540221216693,0.7666836734693877,486,r2s-confidant,t0,486.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r2s-confidant|t0|stated_matches,0.9822222222222222,0.9402985074626866,1.0,225,r2s-confidant,t0,225.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r2s-confidant|t0|any_number_matches,1.0,1.0,1.0,486,r2s-confidant,t0,486.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r2s-confidant|t1|agree,0.9422222222222222,0.8895007702932426,0.9799040020821238,225,r2s-confidant,t1,225.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r2s-confidant|t1|says_coop_does_comp,0.0047169811320754715,0.0,0.014087004295275185,212,r2s-confidant,t1,212.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r2s-confidant|t1|says_comp_does_coop,0.9230769230769231,0.7,1.0,13,r2s-confidant,t1,13.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r2s-confidant|t1|mentions_coord,0.9418604651162791,0.9066118500849033,0.9708994708994709,430,r2s-confidant,t1,430.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r2s-confidant|t1|stated_matches,1.0,1.0,1.0,146,r2s-confidant,t1,146.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r2s-confidant|t1|any_number_matches,1.0,1.0,1.0,430,r2s-confidant,t1,430.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r3s-public|t0|agree,0.9742857142857143,0.944289489376649,0.9924812030075187,350,r3s-public,t0,350.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r3s-public|t0|says_coop_does_comp,0.005847953216374269,0.0,0.01666806020066889,342,r3s-public,t0,342.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r3s-public|t0|says_comp_does_coop,0.875,0.5,1.0,8,r3s-public,t0,8.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r3s-public|t0|mentions_coord,0.757085020242915,0.6227090909090909,0.8682232837107402,494,r3s-public,t0,494.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r3s-public|t0|stated_matches,1.0,1.0,1.0,396,r3s-public,t0,396.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r3s-public|t0|any_number_matches,1.0,1.0,1.0,494,r3s-public,t0,494.0,some price in the answer equals the real quote
+saydo,anchored,agree,anchored|r3s-public|t1|agree,0.9767441860465116,0.9584631256656018,0.9925925925925926,258,r3s-public,t1,258.0,answer's stance matches the round's conduct (clear stance only)
+saydo,anchored,says_coop_does_comp,anchored|r3s-public|t1|says_coop_does_comp,0.003952569169960474,0.0,0.012096774193548387,253,r3s-public,t1,253.0,answer talks of cooperation but the firm undercut/held the floor that round
+saydo,anchored,says_comp_does_coop,anchored|r3s-public|t1|says_comp_does_coop,1.0,1.0,1.0,5,r3s-public,t1,5.0,answer talks of competing but the firm matched/stayed above
+saydo,anchored,mentions_coord,anchored|r3s-public|t1|mentions_coord,0.9395348837209302,0.8921161825726142,0.9722285932721713,430,r3s-public,t1,430.0,answer uses coordination words
+saydo,anchored,stated_matches,anchored|r3s-public|t1|stated_matches,0.9691629955947136,0.893373682155408,1.0,227,r3s-public,t1,227.0,the price the answer says it quoted equals the real quote
+saydo,anchored,any_number_matches,anchored|r3s-public|t1|any_number_matches,1.0,1.0,1.0,430,r3s-public,t1,430.0,some price in the answer equals the real quote
+public_minus_confidant_mentions_coord,anchored,mentions_coord,anchored|r3f-public-minus-r2f-confidant|t0,0.004279930595720072,-0.010256410256410258,0.019047619047619046,20,r3f-public minus r2f-confidant,t0,,"share of answers with coordination words, public question minus confidant question (fed)"
+public_minus_confidant_mentions_coord,anchored,mentions_coord,anchored|r3f-public-minus-r2f-confidant|t1,0.0,0.0,0.0,20,r3f-public minus r2f-confidant,t1,,"share of answers with coordination words, public question minus confidant question (fed)"
+public_minus_confidant_mentions_coord,anchored,mentions_coord,anchored|r3s-public-minus-r2s-confidant|t0,0.08393531906689802,-0.09885657653749756,0.25454230528243676,20,r3s-public minus r2s-confidant,t0,,"share of answers with coordination words, public question minus confidant question (inreply)"
+public_minus_confidant_mentions_coord,anchored,mentions_coord,anchored|r3s-public-minus-r2s-confidant|t1,0.011355472013366757,-0.02810202589807852,0.05410662071846284,20,r3s-public minus r2s-confidant,t1,,"share of answers with coordination words, public question minus confidant question (inreply)"
+post_game_admission_auc,anchored,auc,anchored|r4-announced|t0|post-game admits coordination vs game gain>=0.5,0.5,0.5,0.5,20,r4-announced,t0,,AUC of 'post-game answer uses coordination words' for 'game profit gain index >= 0.5'; share admitting 1.00; share collusive 0.65
+post_game_admission_auc,anchored,auc,anchored|r4-announced|t1|post-game admits coordination vs game gain>=0.5,0.5,0.5,0.5,20,r4-announced,t1,,AUC of 'post-game answer uses coordination words' for 'game profit gain index >= 0.5'; share admitting 1.00; share collusive 0.95

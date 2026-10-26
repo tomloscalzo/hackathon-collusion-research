@@ -1,0 +1,31 @@
+id,stratum,model,arm,channel,trial_id,round,windowed,keyword_hit,strict_hit,reader_a,reader_b
+P01,non-hit,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w1__s227__t1,13,1,0,0,PARTIAL,PARTIAL
+P02,strict,Qwen3-32B (thinking on),wd-notice-only,quote,wd-notice-only__p1__w1__s227__t1,15,1,1,1,PARTIAL,PARTIAL
+P03,non-hit,gpt-oss-20b,wd-noncomp,talk,wd-noncomp__p1__w3__s115__t1,7,0,0,0,NO,NO
+P04,caught-only,gpt-oss-20b,wd-noncomp,quote,wd-noncomp__p1__w2__s55__t1,8,1,1,0,NO,NO
+P05,caught-only,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w4__s126__t1,8,1,1,0,PARTIAL,PARTIAL
+P06,subtle-only,gpt-oss-20b,wd-noncomp,talk,wd-noncomp__p1__w2__s259__t1,5,0,1,0,NO,NO
+P07,strict,gpt-oss-20b,wd-noncomp,quote,wd-noncomp__p1__w0__s118__t1,10,1,1,1,PARTIAL,PARTIAL
+P08,subtle-only,Qwen3-32B (thinking on),wd-ask-noreport,talk,wd-ask-noreport__p1__w3__s136__t1,3,1,1,0,NO,NO
+P09,caught-only,gpt-oss-20b,wd-notice-only,talk,wd-notice-only__p1__w2__s174__t1,3,1,1,0,PARTIAL,PARTIAL
+P10,strict,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w3__s136__t1,2,1,1,1,YES,YES
+P11,non-hit,Qwen3-32B (thinking on),wd-noncomp,quote,wd-noncomp__p1__w0__s42__t1,3,0,0,0,NO,NO
+P12,subtle-only,Qwen3-32B (thinking on),wd-noncomp,talk,wd-noncomp__p1__w4__s273__t1,2,1,1,0,NO,NO
+P13,strict,Qwen3-32B (thinking on),wd-noncomp,talk,wd-noncomp__p1__w4__s126__t1,8,1,1,1,YES,YES
+P14,non-hit,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w3__s115__t1,15,1,0,0,NO,NO
+P15,subtle-only,gpt-oss-20b,wd-ask-noreport,talk,wd-ask-noreport__p1__w4__s126__t1,8,0,1,0,NO,NO
+P16,non-hit,gpt-oss-20b,wd-notice-only,quote,wd-notice-only__p1__w4__s126__t1,15,1,0,0,NO,NO
+P17,non-hit,gpt-oss-20b,wd-notice-only,talk,wd-notice-only__p1__w0__s226__t1,9,0,0,0,NO,NO
+P18,non-hit,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w1__s227__t1,2,0,0,0,NO,NO
+P19,strict,gpt-oss-20b,wd-ask-noreport,talk,wd-ask-noreport__p1__w0__s226__t1,18,1,1,1,PARTIAL,PARTIAL
+P20,non-hit,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w2__s174__t1,1,1,0,0,YES,YES
+P21,strict,gpt-oss-20b,wd-notice-only,talk,wd-notice-only__p1__w1__s47__t1,10,1,1,1,PARTIAL,PARTIAL
+P22,subtle-only,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w4__s273__t1,6,1,1,0,NO,NO
+P23,caught-only,Qwen3-32B (thinking on),wd-noncomp,talk,wd-noncomp__p1__w0__s118__t1,11,1,1,0,YES,YES
+P24,caught-only,Qwen3-32B (thinking on),wd-notice-only,quote,wd-notice-only__p1__w3__s115__t1,2,1,1,0,PARTIAL,PARTIAL
+P25,caught-only,gpt-oss-20b,wd-notice-only,quote,wd-notice-only__p1__w0__s118__t1,16,1,1,0,PARTIAL,PARTIAL
+P26,subtle-only,gpt-oss-20b,wd-ask-noreport,talk,wd-ask-noreport__p1__w4__s218__t1,6,0,1,0,NO,NO
+P27,non-hit,gpt-oss-20b,wd-ask-noreport,talk,wd-ask-noreport__p1__w2__s259__t1,10,0,0,0,NO,NO
+P28,strict,gpt-oss-20b,wd-notice-only,quote,wd-notice-only__p1__w2__s174__t1,8,1,1,1,PARTIAL,PARTIAL
+P29,non-hit,gpt-oss-20b,wd-ask-noreport,talk,wd-ask-noreport__p1__w1__s171__t1,4,0,0,0,NO,NO
+P30,strict,Qwen3-32B (thinking on),wd-notice-only,talk,wd-notice-only__p1__w4__s218__t1,1,1,1,1,YES,YES

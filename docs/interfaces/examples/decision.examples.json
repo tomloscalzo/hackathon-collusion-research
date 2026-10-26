@@ -1,0 +1,15 @@
+{
+  "schema": "decision",
+  "note": "Valid objects were captured by harness/ObsHarness.java: TriggerK with a hidden fill, Penance excluding its rival, LogitAgent with its audit EVs, and an LlmAgent decision as LlmAgent.decide builds it.",
+  "valid": [
+    {"action": {"displayed": 2.09, "hiddenFill": 2.08}, "excludeFromContestable": [], "info": {}, "phase": "ADHERE", "punishing": false, "signalEvaluated": true, "signalSeen": false},
+    {"action": {"displayed": 2.09, "hiddenFill": null}, "excludeFromContestable": ["partner"], "info": {}, "phase": "PENANCE", "punishing": true, "signalEvaluated": true, "signalSeen": true},
+    {"action": {"displayed": 2.08, "hiddenFill": null}, "excludeFromContestable": [], "info": {"evAdhere": 29.444901993081892, "evUndercut": 58.71631417299457}, "phase": "LOGIT", "punishing": false, "signalEvaluated": false, "signalSeen": false},
+    {"action": {"displayed": 2.09, "hiddenFill": null}, "excludeFromContestable": [], "info": {"llm.offGrid": 1.0, "llm.status": 0.0, "llm.tokensIn": 773.0, "llm.tokensOut": 15.0}, "phase": "LLM", "punishing": false, "signalEvaluated": false, "signalSeen": false}
+  ],
+  "invalid": [
+    {"why": "action is required (a null action aborts the run)", "value": {"action": null, "excludeFromContestable": [], "info": {}, "phase": "X", "punishing": false, "signalEvaluated": false, "signalSeen": false}},
+    {"why": "info values are numbers", "value": {"action": {"displayed": 2.0, "hiddenFill": null}, "excludeFromContestable": [], "info": {"note": "text"}, "phase": "X", "punishing": false, "signalEvaluated": false, "signalSeen": false}},
+    {"why": "phase-1 decisions carry no message field", "value": {"action": {"displayed": 2.0, "hiddenFill": null}, "excludeFromContestable": [], "info": {}, "phase": "X", "punishing": false, "signalEvaluated": false, "signalSeen": false, "message": "hi"}}
+  ]
+}

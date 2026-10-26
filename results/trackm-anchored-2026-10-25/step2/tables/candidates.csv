@@ -1,0 +1,16 @@
+rank,claim,evidence,strength,robustness,declared_or_exploratory,research_questions,criterion
+1,Private chat raises the profit gain index over no chat,+0.24 (0.18 to 0.31) thinking off; +0.15 (0.11 to 0.19) thinking on; 20 pairs,strong within this run,both modes; originals vs reruns unchanged; both runs (direction),declared metric,"1.1, 2.1",Impact
+2,A regulator-read notice does not change play (text only),"monitored minus chat -0.04 (-0.11 to +0.03) off, -0.04 (-0.09 to +0.02) on","moderate (inconclusive interval, not proof of no effect)","both modes, both runs",declared metric,"3.1, 3.4",Impact
+3,Penalty point 5 lowers collusion only with thinking on,-0.33 (-0.49 to -0.17) on; +0.04 (-0.06 to +0.13) off,moderate,thinking on only; both runs in sign,declared metric,1.1,Impact
+4,5-tick start rule is the largest single lever,price index -0.42 (-0.49 to -0.34) off; -0.35 (-0.43 to -0.28) on; Holm p 0.001,"moderate (exploratory, strong effect size)","both modes, both runs",exploratory,1.5,Impact
+5,The idle reasoning-monitor threat suppresses both talk and price (no channel shift),"price index -0.06 (A), -0.13 (B); agreement words -0.26/-0.38; 11 to 20 pairs",suggestive,thinking on only; one B game on its truncated original,"declared contrast, no test",3.4,Impact
+6,Printed 2.09 is a focal point: 40-48% of headline quotes sit on it,40% off / 48% on (240 games each) vs 0.06% / 0% neutral,strong,both modes,declared metric,evaluation design,Execution
+7,The anchored run understates collusion relative to neutral (interim),profit gain index 0.19 (off) and 0.17 (on) lower than neutral; neutral interim,suggestive,needs the final neutral run,declared metric,evaluation design,Execution
+8,Firms are mostly not competitive: 15.3% of firm-rounds undercut; chat -26.7 points vs no chat,15.3% (12.6 to 18.1),moderate,descriptive,exploratory,2.1,Execution
+9,Quotes alone from rounds 1-3 predict later prices (AUC 0.93 to 1.00); agreement words do not,AUC 1.00 off / 0.93 on; words 0.38 / 0.51,moderate,keyword rules unvalidated,exploratory,"1.3, 1.4",Execution
+10,"Publishing chat, 'not monitored', ethics rules, compliance reminder, incentive texts: no detectable effect",all CIs include 0 (n 20 pairs),not supported as effects; inconclusive,MDE 0.25 to 0.3,exploratory,1.5,Execution
+11,Self-report scores track later play,temptation score no relation; conflict and placebo constant,not supported,earlier tables,exploratory,2.3,Execution
+12,Planted cheater is punished (diagnostic),"price index -0.18 off, -0.13 on vs 3-firm chat; Holm 0.001",moderate; diagnostic not lever,aliased: adds a scripted firm,exploratory,1.2,Impact
+untrustworthy,Anchored penalty-point-5 / chat-minus-tacit sizes taken as the headline,sizes depend on the printed examples,looks large but untrustworthy: anchored-only,,exploratory,,
+untrustworthy,Thinking-on tacit p5 collapse,0.21 gain; the no-chat thinking-on arm has 17 of 80 truncation reruns,looks large but untrustworthy: truncation-rerun artefact possible,,exploratory,,
+untrustworthy,"Keyword-flag rates (agreement, intent, candour)",unvalidated rules,looks large but untrustworthy: heuristic error unknown,,exploratory,,

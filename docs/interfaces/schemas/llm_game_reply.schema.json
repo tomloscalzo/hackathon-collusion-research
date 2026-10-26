@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm_game_reply.schema.json",
+  "title": "LLM game reply (strict form)",
+  "description": "The decision object the model is asked to return each round. In substance identical to PromptBuilder.DECISION_SCHEMA, which is sent as response_format.json_schema.schema on every game call (check_schemas.py verifies the equality after removing annotation keywords). DecisionParser.decision is more lenient than this schema and applies its rules in a fixed order (INTERFACES.md e.4): a finite numeric or string quote is decided before decline, so {\"quote\": 2.09, \"decline\": true} is OK and {\"quote\": \"abc\", \"decline\": true} is INVALID; string quotes use Double.parseDouble; text after the first JSON value is ignored.",
+  "type": "object",
+  "properties": {
+    "quote": {"type": ["number", "null"], "description": "Half-spread on the grid s0 + j*quoteIncrement in [s0, sBar]; null = decline to quote (REFUSED)."},
+    "plan": {"type": "string", "description": "One or two sentences; carried into the next round's prompt (truncated to 300 characters)."},
+    "rationale": {"type": "string", "description": "Reasons, briefly. Not parsed; survives only in the cache file text."}
+  },
+  "required": ["quote", "plan", "rationale"]
+}

@@ -1,0 +1,7 @@
+arm,n_games,wave,context_window,market_price_mean,price_index,profit_gain_index,competitive_share,matching_share,empty_talk_done_count,clamped_calls,max_prompt_tokens,answer_words_confidant_mean,answer_words_public_mean,questions_answered,question_declines,candour_confidant,candour_public,invented_confession_confidant,invented_confession_public,games_empty_talk_gt0
+headline-chat,20,12/7/8/9,16384,2.147,0.574,0.769,0.426,0.412,0.800,0.000,3657.550,,,,0.000,,,,,9
+r2f-confidant,20,201,32768,2.109,0.555,0.742,0.436,0.398,0.700,0.000,5167.750,141.152,,22.750,0.050,0.471,,0.500,,7
+r3f-public,20,201,32768,2.270,0.635,0.827,0.443,0.420,0.450,0.000,5050.800,,105.429,22.800,0.000,,0.477,,0.000,6
+r2s-confidant,19,107/108/109/112,16384,2.344,0.672,0.877,0.393,0.461,0.684,0.000,3537.684,51.615,,24.211,0.000,0.227,,,,8
+r3s-public,20,107/108/109/112,16384,2.260,0.630,0.828,0.391,0.390,1.000,0.000,3718.850,,41.000,24.450,0.000,,0.150,,0.125,9
+r4-announced,11,107/108/109/112,16384,2.423,0.711,0.902,0.376,0.520,0.000,0.000,3559.909,,128.032,23.091,0.000,,0.533,,,0

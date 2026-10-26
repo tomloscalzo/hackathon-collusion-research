@@ -1,0 +1,11 @@
+contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+hrep-fx-chat-p1 (headline-prompt replicate) - headline-chat (p1),market_price_mean,20,2.386,2.147,0.239,0.104,0.370
+hrep-fx-chat-p1 (headline-prompt replicate) - headline-chat (p1),price_index,20,0.693,0.574,0.119,0.056,0.188
+hrep-fx-chat-p1 (headline-prompt replicate) - headline-chat (p1),profit_gain_index,20,0.885,0.769,0.116,0.051,0.183
+hrep-fx-chat-p1 (headline-prompt replicate) - headline-chat (p1),competitive_share,20,0.363,0.426,-0.063,-0.163,0.029
+hrep-fx-chat-p1 (headline-prompt replicate) - headline-chat (p1),matching_share,20,0.448,0.412,0.036,-0.048,0.119
+hrep-nx-chat-p1 (headline-prompt replicate) - headline-chat (p1),market_price_mean,20,2.281,2.147,0.134,-0.035,0.335
+hrep-nx-chat-p1 (headline-prompt replicate) - headline-chat (p1),price_index,20,0.640,0.574,0.067,-0.018,0.156
+hrep-nx-chat-p1 (headline-prompt replicate) - headline-chat (p1),profit_gain_index,20,0.831,0.769,0.062,-0.026,0.160
+hrep-nx-chat-p1 (headline-prompt replicate) - headline-chat (p1),competitive_share,20,0.404,0.426,-0.022,-0.183,0.127
+hrep-nx-chat-p1 (headline-prompt replicate) - headline-chat (p1),matching_share,20,0.440,0.412,0.028,-0.125,0.199

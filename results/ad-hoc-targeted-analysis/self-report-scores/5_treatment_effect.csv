@@ -1,0 +1,257 @@
+run,thinking,arm,versus,outcome,mean_diff,lo,hi,n_pairs,mean_base
+neutral,off,d-temptation-a,headline-chat,gain,-0.0035981904761904827,-0.09722098154761905,0.08018265952380947,20,0.8032924107142858
+neutral,off,d-temptation-a,headline-chat,price index,-0.0035166666666666705,-0.08896875,0.07143440476190475,20,0.621875
+neutral,off,d-temptation-a,headline-chat,competitive share,-0.04960317460317461,-0.1514236111111111,0.0035714285714285713,20,0.05277777777777778
+neutral,off,d-temptation-a,headline-chat,match share,-0.00047313797313797146,-0.01810210622710623,0.016202686202686202,20,0.9878205128205128
+neutral,off,d-temptation-a,headline-chat,agreement-keyword round share,-0.03818295739348372,-0.1607009711779449,0.07402772556390974,20,0.7660964912280701
+neutral,off,d-temptation-a,headline-chat,undercut events,0.0,-0.15,0.15,20,0.1
+neutral,off,d-temptation-a,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-a,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,headline-chat,gain,0.03174936936090226,-0.01504306978383458,0.07993376668233083,20,0.8032924107142858
+neutral,off,d-temptation-b,headline-chat,price index,0.046599812030075204,-0.05088937969924813,0.14638552631578952,20,0.621875
+neutral,off,d-temptation-b,headline-chat,competitive share,0.075,0.0,0.2,20,0.05277777777777778
+neutral,off,d-temptation-b,headline-chat,match share,-0.12207602339181287,-0.2672319219523167,-0.008538011695906438,20,0.9878205128205128
+neutral,off,d-temptation-b,headline-chat,agreement-keyword round share,-0.052882205513784454,-0.2556240601503759,0.12853383458646606,20,0.7660964912280701
+neutral,off,d-temptation-b,headline-chat,undercut events,1.0,0.0,2.7,20,0.1
+neutral,off,d-temptation-b,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-conflict,headline-chat,gain,-0.06513212875939851,-0.173793226268797,0.024114640624999968,20,0.8032924107142858
+neutral,off,d-conflict,headline-chat,price index,-0.05151065162907267,-0.154361834273183,0.048393632518797025,20,0.621875
+neutral,off,d-conflict,headline-chat,competitive share,0.07968880534670009,0.006944444444444445,0.15794460108604844,20,0.05277777777777778
+neutral,off,d-conflict,headline-chat,match share,-0.10791240922819871,-0.24865705931495405,-0.00235685367264315,20,0.9878205128205128
+neutral,off,d-conflict,headline-chat,agreement-keyword round share,-0.021065162907268183,-0.16722305764411025,0.10221804511278194,20,0.7660964912280701
+neutral,off,d-conflict,headline-chat,undercut events,0.95,-0.10124999999999994,2.45,20,0.1
+neutral,off,d-conflict,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-conflict,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-placebo,headline-chat,gain,0.032894922619047626,-0.08029758958333334,0.1166153949404762,20,0.8032924107142858
+neutral,off,d-placebo,headline-chat,price index,0.08414404761904762,-0.018143333333333327,0.18752479166666666,20,0.621875
+neutral,off,d-placebo,headline-chat,competitive share,-0.019839663260715897,-0.14258928571428572,0.061201742336610736,20,0.05277777777777778
+neutral,off,d-placebo,headline-chat,match share,-0.06797040678619626,-0.195578007518797,0.008474130036630036,20,0.9878205128205128
+neutral,off,d-placebo,headline-chat,agreement-keyword round share,-0.10632832080200501,-0.25201613408521306,0.03571397243107769,20,0.7660964912280701
+neutral,off,d-placebo,headline-chat,undercut events,0.25,-0.15,0.7,20,0.1
+neutral,off,d-placebo,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-placebo,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-a,d-placebo,gain,-0.0364931130952381,-0.16559162321428572,0.09905204211309522,20,0.8361873333333332
+neutral,off,d-temptation-a,d-placebo,price index,-0.08766071428571429,-0.22021586309523813,0.04422622023809515,20,0.7060190476190477
+neutral,off,d-temptation-a,d-placebo,competitive share,-0.02976351134245871,-0.06870987565066512,-0.0021825396825396826,20,0.032938114517061884
+neutral,off,d-temptation-a,d-placebo,match share,0.06749726881305829,-0.006181318681318682,0.18368447159565582,20,0.9198501060343165
+neutral,off,d-temptation-a,d-placebo,agreement-keyword round share,0.0681453634085213,-0.09315444862155389,0.215062343358396,20,0.6597681704260652
+neutral,off,d-temptation-a,d-placebo,undercut events,-0.25,-0.65125,0.05,20,0.35
+neutral,off,d-temptation-a,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-a,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,d-placebo,gain,-0.0011455532581453654,-0.08438843881578949,0.10439030091635339,20,0.8361873333333332
+neutral,off,d-temptation-b,d-placebo,price index,-0.03754423558897241,-0.13143687969924814,0.05575737625313283,20,0.7060190476190477
+neutral,off,d-temptation-b,d-placebo,competitive share,0.0948396632607159,-0.028396371537818904,0.2527117272347535,20,0.032938114517061884
+neutral,off,d-temptation-b,d-placebo,match share,-0.0541056166056166,-0.2300431166056166,0.1294890873015873,20,0.9198501060343165
+neutral,off,d-temptation-b,d-placebo,agreement-keyword round share,0.053446115288220554,-0.08771146616541352,0.19957691102756894,20,0.6597681704260652
+neutral,off,d-temptation-b,d-placebo,undercut events,0.75,-0.5,2.85,20,0.35
+neutral,off,d-temptation-b,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-conflict,d-placebo,gain,-0.09802705137844614,-0.21318799018640353,0.012989623566729256,20,0.8361873333333332
+neutral,off,d-conflict,d-placebo,price index,-0.1356546992481203,-0.24901342105263158,-0.019025089285714322,20,0.7060190476190477
+neutral,off,d-conflict,d-placebo,competitive share,0.09952846860741596,-0.00921373947689737,0.23008585164835166,20,0.032938114517061884
+neutral,off,d-conflict,d-placebo,match share,-0.03994200244200244,-0.22810515873015874,0.1220486111111111,20,0.9198501060343165
+neutral,off,d-conflict,d-placebo,agreement-keyword round share,0.08526315789473683,-0.019812656641604028,0.208202537593985,20,0.6597681704260652
+neutral,off,d-conflict,d-placebo,undercut events,0.7,-0.45,2.5,20,0.35
+neutral,off,d-conflict,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-conflict,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,d-temptation-a,gain,0.03534755983709274,-0.07278775937499996,0.1534699404761904,20,0.7996942202380952
+neutral,off,d-temptation-b,d-temptation-a,price index,0.050116478696741865,-0.06535833333333332,0.17273266917293228,20,0.6183583333333333
+neutral,off,d-temptation-b,d-temptation-a,competitive share,0.1246031746031746,0.00826884920634921,0.27361111111111114,20,0.0031746031746031746
+neutral,off,d-temptation-b,d-temptation-a,match share,-0.1216028854186749,-0.26266003550543027,0.0017367135788188322,20,0.9873473748473749
+neutral,off,d-temptation-b,d-temptation-a,agreement-keyword round share,-0.014699248120300736,-0.17837499999999998,0.1773070175438596,20,0.7279135338345865
+neutral,off,d-temptation-b,d-temptation-a,undercut events,1.0,-0.1,2.8,20,0.1
+neutral,off,d-temptation-b,d-temptation-a,evidence ending,0.0,0.0,0.0,20,0.9
+neutral,off,d-temptation-b,d-temptation-a,any early ending,0.0,0.0,0.0,20,0.9
+neutral,on,d-temptation-a,headline-chat,gain,0.00018085416666667188,-0.03732974851190476,0.037311111235119036,20,0.9491580714285714
+neutral,on,d-temptation-a,headline-chat,price index,-0.024245833333333345,-0.1143139732142857,0.06754523809523807,20,0.8466142857142858
+neutral,on,d-temptation-a,headline-chat,competitive share,-0.007154906497011759,-0.02692651098901099,0.005357142857142857,20,0.010256410256410256
+neutral,on,d-temptation-a,headline-chat,match share,0.014893001735106997,-0.011907292269134387,0.05312873529978791,20,0.9760531135531133
+neutral,on,d-temptation-a,headline-chat,agreement-keyword round share,-0.05279448621553886,-0.14985886591478698,0.04489536340852128,20,0.7974498746867168
+neutral,on,d-temptation-a,headline-chat,undercut events,-0.05,-0.35,0.2,20,0.15
+neutral,on,d-temptation-a,headline-chat,evidence ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-temptation-a,headline-chat,any early ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-temptation-b,headline-chat,gain,0.025633595238095237,-0.0006456502976190606,0.05709417976190475,20,0.9491580714285714
+neutral,on,d-temptation-b,headline-chat,price index,0.05255238095238094,-0.018227083333333356,0.12588333333333332,20,0.8466142857142858
+neutral,on,d-temptation-b,headline-chat,competitive share,-0.010256410256410256,-0.028846153846153844,0.0,20,0.010256410256410256
+neutral,on,d-temptation-b,headline-chat,match share,0.020375457875457876,-0.001785714285714285,0.06133928571428569,20,0.9760531135531133
+neutral,on,d-temptation-b,headline-chat,agreement-keyword round share,-0.09957393483709273,-0.23685072055137846,0.038872023809523745,20,0.7974498746867168
+neutral,on,d-temptation-b,headline-chat,undercut events,-0.15,-0.4,0.0,20,0.15
+neutral,on,d-temptation-b,headline-chat,evidence ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-temptation-b,headline-chat,any early ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-conflict,headline-chat,gain,0.016087464285714274,-0.012653271428571436,0.04733315982142855,20,0.9491580714285714
+neutral,on,d-conflict,headline-chat,price index,0.014367857142857132,-0.07484226190476194,0.10123901785714286,20,0.8466142857142858
+neutral,on,d-conflict,headline-chat,competitive share,-0.008940620782726045,-0.02692307692307692,0.002631578947368421,20,0.010256410256410256
+neutral,on,d-conflict,headline-chat,match share,0.0193922305764411,-0.0034774436090225626,0.056318139097744344,20,0.9760531135531133
+neutral,on,d-conflict,headline-chat,agreement-keyword round share,-0.004166666666666674,-0.08132738095238097,0.0814285714285714,20,0.7974498746867168
+neutral,on,d-conflict,headline-chat,undercut events,-0.1,-0.35,0.1,20,0.15
+neutral,on,d-conflict,headline-chat,evidence ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-conflict,headline-chat,any early ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-placebo,headline-chat,gain,-0.006228317355889718,-0.04564693624686717,0.03565724142387219,20,0.9491580714285714
+neutral,on,d-placebo,headline-chat,price index,-0.05100244360902256,-0.1375178869047619,0.05006946428571427,20,0.8466142857142858
+neutral,on,d-placebo,headline-chat,competitive share,-0.0030982905982905977,-0.025,0.012927350427350428,20,0.010256410256410256
+neutral,on,d-placebo,headline-chat,match share,-0.057890720390720386,-0.16906021062271062,0.033373015873015846,20,0.9760531135531133
+neutral,on,d-placebo,headline-chat,agreement-keyword round share,-0.10443609022556392,-0.2298674812030076,0.01092167919799496,20,0.7974498746867168
+neutral,on,d-placebo,headline-chat,undercut events,0.05,-0.25,0.35,20,0.15
+neutral,on,d-placebo,headline-chat,evidence ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-placebo,headline-chat,any early ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-temptation-a,d-placebo,gain,0.00640917152255639,-0.02221771600485588,0.03634820332080199,20,0.9429297540726816
+neutral,on,d-temptation-a,d-placebo,price index,0.026756610275689218,-0.05085648496240602,0.10540006265664159,20,0.7956118421052633
+neutral,on,d-temptation-a,d-placebo,competitive share,-0.004056615898721162,-0.018697484898142793,0.005761539264828731,20,0.007158119658119658
+neutral,on,d-temptation-a,d-placebo,match share,0.07278372212582737,-0.005683539778934509,0.194215426386479,20,0.9181623931623932
+neutral,on,d-temptation-a,d-placebo,agreement-keyword round share,0.051641604010025065,-0.04412515664160402,0.13867731829573934,20,0.6930137844611529
+neutral,on,d-temptation-a,d-placebo,undercut events,-0.1,-0.5,0.2,20,0.2
+neutral,on,d-temptation-a,d-placebo,evidence ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-temptation-a,d-placebo,any early ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-temptation-b,d-placebo,gain,0.03186191259398495,0.010432817904135333,0.057121687891604,20,0.9429297540726816
+neutral,on,d-temptation-b,d-placebo,price index,0.1035548245614035,0.03751315789473684,0.16600700187969922,20,0.7956118421052633
+neutral,on,d-temptation-b,d-placebo,competitive share,-0.007158119658119658,-0.020085470085470084,0.0,20,0.007158119658119658
+neutral,on,d-temptation-b,d-placebo,match share,0.07826617826617825,-0.0021825396825396804,0.2052529761904762,20,0.9181623931623932
+neutral,on,d-temptation-b,d-placebo,agreement-keyword round share,0.00486215538847119,-0.08494721177944861,0.09641885964912282,20,0.6930137844611529
+neutral,on,d-temptation-b,d-placebo,undercut events,-0.2,-0.55,0.0,20,0.2
+neutral,on,d-temptation-b,d-placebo,evidence ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-temptation-b,d-placebo,any early ending,0.0,0.0,0.0,20,0.95
+neutral,on,d-conflict,d-placebo,gain,0.022315781641603992,-0.000581132048872193,0.04658095817669171,20,0.9429297540726816
+neutral,on,d-conflict,d-placebo,price index,0.0653703007518797,-0.006361607142857141,0.13377241541353382,20,0.7956118421052633
+neutral,on,d-conflict,d-placebo,competitive share,-0.0058423301844354476,-0.020478238866396763,0.002631578947368421,20,0.007158119658119658
+neutral,on,d-conflict,d-placebo,match share,0.07728295096716149,0.00014254385964912166,0.2,20,0.9181623931623932
+neutral,on,d-conflict,d-placebo,agreement-keyword round share,0.10026942355889726,0.01106939223057644,0.18595614035087715,20,0.6930137844611529
+neutral,on,d-conflict,d-placebo,undercut events,-0.15,-0.5,0.1,20,0.2
+neutral,on,d-conflict,d-placebo,evidence ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-conflict,d-placebo,any early ending,-0.05,-0.15,0.0,20,0.95
+neutral,on,d-temptation-b,d-temptation-a,gain,0.025452741071428565,0.0031313124999999943,0.04826508325892852,20,0.9493389255952381
+neutral,on,d-temptation-b,d-temptation-a,price index,0.07679821428571429,0.0017979017857142838,0.150025,20,0.8223684523809525
+neutral,on,d-temptation-b,d-temptation-a,competitive share,-0.003101503759398496,-0.007988721804511278,0.0,20,0.003101503759398496
+neutral,on,d-temptation-b,d-temptation-a,match share,0.005482456140350878,0.0,0.015131578947368423,20,0.9909461152882205
+neutral,on,d-temptation-b,d-temptation-a,agreement-keyword round share,-0.04677944862155388,-0.1504893483709273,0.06661090225563909,20,0.744655388471178
+neutral,on,d-temptation-b,d-temptation-a,undercut events,-0.1,-0.25,0.0,20,0.1
+neutral,on,d-temptation-b,d-temptation-a,evidence ending,0.05,0.0,0.15,20,0.9
+neutral,on,d-temptation-b,d-temptation-a,any early ending,0.05,0.0,0.15,20,0.9
+anchored,off,d-temptation-a,headline-chat,gain,0.059910592261904816,-0.033160502400532595,0.14890512732221187,20,0.6662558366228071
+anchored,off,d-temptation-a,headline-chat,price index,0.058853477443609026,-0.009581773966165387,0.13804745535714283,20,0.4402772869674186
+anchored,off,d-temptation-a,headline-chat,competitive share,-0.010119047619047618,-0.07083333333333333,0.03492063492063492,20,0.02777777777777778
+anchored,off,d-temptation-a,headline-chat,match share,0.08298872180451128,-0.00031980994152046354,0.20227574143692564,20,0.8970936957779061
+anchored,off,d-temptation-a,headline-chat,agreement-keyword round share,0.05441729323308273,-0.12127412280701753,0.23803947368421055,20,0.790482456140351
+anchored,off,d-temptation-a,headline-chat,undercut events,-0.5,-1.95,0.3,20,0.75
+anchored,off,d-temptation-a,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-a,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,headline-chat,gain,-0.04212718875313278,-0.15240804920895992,0.05857109004542617,20,0.6662558366228071
+anchored,off,d-temptation-b,headline-chat,price index,-0.02594238721804512,-0.10471142152255641,0.05407099232456135,20,0.4402772869674186
+anchored,off,d-temptation-b,headline-chat,competitive share,0.04847696163485637,-0.04867216117216118,0.1787004771544245,20,0.02777777777777778
+anchored,off,d-temptation-b,headline-chat,match share,-0.029467097230255125,-0.19150363890495467,0.12631434355118565,20,0.8970936957779061
+anchored,off,d-temptation-b,headline-chat,agreement-keyword round share,0.0017794486215538835,-0.16248229949874685,0.1657465538847118,20,0.790482456140351
+anchored,off,d-temptation-b,headline-chat,undercut events,-0.05,-1.6512499999999999,1.05,20,0.75
+anchored,off,d-temptation-b,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-conflict,headline-chat,gain,0.004059168859649178,-0.1391706147086466,0.12552016261748128,20,0.6662558366228071
+anchored,off,d-conflict,headline-chat,price index,0.0070439849624060104,-0.09296138157894736,0.10549156954887214,20,0.4402772869674186
+anchored,off,d-conflict,headline-chat,competitive share,0.05694444444444444,-0.05277777777777778,0.19166666666666665,20,0.02777777777777778
+anchored,off,d-conflict,headline-chat,match share,0.02996353062142536,-0.10502699055330633,0.19146825396825395,20,0.8970936957779061
+anchored,off,d-conflict,headline-chat,agreement-keyword round share,-0.03030701754385965,-0.18219423558897244,0.11378963032581453,20,0.790482456140351
+anchored,off,d-conflict,headline-chat,undercut events,0.25,-1.7,2.2,20,0.75
+anchored,off,d-conflict,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-conflict,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-placebo,headline-chat,gain,-0.04047489113408513,-0.1689803656759085,0.0663526486254701,20,0.6662558366228071
+anchored,off,d-placebo,headline-chat,price index,-0.022705733082706767,-0.10360439379699246,0.05817011513157892,20,0.4402772869674186
+anchored,off,d-placebo,headline-chat,competitive share,0.015277777777777779,-0.05694444444444444,0.09444444444444444,20,0.02777777777777778
+anchored,off,d-placebo,headline-chat,match share,0.06059218559218558,-0.05851931511470987,0.18842452686202685,20,0.8970936957779061
+anchored,off,d-placebo,headline-chat,agreement-keyword round share,0.01624060150375942,-0.16291196741854636,0.16551065162907272,20,0.790482456140351
+anchored,off,d-placebo,headline-chat,undercut events,-0.6,-2.05,0.35,20,0.75
+anchored,off,d-placebo,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-placebo,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-a,d-placebo,gain,0.10038548339598993,-0.007034347877506313,0.2099210129072681,20,0.625780945488722
+anchored,off,d-temptation-a,d-placebo,price index,0.08155921052631579,0.0009903665413533791,0.17214527725563908,20,0.41757155388471184
+anchored,off,d-temptation-a,d-placebo,competitive share,-0.025396825396825397,-0.06787202380952381,0.006944444444444445,20,0.043055555555555555
+anchored,off,d-temptation-a,d-placebo,match share,0.022396536212325697,-0.027626518218623476,0.10005482456140347,20,0.9576858813700918
+anchored,off,d-temptation-a,d-placebo,agreement-keyword round share,0.038176691729323316,-0.10729464285714287,0.1814163533834586,20,0.8067230576441103
+anchored,off,d-temptation-a,d-placebo,undercut events,0.1,-0.3512499999999999,0.55,20,0.15
+anchored,off,d-temptation-a,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-a,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,d-placebo,gain,-0.0016522976190476491,-0.12209129302944867,0.13862227597117796,20,0.625780945488722
+anchored,off,d-temptation-b,d-placebo,price index,-0.0032366541353383653,-0.08732944705513786,0.08766135181704256,20,0.41757155388471184
+anchored,off,d-temptation-b,d-placebo,competitive share,0.03319918385707859,-0.0623942267527794,0.14227373321123318,20,0.043055555555555555
+anchored,off,d-temptation-b,d-placebo,match share,-0.09005928282244073,-0.2352704879185142,0.0390956357239252,20,0.9576858813700918
+anchored,off,d-temptation-b,d-placebo,agreement-keyword round share,-0.014461152882205525,-0.1763577694235589,0.1577684837092732,20,0.8067230576441103
+anchored,off,d-temptation-b,d-placebo,undercut events,0.55,-0.05,1.2,20,0.15
+anchored,off,d-temptation-b,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-conflict,d-placebo,gain,0.04453405999373432,-0.09349647656250004,0.1756744418624687,20,0.625780945488722
+anchored,off,d-conflict,d-placebo,price index,0.029749718045112776,-0.06598921757518796,0.13115494125939844,20,0.41757155388471184
+anchored,off,d-conflict,d-placebo,competitive share,0.041666666666666664,-0.06805555555555556,0.17923611111111104,20,0.043055555555555555
+anchored,off,d-conflict,d-placebo,match share,-0.030628654970760227,-0.16406615497076024,0.08083881578947366,20,0.9576858813700918
+anchored,off,d-conflict,d-placebo,agreement-keyword round share,-0.04654761904761905,-0.15562202380952386,0.05930592105263156,20,0.8067230576441103
+anchored,off,d-conflict,d-placebo,undercut events,0.85,-0.3,2.55,20,0.15
+anchored,off,d-conflict,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-conflict,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,d-temptation-a,gain,-0.1020377810150376,-0.25956146640037603,0.04652615693139105,20,0.7261664288847118
+anchored,off,d-temptation-b,d-temptation-a,price index,-0.08479586466165415,-0.19142880952380956,0.01899839129072678,20,0.49913076441102755
+anchored,off,d-temptation-b,d-temptation-a,competitive share,0.05859600925390399,-0.011375835421888051,0.1674005727459675,20,0.01765873015873016
+anchored,off,d-temptation-b,d-temptation-a,match share,-0.1124558190347664,-0.23703842940685052,-0.031236685463659153,20,0.9800824175824177
+anchored,off,d-temptation-b,d-temptation-a,agreement-keyword round share,-0.05263784461152883,-0.20428759398496246,0.09111497493734334,20,0.8448997493734336
+anchored,off,d-temptation-b,d-temptation-a,undercut events,0.45,-0.1,1.101249999999999,20,0.25
+anchored,off,d-temptation-b,d-temptation-a,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,off,d-temptation-b,d-temptation-a,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-a,headline-chat,gain,0.059742587092731836,0.013857671209273208,0.11541026298558898,20,0.761269698621554
+anchored,on,d-temptation-a,headline-chat,price index,0.08987130325814538,0.022480764411027573,0.16203737468671678,20,0.5185011278195487
+anchored,on,d-temptation-a,headline-chat,competitive share,0.004166666666666667,0.0,0.0125,20,0.0013888888888888887
+anchored,on,d-temptation-a,headline-chat,match share,0.005952380952380948,-0.029166666666666667,0.047023809523809516,20,0.9688492063492061
+anchored,on,d-temptation-a,headline-chat,agreement-keyword round share,0.007957393483709278,-0.07342622180451126,0.08083834586466165,20,0.7786340852130327
+anchored,on,d-temptation-a,headline-chat,undercut events,0.15,0.0,0.45,20,0.05
+anchored,on,d-temptation-a,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-a,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,headline-chat,gain,0.03924752459273186,0.00035450204808898237,0.08625211090225567,20,0.761269698621554
+anchored,on,d-temptation-b,headline-chat,price index,0.03718280075187974,0.0008788886278195649,0.08045657894736849,20,0.5185011278195487
+anchored,on,d-temptation-b,headline-chat,competitive share,-7.309941520467836e-05,-0.004166666666666667,0.003947368421052632,20,0.0013888888888888887
+anchored,on,d-temptation-b,headline-chat,match share,-0.016318841976736713,-0.1357166554206028,0.06706845238095238,20,0.9688492063492061
+anchored,on,d-temptation-b,headline-chat,agreement-keyword round share,-0.023258145363408516,-0.11524937343358395,0.07174686716791977,20,0.7786340852130327
+anchored,on,d-temptation-b,headline-chat,undercut events,0.0,-0.15,0.15,20,0.05
+anchored,on,d-temptation-b,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-conflict,headline-chat,gain,0.050242712092731845,0.005531416705827145,0.10354425401785716,20,0.761269698621554
+anchored,on,d-conflict,headline-chat,price index,0.069731015037594,0.006957622180451168,0.1402650657894737,20,0.5185011278195487
+anchored,on,d-conflict,headline-chat,competitive share,-0.0013888888888888887,-0.004166666666666667,0.0,20,0.0013888888888888887
+anchored,on,d-conflict,headline-chat,match share,0.029227716727716728,-0.002457264957264954,0.078182615995116,20,0.9688492063492061
+anchored,on,d-conflict,headline-chat,agreement-keyword round share,-0.07568922305764411,-0.15807769423558896,-0.0006148182957393704,20,0.7786340852130327
+anchored,on,d-conflict,headline-chat,undercut events,-0.05,-0.15,0.0,20,0.05
+anchored,on,d-conflict,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-conflict,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-placebo,headline-chat,gain,0.030783627976190497,-0.028408091889880943,0.09316092794094612,20,0.761269698621554
+anchored,on,d-placebo,headline-chat,price index,0.04343869047619051,-0.019337648809523777,0.11298967105263166,20,0.5185011278195487
+anchored,on,d-placebo,headline-chat,competitive share,0.004951481267270742,-0.0023809523809523807,0.012546811740890685,20,0.0013888888888888887
+anchored,on,d-placebo,headline-chat,match share,0.018323854508065035,-0.018392415333204803,0.06990940893901418,20,0.9688492063492061
+anchored,on,d-placebo,headline-chat,agreement-keyword round share,-0.019417293233082715,-0.11285776942355889,0.0761782581453634,20,0.7786340852130327
+anchored,on,d-placebo,headline-chat,undercut events,0.15,-0.1,0.4012499999999989,20,0.05
+anchored,on,d-placebo,headline-chat,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-placebo,headline-chat,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-a,d-placebo,gain,0.028958959116541345,-0.0029108799107142977,0.07170377745535711,20,0.7920533265977445
+anchored,on,d-temptation-a,d-placebo,price index,0.046432612781954874,0.0003584273182957239,0.1110751542919799,20,0.5619398182957394
+anchored,on,d-temptation-a,d-placebo,competitive share,-0.0007848146006040752,-0.01224859022556391,0.012957875457875457,20,0.00634037015615963
+anchored,on,d-temptation-a,d-placebo,match share,-0.012371473555684086,-0.041887712068633134,0.014550338185206615,20,0.9871730608572713
+anchored,on,d-temptation-a,d-placebo,agreement-keyword round share,0.027374686716792006,-0.09192261904761903,0.13986481829573938,20,0.7592167919799497
+anchored,on,d-temptation-a,d-placebo,undercut events,0.0,-0.4,0.45,20,0.2
+anchored,on,d-temptation-a,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-a,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,d-placebo,gain,0.008463896616541363,-0.028807602302631567,0.05428142340225565,20,0.7920533265977445
+anchored,on,d-temptation-b,d-placebo,price index,-0.00625588972431077,-0.06823984962406017,0.048951995614035064,20,0.5619398182957394
+anchored,on,d-temptation-b,d-placebo,competitive share,-0.005024580682475419,-0.011128903990746097,0.0,20,0.00634037015615963
+anchored,on,d-temptation-b,d-placebo,match share,-0.03464269648480175,-0.12414895411605938,0.015611424394319121,20,0.9871730608572713
+anchored,on,d-temptation-b,d-placebo,agreement-keyword round share,-0.003840852130325795,-0.11413251879699247,0.0948717105263157,20,0.7592167919799497
+anchored,on,d-temptation-b,d-placebo,undercut events,-0.15,-0.3,0.0,20,0.2
+anchored,on,d-temptation-b,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-conflict,d-placebo,gain,0.019459084116541354,-0.01872840491071429,0.060201130733082676,20,0.7920533265977445
+anchored,on,d-conflict,d-placebo,price index,0.026292324561403492,-0.024995491071428563,0.07985530388471174,20,0.5619398182957394
+anchored,on,d-conflict,d-placebo,competitive share,-0.00634037015615963,-0.013526604973973394,0.0,20,0.00634037015615963
+anchored,on,d-conflict,d-placebo,match share,0.010903862219651695,-0.00121457489878542,0.023243766467450685,20,0.9871730608572713
+anchored,on,d-conflict,d-placebo,agreement-keyword round share,-0.0562719298245614,-0.13380451127819545,0.025764097744360878,20,0.7592167919799497
+anchored,on,d-conflict,d-placebo,undercut events,-0.2,-0.45,0.0,20,0.2
+anchored,on,d-conflict,d-placebo,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-conflict,d-placebo,any early ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,d-temptation-a,gain,-0.020495062499999977,-0.058798392633928526,0.012688927678571443,20,0.8210122857142859
+anchored,on,d-temptation-b,d-temptation-a,price index,-0.052688502506265646,-0.13453214285714285,0.010946423088972469,20,0.6083724310776942
+anchored,on,d-temptation-b,d-temptation-a,competitive share,-0.004239766081871345,-0.016666666666666666,0.003947368421052632,20,0.005555555555555555
+anchored,on,d-temptation-b,d-temptation-a,match share,-0.02227122292911766,-0.13147688933873145,0.04214468462823727,20,0.9748015873015874
+anchored,on,d-temptation-b,d-temptation-a,agreement-keyword round share,-0.0312155388471178,-0.15501691729323305,0.09580639097744358,20,0.7865914786967418
+anchored,on,d-temptation-b,d-temptation-a,undercut events,-0.15,-0.6,0.15,20,0.2
+anchored,on,d-temptation-b,d-temptation-a,evidence ending,0.0,0.0,0.0,20,0.9
+anchored,on,d-temptation-b,d-temptation-a,any early ending,0.0,0.0,0.0,20,0.9

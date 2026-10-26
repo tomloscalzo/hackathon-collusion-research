@@ -1,0 +1,34 @@
+# Strategy-mix robustness (TEST_PLAN 3): scripted populations in the LLM seat against the held partner, per scenario
+# family, with and without demand noise (own volume +- 5, quotes seen with probability 0.5, no fill price) and with a
+# hidden-fill TriggerK population. 5 families x 7 seats x 2 frictions = 70 cells x 1000 runs.
+# Run:  batch --sweep sweeps/strategy-mix.yaml --threads 200 --out out/strategy-mix
+id: strategy-mix
+masterSeed: 20261022
+runsPerCell: 1000
+seat: llm
+partner: partner
+factors:
+  - name: family
+    treatment: false
+    levels:
+      - {label: ripe, base: scenarios/ripe-game.yaml, vars: {thetaP: 0.546}}
+      - {label: unripe-a, base: scenarios/unripe-a.yaml, vars: {thetaP: 0.546}}
+      - {label: unripe-a-prime, base: scenarios/unripe-a-prime.yaml, vars: {thetaP: 0.546}}
+      - {label: n4, base: scenarios/n4-variant.yaml, vars: {thetaP: 0.546}}
+      - {label: tick, base: scenarios/tick-case.yaml, vars: {thetaP: 0.5}}
+  - name: seat
+    treatment: true
+    levels:
+      - {label: grim, agents: [{id: llm, kind: TRIGGER_K, config: {theta: "${thetaP}", k: -1, tolerance: 0}}]}
+      - {label: grim-hidden-fill, agents: [{id: llm, kind: TRIGGER_K, config: {theta: "${thetaP}", k: -1, tolerance: 0, hiddenFillFromRound: 5}}]}
+      - {label: tit-for-tat, agents: [{id: llm, kind: TIT_FOR_TAT, config: {theta: "${thetaP}"}}]}
+      - {label: penance-k3, agents: [{id: llm, kind: PENANCE, config: {theta: "${thetaP}", k: 3, tolerance: 0}}]}
+      - {label: defect-once-8, agents: [{id: llm, kind: DEFECT_ONCE, config: {theta: "${thetaP}", t: 8}}]}
+      - {label: always-compete, agents: [{id: llm, kind: ALWAYS_COMPETE}]}
+      - {label: noise, agents: [{id: llm, kind: NOISE}]}
+  - name: frictions
+    treatment: true
+    levels:
+      - {label: clean}
+      - label: demand-noise
+        set: {observation.demandNoiseSd: 5, observation.showFillPrice: false, observation.o: 0.5}

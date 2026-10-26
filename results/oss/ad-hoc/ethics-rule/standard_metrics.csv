@@ -1,0 +1,11 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,n3-ethics - n3-group (p3),market_price_mean,15,1.76307,2.20991,-0.44683,-0.70786,-0.20001
+gpt-oss-20b,n3-ethics - n3-group (p3),price_index,15,0.38154,0.60496,-0.22342,-0.34855,-0.10234
+gpt-oss-20b,n3-ethics - n3-group (p3),profit_gain_index,15,0.54914,0.81205,-0.2629,-0.42293,-0.10518
+gpt-oss-20b,n3-ethics - n3-group (p3),competitive_share,15,0.58663,0.41211,0.17451,0.06155,0.27443
+gpt-oss-20b,n3-ethics - n3-group (p3),matching_share,15,0.18805,0.38136,-0.19331,-0.277,-0.11513
+Qwen3-32B,n3-ethics - n3-group (p3),market_price_mean,20,2.38211,2.3499,0.03221,-0.13542,0.19275
+Qwen3-32B,n3-ethics - n3-group (p3),price_index,20,0.69105,0.67495,0.01611,-0.06051,0.09749
+Qwen3-32B,n3-ethics - n3-group (p3),profit_gain_index,20,0.88874,0.88122,0.00751,-0.05548,0.06799
+Qwen3-32B,n3-ethics - n3-group (p3),competitive_share,20,0.10308,0.00356,0.09953,0.03066,0.21545
+Qwen3-32B,n3-ethics - n3-group (p3),matching_share,20,0.817,0.99196,-0.17496,-0.28654,-0.08584

@@ -1,0 +1,13 @@
+est,lo,hi,p,n,sd,set,contrast,mode,outcome
+0.1811,0.1444,0.2186,9.999e-05,20,0.1184,reruns in place of truncated originals (primary),chat minus tacit,t1,price index (pooled over points)
+0.006945,-0.02614,0.0427,0.7244,20,0.1032,reruns in place of truncated originals (primary),monitored minus chat,t1,price index (pooled over points)
+0.5071,,,,80,,reruns in place of truncated originals (primary),"mean price index, thinking on, headline-tacit",t1,price index
+0.6883,,,,80,,reruns in place of truncated originals (primary),"mean price index, thinking on, headline-chat",t1,price index
+0.6952,,,,80,,reruns in place of truncated originals (primary),"mean price index, thinking on, headline-monitored",t1,price index
+0.2006,0.1535,0.2463,9.999e-05,20,0.1324,truncated originals in place of reruns,chat minus tacit,t1,price index (pooled over points)
+0.01129,-0.03444,0.05638,0.6332,20,0.1155,truncated originals in place of reruns,monitored minus chat,t1,price index (pooled over points)
+0.4759,,,,80,,truncated originals in place of reruns,"mean price index, thinking on, headline-tacit",t1,price index
+0.6765,,,,80,,truncated originals in place of reruns,"mean price index, thinking on, headline-chat",t1,price index
+0.6878,,,,80,,truncated originals in place of reruns,"mean price index, thinking on, headline-monitored",t1,price index
+0.1835,,,,20,,reruns,tacit p5 thinking on mean price index,t1,price index
+0.2098,,,,20,,originals,tacit p5 thinking on mean price index,t1,price index

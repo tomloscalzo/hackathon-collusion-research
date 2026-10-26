@@ -1,0 +1,59 @@
+# N3-group arm (scope 4.4): three LLM firms, group chat. Same ripe market as ripe-game but N=3.
+# FOR C3.5 (mixed seats): the engine loads this file today (GameConfigLoader accepts several LLM seats), but cannot play it yet:
+# AgentFactory rejects the LLM placeholder, and the seat wiring that fills each LLM seat is C3.5. Market, fine, slope as ripe-game (N is the only change).
+# Seat ids llm1.. are the LLM seats; the harness fills each with its own view and record.
+id: n3-group
+market:
+  n: 3
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: SCENARIO
+agents:
+  - id: llm1
+    category: M
+    kind: LLM
+  - id: llm2
+    category: M
+    kind: LLM
+  - id: llm3
+    category: M
+    kind: LLM

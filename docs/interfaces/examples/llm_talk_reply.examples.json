@@ -1,0 +1,15 @@
+{
+  "schema": "llm_talk_reply",
+  "note": "The strict form. TalkParser is more lenient (prose or fences around the object, a missing done, speaker tags, a reply nested in the message); those replies are parsed but do not satisfy this schema.",
+  "valid": [
+    {"message": "2.40 worked for both of us. Same again?", "done": false},
+    {"message": "", "done": true},
+    {"message": "Fine by me.", "done": true}
+  ],
+  "invalid": [
+    {"why": "done is required", "value": {"message": "hello"}},
+    {"why": "message is required", "value": {"done": true}},
+    {"why": "done must be a boolean, not a string", "value": {"message": "hello", "done": "true"}},
+    {"why": "message must be a string", "value": {"message": 5, "done": false}}
+  ]
+}

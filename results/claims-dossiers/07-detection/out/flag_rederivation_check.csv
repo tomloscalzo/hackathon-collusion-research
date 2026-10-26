@@ -1,0 +1,4 @@
+model,mode,n_games,price_flag_agree_with_runcsv,n_chat,conv_flag_agree_with_runcsv
+Qwen3-32B,t0,660,1.0,580,1.0
+Qwen3-32B,t1,700,1.0,620,1.0
+gpt-oss-20b,medium,720,1.0,640,1.0

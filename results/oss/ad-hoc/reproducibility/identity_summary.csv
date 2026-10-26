@@ -1,0 +1,7 @@
+group,n_pairs,same_first_round_prompts,same_digest,same_quote_sequence,same_all_five_metrics,same_rounds_played,pairs_with_empty_talk
+hrep-fx-chat-p1,20,0,0,1,1,18,9
+hrep-nx-chat-p1,20,0,0,0,0,18,10
+hrep-fx-tacit-p1,20,20,0,0,0,19,0
+hrep-nx-tacit-p1,20,20,0,0,0,18,0
+hrep-fx-chat-p5,19,0,0,0,0,14,10
+ALL,99,40,0,1,1,87,29

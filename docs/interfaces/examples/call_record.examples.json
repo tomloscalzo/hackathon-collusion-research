@@ -1,0 +1,15 @@
+{
+  "schema": "call_record",
+  "note": "Lines from a mock-server run (harness/MockHarness.java).",
+  "valid": [
+    {"attempt": 0, "cached": false, "index": 2, "kind": "game", "latencyMs": 5, "parseStatus": "REPAIR_NEEDED", "requestHash": "978120e81dcb5e94fb06dd3fcc0706ec05756525698ad490e2d8950960786931", "runKey": "ripe-game|s1", "tokensIn": 745, "tokensOut": 4},
+    {"attempt": 1, "cached": false, "index": 2, "kind": "game", "latencyMs": 3, "parseStatus": "OK", "requestHash": "99ae3a3f9997d7956faea597b9b2eb6cb9951f9b2ffaeea6b08d36bc8113eabc", "runKey": "ripe-game|s1", "tokensIn": 783, "tokensOut": 14},
+    {"attempt": 0, "cached": false, "index": 1, "kind": "probe", "latencyMs": 7, "parseStatus": "WRONG", "requestHash": "097dd934e9582452da8241cca5b04bd5a05ec4d8f2cdfc499fec7a3c8b1c957c", "runKey": "ripe-game|s1", "tokensIn": 810, "tokensOut": 9},
+    {"attempt": 0, "cached": true, "index": 0, "kind": "vignette", "latencyMs": 0, "parseStatus": "OK", "requestHash": "097dd934e9582452da8241cca5b04bd5a05ec4d8f2cdfc499fec7a3c8b1c957c", "runKey": "ripe-game|s5|p3", "tokensIn": 516, "tokensOut": 10}
+  ],
+  "invalid": [
+    {"why": "REPAIR_NEEDED only on a first attempt", "value": {"attempt": 1, "cached": false, "index": 2, "kind": "game", "latencyMs": 3, "parseStatus": "REPAIR_NEEDED", "requestHash": "99ae3a3f9997d7956faea597b9b2eb6cb9951f9b2ffaeea6b08d36bc8113eabc", "runKey": "ripe-game|s1", "tokensIn": 1, "tokensOut": 1}},
+    {"why": "WRONG is a probe status", "value": {"attempt": 0, "cached": false, "index": 2, "kind": "game", "latencyMs": 3, "parseStatus": "WRONG", "requestHash": "99ae3a3f9997d7956faea597b9b2eb6cb9951f9b2ffaeea6b08d36bc8113eabc", "runKey": "ripe-game|s1", "tokensIn": 1, "tokensOut": 1}},
+    {"why": "requestHash is 64 lower-case hex digits", "value": {"attempt": 0, "cached": false, "index": 1, "kind": "game", "latencyMs": 3, "parseStatus": "OK", "requestHash": "ABC", "runKey": "ripe-game|s1", "tokensIn": 1, "tokensOut": 1}}
+  ]
+}

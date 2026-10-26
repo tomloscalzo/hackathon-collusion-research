@@ -1,0 +1,91 @@
+## 2. G-interaction: does chat blunt the penalty? (communication x penalty)
+
+**What is compared.** Within each (wording, seed) pair: (chat p5 minus chat p1) minus (no-chat p5 minus no-chat p1). A positive value means that with chat the penalty lowers prices less. Neutral run, 20 pairs, all five metrics. For Qwen the monitored-chat version is also given.
+
+**Table 2. Interactions.** Holm families: "Qwen interactions" = the 7 interaction contrasts of Qwen per metric (4 communication x penalty contrasts and 3 thinking x penalty contrasts, section 4); gpt-oss = 1 test per metric (no correction).
+
+TABLE_INTERACTIONS
+
+<small>
+
+| Term | Meaning |
+|---|---|
+| comm x penalty: (chat p5-p1) - (tacit p5-p1) | Per pair, the chat penalty slope minus the no-chat penalty slope (each the p5 game minus the p1 game, same mode). Positive = chat dampens the penalty effect. |
+| thinking x penalty: (p5-p1 on) - (p5-p1 off), arm | Per pair, the thinking-on penalty slope minus the thinking-off penalty slope in that arm (Qwen only). Negative = the penalty bites more with thinking on. |
+| t1-t0 | The thinking x penalty contrasts use both Qwen modes. |
+
+</small>
+
+**Re-derivation.**
+- Qwen thinking on: +0.367 [+0.154, +0.570] on profit gain, p 0.005, Holm 0.020. The ledger's +0.397 came from the provisional game table, in which two thinking-on no-chat p5 games were truncated originals.
+- gpt-oss: +0.102 [-0.119, +0.312] (ledger +0.10 [-0.09, +0.30] from Step 2 and +0.102 [-0.126, +0.311] from the ad hoc analysis). The CIs differ only by bootstrap draws.
+- The ledger's Qwen "F 8.5, bootstrap p 0.002" is a regression test over all four points. The paired contrast here gives p 0.005, Holm 0.020.
+
+**Evidence across models.**
+- *Supporting* (that the gpt-oss interaction is small): the price-index interaction is +0.04 [-0.14, +0.22], and the matching share runs in the opposite direction to Qwen's (-0.08 vs +0.23).
+- *Contrary:*
+  - Paired across models, the gpt-oss interaction is smaller than Qwen thinking on's by -0.26 [-0.52, +0.01] on profit gain (Holm 0.29); the CI includes 0.
+  - The Qwen interaction partly reflects headroom: Qwen chat p1 sits at 0.95 gain and the no-chat p5 games fall to 0.28.
+  - With thinking off, Qwen shows a smaller interaction for monitored chat only (+0.23, Holm 0.032).
+  - gpt-oss has no monitored arm.
+  - Cross-wave caveat: the gpt-oss chat games (waves 7 to 12) and no-chat games (waves 13 to 16) ran in different waves, so the interaction also contrasts waves. The replicate offsets are similar for chat and no chat (+0.06 and +0.12 vs +0.15 and +0.17 profit gain at p1), but a wave effect itself is untested.
+
+**Strength.** Exploratory (the interaction was not declared), n = 20 pairs. gpt-oss +0.102 [-0.119, +0.312], p 0.376, MDE 0.31. A **bounded null**: it rules out a gpt-oss interaction above about +0.31 gain, but not one the size of a quarter of Qwen's. "Chat does not blunt the penalty on gpt-oss" therefore holds only for interactions larger than about 0.3.
+
+**Main-text sentence.** "Unlike Qwen3-32B with thinking on, where private chat halved the penalty's bite, gpt-oss-20b showed no detectable communication x penalty interaction; the data rule out only an interaction larger than about 0.3 of the profit gain range."
+
+**Appendix sentence.** "Communication x penalty interaction on the profit gain index, (chat p5-p1) - (no chat p5-p1): gpt-oss-20b +0.10 [-0.12, +0.31] (n = 20 pairs, p 0.38, MDE 0.31) against Qwen3-32B thinking on +0.37 [+0.15, +0.57] (Holm 0.020). The paired model difference is -0.26 [-0.52, +0.01]. The gpt-oss chat and no-chat cells ran in different waves."
+
+Sub-questions: 1.1, 3.1 (whether the chat channel is a conduit).
+
+## 3. Q6-mode: the penalty matters for thinking-on firms, not thinking-off firms (Qwen)
+
+**What is compared.** The Qwen3-32B penalty steps of Table 1, thinking on against thinking off, in all three arms, all five metrics (neutral run, 20 pairs).
+
+**Result.**
+- *Thinking off:*
+  - No penalty step passes Holm, in any arm or metric.
+  - The p5-p1 profit gain is -0.111 [-0.246, +0.011] without chat, +0.051 [-0.058, +0.178] with chat and +0.117 [+0.016, +0.233] with monitored chat. The last points the wrong way (Holm 0.49).
+  - The tracking slopes are -0.11 to +0.11.
+- *Thinking on:*
+  - The penalty step is clear in every arm: p5-p1 -0.625 / -0.259 / -0.198 on profit gain, and p4-p1 already -0.16 / -0.12 / -0.14.
+  - Without chat, thinking-on play follows the theory curve closely down to p4 (Figure 1, bottom left). Even so, at p5 it keeps 0.28 of the monopoly gain, where theory sustains none.
+- *gpt-oss* (one mode) responds less than Qwen thinking on without chat, but more than Qwen thinking off. In profit gain, gpt-oss minus Qwen thinking off is -0.19 [-0.39, +0.02] without chat and -0.24 [-0.46, -0.06] with chat. So the gpt-oss penalty response is intermediate. It cannot test the mode effect itself.
+
+**Re-derivation.** Matches the Qwen ledger (thinking off, chat +0.051 [-0.057, 0.181]; monitored +0.117 [0.016, 0.234]) and the thinking-mode ad hoc analysis: pooled over communication, the thinking-on p5-p1 is -0.37 and thinking off +0.02. Here the per-arm values average to -0.361 and +0.019.
+
+**Strength.** Declared (the Qwen penalty curve in both modes), n = 20 pairs per contrast; Holm family (mode, metric) of 12 tests. Thinking-off null bounds on p5-p1 profit gain, per arm: no chat [-0.25, +0.01], chat [-0.06, +0.18], monitored [+0.02, +0.23] (MDE 0.16 to 0.18).
+
+**Caveat.** Thinking on versus off also changes the token cap (400 vs 8,192 per quote) and the temperature (0.7 vs 0.6). Thinking-on games were the ones truncated and rerun on a 32k profile. "Thinking" is therefore a bundle of settings, not a single switch.
+
+**Main-text sentence.** "Qwen3-32B priced in the fine only when it reasoned: with thinking on, prices tracked the theory curve without chat, while with thinking off no penalty step was detectable in any arm."
+
+**Appendix sentence.** "Qwen3-32B, p5 - p1 profit gain, thinking on: no chat -0.625 [-0.777, -0.456], chat -0.259 [-0.421, -0.116], monitored -0.198 [-0.337, -0.080] (all Holm < 0.01). Thinking off: -0.111 [-0.246, +0.011], +0.051 [-0.058, +0.178], +0.117 [+0.016, +0.233] (all Holm > 0.4). Thinking also changes the token cap and the temperature. gpt-oss-20b (medium effort, one mode) falls between the two Qwen modes."
+
+Sub-question: 1.1.
+
+## 4. H1: the penalty bites mainly with thinking on (thinking x penalty interaction)
+
+**What is compared.** Within each (wording, seed) pair, Qwen3-32B: (p5 minus p1 with thinking on) minus (p5 minus p1 with thinking off), per arm. Negative = the fine bites more with thinking on. See Table 2, rows "thinking x penalty". Holm family: the 7 Qwen interaction contrasts per metric.
+
+**Result.**
+- No chat: profit gain -0.514 [-0.701, -0.316], p 0.0002, Holm 0.001; price index -0.458 [-0.613, -0.295]; average spread -0.92 [-1.23, -0.58].
+- Chat: -0.310 [-0.565, -0.097], Holm 0.024.
+- Monitored: -0.316 [-0.447, -0.192], Holm < 0.001.
+- On the shares (no chat), competitive share +0.25 [+0.02, +0.47] and matching share -0.36 [-0.62, -0.10]. Neither passes Holm.
+
+**Re-derivation.**
+- FINAL_NUMBERS gives -0.514 [-0.700, -0.315] (no chat), -0.310 (chat) and -0.316 (monitored). All three match.
+- Rerun dependence: 13 of the 20 thinking-on no-chat p5 games are truncation reruns on a 32k profile (6 at p3, 6 at p4, 3 at p1).
+- Restricting to the 5 pairs with no rerun at p1 or p5, the thinking-on no-chat p5-p1 is -0.29 [-0.70, +0.09]. With thinking on, truncation is concentrated in the high-penalty no-chat games, so that check is selected, not clean. The no-chat interaction is the most rerun-dependent number in this dossier. With chat, which has few reruns, the thinking-on effect barely moves when rerun pairs are dropped (-0.246, 17 pairs).
+
+**gpt-oss.** Not testable: gpt-oss has no thinking-off mode. The thinking-mode confound applies to every gpt-oss comparison in this dossier.
+
+**Strength.** Exploratory (FINAL_NUMBERS lists it under "Interactions (exploratory)"), n = 20 pairs.
+
+**Main-text sentence.** "The fine's effect depended on reasoning: going from the lightest to the heaviest penalty lowered Qwen3-32B profit gain by about 0.51 more with thinking on than off without chat, and by about 0.31 more with chat."
+
+**Appendix sentence.** "Thinking x penalty interaction on the profit gain index, Qwen3-32B, 20 pairs: no chat -0.514 [-0.701, -0.316], private chat -0.310 [-0.565, -0.097], monitored chat -0.316 [-0.447, -0.192] (Holm 0.001, 0.024, < 0.001; 7-test family). 13 of the 20 thinking-on no-chat p5 games are truncation reruns; restricted to the 5 pairs without reruns, the thinking-on no-chat p5 - p1 is -0.29 [-0.70, +0.09], a subset selected by truncation."
+
+Sub-question: 1.1.
+

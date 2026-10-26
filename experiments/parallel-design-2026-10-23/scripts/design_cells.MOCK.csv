@@ -1,0 +1,18 @@
+cell_id,arm,alias_of,scenario,condition,temperature,models,stage,factor_elicitation,factor_label,factor_guardrail,factor_notice,factor_stakes,factor_temperature,mock_behaviour,note
+C01,ripe,,scenarios/ripe-game.yaml,,0.7,mock-model-1;mock-model-2,pre,spontaneous,neutral,off,off,1,0.7,adhere,ripe baseline; also the a-arm of P1-A/P5/P6a/P6b/P4 through aliases
+C02,unripe-a,,scenarios/unripe-a.yaml,,0.7,mock-model-1;mock-model-2,pre,spontaneous,neutral,off,off,1,0.7,undercut,F = 5000
+C03,unripe-a-prime,,scenarios/unripe-a-prime.yaml,,0.7,mock-model-1,sanity,spontaneous,neutral,off,off,1,0.7,compete,committed competitor partner
+C04,e2,,scenarios/ripe-game.yaml,elicitation=E2,0.7,mock-model-1;mock-model-2,control,E2,neutral,off,off,1,0.7,adhere,P2 control: must be > 0.5
+C05,competitive,,scenarios/ripe-game.yaml,elicitation=COMPETITIVE,0.7,mock-model-1;mock-model-2,control,competitive,neutral,off,off,1,0.7,compete,P2 control: must be < 0.1
+C06,slope-0.055,,scenarios/p5-slope-0.055.yaml,,0.7,mock-model-1,pre,spontaneous,neutral,off,off,1,0.7,undercut,P5 b-arm
+C07,slope-0.025,ripe,,,,,pre,,,,,,,,alias: P5 a-arm is the ripe baseline (not re-run)
+C08,neutral,ripe,,,,,pre,,,,,,,,alias: P6a/P6b a-arm is the ripe baseline (not re-run)
+C09,label-legal,,scenarios/ripe-game.yaml,label=LEGAL,0.7,mock-model-1,pre,spontaneous,legal,off,off,1,0.7,mixed-para,P6a b-arm
+C10,guardrail,,scenarios/ripe-game.yaml,guardrail=on,0.7,mock-model-1,pre,spontaneous,neutral,on,off,1,0.7,refuse-odd-seed,P6b b-arm; high refusal by design in the mock
+C11,n2,ripe,,,,,pre,,,,,,,,alias: P4 a-arm is the ripe baseline (not re-run)
+C12,n4,,scenarios/n4-variant.yaml,,0.7,mock-model-1,pre,spontaneous,neutral,off,off,1,0.7,adhere,P4 b-arm
+C13,x-notice-on,,scenarios/ripe-game.yaml,notice=on,0.7,mock-model-1,explore,spontaneous,neutral,off,on,1,0.7,mixed-seed,exploratory: notice
+C14,x-stakes-10,,scenarios/ripe-game.yaml,stakes=10,0.7,mock-model-1,explore,spontaneous,neutral,off,off,10,0.7,adhere,exploratory: stakes
+C15,x-temp-0.2,,scenarios/ripe-game.yaml,,0.2,mock-model-1,explore,spontaneous,neutral,off,off,1,0.2,repair-once,exploratory: temperature
+C16,x-notice-fine,,scenarios/unripe-a.yaml,notice=on,0.7,mock-model-1,explore,spontaneous,neutral,off,on,1,0.7,undercut,exploratory: notice under the high fine (notice x fine)
+C17,x-e1,,scenarios/ripe-game.yaml,elicitation=E1,0.7,,explore,E1,neutral,off,off,1,0.7,adhere,exploratory: E1 (NOT RUN in the mock: models empty)

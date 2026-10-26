@@ -1,0 +1,313 @@
+analysis,run,metric,label,est,lo,hi,n_pairs,arm,penalty_point,mean_on,mean_off
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|ctl-32b-joint|p3,0.01953125,-0.04296875,0.09140625,20,ctl-32b-joint,3,0.91875,0.89921875
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-conflict|p1,0.2270852537593985,0.11255321358082707,0.3609173110902253,20,d-conflict,1,0.9652455357142857,0.7381602819548871
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.8649738636363634,
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.8980505654761904,
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-placebo|p1,0.10703208740601504,0.0031040594846491344,0.23622821493577692,20,d-placebo,1,0.9432194207393483,0.8361873333333332
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-temptation-a|p1,0.14964470535714286,0.055582603497023826,0.2676772394345238,20,d-temptation-a,1,0.9493389255952381,0.7996942202380952
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|d-temptation-b|p1,0.1397498865914787,0.06248653643483708,0.24497972527412282,20,d-temptation-b,1,0.9747916666666667,0.8350417800751879
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-chat|p1,0.1458656607142857,0.056412685416666664,0.2617739767857143,20,headline-chat,1,0.9491580714285714,0.8032924107142858
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-chat|p3,0.13963018875313282,0.024959876433270682,0.27661851815476185,20,headline-chat,3,0.9162777929197995,0.7766476041666668
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-chat|p4,-0.022952723057644106,-0.10292547983239349,0.06476113899592724,20,headline-chat,4,0.8219084317042608,0.8448611547619048
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-chat|p5,-0.22111831328320802,-0.3943360448856516,-0.06300543856516296,20,headline-chat,5,0.6334496710526316,0.8545679843358396
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-monitored|p1,0.1775009617794486,0.09615642410714284,0.28447936900845855,20,headline-monitored,1,0.958758005952381,0.7812570441729323
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-monitored|p3,0.08520188768796993,0.008272357777255645,0.19426489696898497,20,headline-monitored,3,0.9276632410714285,0.8424613533834588
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-monitored|p4,0.013795994204260652,-0.07435784860197368,0.10043001714050745,20,headline-monitored,4,0.8213316192042607,0.8075356249999999
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-monitored|p5,-0.18408921318922306,-0.32677280103383455,-0.060707907432644155,20,headline-monitored,5,0.7145377369987467,0.89862695018797
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-tacit|p1,0.18212049733709276,0.09530603142230577,0.27064389197994987,20,headline-tacit,1,0.8788775509085213,0.6967570535714287
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-tacit|p3,0.12309313988095236,-0.011394659915413538,0.26590325657894737,20,headline-tacit,3,0.7791951994047619,0.6561020595238095
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-tacit|p4,0.043239377885503215,-0.12064284614084553,0.20461293987847903,19,headline-tacit,4,0.6208438733346524,0.5862242706766916
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|headline-tacit|p5,-0.2865635996240602,-0.49079546956453635,-0.07517710124530079,20,headline-tacit,5,0.2995424075814537,0.5861060072055138
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-asym|p3,0.18177906130457724,0.0901740295640417,0.2952035848502836,19,m-asym,3,0.9351577549135998,0.7532097589285713
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-comp|p3,0.08925897556390978,0.010786622493734332,0.18168719901315783,19,m-comp,3,0.9093588189223056,0.8165948511904763
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-inc-joint|p3,0.019732142857142854,-0.05736607142857144,0.11098214285714285,20,m-inc-joint,3,0.9006696428571429,0.8809374999999999
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-inc-target|p3,0.04322067073934837,-0.019168599302944855,0.1145697136513158,20,m-inc-target,3,0.9239736112155388,0.8807529404761905
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-mon0|p3,0.12997723840852132,0.031771214638157894,0.25467823382675425,20,m-mon0,3,0.9096262548558898,0.7796490164473684
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|m-pub|p3,0.06761698934837093,-0.010978322333176692,0.18433281897321427,20,m-pub,3,0.9172421054197993,0.8496251160714285
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|n3-cheater|p3,0.1826918322644847,0.0982851996876382,0.2721037840501989,17,n3-cheater,3,0.40371757994250324,0.21679616221804507
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|n3-ethics|p3,0.04727357,-0.08371435638095237,0.2116050190401785,15,n3-ethics,3,0.8474150010714286,0.7782310733035713
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|n3-group|p3,0.11355536858161028,-0.00917628681522164,0.25419448325646143,20,n3-group,3,0.8812244177631579,0.7676690491815477
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|r2f-confidant|p1,0.05043833035714286,0.0031151160714285807,0.09776785714285714,20,r2f-confidant,1,0.9410633303571428,0.890625
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|r2s-confidant|p1,0.13743007142857142,0.06809960342261905,0.21395540446428551,20,r2s-confidant,1,0.9560411547619049,0.8186110833333334
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|r3f-public|p1,0.166320625,0.07131980580357142,0.28605381249999995,20,r3f-public,1,0.9562397321428572,0.7899191071428572
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|r3s-public|p1,0.11357022086466166,0.04495516846804511,0.19913843483709273,20,r3s-public,1,0.9620238095238095,0.8484535886591479
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|r4-announced|p1,0.13292910714285716,0.070561875,0.2002800357142857,20,r4-announced,1,0.9440005357142857,0.8110714285714286
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|start-5tick|p3,0.0071704165100250575,-0.14659908067042604,0.1718276400767543,20,start-5tick,3,0.31665975454260653,0.3094893380325815
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|pooled-headline-all,0.016277698701248716,-0.018971618361281504,0.04909471774831811,19,pooled headline-all,"pooled over 1,3,4,5",0.7831499699907664,0.7612032931417084
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|pooled-tacit,-0.005142053530207112,-0.08230382237666538,0.07411519365333558,19,pooled tacit,"pooled over 1,3,4,5",0.6483036743585937,0.631297347744361
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|pooled-chat,0.010356203281641607,-0.044076602187108405,0.06735371335565477,20,pooled chat,"pooled over 1,3,4,5",0.8301984917763159,0.8198422884946741
+thinking_on_minus_off,neutral,gain_all,neutral|gain_all|pooled-monitored,0.02310240762061406,-0.017311480628328615,0.06249196728246395,20,pooled monitored,"pooled over 1,3,4,5",0.8555726508067043,0.8324702431860903
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|ctl-32b-joint|p3,0.01953125,-0.04296875,0.09140625,20,ctl-32b-joint,3,0.91875,0.89921875
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-conflict|p1,0.24819970982142858,0.1210932410714286,0.395919876674107,20,d-conflict,1,0.965234375,0.7170346651785714
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.8649610795454543,
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.8946877232142858,
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-placebo|p1,0.1073189880952381,0.005385685639880962,0.23539346558779756,20,d-placebo,1,0.9432997693452382,0.83598078125
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-temptation-a|p1,0.15295700892857142,0.056028019531249994,0.26607354854910714,20,d-temptation-a,1,0.9491629464285716,0.7962059375
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|d-temptation-b|p1,0.13964249999999997,0.06275092187499999,0.245375625,20,d-temptation-b,1,0.974609375,0.8349668749999999
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-chat|p1,0.14567321428571428,0.05746123772321427,0.2585655742187499,20,headline-chat,1,0.9484215401785715,0.8027483258928572
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-chat|p3,0.14318473958333333,0.028122332031250002,0.2885394466145833,20,headline-chat,3,0.9180989583333334,0.77491421875
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-chat|p4,-0.01677388392857143,-0.09831707645089284,0.07287106584821419,20,headline-chat,4,0.8279452008928573,0.8447190848214285
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-chat|p5,-0.22161843749999996,-0.3971239765625,-0.05556336718750008,20,headline-chat,5,0.6287174999999999,0.8503359375
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-monitored|p1,0.18251430803571428,0.09785915178571429,0.29113116629464275,20,headline-monitored,1,0.9589663392857144,0.7764520312500001
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-monitored|p3,0.07821122767857143,0.0030849776785714265,0.18778572600446428,20,headline-monitored,3,0.9249284151785714,0.8467171875
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-monitored|p4,0.029744709821428565,-0.05688020591517856,0.12276049888392852,20,headline-monitored,4,0.8302590625,0.8005143526785714
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-monitored|p5,-0.18007534970238095,-0.32269775837053577,-0.05206045442708334,20,headline-monitored,5,0.711267306547619,0.89134265625
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-tacit|p1,0.17614395089285712,0.09724456584821427,0.2504955625,20,headline-tacit,1,0.8605475223214286,0.6844035714285714
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-tacit|p3,0.15587037946428572,0.016858342075892832,0.30523875334821426,20,headline-tacit,3,0.7865530803571428,0.6306827008928572
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-tacit|p4,0.07502880639097745,-0.09863251468515041,0.2507575916353383,19,headline-tacit,4,0.629853242481203,0.5645832142857143
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|headline-tacit|p5,-0.22914984375,-0.43245524609375,-0.016666262834821463,20,headline-tacit,5,0.35392366071428566,0.5830735044642857
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-asym|p3,0.18430756578947366,0.09379840460526316,0.30083458059210527,19,m-asym,3,0.9351363016917292,0.7507872991071428
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-comp|p3,0.10607781954887219,0.026673727091165413,0.20271066964285717,19,m-comp,3,0.9101469219924813,0.8013656473214287
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-inc-joint|p3,0.030078125,-0.058203125,0.14296875,20,m-inc-joint,3,0.901171875,0.87109375
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-inc-target|p3,0.04413915178571427,-0.01998844810267857,0.11295292522321423,20,m-inc-target,3,0.9243243080357143,0.8801851562499999
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-mon0|p3,0.13189622767857143,0.033930401227678576,0.2539497801339286,20,m-mon0,3,0.9107374107142856,0.7788411830357143
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|m-pub|p3,0.06918363839285714,-0.009438519531250009,0.18792414955357148,20,m-pub,3,0.9188916517857143,0.8497080133928572
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|n3-cheater|p3,0.14347398371848738,0.05564286465992646,0.24376006315651255,17,n3-cheater,3,0.35846375262605035,0.21234230357142855
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|n3-ethics|p3,0.04737359980654761,-0.0841047086372768,0.2091643843046874,15,n3-ethics,3,0.8474973523065477,0.7782178143749999
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|n3-group|p3,0.11779812330357142,-0.004913290304687478,0.2556016495915179,20,n3-group,3,0.8812342187500001,0.7634360954464285
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|r2f-confidant|p1,0.053086272321428575,0.007623750000000007,0.10044642857142856,20,r2f-confidant,1,0.9437112723214286,0.890625
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|r2s-confidant|p1,0.13928761904761905,0.06877590755208332,0.21636161774553572,20,r2s-confidant,1,0.9562109002976191,0.8169232812499999
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|r3f-public|p1,0.16819964285714284,0.07324268582589286,0.2860787963169642,20,r3f-public,1,0.95623296875,0.7880333258928571
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|r3s-public|p1,0.11983676339285716,0.044535647321428576,0.21460951004464288,20,r3s-public,1,0.9623883928571428,0.8425516294642856
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|r4-announced|p1,0.13675508928571428,0.07278930580357143,0.2045792857142857,20,r4-announced,1,0.9440095535714287,0.8072544642857142
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|start-5tick|p3,-0.04067504464285715,-0.18679872991071428,0.10690477008928569,20,start-5tick,3,0.24174455357142857,0.2824195982142857
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|pooled-headline-all,0.029708405127401832,-0.009546149227234743,0.06613732583411652,19,pooled headline-all,"pooled over 1,3,4,5",0.7894679367690058,0.7542072321428572
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|pooled-tacit,0.028006120770676685,-0.05819102487664473,0.11748718426926691,19,pooled tacit,"pooled over 1,3,4,5",0.6657731907894737,0.6156857477678571
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|pooled-chat,0.012616408110119054,-0.04212478431919642,0.06877594968377969,20,pooled chat,"pooled over 1,3,4,5",0.8307957998511906,0.8181793917410713
+thinking_on_minus_off,neutral,gain_r1_8,neutral|gain_r1_8|pooled-monitored,0.027598723958333342,-0.013852969680059498,0.06729753994605651,20,pooled monitored,"pooled over 1,3,4,5",0.8563552808779763,0.8287565569196429
+thinking_on_minus_off,neutral,level_all,neutral|level_all|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,neutral,level_all,neutral|level_all|ctl-32b-joint|p3,-0.04375,-0.1375,0.0625,20,ctl-32b-joint,3,0.725,0.76875
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-conflict|p1,0.2906177944862155,0.16734145520050125,0.4233204417293233,20,d-conflict,1,0.8609821428571429,0.5703643483709273
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.6606168831168832,
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.6964561851056212,
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-placebo|p1,0.09019279448621553,-0.03756238721804512,0.2400710087719298,20,d-placebo,1,0.7962118421052633,0.7060190476190477
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-temptation-a|p1,0.20401011904761904,0.07191428571428574,0.34852218749999997,20,d-temptation-a,1,0.8223684523809525,0.6183583333333333
+thinking_on_minus_off,neutral,level_all,neutral|level_all|d-temptation-b|p1,0.23069185463659142,0.14137187499999998,0.32515000469924804,20,d-temptation-b,1,0.8991666666666667,0.6684748120300752
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-chat|p1,0.22473928571428572,0.09016148809523811,0.36091666666666666,20,headline-chat,1,0.8466142857142858,0.621875
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-chat|p3,0.15480974310776943,0.032001212406015035,0.28699744047619047,20,headline-chat,3,0.7651293859649122,0.6103196428571428
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-chat|p4,-0.06612293233082707,-0.1729804025689223,0.04274555764411018,20,headline-chat,4,0.5990484962406015,0.6651714285714285
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-chat|p5,-0.1757858395989975,-0.33736304981203014,-0.019338659147869714,20,headline-chat,5,0.495230701754386,0.6710165413533835
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-monitored|p1,0.26780388471177946,0.15970418233082703,0.38197478070175434,20,headline-monitored,1,0.8585059523809525,0.590702067669173
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-monitored|p3,0.08903355263157894,0.0036759633458646563,0.18335727678571426,20,headline-monitored,3,0.7456839285714285,0.6566503759398497
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-monitored|p4,-0.044567449874686714,-0.17272413298872177,0.07965340147243107,20,headline-monitored,4,0.596396835839599,0.6409642857142857
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-monitored|p5,-0.1700610588972431,-0.2836175023496241,-0.06196170426065166,20,headline-monitored,5,0.5506090538847118,0.7206701127819549
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-tacit|p1,0.2160776002506266,0.1270444736842105,0.3008894815162908,20,headline-tacit,1,0.6895418859649123,0.4734642857142856
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-tacit|p3,0.10863693609022558,-0.008830621083959895,0.23609320253759394,20,headline-tacit,3,0.5773476503759399,0.4687107142857143
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-tacit|p4,0.01481846062524732,-0.1173351891241261,0.13989235094314736,19,headline-tacit,4,0.42505701754385966,0.4147266290726817
+thinking_on_minus_off,neutral,level_all,neutral|level_all|headline-tacit|p5,-0.20893671679197995,-0.3681687022243107,-0.04654075971177947,20,headline-tacit,5,0.2098283834586466,0.4187651002506265
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-asym|p3,0.19646421975992612,0.09352154728927585,0.30399691086268293,19,m-asym,3,0.7640137185067932,0.5641720238095238
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-comp|p3,0.07751441102756897,-0.020642998120300723,0.17104810463659142,19,m-comp,3,0.7189567669172933,0.6343702380952381
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-inc-joint|p3,-0.04535714285714286,-0.1598214285714286,0.07375,20,m-inc-joint,3,0.7008928571428571,0.7462500000000001
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-inc-target|p3,0.0490856516290727,-0.04873205357142855,0.1472942230576441,20,m-inc-target,3,0.7481427944862155,0.6990571428571429
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-mon0|p3,0.1411763784461153,0.03154563753132833,0.26475852913533837,20,m-mon0,3,0.7388631265664161,0.5976867481203008
+thinking_on_minus_off,neutral,level_all,neutral|level_all|m-pub|p3,0.06921867167919801,-0.03643681939223057,0.20016845238095238,20,m-pub,3,0.7437061716791981,0.6744874999999999
+thinking_on_minus_off,neutral,level_all,neutral|level_all|n3-cheater|p3,-0.01657400855078873,-0.07192822865988499,0.04632721141088013,17,n3-cheater,3,0.36640741559781803,0.38733822055137845
+thinking_on_minus_off,neutral,level_all,neutral|level_all|n3-ethics|p3,0.015000000000000017,-0.12059642857142854,0.16321488095238101,15,n3-ethics,3,0.6486190476190477,0.6127142857142858
+thinking_on_minus_off,neutral,level_all,neutral|level_all|n3-group|p3,0.07813981829573935,-0.04603065476190477,0.20943204887218042,20,n3-group,3,0.6749493421052633,0.5968095238095239
+thinking_on_minus_off,neutral,level_all,neutral|level_all|r2f-confidant|p1,0.04345178571428572,-0.04975397321428571,0.12858629464285692,20,r2f-confidant,1,0.7809517857142858,0.7375
+thinking_on_minus_off,neutral,level_all,neutral|level_all|r2s-confidant|p1,0.21792261904761906,0.10991949404761907,0.32461904761904764,20,r2s-confidant,1,0.8493059523809524,0.6313833333333333
+thinking_on_minus_off,neutral,level_all,neutral|level_all|r3f-public|p1,0.24293953634085214,0.11386264880952383,0.37830401785714285,20,r3f-public,1,0.8497321428571428,0.6067926065162907
+thinking_on_minus_off,neutral,level_all,neutral|level_all|r3s-public|p1,0.18961152882205515,0.08839010025062656,0.2968811716791979,20,r3s-public,1,0.8693154761904761,0.6797039473684211
+thinking_on_minus_off,neutral,level_all,neutral|level_all|r4-announced|p1,0.19642857142857145,0.099875,0.29598348214285713,20,r4-announced,1,0.8005357142857144,0.6041071428571428
+thinking_on_minus_off,neutral,level_all,neutral|level_all|start-5tick|p3,-0.0010772243107769254,-0.1323333795426065,0.12801932252506265,20,start-5tick,3,0.21467233709273187,0.21574956140350876
+thinking_on_minus_off,neutral,level_all,neutral|level_all|pooled-headline-all,0.036031100228641776,-0.005309330755617132,0.07462081100503451,19,pooled headline-all,"pooled over 1,3,4,5",0.6172294497207933,0.5794196820175438
+thinking_on_minus_off,neutral,level_all,neutral|level_all|pooled-tacit,0.018073778195488756,-0.04579239793562851,0.07981543332014247,19,pooled tacit,"pooled over 1,3,4,5",0.47815054907004356,0.44391668233082704
+thinking_on_minus_off,neutral,level_all,neutral|level_all|pooled-chat,0.034410064223057646,-0.022383599819862154,0.09052104617011276,20,pooled chat,"pooled over 1,3,4,5",0.6765057174185465,0.6420956531954888
+thinking_on_minus_off,neutral,level_all,neutral|level_all|pooled-monitored,0.03555223214285715,-0.012411256069862146,0.08305354734492482,20,pooled monitored,"pooled over 1,3,4,5",0.6877989426691731,0.6522467105263158
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|ctl-32b-joint|p3,0.0,0.0,0.0,20,ctl-32b-joint,3,0.0,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-conflict|p1,0.0,-0.15,0.15,20,d-conflict,1,0.05,0.05
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,1.4545454545454546,
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,2.642857142857143,
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-placebo|p1,0.15,-0.2,0.5,20,d-placebo,1,0.35,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-temptation-a|p1,0.1,0.0,0.25,20,d-temptation-a,1,0.1,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|d-temptation-b|p1,-0.2,-0.5,0.0,20,d-temptation-b,1,0.0,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-chat|p1,0.1,0.0,0.3,20,headline-chat,1,0.1,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-chat|p3,0.15,-0.3,0.7,20,headline-chat,3,0.3,0.15
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-chat|p4,0.35,-0.15,0.9,20,headline-chat,4,0.55,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-chat|p5,0.55,0.0,1.1,20,headline-chat,5,0.65,0.1
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-monitored|p1,0.1,-0.1,0.35,20,headline-monitored,1,0.15,0.05
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-monitored|p3,0.0,-0.25,0.2,20,headline-monitored,3,0.15,0.15
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-monitored|p4,1.05,0.55,1.65,20,headline-monitored,4,1.05,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-monitored|p5,0.4,-0.1,0.9,20,headline-monitored,5,0.6,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-tacit|p1,1.7,-0.25,3.6,20,headline-tacit,1,3.4,1.7
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-tacit|p3,3.0,1.05,5.05,20,headline-tacit,3,3.75,0.75
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-tacit|p4,2.3157894736842106,0.05263157894736842,4.368421052631579,19,headline-tacit,4,3.4210526315789473,1.05
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|headline-tacit|p5,1.9,1.3,2.55,20,headline-tacit,5,2.25,0.35
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-asym|p3,0.15789473684210525,-0.21052631578947367,0.5263157894736842,19,m-asym,3,0.3684210526315789,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-comp|p3,0.3684210526315789,0.0,0.7368421052631579,19,m-comp,3,0.42105263157894735,0.05
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-inc-joint|p3,0.1,0.0,0.3,20,m-inc-joint,3,0.1,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-inc-target|p3,0.3,0.0,0.65,20,m-inc-target,3,0.4,0.1
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-mon0|p3,0.2,-0.05,0.5,20,m-mon0,3,0.35,0.15
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|m-pub|p3,0.05,-0.3,0.4,20,m-pub,3,0.3,0.25
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|n3-cheater|p3,3.8823529411764706,2.7058823529411766,5.294117647058823,17,n3-cheater,3,4.0,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|n3-ethics|p3,0.8666666666666667,0.3333333333333333,1.4666666666666666,15,n3-ethics,3,0.8666666666666667,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|n3-group|p3,0.1,-0.1,0.35,20,n3-group,3,0.15,0.05
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|r2f-confidant|p1,0.4,0.0,1.0,20,r2f-confidant,1,0.4,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|r2s-confidant|p1,0.2,0.0,0.45,20,r2s-confidant,1,0.2,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|r3f-public|p1,0.0,0.0,0.0,20,r3f-public,1,0.0,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|r3s-public|p1,-0.05,-0.4,0.3,20,r3s-public,1,0.15,0.2
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|r4-announced|p1,0.05,0.0,0.15,20,r4-announced,1,0.05,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|start-5tick|p3,0.0,0.0,0.0,20,start-5tick,3,0.0,0.0
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|pooled-headline-all,0.9035087719298246,0.5745614035087719,1.25,19,pooled headline-all,"pooled over 1,3,4,5",1.3157894736842106,0.39166666666666666
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|pooled-tacit,2.039473684210526,1.013157894736842,3.0526315789473686,19,pooled tacit,"pooled over 1,3,4,5",3.0526315789473686,0.9625
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|pooled-chat,0.2875,0.0375,0.575,20,pooled chat,"pooled over 1,3,4,5",0.4,0.1125
+thinking_on_minus_off,neutral,undercuts,neutral|undercuts|pooled-monitored,0.3875,0.175,0.6375,20,pooled monitored,"pooled over 1,3,4,5",0.4875,0.1
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|ctl-32b-joint|p3,0.00926913392857143,-0.06414285714285714,0.10864064285714284,20,ctl-32b-joint,3,0.7638610714285715,0.7545919375000001
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-conflict|p1,0.14119740523182958,0.053709010279605264,0.24466322791353382,20,d-conflict,1,0.8115124107142856,0.6703150054824561
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.6873734320175439,
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.6042510177005012,
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-placebo|p1,0.1662723811090226,0.047064569349154144,0.2936102644384398,20,d-placebo,1,0.7920533265977444,0.6257809454887219
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-temptation-a|p1,0.09484585682957394,0.026530859962406016,0.18481227408364656,20,d-temptation-a,1,0.8210122857142859,0.7261664288847118
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|d-temptation-b|p1,0.17638857534461153,0.08013299094219926,0.28546208055294486,20,d-temptation-b,1,0.8005172232142856,0.6241286478696743
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-chat|p1,0.09501386199874687,0.0015156664747807093,0.18560979007675438,20,headline-chat,1,0.7612696986215539,0.6662558366228071
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-chat|p3,0.08283270316416039,-0.008464660416666651,0.1915006647713032,20,headline-chat,3,0.7466987886904762,0.6638660855263159
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-chat|p4,0.08657107628446115,-0.011789199087562655,0.1947585893248747,20,headline-chat,4,0.7245426599310777,0.6379715836466165
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-chat|p5,-0.27307439035087716,-0.41310290923793863,-0.1327727523300439,20,headline-chat,5,0.42950826441102763,0.7025826547619048
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-monitored|p1,0.11099115993107767,0.007477478218984967,0.22022792303414782,20,headline-monitored,1,0.7575169484649124,0.6465257885338346
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-monitored|p3,0.13849514348370928,0.03188848955592105,0.2505711900571741,20,headline-monitored,3,0.7525356995614035,0.6140405560776943
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-monitored|p4,0.0010540744047619066,-0.09525107105654759,0.11346503653273808,20,headline-monitored,4,0.6552734791666668,0.6542194047619048
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-monitored|p5,-0.2654357482769424,-0.4321823610275689,-0.08298332882597126,20,headline-monitored,5,0.3471531054197995,0.6125888536967419
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-tacit|p1,0.17849125093984963,0.06275607554824565,0.296450494141604,20,headline-tacit,1,0.6477771854636593,0.4692859345238095
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-tacit|p3,0.2578407098997494,0.1417795102913534,0.37126991347117794,20,headline-tacit,3,0.680608663377193,0.42276795347744356
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-tacit|p4,0.1206005698621554,0.0307891357808584,0.2193791431273496,20,headline-tacit,4,0.5331293538533834,0.41252878399122805
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|headline-tacit|p5,-0.1847863541666667,-0.29518824141995614,-0.07276228440241235,20,headline-tacit,5,0.21260196021303254,0.3973883143796993
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-asym|p3,0.1797181608709273,0.060935501390194255,0.3085779217340225,20,m-asym,3,0.7327993137531328,0.5530811528822055
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-comp|p3,0.206942414160401,0.10454010171130954,0.3123173353187657,20,m-comp,3,0.7526275740914787,0.5456851599310777
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-inc-joint|p3,0.017368293859649116,-0.0691255154605263,0.10475821480263152,20,m-inc-joint,3,0.7453620438596491,0.7279937500000001
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-inc-target|p3,0.06714480623433582,-0.029372713905858393,0.18121747384476816,20,m-inc-target,3,0.756997231046366,0.68985242481203
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-mon0|p3,0.2121471622807017,0.08837807565789475,0.35149396003289474,20,m-mon0,3,0.7723723125,0.5602251502192982
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|m-pub|p3,0.0736852346491228,-0.0275572533717105,0.18702673569078937,20,m-pub,3,0.7729789583333334,0.6992937236842105
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|n3-cheater|p3,0.10689239149436085,0.00925066738839281,0.2151150503512687,20,n3-cheater,3,0.5652979140507517,0.458405522556391
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|n3-ethics|p3,0.1006052315639098,0.011571490551668239,0.20602505755265507,20,n3-ethics,3,0.7214526736889099,0.6208474421250001
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|n3-group|p3,0.06666968261912591,-0.04468770706308742,0.18692131294416686,20,n3-group,3,0.6791583840848214,0.6124887014656955
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|r2f-confidant|p1,0.15140616588345862,0.05394018654840223,0.24880883552631572,20,r2f-confidant,1,0.8079773265977443,0.6565711607142858
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|r2s-confidant|p1,0.14650953571428574,0.0701826693452381,0.22459759637374685,20,r2s-confidant,1,0.798408656641604,0.6518991209273184
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|r3f-public|p1,0.17373759821428575,0.0637204002232143,0.30335616339285715,20,r3f-public,1,0.8115287499999999,0.6377911517857143
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|r3s-public|p1,0.24770111810776937,0.16111638345864662,0.33876600788690475,20,r3s-public,1,0.7983678442982457,0.5506667261904762
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|r4-announced|p1,0.19727404996867168,0.09154486356907895,0.3095728585487155,20,r4-announced,1,0.7968064375,0.5995323875313283
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|start-5tick|p3,0.1913172059837093,0.10140641415648496,0.29476836506500614,20,start-5tick,3,0.25672873182957395,0.06541152584586467
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|pooled-headline-all,0.02904950476451546,-0.003218094061325196,0.06319031211688074,20,pooled headline-all,"pooled over 1,3,4,5",0.6040513172645156,0.5750018125
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|pooled-tacit,0.09303654413377194,0.03586788072916668,0.15131302651942352,20,pooled tacit,"pooled over 1,3,4,5",0.5185292907268171,0.4254927465930451
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|pooled-chat,-0.0021641872258771734,-0.0507528484208568,0.04540733709273184,20,pooled chat,"pooled over 1,3,4,5",0.6655048529135338,0.6676690401394111
+thinking_on_minus_off,anchored,gain_all,anchored|gain_all|pooled-monitored,-0.003723842614348369,-0.06500650174655388,0.06477518337934682,20,pooled monitored,"pooled over 1,3,4,5",0.6281198081531955,0.631843650767544
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|ctl-32b-joint|p3,0.009603727678571431,-0.06414285714285714,0.10577421875000001,20,ctl-32b-joint,3,0.7638610714285715,0.75425734375
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-conflict|p1,0.14356734375,0.05546418749999999,0.24668891015624997,20,d-conflict,1,0.8115001562499999,0.6679328125
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.7159983258928572,
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.6311576785714286,
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-placebo|p1,0.17236004464285712,0.05156375000000002,0.30196961941964273,20,d-placebo,1,0.7920528125,0.6196927678571429
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-temptation-a|p1,0.09675662946428572,0.02730734375,0.18578111607142855,20,d-temptation-a,1,0.8204878794642857,0.7237312499999999
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|d-temptation-b|p1,0.18657249999999997,0.0889195859375,0.29602548046875,20,d-temptation-b,1,0.799938125,0.6133656249999999
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-chat|p1,0.09991171875,0.00878318080357143,0.19012131919642852,20,headline-chat,1,0.7609377901785714,0.6610260714285714
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-chat|p3,0.08720433035714285,-0.006730359374999982,0.19054134709821427,20,headline-chat,3,0.7509369866071429,0.66373265625
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-chat|p4,0.08593350446428571,-0.012823996093749998,0.19739636551339282,20,headline-chat,4,0.7238170535714287,0.6378835491071428
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-chat|p5,-0.27921546875,-0.42274632421875014,-0.14016375390625,20,headline-chat,5,0.42338169642857143,0.7025971651785714
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-monitored|p1,0.10612736607142854,0.0034048571428571517,0.21621499274553574,20,headline-monitored,1,0.752125,0.6459976339285715
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-monitored|p3,0.12913705357142855,0.013060843749999993,0.24520503571428565,20,headline-monitored,3,0.741758125,0.6126210714285715
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-monitored|p4,0.0005514508928571443,-0.09952513169642857,0.11762407645089275,20,headline-monitored,4,0.6531539285714286,0.6526024776785715
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-monitored|p5,-0.24668294642857141,-0.41266940066964286,-0.06983860044642859,20,headline-monitored,5,0.3643665848214286,0.61104953125
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-tacit|p1,0.19334732886904765,0.07827566164434527,0.31274335174851187,20,headline-tacit,1,0.6523033779761904,0.4589560491071428
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-tacit|p3,0.2761426116071429,0.1662893141741071,0.3885384854910714,20,headline-tacit,3,0.6865734374999999,0.4104308258928572
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-tacit|p4,0.15587417410714283,0.04995044810267856,0.2710391093749999,20,headline-tacit,4,0.5441152678571429,0.38824109375000004
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|headline-tacit|p5,-0.13416541666666668,-0.2533181497395833,-0.012575847656250009,20,headline-tacit,5,0.25856540922619053,0.3927308258928571
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-asym|p3,0.18310209821428572,0.0601852181919643,0.31489455078124984,20,m-asym,3,0.7322775,0.5491754017857142
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-comp|p3,0.21868233630952377,0.11343923325892857,0.32387473232886904,20,m-comp,3,0.7527349479166666,0.5340526116071429
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-inc-joint|p3,0.01979562499999999,-0.06899749999999999,0.10764125,20,m-inc-joint,3,0.747789375,0.7279937500000001
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-inc-target|p3,0.051413035714285724,-0.05298293973214285,0.16772071428571422,20,m-inc-target,3,0.7412775,0.6898644642857142
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-mon0|p3,0.21542218750000003,0.08842167968749999,0.35600723828124997,20,m-mon0,3,0.77238375,0.5569615625
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|m-pub|p3,0.07655625,-0.023164417968749976,0.19332268359374988,20,m-pub,3,0.77298046875,0.69642421875
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|n3-cheater|p3,0.09497814843749997,-0.016578083203125007,0.21316700482700882,20,n3-cheater,3,0.5380685055803571,0.44309035714285716
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|n3-ethics|p3,0.10128499901785715,0.013147380565848207,0.20347093953264503,20,n3-ethics,3,0.721920982845982,0.620635983828125
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|n3-group|p3,0.08213988743303569,-0.03695292668470981,0.2119037458409597,20,n3-group,3,0.6771782590848214,0.5950383716517857
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|r2f-confidant|p1,0.15466968749999999,0.05821124218749997,0.25344104687499996,20,r2f-confidant,1,0.8076554687499999,0.6529857812500001
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|r2s-confidant|p1,0.14614401785714287,0.07004961662946431,0.22753084654017852,20,r2s-confidant,1,0.7936761607142857,0.6475321428571428
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|r3f-public|p1,0.17791147321428574,0.0688461830357143,0.3094279726562499,20,r3f-public,1,0.8115287499999999,0.6336172767857143
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|r3s-public|p1,0.24399390624999998,0.1542650078125,0.33567704296874995,20,r3s-public,1,0.7943843749999999,0.5503904687500001
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|r4-announced|p1,0.20477645089285712,0.09513911607142855,0.3174900323660714,20,r4-announced,1,0.7968045312500001,0.5920280803571428
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|start-5tick|p3,0.1524227232142857,0.06951318526785714,0.24814876171874992,20,start-5tick,3,0.21153044642857138,0.059107723214285715
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|pooled-headline-all,0.039513808903769855,0.006164046797495075,0.07491817196800593,20,pooled headline-all,"pooled over 1,3,4,5",0.6093362214781746,0.5698224125744049
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|pooled-tacit,0.12279967447916666,0.0583939439639137,0.18682701436941962,20,pooled tacit,"pooled over 1,3,4,5",0.535389373139881,0.41258969866071427
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|pooled-chat,-0.0015414787946428476,-0.04847354324776785,0.04707027399553571,20,pooled chat,"pooled over 1,3,4,5",0.6647683816964285,0.6663098604910715
+thinking_on_minus_off,anchored,gain_r1_8,anchored|gain_r1_8|pooled-monitored,-0.0027167689732142926,-0.06313417117745537,0.06589982212611599,20,pooled monitored,"pooled over 1,3,4,5",0.6278509095982143,0.6305676785714287
+thinking_on_minus_off,anchored,level_all,anchored|level_all|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,anchored,level_all,anchored|level_all|ctl-32b-joint|p3,0.005969642857142863,-0.05428571428571427,0.07908749999999999,20,ctl-32b-joint,3,0.5243571428571429,0.5183875
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-conflict|p1,0.14091087092731827,0.0538297814849624,0.2431639176065162,20,d-conflict,1,0.5882321428571429,0.4473212719298244
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,0.4564199248120301,
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,0.3891249060150376,
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-placebo|p1,0.14436826441102757,0.0479930505952381,0.24551324404761898,20,d-placebo,1,0.5619398182957392,0.41757155388471173
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-temptation-a|p1,0.10924166666666664,0.039590700187969924,0.1890181939223057,20,d-temptation-a,1,0.6083724310776942,0.49913076441102744
+thinking_on_minus_off,anchored,level_all,anchored|level_all|d-temptation-b|p1,0.14134902882205513,0.06957061168546363,0.2209918953634085,20,d-temptation-b,1,0.5556839285714286,0.4143348997493733
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-chat|p1,0.07822384085213031,0.0033357777255639395,0.15423763549498742,20,headline-chat,1,0.5185011278195487,0.44027728696741847
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-chat|p3,0.05322352756892228,-0.036935110432330866,0.14308529761904754,20,headline-chat,3,0.5120327380952381,0.4588092105263158
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-chat|p4,0.06656419172932329,-0.012496098057644109,0.14856000313283207,20,headline-chat,4,0.4869993421052631,0.42043515037593976
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-chat|p5,-0.1838642230576441,-0.28232064066416035,-0.08806568530701753,20,headline-chat,5,0.2843667293233082,0.46823095238095236
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-monitored|p1,0.0971630012531328,0.012577890037593954,0.18323623903508765,20,headline-monitored,1,0.523566447368421,0.4264034461152882
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-monitored|p3,0.1165285714285714,0.03705080748746867,0.20028706296992474,20,headline-monitored,3,0.5166285087719298,0.40009993734335836
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-monitored|p4,-0.005107738095238093,-0.08352376488095235,0.08063824404761902,20,headline-monitored,4,0.42790654761904756,0.43301428571428574
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-monitored|p5,-0.18474458020050122,-0.2976809492481203,-0.060663955200501246,20,headline-monitored,5,0.2227322994987469,0.40747687969924806
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-tacit|p1,0.13480288220551379,0.042694426691729334,0.2252440930451128,20,headline-tacit,1,0.4223279448621554,0.2875250626566416
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-tacit|p3,0.19168201754385963,0.10619082393483711,0.27244116384711775,20,headline-tacit,3,0.44973906641604006,0.25805704887218045
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-tacit|p4,0.07755488721804513,0.011673192355889718,0.14592545269423554,20,headline-tacit,4,0.3278353696741855,0.2502804824561404
+thinking_on_minus_off,anchored,level_all,anchored|level_all|headline-tacit|p5,-0.10857321428571429,-0.17685982612781959,-0.03933608474310781,20,headline-tacit,5,0.1287636591478697,0.23733687343358403
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-asym|p3,0.1311135025062657,0.04328139645989975,0.22486347587719296,20,m-asym,3,0.49207102130325814,0.36095751879699245
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-comp|p3,0.16225908521303256,0.08082032424812029,0.24126065711152878,20,m-comp,3,0.5094490914786968,0.3471900062656642
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-inc-joint|p3,-0.026196491228070197,-0.13178980263157897,0.07305383771929821,20,m-inc-joint,3,0.5088035087719297,0.5349999999999999
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-inc-target|p3,0.056969016290726815,-0.02572880717418544,0.14580179354636588,20,m-inc-target,3,0.5223487155388471,0.4653796992481203
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-mon0|p3,0.1510317669172932,0.06067296052631578,0.24999530545112778,20,m-mon0,3,0.5267375,0.3757057330827067
+thinking_on_minus_off,anchored,level_all,anchored|level_all|m-pub|p3,0.07626754385964911,-0.015291726973684193,0.18127366776315787,20,m-pub,3,0.5477083333333332,0.47144078947368406
+thinking_on_minus_off,anchored,level_all,anchored|level_all|n3-cheater|p3,0.10730770676691728,0.048838049812030056,0.16618308114035082,20,n3-cheater,3,0.32238890977443607,0.2150812030075188
+thinking_on_minus_off,anchored,level_all,anchored|level_all|n3-ethics|p3,0.07853038847117795,0.010989074248120312,0.1549286544486215,20,n3-ethics,3,0.4839708646616542,0.40544047619047613
+thinking_on_minus_off,anchored,level_all,anchored|level_all|n3-group|p3,0.04865535714285715,-0.03775800281954886,0.14172630952380946,20,n3-group,3,0.4481184523809524,0.3994630952380952
+thinking_on_minus_off,anchored,level_all,anchored|level_all|r2f-confidant|p1,0.16476600877192982,0.06202414708646617,0.2799629534774435,20,r2f-confidant,1,0.5942421992481203,0.42947619047619046
+thinking_on_minus_off,anchored,level_all,anchored|level_all|r2s-confidant|p1,0.17312180451127818,0.0809912703634085,0.2747147728696741,20,r2s-confidant,1,0.6062004385964912,0.433078634085213
+thinking_on_minus_off,anchored,level_all,anchored|level_all|r3f-public|p1,0.1565470238095238,0.06388379464285711,0.2582173363095238,20,r3f-public,1,0.5882499999999999,0.43170297619047615
+thinking_on_minus_off,anchored,level_all,anchored|level_all|r3s-public|p1,0.23773966165413532,0.15707474154135337,0.3246420911654134,20,r3s-public,1,0.585653947368421,0.3479142857142857
+thinking_on_minus_off,anchored,level_all,anchored|level_all|r4-announced|p1,0.18508668546365908,0.08976803336466165,0.27883944627192975,20,r4-announced,1,0.5763458333333332,0.39125914786967414
+thinking_on_minus_off,anchored,level_all,anchored|level_all|start-5tick|p3,0.12129996867167918,0.05949924890350876,0.19538767152255632,20,start-5tick,3,0.15811967418546363,0.03681970551378448
+thinking_on_minus_off,anchored,level_all,anchored|level_all|pooled-headline-all,0.02778776368003343,0.003346928453947377,0.052856648848684226,20,pooled headline-all,"pooled over 1,3,4,5",0.4017833150584795,0.373995551378446
+thinking_on_minus_off,anchored,level_all,anchored|level_all|pooled-tacit,0.07386664317042606,0.030779652843045104,0.11548541431704258,20,pooled tacit,"pooled over 1,3,4,5",0.33216651002506264,0.25829986685463663
+thinking_on_minus_off,anchored,level_all,anchored|level_all|pooled-chat,0.003536834273182943,-0.03574600191885966,0.04382399396929822,20,pooled chat,"pooled over 1,3,4,5",0.4504749843358395,0.4469381500626567
+thinking_on_minus_off,anchored,level_all,anchored|level_all|pooled-monitored,0.005959813596491221,-0.03994335252192983,0.05750657072368416,20,pooled monitored,"pooled over 1,3,4,5",0.42270845081453634,0.4167486372180451
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|ctl-32b-compete|p3,0.0,0.0,0.0,20,ctl-32b-compete,3,0.0,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|ctl-32b-joint|p3,0.1,0.0,0.3,20,ctl-32b-joint,3,0.1,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-conflict|p1,-0.05,-0.15,0.0,20,d-conflict,1,0.0,0.05
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-cot-monitor-a|p1,,,,0,d-cot-monitor-a,1,3.95,
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-cot-monitor-b|p1,,,,0,d-cot-monitor-b,1,6.25,
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-placebo|p1,0.2,0.0,0.45,20,d-placebo,1,0.2,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-temptation-a|p1,0.1,0.0,0.3,20,d-temptation-a,1,0.1,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|d-temptation-b|p1,-0.1,-0.35,0.1,20,d-temptation-b,1,0.05,0.15
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-chat|p1,0.05,0.0,0.15,20,headline-chat,1,0.05,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-chat|p3,0.15,0.0,0.4,20,headline-chat,3,0.15,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-chat|p4,0.2,-0.05,0.5,20,headline-chat,4,0.25,0.05
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-chat|p5,-0.05,-0.45,0.2,20,headline-chat,5,0.2,0.25
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-monitored|p1,0.05,-0.25,0.3,20,headline-monitored,1,0.15,0.1
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-monitored|p3,0.25,-0.05,0.6,20,headline-monitored,3,0.3,0.05
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-monitored|p4,0.4,0.05,0.95,20,headline-monitored,4,0.4,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-monitored|p5,0.7,0.3,1.15,20,headline-monitored,5,0.7,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-tacit|p1,3.7,2.15,5.5,20,headline-tacit,1,4.2,0.5
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-tacit|p3,2.85,1.0,5.25,20,headline-tacit,3,3.45,0.6
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-tacit|p4,4.25,2.15,6.45,20,headline-tacit,4,5.1,0.85
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|headline-tacit|p5,2.5,1.3,3.95,20,headline-tacit,5,2.7,0.2
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-asym|p3,1.3,0.7,2.0,20,m-asym,3,1.3,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-comp|p3,0.35,0.1,0.65,20,m-comp,3,0.55,0.2
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-inc-joint|p3,0.15,0.0,0.4,20,m-inc-joint,3,0.15,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-inc-target|p3,0.1,-0.2,0.4,20,m-inc-target,3,0.2,0.1
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-mon0|p3,-0.05,-0.15,0.0,20,m-mon0,3,0.05,0.1
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|m-pub|p3,-0.05,-0.35,0.2,20,m-pub,3,0.2,0.25
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|n3-cheater|p3,1.1,0.55,1.7,20,n3-cheater,3,1.1,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|n3-ethics|p3,1.65,0.55,2.95,20,n3-ethics,3,1.65,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|n3-group|p3,-0.1,-0.5,0.2,20,n3-group,3,0.1,0.2
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|r2f-confidant|p1,0.1,0.0,0.25,20,r2f-confidant,1,0.1,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|r2s-confidant|p1,0.25,0.0,0.55,20,r2s-confidant,1,0.25,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|r3f-public|p1,0.0,0.0,0.0,20,r3f-public,1,0.0,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|r3s-public|p1,0.1,-0.1,0.35,20,r3s-public,1,0.15,0.05
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|r4-announced|p1,0.1,0.0,0.25,20,r4-announced,1,0.1,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|start-5tick|p3,0.0,0.0,0.0,20,start-5tick,3,0.0,0.0
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|pooled-headline-all,1.2541666666666667,0.7708333333333333,1.7791666666666668,20,pooled headline-all,"pooled over 1,3,4,5",1.4708333333333334,0.2166666666666667
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|pooled-tacit,3.325,2.0625,4.725,20,pooled tacit,"pooled over 1,3,4,5",3.8625,0.5375
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|pooled-chat,0.0875,-0.0375,0.2125,20,pooled chat,"pooled over 1,3,4,5",0.1625,0.075
+thinking_on_minus_off,anchored,undercuts,anchored|undercuts|pooled-monitored,0.35,0.15,0.5875,20,pooled monitored,"pooled over 1,3,4,5",0.3875,0.0375

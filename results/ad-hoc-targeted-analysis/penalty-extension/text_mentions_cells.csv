@@ -1,0 +1,16 @@
+model,arm,fine,n_games,share_chat_mentions_fine,share_rationales_mention_fine,share_rationales_call_risk_small,n_rationales_quote_1_50_up,share_games_any_mention
+Qwen3-32B,ctl-32b-joint,2500,20,0.95,0.993,0.217,244,1.0
+Qwen3-32B,ctl-32b-joint,10000,20,0.972,0.998,0.1,90,1.0
+Qwen3-32B,headline-chat,2500,20,0.937,0.982,0.201,379,1.0
+Qwen3-32B,headline-chat,10000,20,0.902,0.985,0.124,251,1.0
+gpt-oss-20b,ctl-32b-joint,1000,20,0.717,0.965,0.142,436,1.0
+gpt-oss-20b,ctl-32b-joint,2000,19,0.7,0.967,0.108,250,1.0
+gpt-oss-20b,ctl-32b-joint,2500,19,0.791,0.979,0.205,219,1.0
+gpt-oss-20b,ctl-32b-joint,10000,20,0.751,0.979,0.165,139,1.0
+gpt-oss-20b,headline-chat,1000,20,0.739,0.96,0.136,403,1.0
+gpt-oss-20b,headline-chat,2500,20,0.733,0.975,0.138,254,1.0
+gpt-oss-20b,headline-chat,10000,19,0.665,0.973,0.123,292,1.0
+gpt-oss-20b,m-inc-joint,1000,5,0.741,0.95,0.175,40,1.0
+gpt-oss-20b,m-inc-joint,2000,3,0.871,1.0,0.375,8,1.0
+gpt-oss-20b,m-inc-joint,2500,3,0.821,0.969,0.222,9,1.0
+gpt-oss-20b,m-inc-joint,10000,2,0.827,0.889,0.333,3,1.0

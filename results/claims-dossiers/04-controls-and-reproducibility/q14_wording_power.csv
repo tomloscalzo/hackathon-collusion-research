@@ -1,0 +1,6 @@
+metric,within_wording_sd_of_pair_means,detectable_sd_of_wording_means_80pct,detectable_range_max_minus_min_approx,f_for_80,eta2_for_80
+Average absolute spread,0.1678,0.1510,0.4270,0.9000,0.4475
+Price index,0.0839,0.0755,0.2135,0.9000,0.4475
+Profit gain index,0.1009,0.0908,0.2569,0.9000,0.4475
+Competitive share (U16),0.0818,0.0736,0.2081,0.9000,0.4475
+Matching share,0.0853,0.0767,0.2171,0.9000,0.4475

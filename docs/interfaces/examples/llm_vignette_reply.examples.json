@@ -1,0 +1,11 @@
+{
+  "schema": "llm_vignette_reply",
+  "valid": [
+    {"choice": "A", "rationale": "scripted"},
+    {"choice": "NEITHER", "rationale": "I decline"}
+  ],
+  "invalid": [
+    {"why": "lower case is parsed by DecisionParser.choice but is not the strict form", "value": {"choice": "a", "rationale": "r"}},
+    {"why": "rationale is required", "value": {"choice": "B"}}
+  ]
+}

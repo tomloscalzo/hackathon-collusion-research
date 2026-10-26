@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "llm_talk_reply.schema.json",
+  "title": "LLM talk reply (strict form)",
+  "description": "The flat reply of a talk-phase call, sent as response_format.json_schema (name 'talk') only in chat arms. In substance identical to TalkParser.TALK_SCHEMA (check_schemas.py verifies the equality after removing annotation keywords). done = true means 'done' and any message text sent with it is logged, not delivered; an empty message with done = false also counts as done. The 150-word cut is applied by the engine (talk.WordCap), not by the schema. TalkParser is more lenient than this schema: it finds the object inside prose or code fences, defaults a missing done to false, unwraps a reply nested in the message, strips leading speaker tags, and treats a refusal in prose as done.",
+  "type": "object",
+  "properties": {
+    "message": {"type": "string", "description": "The message to the other market makers; ignored (logged) when done is true."},
+    "done": {"type": "boolean", "description": "True when the firm has nothing more to say this round."}
+  },
+  "required": ["message", "done"]
+}

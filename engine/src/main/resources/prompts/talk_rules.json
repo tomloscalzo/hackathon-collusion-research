@@ -1,0 +1,17 @@
+{
+ "template": "talk_rules",
+ "version": 1,
+ "note": "Text for the TALK_RULES slot of game_system_m in chat arms (proposal A3; wording from PROMPT_WORDING_PROPOSAL Part 2 g, primary then second, plus the sentence that done is final for the round, which the talk scheduler enforces). Placeholder TALK_NOTICE is filled from the seat texts (empty string when none). In tacit arms TALK_RULES is empty.",
+ "items": [
+  {
+   "id": "tr01",
+   "tone": "plain",
+   "text": "Before the quotes of each round, the market makers can talk in a chat. Each market maker may send up to 7 messages per round, of up to 150 words each; a longer message is cut at 150 words. Market makers speak in turn. The conversation ends when everyone has said \"done\" or the limit is reached. After saying \"done\", you send no more messages that round. {{TALK_NOTICE}}"
+  },
+  {
+   "id": "tr02",
+   "tone": "plain",
+   "text": "Each round, before quotes are posted, the market makers may talk in a chat. You may send at most 7 messages per round, each of at most 150 words; words beyond 150 are cut. Market makers take turns. The talk ends once everyone has said \"done\" or the limit is reached. After saying \"done\", you send no more messages that round. {{TALK_NOTICE}}"
+  }
+ ]
+}

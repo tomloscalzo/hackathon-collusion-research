@@ -1,0 +1,57 @@
+# Copy-bot control at slice point 1 (one LLM seat llm1 + one scripted COPIER partner): ripe market as slice-m-p1, fine F = 100 (audit certainty rhoCoop 1).
+# theory-theta-star: 0.7029
+# ^ copied from slice-m-p1 (same market); a test checks the body equals slice-m-p1's.
+# Copy-bot control: same market as slice-m-p1, but seat 2 is a scripted COPIER (round 1 quotes 1.50, afterwards the other firm's last quote) with no disclosed rule; seat 1 is the one LLM firm.
+id: copybot-p1-open150
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 100
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: SCENARIO
+agents:
+  - id: llm1
+    category: M
+    kind: LLM
+  - id: partner
+    category: M
+    kind: COPIER
+    config: {open: 1.50}

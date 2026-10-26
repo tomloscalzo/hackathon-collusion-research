@@ -1,0 +1,6 @@
+topic,contrast,metric,pairs_dropped,n_pairs,diff,lo,hi,diff_all,n_all
+market-structure,n3-group - headline-chat (p3),market_price_mean,10,8,-0.0513,-0.17808,0.03636,0.01146,18
+market-structure,n3-group - headline-chat (p3),price_index,10,8,-0.02565,-0.09376,0.01734,0.00574,18
+market-structure,n3-group - headline-chat (p3),profit_gain_index,10,8,-0.01792,-0.06804,0.01553,0.02553,18
+market-structure,n3-group - headline-chat (p3),competitive_share,10,8,-0.01978,-0.31865,0.24877,-0.00122,18
+market-structure,n3-group - headline-chat (p3),matching_share,10,8,-0.07654,-0.3314,0.21795,-0.00656,18

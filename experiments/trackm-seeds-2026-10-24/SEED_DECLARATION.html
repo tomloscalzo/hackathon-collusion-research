@@ -1,0 +1,35 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Track M seed declaration (game lengths chosen before any game with these seeds)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Track M seed declaration (game lengths chosen before any game with these seeds)</h1>
+<p><strong>Status:</strong> written and committed <strong>before</strong> any agent (LLM) game with any of the seeds below has run (only the scripted verification games described below were run). Revised 2026-10-24 20:55 EDT (2026-10-25 00:55 UTC), on top of <code>main</code> at commit <code>a73d781</code>. The commit that carries this revision is the one that adds it (its own hash cannot be written inside it; see the pull request merge for the hash).</p>
+<p><strong>Revision note.</strong> An earlier version of this file (merged 2026-10-24 20:37 EDT, <code>main</code> at <code>4842953</code>) declared four seeds, 91, 42, 226 and 118, one per length. No agent game had run. It is replaced because the regulator's investigation draws are also fixed by the seed, so four seeds would stamp the same few detection times on every collusive game. Those four seeds remain, as the wording-0 seeds below.</p>
+<h2>What was decided</h2>
+<p>The owner chose four game lengths, <strong>7, 15, 19 and 20 rounds</strong>, to give mostly long games (three of the four within five rounds of the stated 20-round mean; the planned lengths average 15.25; continuation 0.95, hidden cap 40 rounds).</p>
+<p>To vary the investigation timing across games while keeping those lengths and the pairing, there are <strong>20 seeds, 5 per length, and each of the 5 prompt wordings gets its own seed of each length</strong> (wording w uses the w-th seed of each length). Every arm uses the same 20 (wording, seed) pairs, so comparisons stay paired.</p>
+<table><tr><th>Wording</th><th>7 rounds</th><th>15 rounds</th><th>19 rounds</th><th>20 rounds</th></tr><tr><td>0</td><td>91</td><td>42</td><td>226</td><td>118</td></tr><tr><td>1</td><td>94</td><td>47</td><td>227</td><td>171</td></tr><tr><td>2</td><td>133</td><td>55</td><td>259</td><td>174</td></tr><tr><td>3</td><td>136</td><td>115</td><td>261</td><td>193</td></tr><tr><td>4</td><td>151</td><td>126</td><td>273</td><td>218</td></tr></table>
+<h2>How the seeds were selected</h2>
+<ul><li>
+Only by their pre-computed horizon length, never by any outcome and without looking at the investigation draws. A game's maximum length is fixed by its seed: round t draws <code>uHor</code> from <code>SeedPolicy(seed).stream(&quot;horizon&quot;)</code>, and the game ends at the first t with <code>uHor &lt; 0.05</code>, or at the 40-round cap.
+</li><li>
+Method: scan seeds 1 to 10,000, exclude seeds 1 to 12 (already used in other runs), and for each length take the five smallest seeds whose planned length is exactly that length, in increasing order; the w-th goes to wording w.
+</li><li>
+Each of the 20 seeds was verified through the engine jar with one scripted-only game per scenario (a scripted always-compete seat, scenarios <code>slice-p1</code> and <code>slice-p3</code>): every one ended by <code>HORIZON</code> at exactly the planned round.
+</li></ul>
+<h2>How they are used</h2>
+<ul><li>
+Agents are told only the true 95% continuation odds ("about 20 rounds on average") and never their game's length.
+</li><li>
+The same 20 (wording, seed) pairs are used in every Track M arm (paired); a cell is 20 games. The introspection (R1 to R4, and the saved-only and 32k variants) and D-set arms use the same 20 pairs too; their control (R0) is the headline game of the chosen cell's communication, with the same seat texts (no duplicate control games), so they pair with the headline.
+</li><li>
+Regulator investigations can still end games earlier, so actual lengths are reported beside planned ones.
+</li><li>
+The hidden 40-round cap is unchanged.
+</li></ul></body></html>

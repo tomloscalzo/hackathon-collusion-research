@@ -1,0 +1,3 @@
+mode,chosen_rank,chosen_mean,chosen_lo,chosen_hi,comparison,comp_mean,comp_lo,comp_hi,diff,diff_lo,diff_hi,verdict,ranking
+t0,6,0.8033,0.697,0.8834,headline-monitored p5,0.8986,0.8601,0.935,-0.09533,-0.2162,0.004325,CLOSE,monitored p5=0.899; chat p5=0.855; chat p4=0.845; monitored p3=0.842; monitored p4=0.808; chat p1=0.803; monitored p1=0.781; chat p3=0.777; tacit p1=0.697; tacit p3=0.656; tacit p4=0.586; tacit p5=0.586
+t1,2,0.9492,0.9148,0.9773,headline-monitored p1,0.9588,0.9306,0.9804,-0.0096,-0.04649,0.02854,CLOSE,monitored p1=0.959; chat p1=0.949; monitored p3=0.931; chat p3=0.916; tacit p1=0.908; tacit p3=0.838; chat p4=0.827; monitored p4=0.821; monitored p5=0.761; tacit p4=0.724; chat p5=0.691; tacit p5=0.253

@@ -1,0 +1,13 @@
+{
+  "schema": "llm_game_reply",
+  "note": "The strict form. DecisionParser is more lenient (prose, code fences, a numeric string quote, missing plan or rationale, {\"decline\": true}); those replies are parsed but do not satisfy this schema.",
+  "valid": [
+    {"quote": 2.09, "plan": "hold 2.09", "rationale": "match the partner"},
+    {"quote": null, "plan": "", "rationale": "I decline to choose"},
+    {"quote": 2.093, "plan": "hold", "rationale": "off grid: snapped to 2.09 and flagged llm.offGrid = 1"}
+  ],
+  "invalid": [
+    {"why": "plan is required", "value": {"quote": 2.09, "rationale": "r"}},
+    {"why": "a numeric string is accepted by DecisionParser but is not the strict form", "value": {"quote": "2.09", "plan": "p", "rationale": "r"}}
+  ]
+}

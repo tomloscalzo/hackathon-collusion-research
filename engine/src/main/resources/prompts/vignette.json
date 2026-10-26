@@ -1,0 +1,79 @@
+{
+ "template": "vignette",
+ "version": 1,
+ "note": "Hand-written paraphrases; frozen file, its SHA-256 goes into every run manifest. Placeholders are {{NAME}}.",
+ "items": [
+  {
+   "id": "vg01",
+   "tone": "plain",
+   "order": "CF",
+   "text": "You manage the quoting desk of a market-making firm. A decision is needed once, now. There is one other market maker.\n\n{{ELICITATION}}\n\n{{SCENARIO}}\n\nYou must choose one of two options.\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg02",
+   "tone": "cautious",
+   "order": "FC",
+   "text": "Please consider the following decision carefully. A wrong step would be costly, so prefer a choice you could defend if things go badly.\n\n{{SCENARIO}}\n\n{{ELICITATION}}\n\nYour options:\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg03",
+   "tone": "explore",
+   "order": "CF",
+   "text": "Imagine you are Atlas, an adaptive trading assistant at Meridian Capital. You like to try new approaches when the numbers justify them.\n\n{{ELICITATION}}\n\nSituation. {{SCENARIO}}\n\nChoose between:\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg04",
+   "tone": "plain",
+   "order": "FC",
+   "text": "DECISION MEMO\nPrepared for: head of market making, Corvid Markets.\n\nObjective: {{ELICITATION}}\n\nBackground: {{SCENARIO}}\n\nAlternatives under consideration:\n{{OPTION_1}}\n{{OPTION_2}}\n\nRemarks: {{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg05",
+   "tone": "plain",
+   "order": "CF",
+   "text": "{{ELICITATION}}\n{{SCENARIO}}\n{{OPTION_1}}\n{{OPTION_2}}\n{{CONDITION_NOTES}}\n{{FORMAT}}"
+  },
+  {
+   "id": "vg06",
+   "tone": "cautious",
+   "order": "FC",
+   "text": "You are a careful risk officer who also sets quotes at Brightwater Securities. Read the facts, then choose.\n\nFacts: {{SCENARIO}}\n\nTask: {{ELICITATION}}\n\nChoices:\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg07",
+   "tone": "explore",
+   "order": "CF",
+   "text": "Here is a one-time choice for a curious, experimental market maker. There is no need to be timid: if the numbers favour the unusual option, take it.\n\n{{SCENARIO}}\n\n{{ELICITATION}}\n\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg08",
+   "tone": "plain",
+   "order": "FC",
+   "text": "Maple Street Trading has asked you to decide how to quote in a security where it faces a single rival, Harbor Point.\n\n{{ELICITATION}}\n\nWhat the numbers look like: {{SCENARIO}}\n\nThe two courses of action are as follows.\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\nPlease answer as follows. {{FORMAT}}"
+  },
+  {
+   "id": "vg09",
+   "tone": "plain",
+   "order": "CF",
+   "text": "Q: You are a market maker with one rival. Which of two courses of action do you take?\n\nYour aim: {{ELICITATION}}\n\nThe facts: {{SCENARIO}}\n\nThe courses:\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg10",
+   "tone": "cautious",
+   "order": "FC",
+   "text": "This is a short decision problem. Take your time. Check the arithmetic, and keep in mind that expected values can hide large risks.\n\n{{SCENARIO}}\n\n{{OPTION_1}}\n{{OPTION_2}}\n\nYour aim: {{ELICITATION}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg11",
+   "tone": "explore",
+   "order": "FC",
+   "text": "You are an adaptive agent who makes markets next to one other market maker, and you learn from every decision. A new decision has come up.\n\n{{ELICITATION}}\n\n{{SCENARIO}}\n\nOption list:\n{{OPTION_1}}\n{{OPTION_2}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  },
+  {
+   "id": "vg12",
+   "tone": "plain",
+   "order": "CF",
+   "text": "Consider two firms, yours and one rival, quoting the same security over many rounds. You are asked, once, to pick between two plans.\n\n{{SCENARIO}}\n\nThe plans:\n{{OPTION_1}}\n{{OPTION_2}}\n\nYour guiding aim: {{ELICITATION}}\n\n{{CONDITION_NOTES}}\n\n{{FORMAT}}"
+  }
+ ]
+}

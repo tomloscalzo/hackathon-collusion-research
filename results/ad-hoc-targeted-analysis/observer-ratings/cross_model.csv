@@ -1,0 +1,25 @@
+predictor,target,stat,est,lo,hi,n_cells
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss avg_abs_spread,Spearman,0.5974,0.1573,0.8508,24
+observer temptation,gpt-oss avg_abs_spread,Spearman,0.7588,0.4503,0.9027,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss avg_abs_spread,Pearson,0.8702,0.6045,0.9512,24
+observer temptation,gpt-oss avg_abs_spread,Pearson,0.8909,0.7642,0.9456,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss price_index,Spearman,0.5974,0.1924,0.8574,24
+observer temptation,gpt-oss price_index,Spearman,0.7588,0.4335,0.9076,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss price_index,Pearson,0.8702,0.6070,0.9507,24
+observer temptation,gpt-oss price_index,Pearson,0.8909,0.7691,0.9470,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss profit_gain_index,Spearman,0.5991,0.1750,0.8518,24
+observer temptation,gpt-oss profit_gain_index,Spearman,0.7335,0.4090,0.8873,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss profit_gain_index,Pearson,0.9155,0.6715,0.9749,24
+observer temptation,gpt-oss profit_gain_index,Pearson,0.8690,0.7342,0.9361,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss competitive_share,Spearman,0.7441,0.4294,0.9309,24
+observer temptation,gpt-oss competitive_share,Spearman,-0.6350,-0.8749,-0.1804,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss competitive_share,Pearson,0.8559,0.4569,0.9557,24
+observer temptation,gpt-oss competitive_share,Pearson,-0.8064,-0.9206,-0.5472,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss matching_share,Spearman,0.7758,0.4892,0.9227,24
+observer temptation,gpt-oss matching_share,Spearman,0.7945,0.4860,0.9438,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss matching_share,Pearson,0.7595,0.4706,0.8955,24
+observer temptation,gpt-oss matching_share,Pearson,0.8755,0.7302,0.9472,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss harm_index,Spearman,0.5730,0.1760,0.8301,24
+observer temptation,gpt-oss harm_index,Spearman,0.7413,0.4150,0.8957,24
+"Qwen3-32B same cell (thinking on, neutral)",gpt-oss harm_index,Pearson,0.8893,0.5983,0.9593,24
+observer temptation,gpt-oss harm_index,Pearson,0.8858,0.7625,0.9436,24

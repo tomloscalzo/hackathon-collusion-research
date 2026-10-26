@@ -1,0 +1,13 @@
+arm,penalty_point,n_games,mean_empty_talk_done_count,games_with_count_gt0
+headline-chat,1,20,0.8,9
+headline-chat,3,20,0.4,6
+headline-chat,5,20,0.4,6
+headline-tacit,1,20,0.0,0
+headline-tacit,5,20,0.0,0
+fx-chat-p1,1,19,0.579,8
+fx-tacit-p1,1,20,0.0,0
+fx-chat-p5,5,20,0.35,4
+nx-chat-p1,1,20,0.55,7
+nx-tacit-p1,1,20,0.0,0
+ctl-32b-joint,3,20,0.55,7
+fx-ctl-joint,3,20,0.85,7

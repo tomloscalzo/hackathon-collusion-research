@@ -1,0 +1,16 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,chat p5 - p1 (games with empty_talk_done_count>0 dropped),market_price_mean,9,1.8595,2.193,-0.3335,-0.8225,0.1596
+gpt-oss-20b,chat p5 - p1 (games with empty_talk_done_count>0 dropped),price_index,9,0.4298,0.5965,-0.1668,-0.4113,0.0798
+gpt-oss-20b,chat p5 - p1 (games with empty_talk_done_count>0 dropped),profit_gain_index,9,0.5564,0.7954,-0.239,-0.5141,0.0342
+gpt-oss-20b,chat p5 - p1 (games with empty_talk_done_count>0 dropped),competitive_share,9,0.4763,0.3523,0.124,-0.0133,0.2675
+gpt-oss-20b,chat p5 - p1 (games with empty_talk_done_count>0 dropped),matching_share,9,0.361,0.4654,-0.1044,-0.2288,0.0117
+gpt-oss-20b,chat p3 - p1 (games with empty_talk_done_count>0 dropped),market_price_mean,9,2.4004,2.2983,0.1021,-0.0954,0.2868
+gpt-oss-20b,chat p3 - p1 (games with empty_talk_done_count>0 dropped),price_index,9,0.7002,0.6492,0.051,-0.0477,0.1434
+gpt-oss-20b,chat p3 - p1 (games with empty_talk_done_count>0 dropped),profit_gain_index,9,0.898,0.848,0.05,-0.036,0.1267
+gpt-oss-20b,chat p3 - p1 (games with empty_talk_done_count>0 dropped),competitive_share,9,0.3513,0.4475,-0.0962,-0.2646,0.0849
+gpt-oss-20b,chat p3 - p1 (games with empty_talk_done_count>0 dropped),matching_share,9,0.5141,0.3781,0.136,-0.0585,0.3207
+gpt-oss-20b,tacit p5 - p1 (games with empty_talk_done_count>0 dropped),market_price_mean,20,1.3897,1.775,-0.3853,-0.6179,-0.1281
+gpt-oss-20b,tacit p5 - p1 (games with empty_talk_done_count>0 dropped),price_index,20,0.1948,0.3875,-0.1926,-0.309,-0.0641
+gpt-oss-20b,tacit p5 - p1 (games with empty_talk_done_count>0 dropped),profit_gain_index,20,0.2756,0.571,-0.2954,-0.439,-0.1361
+gpt-oss-20b,tacit p5 - p1 (games with empty_talk_done_count>0 dropped),competitive_share,20,0.6728,0.6811,-0.0083,-0.1227,0.1071
+gpt-oss-20b,tacit p5 - p1 (games with empty_talk_done_count>0 dropped),matching_share,20,0.1579,0.1635,-0.0055,-0.1109,0.0998

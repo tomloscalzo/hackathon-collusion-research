@@ -1,0 +1,26 @@
+dataset,metric,n_games,eta2_prompt,eta2_cell,ceiling_r_game
+"gpt-oss-20b (medium effort), neutral run",market_price_mean,601,0.6683,0.4735,0.8175
+"gpt-oss-20b (medium effort), neutral run",price_index,601,0.6683,0.4735,0.8175
+"gpt-oss-20b (medium effort), neutral run",profit_gain_index,601,0.665,0.488,0.8155
+"gpt-oss-20b (medium effort), neutral run",competitive_share,601,0.5603,0.3241,0.7486
+"gpt-oss-20b (medium effort), neutral run",matching_share,601,0.5493,0.2647,0.7412
+"Qwen3-32B thinking on, neutral run",market_price_mean,700,0.7653,0.6677,0.8748
+"Qwen3-32B thinking on, neutral run",price_index,700,0.7657,0.6681,0.875
+"Qwen3-32B thinking on, neutral run",profit_gain_index,700,0.8253,0.7489,0.9084
+"Qwen3-32B thinking on, neutral run",competitive_share,699,0.796,0.6658,0.8922
+"Qwen3-32B thinking on, neutral run",matching_share,699,0.7611,0.6056,0.8724
+"Qwen3-32B thinking off, neutral run",market_price_mean,660,0.5131,0.3309,0.7163
+"Qwen3-32B thinking off, neutral run",price_index,660,0.5134,0.3311,0.7165
+"Qwen3-32B thinking off, neutral run",profit_gain_index,660,0.5957,0.4557,0.7718
+"Qwen3-32B thinking off, neutral run",competitive_share,660,0.5888,0.4536,0.7673
+"Qwen3-32B thinking off, neutral run",matching_share,660,0.4967,0.3446,0.7048
+"Qwen3-32B thinking on, anchored run",market_price_mean,700,0.6758,0.5486,0.8221
+"Qwen3-32B thinking on, anchored run",price_index,700,0.6758,0.5486,0.8221
+"Qwen3-32B thinking on, anchored run",profit_gain_index,700,0.7515,0.6389,0.8669
+"Qwen3-32B thinking on, anchored run",competitive_share,700,0.7845,0.6538,0.8857
+"Qwen3-32B thinking on, anchored run",matching_share,700,0.6992,0.5399,0.8362
+"Qwen3-32B thinking off, anchored run",market_price_mean,660,0.5588,0.365,0.7475
+"Qwen3-32B thinking off, anchored run",price_index,660,0.5588,0.365,0.7475
+"Qwen3-32B thinking off, anchored run",profit_gain_index,660,0.5732,0.3816,0.7571
+"Qwen3-32B thinking off, anchored run",competitive_share,660,0.5867,0.4543,0.7659
+"Qwen3-32B thinking off, anchored run",matching_share,660,0.5616,0.38,0.7494

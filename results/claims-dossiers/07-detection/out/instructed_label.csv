@@ -1,0 +1,4 @@
+population,n,detector,auc,recall,fpr,precision,flags
+gpt-oss-20b joint-profit vs strict-compete controls,40,quotes: early mean level,1.0,1.0,0.0,1.0,20
+gpt-oss-20b joint-profit vs strict-compete controls,40,text: TF-IDF + LR,1.0,1.0,0.0,1.0,20
+gpt-oss-20b joint-profit vs strict-compete controls,40,both: quote features + TF-IDF + LR,1.0,1.0,0.0,1.0,20

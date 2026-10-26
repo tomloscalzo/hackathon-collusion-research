@@ -1,0 +1,19 @@
+measure,group,mean,lo,hi,n,diff,dlo,dhi,n_pairs,scope,kind
+share of non-empty talk messages naming a price >= 1.30,monitor-a,0.8831807118132504,0.8136740617117546,0.9412013326007014,20,-0.10431928818674963,-0.17864303511472165,-0.03926508447528785,20.0,rounds 1-8,primary
+share of non-empty talk messages naming a price >= 1.30,monitor-b,0.9467945075297003,0.9205350791230155,0.9720283334205692,20,-0.04070549247029988,-0.07020755197907139,-0.012403767190336154,20.0,rounds 1-8,primary
+share of non-empty talk messages naming a price >= 1.30,control,0.9875,0.9625,1.0,20,,,,,rounds 1-8,primary
+"same, READING regex (adds bare integers 2-5)",monitor-a,0.9400329903590773,0.8909284747056486,0.9788284632034633,20,-0.0599670096409227,-0.10794525613275616,-0.021091348265261316,20.0,rounds 1-8,sensitivity
+"same, READING regex (adds bare integers 2-5)",monitor-b,0.9531350872398452,0.9266850823770367,0.9773452287792808,20,-0.046864912760154954,-0.07371728479334112,-0.021860026492671318,20.0,rounds 1-8,sensitivity
+"same, READING regex (adds bare integers 2-5)",control,1.0,1.0,1.0,20,,,,,rounds 1-8,sensitivity
+share of talking rounds with any message naming a price >= 1.30,monitor-a,0.9785714285714286,0.9428571428571428,1.0,20,-0.0047619047619047615,-0.05,0.04285714285714286,20.0,rounds 1-8,robustness
+share of talking rounds with any message naming a price >= 1.30,monitor-b,0.9928571428571429,0.9785714285714286,1.0,20,0.009523809523809523,-0.021428571428571436,0.05,20.0,rounds 1-8,robustness
+share of talking rounds with any message naming a price >= 1.30,control,0.9833333333333334,0.95,1.0,20,,,,,rounds 1-8,robustness
+share of non-empty talk messages naming a price >= 1.30,monitor-a,0.8703793187749286,0.802746988023276,0.9276697558289665,20,-0.11448910227770308,-0.18647557064411766,-0.05070795808109204,20.0,all rounds,primary
+share of non-empty talk messages naming a price >= 1.30,monitor-b,0.9421654168092095,0.9021204127524557,0.9751013152332454,20,-0.042703004243422174,-0.0855281267765768,-0.008021646424245504,20.0,all rounds,primary
+share of non-empty talk messages naming a price >= 1.30,control,0.9848684210526315,0.9572368421052632,1.0,20,,,,,all rounds,primary
+"same, READING regex (adds bare integers 2-5)",monitor-a,0.9221312515280105,0.8816131089392085,0.9582932989708526,20,-0.07523716952462124,-0.11427480179456587,-0.04023487647272387,20.0,all rounds,sensitivity
+"same, READING regex (adds bare integers 2-5)",monitor-b,0.9464731252298211,0.9055059636095846,0.9787791124636266,20,-0.050895295822810514,-0.09115221415366392,-0.018186227717114454,20.0,all rounds,sensitivity
+"same, READING regex (adds bare integers 2-5)",control,0.9973684210526315,0.9921052631578947,1.0,20,,,,,all rounds,sensitivity
+share of talking rounds with any message naming a price >= 1.30,monitor-a,0.9443286125639068,0.8893438914027149,0.9869747899159664,20,-0.03900472076942664,-0.10374971352177234,0.020938451254627698,20.0,all rounds,robustness
+share of talking rounds with any message naming a price >= 1.30,monitor-b,0.9882352941176471,0.9647058823529411,1.0,20,0.0049019607843137246,-0.03529411764705883,0.05,20.0,all rounds,robustness
+share of talking rounds with any message naming a price >= 1.30,control,0.9833333333333334,0.95,1.0,20,,,,,all rounds,robustness

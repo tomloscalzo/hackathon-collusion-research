@@ -1,0 +1,4342 @@
+{
+ "share__delta__N": {
+  "rows_var": "delta",
+  "cols_var": "N",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "values": [
+   [
+    0.373,
+    0.277,
+    0.141,
+    0.059,
+    0.0
+   ],
+   [
+    0.4,
+    0.4,
+    0.336,
+    0.201,
+    0.058
+   ],
+   [
+    0.388,
+    0.407,
+    0.408,
+    0.324,
+    0.165
+   ],
+   [
+    0.355,
+    0.381,
+    0.388,
+    0.386,
+    0.326
+   ],
+   [
+    0.319,
+    0.345,
+    0.354,
+    0.354,
+    0.345
+   ],
+   [
+    0.255,
+    0.269,
+    0.274,
+    0.274,
+    0.273
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Highest: 0.41 at δ = 0.8, N = 4; lowest: 0.00 at δ = 0.5, N = 10.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.27 when N = 10 but by -0.12 when N = 2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__phi": {
+  "rows_var": "delta",
+  "cols_var": "phi",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "values": [
+   [
+    0.099,
+    0.164,
+    0.247
+   ],
+   [
+    0.213,
+    0.271,
+    0.352
+   ],
+   [
+    0.285,
+    0.34,
+    0.39
+   ],
+   [
+    0.36,
+    0.368,
+    0.373
+   ],
+   [
+    0.349,
+    0.344,
+    0.337
+   ],
+   [
+    0.274,
+    0.269,
+    0.265
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Highest: 0.39 at δ = 0.8, φ = 0.6; lowest: 0.10 at δ = 0.5, φ = 0.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.17 when φ = 0 but by +0.02 when φ = 0.6.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__tick": {
+  "rows_var": "delta",
+  "cols_var": "tick",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.115,
+    0.231,
+    0.163
+   ],
+   [
+    0.279,
+    0.332,
+    0.227
+   ],
+   [
+    0.388,
+    0.375,
+    0.253
+   ],
+   [
+    0.48,
+    0.38,
+    0.241
+   ],
+   [
+    0.507,
+    0.328,
+    0.195
+   ],
+   [
+    0.51,
+    0.188,
+    0.11
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.51 at δ = 0.99, tick = 0; lowest: 0.11 at δ = 0.99, tick = 0.5.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.39 when tick = 0 but by -0.05 when tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__slope": {
+  "rows_var": "delta",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.286,
+    0.232,
+    0.195,
+    0.164,
+    0.145,
+    0.13,
+    0.112,
+    0.097
+   ],
+   [
+    0.482,
+    0.386,
+    0.322,
+    0.268,
+    0.237,
+    0.209,
+    0.177,
+    0.151
+   ],
+   [
+    0.59,
+    0.475,
+    0.397,
+    0.329,
+    0.286,
+    0.25,
+    0.206,
+    0.175
+   ],
+   [
+    0.67,
+    0.533,
+    0.441,
+    0.358,
+    0.304,
+    0.257,
+    0.205,
+    0.169
+   ],
+   [
+    0.676,
+    0.532,
+    0.424,
+    0.322,
+    0.262,
+    0.214,
+    0.172,
+    0.143
+   ],
+   [
+    0.613,
+    0.424,
+    0.29,
+    0.211,
+    0.182,
+    0.161,
+    0.144,
+    0.128
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.68 at δ = 0.95, slope = 0; lowest: 0.10 at δ = 0.5, slope = 0.2.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.33 when slope = 0 but by +0.03 when slope = 0.2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__rhoTip": {
+  "rows_var": "delta",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.222,
+    0.168,
+    0.12
+   ],
+   [
+    0.36,
+    0.295,
+    0.182
+   ],
+   [
+    0.432,
+    0.355,
+    0.229
+   ],
+   [
+    0.479,
+    0.379,
+    0.243
+   ],
+   [
+    0.449,
+    0.353,
+    0.228
+   ],
+   [
+    0.367,
+    0.266,
+    0.174
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.48 at δ = 0.9, ρ_tip = 0; lowest: 0.12 at δ = 0.5, ρ_tip = 0.05.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__pEvidence": {
+  "rows_var": "delta",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.247,
+    0.179,
+    0.14,
+    0.115
+   ],
+   [
+    0.396,
+    0.294,
+    0.233,
+    0.193
+   ],
+   [
+    0.473,
+    0.355,
+    0.287,
+    0.239
+   ],
+   [
+    0.491,
+    0.381,
+    0.319,
+    0.277
+   ],
+   [
+    0.435,
+    0.347,
+    0.305,
+    0.285
+   ],
+   [
+    0.311,
+    0.253,
+    0.227,
+    0.286
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.49 at δ = 0.9, P(evidence) = 0.1; lowest: 0.11 at δ = 0.5, P(evidence) = 1.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.17 when P(evidence) = 1 but by +0.06 when P(evidence) = 0.1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__fineRatio": {
+  "rows_var": "delta",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.406,
+    0.333,
+    0.239,
+    0.166,
+    0.105,
+    0.054,
+    0.033,
+    0.024
+   ],
+   [
+    0.641,
+    0.533,
+    0.392,
+    0.28,
+    0.186,
+    0.1,
+    0.059,
+    0.042
+   ],
+   [
+    0.78,
+    0.641,
+    0.474,
+    0.337,
+    0.227,
+    0.124,
+    0.073,
+    0.051
+   ],
+   [
+    0.848,
+    0.678,
+    0.506,
+    0.366,
+    0.253,
+    0.142,
+    0.085,
+    0.059
+   ],
+   [
+    0.789,
+    0.622,
+    0.47,
+    0.342,
+    0.243,
+    0.137,
+    0.085,
+    0.058
+   ],
+   [
+    0.58,
+    0.479,
+    0.368,
+    0.273,
+    0.202,
+    0.119,
+    0.076,
+    0.056
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.85 at δ = 0.9, fine ratio = 0; lowest: 0.02 at δ = 0.5, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.17 when fine ratio = 0 but by +0.03 when fine ratio = 500.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__delta__sBarRatio": {
+  "rows_var": "delta",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.107,
+    0.186,
+    0.204,
+    0.186,
+    0.168
+   ],
+   [
+    0.209,
+    0.305,
+    0.32,
+    0.294,
+    0.268
+   ],
+   [
+    0.274,
+    0.373,
+    0.38,
+    0.348,
+    0.316
+   ],
+   [
+    0.305,
+    0.397,
+    0.408,
+    0.377,
+    0.348
+   ],
+   [
+    0.291,
+    0.366,
+    0.375,
+    0.354,
+    0.33
+   ],
+   [
+    0.257,
+    0.287,
+    0.283,
+    0.267,
+    0.252
+   ]
+  ],
+  "auto_text": [
+   "The share of cells where collusion is chosen peaks at patience = 0.9 (0.37) and is lower at both ends (0.17 at 0.5, 0.27 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites); the decline at very high patience comes from the π_post = 0 calibration in tick markets (see Analysis).",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.41 at δ = 0.9, s̄/s₀ = 5; lowest: 0.11 at δ = 0.5, s̄/s₀ = 2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__N__phi": {
+  "rows_var": "N",
+  "cols_var": "phi",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "values": [
+   [
+    0.361,
+    0.345,
+    0.339
+   ],
+   [
+    0.329,
+    0.348,
+    0.362
+   ],
+   [
+    0.273,
+    0.329,
+    0.349
+   ],
+   [
+    0.211,
+    0.258,
+    0.329
+   ],
+   [
+    0.143,
+    0.183,
+    0.258
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Highest: 0.36 at N = 3, φ = 0.6; lowest: 0.14 at N = 10, φ = 0.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.22 when φ = 0 but by -0.08 when φ = 0.6."
+  ]
+ },
+ "share__N__tick": {
+  "rows_var": "N",
+  "cols_var": "tick",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.494,
+    0.335,
+    0.216
+   ],
+   [
+    0.446,
+    0.357,
+    0.236
+   ],
+   [
+    0.388,
+    0.339,
+    0.223
+   ],
+   [
+    0.324,
+    0.289,
+    0.186
+   ],
+   [
+    0.247,
+    0.207,
+    0.129
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.49 at N = 2, tick = 0; lowest: 0.13 at N = 10, tick = 0.5.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.25 when tick = 0 but by -0.09 when tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__N__slope": {
+  "rows_var": "N",
+  "cols_var": "slope",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.652,
+    0.504,
+    0.405,
+    0.325,
+    0.279,
+    0.242,
+    0.204,
+    0.176
+   ],
+   [
+    0.637,
+    0.499,
+    0.403,
+    0.325,
+    0.281,
+    0.245,
+    0.205,
+    0.176
+   ],
+   [
+    0.586,
+    0.459,
+    0.371,
+    0.297,
+    0.257,
+    0.222,
+    0.186,
+    0.158
+   ],
+   [
+    0.506,
+    0.393,
+    0.314,
+    0.248,
+    0.211,
+    0.182,
+    0.149,
+    0.126
+   ],
+   [
+    0.384,
+    0.295,
+    0.232,
+    0.179,
+    0.151,
+    0.128,
+    0.102,
+    0.084
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.65 at N = 2, slope = 0; lowest: 0.08 at N = 10, slope = 0.2.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.27 when slope = 0 but by -0.09 when slope = 0.2."
+  ]
+ },
+ "share__N__rhoTip": {
+  "rows_var": "N",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.452,
+    0.35,
+    0.243
+   ],
+   [
+    0.441,
+    0.356,
+    0.242
+   ],
+   [
+    0.406,
+    0.327,
+    0.218
+   ],
+   [
+    0.352,
+    0.278,
+    0.169
+   ],
+   [
+    0.272,
+    0.203,
+    0.108
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.45 at N = 2, ρ_tip = 0; lowest: 0.11 at N = 10, ρ_tip = 0.05."
+  ]
+ },
+ "share__N__pEvidence": {
+  "rows_var": "N",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.465,
+    0.357,
+    0.297,
+    0.274
+   ],
+   [
+    0.466,
+    0.356,
+    0.295,
+    0.269
+   ],
+   [
+    0.425,
+    0.326,
+    0.271,
+    0.246
+   ],
+   [
+    0.353,
+    0.272,
+    0.228,
+    0.212
+   ],
+   [
+    0.251,
+    0.196,
+    0.168,
+    0.162
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.47 at N = 3, P(evidence) = 0.1; lowest: 0.16 at N = 10, P(evidence) = 1.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.21 when P(evidence) = 0.1 but by -0.11 when P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__N__fineRatio": {
+  "rows_var": "N",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.804,
+    0.646,
+    0.484,
+    0.347,
+    0.238,
+    0.132,
+    0.08,
+    0.057
+   ],
+   [
+    0.789,
+    0.649,
+    0.484,
+    0.348,
+    0.238,
+    0.131,
+    0.079,
+    0.055
+   ],
+   [
+    0.722,
+    0.594,
+    0.442,
+    0.317,
+    0.218,
+    0.12,
+    0.072,
+    0.05
+   ],
+   [
+    0.609,
+    0.495,
+    0.368,
+    0.265,
+    0.184,
+    0.103,
+    0.063,
+    0.044
+   ],
+   [
+    0.446,
+    0.355,
+    0.264,
+    0.192,
+    0.136,
+    0.078,
+    0.049,
+    0.035
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.80 at N = 2, fine ratio = 0; lowest: 0.03 at N = 10, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.36 when fine ratio = 0 but by -0.02 when fine ratio = 500."
+  ]
+ },
+ "share__N__sBarRatio": {
+  "rows_var": "N",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.314,
+    0.38,
+    0.372,
+    0.352,
+    0.324
+   ],
+   [
+    0.286,
+    0.385,
+    0.387,
+    0.35,
+    0.324
+   ],
+   [
+    0.252,
+    0.344,
+    0.357,
+    0.328,
+    0.302
+   ],
+   [
+    0.201,
+    0.281,
+    0.304,
+    0.283,
+    0.262
+   ],
+   [
+    0.149,
+    0.205,
+    0.221,
+    0.206,
+    0.19
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the share of cells where collusion is chosen from 0.35 to 0.19. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.39 at N = 3, s̄/s₀ = 5; lowest: 0.15 at N = 10, s̄/s₀ = 2."
+  ]
+ },
+ "share__phi__tick": {
+  "rows_var": "phi",
+  "cols_var": "tick",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.329,
+    0.281,
+    0.181
+   ],
+   [
+    0.377,
+    0.304,
+    0.196
+   ],
+   [
+    0.433,
+    0.332,
+    0.217
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.43 at φ = 0.6, tick = 0; lowest: 0.18 at φ = 0, tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__phi__slope": {
+  "rows_var": "phi",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.5,
+    0.389,
+    0.31,
+    0.245,
+    0.21,
+    0.18,
+    0.148,
+    0.125
+   ],
+   [
+    0.549,
+    0.427,
+    0.343,
+    0.274,
+    0.235,
+    0.203,
+    0.168,
+    0.143
+   ],
+   [
+    0.609,
+    0.474,
+    0.381,
+    0.306,
+    0.264,
+    0.229,
+    0.192,
+    0.164
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.61 at φ = 0.6, slope = 0; lowest: 0.13 at φ = 0, slope = 0.2."
+  ]
+ },
+ "share__phi__rhoTip": {
+  "rows_var": "phi",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.351,
+    0.268,
+    0.171
+   ],
+   [
+    0.382,
+    0.303,
+    0.193
+   ],
+   [
+    0.421,
+    0.336,
+    0.225
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.42 at φ = 0.6, ρ_tip = 0; lowest: 0.17 at φ = 0, ρ_tip = 0.05."
+  ]
+ },
+ "share__phi__pEvidence": {
+  "rows_var": "phi",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.349,
+    0.269,
+    0.226,
+    0.21
+   ],
+   [
+    0.39,
+    0.299,
+    0.25,
+    0.231
+   ],
+   [
+    0.438,
+    0.336,
+    0.279,
+    0.257
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.44 at φ = 0.6, P(evidence) = 0.1; lowest: 0.21 at φ = 0, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__phi__fineRatio": {
+  "rows_var": "phi",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.599,
+    0.489,
+    0.364,
+    0.263,
+    0.183,
+    0.103,
+    0.063,
+    0.044
+   ],
+   [
+    0.671,
+    0.544,
+    0.406,
+    0.291,
+    0.201,
+    0.112,
+    0.068,
+    0.048
+   ],
+   [
+    0.751,
+    0.61,
+    0.455,
+    0.327,
+    0.224,
+    0.124,
+    0.075,
+    0.053
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.75 at φ = 0.6, fine ratio = 0; lowest: 0.04 at φ = 0, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest φ changes the value by +0.15 when fine ratio = 0 but by +0.01 when fine ratio = 500."
+  ]
+ },
+ "share__phi__sBarRatio": {
+  "rows_var": "phi",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.209,
+    0.283,
+    0.296,
+    0.275,
+    0.254
+   ],
+   [
+    0.237,
+    0.314,
+    0.326,
+    0.305,
+    0.281
+   ],
+   [
+    0.274,
+    0.36,
+    0.363,
+    0.333,
+    0.306
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the share of cells where collusion is chosen from 0.26 to 0.33. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.36 at φ = 0.6, s̄/s₀ = 5; lowest: 0.21 at φ = 0, s̄/s₀ = 2."
+  ]
+ },
+ "share__tick__slope": {
+  "rows_var": "tick",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.593,
+    0.499,
+    0.428,
+    0.369,
+    0.335,
+    0.302,
+    0.27,
+    0.241
+   ],
+   [
+    0.602,
+    0.467,
+    0.369,
+    0.283,
+    0.237,
+    0.202,
+    0.159,
+    0.128
+   ],
+   [
+    0.464,
+    0.325,
+    0.238,
+    0.173,
+    0.136,
+    0.107,
+    0.079,
+    0.064
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.60 at tick = 0.25, slope = 0; lowest: 0.06 at tick = 0.5, slope = 0.2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__tick__rhoTip": {
+  "rows_var": "tick",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.471,
+    0.389,
+    0.279
+   ],
+   [
+    0.414,
+    0.314,
+    0.189
+   ],
+   [
+    0.269,
+    0.204,
+    0.121
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.47 at tick = 0, ρ_tip = 0; lowest: 0.12 at tick = 0.5, ρ_tip = 0.05.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__tick__pEvidence": {
+  "rows_var": "tick",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.523,
+    0.403,
+    0.323,
+    0.269
+   ],
+   [
+    0.401,
+    0.307,
+    0.262,
+    0.253
+   ],
+   [
+    0.252,
+    0.194,
+    0.17,
+    0.176
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.52 at tick = 0, P(evidence) = 0.1; lowest: 0.17 at tick = 0.5, P(evidence) = 0.6.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.27 when P(evidence) = 0.1 but by -0.09 when P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__tick__fineRatio": {
+  "rows_var": "tick",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.741,
+    0.678,
+    0.56,
+    0.423,
+    0.3,
+    0.174,
+    0.1,
+    0.063
+   ],
+   [
+    0.744,
+    0.592,
+    0.413,
+    0.287,
+    0.194,
+    0.102,
+    0.066,
+    0.048
+   ],
+   [
+    0.537,
+    0.373,
+    0.252,
+    0.171,
+    0.114,
+    0.062,
+    0.041,
+    0.034
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.74 at tick = 0.25, fine ratio = 0; lowest: 0.03 at tick = 0.5, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.20 when fine ratio = 0 but by -0.03 when fine ratio = 500.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__tick__sBarRatio": {
+  "rows_var": "tick",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.479,
+    0.43,
+    0.372,
+    0.328,
+    0.289
+   ],
+   [
+    0.242,
+    0.341,
+    0.341,
+    0.314,
+    0.291
+   ],
+   [
+    0.0,
+    0.186,
+    0.272,
+    0.27,
+    0.261
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.48 at tick = 0, s̄/s₀ = 2; lowest: 0.00 at tick = 0.5, s̄/s₀ = 2.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.48 when s̄/s₀ = 2 but by -0.03 when s̄/s₀ = 12.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__slope__rhoTip": {
+  "rows_var": "slope",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.787,
+    0.561,
+    0.31
+   ],
+   [
+    0.584,
+    0.439,
+    0.267
+   ],
+   [
+    0.452,
+    0.351,
+    0.231
+   ],
+   [
+    0.344,
+    0.286,
+    0.195
+   ],
+   [
+    0.294,
+    0.246,
+    0.168
+   ],
+   [
+    0.248,
+    0.211,
+    0.152
+   ],
+   [
+    0.201,
+    0.177,
+    0.13
+   ],
+   [
+    0.166,
+    0.149,
+    0.117
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.79 at slope = 0, ρ_tip = 0; lowest: 0.12 at slope = 0.2, ρ_tip = 0.05.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.62 when ρ_tip = 0 but by -0.19 when ρ_tip = 0.05."
+  ]
+ },
+ "share__slope__pEvidence": {
+  "rows_var": "slope",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.636,
+    0.57,
+    0.52,
+    0.485
+   ],
+   [
+    0.555,
+    0.446,
+    0.384,
+    0.336
+   ],
+   [
+    0.461,
+    0.357,
+    0.297,
+    0.264
+   ],
+   [
+    0.384,
+    0.283,
+    0.226,
+    0.207
+   ],
+   [
+    0.34,
+    0.241,
+    0.189,
+    0.174
+   ],
+   [
+    0.299,
+    0.206,
+    0.161,
+    0.149
+   ],
+   [
+    0.25,
+    0.168,
+    0.128,
+    0.13
+   ],
+   [
+    0.211,
+    0.141,
+    0.109,
+    0.115
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.64 at slope = 0, P(evidence) = 0.1; lowest: 0.11 at slope = 0.2, P(evidence) = 0.6.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__slope__fineRatio": {
+  "rows_var": "slope",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.741,
+    0.723,
+    0.697,
+    0.619,
+    0.557,
+    0.435,
+    0.345,
+    0.307
+   ],
+   [
+    0.728,
+    0.709,
+    0.649,
+    0.543,
+    0.411,
+    0.223,
+    0.12,
+    0.057
+   ],
+   [
+    0.707,
+    0.678,
+    0.56,
+    0.384,
+    0.25,
+    0.121,
+    0.045,
+    0.013
+   ],
+   [
+    0.682,
+    0.618,
+    0.412,
+    0.259,
+    0.155,
+    0.053,
+    0.017,
+    0.004
+   ],
+   [
+    0.666,
+    0.536,
+    0.331,
+    0.21,
+    0.1,
+    0.029,
+    0.013,
+    0.004
+   ],
+   [
+    0.647,
+    0.467,
+    0.261,
+    0.157,
+    0.073,
+    0.021,
+    0.004,
+    0.0
+   ],
+   [
+    0.623,
+    0.363,
+    0.2,
+    0.105,
+    0.046,
+    0.013,
+    0.004,
+    0.0
+   ],
+   [
+    0.597,
+    0.287,
+    0.158,
+    0.073,
+    0.03,
+    0.008,
+    0.0,
+    0.0
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.74 at slope = 0, fine ratio = 0; lowest: 0.00 at slope = 0.1, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.31 when fine ratio = 500 but by -0.14 when fine ratio = 0."
+  ]
+ },
+ "share__slope__sBarRatio": {
+  "rows_var": "slope",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.343,
+    0.54,
+    0.608,
+    0.63,
+    0.643
+   ],
+   [
+    0.315,
+    0.452,
+    0.486,
+    0.463,
+    0.435
+   ],
+   [
+    0.279,
+    0.378,
+    0.388,
+    0.357,
+    0.322
+   ],
+   [
+    0.242,
+    0.304,
+    0.315,
+    0.274,
+    0.241
+   ],
+   [
+    0.218,
+    0.274,
+    0.265,
+    0.232,
+    0.192
+   ],
+   [
+    0.195,
+    0.236,
+    0.23,
+    0.194,
+    0.163
+   ],
+   [
+    0.178,
+    0.198,
+    0.185,
+    0.154,
+    0.131
+   ],
+   [
+    0.153,
+    0.17,
+    0.151,
+    0.129,
+    0.117
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the share of cells where collusion is chosen from 0.55 to 0.14. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.64 at slope = 0, s̄/s₀ = 12; lowest: 0.12 at slope = 0.2, s̄/s₀ = 12.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.53 when s̄/s₀ = 12 but by -0.19 when s̄/s₀ = 2."
+  ]
+ },
+ "share__rhoTip__pEvidence": {
+  "rows_var": "rhoTip",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.482,
+    0.394,
+    0.344,
+    0.318
+   ],
+   [
+    0.412,
+    0.311,
+    0.254,
+    0.233
+   ],
+   [
+    0.282,
+    0.199,
+    0.158,
+    0.146
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.48 at ρ_tip = 0, P(evidence) = 0.1; lowest: 0.15 at ρ_tip = 0.05, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__rhoTip__fineRatio": {
+  "rows_var": "rhoTip",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.715,
+    0.627,
+    0.512,
+    0.411,
+    0.315,
+    0.213,
+    0.16,
+    0.125
+   ],
+   [
+    0.689,
+    0.584,
+    0.444,
+    0.318,
+    0.217,
+    0.104,
+    0.045,
+    0.02
+   ],
+   [
+    0.618,
+    0.432,
+    0.269,
+    0.153,
+    0.076,
+    0.021,
+    0.0,
+    0.0
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.71 at ρ_tip = 0, fine ratio = 0; lowest: 0.00 at ρ_tip = 0.05, fine ratio = 250."
+  ]
+ },
+ "share__rhoTip__sBarRatio": {
+  "rows_var": "rhoTip",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.335,
+    0.433,
+    0.424,
+    0.385,
+    0.346
+   ],
+   [
+    0.244,
+    0.328,
+    0.34,
+    0.31,
+    0.291
+   ],
+   [
+    0.142,
+    0.196,
+    0.221,
+    0.217,
+    0.205
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the share of cells where collusion is chosen from 0.38 to 0.20. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.43 at ρ_tip = 0, s̄/s₀ = 3; lowest: 0.14 at ρ_tip = 0.05, s̄/s₀ = 2."
+  ]
+ },
+ "share__pEvidence__fineRatio": {
+  "rows_var": "pEvidence",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.617,
+    0.605,
+    0.574,
+    0.496,
+    0.387,
+    0.237,
+    0.133,
+    0.086
+   ],
+   [
+    0.639,
+    0.577,
+    0.449,
+    0.326,
+    0.207,
+    0.107,
+    0.067,
+    0.039
+   ],
+   [
+    0.673,
+    0.521,
+    0.342,
+    0.211,
+    0.126,
+    0.068,
+    0.039,
+    0.035
+   ],
+   [
+    0.767,
+    0.487,
+    0.269,
+    0.141,
+    0.091,
+    0.039,
+    0.035,
+    0.033
+   ]
+  ],
+  "auto_text": [
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.77 at P(evidence) = 1, fine ratio = 0; lowest: 0.03 at P(evidence) = 1, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest P(evidence) changes the value by +0.15 when fine ratio = 0 but by -0.05 when fine ratio = 500.",
+   "Why the no-fine column rises: in the model a trigger ends the cartel whether or not evidence is found, so P(evidence) only decides what happens afterwards (fine plus normal competition, or π_post forever). With no fine, the only difference is π^N versus π_post. Split by tick, the no-fine share is flat at 0.74 when tick = 0 and rises only in tick markets (0.66 to 0.87 at tick 0.25; 0.45 to 0.69 at tick 0.5), where π_post = 0 < π^N.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__pEvidence__sBarRatio": {
+  "rows_var": "pEvidence",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.302,
+    0.408,
+    0.439,
+    0.419,
+    0.392
+   ],
+   [
+    0.248,
+    0.326,
+    0.335,
+    0.313,
+    0.284
+   ],
+   [
+    0.214,
+    0.278,
+    0.28,
+    0.253,
+    0.234
+   ],
+   [
+    0.197,
+    0.265,
+    0.259,
+    0.231,
+    0.211
+   ]
+  ],
+  "auto_text": [
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the share of cells where collusion is chosen from 0.39 to 0.23. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.44 at P(evidence) = 0.1, s̄/s₀ = 5; lowest: 0.20 at P(evidence) = 1, s̄/s₀ = 2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "share__fineRatio__sBarRatio": {
+  "rows_var": "fineRatio",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.443,
+    0.672,
+    0.737,
+    0.754,
+    0.763
+   ],
+   [
+    0.399,
+    0.585,
+    0.635,
+    0.587,
+    0.532
+   ],
+   [
+    0.347,
+    0.455,
+    0.462,
+    0.413,
+    0.365
+   ],
+   [
+    0.276,
+    0.337,
+    0.331,
+    0.285,
+    0.24
+   ],
+   [
+    0.205,
+    0.239,
+    0.225,
+    0.187,
+    0.157
+   ],
+   [
+    0.127,
+    0.134,
+    0.118,
+    0.1,
+    0.086
+   ],
+   [
+    0.078,
+    0.078,
+    0.069,
+    0.059,
+    0.059
+   ],
+   [
+    0.049,
+    0.052,
+    0.05,
+    0.047,
+    0.044
+   ]
+  ],
+  "auto_text": [
+   "Raising the fine ratio from 0 to 500 lowers the share of cells where collusion is chosen from 0.67 to 0.05. Why: bigger fines raise the expected cost of being convicted.",
+   "The share of cells where collusion is chosen peaks at the reservation spread ratio = 5 (0.33) and is lower at both ends (0.24 at 2, 0.28 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.76 at fine ratio = 0, s̄/s₀ = 12; lowest: 0.04 at fine ratio = 500, s̄/s₀ = 12.",
+   "The two interact: going from the lowest to the highest fine ratio changes the value by -0.72 when s̄/s₀ = 12 but by -0.39 when s̄/s₀ = 2."
+  ]
+ },
+ "theta__delta__N": {
+  "rows_var": "delta",
+  "cols_var": "N",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "values": [
+   [
+    0.288,
+    0.157,
+    0.058,
+    0.011,
+    0.0
+   ],
+   [
+    0.328,
+    0.309,
+    0.223,
+    0.101,
+    0.011
+   ],
+   [
+    0.309,
+    0.319,
+    0.305,
+    0.204,
+    0.078
+   ],
+   [
+    0.27,
+    0.286,
+    0.288,
+    0.277,
+    0.199
+   ],
+   [
+    0.231,
+    0.247,
+    0.251,
+    0.249,
+    0.231
+   ],
+   [
+    0.166,
+    0.174,
+    0.177,
+    0.176,
+    0.173
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Highest: 0.33 at δ = 0.7, N = 2; lowest: 0.00 at δ = 0.5, N = 10.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.17 when N = 10 but by -0.12 when N = 2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__phi": {
+  "rows_var": "delta",
+  "cols_var": "phi",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "values": [
+   [
+    0.046,
+    0.095,
+    0.167
+   ],
+   [
+    0.139,
+    0.187,
+    0.257
+   ],
+   [
+    0.198,
+    0.237,
+    0.294
+   ],
+   [
+    0.246,
+    0.267,
+    0.279
+   ],
+   [
+    0.241,
+    0.243,
+    0.242
+   ],
+   [
+    0.175,
+    0.173,
+    0.171
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Highest: 0.29 at δ = 0.8, φ = 0.6; lowest: 0.05 at δ = 0.5, φ = 0.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.13 when φ = 0 but by +0.00 when φ = 0.6.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__tick": {
+  "rows_var": "delta",
+  "cols_var": "tick",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.082,
+    0.13,
+    0.096
+   ],
+   [
+    0.207,
+    0.221,
+    0.155
+   ],
+   [
+    0.28,
+    0.267,
+    0.182
+   ],
+   [
+    0.337,
+    0.277,
+    0.178
+   ],
+   [
+    0.343,
+    0.236,
+    0.146
+   ],
+   [
+    0.3,
+    0.135,
+    0.084
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.34 at δ = 0.95, tick = 0; lowest: 0.08 at δ = 0.5, tick = 0.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.22 when tick = 0 but by -0.01 when tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__slope": {
+  "rows_var": "delta",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.214,
+    0.151,
+    0.12,
+    0.094,
+    0.079,
+    0.067,
+    0.054,
+    0.044
+   ],
+   [
+    0.428,
+    0.298,
+    0.228,
+    0.173,
+    0.143,
+    0.119,
+    0.093,
+    0.073
+   ],
+   [
+    0.558,
+    0.384,
+    0.29,
+    0.215,
+    0.171,
+    0.141,
+    0.104,
+    0.081
+   ],
+   [
+    0.664,
+    0.433,
+    0.317,
+    0.225,
+    0.172,
+    0.135,
+    0.095,
+    0.071
+   ],
+   [
+    0.676,
+    0.418,
+    0.285,
+    0.184,
+    0.135,
+    0.103,
+    0.074,
+    0.057
+   ],
+   [
+    0.613,
+    0.273,
+    0.156,
+    0.102,
+    0.08,
+    0.066,
+    0.052,
+    0.043
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.68 at δ = 0.95, slope = 0; lowest: 0.04 at δ = 0.99, slope = 0.2.",
+   "The two interact: going from the lowest to the highest δ changes the value by +0.40 when slope = 0 but by -0.00 when slope = 0.2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__rhoTip": {
+  "rows_var": "delta",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.128,
+    0.105,
+    0.075
+   ],
+   [
+    0.243,
+    0.207,
+    0.133
+   ],
+   [
+    0.303,
+    0.257,
+    0.17
+   ],
+   [
+    0.332,
+    0.277,
+    0.182
+   ],
+   [
+    0.302,
+    0.252,
+    0.171
+   ],
+   [
+    0.216,
+    0.176,
+    0.128
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.33 at δ = 0.9, ρ_tip = 0; lowest: 0.08 at δ = 0.5, ρ_tip = 0.05.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__pEvidence": {
+  "rows_var": "delta",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.146,
+    0.108,
+    0.086,
+    0.071
+   ],
+   [
+    0.271,
+    0.204,
+    0.165,
+    0.138
+   ],
+   [
+    0.331,
+    0.254,
+    0.21,
+    0.178
+   ],
+   [
+    0.343,
+    0.272,
+    0.233,
+    0.208
+   ],
+   [
+    0.298,
+    0.243,
+    0.216,
+    0.209
+   ],
+   [
+    0.193,
+    0.162,
+    0.149,
+    0.189
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.34 at δ = 0.9, P(evidence) = 0.1; lowest: 0.07 at δ = 0.5, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__fineRatio": {
+  "rows_var": "delta",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.242,
+    0.197,
+    0.143,
+    0.102,
+    0.065,
+    0.035,
+    0.021,
+    0.017
+   ],
+   [
+    0.446,
+    0.36,
+    0.269,
+    0.196,
+    0.133,
+    0.074,
+    0.045,
+    0.034
+   ],
+   [
+    0.556,
+    0.445,
+    0.335,
+    0.243,
+    0.169,
+    0.096,
+    0.059,
+    0.044
+   ],
+   [
+    0.591,
+    0.469,
+    0.361,
+    0.267,
+    0.191,
+    0.11,
+    0.069,
+    0.052
+   ],
+   [
+    0.524,
+    0.424,
+    0.331,
+    0.246,
+    0.181,
+    0.106,
+    0.069,
+    0.051
+   ],
+   [
+    0.343,
+    0.291,
+    0.234,
+    0.179,
+    0.14,
+    0.089,
+    0.061,
+    0.049
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.59 at δ = 0.9, fine ratio = 0; lowest: 0.02 at δ = 0.5, fine ratio = 500.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__delta__sBarRatio": {
+  "rows_var": "delta",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.5",
+   "0.7",
+   "0.8",
+   "0.9",
+   "0.95",
+   "0.99"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.096,
+    0.139,
+    0.116,
+    0.09,
+    0.072
+   ],
+   [
+    0.189,
+    0.248,
+    0.213,
+    0.175,
+    0.147
+   ],
+   [
+    0.244,
+    0.304,
+    0.263,
+    0.219,
+    0.186
+   ],
+   [
+    0.263,
+    0.317,
+    0.285,
+    0.243,
+    0.212
+   ],
+   [
+    0.243,
+    0.282,
+    0.256,
+    0.226,
+    0.201
+   ],
+   [
+    0.189,
+    0.196,
+    0.175,
+    0.159,
+    0.147
+   ]
+  ],
+  "auto_text": [
+   "The mean collusion intensity θ* peaks at patience = 0.9 (0.26) and is lower at both ends (0.10 at 0.5, 0.17 at 0.99). Why: patience helps up to a point (future cartel profits are worth protecting and the price-war threat bites), but very patient coalitions choose lower margins to avoid the screen, and in tick markets the π_post = 0 calibration makes long horizons costly.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.32 at δ = 0.9, s̄/s₀ = 3; lowest: 0.07 at δ = 0.5, s̄/s₀ = 12.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__N__phi": {
+  "rows_var": "N",
+  "cols_var": "phi",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "values": [
+   [
+    0.264,
+    0.267,
+    0.266
+   ],
+   [
+    0.221,
+    0.248,
+    0.277
+   ],
+   [
+    0.179,
+    0.218,
+    0.253
+   ],
+   [
+    0.126,
+    0.161,
+    0.221
+   ],
+   [
+    0.08,
+    0.107,
+    0.159
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Highest: 0.28 at N = 3, φ = 0.6; lowest: 0.08 at N = 10, φ = 0."
+  ]
+ },
+ "theta__N__tick": {
+  "rows_var": "N",
+  "cols_var": "tick",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.355,
+    0.266,
+    0.176
+   ],
+   [
+    0.315,
+    0.258,
+    0.173
+   ],
+   [
+    0.265,
+    0.231,
+    0.155
+   ],
+   [
+    0.212,
+    0.178,
+    0.118
+   ],
+   [
+    0.145,
+    0.122,
+    0.079
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.35 at N = 2, tick = 0; lowest: 0.08 at N = 10, tick = 0.5.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.21 when tick = 0 but by -0.10 when tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__N__slope": {
+  "rows_var": "N",
+  "cols_var": "slope",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.65,
+    0.411,
+    0.302,
+    0.222,
+    0.179,
+    0.149,
+    0.116,
+    0.094
+   ],
+   [
+    0.613,
+    0.393,
+    0.288,
+    0.208,
+    0.166,
+    0.136,
+    0.103,
+    0.082
+   ],
+   [
+    0.552,
+    0.349,
+    0.251,
+    0.179,
+    0.141,
+    0.113,
+    0.085,
+    0.065
+   ],
+   [
+    0.459,
+    0.281,
+    0.196,
+    0.134,
+    0.102,
+    0.081,
+    0.058,
+    0.044
+   ],
+   [
+    0.352,
+    0.196,
+    0.129,
+    0.084,
+    0.061,
+    0.047,
+    0.032,
+    0.023
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.65 at N = 2, slope = 0; lowest: 0.02 at N = 10, slope = 0.2.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.30 when slope = 0 but by -0.07 when slope = 0.2."
+  ]
+ },
+ "theta__N__rhoTip": {
+  "rows_var": "N",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.326,
+    0.272,
+    0.198
+   ],
+   [
+    0.303,
+    0.259,
+    0.184
+   ],
+   [
+    0.268,
+    0.227,
+    0.156
+   ],
+   [
+    0.216,
+    0.179,
+    0.113
+   ],
+   [
+    0.157,
+    0.124,
+    0.065
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.33 at N = 2, ρ_tip = 0; lowest: 0.06 at N = 10, ρ_tip = 0.05."
+  ]
+ },
+ "theta__N__pEvidence": {
+  "rows_var": "N",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.35,
+    0.271,
+    0.228,
+    0.213
+   ],
+   [
+    0.328,
+    0.255,
+    0.215,
+    0.197
+   ],
+   [
+    0.283,
+    0.222,
+    0.188,
+    0.174
+   ],
+   [
+    0.216,
+    0.172,
+    0.148,
+    0.141
+   ],
+   [
+    0.142,
+    0.116,
+    0.102,
+    0.101
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.35 at N = 2, P(evidence) = 0.1; lowest: 0.10 at N = 10, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__N__fineRatio": {
+  "rows_var": "N",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.623,
+    0.479,
+    0.36,
+    0.26,
+    0.181,
+    0.104,
+    0.065,
+    0.05
+   ],
+   [
+    0.558,
+    0.451,
+    0.342,
+    0.25,
+    0.176,
+    0.1,
+    0.063,
+    0.047
+   ],
+   [
+    0.476,
+    0.391,
+    0.3,
+    0.221,
+    0.157,
+    0.09,
+    0.057,
+    0.043
+   ],
+   [
+    0.36,
+    0.301,
+    0.234,
+    0.175,
+    0.127,
+    0.075,
+    0.048,
+    0.036
+   ],
+   [
+    0.233,
+    0.199,
+    0.158,
+    0.121,
+    0.091,
+    0.056,
+    0.037,
+    0.029
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.62 at N = 2, fine ratio = 0; lowest: 0.03 at N = 10, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest N changes the value by -0.39 when fine ratio = 0 but by -0.02 when fine ratio = 500."
+  ]
+ },
+ "theta__N__sBarRatio": {
+  "rows_var": "N",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "2.0",
+   "3.0",
+   "4.0",
+   "6.0",
+   "10.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.271,
+    0.315,
+    0.277,
+    0.247,
+    0.218
+   ],
+   [
+    0.248,
+    0.307,
+    0.268,
+    0.224,
+    0.196
+   ],
+   [
+    0.216,
+    0.267,
+    0.235,
+    0.197,
+    0.169
+   ],
+   [
+    0.169,
+    0.208,
+    0.186,
+    0.154,
+    0.132
+   ],
+   [
+    0.116,
+    0.141,
+    0.125,
+    0.104,
+    0.09
+   ]
+  ],
+  "auto_text": [
+   "Raising the number of market makers from 2 to 10 lowers the mean collusion intensity θ* from 0.27 to 0.12. Why: each member's share of the cartel profit is 1/N, while a one-round undercut still captures most of the contestable flow, so the temptation to cheat grows with N.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.31 at N = 2, s̄/s₀ = 3; lowest: 0.09 at N = 10, s̄/s₀ = 12."
+  ]
+ },
+ "theta__phi__tick": {
+  "rows_var": "phi",
+  "cols_var": "tick",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "values": [
+   [
+    0.213,
+    0.186,
+    0.123
+   ],
+   [
+    0.257,
+    0.207,
+    0.137
+   ],
+   [
+    0.305,
+    0.24,
+    0.16
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Highest: 0.30 at φ = 0.6, tick = 0; lowest: 0.12 at φ = 0, tick = 0.5.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__phi__slope": {
+  "rows_var": "phi",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.471,
+    0.283,
+    0.199,
+    0.138,
+    0.107,
+    0.085,
+    0.062,
+    0.048
+   ],
+   [
+    0.518,
+    0.323,
+    0.23,
+    0.163,
+    0.128,
+    0.103,
+    0.077,
+    0.06
+   ],
+   [
+    0.587,
+    0.372,
+    0.27,
+    0.195,
+    0.155,
+    0.127,
+    0.097,
+    0.077
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.59 at φ = 0.6, slope = 0; lowest: 0.05 at φ = 0, slope = 0.2."
+  ]
+ },
+ "theta__phi__rhoTip": {
+  "rows_var": "phi",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.222,
+    0.182,
+    0.118
+   ],
+   [
+    0.251,
+    0.21,
+    0.14
+   ],
+   [
+    0.29,
+    0.244,
+    0.171
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.29 at φ = 0.6, ρ_tip = 0; lowest: 0.12 at φ = 0, ρ_tip = 0.05."
+  ]
+ },
+ "theta__phi__pEvidence": {
+  "rows_var": "phi",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.224,
+    0.177,
+    0.152,
+    0.143
+   ],
+   [
+    0.26,
+    0.204,
+    0.174,
+    0.163
+   ],
+   [
+    0.308,
+    0.24,
+    0.203,
+    0.189
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.31 at φ = 0.6, P(evidence) = 0.1; lowest: 0.14 at φ = 0, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__phi__fineRatio": {
+  "rows_var": "phi",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.373,
+    0.31,
+    0.24,
+    0.179,
+    0.129,
+    0.076,
+    0.049,
+    0.037
+   ],
+   [
+    0.444,
+    0.358,
+    0.275,
+    0.202,
+    0.144,
+    0.084,
+    0.054,
+    0.041
+   ],
+   [
+    0.533,
+    0.424,
+    0.322,
+    0.235,
+    0.166,
+    0.095,
+    0.06,
+    0.046
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.53 at φ = 0.6, fine ratio = 0; lowest: 0.04 at φ = 0, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest φ changes the value by +0.16 when fine ratio = 0 but by +0.01 when fine ratio = 500."
+  ]
+ },
+ "theta__phi__sBarRatio": {
+  "rows_var": "phi",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.3",
+   "0.6"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.173,
+    0.213,
+    0.189,
+    0.158,
+    0.137
+   ],
+   [
+    0.202,
+    0.243,
+    0.214,
+    0.183,
+    0.159
+   ],
+   [
+    0.237,
+    0.287,
+    0.252,
+    0.214,
+    0.187
+   ]
+  ],
+  "auto_text": [
+   "Raising the preferenced volume share from 0 to 0.6 raises the mean collusion intensity θ* from 0.17 to 0.24. Why: preferenced flow is shared whatever the price, so an undercut steals less volume and cheating pays less.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.29 at φ = 0.6, s̄/s₀ = 3; lowest: 0.14 at φ = 0, s̄/s₀ = 12."
+  ]
+ },
+ "theta__tick__slope": {
+  "rows_var": "tick",
+  "cols_var": "slope",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "values": [
+   [
+    0.593,
+    0.394,
+    0.296,
+    0.224,
+    0.182,
+    0.155,
+    0.122,
+    0.1
+   ],
+   [
+    0.553,
+    0.346,
+    0.245,
+    0.171,
+    0.133,
+    0.106,
+    0.077,
+    0.056
+   ],
+   [
+    0.43,
+    0.238,
+    0.158,
+    0.102,
+    0.074,
+    0.054,
+    0.037,
+    0.028
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Highest: 0.59 at tick = 0, slope = 0; lowest: 0.03 at tick = 0.5, slope = 0.2.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__tick__rhoTip": {
+  "rows_var": "tick",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.294,
+    0.27,
+    0.211
+   ],
+   [
+    0.28,
+    0.221,
+    0.132
+   ],
+   [
+    0.189,
+    0.146,
+    0.086
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.29 at tick = 0, ρ_tip = 0; lowest: 0.09 at tick = 0.5, ρ_tip = 0.05.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__tick__pEvidence": {
+  "rows_var": "tick",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.35,
+    0.273,
+    0.223,
+    0.187
+   ],
+   [
+    0.268,
+    0.211,
+    0.184,
+    0.18
+   ],
+   [
+    0.173,
+    0.137,
+    0.123,
+    0.128
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.35 at tick = 0, P(evidence) = 0.1; lowest: 0.12 at tick = 0.5, P(evidence) = 0.6.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.18 when P(evidence) = 0.1 but by -0.06 when P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__tick__fineRatio": {
+  "rows_var": "tick",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.496,
+    0.448,
+    0.376,
+    0.29,
+    0.211,
+    0.123,
+    0.073,
+    0.05
+   ],
+   [
+    0.493,
+    0.392,
+    0.284,
+    0.202,
+    0.141,
+    0.08,
+    0.054,
+    0.042
+   ],
+   [
+    0.362,
+    0.253,
+    0.177,
+    0.124,
+    0.087,
+    0.051,
+    0.036,
+    0.031
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.50 at tick = 0, fine ratio = 0; lowest: 0.03 at tick = 0.5, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.13 when fine ratio = 0 but by -0.02 when fine ratio = 500.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__tick__sBarRatio": {
+  "rows_var": "tick",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.25",
+   "0.5"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.37,
+    0.308,
+    0.245,
+    0.2,
+    0.168
+   ],
+   [
+    0.242,
+    0.249,
+    0.218,
+    0.185,
+    0.161
+   ],
+   [
+    0.0,
+    0.186,
+    0.192,
+    0.17,
+    0.153
+   ]
+  ],
+  "auto_text": [
+   "Raising the tick size from 0 to 0.5 lowers the mean collusion intensity θ* from 0.26 to 0.14. Why: a coarser tick gives competitors a profit floor (tick rents), so colluding gains less over competing; in this calibration it also makes an inconclusive investigation costly (π_post = 0).",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.37 at tick = 0, s̄/s₀ = 2; lowest: 0.00 at tick = 0.5, s̄/s₀ = 2.",
+   "The two interact: going from the lowest to the highest tick changes the value by -0.37 when s̄/s₀ = 2 but by -0.02 when s̄/s₀ = 12.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__slope__rhoTip": {
+  "rows_var": "slope",
+  "cols_var": "rhoTip",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "values": [
+   [
+    0.748,
+    0.536,
+    0.293
+   ],
+   [
+    0.406,
+    0.347,
+    0.225
+   ],
+   [
+    0.277,
+    0.246,
+    0.176
+   ],
+   [
+    0.19,
+    0.174,
+    0.132
+   ],
+   [
+    0.147,
+    0.138,
+    0.105
+   ],
+   [
+    0.116,
+    0.11,
+    0.089
+   ],
+   [
+    0.085,
+    0.083,
+    0.069
+   ],
+   [
+    0.064,
+    0.064,
+    0.057
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Highest: 0.75 at slope = 0, ρ_tip = 0; lowest: 0.06 at slope = 0.2, ρ_tip = 0.05.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.68 when ρ_tip = 0 but by -0.24 when ρ_tip = 0.05."
+  ]
+ },
+ "theta__slope__pEvidence": {
+  "rows_var": "slope",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.602,
+    0.542,
+    0.495,
+    0.463
+   ],
+   [
+    0.427,
+    0.338,
+    0.286,
+    0.253
+   ],
+   [
+    0.317,
+    0.239,
+    0.198,
+    0.178
+   ],
+   [
+    0.232,
+    0.167,
+    0.135,
+    0.127
+   ],
+   [
+    0.184,
+    0.131,
+    0.104,
+    0.101
+   ],
+   [
+    0.15,
+    0.105,
+    0.084,
+    0.082
+   ],
+   [
+    0.111,
+    0.076,
+    0.061,
+    0.065
+   ],
+   [
+    0.086,
+    0.058,
+    0.048,
+    0.054
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.60 at slope = 0, P(evidence) = 0.1; lowest: 0.05 at slope = 0.2, P(evidence) = 0.6.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.52 when P(evidence) = 0.1 but by -0.41 when P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__slope__fineRatio": {
+  "rows_var": "slope",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.697,
+    0.682,
+    0.662,
+    0.59,
+    0.533,
+    0.418,
+    0.33,
+    0.293
+   ],
+   [
+    0.601,
+    0.573,
+    0.508,
+    0.4,
+    0.284,
+    0.146,
+    0.068,
+    0.029
+   ],
+   [
+    0.524,
+    0.476,
+    0.368,
+    0.249,
+    0.154,
+    0.064,
+    0.022,
+    0.004
+   ],
+   [
+    0.449,
+    0.37,
+    0.241,
+    0.147,
+    0.082,
+    0.025,
+    0.007,
+    0.001
+   ],
+   [
+    0.4,
+    0.294,
+    0.174,
+    0.105,
+    0.049,
+    0.012,
+    0.004,
+    0.0
+   ],
+   [
+    0.359,
+    0.235,
+    0.129,
+    0.075,
+    0.034,
+    0.008,
+    0.001,
+    0.0
+   ],
+   [
+    0.307,
+    0.165,
+    0.086,
+    0.047,
+    0.02,
+    0.004,
+    0.0,
+    0.0
+   ],
+   [
+    0.263,
+    0.119,
+    0.063,
+    0.03,
+    0.013,
+    0.003,
+    0.0,
+    0.0
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.70 at slope = 0, fine ratio = 0; lowest: 0.00 at slope = 0.1, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.43 when fine ratio = 0 but by -0.29 when fine ratio = 500."
+  ]
+ },
+ "theta__slope__sBarRatio": {
+  "rows_var": "slope",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.025",
+   "0.05",
+   "0.075",
+   "0.1",
+   "0.15",
+   "0.2"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.343,
+    0.526,
+    0.573,
+    0.588,
+    0.597
+   ],
+   [
+    0.294,
+    0.393,
+    0.364,
+    0.312,
+    0.267
+   ],
+   [
+    0.247,
+    0.302,
+    0.254,
+    0.203,
+    0.159
+   ],
+   [
+    0.201,
+    0.223,
+    0.178,
+    0.13,
+    0.095
+   ],
+   [
+    0.172,
+    0.184,
+    0.134,
+    0.094,
+    0.065
+   ],
+   [
+    0.149,
+    0.149,
+    0.108,
+    0.071,
+    0.048
+   ],
+   [
+    0.125,
+    0.113,
+    0.076,
+    0.048,
+    0.032
+   ],
+   [
+    0.1,
+    0.091,
+    0.057,
+    0.035,
+    0.024
+   ]
+  ],
+  "auto_text": [
+   "Raising the screen slope from 0 to 0.2 lowers the mean collusion intensity θ* from 0.53 to 0.06. Why: a steeper screen makes high spreads more likely to trigger an investigation, so cartels must keep margins low or not collude.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.60 at slope = 0, s̄/s₀ = 12; lowest: 0.02 at slope = 0.2, s̄/s₀ = 12.",
+   "The two interact: going from the lowest to the highest slope changes the value by -0.57 when s̄/s₀ = 12 but by -0.24 when s̄/s₀ = 2."
+  ]
+ },
+ "theta__rhoTip__pEvidence": {
+  "rows_var": "rhoTip",
+  "cols_var": "pEvidence",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "values": [
+   [
+    0.309,
+    0.258,
+    0.231,
+    0.219
+   ],
+   [
+    0.282,
+    0.218,
+    0.181,
+    0.168
+   ],
+   [
+    0.2,
+    0.146,
+    0.117,
+    0.109
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Highest: 0.31 at ρ_tip = 0, P(evidence) = 0.1; lowest: 0.11 at ρ_tip = 0.05, P(evidence) = 1.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__rhoTip__fineRatio": {
+  "rows_var": "rhoTip",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.465,
+    0.394,
+    0.324,
+    0.265,
+    0.209,
+    0.15,
+    0.122,
+    0.104
+   ],
+   [
+    0.461,
+    0.389,
+    0.306,
+    0.23,
+    0.167,
+    0.085,
+    0.041,
+    0.019
+   ],
+   [
+    0.425,
+    0.31,
+    0.206,
+    0.121,
+    0.063,
+    0.02,
+    0.0,
+    0.0
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.46 at ρ_tip = 0, fine ratio = 0; lowest: 0.00 at ρ_tip = 0.05, fine ratio = 250."
+  ]
+ },
+ "theta__rhoTip__sBarRatio": {
+  "rows_var": "rhoTip",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "0.01",
+   "0.05"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.273,
+    0.323,
+    0.265,
+    0.22,
+    0.189
+   ],
+   [
+    0.211,
+    0.259,
+    0.23,
+    0.193,
+    0.168
+   ],
+   [
+    0.128,
+    0.161,
+    0.159,
+    0.142,
+    0.125
+   ]
+  ],
+  "auto_text": [
+   "Raising the tip probability from 0 to 0.05 lowers the mean collusion intensity θ* from 0.25 to 0.14. Why: tips end cartels at any margin, so they shorten the expected life of the cartel.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.32 at ρ_tip = 0, s̄/s₀ = 3; lowest: 0.12 at ρ_tip = 0.05, s̄/s₀ = 12."
+  ]
+ },
+ "theta__pEvidence__fineRatio": {
+  "rows_var": "pEvidence",
+  "cols_var": "fineRatio",
+  "row_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "col_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "values": [
+   [
+    0.406,
+    0.396,
+    0.373,
+    0.33,
+    0.269,
+    0.171,
+    0.097,
+    0.068
+   ],
+   [
+    0.423,
+    0.376,
+    0.304,
+    0.233,
+    0.152,
+    0.081,
+    0.055,
+    0.033
+   ],
+   [
+    0.45,
+    0.35,
+    0.244,
+    0.155,
+    0.092,
+    0.055,
+    0.033,
+    0.032
+   ],
+   [
+    0.521,
+    0.335,
+    0.194,
+    0.103,
+    0.072,
+    0.034,
+    0.032,
+    0.031
+   ]
+  ],
+  "auto_text": [
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "Highest: 0.52 at P(evidence) = 1, fine ratio = 0; lowest: 0.03 at P(evidence) = 1, fine ratio = 500.",
+   "The two interact: going from the lowest to the highest P(evidence) changes the value by +0.11 when fine ratio = 0 but by -0.04 when fine ratio = 500.",
+   "Why the no-fine column rises: in the model a trigger ends the cartel whether or not evidence is found, so P(evidence) only decides what happens afterwards (fine plus normal competition, or π_post forever). With no fine, the only difference is π^N versus π_post. Split by tick, the no-fine share is flat at 0.74 when tick = 0 and rises only in tick markets (0.66 to 0.87 at tick 0.25; 0.45 to 0.69 at tick 0.5), where π_post = 0 < π^N.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__pEvidence__sBarRatio": {
+  "rows_var": "pEvidence",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.1",
+   "0.3",
+   "0.6",
+   "1.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.259,
+    0.315,
+    0.286,
+    0.246,
+    0.213
+   ],
+   [
+    0.21,
+    0.25,
+    0.221,
+    0.189,
+    0.165
+   ],
+   [
+    0.18,
+    0.216,
+    0.188,
+    0.159,
+    0.14
+   ],
+   [
+    0.168,
+    0.21,
+    0.177,
+    0.146,
+    0.126
+   ]
+  ],
+  "auto_text": [
+   "Raising the probability an investigation finds evidence from 0.1 to 1 lowers the mean collusion intensity θ* from 0.26 to 0.17. Why: a higher chance that an investigation ends in a conviction makes the fine more likely to be paid.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.31 at P(evidence) = 0.1, s̄/s₀ = 3; lowest: 0.13 at P(evidence) = 1, s̄/s₀ = 12.",
+   "Caveat: patterns involving tick, patience or P(evidence) are partly shaped by the π_post = 0 calibration in tick markets (a recorded limitation)."
+  ]
+ },
+ "theta__fineRatio__sBarRatio": {
+  "rows_var": "fineRatio",
+  "cols_var": "sBarRatio",
+  "row_levels": [
+   "0.0",
+   "5.0",
+   "12.5",
+   "25.0",
+   "50.0",
+   "125.0",
+   "250.0",
+   "500.0"
+  ],
+  "col_levels": [
+   "2.0",
+   "3.0",
+   "5.0",
+   "8.0",
+   "12.0"
+  ],
+  "values": [
+   [
+    0.403,
+    0.553,
+    0.491,
+    0.428,
+    0.376
+   ],
+   [
+    0.353,
+    0.451,
+    0.403,
+    0.333,
+    0.28
+   ],
+   [
+    0.295,
+    0.343,
+    0.298,
+    0.248,
+    0.209
+   ],
+   [
+    0.226,
+    0.252,
+    0.218,
+    0.179,
+    0.151
+   ],
+   [
+    0.164,
+    0.179,
+    0.153,
+    0.126,
+    0.11
+   ],
+   [
+    0.097,
+    0.098,
+    0.084,
+    0.076,
+    0.07
+   ],
+   [
+    0.057,
+    0.059,
+    0.055,
+    0.051,
+    0.049
+   ],
+   [
+    0.037,
+    0.045,
+    0.043,
+    0.041,
+    0.041
+   ]
+  ],
+  "auto_text": [
+   "Raising the fine ratio from 0 to 500 lowers the mean collusion intensity θ* from 0.45 to 0.04. Why: bigger fines raise the expected cost of being convicted.",
+   "The mean collusion intensity θ* peaks at the reservation spread ratio = 3 (0.25) and is lower at both ends (0.20 at 2, 0.16 at 12). Why: more room between cost and the customers' walk-away spread means bigger cartel profits, but the screen reacts to the absolute markup, so the wide spreads a cartel would charge in roomy markets are also more likely to be flagged.",
+   "Highest: 0.55 at fine ratio = 0, s̄/s₀ = 3; lowest: 0.04 at fine ratio = 500, s̄/s₀ = 2."
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+model,contrast,share,n_pairs,diff,lo,hi,p_exact,p_holm,family_size
+gpt-oss-20b,nx-chat-p1 - headline-chat p1,exact,20,-0.3595,-0.4950,-0.2278,0.0000,0.0001,12
+gpt-oss-20b,nx-chat-p1 - headline-chat p1,under1to3,20,-0.2840,-0.4061,-0.1712,0.0000,0.0000,12
+gpt-oss-20b,nx-chat-p1 - headline-chat p1,within1,20,-0.2975,-0.4680,-0.1260,0.0040,0.0159,12
+gpt-oss-20b,fx-chat-p1 - headline-chat p1,exact,19,-0.2560,-0.3822,-0.1311,0.0010,0.0050,12
+gpt-oss-20b,fx-chat-p1 - headline-chat p1,under1to3,19,-0.2511,-0.3776,-0.1376,0.0003,0.0024,12
+gpt-oss-20b,fx-chat-p1 - headline-chat p1,within1,19,-0.3315,-0.4825,-0.1906,0.0003,0.0024,12
+gpt-oss-20b,nx-tacit-p1 - headline-tacit p1,exact,20,-0.3132,-0.3996,-0.2341,0.0000,0.0000,12
+gpt-oss-20b,nx-tacit-p1 - headline-tacit p1,under1to3,20,-0.2789,-0.3579,-0.2058,0.0000,0.0000,12
+gpt-oss-20b,nx-tacit-p1 - headline-tacit p1,within1,20,-0.0478,-0.2142,0.1121,0.5898,0.5898,12
+gpt-oss-20b,fx-tacit-p1 - headline-tacit p1,exact,20,-0.2347,-0.3345,-0.1335,0.0003,0.0024,12
+gpt-oss-20b,fx-tacit-p1 - headline-tacit p1,under1to3,20,-0.1637,-0.2771,-0.0388,0.0174,0.0521,12
+gpt-oss-20b,fx-tacit-p1 - headline-tacit p1,within1,20,-0.1403,-0.3072,0.0082,0.1032,0.2065,12

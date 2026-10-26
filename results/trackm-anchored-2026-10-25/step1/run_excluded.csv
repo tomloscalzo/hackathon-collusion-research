@@ -1,0 +1,2 @@
+run,source_root,trial_id,reason,status
+anchored,2026-10-25_trackm_dset_x32k,d-cot-monitor-b__p1__w0__s118__t1__x32k,rerun_not_done,incomplete

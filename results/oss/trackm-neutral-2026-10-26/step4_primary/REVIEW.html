@@ -1,0 +1,75 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Step 4 (gpt-oss-20b as primary model): reviewer pass</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}small table{font-size:.8em;margin:.3rem 0 1rem}small{font-size:.85em;color:var(--muted)}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1 id="step-4-gpt-oss-20b-as-primary-model-reviewer-pass">Step 4 (gpt-oss-20b as primary model): reviewer pass</h1>
+<p><em>A fresh adversarial reviewer who had not seen the drafting checked this page against the sources, following the "Reviewer pass" in <code>prompt-library/analysis/step4-strongest-evidence.md</code>. Created by Claude at the prompting of the repository owner.</em></p>
+<p><strong>Sources checked:</strong> <code>results/claims-dossiers/MASTER_CLAIMS.md</code>; dossiers 01 to 11 (<code>ANALYSIS.md</code> and their CSVs); <code>results/oss/trackm-neutral-2026-10-26/step3/SUMMARY.md</code>; <code>results/oss/ad-hoc/detection-transfer/</code>; and <code>alignment/AREAS_TO_SPRINT_OBJECTIVES.md</code> for the question text.</p>
+<h2 id="a-numbers-re-checked">(a) Numbers re-checked</h2>
+<p><strong>The three-number box.</strong> Every number was checked, and all match the source. The only problems were in the wording and the status lines (findings R5 and R6).</p>
+<table><tr><th>Track</th><th>What was checked</th><th>Source</th></tr><tr><td>1</td><td>-0.30 [-0.43, -0.16], 19 pairs, and its five metrics; the supporting -0.22, -0.37 [-0.44, -0.28], -0.38 and -0.56</td><td>dossier 01, Table 1a</td></tr><tr><td>2</td><td>AUC 0.81 [0.67, 0.93] (57 games) and 0.91 [0.87, 0.94] (524 games); text minus quotes -0.01 [-0.02, +0.01]; 19 of 20</td><td>dossier 07</td></tr><tr><td>3</td><td>+0.21 [0.11, 0.29], 20 pairs; all five pooled metrics with intervals; 0.39; 0.13 [0.06, 0.22]; Holm 0.020 / 0.016 (pooled 0.009)</td><td>dossier 02, <code>tables/contrasts_within_model.csv</code>; dossier 04</td></tr></table>
+<p><strong>About a third of the body numbers.</strong> These match:</p>
+<ul><li>
+the penalty rows (dossier 03, Table 1);
+</li><li>
+the control ladder levels and contrasts, the replicate drift +0.104 and the 0.22 gap (dossier 04 CSVs);
+</li><li>
+n3-ethics, the cheater's mechanical part and residual, the seat-level falls, the truncation counts 8/17 and 5/18, and the waves (dossier 08);
+</li><li>
+the moral primes and their Holm values (dossier 05);
+</li><li>
+the 5-tick start, Holm 0.0201 (MASTER gives 0.018; the dossier value stands);
+</li><li>
+the watchdog, reasoning-monitor threat and mechanism rows (dossier 09 oversight CSVs);
+</li><li>
+the focal-point shares (dossier 01);
+</li><li>
+the detector flag counts, hard cases, early-to-late correlation and the label's five metrics (dossier 07);
+</li><li>
+the tick-churn shares (dossier 11);
+</li><li>
+the design-adjusted ratings (dossier 10);
+</li><li>
+the noise floor 0.12 to 0.20 (Step 3);
+</li><li>
+the gpt-oss refit, +0.003 [-0.005, +0.012] (ad-hoc detection-transfer).
+</li></ul>
+<p><strong>Mismatches found:</strong> the text-model recall interval and false-positive rate (R10); the report-threat interval, which differed between sections (R11); and "1 of 99 games", which should be pairs (R12).</p>
+<p><strong>Other checks:</strong> every question is quoted verbatim, and the page contains no local paths, person names or emails.</p>
+<h2 id="b-read-as-a-judge">(b) Read as a judge</h2>
+<ul><li>
+<strong>Impact Potential &amp; Innovation:</strong> strong and well aimed. The prompt-artefact (focal-point) result, "audit actions, not words" and suppression-not-hiding are the results the target audience cares about.
+</li><li>
+<strong>Execution Quality:</strong> good. Pairing, frozen detectors, controls, MDEs and Holm are stated consistently. The weak points were keyword-led headlines (2.2, 3.4) and over-strong wording ("alone" in 3.1, "do not respond" in 1.2, "only one moved prices" in 3.2).
+</li><li>
+<strong>Presentation &amp; Clarity:</strong> this was the main weakness.
+<ul><li>
+Headlines run 40 to 60 words.
+</li><li>
+"What we observed" runs well past the spec's 2 to 3 sentences.
+</li><li>
+The formula and no-numbers result was restated in full in 1.1, 1.5, 2.1 and 3.1.
+</li></ul>
+</li></ul>
+<h2 id="c-caveats-and-rules">(c) Caveats and rules</h2>
+<ul><li>
+The replicate band, cross-wave, later-build and one-reasoning-mode caveats are stated at the top and in most sections.
+</li><li>
+Missing keyword caveats in 1.3, 1.4 and 2.2 were added.
+</li><li>
+Two headlines (2.2, 3.4) rested on keyword features and were rewritten.
+</li><li>
+Qwen appeared outside a "Second model:" line once (3.2); this was fixed.
+</li><li>
+One Second-model line had the wrong direction (1.5); this was fixed.
+</li><li>
+Every table has a legend; two lacked numbered captions (fixed).
+</li></ul>
+<h2 id="disposition">Disposition</h2>
+<table><tr><th>Fix</th><th>Section</th><th>Finding</th><th>Applied</th><th>Note</th></tr><tr><td>R1</td><td>3.2</td><td>A comparison with the second model sat outside the Second-model line</td><td>yes</td><td>Reworded with no model reference</td></tr><tr><td>R2</td><td>1.5</td><td>Second-model line said Qwen's moral-prime effect was larger, but it is smaller</td><td>yes</td><td>Marked larger / smaller per lever</td></tr><tr><td>R3</td><td>2.2</td><td>"Talk is uninformative" rested on a keyword say-do rate; a refit shows text alone reaches AUC 0.87</td><td>yes</td><td>Headline and the Execution sentence revised; the refit comes from the ad-hoc detection-transfer analysis</td></tr><tr><td>R4</td><td>3.4</td><td>Headline led by an unvalidated keyword agreement flag</td><td>yes</td><td>Headline now uses price, high-price rounds and silent rounds; the body adds "any agreement" -0.32 and messages per round +1.5</td></tr><tr><td>R5</td><td>Box, Track 3</td><td>Called the 0.39 no-chat level "competitive"; per-point Holm given for a pooled number</td><td>yes</td><td>"Well above the floor"; pooled Holm 0.009 added</td></tr><tr><td>R6</td><td>Box, Track 2</td><td>Missing MASTER's "relabelled as a trajectory forecast"</td><td>yes</td><td></td></tr><tr><td>R7</td><td>2.1</td><td>Pooled intervals said to be unavailable, but they exist</td><td>yes</td><td>Intervals added for all five metrics; legend corrected</td></tr><tr><td>R8</td><td>1.5</td><td>"Six restrictions" but seven table rows</td><td>yes</td><td>Clarified in the text and the caption</td></tr><tr><td>R9</td><td>1.5</td><td>Called the end of the interval inside the band the "lower" end</td><td>yes</td><td>Now "CI end nearest 0 (-0.005)"</td></tr><tr><td>R10</td><td>1.3</td><td>Text recall interval [0.20, 0.37] and false-positive rate 0.08</td><td>yes</td><td>Now [0.21, 0.37] and 0.09, as in dossier 07</td></tr><tr><td>R11</td><td>3.2, 3.4</td><td>Report-threat interval differed between sections; the metric was not named</td><td>yes</td><td>MASTER's -0.07 [-0.19, +0.02] on profit gain used in both; price index added in 3.4</td></tr><tr><td>R12</td><td>2.3</td><td>"1 of 99 games"</td><td>yes</td><td>Now "pairs"</td></tr><tr><td>R13</td><td>1.2</td><td>"LLM firms do not respond" (their own quotes fall by 0.17); seat unit missing</td><td>yes</td><td>"Reaction leaves the market price unchanged"; round-1 presence noted; seat falls labelled as mean quote</td></tr><tr><td>R14</td><td>3.2</td><td>"Only one moved prices" contradicted the cheater result</td><td>yes</td><td>Now "only one changed how the firms priced"</td></tr><tr><td>R15</td><td>3.1</td><td>"Printed prices alone" over-claimed (controls at another point; the no-numbers arm also removes market information; the formula arm is still at 0.17)</td><td>yes</td><td>Headline and body softened</td></tr><tr><td>R16</td><td>Header</td><td>Primer link would break at the final location</td><td>yes</td><td>Path set for <code>results/oss/trackm-neutral-2026-10-26/step4_primary/</code></td></tr><tr><td>R17</td><td>3.4</td><td>"Falls by 0.13" next to a negative interval</td><td>yes</td><td>Now "changes by -0.13 [...]" (three places)</td></tr><tr><td>R18</td><td>1.5</td><td>Watchdog listed as a bound, but its status is inconclusive</td><td>yes</td><td></td></tr><tr><td>R19</td><td>1.3</td><td>Keyword caveat missing</td><td>yes</td><td>Added as caveat (4)</td></tr><tr><td>R20</td><td>1.5</td><td>Cross-wave caveat for moral prime A missing</td><td>yes</td><td>Same-wave control -0.37 added</td></tr><tr><td>R21</td><td>2.1</td><td>Unclear headline ending</td><td>yes</td><td>Now "a choice, not an inability"</td></tr><tr><td>O1</td><td>1.3, 3.4</td><td>Numbered table captions missing</td><td>yes</td><td></td></tr><tr><td>O2</td><td>All</td><td>Provenance notes on the question text are not uniform</td><td>no</td><td>Not requested this round; cosmetic</td></tr><tr><td>O3</td><td>All</td><td>Mixed plus-minus notation</td><td>yes</td><td>"+-" used throughout</td></tr><tr><td>O4</td><td>Header</td><td>"Not a bias of known sign" conflicts with the +0.10 drift</td><td>yes</td><td>Reworded</td></tr><tr><td>O5</td><td>1.1</td><td>Row labels "Printed numbers, ..." describe formula rows</td><td>yes</td><td>Labels and legend changed</td></tr><tr><td>O6</td><td>2.3</td><td>Second-model line said Qwen "agrees in size"; Qwen's ordinary chat already sits at its joint-profit level</td><td>yes</td><td></td></tr><tr><td>O7</td><td>3.4</td><td>One-of-two ethics interval differed from 1.2 and 3.2</td><td>yes</td><td>Dossier 08's -0.02 [-0.12, +0.09] used</td></tr><tr><td>O8</td><td>2.2</td><td>Explicit-agreement label result comes from a keyword label and an ad-hoc source</td><td>yes</td><td>Flagged in the text</td></tr><tr><td>O9</td><td>1.4</td><td>Say-do rates rest on a keyword measure</td><td>yes</td><td>Flagged</td></tr><tr><td>O10</td><td>3.1 terms</td><td>"Theory's sustainable price index is 0.70 at p1" was not found in any source</td><td>yes</td><td>Dropped; kept "at p5 theory sustains no collusion"</td></tr><tr><td>O11</td><td>1.1</td><td>"Closest to necessary" pushes against MASTER's warning</td><td>yes</td><td>Now "the largest lever"</td></tr><tr><td>Trim</td><td>1.5, 2.1, 3.1</td><td>Full restatements of the formula and no-numbers result</td><td>yes</td><td>Each replaced by one sentence plus "see 1.1"; the numbers in each section's own table are kept</td></tr><tr><td>Length</td><td>All</td><td>Headlines and "What we observed" are longer than the spec allows</td><td>partly</td><td>Only the cheap trims were made; headlines are still long</td></tr></table></body></html>

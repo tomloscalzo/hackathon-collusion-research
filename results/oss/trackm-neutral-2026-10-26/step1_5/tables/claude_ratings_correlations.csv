@@ -1,0 +1,43 @@
+split,rating,outcome,spearman,n_games
+pooled,claude_conflict,market_price_mean,-0.0588,601
+pooled,claude_conflict,price_index,-0.0587,601
+pooled,claude_conflict,profit_gain_index,-0.0438,601
+pooled,claude_conflict,competitive_share,-0.0618,601
+pooled,claude_conflict,matching_share,0.0569,601
+pooled,claude_conflict,undercut_count,-0.1563,601
+pooled,claude_conflict,rounds_played,-0.0075,601
+pooled,claude_temptation,market_price_mean,0.549,601
+pooled,claude_temptation,price_index,0.549,601
+pooled,claude_temptation,profit_gain_index,0.5506,601
+pooled,claude_temptation,competitive_share,-0.2768,601
+pooled,claude_temptation,matching_share,0.3023,601
+pooled,claude_temptation,undercut_count,0.0739,601
+pooled,claude_temptation,rounds_played,-0.1295,601
+chat arms,claude_conflict,market_price_mean,-0.112,561
+chat arms,claude_conflict,price_index,-0.112,561
+chat arms,claude_conflict,profit_gain_index,-0.0967,561
+chat arms,claude_conflict,competitive_share,-0.0201,561
+chat arms,claude_conflict,matching_share,0.0177,561
+chat arms,claude_conflict,undercut_count,-0.1615,561
+chat arms,claude_conflict,rounds_played,0.0072,561
+chat arms,claude_temptation,market_price_mean,0.5176,561
+chat arms,claude_temptation,price_index,0.5176,561
+chat arms,claude_temptation,profit_gain_index,0.5202,561
+chat arms,claude_temptation,competitive_share,-0.1926,561
+chat arms,claude_temptation,matching_share,0.2294,561
+chat arms,claude_temptation,undercut_count,0.0894,561
+chat arms,claude_temptation,rounds_played,-0.1136,561
+tacit (no chat),claude_conflict,market_price_mean,0.1079,40
+tacit (no chat),claude_conflict,price_index,0.1079,40
+tacit (no chat),claude_conflict,profit_gain_index,0.1062,40
+tacit (no chat),claude_conflict,competitive_share,0.0137,40
+tacit (no chat),claude_conflict,matching_share,0.0069,40
+tacit (no chat),claude_conflict,undercut_count,0.1033,40
+tacit (no chat),claude_conflict,rounds_played,-0.035,40
+tacit (no chat),claude_temptation,market_price_mean,0.2377,40
+tacit (no chat),claude_temptation,price_index,0.2377,40
+tacit (no chat),claude_temptation,profit_gain_index,0.2887,40
+tacit (no chat),claude_temptation,competitive_share,0.0365,40
+tacit (no chat),claude_temptation,matching_share,0.0215,40
+tacit (no chat),claude_temptation,undercut_count,0.3279,40
+tacit (no chat),claude_temptation,rounds_played,-0.022,40

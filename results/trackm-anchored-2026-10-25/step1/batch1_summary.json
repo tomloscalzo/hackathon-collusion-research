@@ -1,0 +1,32 @@
+{
+ "n_rows": 1388,
+ "by_status": {
+  "done": 1360,
+  "never_started": 28
+ },
+ "by_supersession": {
+  "none": 1235,
+  "placeholder_rerun": 116,
+  "truncation_rerun": 32,
+  "both": 4,
+  "rerun_missing": 1
+ },
+ "by_family": {
+  "headline": 480,
+  "dset": 200,
+  "introspection": 200,
+  "ethics_rule": 120,
+  "control": 92,
+  "incentive": 80,
+  "notice": 80,
+  "market_structure": 80,
+  "start_rule": 40,
+  "smoke_14b_32b": 16
+ },
+ "n_unpaired": 28,
+ "n_superseded_sidecar": 156,
+ "counted_reruns": 36,
+ "rerun_missing": 1,
+ "src_run_csv_sha256": "5849949217423a178befb7808241831baf65838f2518691e66e34df4b185c11f",
+ "src_provisional": true
+}

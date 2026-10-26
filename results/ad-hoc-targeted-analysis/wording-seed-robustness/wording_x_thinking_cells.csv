@@ -1,0 +1,201 @@
+run,metric,arm,wording,thinking_off,thinking_on
+neutral,mean_quote,headline-tacit,0,1.5326,1.9025
+neutral,mean_quote,headline-tacit,1,2.0312,2.0951
+neutral,mean_quote,headline-tacit,2,1.7321,2.0627
+neutral,mean_quote,headline-tacit,3,2.0161,2.0268
+neutral,mean_quote,headline-tacit,4,2.1312,1.9843
+neutral,mean_quote,headline-chat,0,2.2812,2.5003
+neutral,mean_quote,headline-chat,1,2.0312,2.2496
+neutral,mean_quote,headline-chat,2,2.1679,2.3240
+neutral,mean_quote,headline-chat,3,2.4404,2.3435
+neutral,mean_quote,headline-chat,4,2.5001,2.4653
+neutral,mean_quote,headline-monitored,0,2.3281,2.3135
+neutral,mean_quote,headline-monitored,1,2.1497,2.4012
+neutral,mean_quote,headline-monitored,2,2.1269,2.4296
+neutral,mean_quote,headline-monitored,3,2.5306,2.3950
+neutral,mean_quote,headline-monitored,4,2.3871,2.4130
+neutral,mean_quote,ALL headline,0,2.0473,2.2388
+neutral,mean_quote,ALL headline,1,2.0707,2.2486
+neutral,mean_quote,ALL headline,2,2.0090,2.2721
+neutral,mean_quote,ALL headline,3,2.3291,2.2551
+neutral,mean_quote,ALL headline,4,2.3395,2.2875
+neutral,price_index,headline-tacit,0,0.2663,0.4513
+neutral,price_index,headline-tacit,1,0.5156,0.5475
+neutral,price_index,headline-tacit,2,0.3640,0.5314
+neutral,price_index,headline-tacit,3,0.5081,0.5134
+neutral,price_index,headline-tacit,4,0.5656,0.4922
+neutral,price_index,headline-chat,0,0.6406,0.7501
+neutral,price_index,headline-chat,1,0.5156,0.6248
+neutral,price_index,headline-chat,2,0.5840,0.6620
+neutral,price_index,headline-chat,3,0.7202,0.6718
+neutral,price_index,headline-chat,4,0.7501,0.7326
+neutral,price_index,headline-monitored,0,0.6641,0.6567
+neutral,price_index,headline-monitored,1,0.5748,0.7006
+neutral,price_index,headline-monitored,2,0.5635,0.7148
+neutral,price_index,headline-monitored,3,0.7653,0.6975
+neutral,price_index,headline-monitored,4,0.6936,0.7065
+neutral,price_index,ALL headline,0,0.5236,0.6194
+neutral,price_index,ALL headline,1,0.5354,0.6243
+neutral,price_index,ALL headline,2,0.5038,0.6361
+neutral,price_index,ALL headline,3,0.6645,0.6276
+neutral,price_index,ALL headline,4,0.6698,0.6438
+neutral,gain,headline-tacit,0,0.4077,0.6030
+neutral,gain,headline-tacit,1,0.7461,0.7550
+neutral,gain,headline-tacit,2,0.5352,0.7264
+neutral,gain,headline-tacit,3,0.6944,0.6695
+neutral,gain,headline-tacit,4,0.7731,0.6494
+neutral,gain,headline-chat,0,0.7617,0.8600
+neutral,gain,headline-chat,1,0.7305,0.8436
+neutral,gain,headline-chat,2,0.7916,0.8035
+neutral,gain,headline-chat,3,0.9065,0.8632
+neutral,gain,headline-chat,4,0.9089,0.8591
+neutral,gain,headline-monitored,0,0.8047,0.7979
+neutral,gain,headline-monitored,1,0.8009,0.8914
+neutral,gain,headline-monitored,2,0.7699,0.8911
+neutral,gain,headline-monitored,3,0.9256,0.8775
+neutral,gain,headline-monitored,4,0.8613,0.8815
+neutral,gain,ALL headline,0,0.6580,0.7536
+neutral,gain,ALL headline,1,0.7591,0.8300
+neutral,gain,ALL headline,2,0.6989,0.8070
+neutral,gain,ALL headline,3,0.8421,0.8034
+neutral,gain,ALL headline,4,0.8478,0.7967
+neutral,comp_share,headline-tacit,0,0.2750,0.5972
+neutral,comp_share,headline-tacit,1,0.1022,0.1454
+neutral,comp_share,headline-tacit,2,0.2595,0.5918
+neutral,comp_share,headline-tacit,3,0.1868,0.3936
+neutral,comp_share,headline-tacit,4,0.3294,0.4858
+neutral,comp_share,headline-chat,0,0.1250,0.0220
+neutral,comp_share,headline-chat,1,0.0660,0.0035
+neutral,comp_share,headline-chat,2,0.0817,0.1099
+neutral,comp_share,headline-chat,3,0.0045,0.0171
+neutral,comp_share,headline-chat,4,0.0485,0.0919
+neutral,comp_share,headline-monitored,0,0.1250,0.0447
+neutral,comp_share,headline-monitored,1,0.0794,0.0154
+neutral,comp_share,headline-monitored,2,0.0090,0.1583
+neutral,comp_share,headline-monitored,3,0.0000,0.0144
+neutral,comp_share,headline-monitored,4,0.0606,0.0318
+neutral,comp_share,ALL headline,0,0.1750,0.2213
+neutral,comp_share,ALL headline,1,0.0825,0.0547
+neutral,comp_share,ALL headline,2,0.1167,0.2866
+neutral,comp_share,ALL headline,3,0.0637,0.1417
+neutral,comp_share,ALL headline,4,0.1462,0.2032
+neutral,match_share,headline-tacit,0,0.5382,0.3342
+neutral,match_share,headline-tacit,1,0.8018,0.8077
+neutral,match_share,headline-tacit,2,0.4978,0.2332
+neutral,match_share,headline-tacit,3,0.5841,0.5553
+neutral,match_share,headline-tacit,4,0.4629,0.3561
+neutral,match_share,headline-chat,0,0.8728,0.9586
+neutral,match_share,headline-chat,1,0.9323,0.9965
+neutral,match_share,headline-chat,2,0.7735,0.8644
+neutral,match_share,headline-chat,3,0.9955,0.9688
+neutral,match_share,headline-chat,4,0.8989,0.8708
+neutral,match_share,headline-monitored,0,0.8750,0.9471
+neutral,match_share,headline-monitored,1,0.8447,0.9789
+neutral,match_share,headline-monitored,2,0.9557,0.8170
+neutral,match_share,headline-monitored,3,1.0000,0.9179
+neutral,match_share,headline-monitored,4,0.8772,0.9441
+neutral,match_share,ALL headline,0,0.7620,0.7466
+neutral,match_share,ALL headline,1,0.8596,0.9277
+neutral,match_share,ALL headline,2,0.7423,0.6382
+neutral,match_share,ALL headline,3,0.8599,0.8140
+neutral,match_share,ALL headline,4,0.7463,0.7236
+anchored,mean_quote,headline-tacit,0,1.3774,1.6885
+anchored,mean_quote,headline-tacit,1,1.6431,1.6102
+anchored,mean_quote,headline-tacit,2,1.4333,1.5550
+anchored,mean_quote,headline-tacit,3,1.5483,1.7375
+anchored,mean_quote,headline-tacit,4,1.5809,1.7305
+anchored,mean_quote,headline-chat,0,1.9844,1.9204
+anchored,mean_quote,headline-chat,1,1.8422,1.7811
+anchored,mean_quote,headline-chat,2,1.6750,1.8957
+anchored,mean_quote,headline-chat,3,1.9806,1.9122
+anchored,mean_quote,headline-chat,4,1.9872,1.9953
+anchored,mean_quote,headline-monitored,0,1.7857,1.9306
+anchored,mean_quote,headline-monitored,1,1.7711,1.8394
+anchored,mean_quote,headline-monitored,2,1.7053,1.6919
+anchored,mean_quote,headline-monitored,3,1.8581,1.8944
+anchored,mean_quote,headline-monitored,4,2.0472,1.8709
+anchored,mean_quote,ALL headline,0,1.7159,1.8465
+anchored,mean_quote,ALL headline,1,1.7521,1.7435
+anchored,mean_quote,ALL headline,2,1.6045,1.7142
+anchored,mean_quote,ALL headline,3,1.7957,1.8480
+anchored,mean_quote,ALL headline,4,1.8718,1.8656
+anchored,price_index,headline-tacit,0,0.1887,0.3442
+anchored,price_index,headline-tacit,1,0.3216,0.3051
+anchored,price_index,headline-tacit,2,0.2166,0.2775
+anchored,price_index,headline-tacit,3,0.2741,0.3687
+anchored,price_index,headline-tacit,4,0.2904,0.3653
+anchored,price_index,headline-chat,0,0.4922,0.4602
+anchored,price_index,headline-chat,1,0.4211,0.3905
+anchored,price_index,headline-chat,2,0.3375,0.4479
+anchored,price_index,headline-chat,3,0.4903,0.4561
+anchored,price_index,headline-chat,4,0.4936,0.4977
+anchored,price_index,headline-monitored,0,0.3929,0.4653
+anchored,price_index,headline-monitored,1,0.3856,0.4197
+anchored,price_index,headline-monitored,2,0.3527,0.3459
+anchored,price_index,headline-monitored,3,0.4291,0.4472
+anchored,price_index,headline-monitored,4,0.5236,0.4354
+anchored,price_index,ALL headline,0,0.3579,0.4232
+anchored,price_index,ALL headline,1,0.3761,0.3718
+anchored,price_index,ALL headline,2,0.3023,0.3571
+anchored,price_index,ALL headline,3,0.3978,0.4240
+anchored,price_index,ALL headline,4,0.4359,0.4328
+anchored,gain,headline-tacit,0,0.3189,0.5256
+anchored,gain,headline-tacit,1,0.5282,0.4930
+anchored,gain,headline-tacit,2,0.3373,0.4683
+anchored,gain,headline-tacit,3,0.4627,0.5554
+anchored,gain,headline-tacit,4,0.4803,0.5503
+anchored,gain,headline-chat,0,0.7209,0.6741
+anchored,gain,headline-chat,1,0.6457,0.6008
+anchored,gain,headline-chat,2,0.5395,0.6644
+anchored,gain,headline-chat,3,0.7092,0.6503
+anchored,gain,headline-chat,4,0.7231,0.7379
+anchored,gain,headline-monitored,0,0.5963,0.6568
+anchored,gain,headline-monitored,1,0.5970,0.6382
+anchored,gain,headline-monitored,2,0.5550,0.5251
+anchored,gain,headline-monitored,3,0.6425,0.6707
+anchored,gain,headline-monitored,4,0.7684,0.6498
+anchored,gain,ALL headline,0,0.5454,0.6189
+anchored,gain,ALL headline,1,0.5903,0.5773
+anchored,gain,ALL headline,2,0.4773,0.5526
+anchored,gain,ALL headline,3,0.6048,0.6255
+anchored,gain,ALL headline,4,0.6573,0.6460
+anchored,comp_share,headline-tacit,0,0.3569,0.6650
+anchored,comp_share,headline-tacit,1,0.1359,0.1683
+anchored,comp_share,headline-tacit,2,0.1436,0.5818
+anchored,comp_share,headline-tacit,3,0.2835,0.3458
+anchored,comp_share,headline-tacit,4,0.2257,0.4242
+anchored,comp_share,headline-chat,0,0.0625,0.0898
+anchored,comp_share,headline-chat,1,0.0035,0.0625
+anchored,comp_share,headline-chat,2,0.0417,0.0960
+anchored,comp_share,headline-chat,3,0.0312,0.1920
+anchored,comp_share,headline-chat,4,0.0779,0.0083
+anchored,comp_share,headline-monitored,0,0.0089,0.1375
+anchored,comp_share,headline-monitored,1,0.0677,0.0035
+anchored,comp_share,headline-monitored,2,0.0647,0.1088
+anchored,comp_share,headline-monitored,3,0.0625,0.0482
+anchored,comp_share,headline-monitored,4,0.0444,0.0561
+anchored,comp_share,ALL headline,0,0.1428,0.2974
+anchored,comp_share,ALL headline,1,0.0690,0.0781
+anchored,comp_share,ALL headline,2,0.0833,0.2622
+anchored,comp_share,ALL headline,3,0.1258,0.1953
+anchored,comp_share,ALL headline,4,0.1160,0.1629
+anchored,match_share,headline-tacit,0,0.3459,0.2873
+anchored,match_share,headline-tacit,1,0.7374,0.7770
+anchored,match_share,headline-tacit,2,0.4503,0.2403
+anchored,match_share,headline-tacit,3,0.2409,0.5727
+anchored,match_share,headline-tacit,4,0.1634,0.4859
+anchored,match_share,headline-chat,0,0.9375,0.8398
+anchored,match_share,headline-chat,1,0.9913,0.9323
+anchored,match_share,headline-chat,2,0.7107,0.8194
+anchored,match_share,headline-chat,3,0.9375,0.8080
+anchored,match_share,headline-chat,4,0.9097,0.8845
+anchored,match_share,headline-monitored,0,0.8750,0.8485
+anchored,match_share,headline-monitored,1,0.9288,0.9358
+anchored,match_share,headline-monitored,2,0.7545,0.7077
+anchored,match_share,headline-monitored,3,0.9375,0.8798
+anchored,match_share,headline-monitored,4,0.9025,0.8167
+anchored,match_share,ALL headline,0,0.7195,0.6585
+anchored,match_share,ALL headline,1,0.8858,0.8817
+anchored,match_share,ALL headline,2,0.6385,0.5892
+anchored,match_share,ALL headline,3,0.7053,0.7535
+anchored,match_share,ALL headline,4,0.6585,0.7290

@@ -1,0 +1,38 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Results layout: the runs/ directory</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Results layout: the <code>runs/</code> directory</h1>
+<p>Every batch of games lives in one <strong>run root</strong> directly under the runs directory (a sibling of the repository checkout, not inside the repository; run outputs are never committed):</p>
+<pre><code>runs/&lt;YYYY-MM-DD&gt;_&lt;track&gt;_&lt;stage&gt;/</code></pre>
+<ul><li>
+<code>YYYY-MM-DD</code>: the day the root was created (the first launch).
+</li><li>
+<code>track</code>: <code>m</code> (Track M, chat/multi-seat) or <code>s</code> (Track S, single-seat elicitation).
+</li><li>
+<code>stage</code>: a short lowercase slug with no spaces, for example <code>smoke</code>, <code>pilot</code>, <code>wave1</code>, <code>strict-t0-32b</code>.
+</li></ul>
+<p>Examples: <code>runs/2026-10-25_m_pilot/</code>, <code>runs/2026-10-26_s_stage0/</code>. One root = one launch plan (one <code>--out</code> of <code>run_grid.py</code> / <code>run_waves.py</code>); a rerun of the same plan reuses the same root (DONE trials are skipped). A different configuration gets a new root, never a mixed one.</p>
+<h2>Inside a root</h2>
+<table><tr><th>Content</th><th>Meaning</th></tr><tr><td><code>&lt;arm&gt;/&lt;trial_id&gt;/</code> (or <code>trials/&lt;arm&gt;/&lt;trial_id&gt;/</code>)</td><td>Track M trial directory: <code>params.json</code>, <code>events.jsonl</code>, <code>run.jsonl</code>, <code>cache.jsonl</code>, <code>calls.jsonl</code>, <code>console.log</code>, <code>run_stats.json</code>, and a <code>DONE</code> or <code>FAILED</code> marker (none = not finished)</td></tr><tr><td><code>&lt;stage&gt;/&lt;run&gt;.jsonl</code> with <code>.manifest.json</code>, <code>.cache.jsonl</code>, <code>.calls.jsonl</code>, <code>.log</code></td><td>Track S run lines (one line per game); <code>*.jsonl.partial-*</code> marks an interrupted run</td></tr><tr><td><code>grid.csv</code>, <code>theory.csv</code>, <code>collusion-engine.jar</code></td><td>the plan and the jar that ran it</td></tr><tr><td><code>tables/</code>, <code>analysis_*/</code>, <code>checks/</code>, <code>viewer/</code></td><td>derived outputs (safe to regenerate)</td></tr><tr><td><code>cost.json</code> (or <code>meter.json</code>, <code>cost_meter.json</code>, <code>spend.json</code>)</td><td>optional cost meter: a JSON object with <code>spent_usd</code> (or <code>total_usd</code>, <code>cost_usd</code>, <code>spent</code>)</td></tr></table>
+<h2>The index</h2>
+<p><code>python -X utf8 tools/trial/runs_registry.py [RUNS_DIR]</code> scans every root and writes <code>RUNS_INDEX.csv</code> and <code>RUNS_INDEX.md</code> into the runs directory (default: the nearest <code>runs/</code> directory above the repository checkout or worktree). One row per root:</p>
+<p><code>date, track, stage, arms (;-separated), model, thinking (on/off, ;-separated), commits (first 12 characters), done, failed, trials, cost_usd, status, path</code></p>
+<ul><li>
+<code>done</code> / <code>failed</code> count <code>DONE</code> / <code>FAILED</code> trial directories (Track M) or game lines / partial files (Track S); <code>trials</code> = done + failed + unfinished.
+</li><li>
+<code>status</code>: <code>complete</code> (all trials DONE), <code>incomplete</code> (some unfinished, none failed), <code>has-failures</code> (at least one FAILED), <code>empty</code>.
+</li><li>
+<code>cost_usd</code> is blank when the root has no meter file.
+</li><li>
+Track S <code>*.jsonl.partial-*</code> files count as failed (and so make the root <code>has-failures</code>); a run-line file counts one done game per line that parses as a JSON object.
+</li><li>
+<code>path</code> is the root's directory name relative to the runs directory.
+</li></ul>
+<p>Older ad-hoc roots (<code>trackm-smoke</code>, <code>tracks-t0</code>, <code>hc</code>, ...) are indexed too: the track and stage are guessed from the name (<code>trackm-</code> / <code>tracks-</code> prefix) and the date is the directory's modification time. They keep their names; new roots follow the pattern above. Anything that is not a directory (logs, model lists) is ignored, and unreadable files never stop the scan. Rerun the command after each launch; it overwrites the two index files.</p></body></html>

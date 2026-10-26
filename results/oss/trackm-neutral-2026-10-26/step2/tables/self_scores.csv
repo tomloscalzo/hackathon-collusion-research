@@ -1,0 +1,6 @@
+arm,score_name,games,score_mean,score_first,score_last,price_index,corr_score_vs_price_index
+d-conflict,conflict_score,20,1.091,1.15,1.025,0.5719,-0.2822
+d-conflict-ethics,conflict_score,20,1.045,1,1.025,0.5322,0.281
+d-placebo,placebo_score,20,3.196,3.125,3.275,0.6409,-0.2864
+d-temptation-a,temptation_score,20,2.843,2.85,2.65,0.6081,0.3584
+d-temptation-b,temptation_score,20,2.899,2.45,2.7,0.6128,0.535

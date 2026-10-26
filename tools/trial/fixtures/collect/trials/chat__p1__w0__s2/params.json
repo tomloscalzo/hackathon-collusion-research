@@ -1,0 +1,12 @@
+{
+ "arm": "chat",
+ "thinking": true,
+ "model": "Qwen3-14B",
+ "penalty_point": 1,
+ "wording": 0,
+ "seed": 2,
+ "competitive_price": 2.0,
+ "collusive_price": 2.4,
+ "prompt_fingerprint": "fp-chat",
+ "code_commit": "abc1234"
+}

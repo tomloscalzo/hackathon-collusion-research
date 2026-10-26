@@ -1,0 +1,6 @@
+topic,contrast,metric,pairs_dropped,n_pairs,diff,lo,hi,diff_all,n_all
+asymmetric,m-asym - headline-chat (p3),market_price_mean,8,12,-0.11217,-0.35346,0.09838,-0.03625,20
+asymmetric,m-asym - headline-chat (p3),price_index,8,12,-0.05608,-0.17585,0.04754,-0.01812,20
+asymmetric,m-asym - headline-chat (p3),profit_gain_index,8,12,-0.0637,-0.17208,0.03871,-0.01824,20
+asymmetric,m-asym - headline-chat (p3),competitive_share,8,12,0.10945,0.00619,0.19778,0.00778,20
+asymmetric,m-asym - headline-chat (p3),matching_share,8,12,-0.17713,-0.26825,-0.08716,-0.04648,20

@@ -1,0 +1,26 @@
+contrast,metric,n_pairs_all,diff_all,n_pairs_dropped,diff_dropped,lo_dropped,hi_dropped
+d-conflict - headline-chat,market_price_mean,20,-0.0033,9,0.1374,-0.0076,0.3508
+d-conflict - headline-chat,price_index,20,-0.0017,9,0.0687,-0.0030,0.1752
+d-conflict - headline-chat,profit_gain_index,20,-0.0055,9,0.0755,-0.0002,0.1875
+d-conflict - headline-chat,competitive_share,20,-0.0503,9,-0.1225,-0.2787,0.0611
+d-conflict - headline-chat,matching_share,20,0.0439,9,0.1604,-0.1290,0.3968
+d-temptation-a - headline-chat,market_price_mean,20,0.0692,11,0.1672,-0.0179,0.3656
+d-temptation-a - headline-chat,price_index,20,0.0346,11,0.0836,-0.0091,0.1838
+d-temptation-a - headline-chat,profit_gain_index,20,0.0343,11,0.0881,0.0034,0.1791
+d-temptation-a - headline-chat,competitive_share,20,-0.0667,11,-0.0838,-0.3637,0.1790
+d-temptation-a - headline-chat,matching_share,20,0.0960,11,0.1498,-0.1451,0.4398
+d-temptation-b - headline-chat,market_price_mean,20,0.0786,9,0.0056,-0.1526,0.1661
+d-temptation-b - headline-chat,price_index,20,0.0393,9,0.0028,-0.0754,0.0809
+d-temptation-b - headline-chat,profit_gain_index,20,0.0399,9,0.0048,-0.0621,0.0703
+d-temptation-b - headline-chat,competitive_share,20,-0.0764,9,-0.2093,-0.4426,-0.0198
+d-temptation-b - headline-chat,matching_share,20,0.1073,9,0.3198,0.1068,0.5377
+d-placebo - headline-chat,market_price_mean,20,0.1348,9,0.1714,-0.0420,0.3785
+d-placebo - headline-chat,price_index,20,0.0674,9,0.0857,-0.0254,0.1895
+d-placebo - headline-chat,profit_gain_index,20,0.0777,9,0.0938,-0.0053,0.2023
+d-placebo - headline-chat,competitive_share,20,0.0217,9,-0.0698,-0.3576,0.1853
+d-placebo - headline-chat,matching_share,20,-0.0175,9,0.0539,-0.1495,0.2260
+d-conflict-ethics - d-conflict,market_price_mean,20,-0.0794,9,-0.2775,-0.4391,-0.1322
+d-conflict-ethics - d-conflict,price_index,20,-0.0397,9,-0.1387,-0.2178,-0.0677
+d-conflict-ethics - d-conflict,profit_gain_index,20,-0.0380,9,-0.1106,-0.1715,-0.0518
+d-conflict-ethics - d-conflict,competitive_share,20,0.2138,9,0.3872,0.2103,0.5636
+d-conflict-ethics - d-conflict,matching_share,20,-0.2172,9,-0.4284,-0.5825,-0.2879

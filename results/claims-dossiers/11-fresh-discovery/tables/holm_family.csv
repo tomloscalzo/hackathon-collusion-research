@@ -1,0 +1,8 @@
+test,p,holm_p,family
+"T6 round-1 lock-in, model difference",0.0,0.0,discovery candidates (m=7)
+"T1 erosion: gpt-oss minus Qwen (on), chat games",1e-05,6.000000000000001e-05,discovery candidates (m=7)
+"T3 exploration framing, gpt-oss price index",0.0002,0.001,discovery candidates (m=7)
+T3b exploration framing x model,0.0006,0.0024,discovery candidates (m=7)
+"T4 game length, gpt-oss price index",0.53566,1.0,discovery candidates (m=7)
+T2 erosion: chat x model interaction,0.55619,1.0,discovery candidates (m=7)
+"T5 end-game, gpt-oss",0.75285,1.0,discovery candidates (m=7)

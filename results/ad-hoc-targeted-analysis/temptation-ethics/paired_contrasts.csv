@@ -1,0 +1,82 @@
+family,mm,treatment,reference,metric,metric_label,n,t,r,d,lo,hi,p,holm
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,score,Mean self-score (1-5),20,2.105376,2.191084,-0.085708,-0.305515,0.141999,0.465525,0.465525
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,score_gt1,Share of answers above 1,20,0.975658,0.840504,0.135154,0.031250,0.251317,0.029297,0.058594
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,score_ge3,Share of answers 3 or more,20,0.126736,0.328728,-0.201992,-0.342948,-0.062818,0.010847,0.010847
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,avg_abs_spread,Average absolute spread,20,2.062681,2.236717,-0.174036,-0.440261,0.078138,0.218719,0.437439
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,price_index,Price index,20,0.531340,0.618358,-0.087018,-0.220131,0.039069,0.218719,0.437439
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,profit_gain_index,Profit gain index,20,0.740289,0.799694,-0.059406,-0.183012,0.066613,0.373260,0.746521
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,competitive_share,Competitive share (U16),20,0.207634,0.003175,0.204459,0.108730,0.305108,0.000244,0.000732
+A: ethics effect on temptation (TE - TA),qwen-t0,TE,TA,matching_share,Matching share,20,0.576995,0.987347,-0.410353,-0.614952,-0.215880,0.000732,0.001465
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,score,Mean self-score (1-5),20,1.018835,1.001250,0.017585,0.002083,0.037288,0.125000,0.125000
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,score_gt1,Share of answers above 1,20,0.017049,0.001250,0.015799,0.000833,0.034551,0.125000,0.125000
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,score_ge3,Share of answers 3 or more,20,0.001786,0.000000,0.001786,0.000000,0.005357,1.000000,1.000000
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,avg_abs_spread,Average absolute spread,20,2.062600,2.140729,-0.078129,-0.432290,0.229767,0.673340,0.838684
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,price_index,Price index,20,0.531300,0.570364,-0.039064,-0.216145,0.114883,0.673340,0.838684
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,profit_gain_index,Profit gain index,20,0.732199,0.738160,-0.005961,-0.195992,0.166849,0.942993,0.975594
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,competitive_share,Competitive share (U16),20,0.201786,0.132467,0.069319,-0.075324,0.229240,0.445312,0.445312
+"B: ethics effect on conflict (CE - C), reference",qwen-t0,CE,C,matching_share,Matching share,20,0.575046,0.798757,-0.223712,-0.451557,-0.001626,0.092773,0.092773
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,score,Mean self-score (1-5),20,2.105376,1.018835,1.086541,1.020479,1.165604,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,score_gt1,Share of answers above 1,20,0.975658,0.017049,0.958609,0.918051,0.990000,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,score_ge3,Share of answers 3 or more,20,0.126736,0.001786,0.124950,0.052523,0.207739,0.000244,0.000488
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,avg_abs_spread,Average absolute spread,20,2.062681,2.062600,0.000081,-0.177804,0.211186,0.998047,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,price_index,Price index,20,0.531340,0.531300,0.000040,-0.088902,0.105593,0.998047,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,profit_gain_index,Profit gain index,20,0.740289,0.732199,0.008089,-0.101890,0.141400,0.908203,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,competitive_share,Competitive share (U16),20,0.207634,0.201786,0.005848,-0.132749,0.141667,0.833984,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t0,TE,CE,matching_share,Matching share,20,0.576995,0.575046,0.001949,-0.224238,0.235444,0.978516,0.978516
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t0,TE,TA,score,Mean self-score (1-5),20,2.105376,2.191084,-0.103293,-0.323799,0.125548,0.383373,0.519257
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t0,TE,TA,score_gt1,Share of answers above 1,20,0.975658,0.840504,0.119355,0.015603,0.236857,0.049316,0.049316
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t0,TE,TA,score_ge3,Share of answers 3 or more,20,0.126736,0.328728,-0.203778,-0.345373,-0.064115,0.010611,0.010611
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,score,Mean self-score (1-5),20,2.543941,2.295470,0.248471,0.108438,0.415417,0.001678,0.003357
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,score_gt1,Share of answers above 1,20,0.986714,0.967475,0.019239,-0.006773,0.047274,0.199219,0.199219
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,score_ge3,Share of answers 3 or more,20,0.469232,0.278578,0.190655,0.097891,0.294931,0.000816,0.001633
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,avg_abs_spread,Average absolute spread,20,2.456161,2.644737,-0.188576,-0.317570,-0.057258,0.008652,0.025955
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,price_index,Price index,20,0.728080,0.822368,-0.094288,-0.158785,-0.028629,0.008652,0.025955
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,profit_gain_index,Profit gain index,20,0.920546,0.949339,-0.028793,-0.065896,0.006944,0.123734,0.371201
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,competitive_share,Competitive share (U16),20,0.116301,0.003102,0.113200,0.049759,0.198558,0.000366,0.000732
+A: ethics effect on temptation (TE - TA),qwen-t1,TE,TA,matching_share,Matching share,20,0.825508,0.990946,-0.165438,-0.268357,-0.077342,0.000366,0.001099
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,score,Mean self-score (1-5),20,1.173318,1.004352,0.168966,0.084892,0.265005,0.000031,0.000092
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,score_gt1,Share of answers above 1,20,0.142603,0.004352,0.138252,0.073277,0.210859,0.000031,0.000092
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,score_ge3,Share of answers 3 or more,20,0.029048,0.000000,0.029048,0.006071,0.058929,0.062500,0.187500
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,avg_abs_spread,Average absolute spread,20,2.478869,2.721964,-0.243095,-0.387456,-0.105675,0.001968,0.005905
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,price_index,Price index,20,0.739434,0.860982,-0.121548,-0.193728,-0.052838,0.001968,0.005905
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,profit_gain_index,Profit gain index,20,0.926710,0.965246,-0.038536,-0.068127,-0.015152,0.001968,0.005905
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,competitive_share,Competitive share (U16),20,0.172764,0.001316,0.171448,0.078397,0.285095,0.000488,0.001465
+"B: ethics effect on conflict (CE - C), reference",qwen-t1,CE,C,matching_share,Matching share,20,0.717880,0.995445,-0.277565,-0.419300,-0.159234,0.000015,0.000046
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,score,Mean self-score (1-5),20,2.543941,1.173318,1.370623,1.242816,1.506450,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,score_gt1,Share of answers above 1,20,0.986714,0.142603,0.844110,0.773662,0.906608,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,score_ge3,Share of answers 3 or more,20,0.469232,0.029048,0.440185,0.345686,0.539496,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,avg_abs_spread,Average absolute spread,20,2.456161,2.478869,-0.022708,-0.118335,0.060819,0.637779,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,price_index,Price index,20,0.728080,0.739434,-0.011354,-0.059168,0.030410,0.637779,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,profit_gain_index,Profit gain index,20,0.920546,0.926710,-0.006164,-0.044743,0.025360,0.646248,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,competitive_share,Competitive share (U16),20,0.116301,0.172764,-0.056463,-0.202991,0.088983,0.482727,1.000000
+C: temptation vs conflict under the rule (TE - CE),qwen-t1,TE,CE,matching_share,Matching share,20,0.825508,0.717880,0.107628,-0.056078,0.282176,0.237274,0.711823
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t1,TE,TA,score,Mean self-score (1-5),20,2.543941,2.295470,0.079505,-0.039543,0.213708,0.259628,0.519257
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t1,TE,TA,score_gt1,Share of answers above 1,20,0.986714,0.967475,-0.119013,-0.194669,-0.049846,0.002319,0.004639
+D: difference in ethics effects ((TE - TA) - (CE - C)),qwen-t1,TE,TA,score_ge3,Share of answers 3 or more,20,0.469232,0.278578,0.161607,0.075710,0.259994,0.001633,0.003265
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,score,Mean self-score (1-5),20,1.588085,2.843449,-1.255364,-1.584397,-0.954064,0.000002,0.000006
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,score_gt1,Share of answers above 1,20,0.577715,0.867676,-0.289961,-0.337459,-0.245412,0.000002,0.000006
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,score_ge3,Share of answers 3 or more,20,0.010370,0.469056,-0.458685,-0.574219,-0.345863,0.000004,0.000011
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,avg_abs_spread,Average absolute spread,20,2.154308,2.216212,-0.061904,-0.182270,0.057101,0.332951,0.437439
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,price_index,Price index,20,0.577154,0.608106,-0.030952,-0.091135,0.028551,0.332951,0.437439
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,profit_gain_index,Profit gain index,20,0.784067,0.803188,-0.019121,-0.078285,0.045349,0.588177,0.746521
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,competitive_share,Competitive share (U16),20,0.505477,0.359452,0.146025,0.001597,0.298969,0.077850,0.077850
+A: ethics effect on temptation (TE - TA),oss-t1,TE,TA,matching_share,Matching share,20,0.321116,0.508224,-0.187108,-0.340069,-0.034248,0.030991,0.030991
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,score,Mean self-score (1-5),20,1.044869,1.090852,-0.045984,-0.079821,-0.012652,0.017395,0.034790
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,score_gt1,Share of answers above 1,20,0.040219,0.072515,-0.032295,-0.062179,-0.001447,0.061096,0.122192
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,score_ge3,Share of answers 3 or more,20,0.004649,0.014766,-0.010117,-0.023323,0.003048,0.167969,0.335938
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,avg_abs_spread,Average absolute spread,20,2.064322,2.143707,-0.079384,-0.263421,0.106119,0.419342,0.838684
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,price_index,Price index,20,0.532161,0.571853,-0.039692,-0.131711,0.053060,0.419342,0.838684
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,profit_gain_index,Profit gain index,20,0.725316,0.763342,-0.038026,-0.139951,0.063641,0.487797,0.975594
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,competitive_share,Competitive share (U16),20,0.589618,0.375817,0.213801,0.092363,0.342175,0.003555,0.007111
+"B: ethics effect on conflict (CE - C), reference",oss-t1,CE,C,matching_share,Matching share,20,0.238865,0.456097,-0.217232,-0.339273,-0.108227,0.000702,0.001404
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,score,Mean self-score (1-5),20,1.588085,1.044869,0.543216,0.483814,0.602644,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,score_gt1,Share of answers above 1,20,0.577715,0.040219,0.537496,0.482503,0.592656,0.000002,0.000006
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,score_ge3,Share of answers 3 or more,20,0.010370,0.004649,0.005721,-0.005714,0.016103,0.335938,0.335938
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,avg_abs_spread,Average absolute spread,20,2.154308,2.064322,0.089986,-0.126898,0.320055,0.451626,1.000000
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,price_index,Price index,20,0.577154,0.532161,0.044993,-0.063449,0.160028,0.451626,1.000000
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,profit_gain_index,Profit gain index,20,0.784067,0.725316,0.058750,-0.065929,0.195394,0.403431,1.000000
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,competitive_share,Competitive share (U16),20,0.505477,0.589618,-0.084141,-0.257564,0.078650,0.346367,1.000000
+C: temptation vs conflict under the rule (TE - CE),oss-t1,TE,CE,matching_share,Matching share,20,0.321116,0.238865,0.082251,-0.062669,0.246819,0.328537,0.711823
+D: difference in ethics effects ((TE - TA) - (CE - C)),oss-t1,TE,TA,score,Mean self-score (1-5),20,1.588085,2.843449,-1.209381,-1.542439,-0.907729,0.000002,0.000006
+D: difference in ethics effects ((TE - TA) - (CE - C)),oss-t1,TE,TA,score_gt1,Share of answers above 1,20,0.577715,0.867676,-0.257666,-0.307027,-0.207031,0.000002,0.000006
+D: difference in ethics effects ((TE - TA) - (CE - C)),oss-t1,TE,TA,score_ge3,Share of answers 3 or more,20,0.010370,0.469056,-0.448568,-0.562245,-0.339035,0.000004,0.000011

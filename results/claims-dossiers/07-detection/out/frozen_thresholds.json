@@ -1,0 +1,6 @@
+{
+ "quotes: early mean level": 0.49833333333333335,
+ "text: TF-IDF + LR": 1.8905350115340178,
+ "quotes: quote features + LR": 2.539603605678947,
+ "both: quote features + TF-IDF + LR": 2.721332209156207
+}

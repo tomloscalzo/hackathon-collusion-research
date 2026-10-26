@@ -1,0 +1,12 @@
+oss-t1 C model=openai--gpt-oss-20b--6cee5e81ee83917806bbde320786a8fb61efebee+vllm0.15.0-effort-medium text=score_conflict payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14
+oss-t1 CE model=openai--gpt-oss-20b--6cee5e81ee83917806bbde320786a8fb61efebee+vllm0.15.0-effort-medium text=score_conflict payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14
+oss-t1 TA model=openai--gpt-oss-20b--6cee5e81ee83917806bbde320786a8fb61efebee+vllm0.15.0-effort-medium text=score_temptation_a payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14
+oss-t1 TE model=openai--gpt-oss-20b--6cee5e81ee83917806bbde320786a8fb61efebee+vllm0.15.0-effort-medium text=score_temptation_a payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14
+qwen-t0 C model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_conflict payoff=neutral fp=b51603c9f5cb2ec83de068ce2e5cb92b4cc14c7e65e7ffbb3fc16f9184f3da5f
+qwen-t0 CE model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_conflict payoff=neutral fp=d2b991ad1a81af1cc983891985b8536cf8eeb7c550c1290c4a9914c17ac2b436
+qwen-t0 TA model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_temptation_a payoff=neutral fp=b51603c9f5cb2ec83de068ce2e5cb92b4cc14c7e65e7ffbb3fc16f9184f3da5f
+qwen-t0 TE model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_temptation_a payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14
+qwen-t1 C model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_conflict payoff=neutral fp=b51603c9f5cb2ec83de068ce2e5cb92b4cc14c7e65e7ffbb3fc16f9184f3da5f
+qwen-t1 CE model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_conflict payoff=neutral fp=d2b991ad1a81af1cc983891985b8536cf8eeb7c550c1290c4a9914c17ac2b436
+qwen-t1 TA model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_temptation_a payoff=neutral fp=b51603c9f5cb2ec83de068ce2e5cb92b4cc14c7e65e7ffbb3fc16f9184f3da5f
+qwen-t1 TE model=Qwen--Qwen3-32B-FP8--aa55da1ecc13d006e8b8e4f54579b1ea8c3db2df+vllm0.9.2 text=score_temptation_a payoff=neutral fp=ba2da66eecb047db1f9003435ca8807ae0580d8c41d27d49690154768ae5cc14

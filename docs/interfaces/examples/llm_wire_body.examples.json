@@ -1,0 +1,19 @@
+{
+  "schema": "llm_request",
+  "ref": "#/$defs/wireBody",
+  "note": "OpenAiCompatibleClient.body for a game call (texts shortened); the probe body has no response_format.",
+  "valid": [
+    {"max_tokens": 400, "messages": [{"content": "You are the pricing engine ...", "role": "system"}, {"content": "Round 1. ...", "role": "user"}],
+     "model": "mock-model-1",
+     "response_format": {"json_schema": {"name": "decision", "schema": {"properties": {"plan": {"type": "string"}, "quote": {"type": ["number", "null"]}, "rationale": {"type": "string"}}, "required": ["quote", "plan", "rationale"], "type": "object"}}, "type": "json_schema"},
+     "seed": 1234567, "temperature": 0.7, "user": "game|ripe-game|s1|llm|r1|a0"},
+    {"max_tokens": 400, "messages": [{"content": "s", "role": "system"}, {"content": "u", "role": "user"}, {"content": "a", "role": "assistant"}, {"content": "q", "role": "user"}],
+     "model": "m", "seed": 0, "temperature": 0.0, "user": "probe|ripe-game|s1|llm|r1"},
+    {"chat_template_kwargs": {"enable_thinking": false}, "max_tokens": 400, "messages": [{"content": "s", "role": "system"}, {"content": "u", "role": "user"}],
+     "model": "m", "seed": 0, "temperature": 0.7, "top_k": 20, "top_p": 0.8, "user": "game|ripe-game|s1|llm|r1|a0"}
+  ],
+  "invalid": [
+    {"why": "chat_template_kwargs carries enable_thinking only", "value": {"chat_template_kwargs": {"enable_thinking": true, "x": 1}, "max_tokens": 1, "messages": [{"content": "s", "role": "system"}, {"content": "u", "role": "user"}], "model": "m", "seed": 0, "temperature": 0, "user": "k"}},
+    {"why": "the per-request seed is a non-negative 31-bit integer", "value": {"max_tokens": 1, "messages": [{"content": "s", "role": "system"}, {"content": "u", "role": "user"}], "model": "m", "seed": -1, "temperature": 0, "user": "k"}}
+  ]
+}

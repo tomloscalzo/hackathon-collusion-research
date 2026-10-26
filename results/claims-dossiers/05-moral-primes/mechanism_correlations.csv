@@ -1,0 +1,55 @@
+set,x,y,spearman,pearson,n
+gptoss-on all games,mean_proposed_price,price_index,0.9796,0.9936,79
+gptoss-on within primes A+B,mean_proposed_price,price_index,0.9870,0.9973,40
+gptoss-on within placebo/headline,mean_proposed_price,price_index,0.8925,0.9786,39
+gptoss-on all games,eth_per100w,price_index,-0.5827,-0.5906,79
+gptoss-on within primes A+B,eth_per100w,price_index,-0.1294,-0.0951,40
+gptoss-on within placebo/headline,eth_per100w,price_index,-0.1482,-0.1332,39
+gptoss-on all games,rationale_eth_per100w,price_index,-0.6344,-0.6517,79
+gptoss-on within primes A+B,rationale_eth_per100w,price_index,-0.2171,-0.2484,40
+gptoss-on within placebo/headline,rationale_eth_per100w,price_index,-0.1450,-0.1929,39
+gptoss-on all games,share_msgs_agree,price_index,-0.3648,-0.3782,79
+gptoss-on within primes A+B,share_msgs_agree,price_index,-0.0926,-0.1394,40
+gptoss-on within placebo/headline,share_msgs_agree,price_index,0.1563,0.1665,39
+gptoss-on all games,words_per_msg,price_index,-0.4216,-0.3861,79
+gptoss-on within primes A+B,words_per_msg,price_index,-0.0062,-0.0360,40
+gptoss-on within placebo/headline,words_per_msg,price_index,-0.0692,0.0080,39
+gptoss-on all games,share_rounds_with_priced_talk,price_index,-0.2060,-0.1902,79
+gptoss-on within primes A+B,share_rounds_with_priced_talk,price_index,-0.0902,-0.0840,40
+gptoss-on within placebo/headline,share_rounds_with_priced_talk,price_index,-0.1705,-0.1135,39
+qwen-off all games,mean_proposed_price,price_index,0.9833,0.9990,54
+qwen-off within primes A+B,mean_proposed_price,price_index,0.9871,1.0000,35
+qwen-off within placebo/headline,mean_proposed_price,price_index,0.9189,0.9893,19
+qwen-off all games,eth_per100w,price_index,-0.4751,-0.5317,56
+qwen-off within primes A+B,eth_per100w,price_index,-0.0657,-0.0997,37
+qwen-off within placebo/headline,eth_per100w,price_index,-0.0931,-0.1062,19
+qwen-off all games,rationale_eth_per100w,price_index,-0.6066,-0.6615,60
+qwen-off within primes A+B,rationale_eth_per100w,price_index,-0.3628,-0.4330,40
+qwen-off within placebo/headline,rationale_eth_per100w,price_index,-0.0330,0.0675,20
+qwen-off all games,share_msgs_agree,price_index,0.2742,0.3447,56
+qwen-off within primes A+B,share_msgs_agree,price_index,0.5408,0.5954,37
+qwen-off within placebo/headline,share_msgs_agree,price_index,-0.2148,-0.1921,19
+qwen-off all games,words_per_msg,price_index,-0.0850,-0.1602,56
+qwen-off within primes A+B,words_per_msg,price_index,0.0454,-0.2200,37
+qwen-off within placebo/headline,words_per_msg,price_index,-0.3431,-0.2319,19
+qwen-off all games,share_rounds_with_priced_talk,price_index,0.0951,0.1150,60
+qwen-off within primes A+B,share_rounds_with_priced_talk,price_index,0.0811,0.0540,40
+qwen-off within placebo/headline,share_rounds_with_priced_talk,price_index,-0.2070,-0.0442,20
+qwen-on all games,mean_proposed_price,price_index,0.9743,0.9900,60
+qwen-on within primes A+B,mean_proposed_price,price_index,0.9620,0.9818,40
+qwen-on within placebo/headline,mean_proposed_price,price_index,0.9267,0.9988,20
+qwen-on all games,eth_per100w,price_index,-0.6196,-0.6256,60
+qwen-on within primes A+B,eth_per100w,price_index,-0.4144,-0.3925,40
+qwen-on within placebo/headline,eth_per100w,price_index,0.0276,0.0549,20
+qwen-on all games,rationale_eth_per100w,price_index,-0.6209,-0.6599,60
+qwen-on within primes A+B,rationale_eth_per100w,price_index,-0.5322,-0.5831,40
+qwen-on within placebo/headline,rationale_eth_per100w,price_index,0.2762,0.2170,20
+qwen-on all games,share_msgs_agree,price_index,0.4070,0.4445,60
+qwen-on within primes A+B,share_msgs_agree,price_index,0.3721,0.3780,40
+qwen-on within placebo/headline,share_msgs_agree,price_index,0.2629,0.2498,20
+qwen-on all games,words_per_msg,price_index,-0.1763,-0.1425,60
+qwen-on within primes A+B,words_per_msg,price_index,0.0004,0.0150,40
+qwen-on within placebo/headline,words_per_msg,price_index,-0.2547,-0.2110,20
+qwen-on all games,share_rounds_with_priced_talk,price_index,0.0729,0.0855,60
+qwen-on within primes A+B,share_rounds_with_priced_talk,price_index,0.1082,0.1320,40
+qwen-on within placebo/headline,share_rounds_with_priced_talk,price_index,-0.2139,-0.3121,20

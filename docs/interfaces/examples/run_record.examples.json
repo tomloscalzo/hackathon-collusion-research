@@ -1,0 +1,18 @@
+{
+  "schema": "run_record",
+  "note": "A one-round RunRecord line in the RunWriter form (the last round, replayDigest copied unchanged from the original line, of 'run --scenario scenarios/ripe-game.yaml --seed 7 --seat TIT_FOR_TAT', renumbered as round 1).",
+  "valid": [
+    {"agentIds": ["llm", "partner"], "dBarUAccumulated": 0.0, "dBarUConfigured": 0.0,
+     "replayDigest": "3395f745ac723e293b40491cd24659f8a84e946ee2ea969259339c7b3500e698",
+     "rounds": [{"agents": [
+        {"displayed": 2.09, "excluded": false, "fillPrice": 2.09, "fine": 500.0, "hiddenFill": null, "id": "llm", "info": {}, "noise": 0.2743694680853486, "observedVolume": 29.1, "ownCi": 0.5449999999999999, "payoff": 31.718999999999994, "phase": "ADHERE", "sawPriorQuotes": false, "signalEvaluated": false, "signalSeen": false, "volume": 29.1},
+        {"displayed": 2.09, "excluded": false, "fillPrice": 2.09, "fine": 500.0, "hiddenFill": null, "id": "partner", "info": {}, "noise": 0.2472622284724453, "observedVolume": 29.1, "ownCi": 0.5449999999999999, "payoff": 31.718999999999994, "phase": "ADHERE", "sawPriorQuotes": false, "signalEvaluated": false, "signalSeen": false, "volume": 29.1}],
+       "detection": {"evidence": true, "pEvidence": 1.0, "pTrigger": 0.027249999999999996, "tipActive": true, "triggered": true},
+       "endedWith": "EVIDENCE", "insideCi": 0.5449999999999999, "insideQuote": 2.09, "round": 1}],
+     "scenarioId": "ripe-game", "seed": 7, "signalEvaluations": 0, "signalFalseAlarms": 0, "signalSeen": 0, "status": "EVIDENCE", "terminalValue": 0.0}
+  ],
+  "invalid": [
+    {"why": "status is one of the four RunStatus names", "value": {"agentIds": ["a", "b"], "dBarUAccumulated": 0.0, "dBarUConfigured": 0.0, "replayDigest": "3395f745ac723e293b40491cd24659f8a84e946ee2ea969259339c7b3500e698", "rounds": [], "scenarioId": "x", "seed": 1, "signalEvaluations": 0, "signalFalseAlarms": 0, "signalSeen": 0, "status": "DETECTED", "terminalValue": 0.0}},
+    {"why": "dBarUAccumulated is always 0 in phase 1", "value": {"agentIds": ["a", "b"], "dBarUAccumulated": 0.5, "dBarUConfigured": 0.0, "replayDigest": "3395f745ac723e293b40491cd24659f8a84e946ee2ea969259339c7b3500e698", "rounds": [], "scenarioId": "x", "seed": 1, "signalEvaluations": 0, "signalFalseAlarms": 0, "signalSeen": 0, "status": "HORIZON", "terminalValue": 0.0}}
+  ]
+}

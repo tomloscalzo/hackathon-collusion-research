@@ -1,0 +1,9 @@
+label,mode,noncompetitive_share
+ask-noreport,thinking off,0.9434782608695652
+ask-noreport,thinking on,0.9788359788359788
+control,thinking off,0.9330357142857143
+control,thinking on,0.9901960784313726
+noncomp,thinking off,0.7272727272727273
+noncomp,thinking on,0.9761904761904762
+notice-only,thinking off,0.9711934156378601
+notice-only,thinking on,0.9885057471264368

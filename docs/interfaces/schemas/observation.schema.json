@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "observation.schema.json",
+  "title": "Observation (simulator -> agent input)",
+  "description": "engine.Observation as serialised by the engine's Jackson mapper (results.Canonical.MAPPER.valueToTree, sorted keys). The engine never writes Observations to disk; this is the canonical JSON form of the record that Game.observation(...) builds for one agent before it calls Agent.decide. Every field is always present; nullable fields are written as null. Phase 1: no 'messages' field (see INTERFACES.md section i for the planned optional extension).",
+  "type": "object",
+  "properties": {
+    "round": {"type": "integer", "minimum": 1, "description": "1-based round being decided."},
+    "selfId": {"type": "string", "minLength": 1, "description": "The deciding agent's roster id (AgentSpec.id)."},
+    "agentIds": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 2, "uniqueItems": true, "description": "All roster ids in roster order (GameConfig.agents), self included; size = market.n."},
+    "history": {"type": "array", "items": {"$ref": "#/$defs/pastRound"}, "description": "Completed rounds, oldest first: the last HistoryPolicy.window rounds (all when window <= 0). Empty in round 1."},
+    "choiceDraw": {"type": "number", "minimum": 0, "exclusiveMaximum": 1, "description": "One uniform on [0,1) from the agent's own stream choice:<selfId>, drawn every round whether used or not."}
+  },
+  "required": ["round", "selfId", "agentIds", "history", "choiceDraw"],
+  "additionalProperties": false,
+  "$defs": {
+    "pastRound": {
+      "title": "Observation.PastRound",
+      "type": "object",
+      "properties": {
+        "round": {"type": "integer", "minimum": 1},
+        "ownQuote": {"type": "number", "description": "Own displayed half-spread after engine snapping (QuoteGrid.snap): on the grid s0 + j*quoteIncrement, in [s0, sBar]."},
+        "ownHiddenFill": {"type": ["number", "null"], "description": "Own hidden fill price after snapping, strictly below ownQuote; null when none was quoted or it was dropped by Game.sanitize."},
+        "quotesVisible": {"type": "boolean", "description": "Whether this round's displayed quotes were shown to this agent: the uniform from signal:<selfId> drawn at the start of the following round is < observation.o. Fixed once drawn."},
+        "rivalQuotes": {"type": "object", "additionalProperties": {"type": "number"}, "description": "Displayed quotes of every other agent keyed by id (sorted). Empty object when quotesVisible is false. Hidden fills are never shown."},
+        "insideQuote": {"type": ["number", "null"], "description": "Displayed inside (best) quote of the round over the non-excluded agents (RoundRecord.insideQuote); the agent itself is included unless it was excluded that round; null when quotesVisible is false."},
+        "ownVolume": {"type": ["number", "null"], "description": "Observed own volume = true volume + demandNoiseSd * z (z standard normal from demand:<selfId>); volume units; can be negative under noise; null when observation.showOwnVolume is false."},
+        "ownFillPrice": {"type": ["number", "null"], "description": "Own volume-weighted average execution price (half-spread units); null when observation.showFillPrice is false or the agent had zero true volume."},
+        "ownExcluded": {"type": "boolean", "description": "Whether penance routing excluded this agent from contestable flow that round."}
+      },
+      "required": ["round", "ownQuote", "ownHiddenFill", "quotesVisible", "rivalQuotes", "insideQuote", "ownVolume", "ownFillPrice", "ownExcluded"],
+      "additionalProperties": false
+    }
+  }
+}

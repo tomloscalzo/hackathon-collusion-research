@@ -1,0 +1,7 @@
+model,thinking,arm,n,mean_delta_proposed_price,implied_delta_price_index,actual_delta_price_index,share_of_effect_carried_by_proposal,pair_spearman,pair_pearson
+gptoss,on,moral-prime,19,-0.6390,-0.3195,-0.3205,0.9969,0.9754,0.9881
+gptoss,on,moral-prime-b,19,-0.7587,-0.3793,-0.3768,1.0068,0.9842,0.9970
+qwen,on,moral-prime,20,-0.4517,-0.2259,-0.2232,1.0119,0.9723,0.9971
+qwen,on,moral-prime-b,20,-0.6025,-0.3013,-0.3205,0.9399,0.9744,0.9839
+qwen,off,moral-prime,18,-0.4026,-0.2013,-0.1894,1.0628,0.9579,0.9964
+qwen,off,moral-prime-b,16,-0.9358,-0.4679,-0.4630,1.0105,0.9693,0.9972

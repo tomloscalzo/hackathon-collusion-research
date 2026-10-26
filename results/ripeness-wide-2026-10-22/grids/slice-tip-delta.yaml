@@ -1,0 +1,5 @@
+id: slice-tip-delta
+base: scenarios/ripe-baseline.yaml
+parameters:
+  rhoTip: [0.0, 0.0025, 0.005, 0.01, 0.02, 0.03, 0.05, 0.075, 0.1]
+  delta: [0.5, 0.7, 0.8, 0.9, 0.95, 0.99]

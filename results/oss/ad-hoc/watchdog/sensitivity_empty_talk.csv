@@ -1,0 +1,21 @@
+contrast,metric,n_pairs,diff,lo,hi
+wd-notice-only - headline-chat (p1),market_price_mean,8,-0.0115,-0.1780,0.1302
+wd-notice-only - headline-chat (p1),price_index,8,-0.0057,-0.0880,0.0641
+wd-notice-only - headline-chat (p1),profit_gain_index,8,0.0024,-0.0687,0.0737
+wd-notice-only - headline-chat (p1),competitive_share,8,-0.1128,-0.3940,0.1104
+wd-notice-only - headline-chat (p1),matching_share,8,0.1015,-0.1688,0.3982
+wd-noncomp - wd-notice-only,market_price_mean,6,0.1107,-0.0383,0.2837
+wd-noncomp - wd-notice-only,price_index,6,0.0554,-0.0251,0.1443
+wd-noncomp - wd-notice-only,profit_gain_index,6,0.0402,-0.0356,0.1200
+wd-noncomp - wd-notice-only,competitive_share,6,-0.1008,-0.2758,0.0889
+wd-noncomp - wd-notice-only,matching_share,6,0.1447,0.0102,0.2639
+wd-noncomp - wd-ask-noreport,market_price_mean,7,0.0373,-0.0787,0.1530
+wd-noncomp - wd-ask-noreport,price_index,7,0.0186,-0.0404,0.0764
+wd-noncomp - wd-ask-noreport,profit_gain_index,7,0.0079,-0.0453,0.0594
+wd-noncomp - wd-ask-noreport,competitive_share,7,-0.2540,-0.4524,-0.0476
+wd-noncomp - wd-ask-noreport,matching_share,7,0.2154,-0.0074,0.4269
+wd-ask-noreport - headline-chat (p1),market_price_mean,6,0.2108,-0.0239,0.4269
+wd-ask-noreport - headline-chat (p1),price_index,6,0.1054,-0.0129,0.2100
+wd-ask-noreport - headline-chat (p1),profit_gain_index,6,0.1017,-0.0016,0.2127
+wd-ask-noreport - headline-chat (p1),competitive_share,6,0.0939,-0.2024,0.4021
+wd-ask-noreport - headline-chat (p1),matching_share,6,-0.0245,-0.3790,0.2593

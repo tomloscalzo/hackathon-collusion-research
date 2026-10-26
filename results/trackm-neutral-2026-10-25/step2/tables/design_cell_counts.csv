@@ -1,0 +1,9 @@
+factor,levels,min_n,median_n,max_n
+arm,32,4,40.0,160
+arm_family,10,16,86.0,480
+communication,5,40,160.0,980
+penalty_point,4,120,320.0,628
+thinking,2,674,694.0,714
+wording,5,272,276.0,284
+planned_length,4,340,340.0,340
+run,1,1388,1388.0,1388

@@ -1,0 +1,25 @@
+label,mode,rounds,asked,triggered,eligible,rate,triggered_share
+ask-noreport,thinking off,2,33,37,40,0.825,0.925
+ask-noreport,thinking off,3,33,33,36,0.9166666666666666,0.9166666666666666
+ask-noreport,thinking off,4-5,66,66,72,0.9166666666666666,0.9166666666666666
+ask-noreport,thinking off,6-8,77,87,94,0.8191489361702128,0.925531914893617
+ask-noreport,thinking off,9-12,92,92,96,0.9583333333333334,0.9583333333333334
+ask-noreport,thinking off,13+,96,119,122,0.7868852459016393,0.9754098360655737
+ask-noreport,thinking on,2,31,37,38,0.8157894736842105,0.9736842105263158
+ask-noreport,thinking on,3,30,32,32,0.9375,1.0
+ask-noreport,thinking on,4-5,57,57,60,0.95,0.95
+ask-noreport,thinking on,6-8,68,78,78,0.8717948717948718,1.0
+ask-noreport,thinking on,9-12,80,80,80,1.0,1.0
+ask-noreport,thinking on,13+,68,86,90,0.7555555555555555,0.9555555555555556
+noncomp,thinking off,2,31,33,40,0.775,0.825
+noncomp,thinking off,3,31,31,38,0.8157894736842105,0.8157894736842105
+noncomp,thinking off,4-5,59,59,76,0.7763157894736842,0.7763157894736842
+noncomp,thinking off,6-8,66,78,100,0.66,0.78
+noncomp,thinking off,9-12,79,79,104,0.7596153846153846,0.7596153846153846
+noncomp,thinking off,13+,53,72,126,0.42063492063492064,0.5714285714285714
+noncomp,thinking on,2,32,38,38,0.8421052631578947,1.0
+noncomp,thinking on,3,30,32,32,0.9375,1.0
+noncomp,thinking on,4-5,60,60,60,1.0,1.0
+noncomp,thinking on,6-8,68,78,78,0.8717948717948718,1.0
+noncomp,thinking on,9-12,80,80,80,1.0,1.0
+noncomp,thinking on,13+,64,81,90,0.7111111111111111,0.9

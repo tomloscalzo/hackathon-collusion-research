@@ -1,0 +1,5 @@
+model,arm,n,explicit_agreement_any,explicit_round_share,messages_per_round,war_after_first_undercut,rounds_played,fined
+gpt-oss-20b,headline-chat,20,1.0,0.97968,12.4639,0.94118,13.15,0.2
+Qwen3-32B,headline-chat,20,1.0,0.93364,1.23823,1.0,10.5,0.4
+gpt-oss-20b,m-asym,20,0.75,0.98393,12.92894,0.89474,12.2,0.3
+Qwen3-32B,m-asym,20,0.9,0.9614,1.3663,0.4,11.35,0.35

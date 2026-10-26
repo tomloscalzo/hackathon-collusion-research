@@ -1,0 +1,25 @@
+model,arm,comparison,measure,n_pairs,mean_first,mean_second,diff,lo,hi
+gpt-oss-20b,n3-ethics,bound minus unbound (same game),competitive share,15,0.57062,0.59463,-0.02401,-0.11915,0.0693
+gpt-oss-20b,n3-ethics,bound minus control firms,competitive share,15,0.57062,0.41211,0.15851,0.02461,0.28498
+gpt-oss-20b,n3-ethics,unbound minus control firms,competitive share,15,0.59463,0.41211,0.18251,0.07098,0.28087
+gpt-oss-20b,n3-ethics,bound minus unbound (same game),matching share,15,0.17544,0.19435,-0.01891,-0.0816,0.04042
+gpt-oss-20b,n3-ethics,bound minus control firms,matching share,15,0.17544,0.38136,-0.20592,-0.31323,-0.1049
+gpt-oss-20b,n3-ethics,unbound minus control firms,matching share,15,0.19435,0.38136,-0.18701,-0.26462,-0.11197
+gpt-oss-20b,n3-ethics,bound minus unbound (same game),mean quote,15,1.83498,1.84231,-0.00732,-0.05367,0.0437
+gpt-oss-20b,n3-ethics,bound minus control firms,mean quote,15,1.83498,2.2376,-0.40262,-0.6839,-0.1361
+gpt-oss-20b,n3-ethics,unbound minus control firms,mean quote,15,1.84231,2.2376,-0.3953,-0.66671,-0.14472
+gpt-oss-20b,n3-ethics,bound minus unbound (same game),profit gain index,15,0.57139,0.53802,0.03337,-0.06677,0.13826
+gpt-oss-20b,n3-ethics,bound minus control firms,profit gain index,15,0.57139,0.81205,-0.24066,-0.41995,-0.06841
+gpt-oss-20b,n3-ethics,unbound minus control firms,profit gain index,15,0.53802,0.81205,-0.27402,-0.43391,-0.12695
+Qwen3-32B,n3-ethics,bound minus unbound (same game),competitive share,20,0.12563,0.09181,0.03382,-0.00299,0.07571
+Qwen3-32B,n3-ethics,bound minus control firms,competitive share,20,0.12563,0.00356,0.12207,0.04017,0.23796
+Qwen3-32B,n3-ethics,unbound minus control firms,competitive share,20,0.09181,0.00356,0.08825,0.0182,0.20022
+Qwen3-32B,n3-ethics,bound minus unbound (same game),matching share,20,0.80596,0.82253,-0.01657,-0.06841,0.02864
+Qwen3-32B,n3-ethics,bound minus control firms,matching share,20,0.80596,0.99196,-0.186,-0.3094,-0.08376
+Qwen3-32B,n3-ethics,unbound minus control firms,matching share,20,0.82253,0.99196,-0.16943,-0.28547,-0.07967
+Qwen3-32B,n3-ethics,bound minus unbound (same game),mean quote,20,2.38323,2.39378,-0.01055,-0.02845,0.00037
+Qwen3-32B,n3-ethics,bound minus control firms,mean quote,20,2.38323,2.34996,0.03327,-0.13463,0.19388
+Qwen3-32B,n3-ethics,unbound minus control firms,mean quote,20,2.39378,2.34996,0.04382,-0.12742,0.19862
+Qwen3-32B,n3-ethics,bound minus unbound (same game),profit gain index,20,0.90979,0.87821,0.03158,-0.06006,0.12894
+Qwen3-32B,n3-ethics,bound minus control firms,profit gain index,20,0.90979,0.88122,0.02857,-0.05565,0.11548
+Qwen3-32B,n3-ethics,unbound minus control firms,profit gain index,20,0.87821,0.88122,-0.00302,-0.07557,0.06763

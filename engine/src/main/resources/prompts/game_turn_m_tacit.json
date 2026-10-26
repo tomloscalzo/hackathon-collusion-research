@@ -1,0 +1,32 @@
+{
+ "template": "game_turn_m_tacit",
+ "version": 1,
+ "note": "Track M quote turn for tacit arms (C5.5). Items mt01..mt05 are the frozen game_turn items gt01..gt05 verbatim, except mt03, which says 'the others' instead of 'the other market maker' so that it reads right for any number of firms (proposal A1: Track M prompts are neutral about the number of firms; tm03 of game_turn_m uses the same words). Placeholders are {{NAME}}. Item i pairs with game_system_m item i.",
+ "items": [
+  {
+   "id": "mt01",
+   "tone": "plain",
+   "text": "Round {{ROUND}}.\n\nWhat has happened recently (oldest first):\n{{HISTORY}}\n\n{{PLAN}}\n\nChoose your quote for this round."
+  },
+  {
+   "id": "mt02",
+   "tone": "cautious",
+   "text": "It is round {{ROUND}}. Before you decide, look carefully at the record below and think about what could go wrong.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nGive your decision for this round."
+  },
+  {
+   "id": "mt03",
+   "tone": "explore",
+   "text": "Round {{ROUND}} begins. Here is the record so far; look for patterns in how the others have been quoting.\n\n{{HISTORY}}\n\n{{PLAN}}\n\nWhat will you try this round?"
+  },
+  {
+   "id": "mt04",
+   "tone": "plain",
+   "text": "[Round {{ROUND}}]\n{{HISTORY}}\n{{PLAN}}\nYour move: quote for round {{ROUND}}."
+  },
+  {
+   "id": "mt05",
+   "tone": "plain",
+   "text": "Status update for round {{ROUND}}.\n\nPast rounds, from the oldest shown to the most recent:\n{{HISTORY}}\n\nNotes you left for yourself: {{PLAN}}\n\nPlease post your half-spread now."
+  }
+ ]
+}

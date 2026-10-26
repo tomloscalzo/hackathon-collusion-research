@@ -1,0 +1,9 @@
+group,n_passages,n_games,share_demand formula,share_30/70 flow split,share_profit per unit (quote minus 1.00),share_investigation probability,share_computes_with_formula,games_with_any_computing_passage
+fx-chat-p1 (formula/no-numbers arm),1309,20,0.6539,0.6341,0.6600,0.6753,0.6516,20
+fx-tacit-p1 (formula/no-numbers arm),609,20,0.9737,0.9787,0.9836,0.8966,0.9737,20
+nx-chat-p1 (formula/no-numbers arm),1609,20,0.0006,0.3810,0.1181,0.6619,0.0006,1
+nx-tacit-p1 (formula/no-numbers arm),606,20,0.0050,0.7855,0.2624,0.9373,0.0017,1
+fx-chat-p5 (formula/no-numbers arm),1442,20,0.6359,0.6207,0.6949,0.6810,0.6158,20
+"neutral headline-chat p1 (control, prints examples)",905,20,0.0022,0.1215,0.0354,0.7503,0.0022,2
+"neutral headline-tacit p1 (control, prints examples)",454,20,0.0066,0.6674,0.2048,0.9163,0.0066,3
+"neutral headline-chat p5 (control, prints examples)",1282,20,0.0008,0.2005,0.0679,0.6139,0.0000,0

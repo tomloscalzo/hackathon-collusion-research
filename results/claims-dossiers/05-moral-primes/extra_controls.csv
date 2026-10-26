@@ -1,0 +1,9 @@
+contrast,n,diff,lo,hi,p
+gpt-oss: prime A minus d-placebo (same waves 107-112),20,-0.3660,-0.4524,-0.2752,0.0000
+gpt-oss: plain chat (waves 7-12) minus d-placebo,20,-0.0674,-0.1793,0.0376,0.2512
+gpt-oss: prime B minus d-placebo (cross-wave),20,-0.4071,-0.5155,-0.2955,0.0000
+gpt-oss: placebo minus d-placebo (cross-wave),19,-0.0386,-0.1503,0.0696,0.5187
+Qwen off: drift-run plain chat minus main-run plain chat,10,0.0678,-0.1003,0.2250,0.5938
+Qwen off: prime A minus drift-run plain chat (same time),10,-0.3642,-0.5750,-0.1643,0.0156
+Qwen off: prime B minus drift-run plain chat (same time),10,-0.5774,-0.7416,-0.3894,0.0039
+Qwen off: placebo minus drift-run plain chat (same time),10,-0.0918,-0.2327,0.0500,0.3438

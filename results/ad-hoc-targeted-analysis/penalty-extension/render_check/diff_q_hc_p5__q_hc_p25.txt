@@ -1,0 +1,5 @@
+--- q_hc_p5
++++ q_hc_p25
+@@ -15 +15 @@
+-In every round regulators may open an investigation. Its probability rises with the best quote in the market: it is 0.025 times the amount by which the best quote exceeds 1.00, at most 1. At a best quote of 2.00 it is 2.5% per round; at 1.00 or below it is zero. An opened investigation ends the game. With probability 100.0% it finds evidence of coordination, and then every market maker pays a penalty of 2000; otherwise no penalty is paid.
++In every round regulators may open an investigation. Its probability rises with the best quote in the market: it is 0.025 times the amount by which the best quote exceeds 1.00, at most 1. At a best quote of 2.00 it is 2.5% per round; at 1.00 or below it is zero. An opened investigation ends the game. With probability 100.0% it finds evidence of coordination, and then every market maker pays a penalty of 2500; otherwise no penalty is paid.

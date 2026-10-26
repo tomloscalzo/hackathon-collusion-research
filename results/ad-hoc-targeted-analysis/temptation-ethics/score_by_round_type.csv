@@ -1,0 +1,49 @@
+mm,cell,round_type,count,mean
+oss-t1,C,above rival,73,1.068
+oss-t1,C,competitive,149,1.107
+oss-t1,C,matching,193,1.078
+oss-t1,C,round 1 (not scored),40,1.150
+oss-t1,CE,above rival,87,1.023
+oss-t1,CE,competitive,252,1.067
+oss-t1,CE,matching,118,1.025
+oss-t1,CE,round 1 (not scored),40,1.000
+oss-t1,TA,above rival,67,3.030
+oss-t1,TA,competitive,173,2.468
+oss-t1,TA,matching,208,2.812
+oss-t1,TA,round 1 (not scored),39,2.872
+oss-t1,TE,above rival,83,1.651
+oss-t1,TE,competitive,230,1.535
+oss-t1,TE,matching,133,1.647
+oss-t1,TE,round 1 (not scored),40,1.675
+qwen-t0,C,above rival,29,1.034
+qwen-t0,C,competitive,68,1.000
+qwen-t0,C,matching,361,1.000
+qwen-t0,C,round 1 (not scored),40,1.000
+qwen-t0,CE,above rival,104,1.115
+qwen-t0,CE,competitive,131,1.000
+qwen-t0,CE,matching,181,1.000
+qwen-t0,CE,round 1 (not scored),40,1.000
+qwen-t0,TA,above rival,5,3.200
+qwen-t0,TA,competitive,2,2.000
+qwen-t0,TA,matching,441,2.082
+qwen-t0,TA,round 1 (not scored),40,2.625
+qwen-t0,TE,above rival,100,2.140
+qwen-t0,TE,competitive,97,2.103
+qwen-t0,TE,matching,263,2.087
+qwen-t0,TE,round 1 (not scored),40,2.000
+qwen-t1,C,above rival,2,1.000
+qwen-t1,C,competitive,1,2.000
+qwen-t1,C,matching,359,1.003
+qwen-t1,C,round 1 (not scored),40,1.025
+qwen-t1,CE,above rival,27,1.037
+qwen-t1,CE,competitive,46,1.652
+qwen-t1,CE,matching,307,1.052
+qwen-t1,CE,round 1 (not scored),40,1.375
+qwen-t1,TA,above rival,2,2.500
+qwen-t1,TA,competitive,2,4.000
+qwen-t1,TA,matching,364,2.231
+qwen-t1,TA,round 1 (not scored),40,2.600
+qwen-t1,TE,above rival,19,3.105
+qwen-t1,TE,competitive,57,2.807
+qwen-t1,TE,matching,338,2.393
+qwen-t1,TE,round 1 (not scored),40,2.650

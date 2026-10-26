@@ -1,0 +1,64 @@
+# N=4 variant (P4): three TriggerK partners held at s(0.546), k=inf, tol 0 (own CI minus partner CI is the P4 statistic).
+# Game config for M3 sweeps. The seat id 'llm' (category M, kind LLM) is a placeholder: M4's LlmAgent fills it, and in M3
+# a sweep cell replaces it by a scripted agent (TitForTat / TriggerK / NoiseAgent ...). Not playable as is.
+id: n4-variant
+market:
+  n: 4
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 500
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: SCENARIO
+agents:
+  - id: llm
+    category: M
+    kind: LLM
+  - id: partner
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.546, k: -1, tolerance: 0}
+  - id: partner2
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.546, k: -1, tolerance: 0}
+  - id: partner3
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.546, k: -1, tolerance: 0}

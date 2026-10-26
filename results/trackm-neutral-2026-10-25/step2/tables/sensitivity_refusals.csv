@@ -1,0 +1,9 @@
+est,lo,hi,p,n,sd,contrast,mode,subset,outcome
+0.1885,0.1281,0.248,9.999e-05,20,0.1887,chat minus tacit,t0,all games,pgi
+0.1885,0.1284,0.2453,9.999e-05,20,0.1887,chat minus tacit,t0,games without refusals/imputed rounds,pgi
+0.01263,-0.01936,0.04417,0.4348,20,0.08669,monitored minus chat,t0,all games,pgi
+0.01263,-0.01999,0.04427,0.4312,20,0.08669,monitored minus chat,t0,games without refusals/imputed rounds,pgi
+0.1652,0.1244,0.2031,9.999e-05,20,0.1173,chat minus tacit,t1,all games,pgi
+0.1505,0.1108,0.1892,9.999e-05,17,0.1179,chat minus tacit,t1,games without refusals/imputed rounds,pgi
+0.02203,-0.01753,0.06595,0.3002,20,0.1112,monitored minus chat,t1,all games,pgi
+0.02203,-0.01831,0.06661,0.3066,20,0.1112,monitored minus chat,t1,games without refusals/imputed rounds,pgi

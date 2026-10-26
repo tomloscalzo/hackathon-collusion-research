@@ -1,0 +1,57 @@
+run,thinking,outcome,predictor,n_firm_rounds,n_events,base_rate,auc,lo,hi,flagged,event_rate_if_flagged,event_rate_if_not
+neutral,off,undercut next round,change in temptation (this round minus previous),762,19.0,0.024934383202099737,0.49458100162924135,0.48547642552244824,0.5229760041122457,,,
+neutral,off,undercut next round,temptation level this round,762,19.0,0.024934383202099737,0.3787631933130268,0.2733867270896693,0.8198753791762795,,,
+neutral,off,undercut next round,temptation minus firm's own mean,762,19.0,0.024934383202099737,0.534178649854785,0.4954670898656664,0.6536440654257898,,,
+neutral,off,undercut next round,flag: temptation rose >= 1,762,19.0,0.024934383202099737,,,,118.0,0.0,0.029503105590062112
+neutral,off,market price rises next round,change in temptation (this round minus previous),762,10.0,0.013123359580052493,0.5436170212765957,0.17779960881934567,0.8318606576701993,,,
+neutral,off,market price rises next round,temptation level this round,762,10.0,0.013123359580052493,0.7746010638297872,0.6479802308552666,0.8919064959994838,,,
+neutral,off,market price rises next round,temptation minus firm's own mean,762,10.0,0.013123359580052493,0.4999335106382979,0.37458992723786777,0.7150035874244467,,,
+neutral,off,market price rises next round,flag: temptation rose >= 1,762,10.0,0.013123359580052493,,,,118.0,0.03389830508474576,0.009316770186335404
+neutral,off,own quote rises next round,change in temptation (this round minus previous),762,10.0,0.013123359580052493,0.5436170212765957,0.17895943309424028,0.8305751545943993,,,
+neutral,off,own quote rises next round,temptation level this round,762,10.0,0.013123359580052493,0.7746010638297872,0.646712262354072,0.8940658260764393,,,
+neutral,off,own quote rises next round,temptation minus firm's own mean,762,10.0,0.013123359580052493,0.4999335106382979,0.37336488507556675,0.7103068564187751,,,
+neutral,off,own quote rises next round,flag: temptation rose >= 1,762,10.0,0.013123359580052493,,,,118.0,0.03389830508474576,0.009316770186335404
+neutral,off,next-round change in own quote (continuous),Spearman rho: temptation minus own mean vs next-round quote change,762,,,-0.012227180204681642,-0.0545892915654277,0.03984293836937584,,,
+neutral,off,next-round change in own quote (continuous),Spearman rho: change in temptation vs next-round quote change,762,,,0.016199123343234267,-0.12870037137529514,0.1623854176849223,,,
+neutral,on,undercut next round,change in temptation (this round minus previous),640,2.0,0.003125,0.6908307210031348,0.5101430695655669,0.8723474669055439,,,
+neutral,on,undercut next round,temptation level this round,640,2.0,0.003125,0.8377742946708464,0.7845469281128037,0.8848301232650532,,,
+neutral,on,undercut next round,temptation minus firm's own mean,640,2.0,0.003125,0.8154388714733543,0.7244954605321573,0.889113779894399,,,
+neutral,on,undercut next round,flag: temptation rose >= 1,640,2.0,0.003125,,,,142.0,0.007042253521126761,0.002008032128514056
+neutral,on,market price rises next round,change in temptation (this round minus previous),640,2.0,0.003125,0.9192789968652038,0.9037773431399344,0.931075537460288,,,
+neutral,on,market price rises next round,temptation level this round,640,2.0,0.003125,0.8977272727272727,0.8592327848781653,0.9234417691256831,,,
+neutral,on,market price rises next round,temptation minus firm's own mean,640,2.0,0.003125,0.942398119122257,0.9104194899401397,0.9549552845528455,,,
+neutral,on,market price rises next round,flag: temptation rose >= 1,640,2.0,0.003125,,,,142.0,0.014084507042253521,0.0
+neutral,on,own quote rises next round,change in temptation (this round minus previous),640,1.0,0.0015625,0.8661971830985915,0.8451674170751169,0.8793307481344361,,,
+neutral,on,own quote rises next round,temptation level this round,640,1.0,0.0015625,0.956964006259781,0.9247749549677811,0.9707761913555648,,,
+neutral,on,own quote rises next round,temptation minus firm's own mean,640,1.0,0.0015625,0.9608763693270735,0.9346786420438116,0.9731119351378947,,,
+neutral,on,own quote rises next round,flag: temptation rose >= 1,640,1.0,0.0015625,,,,142.0,0.007042253521126761,0.0
+neutral,on,next-round change in own quote (continuous),Spearman rho: temptation minus own mean vs next-round quote change,640,,,-0.013409312892216498,-0.07886991243062058,0.031171665898165453,,,
+neutral,on,next-round change in own quote (continuous),Spearman rho: change in temptation vs next-round quote change,640,,,-0.0013774276323481585,-0.0043832703543717115,0.0,,,
+anchored,off,undercut next round,change in temptation (this round minus previous),820,12.0,0.014634146341463415,0.45142326732673266,0.3266429592276993,0.5206610702659502,,,
+anchored,off,undercut next round,temptation level this round,820,12.0,0.014634146341463415,0.5930280528052805,0.3517354647994769,0.7710869660724681,,,
+anchored,off,undercut next round,temptation minus firm's own mean,820,12.0,0.014634146341463415,0.3679352310231023,0.19719127640616158,0.490417824307291,,,
+anchored,off,undercut next round,flag: temptation rose >= 1,820,12.0,0.014634146341463415,,,,167.0,0.005988023952095809,0.016845329249617153
+anchored,off,market price rises next round,change in temptation (this round minus previous),820,28.0,0.03414634146341464,0.6394074675324676,0.5440899070895964,0.770289004656133,,,
+anchored,off,market price rises next round,temptation level this round,820,28.0,0.03414634146341464,0.7033730158730159,0.5125214195526696,0.8362819486807138,,,
+anchored,off,market price rises next round,temptation minus firm's own mean,820,28.0,0.03414634146341464,0.5312950937950938,0.31005208778312543,0.6665318672677404,,,
+anchored,off,market price rises next round,flag: temptation rose >= 1,820,28.0,0.03414634146341464,,,,167.0,0.05389221556886228,0.02909647779479326
+anchored,off,own quote rises next round,change in temptation (this round minus previous),820,25.0,0.03048780487804878,0.6383396226415095,0.5272970662759106,0.7599474949392712,,,
+anchored,off,own quote rises next round,temptation level this round,820,25.0,0.03048780487804878,0.7368050314465409,0.5531084487647161,0.8514332250570911,,,
+anchored,off,own quote rises next round,temptation minus firm's own mean,820,25.0,0.03048780487804878,0.5560503144654088,0.29649427556427194,0.6791779943874277,,,
+anchored,off,own quote rises next round,flag: temptation rose >= 1,820,25.0,0.03048780487804878,,,,167.0,0.04790419161676647,0.026033690658499236
+anchored,off,next-round change in own quote (continuous),Spearman rho: temptation minus own mean vs next-round quote change,820,,,0.03791150557618552,-0.03560480379880286,0.11068247282405387,,,
+anchored,off,next-round change in own quote (continuous),Spearman rho: change in temptation vs next-round quote change,820,,,0.08842058606967708,0.019834638563330502,0.15536310009003085,,,
+anchored,on,undercut next round,change in temptation (this round minus previous),820,5.0,0.006097560975609756,0.6705521472392638,0.1350793866443146,0.8050202235499463,,,
+anchored,on,undercut next round,temptation level this round,820,5.0,0.006097560975609756,0.6879754601226994,0.3174858812869999,0.7951733117816091,,,
+anchored,on,undercut next round,temptation minus firm's own mean,820,5.0,0.006097560975609756,0.6131288343558282,0.08776896942242356,0.749156366461999,,,
+anchored,on,undercut next round,flag: temptation rose >= 1,820,5.0,0.006097560975609756,,,,202.0,0.01485148514851485,0.003236245954692557
+anchored,on,market price rises next round,change in temptation (this round minus previous),820,26.0,0.03170731707317073,0.5000968804495253,0.48671442706084,0.5468120556872038,,,
+anchored,on,market price rises next round,temptation level this round,820,26.0,0.03170731707317073,0.7992637085836078,0.5014365671641791,0.8676596858339244,,,
+anchored,on,market price rises next round,temptation minus firm's own mean,820,26.0,0.03170731707317073,0.4642268940127882,0.4298823774324381,0.49002439609373394,,,
+anchored,on,market price rises next round,flag: temptation rose >= 1,820,26.0,0.03170731707317073,,,,202.0,0.04455445544554455,0.02750809061488673
+anchored,on,own quote rises next round,change in temptation (this round minus previous),820,26.0,0.03170731707317073,0.5000968804495253,0.4867803616495829,0.5466288410986222,,,
+anchored,on,own quote rises next round,temptation level this round,820,26.0,0.03170731707317073,0.7992637085836078,0.5022043936965812,0.8635997167389573,,,
+anchored,on,own quote rises next round,temptation minus firm's own mean,820,26.0,0.03170731707317073,0.4642268940127882,0.43151820962320203,0.4888798014881524,,,
+anchored,on,own quote rises next round,flag: temptation rose >= 1,820,26.0,0.03170731707317073,,,,202.0,0.04455445544554455,0.02750809061488673
+anchored,on,next-round change in own quote (continuous),Spearman rho: temptation minus own mean vs next-round quote change,820,,,-0.0324308496926928,-0.08585306140367127,0.049936274290167906,,,
+anchored,on,next-round change in own quote (continuous),Spearman rho: change in temptation vs next-round quote change,820,,,-0.019427367514174402,-0.11145443886956007,0.050289362215205954,,,

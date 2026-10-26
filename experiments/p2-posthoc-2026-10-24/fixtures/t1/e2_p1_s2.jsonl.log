@@ -1,0 +1,14 @@
+Picked up JAVA_TOOL_OPTIONS: -Xmx256m
+Oct 23, 2026 10:09:08 PM io.github.tomloscalzo.collusion.llm.OpenAiCompatibleClient complete
+WARNING: reply thinking not in the requested state (<think> in the content, or reasoning with thinking off), draw game|ripe-game|s2|llm|r1|a0
+Exception in thread "main" io.github.tomloscalzo.collusion.llm.LlmException: HTTP 400 from https://modal.example/v1/chat/completions: {"object":"error","message":"This model's maximum context length is 16384 tokens. However, you requested 17133 tokens (8941 in the messages, 8192 in the completion). Please reduce the length of the messages or completion. None","type":"BadRequestError","param":null,"code":400}
+	at io.github.tomloscalzo.collusion.llm.OpenAiCompatibleClient.complete(OpenAiCompatibleClient.java:243)
+	at io.github.tomloscalzo.collusion.llm.BudgetedLlmClient.complete(BudgetedLlmClient.java:15)
+	at io.github.tomloscalzo.collusion.llm.CachingLlmClient.complete(CachingLlmClient.java:51)
+	at io.github.tomloscalzo.collusion.agents.llm.LlmAgent.decide(LlmAgent.java:171)
+	at io.github.tomloscalzo.collusion.engine.Game.run(Game.java:93)
+	at io.github.tomloscalzo.collusion.agents.llm.LlmGame.run(LlmGame.java:86)
+	at io.github.tomloscalzo.collusion.agents.llm.LlmGame.run(LlmGame.java:59)
+	at io.github.tomloscalzo.collusion.cli.LlmCommands.run(LlmCommands.java:325)
+	at io.github.tomloscalzo.collusion.cli.Main.run(Main.java:100)
+	at io.github.tomloscalzo.collusion.cli.Main.main(Main.java:34)

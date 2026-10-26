@@ -1,0 +1,21 @@
+opening,thinking,metric,metric_name,n_pairs,copier_mean,headline_mean,diff,ci_lo,ci_hi,p_signflip,p_holm_within_metric
+2.50,off,avg_abs_spread,Average absolute spread,20,2.0105,1.94693,0.06358,-0.137,0.23919,0.53281,1.0
+2.50,off,price_index,Price index,20,0.50525,0.47346,0.03179,-0.07133,0.11871,0.53281,1.0
+2.50,off,profit_gain_index,Profit gain index,20,0.71911,0.69676,0.02236,-0.11077,0.13211,0.74071,1.0
+2.50,off,competitive_share,Competitive share (U16),20,0.19078,0.23128,-0.04051,-0.22051,0.16322,0.69315,1.0
+2.50,off,matching_share,Matching share,20,0.76841,0.63042,0.13799,-0.1111,0.37348,0.29904,1.0
+2.50,on,avg_abs_spread,Average absolute spread,20,2.40387,2.37908,0.02479,-0.14376,0.17427,0.79995,1.0
+2.50,on,price_index,Price index,20,0.70194,0.68954,0.01239,-0.07546,0.08717,0.79995,1.0
+2.50,on,profit_gain_index,Profit gain index,20,1.01255,0.87888,0.13367,0.03792,0.2257,0.01314,0.03941
+2.50,on,competitive_share,Competitive share (U16),20,0.39497,0.38965,0.00533,-0.17307,0.19058,0.95579,1.0
+2.50,on,matching_share,Matching share,20,0.54167,0.53228,0.0094,-0.18927,0.20517,0.92572,1.0
+1.50,off,avg_abs_spread,Average absolute spread,20,1.97726,1.94693,0.03033,-0.09403,0.14896,0.63892,1.0
+1.50,off,price_index,Price index,20,0.48863,0.47346,0.01517,-0.04679,0.07518,0.63892,1.0
+1.50,off,profit_gain_index,Profit gain index,20,0.73317,0.69676,0.03641,-0.06636,0.14756,0.5382,1.0
+1.50,off,competitive_share,Competitive share (U16),20,0.15814,0.23128,-0.07314,-0.20053,0.04278,0.26819,0.81848
+1.50,off,matching_share,Matching share,20,0.55601,0.63042,-0.07441,-0.26689,0.12725,0.48476,1.0
+1.50,on,avg_abs_spread,Average absolute spread,20,1.4808,2.37908,-0.89829,-1.00148,-0.78945,0.0,1e-05
+1.50,on,price_index,Price index,20,0.2404,0.68954,-0.44914,-0.50173,-0.39307,0.0,1e-05
+1.50,on,profit_gain_index,Profit gain index,20,0.47821,0.87888,-0.40067,-0.45301,-0.33954,0.0,1e-05
+1.50,on,competitive_share,Competitive share (U16),20,0.5087,0.38965,0.11905,-0.05744,0.29396,0.20462,0.81848
+1.50,on,matching_share,Matching share,20,0.45047,0.53228,-0.08181,-0.23753,0.07198,0.32615,1.0

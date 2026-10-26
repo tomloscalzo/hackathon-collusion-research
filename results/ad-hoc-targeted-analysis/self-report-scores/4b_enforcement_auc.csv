@@ -1,0 +1,11 @@
+run,thinking,label,score,n_games,n_pos,auc,lo,hi
+neutral,off,sustained high price (mean index >= 0.5),max temptation score in game,40,35,0.4685714285714286,0.14473684210526316,0.8
+neutral,off,sustained high price (mean index >= 0.5),mean temptation score in game,40,35,0.6685714285714286,0.08237612612612613,1.0
+neutral,off,sustained high price (mean index >= 0.5),price screen strength (best 2-round-min price),40,35,0.9742857142857143,0.882589497392129,1.0
+neutral,off,sustained high price (mean index >= 0.5),"mean temptation score, rounds 1-3",40,35,0.6542857142857142,0.21794871794871795,0.9210526315789473
+neutral,off,sustained high price (mean index >= 0.5),"mean market price, rounds 1-3",40,35,1.0,1.0,1.0
+anchored,off,sustained high price (mean index >= 0.5),max temptation score in game,40,29,0.4278996865203762,0.23214285714285715,0.6577946428571428
+anchored,off,sustained high price (mean index >= 0.5),mean temptation score in game,40,29,0.5736677115987461,0.36991666666666667,0.81640625
+anchored,off,sustained high price (mean index >= 0.5),price screen strength (best 2-round-min price),40,29,0.9545454545454546,0.8794642857142857,1.0
+anchored,off,sustained high price (mean index >= 0.5),"mean temptation score, rounds 1-3",40,29,0.5924764890282131,0.40024801587301584,0.7653614420062695
+anchored,off,sustained high price (mean index >= 0.5),"mean market price, rounds 1-3",40,29,0.9905956112852664,0.9583170062695925,1.0

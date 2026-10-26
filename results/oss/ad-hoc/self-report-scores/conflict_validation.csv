@@ -1,0 +1,4 @@
+metric,n_pairs,mean_no_rule,mean_ethics,diff,lo,hi
+conflict score (game mean),20,1.0909,1.0449,-0.0460,-0.0785,-0.0115
+"answers above 1 (d-conflict): n answers, n above 1, games with any above 1",455,34,16
+"answers above 1 (d-conflict-ethics): n answers, n above 1, games with any above 1",497,19,11

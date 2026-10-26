@@ -1,0 +1,71 @@
+split,rating,outcome,spearman,n_games
+pooled,claude_conflict,market_price_mean,-0.0104,1360
+pooled,claude_conflict,price_index,-0.0104,1360
+pooled,claude_conflict,profit_gain_index,-0.0147,1360
+pooled,claude_conflict,competitive_share,0.0605,1360
+pooled,claude_conflict,matching_share,-0.0055,1360
+pooled,claude_conflict,undercut_count,0.01,1360
+pooled,claude_conflict,rounds_played,-0.0191,1360
+pooled,claude_temptation,market_price_mean,0.4305,1360
+pooled,claude_temptation,price_index,0.4306,1360
+pooled,claude_temptation,profit_gain_index,0.4284,1360
+pooled,claude_temptation,competitive_share,-0.434,1360
+pooled,claude_temptation,matching_share,0.3986,1360
+pooled,claude_temptation,undercut_count,-0.2566,1360
+pooled,claude_temptation,rounds_played,-0.0773,1360
+thinking off,claude_conflict,market_price_mean,0.0338,660
+thinking off,claude_conflict,price_index,0.0338,660
+thinking off,claude_conflict,profit_gain_index,0.0281,660
+thinking off,claude_conflict,competitive_share,0.0029,660
+thinking off,claude_conflict,matching_share,0.075,660
+thinking off,claude_conflict,undercut_count,-0.0971,660
+thinking off,claude_conflict,rounds_played,-0.0234,660
+thinking off,claude_temptation,market_price_mean,0.2862,660
+thinking off,claude_temptation,price_index,0.2862,660
+thinking off,claude_temptation,profit_gain_index,0.2805,660
+thinking off,claude_temptation,competitive_share,-0.3015,660
+thinking off,claude_temptation,matching_share,0.2784,660
+thinking off,claude_temptation,undercut_count,-0.0903,660
+thinking off,claude_temptation,rounds_played,-0.066,660
+thinking on,claude_conflict,market_price_mean,-0.0844,700
+thinking on,claude_conflict,price_index,-0.0845,700
+thinking on,claude_conflict,profit_gain_index,-0.0871,700
+thinking on,claude_conflict,competitive_share,0.1028,700
+thinking on,claude_conflict,matching_share,-0.0811,700
+thinking on,claude_conflict,undercut_count,0.0409,700
+thinking on,claude_conflict,rounds_played,-0.0113,700
+thinking on,claude_temptation,market_price_mean,0.5892,700
+thinking on,claude_temptation,price_index,0.5894,700
+thinking on,claude_temptation,profit_gain_index,0.5896,700
+thinking on,claude_temptation,competitive_share,-0.5529,700
+thinking on,claude_temptation,matching_share,0.515,700
+thinking on,claude_temptation,undercut_count,-0.3642,700
+thinking on,claude_temptation,rounds_played,-0.0908,700
+chat arms,claude_conflict,market_price_mean,-0.0975,1200
+chat arms,claude_conflict,price_index,-0.0976,1200
+chat arms,claude_conflict,profit_gain_index,-0.1034,1200
+chat arms,claude_conflict,competitive_share,0.2179,1200
+chat arms,claude_conflict,matching_share,-0.1374,1200
+chat arms,claude_conflict,undercut_count,0.1305,1200
+chat arms,claude_conflict,rounds_played,-0.0055,1200
+chat arms,claude_temptation,market_price_mean,0.3571,1200
+chat arms,claude_temptation,price_index,0.3572,1200
+chat arms,claude_temptation,profit_gain_index,0.3517,1200
+chat arms,claude_temptation,competitive_share,-0.3019,1200
+chat arms,claude_temptation,matching_share,0.2748,1200
+chat arms,claude_temptation,undercut_count,-0.1714,1200
+chat arms,claude_temptation,rounds_played,-0.0662,1200
+tacit (no chat),claude_conflict,market_price_mean,-0.0999,160
+tacit (no chat),claude_conflict,price_index,-0.0996,160
+tacit (no chat),claude_conflict,profit_gain_index,-0.0977,160
+tacit (no chat),claude_conflict,competitive_share,-0.0643,160
+tacit (no chat),claude_conflict,matching_share,0.1323,160
+tacit (no chat),claude_conflict,undercut_count,-0.0681,160
+tacit (no chat),claude_conflict,rounds_played,-0.0353,160
+tacit (no chat),claude_temptation,market_price_mean,0.2759,160
+tacit (no chat),claude_temptation,price_index,0.2761,160
+tacit (no chat),claude_temptation,profit_gain_index,0.2775,160
+tacit (no chat),claude_temptation,competitive_share,-0.1155,160
+tacit (no chat),claude_temptation,matching_share,0.1153,160
+tacit (no chat),claude_temptation,undercut_count,0.0202,160
+tacit (no chat),claude_temptation,rounds_played,-0.0602,160

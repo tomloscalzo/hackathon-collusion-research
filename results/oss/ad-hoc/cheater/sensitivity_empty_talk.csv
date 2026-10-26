@@ -1,0 +1,11 @@
+contrast,metric,n_pairs,diff,lo,hi
+n3-cheater - n3-group,market_price_mean,8,-0.4767,-0.6258,-0.3122
+n3-cheater - n3-group,price_index,8,-0.2384,-0.3173,-0.1576
+n3-cheater - n3-group,profit_gain_index,8,-0.4172,-0.5702,-0.2874
+n3-cheater - n3-group,competitive_share,8,-0.0604,-0.2445,0.1276
+n3-cheater - n3-group,matching_share,8,0.1356,-0.1407,0.4015
+n3-cheater - headline-chat (p3),market_price_mean,11,-0.5797,-0.6754,-0.4618
+n3-cheater - headline-chat (p3),price_index,11,-0.2899,-0.3369,-0.2321
+n3-cheater - headline-chat (p3),profit_gain_index,11,-0.4201,-0.5402,-0.3068
+n3-cheater - headline-chat (p3),competitive_share,11,-0.1020,-0.2515,0.0527
+n3-cheater - headline-chat (p3),matching_share,11,0.0793,-0.1044,0.2467

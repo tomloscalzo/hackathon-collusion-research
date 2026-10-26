@@ -1,0 +1,69 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Paper kit: Track M, anchored comparison run (Batch 1)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}small table{font-size:.8em;margin:.3rem 0 1rem}small{font-size:.85em;color:var(--muted)}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1 id="paper-kit-track-m-anchored-comparison-run-batch-1">Paper kit: Track M, anchored comparison run (Batch 1)</h1>
+<blockquote><p><strong>This batch is the ANCHORED comparison run.</strong> The primary results are the neutral run, analysed separately. Use this kit for the anchoring section and the comparison panels; the headline sections come from the neutral kit. Created by Claude at the prompting of the repository owner.</p></blockquote>
+<p><strong>Orientation.</strong> Two or three language-model agents (Qwen3-32B) play market makers in a repeated pricing game (quotes 1.00 competitive to 3.00 monopoly, about 20 rounds, a regulator who may fine coordination). This kit prepares the paper's comparison panels from the <strong>anchored</strong> run (the payoff table prints 1.54, 2.09 and 3.00); the primary results come from the neutral run. The conditions are no chat, private chat and private chat with a notice that a regulator reads it, four penalty points, thinking off or on, and side arms described in the Step 2 report.</p>
+<blockquote><p><strong>How to read the metrics</strong></p>
+<ul><li>
+<strong>Price index</strong> = (market price − 1) / 2, averaged over rounds. 0 = competitive (price 1.00), 1 = monopoly (price 3.00).
+</li><li>
+<strong>Competitive share</strong> (unit U16): share of scored rounds in which a firm undercuts the rival's previous quote, or both firms are at 1.00. Higher = more competitive.
+</li><li>
+<strong>Profit gain index</strong> = (profit − competitive profit) / (monopoly profit − competitive profit). 0 = competitive profit, 1 = monopoly (joint-profit) level.
+</li><li>
+<strong>Matching share</strong>: share of scored rounds in which a firm matches the rival's previous quote (above the floor), i.e. follows rather than undercuts.
+</li><li>
+<strong>t0 / t1</strong> = thinking off / on (the model's reasoning mode).
+</li><li>
+<strong>p1 / p3 / p4 / p5</strong> = penalty points (1 = collusion clearly pays, 5 = clearly does not); theory's sustainable collusive level θ* = 0.703 / 0.546 / 0.325 / 0.
+</li><li>
+<strong>tacit / chat / monitored</strong> = no chat channel / private chat between the two firms / private chat plus a notice that a regulator reads it (text only).
+</li><li>
+<strong>Anchored vs neutral</strong> = payoff-table variants: anchored prints worked examples at 1.54, 2.09 and 3.00 (2.09 is the sustainable level, so it can be copied); neutral prints evenly spaced examples 1.00 to 4.00.
+</li><li>
+<strong>CI</strong> = 95% paired bootstrap interval over the 20 (wording, seed) pairs. <strong>Holm</strong> = Holm's step-down correction for running many tests at once (adjusted p).
+</li></ul>
+<p>Note on wording: this report's own definition of competitive share (see its Terms tables) is the exact one: a firm undercuts the lowest rival quote of the previous round by at least one tick, or sits at the floor against a floor rival; matching means within half a tick of the rival's lowest quote, above the floor. Rounds are scored from round 2 (round 1 has no previous quote).</p></blockquote>
+<h2 id="three-candidate-titles">Three candidate titles</h2>
+<ol><li>
+<strong>Plain:</strong> Two language-model pricing agents hold prices above the competitive level, and a printed example can pull them to it.
+</li><li>
+<strong>Led by the finding:</strong> The number in the prompt is a magnet: printed examples are associated with where LLM pricing agents settle.
+</li><li>
+<strong>Led by the question:</strong> Does telling AI market makers that a regulator reads their chat stop them from coordinating prices?
+</li></ol>
+<h2 id="abstract-draft-to-be-reconciled-with-the-neutral-run">Abstract draft (to be reconciled with the neutral run)</h2>
+<p>Repeated-pricing games between two Qwen3-32B agents let us test which restrictions reduce tacit and explicit coordination, and whether worked examples in the prompt leak the answer. In a comparison run whose prompt printed a payoff example at the theory's collusive level (2.09), 40% to 48% of quotes sat exactly at that number, and prices were lower than in a run with evenly spaced examples, consistent with the examples capping rather than inflating coordination (an association; the comparison run is interim). Private chat raised the profit gain index over no chat by +0.24 (95% CI 0.18 to 0.31) with reasoning off and +0.15 (0.11 to 0.19) with reasoning on, over 20 paired (wording, seed) units per cell; telling firms that a regulator reads the chat changed nothing (-0.04, CIs spanning 0). The heaviest penalty reduced the index by 0.33 (0.17 to 0.49) only when the model reasoned, and a first-quote cap cut the price index by 0.35 to 0.42. All results are exploratory or descriptive, for one model and one game, with a text-only notice and an idle monitoring threat; effects below about 0.25 are not detectable at this size. Evaluation designers should use neutral or randomised examples. (Word count: 197.)</p>
+<h2 id="section-outline-8-pages">Section outline (8 pages)</h2>
+<table><tr><th>Section</th><th>Pages</th><th>Content</th></tr><tr><td>1 Introduction</td><td>0.75</td><td>question, why examples matter</td></tr><tr><td>2 Setup</td><td>1.25</td><td>game, agents, arms, runs, declarations</td></tr><tr><td>3 Methods</td><td>1</td><td>paired bootstrap, declared vs exploratory, truncation reruns</td></tr><tr><td>4 Results: anchoring</td><td>1.25</td><td>focal points, anchored vs neutral</td></tr><tr><td>5 Results: levers</td><td>1.75</td><td>communication, penalty, first-quote cap, notice</td></tr><tr><td>6 Results: monitoring and detection</td><td>1</td><td>channel shift, frozen detectors</td></tr><tr><td>7 Limitations and dual use</td><td>0.75</td><td></td></tr><tr><td>Total</td><td>7.75 plus 0.25 reproducibility = 8</td><td></td></tr></table>
+<h2 id="figure-plan-4-to-6-figures-1-to-2-tables">Figure plan (4 to 6 figures, 1 to 2 tables)</h2>
+<table><tr><th>Figure</th><th>File</th><th>Claim</th><th>Caption (takeaway, n)</th><th>Redraw?</th></tr><tr><td>Headline curve against theory</td><td><code>../step2/figures/fig1_gain_vs_penalty_anchored.png</code></td><td>gain does not fall with penalty except with reasoning on</td><td>"Profit gain by penalty point; 20 pairs per cell"</td><td>check axis labels for codes</td></tr><tr><td>Anchoring</td><td><code>../step2/figures/fig4_anchoring.png</code></td><td>printed 2.09 captures quotes</td><td>"40% to 48% of quotes at 2.09 (480 games)"</td><td>needs neutral final</td></tr><tr><td>Lever forest</td><td><code>../step2/figures/levers_anchored.png</code></td><td>5-tick start is the largest lever</td><td>"Price-index change versus control; 20 pairs"</td><td>add MDE band</td></tr><tr><td>Communication</td><td><code>../step2/figures/fig2_communication_anchored.png</code></td><td>chat over no chat</td><td>"Chat minus no chat; 20 pairs"</td><td></td></tr><tr><td>Channel shift</td><td><code>../step2/figures/channel_shift.png</code></td><td>no shift, suppression only for the idle threat</td><td>"Message versus action change"</td><td>codes on axes</td></tr><tr><td>Detection</td><td><code>../step2/figures/detect_roc_anchored.png</code></td><td>quotes beat text</td><td>"Early-warning ROC"</td><td>n on figure</td></tr></table>
+<small>
+<p><strong>Terms used in the figure plan</strong></p>
+<table><tr><th>Term</th><th>Meaning</th></tr><tr><td>Figure / File</td><td>The planned paper figure and the PNG in <code>../step2/figures/</code> that supplies it (each is captioned in the Step 2 report).</td></tr><tr><td>Claim</td><td>The one-sentence point the figure should support.</td></tr><tr><td>Caption (takeaway, n)</td><td>Draft caption: takeaway and number of pairs or games behind it. 20 pairs = 20 (wording, seed) pairs, one game per pair per condition.</td></tr><tr><td>Redraw?</td><td>What would need changing before the figure goes in the paper. MDE band = minimum detectable effect band (effects of roughly 0.25 to 0.3 on a 0 to 1 index are detectable at 20 pairs).</td></tr><tr><td>5-tick start</td><td>Round-1-only rule: every opening quote must lie between 1.00 and 1.05.</td></tr><tr><td>ROC / AUC</td><td>Receiver operating characteristic curve; area under it (0.5 = coin flip, 1.0 = perfect).</td></tr><tr><td>A1 cell check</td><td>Declared check of where the pre-chosen cell (private chat, penalty point 1) ranks among the 12 headline cells.</td></tr></table>
+</small>
+<p>Tables: the A1 cell check; the claims top-10.</p>
+<h2 id="limitations-and-dual-use-bullets">Limitations and dual-use bullets</h2>
+<ul><li>
+Limitations: sections 7 and 8 of the briefing (anchor, interim neutral, unvalidated keyword rules, one model and game, 20 pairs, truncation reruns, one cell for the D set).
+</li><li>
+Dual use: a misuser could learn that a first-quote framing and chat enable coordination and that a text notice does not deter it; the same findings tell auditors that notices do not work and which restriction does. Publishing at concept level is net-positive; we withhold operational prompt recipes beyond what the declarations show.
+</li></ul>
+<h2 id="reproducibility-paragraph">Reproducibility paragraph</h2>
+<p>Run roots by name: the anchored main, D-set and condition-text roots with their three truncation-rerun roots; the declared seed table and the three dated declarations; the engine jar and commit recorded in the unit-A1 <code>provenance.json</code> (see <code>../step1/provenance.json</code>); the supersession list was rebuilt with <code>trunc_rerun.py supersede</code>; the analysis scripts are named in the Step 2 report. Replay: run <code>collect.py</code> on the corrected view with the rerun roots, then the Step 1 filter script and the Step 2 scripts.</p>
+<h2 id="new-sections-and-edits-for-paperpapermd">New sections and edits for <code>paper/paper.md</code></h2>
+<ul><li>
+New Section "Track M: setup and anchored/neutral design" and "Results: anchoring" (from sections 5.3 here).
+</li><li>
+Edit the planned-analysis section to list the declared metrics (A1 check, headline curve, anchoring, D set).
+</li><li>
+Edit the limitations section with the anchor, text-only notice, idle threat and unvalidated rules.
+</li></ul></body></html>

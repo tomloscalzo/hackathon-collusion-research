@@ -1,0 +1,289 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Test and validation plan: the harness before the first real LLM run (2026-10-23)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Test and validation plan: the harness before the first real LLM run (2026-10-23)</h1>
+<p><em>Sprint work, Friday 2026-10-23. Prepared by the testing and validation lead (Claude, at the prompting of the repository owner). Everything here was run on the local CPU against the engine's <code>MockLlmServer</code> on 127.0.0.1. No LLM, Modal or remote endpoint was called. Every number from a run is <strong>MOCK</strong>.</em></p>
+<p><strong>Aim:</strong> the test harness must be reliable and correct, must not get in the way, and must never pollute experimental results.</p>
+<p><strong>Contents:</strong></p>
+<ol><li>
+Summary
+</li><li>
+Audit
+</li><li>
+Pollution risks
+</li><li>
+Pre-flight checklist
+</li><li>
+What was implemented
+</li><li>
+Open proposals
+</li><li>
+Logged findings
+</li><li>
+How to run
+</li><li>
+Adversarial review disposition
+</li></ol>
+<h2>1. Summary</h2>
+<table><tr><th></th><th>Before</th><th>After</th></tr><tr><td>JUnit (<code>mvn -q test</code>)</td><td>102 tests on the original <code>main</code>, 103 after PR #11. <strong>Red on Windows:</strong> 2 failing, because <code>core.autocrlf=true</code> checks the YAML out with CRLF</td><td>126 tests, 0 failing, on CRLF and on LF working copies (PR #12 added 4, PR #14 added 5, this change adds 14)</td></tr><tr><td>Python</td><td><code>tools/analysis.py --selftest</code> (19 checks, 24 after PR #14); <code>check_schemas.py</code></td><td>the same, plus <code>testing/test_harness.py</code> (25 tests on a 180-run mock dataset)</td></tr><tr><td>End-to-end LLM path against the mock</td><td>Library-level digests, plus one 2-run CLI test</td><td>run → cache → rerun → replay → schema check → independent recomputation of the statistics → frozen analysis, through the real CLI</td></tr><tr><td>Network guard in tests</td><td><code>RemoteGuard</code> only. A shell with <code>COLLUSION_ALLOW_REMOTE=1</code> exported turned one test red</td><td>surefire strips the variable; a JUnit extension blocks and fails non-loopback HTTP and raw-socket connections</td></tr><tr><td>Mock vs real separation</td><td>None: no gate looks at the host or the model name</td><td><code>testing/provenance_guard.py</code>, wired into <code>scripts/preflight</code></td></tr><tr><td>Go/no-go gate</td><td>Commands scattered over three planning documents</td><td><code>scripts/preflight --stage dev / first-call / ingest</code>, a per-stage jar copy, and a freeze record</td></tr></table>
+<p>PR #12 (merged) landed the line-ending fix early, so that the other agents had a green base. This document covers the rest.</p>
+<h2>2. Audit</h2>
+<h3>2.1 What was covered</h3>
+<p>The JUnit suite was strong on several fronts:</p>
+<ul><li>
+<strong>Layer A goldens.</strong>
+</li><li>
+<strong>Engine snapshots:</strong> trigger, penance, detection, hidden fills.
+</li><li>
+<strong>Determinism:</strong> roster-invariant streams, and batch output identical for 1 and 8 threads.
+</li><li>
+<strong>The LLM seat at library level:</strong> adherence and undercut, snapping, repair, imputation, text refusal, the probe, and live-vs-replay digests.
+</li><li>
+<strong>The client:</strong> canonical hash, cache hit, replay miss, budget, rate limiter, retries, the remote guard.
+</li><li>
+<strong>The CLI:</strong> one 2-run game, one vignette, <code>cost</code>, and the remote refusal.
+</li></ul>
+<p><code>check_schemas.py</code> validates schemas, examples and data files with invariants. <code>analysis.py --selftest</code> covers Holm, the band edge, the run floor, the outcome rules, the refusal bound and determinism, on synthetic records.</p>
+<h3>2.2 Gaps found</h3>
+<table><tr><th>#</th><th>Gap</th><th>Severity</th><th>Now</th></tr><tr><td>A1</td><td>The suite was <strong>red on any Windows checkout</strong>: <code>ScenarioLoaderTest</code> edits YAML with <code>\n</code>-terminated strings</td><td>high (red baseline)</td><td>fixed (PR #12)</td></tr><tr><td>A2</td><td>Every raw-text hash in a manifest depended on the OS: <code>analysisScriptSha256</code>, <code>scenarioHashes</code>, <code>sweepSha256</code>, and the hashes the pre-declaration records for <code>bands.csv</code> and the design files. The committed <code>results/</code> manifests carry CRLF hashes; a Linux box records LF hashes for the same commit</td><td>high for CPU-workstation plus Modal runs</td><td>fixed: <code>.gitattributes</code>, <code>LineEndingInvarianceTest</code>, <code>check_line_endings.py</code> (PR #12)</td></tr><tr><td>A3</td><td>No test sent a multi-run command through the CLI, then reran it from its cache and showed that no call is made</td><td>medium</td><td><code>LlmPipelineEndToEndTest</code></td></tr><tr><td>A4</td><td>Cache isolation was untested. Nothing showed that a changed prompt, model or sampling setting misses a reused cache, or that a stakes-only game arm duplicates the baseline's requests</td><td>high (pollution)</td><td><code>LlmPipelineEndToEndTest</code> (9 variants, a positive control, F-A1)</td></tr><tr><td>A5</td><td>Refusal paths were tested only at library level, not as a complete CLI command with manifest and replay</td><td>medium</td><td><code>LlmPipelineEndToEndTest</code> (text refusal, JSON null)</td></tr><tr><td>A6</td><td>No test showed that concurrent shards in one JVM give the same bytes as sequential ones. Shards run concurrently by design</td><td>medium</td><td><code>LlmPipelineEndToEndTest</code> (5 shards: runs, caches, calls, manifest <code>llm</code> sections)</td></tr><tr><td>A7</td><td>Replay with altered <code>llm</code> parameters was untested: does it fail rather than "pass" against a stale cache?</td><td>medium</td><td><code>LlmPipelineEndToEndTest</code> (7 mutations)</td></tr><tr><td>A8</td><td>No golden digest. A change to the round JSON, the streams, settlement or detection would be noticed only when an old cache is replayed (half of F24)</td><td>medium</td><td><code>GoldenDigestTest</code> (3 scripted digests)</td></tr><tr><td>A9</td><td>The prompt half of F24: nothing froze the rendered requests. <strong><code>templateHashes</code> do not cover the Java-side prompt text</strong> (<code>historyText</code>, <code>GameContext</code> fragments, <code>disclosedRule</code>, the elicitation and notice texts, <code>REPAIR_TEXT</code>, <code>PROBE_QUESTION</code>, the vignette prose). PR #11 changed the rendered history line of every round after the first, and the N &gt; 2 rule text, and left all three template hashes unchanged</td><td>high (stale-cache and mixed-prompt risk)</td><td>freeze record: every engine source file (F1) and the request digest of a freeze set covering every design cell (F2)</td></tr><tr><td>A10</td><td>The analysis had never run on realistic CLI output (field names, aliases, refusers, model split)</td><td>medium</td><td><code>test_harness.py</code>: P1-A equal to an independent recomputation and SUPPORTED, P2 PASSED, the P6a refusal bound</td></tr><tr><td>A11</td><td>Analysis determinism was untested under input-line order and <code>PYTHONHASHSEED</code>; shard merge order varies</td><td>medium</td><td><code>test_harness.py</code>: byte-identical JSON over 4 orders and seeds, on data whose cluster values differ</td></tr><tr><td>A12</td><td>The run-level statistics computed in Java had no independent oracle</td><td>medium</td><td><code>test_harness.py</code>: recomputed from <code>rounds[*]</code> for all 180 runs</td></tr><tr><td>A13</td><td>Tests could reach the network if a test or a mistake bypassed <code>RemoteGuard</code>. The env-var test failed whenever the operator's shell exported the variable</td><td>medium</td><td><code>NoRemoteNetworkExtension</code> + surefire <code>excludedEnvironmentVariables</code></td></tr><tr><td>A14</td><td>The experiment scripts (<code>launch_shards.py</code>, <code>ingest_merge.py</code>, <code>merge_cache.py</code>) have no tests beyond the prototype run log, and their layouts differ: flat for the launcher, <code>ROOT/&lt;shard&gt;/runs.jsonl</code> for ingest</td><td>medium</td><td>logged (section 6, P7); <code>provenance_guard.py --relayout</code> bridges the two layouts; the scripts themselves were not edited (they belong to the experiment stream)</td></tr><tr><td>A15</td><td>Commit hooks: <code>pre-commit</code> and <code>commit-msg</code> work and fail closed when the terms file is missing. They have no test, by design: the terms list is private</td><td>low</td><td>preflight G3 checks they are configured</td></tr></table>
+<h2>3. Pollution risks and how each is handled</h2>
+<table><tr><th>Risk</th><th>Route</th><th>Handling</th></tr><tr><td><strong>Mock output mistaken for real output</strong></td><td>A mock or smoke shard is left in a stage folder. The launcher then <strong>skips it as "complete"</strong> because the line count matches (F15 workaround), and ingest sees one more shard</td><td><code>provenance_guard.py</code> classifies every shard as MOCK, LOCAL or REMOTE. A shard is MOCK on any of: a mock model name; most cache lines being, as a whole text, a reply format of the mock behaviours; the mock token formula <code>tokensOut = ceil(len/4)</code> on every cache line with at least 5 distinct texts. It is LOCAL on a loopback <code>baseUrlHost</code>. <code>--expect real</code> fails MOCK and LOCAL. A root that <strong>mixes classes fails whatever is expected</strong>. <code>preflight --stage first-call</code> requires an empty stage folder (G5)</td></tr><tr><td>Real output in a mock root</td><td>A mock test pointed at a real folder</td><td><code>--expect mock</code> fails REMOTE shards</td></tr><tr><td><strong>Mock replies served to a real run from a reused cache</strong></td><td><code>--cache</code> pointed at an earlier cache made against the mock under the real served name</td><td><code>CACHE_OUTSIDE</code> (a call whose hash is not in the shard's own cache, or <code>--cache</code> naming another file); <code>MODEL_MISMATCH</code> (a cache line of another model). JUnit A4 shows that a changed model, prompt or setting never hits</td></tr><tr><td><strong>Smoke runs counted as data</strong></td><td>Stage 0 <code>hc/e2.jsonl</code> copied into the stage folder under the real arm name <code>e2</code></td><td><code>MOVED</code>: a copy under another file name fails; the same name in another folder warns, and preflight prints the warning. <code>SMOKE_ARM</code>: arm names such as smoke, hc or test fail under <code>--expect real</code>. <code>DESIGN_ARM</code> with <code>--cells</code>. Recommendation: name harness-check arms <code>hc-e2</code>, <code>hc-competitive</code></td></tr><tr><td><strong>Attrition hidden from the data</strong></td><td>A command aborted in its first run (F17 budget, F18 provider refusal) leaves call and cache files but no run line; the launcher moves aborted attempts aside</td><td><code>ORPHAN</code> (FAIL) for call or cache files without a run file, and for run lines without a manifest; <code>PARTIAL</code> (WARN) for <code>.partial-*</code> files; <code>CALLS</code> (WARN) when a call log also holds an aborted attempt</td></tr><tr><td><strong>Same request hash across arms</strong></td><td>A factor the game does not render (stakes, F-A1), or two arms built identically</td><td><code>ARMS_DISTINCT</code> (any hash shared by two arms fails). Pinned in JUnit; reproduced on mock data by the <code>x-stakes-10</code> arm</td></tr><tr><td><strong>Stale code, prompts or jar mixed across shards</strong></td><td>Shards made at different commits, a stale or rebuilt jar, or a dirty tree</td><td><code>STALE</code>, <code>TEMPLATES</code>. <code>GIT</code> under <code>--expect real</code> fails on: an unknown commit; a commit not in the clone; commits whose engine, analysis or experiment files differ; and, with the freeze, a commit that differs from the frozen one. Preflight G1 (no modified file, no untracked code or experiment input), T4 (clean rebuild; the jar's prompts equal the source), J1 (each stage runs from its own jar copy), and the freeze record F1/F2 (checked at ingest with the stage's jar)</td></tr><tr><td>A changed scenario file, which replay would not notice (F22)</td><td>A scenario edited after the run</td><td><code>SCENARIO</code>: manifest <code>scenarioHashes</code> against the current file, in LF and CRLF forms</td></tr><tr><td>Partial or doubled shards</td><td>An aborted command, or a rerun that appends twice (F15)</td><td><code>LINE_COUNT</code>, <code>DUPLICATE</code> (with digest equality)</td></tr><tr><td>Cache conflicts</td><td>Two backends serving one name (F20)</td><td><code>CACHE_CONFLICT</code>; <code>HOSTS</code> warning when one model name was served from several hosts</td></tr><tr><td><strong>Non-determinism in the analysis</strong></td><td>Merge order; Python hash seed</td><td>Tested: byte-identical output on data with differing cluster values. <code>random.Random(str)</code> seeds are process-independent; the set iteration is over int tuples</td></tr><tr><td>Cross-machine hash drift</td><td>CRLF checkouts</td><td>PR #12, plus preflight T2; the guard accepts the LF and CRLF hashes of one file as the same</td></tr><tr><td><strong>Tests that call the network</strong></td><td>A test or a bypassed guard</td><td><code>NoRemoteNetworkExtension</code>: a JVM-wide <code>ProxySelector</code> routes HTTP(S) to a dead HTTP proxy and <code>socket://</code> to a dead SOCKS proxy, and fails the test that tried. Surefire strips the env var. Self-tested: a plain <code>HttpClient</code>, the engine client with <code>RemoteGuard</code> bypassed, and a raw <code>Socket</code> are all blocked. Not covered: DNS lookups, and sockets created with <code>Proxy.NO_PROXY</code></td></tr></table>
+<p><strong>Limits of the guard.</strong></p>
+<ul><li>
+The text and token signals are heuristics. Each needs most or all cache lines to match, and the model-name signal is independent of both.
+</li><li>
+A mock stub reached through a LAN address is classed REMOTE. Mock runs must use loopback only.
+</li><li>
+The guard cannot see a reply that was never cached: it gates what was written.
+</li><li>
+An explicit marker would be better (P1).
+</li></ul>
+<h2>4. Pre-flight checklist (go/no-go)</h2>
+<p>Each gate is one command plus the listed manual reads. <strong>GO</strong> means the command prints <code>GO</code> and every manual item holds.</p>
+<p><strong>Gate 0. Any time (about 90 s):</strong> <code>scripts/preflight</code></p>
+<ul><li>
+T1: JDK 17, Python 3.8 or later.
+</li><li>
+T2: line endings.
+</li><li>
+T3: JUnit, 126 tests.
+</li><li>
+T4: a clean jar rebuild, whose prompts equal the source.
+</li><li>
+T5: <code>analysis.py --selftest</code>.
+</li><li>
+T6: <code>check_schemas.py</code>.
+</li><li>
+T7: <code>test_harness.py</code>, 25 tests.
+</li></ul>
+<p><strong>Gate 1. Before the first real LLM call</strong></p>
+<ol><li>
+<code>scripts/preflight --stage first-call --out-root &lt;runs&gt;/hc</code> gives GO. This adds:
+<ul><li>
+G1: no modified tracked file, and no untracked file in code or experiment inputs;
+</li><li>
+G2: HEAD on origin/main;
+</li><li>
+G3: hooks on;
+</li><li>
+G4: the output root is outside the repo;
+</li><li>
+G5: the root is empty;
+</li><li>
+JDK 17 required.
+</li></ul>
+</li></ol>
+<p>On GO it copies the jar to <code>&lt;runs&gt;/hc/collusion-engine.jar</code> (J1). Launch with that jar.</p>
+<ol><li>
+The served model name is the per-model name from the model-identity work. It never contains <code>mock</code>, and it is one name per weights or snapshot.
+</li><li>
+The schema check with one curl (<code>RUN_LOGISTICS.md</code> §2) returns HTTP 200 and a parseable <code>quote</code>.
+</li><li>
+<code>COLLUSION_ALLOW_REMOTE=1</code> and the key are exported only in the launching shell, with a positive <code>--budget-tokens</code>. JUnit and preflight run without the variable, so preflight can run in the same shell.
+</li><li>
+Run the smoke game with <code>--arm hc-smoke</code> and <code>--out &lt;runs&gt;/hc/...</code> (never a stage folder), using the stage jar. Then:
+<ul><li>
+<code>replay</code> exits 0;
+</li><li>
+<code>check_schemas.py</code> passes on the three files;
+</li><li>
+<code>provenance_guard.py --root &lt;runs&gt;/hc --expect any</code> shows <code>classes {&#x27;REMOTE&#x27;: n}</code> and no MOCK.
+</li></ul>
+</li><li>
+Read the cache: JSON replies, <code>finishReason</code> "stop". Set <code>--max-tokens</code> per cell from the 99th percentile of <code>tokensOut</code>.
+</li></ol>
+<p><strong>Gate 2. At the freezing commit, before the first claim-bearing call (Stage 1)</strong></p>
+<ol><li>
+Regenerate the bands at the design size (D5).
+</li><li>
+Run <code>scripts/preflight --write-freeze experiments/parallel-design-2026-10-23/FREEZE.json --bands &lt;bands.csv&gt;</code> (about 65 s) and commit the file with the pre-declaration (D4).
+</li><li>
+The record holds:
+<ul><li>
+the LF SHA-256 of every frozen input file (130 on the commit of this plan: every engine source, the resources, <code>analysis.py</code>, the experiment scripts and scenarios, the generator);
+</li><li>
+the bands path and hash;
+</li><li>
+the digests of the 2,232 freeze-set requests and 288 runs;
+</li><li>
+the commit.
+</li></ul>
+</li></ol>
+<p><strong>Gate 3. Before launching each stage (0 to 3)</strong></p>
+<ol><li>
+Start each stage in a fresh folder.
+</li><li>
+From Stage 1 on, the freeze is required: <code>scripts/preflight --stage first-call --out-root &lt;runs&gt;/stageN --freeze .../FREEZE.json</code> gives GO (about 2.5 minutes).
+</li><li>
+Launch with <code>--jar &lt;runs&gt;/stageN/collusion-engine.jar</code>.
+</li><li>
+Temperature, <code>--max-tokens</code> and the seed set are identical across the arms of each contrast. Stage 3 uses fresh seeds.
+</li></ol>
+<p><strong>Gate 4. Before reading any result</strong></p>
+<ol><li>
+Collect the stage folder whole: keep the folder name and file names.
+</li><li>
+Run <code>scripts/preflight --stage ingest --out-root &lt;runs&gt;/stageN --cells .../design_cells.csv --freeze .../FREEZE.json</code>. It gives GO only when:
+<ul><li>
+the provenance guard passes <code>--expect real</code> with design arms, and every shard's commit has the frozen code;
+</li><li>
+the freeze verifies with the stage's own jar;
+</li><li>
+the analysis self-test passes;
+</li><li>
+line endings pass.
+</li></ul>
+</li></ol>
+<p>Read every WARN that it prints.</p>
+<ol><li>
+Until <code>ingest_merge.py</code> reads the flat layout (P7), copy the stage into its layout with <code>python -X utf8 testing/provenance_guard.py --relayout &lt;runs&gt;/stageN &lt;runs&gt;/stageN-ingest</code>. The guard accepts <code>&lt;stem&gt;/runs.jsonl</code> for <code>--out &lt;stem&gt;.jsonl</code>. Then run the <code>ingest_merge.py</code> gate, then the analysis (<code>ANALYSIS_AND_DISTILLATION_PIPELINE.md</code> §7).
+</li><li>
+A model that fails P2 gets no further cells.
+</li></ol>
+<h2>5. What was implemented</h2>
+<p><strong>PR #12 (merged):</strong></p>
+<ul><li>
+<strong><code>.gitattributes</code>:</strong> <code>eol=lf</code> for hashed inputs.
+</li><li>
+<strong><code>ScenarioLoaderTest</code>:</strong> line-ending agnostic.
+</li><li>
+<strong><code>LineEndingInvarianceTest</code></strong> (4 tests):
+<ul><li>
+scenario, game and sweep parsing and the CRN cells are identical from LF and CRLF text;
+</li><li>
+the prompt files are byte-stable;
+</li><li>
+a CRLF scenario leaks nothing into the prompts.
+</li></ul>
+</li><li>
+<strong><code>testing/check_line_endings.py</code>.</strong>
+</li></ul>
+<p><strong>This change (test-side, plus one build-config block):</strong></p>
+<ul><li>
+<strong><code>engine/pom.xml</code>.</strong> Surefire <code>excludedEnvironmentVariables: COLLUSION_ALLOW_REMOTE</code>. Justification: without it the tests' behaviour depended on the operator's shell, and a red test in the real-run shell gets in the way. It has no effect on production code.
+</li><li>
+<strong><code>testsupport/NoRemoteNetworkExtension</code></strong>, auto-registered through <code>junit-platform.properties</code> and the services file. Its 6 self-tests are in <code>NoRemoteNetworkGuardTest</code>; one checks that auto-detection, not the test itself, installed the guard.
+</li><li>
+<strong><code>cli/LlmPipelineEndToEndTest</code></strong> (6 tests):
+<ul><li>
+a multi-run command, then a rerun from its cache with 0 HTTP calls, identical rounds and digests, and manifest hit/miss counts;
+</li><li>
+nine request variants, none of which hits a stale cache, with a positive control;
+</li><li>
+the stakes-only arm issues the baseline's requests;
+</li><li>
+text and JSON refusals complete, are recorded and replay;
+</li><li>
+five concurrent shards are byte-identical to sequential ones;
+</li><li>
+replay reports a problem for each of 7 parameter mutations.
+</li></ul>
+</li><li>
+<strong><code>cli/GoldenDigestTest</code></strong> (2 tests, 3 digests): scripted runs of <code>engine-trigger-pair</code> and <code>ripe-game</code> with TIT_FOR_TAT and TRIGGER_K seats. They catch engine-side changes. They do <strong>not</strong> detect a JDK change: they also pass on JDK 23, so preflight requires JDK 17 for runs instead.
+</li><li>
+<strong><code>testing/harness/MockDataset.java</code>:</strong>
+<ul><li>
+a 6-arm mock dataset through the real CLI, 180 runs, about 20 s, with behaviours that vary with the seed and the paraphrase;
+</li><li>
+<code>--freeze</code>, the freeze set: every game cell of the design × 12 paraphrases, with a probe and a repair; every vignette condition × 12 paraphrases;
+</li><li>
+<code>x-stakes-10</code>, which reproduces F-A1.
+</li></ul>
+</li><li>
+<strong><code>testing/provenance_guard.py</code></strong> (section 3, with <code>--relayout</code>) and <strong><code>testing/test_harness.py</code></strong>: 25 tests covering 2.2 A10–A12 and every guard rule on a mutated copy. Controls: a real-looking copy passes; real replies that contain mock substrings are not MOCK; a low-entropy shard is not MOCK; served names of the deploy recipe are never MOCK.
+</li><li>
+<strong><code>testing/preflight.py</code></strong> and <strong><code>scripts/preflight</code></strong> (section 4), with the freeze record. Verified: a one-character edit of a Java-side prompt fragment fails F2 while the template hashes stay unchanged; it now also fails F1.
+</li></ul>
+<p><strong>Test counts:</strong></p>
+<table><tr><th>Suite</th><th>Before (original <code>main</code>)</th><th>After</th></tr><tr><td>JUnit</td><td>102 tests (2 red on Windows); 112 on <code>main</code> before this change</td><td>126 tests, all green</td></tr><tr><td>Python</td><td>0 harness tests</td><td>25 harness tests</td></tr></table>
+<h2>6. Open proposals (not implemented: interface or another stream's files)</h2>
+<table><tr><th>#</th><th>Proposal</th><th>Why</th><th>Owner</th></tr><tr><td>P1</td><td><strong>An explicit mock marker.</strong> <code>MockLlmServer</code> returns <code>system_fingerprint: &quot;collusion-mock&quot;</code>; the client stores the fingerprint in the cache line and <code>CallRecord</code></td><td>Replaces the guard's heuristics with a recorded fact</td><td>LLM interface (client, cache-line schema)</td></tr><tr><td>P2</td><td><strong>Cache provenance.</strong> Each cache line records <code>baseUrlHost</code>; <code>CachingLlmClient</code> refuses to load a cache whose lines name another model or host than the command's</td><td>Stops the mistaken <code>--cache</code> reuse at the source rather than at ingest</td><td>LLM interface</td></tr><tr><td>P3</td><td><strong>Hash LF-normalised text</strong> for <code>scenarioHashes</code>, <code>sweepSha256</code> and <code>analysisScriptSha256</code>, as <code>ParaphraseFile</code> already does</td><td>OS-independent even for a stale CRLF working copy</td><td>manifest (model-identity branch)</td></tr><tr><td>P4</td><td><strong>The manifest records <code>gitDirty</code> and the jar's SHA-256 and build commit</strong></td><td>A dirty tree or a stale jar is invisible in today's manifests; the stage-jar copy (J1) mitigates</td><td>manifest (model-identity branch)</td></tr><tr><td>P5</td><td><strong>A rendered-prompt hash in the manifest</strong>, for example the SHA-256 of paraphrase 0's rendered system prompt plus <code>decisionFormat</code></td><td><code>templateHashes</code> miss the Java-side prompt text (A9). The freeze record covers it meanwhile</td><td>manifest</td></tr><tr><td>P6</td><td>Replay reads the manifest and checks the scenario and template hashes (F22, existing ticket)</td><td>Explains a <code>CacheMiss</code> or MISMATCH; the guard's <code>SCENARIO</code> and <code>STALE</code> cover ingest meanwhile</td><td>CLI</td></tr><tr><td>P7</td><td><code>launch_shards.py</code>: (a) before skipping a "complete" shard, check its manifest's host, model class (mock) and template hashes (PR #14 already stops on lines of another model); (b) move <code>.calls.jsonl</code> aside with a partial run file (today the rerun appends to the old call log, and <code>check_schemas.py</code> then fails the shard); (c) run the provenance guard on <code>--out-dir</code> before launching; (d) take <code>--jar</code> from the stage folder. <code>ingest_merge.py</code>: (a) discover the launcher's flat layout (it looks only for <code>ROOT/&lt;shard&gt;/runs.jsonl</code>; <code>--relayout</code> bridges it); (b) add a <code>provenance_ok</code> gate item; (c) the "MOCK" titles of the QC report and dashboards are hard-coded, also on real data; (d) <code>ARM-NOT-IN-DESIGN</code> does not gate</td><td>Integration gaps between the prototype scripts</td><td>experiment stream</td></tr><tr><td>P8</td><td>A text-taking <code>ParaphraseFile.parse</code> overload, so a test can exercise its CRLF normalisation (PR #12 review)</td><td>Testability</td><td>LLM adapter</td></tr></table>
+<h2>7. Logged findings (not acted on)</h2>
+<ul><li>
+Mock game lengths, measured by the reviewer: 3 to 19 rounds for ripe, 3 to 28 for unripe-a and competitive. Long histories are exercised on the mock.
+</li><li>
+<code>CachingLlmClient</code> has a race: two concurrent misses for one hash both call the backend, and the second caller keeps a reply that is never stored. It cannot be reached from the CLI, because draw keys are unique per seed, round and attempt. It matters only for future multi-seat code.
+</li><li>
+The committed <code>results/local-mc-2026-10-22</code> manifests carry CRLF hashes (historical; no gate checks them).
+</li><li>
+On Windows, <code>python3</code> can be the Microsoft Store stub; <code>scripts/preflight</code> probes for a working interpreter.
+</li><li>
+<code>aGameArmThatDiffersOnlyInStakes</code> pins documented behaviour (F-A1). It turns red if stakes ever enters the game prompt; that is intended, and the test then needs updating.
+</li></ul>
+<h2>8. How to run</h2>
+<pre><code>scripts/preflight                                    # gate 0, about 90 s
+cd engine &amp;&amp; mvn -q test                             # JUnit only (JAVA_HOME = JDK 17)
+python -X utf8 -m unittest testing/test_harness.py   # mock end to end + guard (needs the jar)
+python -X utf8 testing/provenance_guard.py --root &lt;dir&gt; --expect real|mock|any [--cells design_cells.csv] [--ref-commit SHA]
+python -X utf8 testing/provenance_guard.py --relayout &lt;flat stage dir&gt; &lt;ingest dir&gt;
+python -X utf8 testing/check_line_endings.py [--strict]</code></pre>
+<h2>9. Adversarial review disposition</h2>
+<p>There was one fresh reviewer (Opus, high effort, read-only). It reported 12 MATERIAL and 17 NOT MATERIAL findings. <strong>All 12 MATERIAL findings were fixed</strong>, together with the cheap NOT MATERIAL ones.</p>
+<table><tr><th>#</th><th>Finding</th><th>Disposition</th></tr><tr><td>M1</td><td>The freeze covered only 108 requests on 6 cells; no Java source was hashed</td><td>fixed: F1 hashes every engine source, <code>pom.xml</code>, the resources, the experiment scripts and scenarios, and the generator. The freeze set covers every design cell × 12 paraphrases, with probe and repair, plus every vignette condition</td></tr><tr><td>M2</td><td>Gates 3 and 4 failed without <code>--bands</code></td><td>fixed: the bands path is stored in the record and used when <code>--bands</code> is absent</td></tr><tr><td>M3</td><td>Substring matching of mock texts gave false MOCK verdicts on real replies</td><td>fixed: whole-text exact formats, at least half of the lines; a negative control was added</td></tr><tr><td>M4</td><td>Shards from several or unknown commits passed; guard warnings were hidden</td><td>fixed: <code>GIT</code> fails under <code>--expect real</code> (unknown commit, commit not in the clone, code differs between commits or from the frozen commit); preflight prints guard FAILs and WARNs, and G5 is WARN when the guard warns</td></tr><tr><td>M5</td><td>MOVED blocked a renamed collection folder and the ingest layout; preflight had no override</td><td>fixed: the file name decides (<code>&lt;stem&gt;/runs.jsonl</code> accepted), a folder difference is a WARN; <code>--allow-moved</code> and <code>--allow-stale</code> pass through; <code>--relayout</code> added</td></tr><tr><td>M6</td><td>Aborted commands with no run line were invisible (attrition)</td><td>fixed: <code>ORPHAN</code> for side files, <code>PARTIAL</code> and <code>CALLS</code> warnings</td></tr><tr><td>M7</td><td>Rebuilding the jar while shards run; the freeze could use a stale jar</td><td>fixed: <code>clean package</code>; each stage gets its own jar copy (J1); <code>--write-freeze</code> always rebuilds; ingest verifies the freeze with the stage's jar</td></tr><tr><td>M8</td><td>The determinism test was vacuous (constant per-arm statistics)</td><td>fixed: behaviours vary with seed and paraphrase; the test asserts that cluster values differ; P1-A is compared with an independent recomputation</td></tr><tr><td>M9</td><td>Untracked code was only a warning</td><td>fixed: untracked files in <code>engine/src/main</code>, <code>tools</code>, <code>testing/harness</code> and the experiment scripts and scenarios fail G1</td></tr><tr><td>M10</td><td>The token fingerprint counted lines, not distinct texts</td><td>fixed: at least 5 distinct texts; a low-entropy control was added</td></tr><tr><td>M11</td><td>LF and CRLF hashes of one <code>analysis.py</code> failed across shards</td><td>fixed: both map to "this tree"; a test was added</td></tr><tr><td>M12</td><td>False claims: raw sockets were not blocked; the PR #11 wording; mock run lengths; G5 wording; LAN stubs</td><td>fixed: a SOCKS dead end for <code>socket://</code> with a raw-socket test, IPv6 loopback forms; every claim corrected in sections 2, 3, 4 and 7</td></tr></table>
+<p>NOT MATERIAL items fixed:</p>
+<ul><li>
+the dead code;
+</li><li>
+the auto-detection self-test;
+</li><li>
+<code>git fetch</code> timeout and no prompt;
+</li><li>
+JDK 17 enforced at the stage gates;
+</li><li>
+skipped tests reported;
+</li><li>
+a clean build and a two-way prompt-set comparison;
+</li><li>
+<code>CORRUPT</code> instead of a traceback;
+</li><li>
+the <code>JAVA</code> and <code>CALLS</code> warnings;
+</li><li>
+<code>--allow-local</code> with LOCAL plus REMOTE;
+</li><li>
+MOVED edge cases;
+</li><li>
+the plan's "manifests" wording;
+</li><li>
+the golden-digest JDK claim;
+</li><li>
+the staged <code>scripts/preflight</code> blob.
+</li></ul>
+<p>Logged, not fixed:</p>
+<ul><li>
+the concurrency test has no barrier (overlap is likely, not forced; the test is deterministic);
+</li><li>
+a violation from a background thread is blamed on the next test;
+</li><li>
+the recomputation test reuses the line's <code>sRef</code> and has no IMPUTED or REPAIRED rounds;
+</li><li>
+no guard test on vignette shards (the reviewer checked one by hand);
+</li><li>
+<code>GoldenDigestTest</code> reads the live <code>ripe-game.yaml</code>, so a deliberate scenario edit turns it red; that is intended before a freeze.
+</li></ul></body></html>

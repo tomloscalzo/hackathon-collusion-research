@@ -1,0 +1,43 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Modal test gate: run the engine&#x27;s Maven tests on Modal CPU</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}small table{font-size:.8em;margin:.3rem 0 1rem}small{font-size:.85em;color:var(--muted)}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1 id="modal-test-gate-run-the-engines-maven-tests-on-modal-cpu">Modal test gate: run the engine's Maven tests on Modal CPU</h1>
+<p>The engine's test gate (<code>mvn -q -o test</code> in <code>engine/</code>, about 554 tests) is CPU-bound on the local machine. <code>tools/ci/modal_test.py</code> runs the same command on a Modal CPU container and gives back the result. It does not change engine code or tests, and it needs no key: the Modal token in <code>~/.modal.toml</code> is used by the Modal CLI library.</p>
+<h2 id="the-command-agents-should-use">The command agents should use</h2>
+<pre><code>PYTHONUTF8=1 PYTHONIOENCODING=utf-8 python -X utf8 tools/ci/modal_test.py &lt;worktree_path&gt; [--cpu 16] [--memory-gb 16] [--timeout-min 40]</code></pre>
+<ul><li>
+<code>&lt;worktree_path&gt;</code> is the repository checkout (or worktree) root, the folder that holds <code>engine/</code>.
+</li><li>
+The exit code is Maven's: 0 = all tests passed, 1 = a test or compile failure, 2 = infrastructure failure (Modal error, bad path). A failing gate prints the tail of Maven's output.
+</li><li>
+The last line is <code>RESULT exit=.. tests=.. failures=.. errors=.. skipped=.. mvn=..s wall=..s est.cost=$..</code>.
+</li><li>
+The surefire XML reports come back in <code>&lt;worktree&gt;/engine/target/modal-surefire/surefire-reports/</code>.
+</li></ul>
+<h2 id="what-it-sends-and-runs">What it sends and runs</h2>
+<ul><li>
+A tarball of the whole worktree except <code>.git</code>, any <code>target</code>, <code>__pycache__</code>, and the top-level <code>results/</code> folder (about 3 MB). The tests read <code>tools/analysis.py</code>, <code>docs/interfaces/check_schemas.py</code> and the trial tools through relative paths, and call <code>python</code>, so the whole tree is sent, not only <code>engine/</code>.
+</li><li>
+The image is Debian with JDK 17, Maven and the Python version of the calling interpreter. The engine's Maven dependencies (and the surefire/JUnit provider) are pre-fetched at image build by running <code>mvn dependency:go-offline</code> and a one-test build against <code>engine/pom.xml</code>. The image is cached by Modal and is rebuilt only when <code>engine/pom.xml</code> or the build recipe changes, so the first run after a pom change takes about 30 s longer.
+</li><li>
+The function has <code>cpu=16</code>, 16 GB and a 40-minute timeout by default. Maven runs offline, as locally.
+</li></ul>
+<h2 id="cost-per-run">Cost per run</h2>
+<p>Cost is the container's running time times Modal's CPU price (about $0.0000131 per core-second) plus memory (about $0.0000022 per GiB-second). The script prints an estimate that counts only the Maven time. For 16 cores and 16 GB and a Maven time of about 100 s that is about $0.02 to $0.03 per run, plus a few seconds of container start. Check the current prices at modal.com/pricing. Lower <code>--cpu</code> saves little (the suite is mostly short tests); 16 is the default.</p>
+<h2 id="verified-on-2026-10-25">Verified on 2026-10-25</h2>
+<ul><li>
+Main (554 tests): exit 0, 554 run, 0 failures, 0 errors, Maven 99 s, wall 125 s (including upload and container start). The same suite locally (affinity 0xFF0): 554 run, 0 failures, 0 errors, 900 s.
+</li><li>
+A scratch copy with one deliberately failing test: exit 1, 555 run, 1 failure, reported with the test name.
+</li></ul>
+<h2 id="ab-verification-against-local-maven-2026-10-25">A/B verification against local Maven (2026-10-25)</h2>
+<p>Procedure: export the same commit (<code>f337697</code>, the merge that adds the gate) twice with <code>git archive</code> into separate folders; run <code>mvn -o test</code> and <code>mvn -o -DskipTests package</code> locally (JDK 17, affinity 0xFF0) in one, and <code>tools/ci/modal_test.py</code> on the other; compare the per-test list and the surefire XML after stripping properties blocks, times, timestamps, hostnames, absolute paths and log clock times.</p>
+<p>Verdict: <strong>IDENTICAL EXCEPT environment and timestamp items.</strong> 554 tests on each side with the same names, all passing. 82 of 85 report XML files are identical after normalisation. The other three differ only in the order of 65 parallel-test digest lines (same set, so the golden digests match across Windows and Linux), an OS-specific file-system error message in a warning, and a printed timing. Local: 770 s for the tests, 26 s for the package. Modal: Maven 112 s, wall 147 s, about $0.027.</p>
+<p>Not covered: the gate does not build or return a jar, so jars were not compared; the tests write no other deterministic files into <code>target/</code>. Full report (not in the repo): <code>work_scratch/modal_ab/AB_REPORT.md</code>.</p></body></html>

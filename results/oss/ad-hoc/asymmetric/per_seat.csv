@@ -1,0 +1,25 @@
+model,arm,comparison,measure,n_pairs,mean_first,mean_second,diff,lo,hi
+gpt-oss-20b,m-asym,bound minus unbound (same game),competitive share,20,0.4961,0.39935,0.09674,-0.02754,0.23895
+gpt-oss-20b,m-asym,bound minus control firms,competitive share,20,0.4961,0.43994,0.05615,-0.10498,0.18879
+gpt-oss-20b,m-asym,unbound minus control firms,competitive share,20,0.39935,0.43994,-0.04059,-0.16988,0.0732
+gpt-oss-20b,m-asym,bound minus unbound (same game),matching share,20,0.29267,0.36607,-0.0734,-0.19045,0.01415
+gpt-oss-20b,m-asym,bound minus control firms,matching share,20,0.29267,0.37585,-0.08318,-0.21563,0.08042
+gpt-oss-20b,m-asym,unbound minus control firms,matching share,20,0.36607,0.37585,-0.00978,-0.13367,0.12626
+gpt-oss-20b,m-asym,bound minus unbound (same game),mean quote,20,2.26311,2.25541,0.0077,-0.0437,0.0581
+gpt-oss-20b,m-asym,bound minus control firms,mean quote,20,2.26311,2.24954,0.01357,-0.14565,0.21767
+gpt-oss-20b,m-asym,unbound minus control firms,mean quote,20,2.25541,2.24954,0.00587,-0.16995,0.21811
+gpt-oss-20b,m-asym,bound minus unbound (same game),profit gain index,20,0.83216,0.74029,0.09187,-0.02315,0.21187
+gpt-oss-20b,m-asym,bound minus control firms,profit gain index,20,0.83216,0.80447,0.02769,-0.09839,0.17451
+gpt-oss-20b,m-asym,unbound minus control firms,profit gain index,20,0.74029,0.80447,-0.06418,-0.18281,0.08725
+Qwen3-32B,m-asym,bound minus unbound (same game),competitive share,20,0.06218,0.06623,-0.00405,-0.15789,0.1419
+Qwen3-32B,m-asym,bound minus control firms,competitive share,20,0.06218,0.01132,0.05085,-0.01688,0.16111
+Qwen3-32B,m-asym,unbound minus control firms,competitive share,20,0.06623,0.01132,0.0549,-0.01432,0.16857
+Qwen3-32B,m-asym,bound minus unbound (same game),matching share,20,0.90093,0.89858,0.00236,-0.14117,0.15236
+Qwen3-32B,m-asym,bound minus control firms,matching share,20,0.90093,0.97147,-0.07054,-0.18718,0.01713
+Qwen3-32B,m-asym,unbound minus control firms,matching share,20,0.89858,0.97147,-0.0729,-0.19448,0.02047
+Qwen3-32B,m-asym,bound minus unbound (same game),mean quote,20,2.5212,2.51626,0.00495,-0.00029,0.01309
+Qwen3-32B,m-asym,bound minus control firms,mean quote,20,2.5212,2.53534,-0.01413,-0.1605,0.14594
+Qwen3-32B,m-asym,unbound minus control firms,mean quote,20,2.51626,2.53534,-0.01908,-0.1656,0.14258
+Qwen3-32B,m-asym,bound minus unbound (same game),profit gain index,20,0.91833,0.95654,-0.03821,-0.2068,0.08213
+Qwen3-32B,m-asym,bound minus control firms,profit gain index,20,0.91833,0.91628,0.00205,-0.07296,0.06981
+Qwen3-32B,m-asym,unbound minus control firms,profit gain index,20,0.95654,0.91628,0.04026,-0.03897,0.14594

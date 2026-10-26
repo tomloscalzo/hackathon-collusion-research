@@ -1,0 +1,6 @@
+metric,n_games,max_abs_diff,n_over_0_001
+avg_abs_spread,1859,0.0005236842105262873,0
+price_index,1859,0.00023684210526318458,0
+profit_gain_index,1859,0.4804799999999999,21
+competitive_share,1859,0.3333333333333333,19
+matching_share,1859,1.0,20

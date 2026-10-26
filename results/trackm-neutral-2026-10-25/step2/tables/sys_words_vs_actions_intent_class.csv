@@ -1,0 +1,8 @@
+communication,game_intent_class,games,pgi,price,high,comp
+monitored,EXPLICIT,158,0.85,0.68,0.91,0.05
+monitored,NO_TEXT,2,0.75,0.5,1.0,0.25
+private,EXPLICIT,158,0.83,0.67,0.88,0.06
+private,NONE,1,0.75,0.5,1.0,0.0
+private,NO_TEXT,1,0.75,0.5,1.0,0.06
+tacit,EXPLICIT,80,0.68,0.51,0.54,0.44
+tacit,NO_TEXT,80,0.63,0.44,0.57,0.23

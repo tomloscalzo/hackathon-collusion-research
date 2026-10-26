@@ -1,0 +1,25 @@
+contrast,subset,metric,n_pairs,diff,lo,hi
+fx-chat-p1 (p1) - headline-chat (p1),all games,price_index,19,-0.3016,-0.4298,-0.1634
+fx-chat-p1 (p1) - headline-chat (p1),all games,profit_gain_index,19,-0.4037,-0.5467,-0.2544
+fx-chat-p1 (p1) - headline-chat (p1),games with empty_talk_done_count = 0,price_index,7,-0.245,-0.4221,-0.0591
+fx-chat-p1 (p1) - headline-chat (p1),games with empty_talk_done_count = 0,profit_gain_index,7,-0.2901,-0.4764,-0.1012
+fx-tacit-p1 (p1) - headline-tacit (p1),all games,price_index,20,-0.2212,-0.3485,-0.089
+fx-tacit-p1 (p1) - headline-tacit (p1),all games,profit_gain_index,20,-0.3502,-0.5069,-0.1905
+fx-tacit-p1 (p1) - headline-tacit (p1),games with empty_talk_done_count = 0,price_index,20,-0.2212,-0.3485,-0.089
+fx-tacit-p1 (p1) - headline-tacit (p1),games with empty_talk_done_count = 0,profit_gain_index,20,-0.3502,-0.5069,-0.1905
+fx-chat-p5 (p5) - headline-chat (p5),all games,price_index,20,-0.3654,-0.4472,-0.2861
+fx-chat-p5 (p5) - headline-chat (p5),all games,profit_gain_index,20,-0.4722,-0.5702,-0.3761
+fx-chat-p5 (p5) - headline-chat (p5),games with empty_talk_done_count = 0,price_index,12,-0.3542,-0.4667,-0.2306
+fx-chat-p5 (p5) - headline-chat (p5),games with empty_talk_done_count = 0,profit_gain_index,12,-0.4489,-0.5957,-0.2988
+nx-chat-p1 (p1) - headline-chat (p1),all games,price_index,20,-0.5567,-0.6347,-0.4643
+nx-chat-p1 (p1) - headline-chat (p1),all games,profit_gain_index,20,-0.7359,-0.8229,-0.6338
+nx-chat-p1 (p1) - headline-chat (p1),games with empty_talk_done_count = 0,price_index,10,-0.6497,-0.7067,-0.5864
+nx-chat-p1 (p1) - headline-chat (p1),games with empty_talk_done_count = 0,profit_gain_index,10,-0.8388,-0.8919,-0.7857
+nx-tacit-p1 (p1) - headline-tacit (p1),all games,price_index,20,-0.3794,-0.4703,-0.2864
+nx-tacit-p1 (p1) - headline-tacit (p1),all games,profit_gain_index,20,-0.5549,-0.6687,-0.4423
+nx-tacit-p1 (p1) - headline-tacit (p1),games with empty_talk_done_count = 0,price_index,20,-0.3794,-0.4703,-0.2864
+nx-tacit-p1 (p1) - headline-tacit (p1),games with empty_talk_done_count = 0,profit_gain_index,20,-0.5549,-0.6687,-0.4423
+fx-ctl-joint (p3) - ctl-32b-joint (p3),all games,price_index,20,-0.1259,-0.2523,-0.0159
+fx-ctl-joint (p3) - ctl-32b-joint (p3),all games,profit_gain_index,20,-0.1669,-0.2935,-0.0503
+fx-ctl-joint (p3) - ctl-32b-joint (p3),games with empty_talk_done_count = 0,price_index,9,-0.0867,-0.2455,0.0133
+fx-ctl-joint (p3) - ctl-32b-joint (p3),games with empty_talk_done_count = 0,profit_gain_index,9,-0.1148,-0.2936,-0.0073

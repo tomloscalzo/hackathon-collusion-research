@@ -1,0 +1,5 @@
+run,mode,games,games_with_defection,median_defect_round,punished_within_3,share_punished_within_3,ever_punished,median_lag_if_punished
+neutral,off,20,16,7.0,0,0.0,0,
+neutral,on,20,16,7.0,9,0.5625,11,2.0
+anchored,off,20,17,7.0,0,0.0,0,
+anchored,on,20,16,7.0,4,0.25,6,1.0

@@ -1,0 +1,13 @@
+set,pair compared,n_games,n_texts,spearman_rho,lo,hi
+temptation a+b,claude_temptation vs self-score,40,10,0.206,-0.297,0.679
+temptation a+b,claude_temptation vs price_index,40,10,-0.177,-0.556,0.226
+temptation a+b,claude_temptation vs competitive_share,40,10,-0.018,-0.392,0.294
+temptation a+b,claude_temptation vs matching_share,40,10,-0.127,-0.445,0.354
+temptation a+b,self-score vs price_index,40,10,0.463,0.222,0.655
+temptation a+b,self-score vs matching_share,40,10,0.552,0.286,0.738
+"conflict, no-rule + ethics arms",claude_conflict vs self-score,40,10,-0.345,-0.536,-0.061
+"conflict, no-rule + ethics arms",claude_conflict vs price_index,40,10,-0.161,-0.483,0.228
+"conflict, no-rule + ethics arms",claude_conflict vs competitive_share,40,10,0.270,-0.174,0.567
+"conflict, no-rule + ethics arms",claude_conflict vs matching_share,40,10,-0.318,-0.652,0.118
+"conflict, no-rule + ethics arms",self-score vs price_index,40,10,0.047,-0.300,0.318
+"conflict, no-rule + ethics arms",self-score vs matching_share,40,10,0.307,0.080,0.493

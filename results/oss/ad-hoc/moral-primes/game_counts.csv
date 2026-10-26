@@ -1,0 +1,5 @@
+arm,n_games,mean_rounds_played,games_price_index_below_0.1,games_price_index_above_0.6,games_competitive_share_above_0.5
+headline-chat,20,12.30,1,9,5
+moral-placebo,19,11.89,0,13,10
+moral-prime,20,13.10,4,0,2
+moral-prime-b,20,12.25,9,1,3

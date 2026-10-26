@@ -1,0 +1,5 @@
+arm,thinking,n_answers,n1,n2,n3,n4,n5,pct1,pct2,pct3,pct4,pct5,share_above1
+d-conflict,off,498,497,1,0,0,0,99.8,0.2,0.0,0.0,0.0,0.2
+d-conflict,on,402,399,3,0,0,0,99.3,0.7,0.0,0.0,0.0,0.7
+d-conflict-ethics,off,456,445,10,1,0,0,97.6,2.2,0.2,0.0,0.0,2.4
+d-conflict-ethics,on,310,270,32,7,1,0,87.1,10.3,2.3,0.3,0.0,12.9

@@ -1,0 +1,6 @@
+replicate_arm,headline_cell,n_rep,n_head,spread_rep,price_rep,pgi_rep,comp_rep,match_rep,spread_head,price_head,pgi_head,comp_head,match_head
+hrep-fx-chat-p1,headline-chat__p1,20,20,2.386,0.6928,0.8853,0.3634,0.4485,2.147,0.5735,0.7689,0.4261,0.4122
+hrep-fx-chat-p5,headline-chat__p5,19,20,1.931,0.4653,0.6228,0.4261,0.3445,1.845,0.4225,0.5759,0.4554,0.3285
+hrep-fx-tacit-p1,headline-tacit__p1,20,20,2.082,0.5411,0.7372,0.6764,0.192,1.775,0.3875,0.571,0.6811,0.1635
+hrep-nx-chat-p1,headline-chat__p1,20,20,2.281,0.6403,0.8306,0.4044,0.4402,2.147,0.5735,0.7689,0.4261,0.4122
+hrep-nx-tacit-p1,headline-tacit__p1,20,20,2.036,0.5179,0.7166,0.6121,0.2762,1.775,0.3875,0.571,0.6811,0.1635

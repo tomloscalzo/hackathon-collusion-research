@@ -1,0 +1,5 @@
+arm,eligible,triggered,asked,noncompetitive_share,asked_rate,triggered_rate,games_with_any_ask,games
+headline-chat,0,0,0,0.5646,,,0,60
+wd-ask-noreport,412,240,221,0.5825,0.5364,0.5825,16,19
+wd-noncomp,450,295,268,0.6556,0.5956,0.6556,18,20
+wd-notice-only,0,0,0,0.5591,,,0,19

@@ -1,0 +1,6 @@
+n_pairs,mean_a,mean_b,diff,ci_lo,ci_hi,p_signflip,se,mde,metric,contrast
+20,2.2376,2.4887,-0.2511,-0.49893,-0.029671,0.052778,0.12092,0.33858,Average absolute spread,fx-ctl-joint - ctl-32b-joint
+20,0.61848,0.74434,-0.12586,-0.24972,-0.015276,0.052111,0.060413,0.16916,Price index,fx-ctl-joint - ctl-32b-joint
+20,0.765,0.93194,-0.16694,-0.30319,-0.051654,0.0094891,0.064878,0.18166,Profit gain index,fx-ctl-joint - ctl-32b-joint
+20,0.18301,0.24925,-0.06624,-0.15605,0.024524,0.17452,0.046865,0.13122,Competitive share (U16),fx-ctl-joint - ctl-32b-joint
+20,0.4902,0.60713,-0.11693,-0.27518,0.032789,0.16441,0.080397,0.22511,Matching share,fx-ctl-joint - ctl-32b-joint

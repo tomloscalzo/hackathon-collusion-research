@@ -1,0 +1,6 @@
+,market_price_mean,price_index,profit_gain_index,competitive_share,matching_share
+market_price_mean,1.000,1.000,0.993,-0.207,0.339
+price_index,1.000,1.000,0.993,-0.207,0.339
+profit_gain_index,0.993,0.993,1.000,-0.200,0.339
+competitive_share,-0.207,-0.207,-0.200,1.000,-0.843
+matching_share,0.339,0.339,0.339,-0.843,1.000

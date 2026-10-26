@@ -1,0 +1,10 @@
+,score_mean,price_index,profit_gain_index,competitive_share,matching_share,undercut_count,war_length,explicit_agreement_flag,collusive_game
+score_mean,1.0,0.096,0.096,-0.014,-0.07,0.128,0.097,-0.153,0.023
+price_index,0.096,1.0,1.0,-0.378,0.343,-0.061,-0.09,-0.076,0.212
+profit_gain_index,0.096,1.0,1.0,-0.378,0.343,-0.061,-0.09,-0.076,0.212
+competitive_share,-0.014,-0.378,-0.378,1.0,-0.778,0.632,0.594,0.001,-0.392
+matching_share,-0.07,0.343,0.343,-0.778,1.0,-0.487,-0.454,-0.068,0.322
+undercut_count,0.128,-0.061,-0.061,0.632,-0.487,1.0,0.942,0.026,-0.161
+war_length,0.097,-0.09,-0.09,0.594,-0.454,0.942,1.0,0.015,-0.161
+explicit_agreement_flag,-0.153,-0.076,-0.076,0.001,-0.068,0.026,0.015,1.0,-0.055
+collusive_game,0.023,0.212,0.212,-0.392,0.322,-0.161,-0.161,-0.055,1.0

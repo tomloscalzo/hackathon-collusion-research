@@ -1,0 +1,918 @@
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Ripeness one-input charts</title><style>body{font-family:Helvetica,Arial,sans-serif;color:#222;background:#fff;margin:0}.page{width:1180px;padding:20px 20px 28px}h1{font-size:18px;margin:0 0 2px;text-align:center}.sub{font-size:12px;color:#555;text-align:center;margin-bottom:10px}.figs{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}.fig{text-align:center}.ft{font-weight:bold;font-size:13px}table.terms{border-collapse:collapse;width:100%;font-size:12px;margin:12px 0 4px}table.terms th,table.terms td{border:1px solid #ccc;padding:5px 7px;text-align:left;vertical-align:top}table.terms th{background:#f2f4f7}table.terms td:nth-child(1),table.terms td:nth-child(2){font-weight:bold}.ih,.dh{font-weight:bold;text-decoration:underline;font-size:14px;margin:28px 0 16px}.interp{font-weight:bold;font-size:13px;line-height:1.5}.det{font-size:12px;line-height:1.5}.det p{margin:4px 0}.findings{font-size:13px;line-height:1.5}.findings table{border-collapse:collapse;font-size:12px;margin:8px 0}.findings th,.findings td{border:1px solid #ccc;padding:4px 6px;text-align:left;vertical-align:top}.findings th{background:#f2f4f7}body{max-width:1220px;margin:0 auto;padding:0 12px}.page{width:auto;border-bottom:2px solid #ddd}svg{max-width:100%;height:auto}nav{font-size:13px;line-height:1.8}</style></head><body>
+<h1 style='font-size:22px;margin-top:20px'>Ripeness map: one input at a time</h1><p style='font-size:13px'>Each section shows how one input moves how often a profit-maximising cartel colludes (left) and how hard (right), averaged over all combinations of the other eight inputs in the wide grid. The solid line is all markets; the dashed line is markets with no minimum price step, which are free of the tick-market modelling simplification. Inputs are ordered by impact. Two-input charts: <a href='../pairs/pair_charts.html'>pair_charts.html</a>.</p>
+<div class='findings'><div class='ih' style='font-size:18px'>Major findings (executive summary)</div><p><strong>Source.</strong> The Layer A solver over 1,036,800 parameter combinations (the wide grid), plus the one-input charts (<code>oned/</code>) and the 36 two-input pair charts (<code>pairs/</code>). The results are model-generated, not LLM results: they describe what a profit-maximising cartel would do, which is the reference map that the LLM experiments will be compared against. Each number below is an average over all the other inputs.</p>
+<h2>Terms</h2>
+<table><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th></tr><tr><td>—</td><td><strong>Share where collusion is chosen</strong> ("how often")</td><td>The fraction of scenarios in which a profit-maximising cartel chooses to collude at all</td></tr><tr><td>θ*</td><td><strong>Chosen collusion intensity</strong> ("how hard")</td><td>How far above the competitive spread the cartel prices, from 0 (competitive) to 1 (monopoly)</td></tr><tr><td>δ</td><td><strong>Patience</strong></td><td>The chance the market continues for another round. High patience means firms care about future profits.</td></tr><tr><td>N</td><td><strong>Number of market makers</strong></td><td>How many firms quote prices</td></tr><tr><td>φ</td><td><strong>Preferenced volume share</strong></td><td>The share of orders split evenly among firms whatever the price. Undercutting cannot win it.</td></tr><tr><td>ι</td><td><strong>Tick size</strong></td><td>The minimum price step</td></tr><tr><td>slope</td><td><strong>Regulator screen slope</strong></td><td>How strongly wide spreads trigger an investigation by the regulator's automated screen</td></tr><tr><td>ρ_tip</td><td><strong>Tip probability</strong></td><td>The chance each round that an investigation starts from a tip (whistleblower, complaint), whatever the prices</td></tr><tr><td>P(evidence)</td><td><strong>P(evidence | investigation)</strong></td><td>The chance an investigation produces a guilty finding and a fine</td></tr><tr><td>F ratio</td><td><strong>Fine ratio</strong></td><td>The fine as a multiple of one round of a firm's full-collusion (monopoly) profit</td></tr><tr><td>s̄/s₀</td><td><strong>Reservation spread ratio</strong></td><td>The room between cost (s₀) and the spread at which customers stop trading (s̄)</td></tr></table>
+<h2>1. The inputs, ranked by impact</h2>
+<table><tr><th>Rank</th><th>Input</th><th>How often (lowest → highest value)</th><th>How hard (θ*)</th><th>What it means</th></tr><tr><td>1</td><td><strong>Fine ratio</strong></td><td>0.67 → 0.05 (fine ratio 0 → 500)</td><td>0.45 → 0.04</td><td>The strongest single force against collusion, but only when something can start an investigation</td></tr><tr><td>2</td><td><strong>Regulator screen slope</strong></td><td>0.55 → 0.14 (slope 0 → 0.2)</td><td>0.53 → 0.06</td><td>The strongest force on intensity: cartels lower their prices to stay below the screen's notice</td></tr><tr><td>3</td><td><strong>Tip probability</strong></td><td>0.38 → 0.20 (0 → 5% per round)</td><td>0.25 → 0.14</td><td>Works even when prices look normal, and has a hard cut-off (§2)</td></tr><tr><td>4</td><td><strong>Number of market makers</strong></td><td>0.35 → 0.19 (N 2 → 10)</td><td>0.27 → 0.12</td><td>More firms need much more patience to hold a cartel together</td></tr><tr><td>5</td><td><strong>Patience</strong></td><td>Rises, then dips at the top (0.17 at δ 0.5, peak 0.37 at 0.9, 0.27 at 0.99)</td><td>Same shape</td><td>Necessary but not sufficient. In markets with no minimum price step, how often firms collude keeps rising (0.12 → 0.51); the dip comes from markets with a price step (caveats).</td></tr><tr><td>6</td><td><strong>P(evidence | investigation)</strong></td><td>0.39 → 0.23 (0.1 → 1)</td><td>0.26 → 0.17</td><td>Works by making the fine likely to be paid, so it matters only alongside a fine</td></tr><tr><td>7</td><td><strong>Tick size</strong></td><td>0.38 → 0.20 (0 → 0.5)</td><td>0.26 → 0.14</td><td>Partly real (competition already earns a little; the cartel cannot fine-tune its price), partly the modelling simplification (caveats)</td></tr><tr><td>8</td><td>Preferenced volume share</td><td>0.26 → 0.33</td><td>0.17 → 0.24</td><td>Small: protected volume makes cheating pay less, so collusion is slightly easier</td></tr><tr><td>9</td><td>Reservation spread ratio</td><td>Peaks in the middle (tick-free: falls 0.48 → 0.29)</td><td>Peaks in the middle (tick-free: falls)</td><td>Small. With no price step, more room makes cartel spreads more visible to the screen and the fine larger relative to a small markup.</td></tr></table>
+<h2>2. The combinations that matter most</h2>
+<ol><li>
+<strong>Detection × penalty is one lever, not four.</strong> In markets with no minimum price step and no tips, collusion is chosen almost exactly when <strong>regulator screen slope × P(evidence | investigation) × fine ratio × (reservation spread ratio − 1)</strong> is below 4. This holds in 98.9% of those scenarios. The inputs substitute for each other: a 10% chance of evidence with a fine ratio of 125 deters exactly as much as certain evidence with a fine ratio of 12.5. For policy and for AI oversight, this means the cheapest component can be scaled up instead of all of them.
+</li><li>
+<strong>No detection, no deterrence.</strong> With a regulator screen slope of 0 and no tips, collusion runs at full intensity whatever the fine; even a fine ratio of 1,000 does nothing.
+</li><li>
+<strong>A sensitive screen with a heavy fine removes collusion.</strong> With a regulator screen slope ≥ 0.05 and a fine ratio ≥ 125, collusion is chosen in 1.1% of scenarios. A gentle screen is not enough on its own: at slope 0.01 with a fine ratio of 125, 22% still collude.
+</li><li>
+<strong>Tips have a hard threshold.</strong> Collusion becomes impossible once tip probability × P(evidence | investigation) × fine ratio exceeds 1. At the ripe baseline, a 5% per-round tip probability removes collusion.
+</li><li>
+<strong>Patience × number of market makers follows the textbook threshold.</strong> A cartel of N firms holds roughly when patience δ ≥ 1 − 1/N. That means about 0.5 for 2 firms, 0.75 for 4 and 0.9 for 10. Impatient markets with many firms almost never collude. Once patience is high, the number of firms stops mattering.
+</li><li>
+<strong>Very patient cartels collude more gently.</strong> They have more future profit to lose to an investigation, so they choose lower, less conspicuous prices: how often they collude stays high while intensity eases.
+</li></ol>
+<h2>3. Ranges to remember</h2>
+<ul><li>
+<strong>Most collusion-prone:</strong> regulator screen slope 0, no tips, fine ratio ≤ 5, 2–4 market makers, patience 0.8–0.9, no minimum price step. Every one of these 720 scenarios colludes, at full (monopoly) intensity.
+</li><li>
+<strong>Near collusion-proof:</strong> regulator screen slope ≥ 0.05 with a fine ratio ≥ 125, where 1.1% collude. Alternatively, a 5% tip probability once the fine ratio exceeds 20 ÷ P(evidence | investigation).
+</li><li>
+<strong>Borderline (where LLM behaviour is most informative):</strong> a moderate regulator screen slope (0.025–0.05), a moderate fine ratio (12.5–25) and patience 0.9–0.95. Small changes in the inputs flip whether a rational cartel colludes, so an LLM's departures from the rational choice are easiest to see. Our ripe baseline sits here.
+</li></ul>
+<h2>4. Caveats</h2>
+<ul><li>
+<strong>Modelling simplification in markets with a minimum price step.</strong> There, an investigation that finds nothing is treated as worse for firms than a conviction: post-investigation profit is set to zero, while ordinary competition still earns a small profit. This drives the dip at the highest patience, part of the tick-size effect, and the rise of collusion with P(evidence | investigation) when there is no fine. It is a recorded limitation (FUTURE_DIRECTIONS §6). None of the findings for markets with no price step depend on it.
+</li><li>
+<strong>Detection ends collusion permanently.</strong> Re-formation and repeat offending are not modelled, so the map is conservative about how often collusion pays.
+</li><li>
+<strong>Prisoner's-dilemma-style collusion only.</strong> Every finding on patience, number of market makers and preferenced volume share comes from each firm's temptation to break ranks. They do not apply to shared-objective coordination (all agents pursuing one goal, as in the Hugging Face incident), which has different incentives and is not modelled.
+</li><li>
+<strong>Averaging.</strong> The averages depend on the grid's ranges. The directions and the product rule do not.
+</li><li>
+<strong>Theory map, not LLM data.</strong>
+</li></ul></div>
+<nav><b>Inputs:</b> <a href='#fineRatio'>Fine ratio</a> · <a href='#slope'>Regulator screen slope</a> · <a href='#rhoTip'>Tip probability</a> · <a href='#N'>Number of market makers</a> · <a href='#delta'>Patience</a> · <a href='#pEvidence'>P(evidence | investigation)</a> · <a href='#tick'>Tick size</a> · <a href='#phi'>Preferenced volume share</a> · <a href='#sBarRatio'>Reservation spread ratio</a></nav>
+<div class='page' id='fineRatio'><h1>Fine ratio (F ratio)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="139.4" y="260" font-size="10" text-anchor="middle">5</text>
+<text x="198.9" y="260" font-size="10" text-anchor="middle">12.5</text>
+<text x="258.3" y="260" font-size="10" text-anchor="middle">25</text>
+<text x="317.7" y="260" font-size="10" text-anchor="middle">50</text>
+<text x="377.1" y="260" font-size="10" text-anchor="middle">125</text>
+<text x="436.6" y="260" font-size="10" text-anchor="middle">250</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">500</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Fine ratio (F ratio) · levels evenly spaced</text>
+<polyline points="80.0,63.7 139.4,97.5 198.9,134.8 258.3,165.4 317.7,189.8 377.1,213.8 436.6,225.6 496.0,231.1" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="63.7" r="3.5" fill="#08519c"/>
+<text x="80.0" y="78.7" font-size="9" text-anchor="middle" fill="#08519c">0.67</text>
+<circle cx="139.4" cy="97.5" r="3.5" fill="#08519c"/>
+<text x="139.4" y="112.5" font-size="9" text-anchor="middle" fill="#08519c">0.55</text>
+<circle cx="198.9" cy="134.8" r="3.5" fill="#08519c"/>
+<text x="198.9" y="149.8" font-size="9" text-anchor="middle" fill="#08519c">0.41</text>
+<circle cx="258.3" cy="165.4" r="3.5" fill="#08519c"/>
+<text x="258.3" y="180.4" font-size="9" text-anchor="middle" fill="#08519c">0.29</text>
+<circle cx="317.7" cy="189.8" r="3.5" fill="#08519c"/>
+<text x="317.7" y="204.8" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<circle cx="377.1" cy="213.8" r="3.5" fill="#08519c"/>
+<text x="377.1" y="228.8" font-size="9" text-anchor="middle" fill="#08519c">0.11</text>
+<circle cx="436.6" cy="225.6" r="3.5" fill="#08519c"/>
+<text x="436.6" y="240.6" font-size="9" text-anchor="middle" fill="#08519c">0.07</text>
+<circle cx="496.0" cy="231.1" r="3.5" fill="#08519c"/>
+<text x="496.0" y="246.1" font-size="9" text-anchor="middle" fill="#08519c">0.05</text>
+<polyline points="80.0,45.9 139.4,62.6 198.9,94.1 258.3,130.8 317.7,163.8 377.1,197.5 436.6,217.4 496.0,227.2" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="45.9" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="38.9" font-size="9" text-anchor="middle" fill="#d95f02">0.74</text>
+<circle cx="139.4" cy="62.6" r="3.5" fill="#d95f02"/>
+<text x="139.4" y="55.6" font-size="9" text-anchor="middle" fill="#d95f02">0.68</text>
+<circle cx="198.9" cy="94.1" r="3.5" fill="#d95f02"/>
+<text x="198.9" y="87.1" font-size="9" text-anchor="middle" fill="#d95f02">0.56</text>
+<circle cx="258.3" cy="130.8" r="3.5" fill="#d95f02"/>
+<text x="258.3" y="123.8" font-size="9" text-anchor="middle" fill="#d95f02">0.42</text>
+<circle cx="317.7" cy="163.8" r="3.5" fill="#d95f02"/>
+<text x="317.7" y="156.8" font-size="9" text-anchor="middle" fill="#d95f02">0.30</text>
+<circle cx="377.1" cy="197.5" r="3.5" fill="#d95f02"/>
+<text x="377.1" y="190.5" font-size="9" text-anchor="middle" fill="#d95f02">0.17</text>
+<circle cx="436.6" cy="217.4" r="3.5" fill="#d95f02"/>
+<text x="436.6" y="210.4" font-size="9" text-anchor="middle" fill="#d95f02">0.10</text>
+<circle cx="496.0" cy="227.2" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="220.2" font-size="9" text-anchor="middle" fill="#d95f02">0.06</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="139.4" y="260" font-size="10" text-anchor="middle">5</text>
+<text x="198.9" y="260" font-size="10" text-anchor="middle">12.5</text>
+<text x="258.3" y="260" font-size="10" text-anchor="middle">25</text>
+<text x="317.7" y="260" font-size="10" text-anchor="middle">50</text>
+<text x="377.1" y="260" font-size="10" text-anchor="middle">125</text>
+<text x="436.6" y="260" font-size="10" text-anchor="middle">250</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">500</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Fine ratio (F ratio) · levels evenly spaced</text>
+<polyline points="80.0,123.6 139.4,146.6 198.9,169.4 258.3,189.1 317.7,204.9 377.1,221.3 436.6,229.5 496.0,233.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="123.6" r="3.5" fill="#08519c"/>
+<text x="80.0" y="138.6" font-size="9" text-anchor="middle" fill="#08519c">0.45</text>
+<circle cx="139.4" cy="146.6" r="3.5" fill="#08519c"/>
+<text x="139.4" y="161.6" font-size="9" text-anchor="middle" fill="#08519c">0.36</text>
+<circle cx="198.9" cy="169.4" r="3.5" fill="#08519c"/>
+<text x="198.9" y="184.4" font-size="9" text-anchor="middle" fill="#08519c">0.28</text>
+<circle cx="258.3" cy="189.1" r="3.5" fill="#08519c"/>
+<text x="258.3" y="204.1" font-size="9" text-anchor="middle" fill="#08519c">0.21</text>
+<circle cx="317.7" cy="204.9" r="3.5" fill="#08519c"/>
+<text x="317.7" y="219.9" font-size="9" text-anchor="middle" fill="#08519c">0.15</text>
+<circle cx="377.1" cy="221.3" r="3.5" fill="#08519c"/>
+<text x="377.1" y="236.3" font-size="9" text-anchor="middle" fill="#08519c">0.09</text>
+<circle cx="436.6" cy="229.5" r="3.5" fill="#08519c"/>
+<text x="436.6" y="244.5" font-size="9" text-anchor="middle" fill="#08519c">0.05</text>
+<circle cx="496.0" cy="233.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="248.0" font-size="9" text-anchor="middle" fill="#08519c">0.04</text>
+<polyline points="80.0,111.4 139.4,124.3 198.9,143.5 258.3,166.5 317.7,187.7 377.1,211.0 436.6,224.5 496.0,230.6" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="111.4" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="104.4" font-size="9" text-anchor="middle" fill="#d95f02">0.50</text>
+<circle cx="139.4" cy="124.3" r="3.5" fill="#d95f02"/>
+<text x="139.4" y="117.3" font-size="9" text-anchor="middle" fill="#d95f02">0.45</text>
+<circle cx="198.9" cy="143.5" r="3.5" fill="#d95f02"/>
+<text x="198.9" y="136.5" font-size="9" text-anchor="middle" fill="#d95f02">0.38</text>
+<circle cx="258.3" cy="166.5" r="3.5" fill="#d95f02"/>
+<text x="258.3" y="159.5" font-size="9" text-anchor="middle" fill="#d95f02">0.29</text>
+<circle cx="317.7" cy="187.7" r="3.5" fill="#d95f02"/>
+<text x="317.7" y="180.7" font-size="9" text-anchor="middle" fill="#d95f02">0.21</text>
+<circle cx="377.1" cy="211.0" r="3.5" fill="#d95f02"/>
+<text x="377.1" y="204.0" font-size="9" text-anchor="middle" fill="#d95f02">0.12</text>
+<circle cx="436.6" cy="224.5" r="3.5" fill="#d95f02"/>
+<text x="436.6" y="217.5" font-size="9" text-anchor="middle" fill="#d95f02">0.07</text>
+<circle cx="496.0" cy="230.6" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="223.6" font-size="9" text-anchor="middle" fill="#d95f02">0.05</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>F ratio</td><td>Fine ratio</td><td>The fine, measured as a multiple of one round of a firm&#x27;s full-collusion (monopoly) profit.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a higher fine ratio (the fine as a multiple of one round of a firm&#x27;s full-collusion profit) is the single strongest force against collusion, cutting both how often and how hard firms collude, with large effects even at moderate fines. It most likely works only through detection: the fine is paid only if an investigation starts and finds evidence, so fines combined with a sensitive regulator screen or frequent tips are far more effective than fines alone. The pattern is the same in markets with and without a minimum price step.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Fine ratio from 0 to 500; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.67 to 0.05; markets with no minimum price step falls from 0.74 to 0.06.</p><p>Chosen collusion intensity θ*: all markets falls from 0.45 to 0.04; markets with no minimum price step falls from 0.50 to 0.05.</p><p>Share of the variation across the whole grid explained by this input alone: 0.225 for how often, 0.157 for how hard (the rest comes from the other inputs and their combinations).</p><p>Combined lever: in markets with no price step and no tips, collusion is chosen almost exactly when regulator screen slope × P(evidence | investigation) × fine ratio × (reservation spread ratio − 1) &lt; 4 (98.9% of those scenarios), so the four inputs substitute for each other. With a regulator screen slope of 0 and no tips, the fine never binds.</p></div></div>
+<div class='page' id='slope'><h1>Regulator screen slope (slope)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="139.4" y="260" font-size="10" text-anchor="middle">0.01</text>
+<text x="198.9" y="260" font-size="10" text-anchor="middle">0.025</text>
+<text x="258.3" y="260" font-size="10" text-anchor="middle">0.05</text>
+<text x="317.7" y="260" font-size="10" text-anchor="middle">0.075</text>
+<text x="377.1" y="260" font-size="10" text-anchor="middle">0.1</text>
+<text x="436.6" y="260" font-size="10" text-anchor="middle">0.15</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.2</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Regulator screen slope (slope) · levels evenly spaced</text>
+<polyline points="80.0,96.1 139.4,128.9 198.9,151.8 258.3,170.4 317.7,180.8 377.1,189.5 436.6,198.7 496.0,205.5" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="96.1" r="3.5" fill="#08519c"/>
+<text x="80.0" y="111.1" font-size="9" text-anchor="middle" fill="#08519c">0.55</text>
+<circle cx="139.4" cy="128.9" r="3.5" fill="#08519c"/>
+<text x="139.4" y="143.9" font-size="9" text-anchor="middle" fill="#08519c">0.43</text>
+<circle cx="198.9" cy="151.8" r="3.5" fill="#08519c"/>
+<text x="198.9" y="166.8" font-size="9" text-anchor="middle" fill="#08519c">0.34</text>
+<circle cx="258.3" cy="170.4" r="3.5" fill="#08519c"/>
+<text x="258.3" y="185.4" font-size="9" text-anchor="middle" fill="#08519c">0.28</text>
+<circle cx="317.7" cy="180.8" r="3.5" fill="#08519c"/>
+<text x="317.7" y="195.8" font-size="9" text-anchor="middle" fill="#08519c">0.24</text>
+<circle cx="377.1" cy="189.5" r="3.5" fill="#08519c"/>
+<text x="377.1" y="204.5" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<circle cx="436.6" cy="198.7" r="3.5" fill="#08519c"/>
+<text x="436.6" y="213.7" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<circle cx="496.0" cy="205.5" r="3.5" fill="#08519c"/>
+<text x="496.0" y="220.5" font-size="9" text-anchor="middle" fill="#08519c">0.14</text>
+<polyline points="80.0,85.3 139.4,110.5 198.9,129.5 258.3,145.2 317.7,154.3 377.1,163.2 436.6,171.7 496.0,179.6" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="85.3" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="78.3" font-size="9" text-anchor="middle" fill="#d95f02">0.59</text>
+<circle cx="139.4" cy="110.5" r="3.5" fill="#d95f02"/>
+<text x="139.4" y="103.5" font-size="9" text-anchor="middle" fill="#d95f02">0.50</text>
+<circle cx="198.9" cy="129.5" r="3.5" fill="#d95f02"/>
+<text x="198.9" y="122.5" font-size="9" text-anchor="middle" fill="#d95f02">0.43</text>
+<circle cx="258.3" cy="145.2" r="3.5" fill="#d95f02"/>
+<text x="258.3" y="138.2" font-size="9" text-anchor="middle" fill="#d95f02">0.37</text>
+<circle cx="317.7" cy="154.3" r="3.5" fill="#d95f02"/>
+<text x="317.7" y="147.3" font-size="9" text-anchor="middle" fill="#d95f02">0.34</text>
+<circle cx="377.1" cy="163.2" r="3.5" fill="#d95f02"/>
+<text x="377.1" y="156.2" font-size="9" text-anchor="middle" fill="#d95f02">0.30</text>
+<circle cx="436.6" cy="171.7" r="3.5" fill="#d95f02"/>
+<text x="436.6" y="164.7" font-size="9" text-anchor="middle" fill="#d95f02">0.27</text>
+<circle cx="496.0" cy="179.6" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="172.6" font-size="9" text-anchor="middle" fill="#d95f02">0.24</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="139.4" y="260" font-size="10" text-anchor="middle">0.01</text>
+<text x="198.9" y="260" font-size="10" text-anchor="middle">0.025</text>
+<text x="258.3" y="260" font-size="10" text-anchor="middle">0.05</text>
+<text x="317.7" y="260" font-size="10" text-anchor="middle">0.075</text>
+<text x="377.1" y="260" font-size="10" text-anchor="middle">0.1</text>
+<text x="436.6" y="260" font-size="10" text-anchor="middle">0.15</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.2</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Regulator screen slope (slope) · levels evenly spaced</text>
+<polyline points="80.0,103.4 139.4,156.8 198.9,181.7 258.3,199.8 317.7,209.3 377.1,215.9 436.6,222.9 496.0,227.5" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="103.4" r="3.5" fill="#08519c"/>
+<text x="80.0" y="118.4" font-size="9" text-anchor="middle" fill="#08519c">0.53</text>
+<circle cx="139.4" cy="156.8" r="3.5" fill="#08519c"/>
+<text x="139.4" y="171.8" font-size="9" text-anchor="middle" fill="#08519c">0.33</text>
+<circle cx="198.9" cy="181.7" r="3.5" fill="#08519c"/>
+<text x="198.9" y="196.7" font-size="9" text-anchor="middle" fill="#08519c">0.23</text>
+<circle cx="258.3" cy="199.8" r="3.5" fill="#08519c"/>
+<text x="258.3" y="214.8" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<circle cx="317.7" cy="209.3" r="3.5" fill="#08519c"/>
+<text x="317.7" y="224.3" font-size="9" text-anchor="middle" fill="#08519c">0.13</text>
+<circle cx="377.1" cy="215.9" r="3.5" fill="#08519c"/>
+<text x="377.1" y="230.9" font-size="9" text-anchor="middle" fill="#08519c">0.11</text>
+<circle cx="436.6" cy="222.9" r="3.5" fill="#08519c"/>
+<text x="436.6" y="237.9" font-size="9" text-anchor="middle" fill="#08519c">0.08</text>
+<circle cx="496.0" cy="227.5" r="3.5" fill="#08519c"/>
+<text x="496.0" y="242.5" font-size="9" text-anchor="middle" fill="#08519c">0.06</text>
+<polyline points="80.0,85.3 139.4,138.6 198.9,164.7 258.3,184.1 317.7,195.3 377.1,202.6 436.6,211.5 496.0,217.2" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="85.3" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="78.3" font-size="9" text-anchor="middle" fill="#d95f02">0.59</text>
+<circle cx="139.4" cy="138.6" r="3.5" fill="#d95f02"/>
+<text x="139.4" y="131.6" font-size="9" text-anchor="middle" fill="#d95f02">0.39</text>
+<circle cx="198.9" cy="164.7" r="3.5" fill="#d95f02"/>
+<text x="198.9" y="157.7" font-size="9" text-anchor="middle" fill="#d95f02">0.30</text>
+<circle cx="258.3" cy="184.1" r="3.5" fill="#d95f02"/>
+<text x="258.3" y="177.1" font-size="9" text-anchor="middle" fill="#d95f02">0.22</text>
+<circle cx="317.7" cy="195.3" r="3.5" fill="#d95f02"/>
+<text x="317.7" y="188.3" font-size="9" text-anchor="middle" fill="#d95f02">0.18</text>
+<circle cx="377.1" cy="202.6" r="3.5" fill="#d95f02"/>
+<text x="377.1" y="195.6" font-size="9" text-anchor="middle" fill="#d95f02">0.15</text>
+<circle cx="436.6" cy="211.5" r="3.5" fill="#d95f02"/>
+<text x="436.6" y="204.5" font-size="9" text-anchor="middle" fill="#d95f02">0.12</text>
+<circle cx="496.0" cy="217.2" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="210.2" font-size="9" text-anchor="middle" fill="#d95f02">0.10</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>slope</td><td>Regulator screen slope</td><td>How sensitive the regulator&#x27;s automated screen is to wide spreads. A steeper slope means more collusive prices are more likely to trigger an investigation.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a steeper regulator screen slope (how strongly wide spreads trigger an investigation) makes collusion steadily rarer and, even more strongly, gentler. Because the screen reacts to how wide the spread is, cartels that still collude most likely lower their prices to stay below its notice, which is why intensity falls faster than how often they collude. The pattern is the same in markets with and without a minimum price step.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Regulator screen slope from 0 to 0.2; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.55 to 0.14; markets with no minimum price step falls from 0.59 to 0.24.</p><p>Chosen collusion intensity θ*: all markets falls from 0.53 to 0.06; markets with no minimum price step falls from 0.59 to 0.10.</p><p>Share of the variation across the whole grid explained by this input alone: 0.083 for how often, 0.171 for how hard (the rest comes from the other inputs and their combinations).</p><p>Intensity responds more than frequency (largest share of variance explained of any input for θ*). With a fine ratio ≥ 125, a slope ≥ 0.05 leaves 1.1% of scenarios colluding; at slope 0.01 with fine ratio 125, 22% still collude.</p></div></div>
+<div class='page' id='rhoTip'><h1>Tip probability (ρ_tip)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.01</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.05</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Tip probability (ρ_tip) · levels evenly spaced</text>
+<polyline points="80.0,141.1 288.0,163.1 496.0,191.5" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="141.1" r="3.5" fill="#08519c"/>
+<text x="80.0" y="156.1" font-size="9" text-anchor="middle" fill="#08519c">0.38</text>
+<circle cx="288.0" cy="163.1" r="3.5" fill="#08519c"/>
+<text x="288.0" y="178.1" font-size="9" text-anchor="middle" fill="#08519c">0.30</text>
+<circle cx="496.0" cy="191.5" r="3.5" fill="#08519c"/>
+<text x="496.0" y="206.5" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<polyline points="80.0,118.0 288.0,139.9 496.0,169.3" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="118.0" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="111.0" font-size="9" text-anchor="middle" fill="#d95f02">0.47</text>
+<circle cx="288.0" cy="139.9" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="132.9" font-size="9" text-anchor="middle" fill="#d95f02">0.39</text>
+<circle cx="496.0" cy="169.3" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="162.3" font-size="9" text-anchor="middle" fill="#d95f02">0.28</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.01</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.05</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Tip probability (ρ_tip) · levels evenly spaced</text>
+<polyline points="80.0,176.1 288.0,187.2 496.0,205.7" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="176.1" r="3.5" fill="#08519c"/>
+<text x="80.0" y="191.1" font-size="9" text-anchor="middle" fill="#08519c">0.25</text>
+<circle cx="288.0" cy="187.2" r="3.5" fill="#08519c"/>
+<text x="288.0" y="202.2" font-size="9" text-anchor="middle" fill="#08519c">0.21</text>
+<circle cx="496.0" cy="205.7" r="3.5" fill="#08519c"/>
+<text x="496.0" y="220.7" font-size="9" text-anchor="middle" fill="#08519c">0.14</text>
+<polyline points="80.0,165.5 288.0,171.9 496.0,187.4" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="165.5" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="158.5" font-size="9" text-anchor="middle" fill="#d95f02">0.29</text>
+<circle cx="288.0" cy="171.9" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="164.9" font-size="9" text-anchor="middle" fill="#d95f02">0.27</text>
+<circle cx="496.0" cy="187.4" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="180.4" font-size="9" text-anchor="middle" fill="#d95f02">0.21</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>ρ_tip</td><td>Tip probability</td><td>The chance each round that an investigation starts from a tip (for example a whistleblower or a customer complaint), whatever the prices.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a higher tip probability (the chance each round that an investigation starts from a tip, whatever the prices) makes collusion less common and less intense. Unlike the regulator screen, tips cannot be avoided by pricing more gently, so they mostly shorten the cartel&#x27;s expected life; combined with a heavy enough fine and a high enough chance of a guilty finding, they appear to remove collusion altogether.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Tip probability from 0 to 0.05; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.38 to 0.20; markets with no minimum price step falls from 0.47 to 0.28.</p><p>Chosen collusion intensity θ*: all markets falls from 0.25 to 0.14; markets with no minimum price step falls from 0.29 to 0.21.</p><p>Share of the variation across the whole grid explained by this input alone: 0.029 for how often, 0.017 for how hard (the rest comes from the other inputs and their combinations).</p><p>Hard threshold: collusion is impossible once tip probability × P(evidence | investigation) × fine ratio exceeds 1. At the ripe baseline a 5% tip probability removes collusion entirely (fig4 E).</p></div></div>
+<div class='page' id='N'><h1>Number of market makers (N)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">2</text>
+<text x="184.0" y="260" font-size="10" text-anchor="middle">3</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">4</text>
+<text x="392.0" y="260" font-size="10" text-anchor="middle">6</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">10</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Number of market makers (N) · levels evenly spaced</text>
+<polyline points="80.0,150.8 184.0,151.3 288.0,159.2 392.0,172.8 496.0,192.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="150.8" r="3.5" fill="#08519c"/>
+<text x="80.0" y="165.8" font-size="9" text-anchor="middle" fill="#08519c">0.35</text>
+<circle cx="184.0" cy="151.3" r="3.5" fill="#08519c"/>
+<text x="184.0" y="166.3" font-size="9" text-anchor="middle" fill="#08519c">0.35</text>
+<circle cx="288.0" cy="159.2" r="3.5" fill="#08519c"/>
+<text x="288.0" y="174.2" font-size="9" text-anchor="middle" fill="#08519c">0.32</text>
+<circle cx="392.0" cy="172.8" r="3.5" fill="#08519c"/>
+<text x="392.0" y="187.8" font-size="9" text-anchor="middle" fill="#08519c">0.27</text>
+<circle cx="496.0" cy="192.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="207.0" font-size="9" text-anchor="middle" fill="#08519c">0.19</text>
+<polyline points="80.0,111.9 184.0,124.6 288.0,140.2 392.0,157.3 496.0,178.0" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="111.9" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="104.9" font-size="9" text-anchor="middle" fill="#d95f02">0.49</text>
+<circle cx="184.0" cy="124.6" r="3.5" fill="#d95f02"/>
+<text x="184.0" y="117.6" font-size="9" text-anchor="middle" fill="#d95f02">0.45</text>
+<circle cx="288.0" cy="140.2" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="133.2" font-size="9" text-anchor="middle" fill="#d95f02">0.39</text>
+<circle cx="392.0" cy="157.3" r="3.5" fill="#d95f02"/>
+<text x="392.0" y="150.3" font-size="9" text-anchor="middle" fill="#d95f02">0.32</text>
+<circle cx="496.0" cy="178.0" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="171.0" font-size="9" text-anchor="middle" fill="#d95f02">0.25</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">2</text>
+<text x="184.0" y="260" font-size="10" text-anchor="middle">3</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">4</text>
+<text x="392.0" y="260" font-size="10" text-anchor="middle">6</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">10</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Number of market makers (N) · levels evenly spaced</text>
+<polyline points="80.0,173.0 184.0,177.5 288.0,186.0 392.0,198.7 496.0,213.2" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="173.0" r="3.5" fill="#08519c"/>
+<text x="80.0" y="188.0" font-size="9" text-anchor="middle" fill="#08519c">0.27</text>
+<circle cx="184.0" cy="177.5" r="3.5" fill="#08519c"/>
+<text x="184.0" y="192.5" font-size="9" text-anchor="middle" fill="#08519c">0.25</text>
+<circle cx="288.0" cy="186.0" r="3.5" fill="#08519c"/>
+<text x="288.0" y="201.0" font-size="9" text-anchor="middle" fill="#08519c">0.22</text>
+<circle cx="392.0" cy="198.7" r="3.5" fill="#08519c"/>
+<text x="392.0" y="213.7" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<circle cx="496.0" cy="213.2" r="3.5" fill="#08519c"/>
+<text x="496.0" y="228.2" font-size="9" text-anchor="middle" fill="#08519c">0.12</text>
+<polyline points="80.0,149.1 184.0,159.6 288.0,173.2 392.0,187.4 496.0,205.3" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="149.1" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="142.1" font-size="9" text-anchor="middle" fill="#d95f02">0.35</text>
+<circle cx="184.0" cy="159.6" r="3.5" fill="#d95f02"/>
+<text x="184.0" y="152.6" font-size="9" text-anchor="middle" fill="#d95f02">0.32</text>
+<circle cx="288.0" cy="173.2" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="166.2" font-size="9" text-anchor="middle" fill="#d95f02">0.26</text>
+<circle cx="392.0" cy="187.4" r="3.5" fill="#d95f02"/>
+<text x="392.0" y="180.4" font-size="9" text-anchor="middle" fill="#d95f02">0.21</text>
+<circle cx="496.0" cy="205.3" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="198.3" font-size="9" text-anchor="middle" fill="#d95f02">0.14</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>N</td><td>Number of market makers</td><td>How many firms quote prices in the market.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that more market makers make collusion both rarer and gentler, in all markets and in markets with no minimum price step. Each firm&#x27;s share of the cartel profit shrinks as firms are added, while undercutting the others still wins most of the market for a round, so firms need more patience to resist cheating.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Number of market makers from 2 to 10; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.35 to 0.19; markets with no minimum price step falls from 0.49 to 0.25.</p><p>Chosen collusion intensity θ*: all markets falls from 0.27 to 0.12; markets with no minimum price step falls from 0.35 to 0.14.</p><p>Share of the variation across the whole grid explained by this input alone: 0.016 for how often, 0.024 for how hard (the rest comes from the other inputs and their combinations).</p><p>Textbook threshold: a cartel of N firms holds roughly when patience δ ≥ 1 − 1/N (about 0.5 for 2 firms, 0.75 for 4, 0.9 for 10); preferenced volume lowers it slightly. See the Patience × Number of market makers pair chart.</p></div></div>
+<div class='page' id='delta'><h1>Patience (δ)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0.5</text>
+<text x="163.2" y="260" font-size="10" text-anchor="middle">0.7</text>
+<text x="246.4" y="260" font-size="10" text-anchor="middle">0.8</text>
+<text x="329.6" y="260" font-size="10" text-anchor="middle">0.9</text>
+<text x="412.8" y="260" font-size="10" text-anchor="middle">0.95</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.99</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Patience (δ) · levels evenly spaced</text>
+<polyline points="80.0,198.5 163.2,169.4 246.4,153.5 329.6,145.8 412.8,152.2 496.0,172.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="198.5" r="3.5" fill="#08519c"/>
+<text x="80.0" y="191.5" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<circle cx="163.2" cy="169.4" r="3.5" fill="#08519c"/>
+<text x="163.2" y="162.4" font-size="9" text-anchor="middle" fill="#08519c">0.28</text>
+<circle cx="246.4" cy="153.5" r="3.5" fill="#08519c"/>
+<text x="246.4" y="168.5" font-size="9" text-anchor="middle" fill="#08519c">0.34</text>
+<circle cx="329.6" cy="145.8" r="3.5" fill="#08519c"/>
+<text x="329.6" y="160.8" font-size="9" text-anchor="middle" fill="#08519c">0.37</text>
+<circle cx="412.8" cy="152.2" r="3.5" fill="#08519c"/>
+<text x="412.8" y="167.2" font-size="9" text-anchor="middle" fill="#08519c">0.34</text>
+<circle cx="496.0" cy="172.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="187.0" font-size="9" text-anchor="middle" fill="#08519c">0.27</text>
+<polyline points="80.0,213.1 163.2,169.5 246.4,140.3 329.6,115.6 412.8,108.5 496.0,107.5" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="213.1" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="228.1" font-size="9" text-anchor="middle" fill="#d95f02">0.12</text>
+<circle cx="163.2" cy="169.5" r="3.5" fill="#d95f02"/>
+<text x="163.2" y="184.5" font-size="9" text-anchor="middle" fill="#d95f02">0.28</text>
+<circle cx="246.4" cy="140.3" r="3.5" fill="#d95f02"/>
+<text x="246.4" y="133.3" font-size="9" text-anchor="middle" fill="#d95f02">0.39</text>
+<circle cx="329.6" cy="115.6" r="3.5" fill="#d95f02"/>
+<text x="329.6" y="108.6" font-size="9" text-anchor="middle" fill="#d95f02">0.48</text>
+<circle cx="412.8" cy="108.5" r="3.5" fill="#d95f02"/>
+<text x="412.8" y="101.5" font-size="9" text-anchor="middle" fill="#d95f02">0.51</text>
+<circle cx="496.0" cy="107.5" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="100.5" font-size="9" text-anchor="middle" fill="#d95f02">0.51</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0.5</text>
+<text x="163.2" y="260" font-size="10" text-anchor="middle">0.7</text>
+<text x="246.4" y="260" font-size="10" text-anchor="middle">0.8</text>
+<text x="329.6" y="260" font-size="10" text-anchor="middle">0.9</text>
+<text x="412.8" y="260" font-size="10" text-anchor="middle">0.95</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.99</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Patience (δ) · levels evenly spaced</text>
+<polyline points="80.0,216.5 163.2,192.0 246.4,179.0 329.6,173.4 412.8,179.4 496.0,197.7" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="216.5" r="3.5" fill="#08519c"/>
+<text x="80.0" y="209.5" font-size="9" text-anchor="middle" fill="#08519c">0.10</text>
+<circle cx="163.2" cy="192.0" r="3.5" fill="#08519c"/>
+<text x="163.2" y="207.0" font-size="9" text-anchor="middle" fill="#08519c">0.19</text>
+<circle cx="246.4" cy="179.0" r="3.5" fill="#08519c"/>
+<text x="246.4" y="194.0" font-size="9" text-anchor="middle" fill="#08519c">0.24</text>
+<circle cx="329.6" cy="173.4" r="3.5" fill="#08519c"/>
+<text x="329.6" y="188.4" font-size="9" text-anchor="middle" fill="#08519c">0.26</text>
+<circle cx="412.8" cy="179.4" r="3.5" fill="#08519c"/>
+<text x="412.8" y="194.4" font-size="9" text-anchor="middle" fill="#08519c">0.24</text>
+<circle cx="496.0" cy="197.7" r="3.5" fill="#08519c"/>
+<text x="496.0" y="212.7" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<polyline points="80.0,222.0 163.2,188.8 246.4,169.0 329.6,153.9 412.8,152.2 496.0,163.7" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="222.0" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="237.0" font-size="9" text-anchor="middle" fill="#d95f02">0.08</text>
+<circle cx="163.2" cy="188.8" r="3.5" fill="#d95f02"/>
+<text x="163.2" y="181.8" font-size="9" text-anchor="middle" fill="#d95f02">0.21</text>
+<circle cx="246.4" cy="169.0" r="3.5" fill="#d95f02"/>
+<text x="246.4" y="162.0" font-size="9" text-anchor="middle" fill="#d95f02">0.28</text>
+<circle cx="329.6" cy="153.9" r="3.5" fill="#d95f02"/>
+<text x="329.6" y="146.9" font-size="9" text-anchor="middle" fill="#d95f02">0.34</text>
+<circle cx="412.8" cy="152.2" r="3.5" fill="#d95f02"/>
+<text x="412.8" y="145.2" font-size="9" text-anchor="middle" fill="#d95f02">0.34</text>
+<circle cx="496.0" cy="163.7" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="156.7" font-size="9" text-anchor="middle" fill="#d95f02">0.30</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>δ</td><td>Patience</td><td>The chance the market continues for another round. High patience means firms care a lot about future profits; the expected number of rounds is 1 ÷ (1 − δ).</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that more patience (the chance the market continues for another round) makes collusion more common and more intense, because future cartel profits are worth protecting and the threat of a price war carries more weight. In markets with no minimum price step, how often firms collude keeps rising and then levels off, while intensity peaks at high patience and eases slightly at the very top, most likely because very patient cartels choose gentler prices to avoid investigations. Across all markets both measures drop at the highest patience; that drop appears to come from a modelling simplification in markets with a minimum price step (an investigation that finds nothing is treated as worse for firms than a conviction).</div><div class='dh'>Details</div><div class='det'><p>Range shown: Patience from 0.5 to 0.99; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets peaks at 0.37 in the middle of the range (0.17 at the lowest level, 0.27 at the highest); markets with no minimum price step rises from 0.12 to 0.51.</p><p>Chosen collusion intensity θ*: all markets peaks at 0.26 in the middle of the range (0.10 at the lowest level, 0.17 at the highest); markets with no minimum price step peaks at 0.34 in the middle of the range (0.08 at the lowest level, 0.30 at the highest).</p><p>Share of the variation across the whole grid explained by this input alone: 0.021 for how often, 0.024 for how hard (the rest comes from the other inputs and their combinations).</p><p>Markets with no price step: how often firms collude rises 0.12 → 0.51 and levels off from δ 0.95; θ* peaks at 0.34 (δ 0.95). The all-markets dip at δ 0.99 disappears when every investigation ends in a conviction (P(evidence) = 1), which confirms it is the modelling simplification.</p></div></div>
+<div class='page' id='pEvidence'><h1>P(evidence | investigation) (P(evidence))</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0.1</text>
+<text x="218.7" y="260" font-size="10" text-anchor="middle">0.3</text>
+<text x="357.3" y="260" font-size="10" text-anchor="middle">0.6</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">1</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">P(evidence | investigation) (P(evidence)) · levels evenly spaced</text>
+<polyline points="80.0,139.1 218.7,163.4 357.3,176.6 496.0,181.8" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="139.1" r="3.5" fill="#08519c"/>
+<text x="80.0" y="154.1" font-size="9" text-anchor="middle" fill="#08519c">0.39</text>
+<circle cx="218.7" cy="163.4" r="3.5" fill="#08519c"/>
+<text x="218.7" y="178.4" font-size="9" text-anchor="middle" fill="#08519c">0.30</text>
+<circle cx="357.3" cy="176.6" r="3.5" fill="#08519c"/>
+<text x="357.3" y="191.6" font-size="9" text-anchor="middle" fill="#08519c">0.25</text>
+<circle cx="496.0" cy="181.8" r="3.5" fill="#08519c"/>
+<text x="496.0" y="196.8" font-size="9" text-anchor="middle" fill="#08519c">0.23</text>
+<polyline points="80.0,104.0 218.7,136.2 357.3,157.5 496.0,172.0" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="104.0" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="97.0" font-size="9" text-anchor="middle" fill="#d95f02">0.52</text>
+<circle cx="218.7" cy="136.2" r="3.5" fill="#d95f02"/>
+<text x="218.7" y="129.2" font-size="9" text-anchor="middle" fill="#d95f02">0.40</text>
+<circle cx="357.3" cy="157.5" r="3.5" fill="#d95f02"/>
+<text x="357.3" y="150.5" font-size="9" text-anchor="middle" fill="#d95f02">0.32</text>
+<circle cx="496.0" cy="172.0" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="165.0" font-size="9" text-anchor="middle" fill="#d95f02">0.27</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0.1</text>
+<text x="218.7" y="260" font-size="10" text-anchor="middle">0.3</text>
+<text x="357.3" y="260" font-size="10" text-anchor="middle">0.6</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">1</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">P(evidence | investigation) (P(evidence)) · levels evenly spaced</text>
+<polyline points="80.0,173.4 218.7,188.6 357.3,196.8 496.0,199.8" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="173.4" r="3.5" fill="#08519c"/>
+<text x="80.0" y="188.4" font-size="9" text-anchor="middle" fill="#08519c">0.26</text>
+<circle cx="218.7" cy="188.6" r="3.5" fill="#08519c"/>
+<text x="218.7" y="203.6" font-size="9" text-anchor="middle" fill="#08519c">0.21</text>
+<circle cx="357.3" cy="196.8" r="3.5" fill="#08519c"/>
+<text x="357.3" y="211.8" font-size="9" text-anchor="middle" fill="#08519c">0.18</text>
+<circle cx="496.0" cy="199.8" r="3.5" fill="#08519c"/>
+<text x="496.0" y="214.8" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<polyline points="80.0,150.3 218.7,171.0 357.3,184.5 496.0,194.0" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="150.3" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="143.3" font-size="9" text-anchor="middle" fill="#d95f02">0.35</text>
+<circle cx="218.7" cy="171.0" r="3.5" fill="#d95f02"/>
+<text x="218.7" y="164.0" font-size="9" text-anchor="middle" fill="#d95f02">0.27</text>
+<circle cx="357.3" cy="184.5" r="3.5" fill="#d95f02"/>
+<text x="357.3" y="177.5" font-size="9" text-anchor="middle" fill="#d95f02">0.22</text>
+<circle cx="496.0" cy="194.0" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="187.0" font-size="9" text-anchor="middle" fill="#d95f02">0.19</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>P(evidence)</td><td>P(evidence | investigation)</td><td>The chance that an investigation, once started, finds enough evidence for a guilty finding and a fine.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a higher P(evidence | investigation) (the chance an investigation produces a guilty finding and a fine) makes collusion rarer and gentler, because the fine becomes more likely to be paid; it therefore matters only when there is a fine. The effect is clearest in markets with no minimum price step. Across all markets it flattens at the top, which appears to come from a modelling simplification in markets with a minimum price step (an investigation that finds nothing is treated as worse for firms than a conviction).</div><div class='dh'>Details</div><div class='det'><p>Range shown: P(evidence | investigation) from 0.1 to 1; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.39 to 0.23; markets with no minimum price step falls from 0.52 to 0.27.</p><p>Chosen collusion intensity θ*: all markets falls from 0.26 to 0.17; markets with no minimum price step falls from 0.35 to 0.19.</p><p>Share of the variation across the whole grid explained by this input alone: 0.018 for how often, 0.012 for how hard (the rest comes from the other inputs and their combinations).</p><p>With no fine, P(evidence | investigation) has no effect in markets without a price step (share 0.741 at every level) and raises collusion in markets with a price step (the modelling simplification).</p></div></div>
+<div class='page' id='tick'><h1>Tick size (ι)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.25</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.5</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Tick size (ι) · levels evenly spaced</text>
+<polyline points="80.0,142.4 288.0,162.2 496.0,191.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="142.4" r="3.5" fill="#08519c"/>
+<text x="80.0" y="135.4" font-size="9" text-anchor="middle" fill="#08519c">0.38</text>
+<circle cx="288.0" cy="162.2" r="3.5" fill="#08519c"/>
+<text x="288.0" y="155.2" font-size="9" text-anchor="middle" fill="#08519c">0.31</text>
+<circle cx="496.0" cy="191.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="184.0" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.25</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.5</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Tick size (ι) · levels evenly spaced</text>
+<polyline points="80.0,174.9 288.0,187.6 496.0,206.5" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="174.9" r="3.5" fill="#08519c"/>
+<text x="80.0" y="167.9" font-size="9" text-anchor="middle" fill="#08519c">0.26</text>
+<circle cx="288.0" cy="187.6" r="3.5" fill="#08519c"/>
+<text x="288.0" y="180.6" font-size="9" text-anchor="middle" fill="#08519c">0.21</text>
+<circle cx="496.0" cy="206.5" r="3.5" fill="#08519c"/>
+<text x="496.0" y="199.5" font-size="9" text-anchor="middle" fill="#08519c">0.14</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>ι</td><td>Tick size</td><td>The minimum price step. With a coarse tick, prices sit on a grid, firms cannot undercut by tiny amounts, and competition stops a step or two above cost.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a larger tick size (the minimum price step) makes collusion less common and less intense. Part of this is most likely real: with a price step, ordinary competition already earns a small profit, so colluding gains less over competing, and the cartel cannot fine-tune a modest price. Part appears to come from a modelling simplification in these markets (an investigation that finds nothing is treated as worse for firms than a conviction), which makes any investigation more costly.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Tick size from 0 to 0.5; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets falls from 0.38 to 0.20.</p><p>Chosen collusion intensity θ*: all markets falls from 0.26 to 0.14.</p><p>Share of the variation across the whole grid explained by this input alone: 0.027 for how often, 0.019 for how hard (the rest comes from the other inputs and their combinations).</p><p>At P(evidence | investigation) = 1, where the simplification has no effect, larger tick sizes still lower how often firms collude (for example N = 2: 0.349 → 0.279 → 0.195), so part of the effect is real.</p></div></div>
+<div class='page' id='phi'><h1>Preferenced volume share (φ)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.3</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.6</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Preferenced volume share (φ) · levels evenly spaced</text>
+<polyline points="80.0,173.5 288.0,165.7 496.0,156.4" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="173.5" r="3.5" fill="#08519c"/>
+<text x="80.0" y="188.5" font-size="9" text-anchor="middle" fill="#08519c">0.26</text>
+<circle cx="288.0" cy="165.7" r="3.5" fill="#08519c"/>
+<text x="288.0" y="180.7" font-size="9" text-anchor="middle" fill="#08519c">0.29</text>
+<circle cx="496.0" cy="156.4" r="3.5" fill="#08519c"/>
+<text x="496.0" y="171.4" font-size="9" text-anchor="middle" fill="#08519c">0.33</text>
+<polyline points="80.0,156.0 288.0,143.1 496.0,128.1" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="156.0" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="149.0" font-size="9" text-anchor="middle" fill="#d95f02">0.33</text>
+<circle cx="288.0" cy="143.1" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="136.1" font-size="9" text-anchor="middle" fill="#d95f02">0.38</text>
+<circle cx="496.0" cy="128.1" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="121.1" font-size="9" text-anchor="middle" fill="#d95f02">0.43</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">0</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">0.3</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">0.6</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Preferenced volume share (φ) · levels evenly spaced</text>
+<polyline points="80.0,197.5 288.0,190.4 496.0,181.1" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="197.5" r="3.5" fill="#08519c"/>
+<text x="80.0" y="212.5" font-size="9" text-anchor="middle" fill="#08519c">0.17</text>
+<circle cx="288.0" cy="190.4" r="3.5" fill="#08519c"/>
+<text x="288.0" y="205.4" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<circle cx="496.0" cy="181.1" r="3.5" fill="#08519c"/>
+<text x="496.0" y="196.1" font-size="9" text-anchor="middle" fill="#08519c">0.24</text>
+<polyline points="80.0,187.1 288.0,175.1 496.0,162.5" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="187.1" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="180.1" font-size="9" text-anchor="middle" fill="#d95f02">0.21</text>
+<circle cx="288.0" cy="175.1" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="168.1" font-size="9" text-anchor="middle" fill="#d95f02">0.26</text>
+<circle cx="496.0" cy="162.5" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="155.5" font-size="9" text-anchor="middle" fill="#d95f02">0.30</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>φ</td><td>Preferenced volume share</td><td>The share of customer orders split evenly among all firms no matter who quotes the best price. Undercutting cannot win this volume.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>It appears that a larger preferenced volume share (orders split evenly among firms whatever the price) makes collusion slightly more common and slightly more intense. Because undercutting cannot win that protected volume, cheating pays less, so the cartel is easier to hold together. The effect is small compared with the enforcement inputs.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Preferenced volume share from 0 to 0.6; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets rises from 0.26 to 0.33; markets with no minimum price step rises from 0.33 to 0.43.</p><p>Chosen collusion intensity θ*: all markets rises from 0.17 to 0.24; markets with no minimum price step rises from 0.21 to 0.30.</p><p>Share of the variation across the whole grid explained by this input alone: 0.003 for how often, 0.005 for how hard (the rest comes from the other inputs and their combinations).</p><p>Preferenced volume matters mainly through the incentive to cheat: among 10-firm markets the sustainable share rises 0.388 → 0.679 across φ.</p></div></div>
+<div class='page' id='sBarRatio'><h1>Reservation spread ratio (s̄/s₀)</h1><div class='sub'>Wide grid (1,036,800 scenarios), averaged over the other eight inputs · model-generated, no LLM</div><div class='figs'><div class='fig'><div class='ft'>Share of scenarios where collusion is chosen</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">2</text>
+<text x="184.0" y="260" font-size="10" text-anchor="middle">3</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">5</text>
+<text x="392.0" y="260" font-size="10" text-anchor="middle">8</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">12</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Reservation spread ratio (s̄/s₀) · levels evenly spaced</text>
+<polyline points="80.0,179.7 184.0,158.7 288.0,156.2 392.0,162.7 496.0,169.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="179.7" r="3.5" fill="#08519c"/>
+<text x="80.0" y="194.7" font-size="9" text-anchor="middle" fill="#08519c">0.24</text>
+<circle cx="184.0" cy="158.7" r="3.5" fill="#08519c"/>
+<text x="184.0" y="173.7" font-size="9" text-anchor="middle" fill="#08519c">0.32</text>
+<circle cx="288.0" cy="156.2" r="3.5" fill="#08519c"/>
+<text x="288.0" y="171.2" font-size="9" text-anchor="middle" fill="#08519c">0.33</text>
+<circle cx="392.0" cy="162.7" r="3.5" fill="#08519c"/>
+<text x="392.0" y="177.7" font-size="9" text-anchor="middle" fill="#08519c">0.30</text>
+<circle cx="496.0" cy="169.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="184.0" font-size="9" text-anchor="middle" fill="#08519c">0.28</text>
+<polyline points="80.0,115.9 184.0,128.9 288.0,144.5 392.0,156.2 496.0,166.6" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="115.9" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="108.9" font-size="9" text-anchor="middle" fill="#d95f02">0.48</text>
+<circle cx="184.0" cy="128.9" r="3.5" fill="#d95f02"/>
+<text x="184.0" y="121.9" font-size="9" text-anchor="middle" fill="#d95f02">0.43</text>
+<circle cx="288.0" cy="144.5" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="137.5" font-size="9" text-anchor="middle" fill="#d95f02">0.37</text>
+<circle cx="392.0" cy="156.2" r="3.5" fill="#d95f02"/>
+<text x="392.0" y="149.2" font-size="9" text-anchor="middle" fill="#d95f02">0.33</text>
+<circle cx="496.0" cy="166.6" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="159.6" font-size="9" text-anchor="middle" fill="#d95f02">0.29</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div><div class='fig'><div class='ft'>Mean chosen collusion intensity θ*</div><svg xmlns="http://www.w3.org/2000/svg" width="540" height="320" viewBox="0 0 540 320" font-family="Helvetica,Arial,sans-serif">
+<line x1="56" x2="520" y1="244.0" y2="244.0" stroke="#eee"/>
+<text x="50" y="248.0" font-size="10" text-anchor="end">0.0</text>
+<line x1="56" x2="520" y1="217.2" y2="217.2" stroke="#eee"/>
+<text x="50" y="221.2" font-size="10" text-anchor="end">0.1</text>
+<line x1="56" x2="520" y1="190.5" y2="190.5" stroke="#eee"/>
+<text x="50" y="194.5" font-size="10" text-anchor="end">0.2</text>
+<line x1="56" x2="520" y1="163.8" y2="163.8" stroke="#eee"/>
+<text x="50" y="167.8" font-size="10" text-anchor="end">0.3</text>
+<line x1="56" x2="520" y1="137.0" y2="137.0" stroke="#eee"/>
+<text x="50" y="141.0" font-size="10" text-anchor="end">0.4</text>
+<line x1="56" x2="520" y1="110.2" y2="110.2" stroke="#eee"/>
+<text x="50" y="114.2" font-size="10" text-anchor="end">0.5</text>
+<line x1="56" x2="520" y1="83.5" y2="83.5" stroke="#eee"/>
+<text x="50" y="87.5" font-size="10" text-anchor="end">0.6</text>
+<line x1="56" x2="520" y1="56.8" y2="56.8" stroke="#eee"/>
+<text x="50" y="60.8" font-size="10" text-anchor="end">0.7</text>
+<line x1="56" x2="520" y1="30.0" y2="30.0" stroke="#eee"/>
+<text x="50" y="34.0" font-size="10" text-anchor="end">0.8</text>
+<text x="80.0" y="260" font-size="10" text-anchor="middle">2</text>
+<text x="184.0" y="260" font-size="10" text-anchor="middle">3</text>
+<text x="288.0" y="260" font-size="10" text-anchor="middle">5</text>
+<text x="392.0" y="260" font-size="10" text-anchor="middle">8</text>
+<text x="496.0" y="260" font-size="10" text-anchor="middle">12</text>
+<text x="288.0" y="278" font-size="12" text-anchor="middle">Reservation spread ratio (s̄/s₀) · levels evenly spaced</text>
+<polyline points="80.0,189.4 184.0,177.8 288.0,185.7 392.0,194.5 496.0,201.0" fill="none" stroke="#08519c" stroke-width="2.5"/>
+<circle cx="80.0" cy="189.4" r="3.5" fill="#08519c"/>
+<text x="80.0" y="204.4" font-size="9" text-anchor="middle" fill="#08519c">0.20</text>
+<circle cx="184.0" cy="177.8" r="3.5" fill="#08519c"/>
+<text x="184.0" y="192.8" font-size="9" text-anchor="middle" fill="#08519c">0.25</text>
+<circle cx="288.0" cy="185.7" r="3.5" fill="#08519c"/>
+<text x="288.0" y="200.7" font-size="9" text-anchor="middle" fill="#08519c">0.22</text>
+<circle cx="392.0" cy="194.5" r="3.5" fill="#08519c"/>
+<text x="392.0" y="209.5" font-size="9" text-anchor="middle" fill="#08519c">0.18</text>
+<circle cx="496.0" cy="201.0" r="3.5" fill="#08519c"/>
+<text x="496.0" y="216.0" font-size="9" text-anchor="middle" fill="#08519c">0.16</text>
+<polyline points="80.0,145.1 184.0,161.6 288.0,178.5 392.0,190.4 496.0,199.0" fill="none" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/>
+<circle cx="80.0" cy="145.1" r="3.5" fill="#d95f02"/>
+<text x="80.0" y="138.1" font-size="9" text-anchor="middle" fill="#d95f02">0.37</text>
+<circle cx="184.0" cy="161.6" r="3.5" fill="#d95f02"/>
+<text x="184.0" y="154.6" font-size="9" text-anchor="middle" fill="#d95f02">0.31</text>
+<circle cx="288.0" cy="178.5" r="3.5" fill="#d95f02"/>
+<text x="288.0" y="171.5" font-size="9" text-anchor="middle" fill="#d95f02">0.24</text>
+<circle cx="392.0" cy="190.4" r="3.5" fill="#d95f02"/>
+<text x="392.0" y="183.4" font-size="9" text-anchor="middle" fill="#d95f02">0.20</text>
+<circle cx="496.0" cy="199.0" r="3.5" fill="#d95f02"/>
+<text x="496.0" y="192.0" font-size="9" text-anchor="middle" fill="#d95f02">0.17</text>
+<line x1="56" x2="82" y1="308" y2="308" stroke="#08519c" stroke-width="2.5"/><text x="88" y="312" font-size="11">All markets</text>
+<line x1="256" x2="282" y1="308" y2="308" stroke="#d95f02" stroke-width="2.5" stroke-dasharray="6 4"/><text x="288" y="312" font-size="11">Markets with no minimum price step</text>
+</svg></div></div><table class='terms'><tr><th>Symbol</th><th>Term</th><th>Plain-English meaning</th><th>Shown as</th></tr><tr><td>s̄/s₀</td><td>Reservation spread ratio</td><td>How much room there is between the cheapest sustainable spread (cost, s₀) and the spread at which customers stop trading (s̄). More room means bigger potential cartel profits.</td><td>horizontal axis (both charts)</td></tr><tr><td>—</td><td>Share where collusion is chosen</td><td>The fraction of model scenarios (all combinations of the other eight inputs) in which a profit-maximising cartel chooses to collude at all.</td><td>left chart</td></tr><tr><td>θ*</td><td>Chosen collusion intensity</td><td>How far above the competitive spread the cartel sets prices, from 0 (competitive) to 1 (monopoly), averaged over scenarios; scenarios with no collusion count as 0.</td><td>right chart</td></tr></table><div class='ih'>Interpretation</div><div class='interp'>The reservation spread ratio (the room between cost and the spread at which customers stop trading) appears to have a small effect. In markets with no minimum price step, more room makes collusion steadily rarer and gentler, most likely because the wider spreads a cartel would charge are more visible to the regulator screen and the fine looms larger against the profit from a small markup. Across all markets both measures first rise and then fall, most likely because markets with a price step need some room above normal prices before a cartel can raise prices at all.</div><div class='dh'>Details</div><div class='det'><p>Range shown: Reservation spread ratio from 2 to 12; each point averages every combination of the other eight inputs in the wide grid.</p><p>Share where collusion is chosen: all markets peaks at 0.33 in the middle of the range (0.24 at the lowest level, 0.28 at the highest); markets with no minimum price step falls from 0.48 to 0.29.</p><p>Chosen collusion intensity θ*: all markets peaks at 0.25 in the middle of the range (0.20 at the lowest level, 0.16 at the highest); markets with no minimum price step falls from 0.37 to 0.17.</p><p>Share of the variation across the whole grid explained by this input alone: 0.005 for how often, 0.007 for how hard (the rest comes from the other inputs and their combinations).</p><p>In markets with no price step, the reservation spread ratio acts as a multiplier on the regulator screen: slope 0.1 at s̄/s₀ 2, 0.05 at 3 and 0.025 at 5 all give the same share (0.419) and θ* (0.282).</p></div></div>
+</body></html>

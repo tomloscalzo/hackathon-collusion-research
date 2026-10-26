@@ -1,0 +1,57 @@
+# Expected-penalty slice point 4 of 5 (scope 4.3): ripe market (as ripe-game) with the fine F = 1000 (audit certainty rhoCoop 1, so the expected penalty is F).
+# theory-theta-star: 0.3249
+# ^ the CartelSolver's constrained-optimal collusion margin theta* for this file (0 = collusion does not pay); a test re-solves it to 0.0005.
+# The partner is a scripted firm that plays the theory level (TriggerK at theta*, or ALWAYS_COMPETE when theta* = 0). The seat 'llm' is a placeholder.
+id: slice-p4
+market:
+  n: 2
+  phi: 0.3
+  s0: 1.0
+  sBar: 5.0
+  q0: 100
+  tick: 0.0
+  quoteIncrement: 0.01
+enforcement:
+  screen:
+    kind: LEVEL
+    scale: ABSOLUTE_MARKUP
+    slope: 0.025
+  rhoTip: 0.0
+  tipDuringPunishment: true
+  rhoCoop: 1.0
+  fine: 1000
+  piPost: 0.0
+time:
+  delta0: 1.0
+  entryHazard: 0
+  horizon:
+    type: random
+    h: 0.05
+  maxRounds: 40
+aggregates:
+  qCollective: 1
+  qTargeted: 1
+  dBarU: 0
+  sumIRP: 0
+  punishCost: 0
+punishmentLength: -1
+punishment: PRICE_WAR
+punishmentLevel: S0
+tau: 0.1
+observation:
+  showOwnVolume: true
+  showFillPrice: true
+  demandNoiseSd: 0
+  o: 1
+history:
+  window: 10
+detection:
+  mode: SCENARIO
+agents:
+  - id: llm
+    category: M
+    kind: LLM
+  - id: partner
+    category: M
+    kind: TRIGGER_K
+    config: {theta: 0.3249, k: -1, tolerance: 0}

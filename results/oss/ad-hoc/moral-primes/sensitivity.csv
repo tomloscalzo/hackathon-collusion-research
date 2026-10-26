@@ -1,0 +1,46 @@
+sensitivity,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+drop games with empty_talk_done_count>0,moral-prime - headline-chat (p1),market_price_mean,8,1.570410,2.193528,-0.623118,-0.914473,-0.265861
+drop games with empty_talk_done_count>0,moral-prime - headline-chat (p1),price_index,8,0.285225,0.596762,-0.311538,-0.450675,-0.132912
+drop games with empty_talk_done_count>0,moral-prime - headline-chat (p1),profit_gain_index,8,0.458849,0.801434,-0.342585,-0.534916,-0.121488
+drop games with empty_talk_done_count>0,moral-prime - headline-chat (p1),competitive_share,8,0.231991,0.383939,-0.151948,-0.374765,0.064087
+drop games with empty_talk_done_count>0,moral-prime - headline-chat (p1),matching_share,8,0.656568,0.477673,0.178895,-0.054438,0.413743
+drop games with empty_talk_done_count>0,moral-prime-b - headline-chat (p1),market_price_mean,6,1.607528,2.351815,-0.744287,-1.047728,-0.515408
+drop games with empty_talk_done_count>0,moral-prime-b - headline-chat (p1),price_index,6,0.303750,0.675900,-0.372150,-0.520533,-0.257700
+drop games with empty_talk_done_count>0,moral-prime-b - headline-chat (p1),profit_gain_index,6,0.487473,0.867424,-0.379950,-0.592823,-0.219673
+drop games with empty_talk_done_count>0,moral-prime-b - headline-chat (p1),competitive_share,6,0.126720,0.368122,-0.241402,-0.551587,-0.010582
+drop games with empty_talk_done_count>0,moral-prime-b - headline-chat (p1),matching_share,6,0.779894,0.503439,0.276455,0.009259,0.608466
+drop games with empty_talk_done_count>0,moral-placebo - headline-chat (p1),market_price_mean,11,2.258810,2.245669,0.013141,-0.224265,0.211197
+drop games with empty_talk_done_count>0,moral-placebo - headline-chat (p1),price_index,11,0.629409,0.622836,0.006573,-0.108309,0.107200
+drop games with empty_talk_done_count>0,moral-placebo - headline-chat (p1),profit_gain_index,11,0.834245,0.820429,0.013816,-0.109291,0.105319
+drop games with empty_talk_done_count>0,moral-placebo - headline-chat (p1),competitive_share,11,0.351242,0.379129,-0.027886,-0.270779,0.153113
+drop games with empty_talk_done_count>0,moral-placebo - headline-chat (p1),matching_share,11,0.502403,0.471691,0.030712,-0.106294,0.181659
+drop games with empty_talk_done_count>0,moral-prime - moral-placebo,market_price_mean,10,1.507644,2.133046,-0.625402,-0.966183,-0.277910
+drop games with empty_talk_done_count>0,moral-prime - moral-placebo,price_index,10,0.253840,0.566520,-0.312680,-0.479680,-0.145080
+drop games with empty_talk_done_count>0,moral-prime - moral-placebo,profit_gain_index,10,0.412377,0.760705,-0.348329,-0.533032,-0.133081
+drop games with empty_talk_done_count>0,moral-prime - moral-placebo,competitive_share,10,0.210196,0.401629,-0.191433,-0.361111,0.000234
+drop games with empty_talk_done_count>0,moral-prime - moral-placebo,matching_share,10,0.666922,0.442845,0.224077,0.031429,0.390931
+drop games with empty_talk_done_count>0,moral-prime-b - moral-placebo,market_price_mean,7,1.591024,2.305590,-0.714566,-1.071956,-0.252423
+drop games with empty_talk_done_count>0,moral-prime-b - moral-placebo,price_index,7,0.295500,0.652800,-0.357300,-0.536329,-0.121086
+drop games with empty_talk_done_count>0,moral-prime-b - moral-placebo,profit_gain_index,7,0.479453,0.848231,-0.368778,-0.604470,-0.092128
+drop games with empty_talk_done_count>0,moral-prime-b - moral-placebo,competitive_share,7,0.129025,0.369614,-0.240589,-0.389116,-0.079365
+drop games with empty_talk_done_count>0,moral-prime-b - moral-placebo,matching_share,7,0.770522,0.456122,0.314399,0.139796,0.437075
+drop games with empty_talk_done_count>0,moral-prime - moral-prime-b,market_price_mean,8,1.581315,1.461588,0.119727,-0.243379,0.493480
+drop games with empty_talk_done_count>0,moral-prime - moral-prime-b,price_index,8,0.290662,0.230775,0.059887,-0.123837,0.239362
+drop games with empty_talk_done_count>0,moral-prime - moral-prime-b,profit_gain_index,8,0.464717,0.371681,0.093036,-0.188407,0.377811
+drop games with empty_talk_done_count>0,moral-prime - moral-prime-b,competitive_share,8,0.277026,0.137960,0.139066,0.024008,0.276389
+drop games with empty_talk_done_count>0,moral-prime - moral-prime-b,matching_share,8,0.566813,0.721669,-0.154856,-0.351389,0.015972
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime - pooled headline,market_price_mean,20,1.549811,2.271086,-0.721275,-0.886792,-0.551132
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime - pooled headline,price_index,20,0.274915,0.635547,-0.360632,-0.449507,-0.270660
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime - pooled headline,profit_gain_index,20,0.441882,0.828270,-0.386388,-0.504595,-0.270898
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime - pooled headline,competitive_share,20,0.252471,0.397987,-0.145515,-0.232695,-0.040317
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime - pooled headline,matching_share,20,0.595741,0.433625,0.162117,0.028262,0.287068
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime-b - pooled headline,market_price_mean,20,1.467589,2.271086,-0.803497,-1.011886,-0.579778
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime-b - pooled headline,price_index,20,0.233790,0.635547,-0.401757,-0.507858,-0.292642
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime-b - pooled headline,profit_gain_index,20,0.360315,0.828270,-0.467955,-0.614106,-0.318899
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime-b - pooled headline,competitive_share,20,0.285962,0.397987,-0.112025,-0.237174,0.019534
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-prime-b - pooled headline,matching_share,20,0.568304,0.433625,0.134679,0.008917,0.254705
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-placebo - pooled headline,market_price_mean,19,2.194491,2.299117,-0.104626,-0.242545,0.010533
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-placebo - pooled headline,price_index,19,0.597253,0.649563,-0.052311,-0.118461,0.007560
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-placebo - pooled headline,profit_gain_index,19,0.800028,0.845896,-0.045868,-0.121869,0.016682
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-placebo - pooled headline,competitive_share,19,0.471272,0.400005,0.071267,-0.031806,0.165343
+control = headline-chat p1 pooled with hrep-fx-chat-p1 and hrep-nx-chat-p1 (build-bug headline replicates),moral-placebo - pooled headline,matching_share,19,0.374135,0.444443,-0.070309,-0.136084,-0.008638

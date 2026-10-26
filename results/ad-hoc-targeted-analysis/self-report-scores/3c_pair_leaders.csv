@@ -1,0 +1,9 @@
+run,thinking,event,n_events,n_tied_scores,n_games,k_more_tempted_firm,share,lo,hi,p_sign
+neutral,off,defects (the firm with more undercuts),3,3,0,0,,,,
+neutral,off,quotes higher over the game (contemporaneous score),1,0,1,1,1.0,0.20654329147389294,1.0,1.0
+neutral,on,defects (the firm with more undercuts),2,1,1,1,1.0,0.20654329147389294,1.0,1.0
+neutral,on,quotes higher over the game (contemporaneous score),1,0,1,1,1.0,0.20654329147389294,1.0,1.0
+anchored,off,defects (the firm with more undercuts),8,7,1,0,0.0,0.0,0.7934567085261071,1.0
+anchored,off,quotes higher over the game (contemporaneous score),4,1,3,0,0.0,0.0,0.5615060804490177,0.25
+anchored,on,defects (the firm with more undercuts),1,0,1,1,1.0,0.20654329147389294,1.0,1.0
+anchored,on,quotes higher over the game (contemporaneous score),1,1,0,0,,,,

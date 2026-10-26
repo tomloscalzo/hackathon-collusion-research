@@ -1,0 +1,36 @@
+## 5. Q17-thinking: does thinking on raise collusion?
+
+**What is compared.** Qwen3-32B, thinking on minus thinking off, within (wording, seed) pair, in two ways: (a) for the three headline arms, pooled over p1, p3, p4 and p5, all five metrics (Holm family "thinking-main", 3 tests per metric); (b) for every arm played in both modes, the profit gain only (24 arms; Holm over the 24, family "thinking-all-arms"; `thinking_all_arms.csv`).
+
+**Table 3. Thinking on minus off, headline arms, pooled over penalty points (Qwen3-32B, 20 pairs).**
+
+TABLE_THINKING
+
+<small>
+
+| Term | Meaning |
+|---|---|
+| on - off, arm, pooled | Per pair, the mean over the four penalty points of (thinking-on game minus thinking-off game), same arm and point. Positive = higher with thinking on. |
+
+</small>
+
+**Result.**
+- *Headline arms:* thinking on raises profit gain by only +0.03 to +0.07 (no chat +0.067 [-0.007, +0.147], chat +0.026, monitored +0.035; all CIs include 0; equal to FINAL_NUMBERS). Without chat it raises competitive share by +0.22 [+0.15, +0.30] (Holm < 0.001): thinking-on firms undercut more.
+- *Across all 24 two-mode arms:*
+  - the on - off profit gain is positive in 23 (the 24th, the strict-compete control, is 0 in both modes);
+  - the CI excludes 0 in 13;
+  - 7 pass Holm: d-conflict, d-temptation-b, m-asym, n3-cheater, r2s-confidant, r3f-public and r4-announced (+0.13 to +0.23).
+- *The confound:* in every arm thinking on also has a 20x larger quote token cap (8,192 vs 400; 900 in r2s and r3s) and a different temperature.
+
+**gpt-oss.** Not testable (one mode). Its levels lie below Qwen thinking on in the matched headline cells (no chat p1 gain 0.57 vs 0.91; chat p1 0.77 vs 0.95). gpt-oss differs from Qwen in model, size and reasoning style, so this is not a thinking contrast.
+
+**Strength.** Exploratory (the declared thinking-mode contrast is the pooled headline one, which is null: Holm 0.31 to 0.53). The 24-arm pattern is post hoc. Pooled headline bounds on profit gain: no chat [-0.01, +0.15], chat [-0.02, +0.08], monitored [-0.01, +0.07] (MDE 0.06 to 0.11).
+
+**Proposed status.** Downgrade to an exploratory observation: "thinking on is associated with slightly higher profit gain in the side arms (not in the headline arms), aliased with token cap and temperature". This suits the owner's "exploratory, inconclusive but interesting" section.
+
+**Main-text sentence.** (None. Keep it in the appendix or the exploratory section.)
+
+**Appendix sentence.** "With thinking on, Qwen3-32B profit gain was higher than with thinking off in 23 of 24 arms run in both modes (7 pass Holm, +0.13 to +0.23), but not detectably in the headline arms (+0.03 to +0.07; bounds about -0.02 to +0.15). Thinking is aliased with a 20x larger token cap and a different temperature, so this is not a clean effect of reasoning."
+
+Sub-question: 2.3 (what counts as evidence: a model setting that moves the outcome).
+

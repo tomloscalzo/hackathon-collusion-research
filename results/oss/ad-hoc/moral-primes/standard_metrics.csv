@@ -1,0 +1,61 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,moral-prime - headline-chat (p1),market_price_mean,20,1.549811,2.147022,-0.597211,-0.811402,-0.359310
+gpt-oss-20b,moral-prime - headline-chat (p1),price_index,20,0.274915,0.573510,-0.298595,-0.404715,-0.183445
+gpt-oss-20b,moral-prime - headline-chat (p1),profit_gain_index,20,0.441882,0.768879,-0.326998,-0.462316,-0.182295
+gpt-oss-20b,moral-prime - headline-chat (p1),competitive_share,20,0.252471,0.426115,-0.173644,-0.296722,-0.057815
+gpt-oss-20b,moral-prime - headline-chat (p1),matching_share,20,0.595741,0.412210,0.183531,0.040567,0.326487
+Qwen3-32B,moral-prime - headline-chat (p1),market_price_mean,20,2.153036,2.693229,-0.540193,-0.765054,-0.290738
+Qwen3-32B,moral-prime - headline-chat (p1),price_index,20,0.576515,0.846615,-0.270100,-0.385940,-0.156335
+Qwen3-32B,moral-prime - headline-chat (p1),profit_gain_index,20,0.780534,0.949158,-0.168624,-0.287735,-0.074631
+Qwen3-32B,moral-prime - headline-chat (p1),competitive_share,20,0.089103,0.010256,0.078846,-0.006410,0.191026
+Qwen3-32B,moral-prime - headline-chat (p1),matching_share,20,0.908974,0.976053,-0.067079,-0.187729,0.025641
+gpt-oss-20b,moral-prime-b - headline-chat (p1),market_price_mean,20,1.467589,2.147022,-0.679434,-0.898138,-0.431759
+gpt-oss-20b,moral-prime-b - headline-chat (p1),price_index,20,0.233790,0.573510,-0.339720,-0.457695,-0.217350
+gpt-oss-20b,moral-prime-b - headline-chat (p1),profit_gain_index,20,0.360315,0.768879,-0.408564,-0.560094,-0.242662
+gpt-oss-20b,moral-prime-b - headline-chat (p1),competitive_share,20,0.285962,0.426115,-0.140153,-0.295584,0.008375
+gpt-oss-20b,moral-prime-b - headline-chat (p1),matching_share,20,0.568304,0.412210,0.156094,-0.003285,0.323417
+Qwen3-32B,moral-prime-b - headline-chat (p1),market_price_mean,20,1.958387,2.693229,-0.734842,-0.970196,-0.464895
+Qwen3-32B,moral-prime-b - headline-chat (p1),price_index,20,0.479190,0.846615,-0.367425,-0.489360,-0.243995
+Qwen3-32B,moral-prime-b - headline-chat (p1),profit_gain_index,20,0.690484,0.949158,-0.258674,-0.357754,-0.164779
+Qwen3-32B,moral-prime-b - headline-chat (p1),competitive_share,20,0.093599,0.010256,0.083342,0.014545,0.177997
+Qwen3-32B,moral-prime-b - headline-chat (p1),matching_share,20,0.896898,0.976053,-0.079155,-0.179256,-0.005376
+gpt-oss-20b,moral-placebo - headline-chat (p1),market_price_mean,19,2.194491,2.200260,-0.005769,-0.176729,0.153571
+gpt-oss-20b,moral-placebo - headline-chat (p1),price_index,19,0.597253,0.600132,-0.002879,-0.081795,0.081432
+gpt-oss-20b,moral-placebo - headline-chat (p1),profit_gain_index,19,0.800028,0.802623,-0.002595,-0.095405,0.081961
+gpt-oss-20b,moral-placebo - headline-chat (p1),competitive_share,19,0.471272,0.418071,0.053201,-0.101227,0.194552
+gpt-oss-20b,moral-placebo - headline-chat (p1),matching_share,19,0.374135,0.424210,-0.050076,-0.161934,0.058818
+Qwen3-32B,moral-placebo - headline-chat (p1),market_price_mean,20,2.599467,2.693229,-0.093762,-0.293757,0.106234
+Qwen3-32B,moral-placebo - headline-chat (p1),price_index,20,0.799735,0.846615,-0.046880,-0.146680,0.053185
+Qwen3-32B,moral-placebo - headline-chat (p1),profit_gain_index,20,0.937232,0.949158,-0.011926,-0.055337,0.034974
+Qwen3-32B,moral-placebo - headline-chat (p1),competitive_share,20,0.001786,0.010256,-0.008471,-0.026923,0.003571
+Qwen3-32B,moral-placebo - headline-chat (p1),matching_share,20,0.996429,0.976053,0.020375,-0.005082,0.057280
+gpt-oss-20b,moral-prime - moral-placebo,market_price_mean,19,1.553485,2.194491,-0.641006,-0.855939,-0.419291
+gpt-oss-20b,moral-prime - moral-placebo,price_index,19,0.276753,0.597253,-0.320500,-0.431984,-0.208432
+gpt-oss-20b,moral-prime - moral-placebo,profit_gain_index,19,0.442907,0.800028,-0.357121,-0.489999,-0.212801
+gpt-oss-20b,moral-prime - moral-placebo,competitive_share,19,0.265759,0.471272,-0.205512,-0.314618,-0.090293
+gpt-oss-20b,moral-prime - moral-placebo,matching_share,19,0.574465,0.374135,0.200330,0.070988,0.319527
+Qwen3-32B,moral-prime - moral-placebo,market_price_mean,20,2.153036,2.599467,-0.446431,-0.699967,-0.207612
+Qwen3-32B,moral-prime - moral-placebo,price_index,20,0.576515,0.799735,-0.223220,-0.350775,-0.110450
+Qwen3-32B,moral-prime - moral-placebo,profit_gain_index,20,0.780534,0.937232,-0.156698,-0.280765,-0.060643
+Qwen3-32B,moral-prime - moral-placebo,competitive_share,20,0.089103,0.001786,0.087317,0.006044,0.200275
+Qwen3-32B,moral-prime - moral-placebo,matching_share,20,0.908974,0.996429,-0.087454,-0.207051,-0.004121
+gpt-oss-20b,moral-prime-b - moral-placebo,market_price_mean,19,1.440883,2.194491,-0.753608,-1.020761,-0.467239
+gpt-oss-20b,moral-prime-b - moral-placebo,price_index,19,0.220437,0.597253,-0.376816,-0.510484,-0.237279
+gpt-oss-20b,moral-prime-b - moral-placebo,profit_gain_index,19,0.340480,0.800028,-0.459548,-0.635584,-0.269621
+gpt-oss-20b,moral-prime-b - moral-placebo,competitive_share,19,0.274697,0.471272,-0.196575,-0.340548,-0.039374
+gpt-oss-20b,moral-prime-b - moral-placebo,matching_share,19,0.571899,0.374135,0.197764,0.050350,0.325803
+Qwen3-32B,moral-prime-b - moral-placebo,market_price_mean,20,1.958387,2.599467,-0.641080,-0.879079,-0.394938
+Qwen3-32B,moral-prime-b - moral-placebo,price_index,20,0.479190,0.799735,-0.320545,-0.442005,-0.207410
+Qwen3-32B,moral-prime-b - moral-placebo,profit_gain_index,20,0.690484,0.937232,-0.246748,-0.343173,-0.157315
+Qwen3-32B,moral-prime-b - moral-placebo,competitive_share,20,0.093599,0.001786,0.091813,0.018755,0.187678
+Qwen3-32B,moral-prime-b - moral-placebo,matching_share,20,0.896898,0.996429,-0.099530,-0.203185,-0.020990
+gpt-oss-20b,moral-prime - moral-prime-b,market_price_mean,20,1.549811,1.467589,0.082222,-0.167693,0.318704
+gpt-oss-20b,moral-prime - moral-prime-b,price_index,20,0.274915,0.233790,0.041125,-0.079965,0.164995
+gpt-oss-20b,moral-prime - moral-prime-b,profit_gain_index,20,0.441882,0.360315,0.081567,-0.091396,0.258755
+gpt-oss-20b,moral-prime - moral-prime-b,competitive_share,20,0.252471,0.285962,-0.033490,-0.189843,0.122136
+gpt-oss-20b,moral-prime - moral-prime-b,matching_share,20,0.595741,0.568304,0.027437,-0.142426,0.200554
+Qwen3-32B,moral-prime - moral-prime-b,market_price_mean,20,2.153036,1.958387,0.194649,-0.031073,0.399338
+Qwen3-32B,moral-prime - moral-prime-b,price_index,20,0.576515,0.479190,0.097325,-0.020470,0.201725
+Qwen3-32B,moral-prime - moral-prime-b,profit_gain_index,20,0.780534,0.690484,0.090051,-0.044871,0.211218
+Qwen3-32B,moral-prime - moral-prime-b,competitive_share,20,0.089103,0.093599,-0.004496,-0.143961,0.142493
+Qwen3-32B,moral-prime - moral-prime-b,matching_share,20,0.908974,0.896898,0.012076,-0.139564,0.148212

@@ -1,0 +1,19 @@
+population,detector,n,prevalence,auc,auc_lo,auc_hi
+"headline-chat (p1,p3,p5)",quotes: mean level (no fit),57,0.6140350877192983,0.8136363636363636,0.6694342108824206,0.9264917809228955
+"headline-chat (p1,p3,p5)",text: TF-IDF+LR (CV in gpt-oss),57,0.6140350877192983,0.5025974025974026,0.32252195945945944,0.674229735318445
+"headline-chat (p1,p3,p5)",quotes: feats+LR (CV in gpt-oss),57,0.6140350877192983,0.7175324675324676,0.5882197019432773,0.8689914469805775
+"headline-chat (p1,p3,p5)",both: quotes+TF-IDF+LR (CV in gpt-oss),57,0.6140350877192983,0.7181818181818181,0.5863672404445649,0.8359375
+"headline-chat (p1,p3,p5)",DIFF both(CV in gpt-oss) minus quotes: feats+LR (CV in gpt-oss),57,0.6140350877192983,0.0006493506493505663,-0.053949969852569245,0.05691056910569103
+"headline-chat (p1,p3,p5)",DIFF both(CV in gpt-oss) minus quotes: mean level (no fit),57,0.6140350877192983,-0.09545454545454546,-0.21667279411764706,0.008980146735901175
+headline-chat p1 only,quotes: mean level (no fit),18,0.6111111111111112,0.8506493506493507,0.5388798701298702,1.0
+headline-chat p1 only,text: TF-IDF+LR (CV in gpt-oss),18,0.6111111111111112,0.5844155844155844,0.27770833333333333,0.8224458874458872
+headline-chat p1 only,quotes: feats+LR (CV in gpt-oss),18,0.6111111111111112,0.7922077922077922,0.4722222222222222,1.0
+headline-chat p1 only,both: quotes+TF-IDF+LR (CV in gpt-oss),18,0.6111111111111112,0.7922077922077922,0.5,1.0
+headline-chat p1 only,DIFF both(CV in gpt-oss) minus quotes: feats+LR (CV in gpt-oss),18,0.6111111111111112,0.0,-0.07792207792207795,0.06153846153846154
+headline-chat p1 only,DIFF both(CV in gpt-oss) minus quotes: mean level (no fit),18,0.6111111111111112,-0.058441558441558406,-0.19999999999999996,0.0444871794871794
+B: all non-bug chat arms of the final data,quotes: mean level (no fit),524,0.549618320610687,0.9103842984934086,0.8746700170131377,0.9409468014278476
+B: all non-bug chat arms of the final data,text: TF-IDF+LR (CV in gpt-oss),524,0.549618320610687,0.8710275423728814,0.838086012388942,0.9002577281269454
+B: all non-bug chat arms of the final data,quotes: feats+LR (CV in gpt-oss),524,0.549618320610687,0.9205140654425612,0.8836164107379004,0.9479476205544698
+B: all non-bug chat arms of the final data,both: quotes+TF-IDF+LR (CV in gpt-oss),524,0.549618320610687,0.923360993408663,0.885911006991431,0.9501161020513907
+B: all non-bug chat arms of the final data,DIFF both(CV in gpt-oss) minus quotes: feats+LR (CV in gpt-oss),524,0.549618320610687,0.0028469279661017532,-0.005369838774846483,0.01207030383715951
+B: all non-bug chat arms of the final data,DIFF both(CV in gpt-oss) minus quotes: mean level (no fit),524,0.549618320610687,0.012976694915254328,-0.0013988392368367408,0.029082540609701894

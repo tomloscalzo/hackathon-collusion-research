@@ -1,0 +1,11 @@
+topic,model,contrast,metric,n_pairs,sd_pair_diff,mde_80pct,ci_halfwidth
+asymmetric,gpt-oss-20b,m-asym - headline-chat (p3),market_price_mean,20,0.48158,0.30151,0.21381
+asymmetric,gpt-oss-20b,m-asym - headline-chat (p3),price_index,20,0.24078,0.15075,0.10346
+asymmetric,gpt-oss-20b,m-asym - headline-chat (p3),profit_gain_index,20,0.27239,0.17054,0.11122
+asymmetric,gpt-oss-20b,m-asym - headline-chat (p3),competitive_share,20,0.2733,0.17112,0.11802
+asymmetric,gpt-oss-20b,m-asym - headline-chat (p3),matching_share,20,0.30851,0.19316,0.1312
+asymmetric,Qwen3-32B,m-asym - headline-chat (p3),market_price_mean,20,0.35678,0.22338,0.15141
+asymmetric,Qwen3-32B,m-asym - headline-chat (p3),price_index,20,0.1784,0.11169,0.07888
+asymmetric,Qwen3-32B,m-asym - headline-chat (p3),profit_gain_index,20,0.09047,0.05664,0.03857
+asymmetric,Qwen3-32B,m-asym - headline-chat (p3),competitive_share,20,0.16307,0.1021,0.06811
+asymmetric,Qwen3-32B,m-asym - headline-chat (p3),matching_share,20,0.19376,0.12131,0.08337

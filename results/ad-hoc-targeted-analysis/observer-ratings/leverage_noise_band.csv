@@ -1,0 +1,4 @@
+dataset,n_cells,band,n_band,sd_between_cells_in_band,median_cell_se_in_band,median_cell_se_all,sd_between_all_cells,r_nearfloor_vs_price_index,cells_with_cs_ge_055
+"gpt-oss-20b, thinking on",31,cells with competitive share 0.25 to 0.50,23,0.0586,0.0554,0.0535,0.1535,-0.8487,ctl-32b-compete private p3;d-conflict-ethics private p1;d-cot-monitor-a private p1;headline-tacit tacit p1;headline-tacit tacit p5;n3-ethics private p3
+"Qwen3-32B, thinking on",35,cells with competitive share 0.25 to 0.50,6,0.0718,0.0642,0.0083,0.2220,-0.8035,ctl-32b-compete private p3;headline-tacit tacit p5
+"Qwen3-32B, thinking off",33,cells with competitive share 0.25 to 0.50,1,,0.0593,0.0458,0.1779,-0.8293,ctl-32b-compete private p3

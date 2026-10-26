@@ -1,0 +1,4 @@
+dataset,within_cell_sd,total_sd,n_cells,cells_constant_rating,temptation_prompts,distinct_observer_values,observer_values
+"gpt-oss-20b, thinking on (neutral), thinking on",0.2496,0.9698,31,3,10,4,3.33;3.67;4.00;4.33
+"Qwen3-32B (neutral), thinking off",0.3353,1.0809,33,3,10,4,3.33;3.67;4.00;4.33
+"Qwen3-32B (neutral), thinking on",0.3333,1.0696,35,3,10,4,3.33;3.67;4.00;4.33

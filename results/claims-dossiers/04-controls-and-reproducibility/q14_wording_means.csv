@@ -1,0 +1,31 @@
+wording,mean,count,model,metric
+0,0.6580,48,Qwen3-32B thinking off,Profit gain index
+1,0.7591,48,Qwen3-32B thinking off,Profit gain index
+2,0.6989,48,Qwen3-32B thinking off,Profit gain index
+3,0.8421,48,Qwen3-32B thinking off,Profit gain index
+4,0.8478,48,Qwen3-32B thinking off,Profit gain index
+0,0.5236,48,Qwen3-32B thinking off,Price index
+1,0.5354,48,Qwen3-32B thinking off,Price index
+2,0.5038,48,Qwen3-32B thinking off,Price index
+3,0.6645,48,Qwen3-32B thinking off,Price index
+4,0.6698,48,Qwen3-32B thinking off,Price index
+0,0.7635,48,Qwen3-32B thinking on,Profit gain index
+1,0.8300,48,Qwen3-32B thinking on,Profit gain index
+2,0.8070,48,Qwen3-32B thinking on,Profit gain index
+3,0.8034,48,Qwen3-32B thinking on,Profit gain index
+4,0.8155,48,Qwen3-32B thinking on,Profit gain index
+0,0.6282,48,Qwen3-32B thinking on,Price index
+1,0.6243,48,Qwen3-32B thinking on,Price index
+2,0.6361,48,Qwen3-32B thinking on,Price index
+3,0.6276,48,Qwen3-32B thinking on,Price index
+4,0.6572,48,Qwen3-32B thinking on,Price index
+0,0.6323,20,gpt-oss-20b (reasoning medium),Profit gain index
+1,0.4915,20,gpt-oss-20b (reasoning medium),Profit gain index
+2,0.6284,20,gpt-oss-20b (reasoning medium),Profit gain index
+3,0.6554,20,gpt-oss-20b (reasoning medium),Profit gain index
+4,0.5881,20,gpt-oss-20b (reasoning medium),Profit gain index
+0,0.4717,20,gpt-oss-20b (reasoning medium),Price index
+1,0.3565,20,gpt-oss-20b (reasoning medium),Price index
+2,0.4548,20,gpt-oss-20b (reasoning medium),Price index
+3,0.4974,20,gpt-oss-20b (reasoning medium),Price index
+4,0.4108,20,gpt-oss-20b (reasoning medium),Price index

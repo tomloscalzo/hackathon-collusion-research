@@ -1,0 +1,7 @@
+model,arm,games_done,status,mean_rounds,price_index,price_index_ci_lo,price_index_ci_hi,competitive_share,competitive_share_ci_lo,competitive_share_ci_hi,matching_share,matching_share_ci_lo,matching_share_ci_hi,undercuts,undercuts_ci_lo,undercuts_ci_hi
+gpt-oss-20b,tacit_p1,20,complete,12.2,0.521,0.437,0.601,0.659,0.558,0.746,0.215,0.14,0.318,7.35,5.25,9.5
+gpt-oss-20b,chat_p1,12,INCOMPLETE (chat cell short of 20 DONE games; reruns pending),9.7,0.664,0.607,0.719,0.367,0.248,0.483,0.412,0.24,0.591,3.333,2.0,4.667
+gpt-oss-20b,chat_p5,14,INCOMPLETE (chat cell short of 20 DONE games; reruns pending),12.1,0.436,0.327,0.543,0.331,0.226,0.437,0.439,0.318,0.562,3.857,2.0,6.214
+Qwen3-32B,tacit_p1,20,complete,11.3,0.716,0.668,0.764,0.376,0.255,0.51,0.565,0.429,0.693,3.65,2.0,5.6
+Qwen3-32B,chat_p1,20,complete,8.7,0.847,0.772,0.918,0.01,0.0,0.029,0.976,0.939,0.998,0.1,0.0,0.3
+Qwen3-32B,chat_p5,20,complete,11.7,0.539,0.406,0.666,0.142,0.035,0.281,0.831,0.686,0.946,0.75,0.25,1.3

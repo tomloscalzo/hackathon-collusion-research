@@ -1,0 +1,13 @@
+dataset,statistic,n_games,n_pairs,spearman,lo,hi
+gpt-oss-20b (medium effort),score_vs_later,35,18,0.3988,0.0515,0.6271
+gpt-oss-20b (medium effort),early_price_vs_later,35,18,0.6853,0.3899,0.8702
+gpt-oss-20b (medium effort),score_vs_later_given_early_price,35,18,0.0463,-0.2485,0.3319
+gpt-oss-20b (medium effort),score_vs_early_price,35,18,0.5405,0.2189,0.7224
+Qwen3-32B thinking on,score_vs_later,31,17,0.3493,0.0639,0.5934
+Qwen3-32B thinking on,early_price_vs_later,31,17,0.9532,0.8692,1.0
+Qwen3-32B thinking on,score_vs_later_given_early_price,31,17,0.1058,-0.2537,0.4675
+Qwen3-32B thinking on,score_vs_early_price,31,17,0.3348,0.0009,0.5531
+Qwen3-32B thinking off,score_vs_later,35,18,0.3148,-0.0612,0.6391
+Qwen3-32B thinking off,early_price_vs_later,35,18,0.9852,0.954,0.9993
+Qwen3-32B thinking off,score_vs_later_given_early_price,35,18,0.4341,0.0192,0.6534
+Qwen3-32B thinking off,score_vs_early_price,35,18,0.2463,-0.0988,0.5892

@@ -1,0 +1,66 @@
+metric,row,mean,n
+avg_abs_spread,"headline-chat: two firms, private chat (declared) p1",2.147022,20
+avg_abs_spread,hrep-fx-chat-p1: headline-chat p1 replicate (build bug) * p1,2.3855475,20
+avg_abs_spread,hrep-nx-chat-p1: headline-chat p1 replicate (build bug) * p1,2.2806884999999997,20
+avg_abs_spread,"fx-chat-p1: formula payoff, no example prices; chat (corrected) p1",1.542403157894737,19
+avg_abs_spread,nx-chat-p1: no payoff numbers at all; chat (corrected) p1,1.0335970000000003,20
+avg_abs_spread,"headline-tacit: two firms, no chat (tacit) (declared) p1",1.7749584999999999,20
+avg_abs_spread,hrep-fx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,2.0821739999999993,20
+avg_abs_spread,hrep-nx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,2.0358395,20
+avg_abs_spread,"fx-tacit-p1: formula payoff, no example prices; no chat (corrected) p1",1.332525,20
+avg_abs_spread,nx-tacit-p1: no payoff numbers at all; no chat (corrected) p1,1.0161905,20
+avg_abs_spread,"headline-chat: two firms, private chat (declared) p5",1.845073,20
+avg_abs_spread,hrep-fx-chat-p5: headline-chat p5 replicate (build bug) * p5,1.9306636842105263,19
+avg_abs_spread,"fx-chat-p5: formula payoff, no example prices; chat, heavy fine (corrected) p5",1.11433,20
+price_index,"headline-chat: two firms, private chat (declared) p1",0.57351,20
+price_index,hrep-fx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.6927799999999998,20
+price_index,hrep-nx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.64035,20
+price_index,"fx-chat-p1: formula payoff, no example prices; chat (corrected) p1",0.2712052631578947,19
+price_index,nx-chat-p1: no payoff numbers at all; chat (corrected) p1,0.01681,20
+price_index,"headline-tacit: two firms, no chat (tacit) (declared) p1",0.38748,20
+price_index,hrep-fx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.54108,20
+price_index,hrep-nx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.5179199999999999,20
+price_index,"fx-tacit-p1: formula payoff, no example prices; no chat (corrected) p1",0.16626500000000002,20
+price_index,nx-tacit-p1: no payoff numbers at all; no chat (corrected) p1,0.008105,20
+price_index,"headline-chat: two firms, private chat (declared) p5",0.42253999999999997,20
+price_index,hrep-fx-chat-p5: headline-chat p5 replicate (build bug) * p5,0.46533684210526316,19
+price_index,"fx-chat-p5: formula payoff, no example prices; chat, heavy fine (corrected) p5",0.057165,20
+profit_gain_index,"headline-chat: two firms, private chat (declared) p1",0.7688794999999999,20
+profit_gain_index,hrep-fx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.8853101000000001,20
+profit_gain_index,hrep-nx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.8306196,20
+profit_gain_index,"fx-chat-p1: formula payoff, no example prices; chat (corrected) p1",0.36209369999999996,19
+profit_gain_index,nx-chat-p1: no payoff numbers at all; chat (corrected) p1,0.03296072,20
+profit_gain_index,"headline-tacit: two firms, no chat (tacit) (declared) p1",0.5709613600000001,20
+profit_gain_index,hrep-fx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.73722975,20
+profit_gain_index,hrep-nx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.71661095,20
+profit_gain_index,"fx-tacit-p1: formula payoff, no example prices; no chat (corrected) p1",0.22075318999999993,20
+profit_gain_index,nx-tacit-p1: no payoff numbers at all; no chat (corrected) p1,0.016016516499999998,20
+profit_gain_index,"headline-chat: two firms, private chat (declared) p5",0.5758666499999999,20
+profit_gain_index,hrep-fx-chat-p5: headline-chat p5 replicate (build bug) * p5,0.6227734157894736,19
+profit_gain_index,"fx-chat-p5: formula payoff, no example prices; chat, heavy fine (corrected) p5",0.10367878999999999,20
+competitive_share,"headline-chat: two firms, private chat (declared) p1",0.426115065,20
+competitive_share,hrep-fx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.36343433,20
+competitive_share,hrep-nx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.40441105000000005,20
+competitive_share,"fx-chat-p1: formula payoff, no example prices; chat (corrected) p1",0.2974203315789474,19
+competitive_share,nx-chat-p1: no payoff numbers at all; chat (corrected) p1,0.22714074500000003,20
+competitive_share,"headline-tacit: two firms, no chat (tacit) (declared) p1",0.68107935,20
+competitive_share,hrep-fx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.67642055,20
+competitive_share,hrep-nx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.612115,20
+competitive_share,"fx-tacit-p1: formula payoff, no example prices; no chat (corrected) p1",0.40965077,20
+competitive_share,nx-tacit-p1: no payoff numbers at all; no chat (corrected) p1,0.2986528,20
+competitive_share,"headline-chat: two firms, private chat (declared) p5",0.4554285,20
+competitive_share,hrep-fx-chat-p5: headline-chat p5 replicate (build bug) * p5,0.42614383157894736,19
+competitive_share,"fx-chat-p5: formula payoff, no example prices; chat, heavy fine (corrected) p5",0.31208225,20
+matching_share,"headline-chat: two firms, private chat (declared) p1",0.41221036499999997,20
+matching_share,hrep-fx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.44848690000000013,20
+matching_share,hrep-nx-chat-p1: headline-chat p1 replicate (build bug) * p1,0.44017719999999994,20
+matching_share,"fx-chat-p1: formula payoff, no example prices; chat (corrected) p1",0.40055680526315784,19
+matching_share,nx-chat-p1: no payoff numbers at all; chat (corrected) p1,0.5568398649999999,20
+matching_share,"headline-tacit: two firms, no chat (tacit) (declared) p1",0.16346881500000002,20
+matching_share,hrep-fx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.19203654,20
+matching_share,hrep-nx-tacit-p1: headline-tacit p1 replicate (build bug) * p1,0.27619493500000003,20
+matching_share,"fx-tacit-p1: formula payoff, no example prices; no chat (corrected) p1",0.31725952500000004,20
+matching_share,nx-tacit-p1: no payoff numbers at all; no chat (corrected) p1,0.4571638,20
+matching_share,"headline-chat: two firms, private chat (declared) p5",0.32852748,20
+matching_share,hrep-fx-chat-p5: headline-chat p5 replicate (build bug) * p5,0.344451752631579,19
+matching_share,"fx-chat-p5: formula payoff, no example prices; chat, heavy fine (corrected) p5",0.3246138,20

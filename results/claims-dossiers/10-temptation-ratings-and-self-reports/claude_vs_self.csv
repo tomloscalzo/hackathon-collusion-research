@@ -1,0 +1,13 @@
+dataset,score,claude_rating,n_texts,claude_min,claude_max,self_min,self_max,claude_mean,self_mean,perm_p_spearman,perm_p_pearson,n,n_clusters,spearman,pearson,sp_lo,sp_hi,sp_se,pe_lo,pe_hi,pe_se
+gpt-oss-20b (medium effort),temptation (A+B pooled),claude_temptation,10,3.3333,4.3333,2.2404,4.4214,4.0,2.8713,0.5779,0.4583,10.0,5.0,0.2032,0.2667,-0.3592,0.8812,0.2911,-0.506,0.8235,0.3083
+gpt-oss-20b (medium effort),conflict (both arms),claude_conflict,10,1.0,4.0,1.0128,1.1318,2.7667,1.0679,0.0552,0.0494,10.0,5.0,-0.6315,-0.6452,-0.9504,0.0679,0.2803,-0.9477,-0.0398,0.2342
+gpt-oss-20b (medium effort),conflict (no rule),claude_conflict,5,1.0,2.0,1.065,1.1318,1.5333,1.0909,0.4629,0.4302,5.0,5.0,-0.4743,-0.4291,-1.0,0.875,0.5105,-1.0,0.7561,0.5187
+gpt-oss-20b (medium effort),"ethics rule validation: self conflict score, rule minus no rule (paired)",,20,,,,,2.4667,-0.046,0.0166,,,,,,-0.0808,-0.0117,,,,
+Qwen3-32B thinking on,temptation (A+B pooled),claude_temptation,10,3.3333,4.3333,1.9154,2.906,4.0,2.3986,0.1206,0.0483,10.0,5.0,0.5442,0.6377,-0.6557,0.9359,0.4254,-0.5127,0.9499,0.4004
+Qwen3-32B thinking on,conflict (both arms),claude_conflict,5,1.0,2.0,1.0,1.0089,1.5333,1.0044,0.5943,0.5901,5.0,5.0,0.3244,0.2061,-0.875,1.0,0.5457,-0.8217,1.0,0.5438
+Qwen3-32B thinking on,conflict (no rule),claude_conflict,5,1.0,2.0,1.0,1.0089,1.5333,1.0044,0.5987,0.5917,5.0,5.0,0.3244,0.2061,-0.875,1.0,0.542,-0.8217,1.0,0.5444
+Qwen3-32B thinking on,"ethics rule validation: self conflict score, rule minus no rule (paired)",,0,,,,,,,0.0001,,,,,,,,,,,
+Qwen3-32B thinking off,temptation (A+B pooled),claude_temptation,10,3.3333,4.3333,1.6022,2.8759,4.0,2.3739,0.1212,0.1859,10.0,5.0,0.531,0.4551,0.0092,0.8672,0.2006,0.1058,0.8286,0.192
+Qwen3-32B thinking off,conflict (both arms),claude_conflict,5,1.0,2.0,1.0,1.0062,1.5333,1.0012,0.7919,0.7919,5.0,5.0,0.559,0.516,0.25,1.0,0.2043,0.25,1.0,0.2001
+Qwen3-32B thinking off,conflict (no rule),claude_conflict,5,1.0,2.0,1.0,1.0062,1.5333,1.0012,0.7902,0.7902,5.0,5.0,0.559,0.516,0.25,1.0,0.2041,0.25,1.0,0.2018
+Qwen3-32B thinking off,"ethics rule validation: self conflict score, rule minus no rule (paired)",,0,,,,,,,0.0001,,,,,,,,,,,

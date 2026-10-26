@@ -1,0 +1,328 @@
+{
+ "generator": "tools/trial/run_csv.py",
+ "generator_version": 1,
+ "repo_commit": "c07aef0582009b124cde3f1a5c954d646127417b",
+ "repo_dirty": false,
+ "generator_sha256": "8270d9fd717e3d2fb8cd260178f3cdf6f8b09f98e5aacec53c4e08f4fe5e7052",
+ "tools": {
+  "collect.py": {
+   "sha256": "609d98ff35d9aab7249d303b2513fb822156fc3baf05ea9a663e6a379e169a19",
+   "last_commit": "90ae8659bbe5e073d2089c4f57746c4e5ed67609"
+  },
+  "derive.py": {
+   "sha256": "951d72a4ea9903d90552ac40501c77b16e5410eac70365d1fb87a3ac0793c8ca",
+   "last_commit": "ba18566df659f55a2a1ad79e9ccfce3ef12d5c07"
+  },
+  "competitiveness.py": {
+   "sha256": "57e6b32ae58b73fd3a172a070bc6542758db868a154998fddeb2500feaa05201",
+   "last_commit": "f1c17f8303ee7fb9b5344e9d225ed13abde122ff"
+  },
+  "analysis_m.py": {
+   "sha256": "1efde18731bebee3d4d9bb9c6c6f78508ea4762ad577970cf4364680f6234b81",
+   "last_commit": "73696b22f00218e90b17593d4d36b4f9e1e82bd8"
+  },
+  "analysis_detect.py": {
+   "sha256": "f65a97845748e4d1e2f24c9a329ebc622fc807dc57d6cc58cebcb7f9bf06d8f3",
+   "last_commit": "0f4111dce3ad7dec1dd87ad1a0cd96ac01606ca5"
+  },
+  "intent_classes.py": {
+   "sha256": "90cac6d6e32e3e3cc9d0c7eaf5aee6d01fde4e382e80ed1823d39034e2fba7fa",
+   "last_commit": "85b4397c0abc3090879c64fef78f8dc69b27cb51"
+  },
+  "analysis_r.py": {
+   "sha256": "4cf404f365b3534cef01ab492f1fd34938b28055ad2084fcd884271f09504ead",
+   "last_commit": "34fd073d8721e59bf9ce44e9324acc750f9554eb"
+  },
+  "baseline_bot.py": {
+   "sha256": "00d67d9c893e9c2ae4aabdb0b25c29437031e4f5bcd8401b861e8366e579738b",
+   "last_commit": "73696b22f00218e90b17593d4d36b4f9e1e82bd8"
+  },
+  "anchor_compare.py": {
+   "sha256": "4fed2c9fbb609bf0777e29731d8c5f4bef9c5f8b5fddc2740f8934290f485ead",
+   "last_commit": "ce3bdbdef3af13169e68cf808255447e022d51fb"
+  },
+  "trunc_rerun.py": {
+   "sha256": "964f0580cb0878619e9dd43030f037743ecb3af75bd414d04337d71c35fe5d0e",
+   "last_commit": "90ae8659bbe5e073d2089c4f57746c4e5ed67609"
+  },
+  "runs_registry.py": {
+   "sha256": "e4c7e14b553a363023315e8b110f2dea7f57184152a2513fb945b4d282b7965f",
+   "last_commit": "b1b14e95dbd9be0ab3435c7b515a500610bd174e"
+  }
+ },
+ "rerun_roots_used": [
+  "2026-10-25_trackm_anchored_x32k",
+  "2026-10-25_trackm_dset_x32k",
+  "2026-10-25_trackm_condfix_x32k",
+  "2026-10-25_trackm_neutral_x32k",
+  "2026-10-25_trackm_neutral_x32k_b2"
+ ],
+ "condfix_root": "2026-10-25_trackm_condfix",
+ "truncation_reruns_not_done": [
+  {
+   "root": "2026-10-25_trackm_dset_x32k",
+   "trial_id": "d-cot-monitor-b__p1__w0__s118__t1__x32k",
+   "status": "incomplete",
+   "run": "anchored"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "d-cot-monitor-b__p1__w0__s118__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "headline-tacit__p3__w4__s273__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "headline-tacit__p4__w0__s42__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "headline-tacit__p5__w4__s126__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "headline-tacit__p5__w4__s273__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "n3-cheater__p3__w3__s193__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  },
+  {
+   "root": "2026-10-25_trackm_neutral_x32k_b2",
+   "trial_id": "n3-cheater__p3__w4__s273__t1__x32k",
+   "status": "incomplete",
+   "run": "neutral"
+  }
+ ],
+ "truncation_reruns_missing_for_originals": [
+  {
+   "run": "anchored",
+   "trial_id": "d-cot-monitor-b__p1__w0__s118__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_dset_x32k",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "d-cot-monitor-b__p1__w0__s118__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "headline-tacit__p3__w4__s273__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "headline-tacit__p4__w0__s42__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "headline-tacit__p5__w4__s126__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "headline-tacit__p5__w4__s273__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "n3-cheater__p3__w3__s193__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  },
+  {
+   "run": "neutral",
+   "trial_id": "n3-cheater__p3__w4__s273__t1",
+   "rerun_dirs": [
+    [
+     "2026-10-25_trackm_neutral_x32k_b2",
+     "incomplete"
+    ]
+   ]
+  }
+ ],
+ "design_file_sha256": "004443a4170f74ee6438748ad4c92c1635e30ff7caf862f1e4e62925f1406df9",
+ "design_file_commit": "08ff29d270730d8715f03cf1aa1702b6e1566d4f",
+ "declarations_sha256": {
+  "trackm-seeds-2026-10-24/SEED_DECLARATION.md": "569555a5659c4b1ec000b3a16be2413892299c8d6efef29c39cccb25e67d49c0",
+  "trackm-cell-2026-10-24/CELL_DECLARATION.md": "85adbabe62a5f3eab8ed2499e0ad86f60fc86ba14b87a4074294abfbcb30d05a",
+  "trackm-neutral-2026-10-25/DECLARATION.md": "033ceace6dba9f6ff3d17016cf8876e67bf8448cafd9105459e6ebcffee7c527",
+  "cell.json (2026-10-25_trackm_main)": "4baa5bf6beb149008cc47011562d2c21b24c075f35904f18b892f8f59b8742b6",
+  "cell.json (2026-10-25_trackm_dset)": "4baa5bf6beb149008cc47011562d2c21b24c075f35904f18b892f8f59b8742b6",
+  "cell.json (2026-10-25_trackm_condfix)": "4baa5bf6beb149008cc47011562d2c21b24c075f35904f18b892f8f59b8742b6",
+  "cell.json (2026-10-25_trackm_neutral)": "4baa5bf6beb149008cc47011562d2c21b24c075f35904f18b892f8f59b8742b6"
+ },
+ "declared_seed_table": {
+  "0": [
+   91,
+   42,
+   226,
+   118
+  ],
+  "1": [
+   94,
+   47,
+   227,
+   171
+  ],
+  "2": [
+   133,
+   55,
+   259,
+   174
+  ],
+  "3": [
+   136,
+   115,
+   261,
+   193
+  ],
+  "4": [
+   151,
+   126,
+   273,
+   218
+  ]
+ },
+ "frozen_parameters": {
+  "detector": {
+   "level_min": 0.8,
+   "window": 2,
+   "tol": 0.25
+  },
+  "intent": {
+   "pgi_threshold": 0.25,
+   "max_competitive_share": 0.5,
+   "collusive_rule": "any",
+   "min_share": 0.1,
+   "baseline_passed_to_intent_classes": false
+  },
+  "window": [
+   1,
+   20
+  ],
+  "competitive_tolerance_ticks": 0.5,
+  "high_threshold": 0.8,
+  "bootstrap_seed": 20261025,
+  "mask_ngram_words": 5
+ },
+ "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+ "pyyaml": null,
+ "command_line": [
+  "run_csv.py",
+  "--anchored",
+  "2026-10-25_trackm_main",
+  "--anchored",
+  "2026-10-25_trackm_dset",
+  "--condfix-root",
+  "2026-10-25_trackm_condfix",
+  "--neutral",
+  "2026-10-25_trackm_neutral",
+  "--rerun-root",
+  "2026-10-25_trackm_anchored_x32k",
+  "--rerun-root",
+  "2026-10-25_trackm_dset_x32k",
+  "--rerun-root",
+  "2026-10-25_trackm_condfix_x32k",
+  "--rerun-root",
+  "2026-10-25_trackm_neutral_x32k",
+  "--rerun-root",
+  "2026-10-25_trackm_neutral_x32k_b2",
+  "--design",
+  "tools/trial/design/trackm_design.yaml",
+  "--baseline",
+  "tables",
+  "--hand-labels",
+  "extra_reading",
+  "--declarations",
+  "experiments",
+  "--md2html",
+  "md2html_plus.py",
+  "--out",
+  "run_csv",
+  "--jobs",
+  "8",
+  "--provisional"
+ ],
+ "run_time_seconds": 304.6,
+ "run_time": "2026-10-25T13:16:19",
+ "status_counts": {
+  "anchored/done": 1360,
+  "anchored/never_started": 28,
+  "neutral/done": 1360,
+  "neutral/never_started": 28
+ },
+ "status_counts_source": "trial directories found under the roots at build time (DONE / FAILED markers); cross-checked with runs_registry.scan_root in check 6",
+ "collect_outputs": "not written: collect.trial_rows is called per game in memory; no collect.py table files are produced by the generator",
+ "baseline_tables": "tables",
+ "checks": {
+  "1": true,
+  "2": true,
+  "3": false,
+  "4": false,
+  "5": true,
+  "6": false,
+  "7": true,
+  "8": false,
+  "9": true,
+  "10": true,
+  "11": true,
+  "12": true,
+  "13": true,
+  "14": false,
+  "15": false,
+  "16": true
+ },
+ "batch": "BATCH 1: ANCHORED run, filtered from the unit-A1 build",
+ "filtered_run_csv_rows": 1388,
+ "patched_rows": 120
+}

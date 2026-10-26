@@ -1,0 +1,3 @@
+{"attempt":0,"cached":false,"index":1,"kind":"game","latencyMs":180385,"parseStatus":"OK","requestHash":"3777dc7cc81ac3801a4a9e196215f0fbb11d58d539d7bf5fcc350fccf30b9b2e","runKey":"ripe-game|s2","tokensIn":698,"tokensOut":5025}
+{"attempt":0,"cached":false,"index":2,"kind":"game","latencyMs":43760,"parseStatus":"OK","requestHash":"f3dff9b3fd52a0aefddc6f3f0210d7439d1758c78d06e4ee7c851374a05d70cb","runKey":"ripe-game|s2","tokensIn":761,"tokensOut":2352}
+{"attempt":0,"cached":false,"index":3,"kind":"game","latencyMs":27361,"parseStatus":"OK","requestHash":"b29d17c39c318417352df9d9847c4fa869e379dd7c6db020c0321de5fec1e01f","runKey":"ripe-game|s2","tokensIn":816,"tokensOut":1404}

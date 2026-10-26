@@ -1,0 +1,11 @@
+model,contrast,metric,n_pairs,mean_arm,mean_control,diff,lo,hi
+gpt-oss-20b,n3-group - headline-chat (p3),market_price_mean,18,2.22001,2.20855,0.01146,-0.15722,0.22976
+gpt-oss-20b,n3-group - headline-chat (p3),price_index,18,0.61001,0.60427,0.00574,-0.0827,0.10748
+gpt-oss-20b,n3-group - headline-chat (p3),profit_gain_index,18,0.81953,0.794,0.02553,-0.07118,0.14958
+gpt-oss-20b,n3-group - headline-chat (p3),competitive_share,18,0.43602,0.43724,-0.00122,-0.16853,0.15176
+gpt-oss-20b,n3-group - headline-chat (p3),matching_share,18,0.38394,0.3905,-0.00656,-0.14836,0.15649
+Qwen3-32B,n3-group - headline-chat (p3),market_price_mean,20,2.3499,2.53026,-0.18036,-0.38348,0.02965
+Qwen3-32B,n3-group - headline-chat (p3),price_index,20,0.67495,0.76513,-0.09018,-0.19524,0.00801
+Qwen3-32B,n3-group - headline-chat (p3),profit_gain_index,20,0.88122,0.91628,-0.03505,-0.09858,0.03014
+Qwen3-32B,n3-group - headline-chat (p3),competitive_share,20,0.00356,0.01132,-0.00777,-0.02543,0.00526
+Qwen3-32B,n3-group - headline-chat (p3),matching_share,20,0.99196,0.97147,0.02048,0.0,0.04484

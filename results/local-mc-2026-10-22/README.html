@@ -1,0 +1,35 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Local Monte Carlo and ripeness-map results (2026-10-22, pre-sprint)</title><style>
+:root{--bg:#fff;--fg:#1b1b1b;--muted:#555;--rule:#d8d8d8;--accent:#1f4e79;--code:#f3f4f6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}}
+:root[data-theme="dark"]{--bg:#121417;--fg:#e6e6e6;--muted:#a8a8a8;--rule:#333a42;--accent:#8ab4f8;--code:#1e2227}
+html{background:var(--bg)}body{background:var(--bg);color:var(--fg);font:15px/1.55 Helvetica,Arial,sans-serif;max-width:60rem;margin:0 auto;padding:1.5rem 16px 4rem}
+h1{font-size:1.7rem;line-height:1.25;color:var(--accent);margin:0 0 1rem}h2{font-size:1.3rem;margin:2rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.5rem 0 .4rem}p{margin:.6rem 0}code{background:var(--code);padding:.05em .3em;border-radius:3px;font-size:.92em}
+pre{background:var(--code);padding:.8rem;border-radius:4px;overflow-x:auto;font-size:.85em;line-height:1.35}pre code{background:none;padding:0}
+table{border-collapse:collapse;margin:1rem 0;font-size:.92em;display:block;overflow-x:auto}th,td{border:1px solid var(--rule);padding:.35rem .5rem;text-align:left;vertical-align:top}
+th{background:var(--code)}ul,ol{padding-left:1.5rem}li{margin:.25rem 0}img{max-width:100%}a{color:var(--accent)}
+</style></head><body><h1>Local Monte Carlo and ripeness-map results (2026-10-22, pre-sprint)</h1>
+<p><strong>Non-LLM reference results.</strong> These were produced on a local 12-core machine from the engine at commit <code>2997526</code>, using the repo's own sweep files. No LLM was called. They were made before the sprint, so they count as <strong>preexisting</strong> under the sprint rules.</p>
+<h2>Contents</h2>
+<table><tr><th>Path</th><th>What it is</th></tr><tr><td><code>RESULTS.md</code></td><td>Full analysis: drivers of each outcome, outcomes by input level, the strategy-mix table, profits net of fines, and the reference bands</td></tr><tr><td><code>excel/ripeness_map_cells.csv</code></td><td>10,368 rows, one per Layer A parameter cell. Inputs are on the left, solver outputs on the right.</td></tr><tr><td><code>excel/strategy_mix_runs.csv</code></td><td>21,000 rows, one per simulated game: 70 cells × 300 runs. Inputs (market family, its parameters, seat strategy, frictions) are on the left. Outcomes (how the run ended, P(adhere), CI, detection, gross, fine and net profit for the seat and partner) are on the right.</td></tr><tr><td><code>excel/strategy_mix_cells.csv</code></td><td>70 rows, one per cell. Collusion and detection statistics come from 1,000 runs; profits come from 300 runs.</td></tr><tr><td><code>excel/reference_bands.csv</code></td><td>The null bands for the pre-declared contrasts</td></tr><tr><td><code>figures/fig1_ripeness_map.*</code></td><td>Ripeness map (SVG and PNG)</td></tr><tr><td><code>figures/fig2_reference_bands.*</code></td><td>Reference (null) bands (SVG and PNG). LLM estimates are added after the runs.</td></tr><tr><td><code>raw/</code></td><td>Batch <code>summary.csv</code>, <code>bands.csv</code> and <code>manifest.json</code> files (commit, seeds, scenario hashes). Per-run JSONL is not committed because it is large and can be regenerated.</td></tr><tr><td><code>delta-check/</code></td><td>Hand verification of the patience anomaly (see below), with its scripts</td></tr><tr><td><code>scripts/</code></td><td><code>sim_analyze.py</code> (writes RESULTS.md), <code>excel_export.py</code>, <code>make_figures.py</code></td></tr></table>
+<p>The Excel CSVs are UTF-8 with a byte-order mark, so Excel reads them directly. 0/1 columns are flags, and the column headers name the units.</p>
+<h2>Regenerate</h2>
+<pre><code>cd engine
+java -jar target/collusion-engine.jar solve --grid sweeps/ripeness-map.yaml --out &lt;sim&gt;/ripeness-map.csv --threads 12
+java -jar target/collusion-engine.jar batch --sweep sweeps/strategy-mix.yaml --threads 12 --out &lt;sim&gt;/strategy-mix
+java -jar target/collusion-engine.jar batch --sweep sweeps/strategy-mix.yaml --threads 12 --runs 300 --export --out &lt;sim&gt;/sm-export
+java -jar target/collusion-engine.jar batch --sweep sweeps/reference-bands.yaml --threads 12 --out &lt;sim&gt;/reference-bands
+python -X utf8 sim_analyze.py &lt;sim&gt; RESULTS.md
+python -X utf8 excel_export.py &lt;sim&gt; engine/src/main/resources/scenarios &lt;sim&gt;/excel
+python -X utf8 make_figures.py &lt;sim&gt; &lt;sim&gt;/figures</code></pre>
+<p>Total wall time was under a minute on 12 cores. Outputs are identical for any thread count.</p>
+<h2>Things to know before using these numbers</h2>
+<ol><li>
+<strong>Payoffs in the engine's export are gross trading profit. Fines are a separate column.</strong> Net profit = gross − fines, and the CSVs give all three. With nets, the ripe setting rewards adhering: +209 net per run, against +92 for cheating once and 0 for competing. Unripe-A (fine 5000) makes collusion a loss: −1,346 net per run.
+</li><li>
+<strong>Scripted seats don't respond to incentives.</strong> That is why most reference bands are points at 0. The incentive comparison lives in the profit columns, not in the scripted seats' adherence rates.
+</li><li>
+<strong>"Collusion chosen"</strong> in the ripeness map means θ* &gt; 0, the solver's chosen intensity. It is reported separately from θ̂, the maximum self-enforcing intensity.
+</li><li>
+<strong>Patience anomaly: verified, and calibration-dependent.</strong> Raising δ from 0.8 to 0.99 lowers the share of cells where collusion is chosen. The whole drop comes from tick = 0.25 cells with P(evidence | trigger) = 0.3. In those cells the base scenario sets π_post = 0 &lt; π^N, so a trigger without evidence leaves the coalition permanently below its tick-supported Nash profit. A more patient coalition loses more from that (a participation failure, not an IC failure). The solver matches spec eq. (11) exactly (<code>delta-check/delta_check.md</code>). Whether π_post = 0 in tick cells is intended is an <strong>open question for the model owner</strong>. With π_post = π^N the anomaly disappears.
+</li></ol></body></html>

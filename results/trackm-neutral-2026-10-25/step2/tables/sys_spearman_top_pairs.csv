@@ -1,0 +1,13 @@
+pair,rho,note
+price index x profit gain index,1.0,by construction or shared inputs
+undercuts x war length (rounds),0.97,
+competitive share x matching share,-0.84,by construction or shared inputs
+competitive share x undercuts,0.77,
+competitive share x war length (rounds),0.74,
+rounds played x messages,0.68,
+matching share x undercuts,-0.63,
+matching share x war length (rounds),-0.6,
+ended on evidence x rounds played,-0.58,
+explicit agreement (flag) x any agreement message,0.42,by construction or shared inputs
+competitive share x collusive game (flag),-0.42,
+explicit-talk round share x strategic-talk round share,-0.42,by construction or shared inputs

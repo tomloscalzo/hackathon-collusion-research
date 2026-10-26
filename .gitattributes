@@ -1,0 +1,17 @@
+# Line endings are pinned to LF for every file whose bytes are hashed into a manifest or a pre-declaration, read by a
+# test as text, or executed by a POSIX shell. With core.autocrlf=true (the Git for Windows default) these files would
+# otherwise be checked out with CRLF, so the same commit would give different SHA-256 values on Windows and Linux
+# (manifest scenarioHashes, sweepSha256 and analysisScriptSha256; the hashes recorded for bands.csv and the design
+# files) and tests that edit YAML text would fail. The repository content is unchanged: every file is stored with LF.
+# Check with: python -X utf8 testing/check_line_endings.py
+*.py     text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.json   text eol=lf
+*.jsonl  text eol=lf
+*.csv    text eol=lf
+*.tsv    text eol=lf
+*.sh     text eol=lf
+.githooks/pre-commit  text eol=lf
+.githooks/commit-msg  text eol=lf
+scripts/preflight     text eol=lf

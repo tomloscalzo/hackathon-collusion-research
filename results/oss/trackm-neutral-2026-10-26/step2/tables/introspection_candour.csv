@@ -1,0 +1,9 @@
+arm,games,candour_confidant,candour_public,concealment_confidant,concealment_public,invented_confession_confidant,invented_confession_public,questions_answered,question_declines
+r2f-confidant,20,0.4711,,0.5289,,0.5,,22.75,0.05
+r2s-confidant,19,0.2268,,0.7732,,,,24.21,0
+r3f-public,20,,0.4768,,0.5232,,0,22.8,0
+r3s-public,20,,0.1497,,0.8503,,0.125,24.45,0
+r4-announced,11,,0.5326,,0.4674,,,23.09,0
+wd-ask-noreport,19,,,,,,,13.81,0
+wd-noncomp,20,,,,,,,14.89,0
+wd-notice-only,19,,,,,,,,0

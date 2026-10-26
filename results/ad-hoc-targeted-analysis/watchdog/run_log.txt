@@ -1,0 +1,145 @@
+label         ask-noreport  control  noncomp  notice-only
+mode                                                     
+thinking off            20       20       20           20
+thinking on             19       20       19           20
+                           mean_quote  price_index  profit_gain_index  competitive_share  matching_share  rounds  n_games
+mode         label                                                                                                       
+thinking off ask-noreport       1.857        0.414              0.578              0.075           0.801  12.500       20
+             control            2.248        0.622              0.803              0.053           0.938  12.200       20
+             noncomp            1.963        0.457              0.633              0.185           0.646  13.100       20
+             notice-only        2.054        0.523              0.725              0.030           0.917  13.150       20
+thinking on  ask-noreport       2.524        0.761              0.920              0.016           0.973  10.947       19
+             control            2.694        0.847              0.949              0.010           0.976   8.650       20
+             noncomp            2.524        0.762              0.927              0.014           0.976  10.947       19
+             notice-only        2.577        0.788              0.927              0.005           0.971   9.700       20
+            mode                    contrast             metric  mean_first  mean_second   diff  ci_lo  ci_hi  n_pairs  p_signflip  p_holm
+0   thinking off   notice-only minus control         mean_quote       2.054        2.248 -0.194 -0.421  0.044       20       0.114   0.681
+1   thinking off   notice-only minus control        price_index       0.523        0.622 -0.098 -0.209  0.018       20       0.116   0.696
+2   thinking off   notice-only minus control  profit_gain_index       0.725        0.803 -0.079 -0.205  0.052       20       0.267   1.000
+3   thinking off   notice-only minus control  competitive_share       0.030        0.053 -0.023 -0.139  0.051       20       0.969   1.000
+4   thinking off   notice-only minus control     matching_share       0.917        0.938 -0.020 -0.123  0.112       20       0.812   1.000
+5   thinking off   noncomp minus notice-only         mean_quote       1.963        2.054 -0.091 -0.400  0.203       20       0.572   1.000
+6   thinking off   noncomp minus notice-only        price_index       0.457        0.523 -0.067 -0.227  0.081       20       0.425   1.000
+7   thinking off   noncomp minus notice-only  profit_gain_index       0.633        0.725 -0.092 -0.285  0.086       20       0.364   1.000
+8   thinking off   noncomp minus notice-only  competitive_share       0.185        0.030  0.156  0.021  0.319       20       0.070   0.562
+9   thinking off   noncomp minus notice-only     matching_share       0.646        0.917 -0.272 -0.476 -0.086       20       0.015   0.123
+10  thinking off  noncomp minus ask-noreport         mean_quote       1.963        1.857  0.106 -0.239  0.431       20       0.552   1.000
+11  thinking off  noncomp minus ask-noreport        price_index       0.457        0.414  0.043 -0.136  0.212       20       0.645   1.000
+12  thinking off  noncomp minus ask-noreport  profit_gain_index       0.633        0.578  0.055 -0.158  0.265       20       0.622   1.000
+13  thinking off  noncomp minus ask-noreport  competitive_share       0.185        0.075  0.110 -0.081  0.307       20       0.305   1.000
+14  thinking off  noncomp minus ask-noreport     matching_share       0.646        0.801 -0.155 -0.378  0.069       20       0.199   1.000
+15  thinking off  ask-noreport minus control         mean_quote       1.857        2.248 -0.391 -0.679 -0.111       20       0.012   0.097
+16  thinking off  ask-noreport minus control        price_index       0.414        0.622 -0.208 -0.345 -0.079       20       0.007   0.052
+17  thinking off  ask-noreport minus control  profit_gain_index       0.578        0.803 -0.226 -0.369 -0.091       20       0.005   0.038
+18  thinking off  ask-noreport minus control  competitive_share       0.075        0.053  0.022 -0.075  0.147       20       1.000   1.000
+19  thinking off  ask-noreport minus control     matching_share       0.801        0.938 -0.137 -0.283 -0.023       20       0.023   0.164
+20   thinking on   notice-only minus control         mean_quote       2.577        2.694 -0.117 -0.236 -0.001       20       0.076   0.533
+21   thinking on   notice-only minus control        price_index       0.788        0.847 -0.058 -0.117 -0.001       20       0.078   0.547
+22   thinking on   notice-only minus control  profit_gain_index       0.927        0.949 -0.022 -0.046 -0.002       20       0.068   0.479
+23   thinking on   notice-only minus control  competitive_share       0.005        0.010 -0.005 -0.027  0.014       20       0.750   1.000
+24   thinking on   notice-only minus control     matching_share       0.971        0.976 -0.005 -0.045  0.042       20       0.922   1.000
+25   thinking on   noncomp minus notice-only         mean_quote       2.524        2.554 -0.030 -0.165  0.105       19       0.698   1.000
+26   thinking on   noncomp minus notice-only        price_index       0.762        0.777 -0.015 -0.082  0.054       19       0.698   1.000
+27   thinking on   noncomp minus notice-only  profit_gain_index       0.927        0.923  0.004 -0.018  0.031       19       0.789   1.000
+28   thinking on   noncomp minus notice-only  competitive_share       0.014        0.006  0.008 -0.004  0.022       19       0.250   1.000
+29   thinking on   noncomp minus notice-only     matching_share       0.976        0.970  0.006 -0.015  0.032       19       0.656   1.000
+30   thinking on  noncomp minus ask-noreport         mean_quote       2.524        2.524  0.000 -0.156  0.158       19       0.949   1.000
+31   thinking on  noncomp minus ask-noreport        price_index       0.762        0.761  0.001 -0.077  0.079       19       0.937   1.000
+32   thinking on  noncomp minus ask-noreport  profit_gain_index       0.927        0.920  0.007 -0.037  0.052       19       0.777   1.000
+33   thinking on  noncomp minus ask-noreport  competitive_share       0.014        0.016 -0.002 -0.015  0.010       19       0.750   1.000
+34   thinking on  noncomp minus ask-noreport     matching_share       0.976        0.973  0.003 -0.018  0.030       19       0.812   1.000
+35   thinking on  ask-noreport minus control         mean_quote       2.524        2.678 -0.154 -0.343  0.030       19       0.126   0.681
+36   thinking on  ask-noreport minus control        price_index       0.761        0.839 -0.077 -0.173  0.013       19       0.137   0.696
+37   thinking on  ask-noreport minus control  profit_gain_index       0.920        0.946 -0.026 -0.071  0.015       19       0.266   1.000
+38   thinking on  ask-noreport minus control  competitive_share       0.016        0.011  0.005 -0.021  0.028       19       0.750   1.000
+39   thinking on  ask-noreport minus control     matching_share       0.973        0.975 -0.002 -0.049  0.048       19       0.945   1.000
+                           asked  triggered  eligible   rate  triggered_share  asked_given_triggered
+label        mode                                                                                   
+ask-noreport thinking off  397.0      434.0     460.0  0.863            0.943                  0.915
+             thinking on   334.0      370.0     378.0  0.884            0.979                  0.903
+noncomp      thinking off  319.0      352.0     484.0  0.659            0.727                  0.906
+             thinking on   334.0      369.0     378.0  0.884            0.976                  0.905
+           label          mode rounds  asked  triggered  eligible   rate  triggered_share
+0   ask-noreport  thinking off      2     33         37        40  0.825            0.925
+1   ask-noreport  thinking off      3     33         33        36  0.917            0.917
+2   ask-noreport  thinking off    4-5     66         66        72  0.917            0.917
+3   ask-noreport  thinking off    6-8     77         87        94  0.819            0.926
+4   ask-noreport  thinking off   9-12     92         92        96  0.958            0.958
+5   ask-noreport  thinking off    13+     96        119       122  0.787            0.975
+6   ask-noreport   thinking on      2     31         37        38  0.816            0.974
+7   ask-noreport   thinking on      3     30         32        32  0.938            1.000
+8   ask-noreport   thinking on    4-5     57         57        60  0.950            0.950
+9   ask-noreport   thinking on    6-8     68         78        78  0.872            1.000
+10  ask-noreport   thinking on   9-12     80         80        80  1.000            1.000
+11  ask-noreport   thinking on    13+     68         86        90  0.756            0.956
+12       noncomp  thinking off      2     31         33        40  0.775            0.825
+13       noncomp  thinking off      3     31         31        38  0.816            0.816
+14       noncomp  thinking off    4-5     59         59        76  0.776            0.776
+15       noncomp  thinking off    6-8     66         78       100  0.660            0.780
+16       noncomp  thinking off   9-12     79         79       104  0.760            0.760
+17       noncomp  thinking off    13+     53         72       126  0.421            0.571
+18       noncomp   thinking on      2     32         38        38  0.842            1.000
+19       noncomp   thinking on      3     30         32        32  0.938            1.000
+20       noncomp   thinking on    4-5     60         60        60  1.000            1.000
+21       noncomp   thinking on    6-8     68         78        78  0.872            1.000
+22       noncomp   thinking on   9-12     80         80        80  1.000            1.000
+23       noncomp   thinking on    13+     64         81        90  0.711            0.900
+          label          mode  noncompetitive_share
+0  ask-noreport  thinking off                 0.943
+1  ask-noreport   thinking on                 0.979
+2       control  thinking off                 0.933
+3       control   thinking on                 0.990
+4       noncomp  thinking off                 0.727
+5       noncomp   thinking on                 0.976
+6   notice-only  thinking off                 0.971
+7   notice-only   thinking on                 0.989
+              asked_and_competitive  noncomp_not_asked    n
+label                                                      
+ask-noreport                      0                 73  838
+noncomp                           0                 68  862
+           label          mode    measure  value  ci_lo  ci_hi  firm_rounds  games
+0   ask-noreport  thinking off    lowered  0.000  0.000  0.000          397     17
+1   ask-noreport  thinking off     raised  0.045  0.000  0.113          397     17
+2   ask-noreport  thinking off  next_comp  0.000  0.000  0.000          397     17
+3   ask-noreport  thinking off     change  0.000  0.000  0.001          397     17
+4   ask-noreport   thinking on    lowered  0.021  0.003  0.041          334     16
+5   ask-noreport   thinking on     raised  0.006  0.000  0.020          334     16
+6   ask-noreport   thinking on  next_comp  0.015  0.003  0.029          334     16
+7   ask-noreport   thinking on     change -0.002 -0.006  0.000          334     16
+8        control  thinking off    lowered  0.003  0.000  0.008          380     17
+9        control  thinking off     raised  0.000  0.000  0.000          380     17
+10       control  thinking off  next_comp  0.000  0.000  0.000          380     17
+11       control  thinking off     change -0.001 -0.004  0.000          380     17
+12       control   thinking on    lowered  0.008  0.000  0.029          263     17
+13       control   thinking on     raised  0.008  0.000  0.024          263     17
+14       control   thinking on  next_comp  0.008  0.000  0.028          263     17
+15       control   thinking on     change  0.004 -0.000  0.012          263     17
+16       noncomp  thinking off    lowered  0.025  0.000  0.067          319     18
+17       noncomp  thinking off     raised  0.088  0.000  0.223          319     18
+18       noncomp  thinking off  next_comp  0.025  0.000  0.074          319     18
+19       noncomp  thinking off     change  0.001 -0.004  0.005          319     18
+20       noncomp   thinking on    lowered  0.027  0.006  0.047          334     16
+21       noncomp   thinking on     raised  0.003  0.000  0.009          334     16
+22       noncomp   thinking on  next_comp  0.021  0.005  0.037          334     16
+23       noncomp   thinking on     change -0.000 -0.001 -0.000          334     16
+24   notice-only  thinking off    lowered  0.009  0.000  0.026          433     18
+25   notice-only  thinking off     raised  0.012  0.002  0.025          433     18
+26   notice-only  thinking off  next_comp  0.009  0.000  0.023          433     18
+27   notice-only  thinking off     change  0.001 -0.000  0.004          433     18
+28   notice-only   thinking on    lowered  0.010  0.000  0.029          305     17
+29   notice-only   thinking on     raised  0.013  0.000  0.042          305     17
+30   notice-only   thinking on  next_comp  0.010  0.000  0.030          305     17
+31   notice-only   thinking on     change  0.006 -0.000  0.021          305     17
+           label          mode                         subset  answers  games  mean_words  admits_coordination  claims_independent  market_justification  concealment_language  mentions_regulator_or_watchdog
+0   ask-noreport  thinking off                    all answers      397     17      81.796                0.552               0.249                 0.705                 0.008                           0.985
+1   ask-noreport  thinking off   after coordination-like chat      397     17      81.796                0.552               0.249                 0.705                 0.008                           0.985
+2   ask-noreport  thinking off  no coordination-like chat yet        0      0         NaN                  NaN                 NaN                   NaN                   NaN                             NaN
+3   ask-noreport   thinking on                    all answers      334     16     105.985                0.937               0.368                 0.925                 0.000                           1.000
+4   ask-noreport   thinking on   after coordination-like chat      333     16     106.081                0.937               0.366                 0.925                 0.000                           1.000
+5   ask-noreport   thinking on  no coordination-like chat yet        1      1      74.000                1.000               1.000                 1.000                 0.000                           1.000
+6        noncomp  thinking off                    all answers      319     18      75.420                0.824               0.191                 0.799                 0.041                           0.881
+7        noncomp  thinking off   after coordination-like chat      315     18      75.530                0.835               0.194                 0.800                 0.041                           0.889
+8        noncomp  thinking off  no coordination-like chat yet        4      3      66.750                0.000               0.000                 0.750                 0.000                           0.250
+9        noncomp   thinking on                    all answers      334     16      96.545                0.760               0.841                 0.853                 0.000                           0.997
+10       noncomp   thinking on   after coordination-like chat      334     16      96.545                0.760               0.841                 0.853                 0.000                           0.997
+11       noncomp   thinking on  no coordination-like chat yet        0      0         NaN                  NaN                 NaN                   NaN                   NaN                             NaN
