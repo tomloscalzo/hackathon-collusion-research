@@ -1,8 +1,49 @@
 # An Offer You Can't Refuse: How Agents Decide to Collude - and How To Stop Them
 
-We asked when AI agents collude, how collusion can be spotted, and what stops it. We built a market in which two or three AI "market makers" post a price each round; customers mostly buy from the cheapest, and a regulator investigates more often as prices rise, fining both firms when it does. Guided by a mathematical model of collusion that we first tested with simple rule-based agents, we ran more than 3,500 games with two open AI models (Qwen3-32B and gpt-oss-20b), varying communication, fines, instructions, personas, monitoring and the number of firms. A private chat between the firms raised prices on both models, a target price in the instructions pulled prices towards it, and a one-sentence ethical persona lowered prices on gpt-oss; the first few rounds of prices picked out the games that stayed collusive (a ranking score, AUC, of 0.81 to 0.91), and an independent AI's rating of each setup's "temptation" to collude tracked prices (correlation up to 0.85).
+| | |
+|---|---|
+| **Author** | Tom Loscalzo (independent researcher, with Apart Research) |
+| **Event** | [Apart Research AI Collusion Research Sprint](https://apartresearch.com/sprints/ai-collusion-research-sprint-2026-10-23-to-2026-10-25), 23–25 October 2026 |
+| **Paper** | [paper/an-offer-you-cant-refuse-how-agents-decide-to-collude.pdf](paper/an-offer-you-cant-refuse-how-agents-decide-to-collude.pdf) (as submitted, 26 October 2026) |
+| **Project page** | [An Offer You Can't Refuse on apartresearch.com](https://apartresearch.com/sprints/projects/an-offer-you-cant-refuse-how-agents-decide-to-collude-and-how-to-stop-them-heof) |
+| **Repository** | Code, experiment designs, data, analyses and every report behind the paper |
 
-Prepared for the Apart Research AI Collusion Research Sprint (23–25 October 2026). The work was carried out by Claude at the prompting of the repository owner; every review and its disposition is recorded in the repository.
+## Summary
+
+As recent security incidents have shown, AI agents can collude, circumvent their controls and create unexpected harms in pursuit of their goals. Humans did the same when NASDAQ market makers raised their profits at other traders' expense.
+
+We ran more than 3,500 games on two open models (Qwen3-32B and gpt-oss-20b) in a simulated market where AI market makers post prices under a regulator. When agents are able to communicate, they are far more likely to collude. Initial instructions influence collusion out of all proportion: a target price in the prompt becomes the price agents collude at, and an ethical persona does not prevent collusion but steers it towards better outcomes. Collusion can be predicted: agents that open with noncompetitive prices tend to keep them there, and prompts that tempt an agent to collude foretell it, a temptation agents spot in others but not themselves. This matters for how AI agents are tested, instructed and supervised.
+
+## Paper
+
+- **Final paper (as submitted):** [`paper/an-offer-you-cant-refuse-how-agents-decide-to-collude.pdf`](paper/an-offer-you-cant-refuse-how-agents-decide-to-collude.pdf), also on [the project's Apart Research page](https://apartresearch.com/sprints/projects/an-offer-you-cant-refuse-how-agents-decide-to-collude-and-how-to-stop-them-heof). Its Appendix F links to the detailed results in this repository.
+- **Sprint description:** [AI Collusion Research Sprint on apartresearch.com](https://apartresearch.com/sprints/ai-collusion-research-sprint-2026-10-23-to-2026-10-25).
+
+## Abstract
+
+As recent security incidents have shown, AI agents can collude, circumvent their controls, and create unexpected harms in pursuit of their goals. A landmark 1994 study found that NASDAQ market makers increased their profits, at the expense of other market participants, by avoiding odd-eighth price quotes in 70 of 100 heavily traded stocks.<sup>a</sup> More recently, AI researchers saw similar behaviour among AI pricing agents in a market simulation.<sup>b</sup>
+
+We ran more than 3,500 games on two open models in a simulated market where two or three AI "market makers" post prices under a regulator.
+
+We made several significant discoveries, which could inform efforts to prevent harmful collusion:
+
+- **When agents are able to communicate, they are far more likely to collude.**
+- **Initial instructions disproportionately influence collusive behaviour, both positively and negatively.**
+  - **When the instructions contain a target price, agents tend to collude at that price.** Replacing printed example prices with the bare profit rule lowered prices by 0.22 to 0.63 (0 competitive, 1 monopoly).
+  - **Initial prompts assigning the agent a persona with ethical character traits did not prevent collusion, but they steered it towards better outcomes.**
+- **Two signals were highly predictive of collusion.**
+  - **Agents that open with noncompetitive prices tend to collude to keep them there.** (AUC 0.81 to 0.91.)
+  - **Prompts containing "temptations" to collude are highly predictive of later collusion. AI was effective at identifying temptations in other agents' prompts, but not their own.** (Correlation up to 0.85.)
+
+These results matter for how AI agents are tested, instructed and supervised.
+
+<sup>a</sup> Christie, W. G., and Schultz, P. H. (1994). Why Do NASDAQ Market Makers Avoid Odd-Eighth Quotes? *Journal of Finance* 49(5), 1813–1840. They found odd-eighth quotes "virtually nonexistent" for 70 of 100 actively traded NASDAQ stocks, and asked whether the dealers implicitly colluded.
+
+<sup>b</sup> Fish, S., Gonczarowski, Y. A., and Shorrer, R. I. (2024). Algorithmic Collusion by Large Language Models. arXiv:2404.00806. In their oligopoly simulations, AI pricing agents "quickly and autonomously reach supracompetitive prices and profits".
+
+## About this repository
+
+Prepared for the Apart Research AI Collusion Research Sprint (23–25 October 2026). The engineering and analysis were carried out by Claude at the prompting of the author; every review and its disposition is recorded in the repository.
 
 **About the game.** Each firm quotes a half-spread (the distance from the mid-price to its bid and its ask) between 1.00 (competitive: costs covered, no excess profit) and 5.00, in ticks of 0.01. Results are reported on a price index from 0 (fully competitive) to 1 (monopoly). Each report opens with an orientation section that defines the game, the controls and the metrics it uses.
 
@@ -47,6 +88,7 @@ This public repository is a snapshot of the project's current files, published a
 | `testing/`, `scripts/` | The test harness, the pre-flight gate and the provenance guard. |
 | `docs/` | The interface specification, the JSON schemas and examples, the condition texts, the lever kit design and the runbooks. |
 | `experiments/` | The dated declarations of each experiment and the experiment-design scripts. |
+| `paper/` | The final paper as submitted (PDF). |
 | `model/` | The hypothesis model (Layer A opportunity, Layer B disposition, Layer C measurement), with plain-language and footnoted versions. |
 | `plans/` | The plan of record (`SCOPE_AND_EXPERIMENTAL_DESIGN.md`) and the dated pre-declared predictions (`PREDICTIONS.md`). |
 | `results/` | Every report, figure, table and HTML rendering, together with the scripts that produced them. |
